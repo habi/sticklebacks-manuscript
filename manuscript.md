@@ -1,14 +1,17 @@
 ---
-title: Manuscript Title
+title: microCT imaging of threespine stickleback
 keywords:
-- markdown
-- publishing
-- manubot
+- tomography
+- sticklebacks
+- ecology
 lang: en-US
 date-meta: '2026-01-13'
 author-meta:
 - David Haberthür
-- Jane Roe
+- Ben Sulser
+- Sheila Christen
+- Katie Peichel
+- Ruslan Hlushchuk
 header-includes: |
   <!--
   Manubot generated metadata rendered from header-includes-template.html.
@@ -16,15 +19,15 @@ header-includes: |
   -->
   <meta name="dc.format" content="text/html" />
   <meta property="og:type" content="article" />
-  <meta name="dc.title" content="Manuscript Title" />
-  <meta name="citation_title" content="Manuscript Title" />
-  <meta property="og:title" content="Manuscript Title" />
-  <meta property="twitter:title" content="Manuscript Title" />
+  <meta name="dc.title" content="microCT imaging of threespine stickleback" />
+  <meta name="citation_title" content="microCT imaging of threespine stickleback" />
+  <meta property="og:title" content="microCT imaging of threespine stickleback" />
+  <meta property="twitter:title" content="microCT imaging of threespine stickleback" />
   <meta name="dc.date" content="2026-01-13" />
   <meta name="citation_publication_date" content="2026-01-13" />
   <meta property="article:published_time" content="2026-01-13" />
-  <meta name="dc.modified" content="2026-01-13T15:38:09+00:00" />
-  <meta property="article:modified_time" content="2026-01-13T15:38:09+00:00" />
+  <meta name="dc.modified" content="2026-01-13T16:50:09+00:00" />
+  <meta property="article:modified_time" content="2026-01-13T16:50:09+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -34,19 +37,19 @@ header-includes: |
   <meta name="citation_author" content="David Haberthür" />
   <meta name="citation_author_institution" content="Institute of Anatomy, University of Bern, Baltzerstrasse 2, 3012 Bern, Switzerland" />
   <meta name="citation_author_orcid" content="0000-0003-3388-9187" />
-  <meta name="citation_author" content="Jane Roe" />
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
-  <meta name="citation_author_institution" content="Department of Whatever, University of Something" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="citation_author" content="Ben Sulser" />
+  <meta name="citation_author" content="Sheila Christen" />
+  <meta name="citation_author" content="Katie Peichel" />
+  <meta name="citation_author" content="Ruslan Hlushchuk" />
   <link rel="canonical" href="https://habi.github.io/sticklebacks-manuscript/" />
   <meta property="og:url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta property="twitter:url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/09487291054dd29306f5c6a1a1b8704e09ff7746/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/09487291054dd29306f5c6a1a1b8704e09ff7746/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/09487291054dd29306f5c6a1a1b8704e09ff7746/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/d2a9966a35f7322506a6beeffe2a08c8602271ed/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/d2a9966a35f7322506a6beeffe2a08c8602271ed/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/d2a9966a35f7322506a6beeffe2a08c8602271ed/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -68,9 +71,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/09487291054dd29306f5c6a1a1b8704e09ff7746/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/d2a9966a35f7322506a6beeffe2a08c8602271ed/))
 was automatically generated
-from [habi/sticklebacks-manuscript@0948729](https://github.com/habi/sticklebacks-manuscript/tree/09487291054dd29306f5c6a1a1b8704e09ff7746)
+from [habi/sticklebacks-manuscript@d2a9966](https://github.com/habi/sticklebacks-manuscript/tree/d2a9966a35f7322506a6beeffe2a08c8602271ed)
 on January 13, 2026.
 </em></small>
 
@@ -81,7 +84,7 @@ on January 13, 2026.
 
 
 + **David Haberthür**
-  <br>
+  ^[✉](#correspondence)^<br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0003-3388-9187](https://orcid.org/0000-0003-3388-9187)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
@@ -93,22 +96,31 @@ on January 13, 2026.
      Institute of Anatomy, University of Bern, Baltzerstrasse 2, 3012 Bern, Switzerland
   </small>
 
-+ **Jane Roe**
-  ^[✉](#correspondence)^<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
-    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
-    [janeroe](https://github.com/janeroe)
-    <br>
++ **Ben Sulser**
+  <br>
   <small>
-     Department of Something, University of Whatever; Department of Whatever, University of Something
+  </small>
+
++ **Sheila Christen**
+  <br>
+  <small>
+  </small>
+
++ **Katie Peichel**
+  <br>
+  <small>
+  </small>
+
++ **Ruslan Hlushchuk**
+  <br>
+  <small>
   </small>
 
 
 ::: {#correspondence}
 ✉ — Correspondence possible via [GitHub Issues](https://github.com/habi/sticklebacks-manuscript/issues)
 or email to
-Jane Roe \<jane.roe@whatever.edu\>.
+David Haberthür \<david.haberthuer@unibe.ch\>.
 
 
 :::
@@ -117,6 +129,27 @@ Jane Roe \<jane.roe@whatever.edu\>.
 ## Abstract {.page_break_before}
 
 
+## Introduction {.page_break_before}
+
+
+## Materials & Methods {.page_break_before}
+
+- [Jupyter notebooks](https://github.com/habi/sticklebacks), 
+
+
+## Results {.page_break_before}
+
+
+## Discussion {.page_break_before}
+
+
+## Conclusion {.page_break_before}
+
+
+## Acknowledgements {.page_break_before}
+
+We are grateful to the [Microscopy Imaging Center](https://mic.unibe.ch/) of the University of Bern for their infrastructural support.
+We also thank the `manubot` project [@doi:10.1371/journal.pcbi.1007128] for facilitating collaborative writing of this manuscript.
 
 
 ## References {.page_break_before}
