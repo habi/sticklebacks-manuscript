@@ -7,10 +7,10 @@ keywords:
   - ecology
 lang: en-US
 authors:
-  - github: habi
-    name: David Haberthür 
+  - name: David Haberthür
     initials: DH
     orcid: 0000-0003-3388-9187
+    github: habi
     mastodon: habi
     mastodon-server: mastodon.social
     email: david.haberthuer@unibe.ch
@@ -26,16 +26,118 @@ authors:
       - Validation
       - Visualization
       - Writing – original draft
-      - Writing – review & editing      
+      - Writing – review & editing
     coi:
       string: "None"
-      lastapproved: !!str 2026-01-13
-  - github: janeroe
-    name: Jane Roe
-    initials: JR
-    orcid: XXXX-XXXX-XXXX-XXXX
-    email: jane.roe@whatever.edu
-    affiliations:
-      - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
+      lastapproved: !!str 2026-01-14
+  - name: Ben Sulser
+    # initials: XX
+    # orcid: 0000-0001-2345-6789
+    # github: janedoe
+    email: r.benjamin.sulser@unibe.ch
+    # affiliations:
+    #  - Exemplary institute, Some University, 123 Example St, City, Country
+    # contributions:
+    #     - Conceptualization
+    #     - Data curation
+    #     - Formal analysis
+    #     - Funding acquisition
+    #     - Investigation
+    #     - Methodology
+    #     - Project administration
+    #     - Resources
+    #     - Software
+    #     - Supervision
+    #     - Validation
+    #     - Visualization
+    #     - Writing – original draft
+    #     - Writing – review & editing
+    #   funders:
+    #     - some exemplary institution (Grant 123-456-789)
+    coi:
+      string: ""
+      lastapproved: !!str
+  - name: Sheila Christen
+    # initials: XX
+    # orcid: 0000-0001-2345-6789
+    # github: janedoe
+    email: sheila.christen@students.unibe.ch
+    # affiliations:
+    #  - Exemplary institute, Some University, 123 Example St, City, Country
+    # contributions:
+    #     - Conceptualization
+    #     - Data curation
+    #     - Formal analysis
+    #     - Funding acquisition
+    #     - Investigation
+    #     - Methodology
+    #     - Project administration
+    #     - Resources
+    #     - Software
+    #     - Supervision
+    #     - Validation
+    #     - Visualization
+    #     - Writing – original draft
+    #     - Writing – review & editing
+    #   funders:
+    #     - some exemplary institution (Grant 123-456-789)
+    coi:
+      string: ""
+      lastapproved: !!str
+    corresponding: false
+  - name: Katie Peichel
+    # initials: XX
+    # orcid: 0000-0001-2345-6789
+    # github: janedoe
+    email: catherine.peichel@unibe.ch
+    # affiliations:
+    #  - Exemplary institute, Some University, 123 Example St, City, Country
+    # contributions:
+    #     - Conceptualization
+    #     - Data curation
+    #     - Formal analysis
+    #     - Funding acquisition
+    #     - Investigation
+    #     - Methodology
+    #     - Project administration
+    #     - Resources
+    #     - Software
+    #     - Supervision
+    #     - Validation
+    #     - Visualization
+    #     - Writing – original draft
+    #     - Writing – review & editing
+    #   funders:
+    #     - some exemplary institution (Grant 123-456-789)  
+    coi:
+      string: ""
+      lastapproved: !!str
+    corresponding: false
+  - name: Ruslan Hlushchuk
+    # initials: XX
+    # orcid: 0000-0001-2345-6789
+    # github: janedoe
+    email: ruslan.hlushchuk@unibe.ch
+    # affiliations:
+    #  - Exemplary institute, Some University, 123 Example St, City, Country
+    # contributions:
+    #     - Conceptualization
+    #     - Data curation
+    #     - Formal analysis
+    #     - Funding acquisition
+    #     - Investigation
+    #     - Methodology
+    #     - Project administration
+    #     - Resources
+    #     - Software
+    #     - Supervision
+    #     - Validation
+    #     - Visualization
+    #     - Writing – original draft
+    #     - Writing – review & editing
+    #   funders:
+    #     - some exemplary institution (Grant 123-456-789)  
+    coi:
+      string: ""
+      lastapproved: !!str
     corresponding: true
