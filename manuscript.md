@@ -7,7 +7,7 @@ keywords:
 lang: en-US
 date-meta: '2026-01-13'
 author-meta:
-- John Doe
+- David Haberthür
 - Jane Roe
 header-includes: |
   <!--
@@ -23,18 +23,17 @@ header-includes: |
   <meta name="dc.date" content="2026-01-13" />
   <meta name="citation_publication_date" content="2026-01-13" />
   <meta property="article:published_time" content="2026-01-13" />
-  <meta name="dc.modified" content="2026-01-13T15:32:07+00:00" />
-  <meta property="article:modified_time" content="2026-01-13T15:32:07+00:00" />
+  <meta name="dc.modified" content="2026-01-13T15:34:52+00:00" />
+  <meta property="article:modified_time" content="2026-01-13T15:34:52+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
   <meta name="dc.publisher" content="Manubot" />
   <meta name="citation_journal_title" content="Manubot" />
   <meta name="citation_technical_report_institution" content="Manubot" />
-  <meta name="citation_author" content="John Doe" />
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
-  <meta name="twitter:creator" content="@johndoe" />
+  <meta name="citation_author" content="David Haberthür" />
+  <meta name="citation_author_institution" content="Institute of Anatomy, University of Bern, Baltzerstrasse 2, 3012 Bern, Switzerland" />
+  <meta name="citation_author_orcid" content="0000-0003-3388-9187" />
   <meta name="citation_author" content="Jane Roe" />
   <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
   <meta name="citation_author_institution" content="Department of Whatever, University of Something" />
@@ -45,9 +44,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/ca748bf4e80a830d7bee69a20b1fae18e028d9e6/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/ca748bf4e80a830d7bee69a20b1fae18e028d9e6/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/ca748bf4e80a830d7bee69a20b1fae18e028d9e6/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/3dc672e5f5eb3cab7a05ae39a852e53948d6c177/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/3dc672e5f5eb3cab7a05ae39a852e53948d6c177/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/3dc672e5f5eb3cab7a05ae39a852e53948d6c177/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +68,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/ca748bf4e80a830d7bee69a20b1fae18e028d9e6/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/3dc672e5f5eb3cab7a05ae39a852e53948d6c177/))
 was automatically generated
-from [habi/sticklebacks-manuscript@ca748bf](https://github.com/habi/sticklebacks-manuscript/tree/ca748bf4e80a830d7bee69a20b1fae18e028d9e6)
+from [habi/sticklebacks-manuscript@3dc672e](https://github.com/habi/sticklebacks-manuscript/tree/3dc672e5f5eb3cab7a05ae39a852e53948d6c177)
 on January 13, 2026.
 </em></small>
 
@@ -81,20 +80,17 @@ on January 13, 2026.
 
 
 
-+ **John Doe**
++ **David Haberthür**
   <br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
+    [0000-0003-3388-9187](https://orcid.org/0000-0003-3388-9187)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
-    [johndoe](https://github.com/johndoe)
-    · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
-    [johndoe](https://twitter.com/johndoe)
+    [habi](https://github.com/habi)
     · ![Mastodon icon](images/mastodon.svg){.inline_icon width=16 height=16}
-    [\@johndoe@mastodon.social](https://mastodon.social/@johndoe)
+    [\@habi@mastodon.social](https://mastodon.social/@habi)
     <br>
   <small>
-     Department of Something, University of Whatever
-     · Funded by Grant XXXXXXXX
+     Institute of Anatomy, University of Bern, Baltzerstrasse 2, 3012 Bern, Switzerland
   </small>
 
 + **Jane Roe**
