@@ -7,18 +7,15 @@ keywords:
   - manubot
 lang: en-US
 authors:
-  - github: johndoe
-    name: John Doe
-    initials: JD
-    orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: johndoe
-    mastodon: johndoe
+  - github: habi
+    name: David Haberthür 
+    initials: DH
+    orcid: 0000-0003-3388-9187
+    mastodon: habi
     mastodon-server: mastodon.social
-    email: john.doe@something.com
+    email: david.haberthuer@unibe.ch
     affiliations:
-      - Department of Something, University of Whatever
-    funders:
-      - Grant XXXXXXXX
+      - Institute of Anatomy, University of Bern, Baltzerstrasse 2, 3012 Bern, Switzerland
   - github: janeroe
     name: Jane Roe
     initials: JR
