@@ -26,8 +26,8 @@ header-includes: |
   <meta name="dc.date" content="2026-01-14" />
   <meta name="citation_publication_date" content="2026-01-14" />
   <meta property="article:published_time" content="2026-01-14" />
-  <meta name="dc.modified" content="2026-01-14T09:49:22+00:00" />
-  <meta property="article:modified_time" content="2026-01-14T09:49:22+00:00" />
+  <meta name="dc.modified" content="2026-01-14T10:04:57+00:00" />
+  <meta property="article:modified_time" content="2026-01-14T10:04:57+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/3b159e925e3e4e5ea1aba26242b76bb749220d3b/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/3b159e925e3e4e5ea1aba26242b76bb749220d3b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/3b159e925e3e4e5ea1aba26242b76bb749220d3b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/8dfd8d12196019cddc8bbb2852d78456adb0fd4a/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/8dfd8d12196019cddc8bbb2852d78456adb0fd4a/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/8dfd8d12196019cddc8bbb2852d78456adb0fd4a/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,9 +71,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/3b159e925e3e4e5ea1aba26242b76bb749220d3b/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/8dfd8d12196019cddc8bbb2852d78456adb0fd4a/))
 was automatically generated
-from [habi/sticklebacks-manuscript@3b159e9](https://github.com/habi/sticklebacks-manuscript/tree/3b159e925e3e4e5ea1aba26242b76bb749220d3b)
+from [habi/sticklebacks-manuscript@8dfd8d1](https://github.com/habi/sticklebacks-manuscript/tree/8dfd8d12196019cddc8bbb2852d78456adb0fd4a)
 on January 14, 2026.
 </em></small>
 
@@ -120,7 +120,7 @@ on January 14, 2026.
 ::: {#correspondence}
 ✉ — Correspondence possible via [GitHub Issues](https://github.com/habi/sticklebacks-manuscript/issues)
 or email to
-Ruslan Hlushchuk \<\>.
+Ruslan Hlushchuk \<ruslan.hlushchuk@unibe.ch\>.
 
 
 :::
@@ -171,11 +171,11 @@ Ruslan Hlushchuk \<\>.
 
 |Author|Competing Interests|Last Reviewed|
 |---|---|---|
-|David Haberthür|None|2025-06-27|
+|David Haberthür|None|2026-01-14|
 |Ben Sulser|||
 |Sheila Christen|||
-|Katie Peichel||2025-08-19|
-|Ruslan Hlushchuk||2025-08-19|
+|Katie Peichel|||
+|Ruslan Hlushchuk|||
 
 
 ## Acknowledgements {.page_break_before}
