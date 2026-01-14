@@ -1,2 +1,3 @@
 content/03.materials_methods.md:3:habi
 content/03.materials_methods.md:3:Jupyter
+content/07.contributions.md:7:curation

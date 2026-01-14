@@ -26,8 +26,8 @@ header-includes: |
   <meta name="dc.date" content="2026-01-14" />
   <meta name="citation_publication_date" content="2026-01-14" />
   <meta property="article:published_time" content="2026-01-14" />
-  <meta name="dc.modified" content="2026-01-14T10:50:08+00:00" />
-  <meta property="article:modified_time" content="2026-01-14T10:50:08+00:00" />
+  <meta name="dc.modified" content="2026-01-14T10:55:01+00:00" />
+  <meta property="article:modified_time" content="2026-01-14T10:55:01+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/648b85f7e0c0a51f7f0f4a9234f8355c7003d8ba/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/648b85f7e0c0a51f7f0f4a9234f8355c7003d8ba/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/648b85f7e0c0a51f7f0f4a9234f8355c7003d8ba/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/afc8e7e1a4aed492ce0c02cc4723b9d7e4299632/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/afc8e7e1a4aed492ce0c02cc4723b9d7e4299632/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/afc8e7e1a4aed492ce0c02cc4723b9d7e4299632/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,9 +71,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/648b85f7e0c0a51f7f0f4a9234f8355c7003d8ba/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/afc8e7e1a4aed492ce0c02cc4723b9d7e4299632/))
 was automatically generated
-from [habi/sticklebacks-manuscript@648b85f](https://github.com/habi/sticklebacks-manuscript/tree/648b85f7e0c0a51f7f0f4a9234f8355c7003d8ba)
+from [habi/sticklebacks-manuscript@afc8e7e](https://github.com/habi/sticklebacks-manuscript/tree/afc8e7e1a4aed492ce0c02cc4723b9d7e4299632)
 on January 14, 2026.
 </em></small>
 
@@ -144,6 +144,28 @@ Ruslan Hlushchuk \<ruslan.hlushchuk@unibe.ch\>.
 
 
 ## Conclusion {.page_break_before}
+
+
+## Author Contributions {.page_break_before}
+
+[Contributor Roles Taxonomy (CRediT)](https://credit.niso.org/), as defined in [@doi:10.3789/ansi.niso.z39.104-2022]:
+
+
+
+
+
+
+- [Data curation](https://credit.niso.org/contributor-roles/data-curation/): David Haberthür
+- [Formal analysis](https://credit.niso.org/contributor-roles/formal-analysis/): David Haberthür
+- [Investigation](https://credit.niso.org/contributor-roles/investigation/): David Haberthür
+- [Methodology](https://credit.niso.org/contributor-roles/methodology/): David Haberthür
+- [Project administration](https://credit.niso.org/contributor-roles/project-administration/): David Haberthür
+- [Software](https://credit.niso.org/contributor-roles/software/): David Haberthür
+- [Validation](https://credit.niso.org/contributor-roles/validation/): David Haberthür
+- [Visualization](https://credit.niso.org/contributor-roles/visualization/): David Haberthür
+- [Writing – original draft](https://credit.niso.org/contributor-roles/writing---original-draft/): David Haberthür
+- [Writing – review & editing](https://credit.niso.org/contributor-roles/writing---review-&-editing/): David Haberthür
+
 
 
 ## Competing Interest
