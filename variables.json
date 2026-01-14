@@ -10,12 +10,12 @@
     "date-meta": "2026-01-14",
     "author-meta": [
       "David Haberthür",
-      "Pui Ching Chu",
-      "Larisa Petra Kaija",
-      "Bernhard Voelkl",
-      "Hanno Würbel"
+      "Ben Sulser",
+      "Sheila Christen",
+      "Katie Peichel",
+      "Ruslan Hlushchuk"
     ],
-    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta name=\"dc.title\" content=\"microCT imaging of threespine stickleback\" />\n<meta name=\"citation_title\" content=\"microCT imaging of threespine stickleback\" />\n<meta property=\"og:title\" content=\"microCT imaging of threespine stickleback\" />\n<meta property=\"twitter:title\" content=\"microCT imaging of threespine stickleback\" />\n<meta name=\"dc.date\" content=\"2026-01-14\" />\n<meta name=\"citation_publication_date\" content=\"2026-01-14\" />\n<meta property=\"article:published_time\" content=\"2026-01-14\" />\n<meta name=\"dc.modified\" content=\"2026-01-14T09:40:38+00:00\" />\n<meta property=\"article:modified_time\" content=\"2026-01-14T09:40:38+00:00\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"David Haberthür\" />\n<meta name=\"citation_author_institution\" content=\"Institute of Anatomy, University of Bern, Baltzerstrasse 2, 3012 Bern, Switzerland\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3388-9187\" />\n<meta name=\"citation_author\" content=\"Pui Ching Chu\" />\n<meta name=\"citation_author_institution\" content=\"Animal Welfare Division, Veterinary Public Health Institute, University of Bern, Länggassstrasse 120, CH-3012 Bern, Switzerland\" />\n<meta name=\"citation_author_orcid\" content=\"0009-0006-5408-300X\" />\n<meta name=\"citation_author\" content=\"Larisa Petra Kaija\" />\n<meta name=\"citation_author_institution\" content=\"Animal Welfare Division, Veterinary Public Health Institute, University of Bern, Länggassstrasse 120, 3012 Bern, Switzerland\" />\n<meta name=\"citation_author_orcid\" content=\"0009-0001-1871-5915\" />\n<meta name=\"citation_author\" content=\"Bernhard Voelkl\" />\n<meta name=\"citation_author_institution\" content=\"Animal Welfare Division, Veterinary Public Health Institute, University of Bern, Länggassstrasse 120, 3012 Bern, Switzerland\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-5454-2508\" />\n<meta name=\"citation_author\" content=\"Hanno Würbel\" />\n<meta name=\"citation_author_institution\" content=\"Animal Welfare Division, Veterinary Public Health Institute, University of Bern, Länggassstrasse 120, 3012 Bern, Switzerland\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-2934-3010\" />\n<link rel=\"canonical\" href=\"https://habi.github.io/sticklebacks-manuscript/\" />\n<meta property=\"og:url\" content=\"https://habi.github.io/sticklebacks-manuscript/\" />\n<meta property=\"twitter:url\" content=\"https://habi.github.io/sticklebacks-manuscript/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://habi.github.io/sticklebacks-manuscript/\" />\n<meta name=\"citation_pdf_url\" content=\"https://habi.github.io/sticklebacks-manuscript/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://habi.github.io/sticklebacks-manuscript/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://habi.github.io/sticklebacks-manuscript/v/c91d668d9e711add9cb019e1b1d6a3c30e015958/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://habi.github.io/sticklebacks-manuscript/v/c91d668d9e711add9cb019e1b1d6a3c30e015958/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://habi.github.io/sticklebacks-manuscript/v/c91d668d9e711add9cb019e1b1d6a3c30e015958/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->\n",
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta name=\"dc.title\" content=\"microCT imaging of threespine stickleback\" />\n<meta name=\"citation_title\" content=\"microCT imaging of threespine stickleback\" />\n<meta property=\"og:title\" content=\"microCT imaging of threespine stickleback\" />\n<meta property=\"twitter:title\" content=\"microCT imaging of threespine stickleback\" />\n<meta name=\"dc.date\" content=\"2026-01-14\" />\n<meta name=\"citation_publication_date\" content=\"2026-01-14\" />\n<meta property=\"article:published_time\" content=\"2026-01-14\" />\n<meta name=\"dc.modified\" content=\"2026-01-14T09:49:22+00:00\" />\n<meta property=\"article:modified_time\" content=\"2026-01-14T09:49:22+00:00\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"David Haberthür\" />\n<meta name=\"citation_author_institution\" content=\"Institute of Anatomy, University of Bern, Baltzerstrasse 2, 3012 Bern, Switzerland\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3388-9187\" />\n<meta name=\"citation_author\" content=\"Ben Sulser\" />\n<meta name=\"citation_author\" content=\"Sheila Christen\" />\n<meta name=\"citation_author\" content=\"Katie Peichel\" />\n<meta name=\"citation_author\" content=\"Ruslan Hlushchuk\" />\n<link rel=\"canonical\" href=\"https://habi.github.io/sticklebacks-manuscript/\" />\n<meta property=\"og:url\" content=\"https://habi.github.io/sticklebacks-manuscript/\" />\n<meta property=\"twitter:url\" content=\"https://habi.github.io/sticklebacks-manuscript/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://habi.github.io/sticklebacks-manuscript/\" />\n<meta name=\"citation_pdf_url\" content=\"https://habi.github.io/sticklebacks-manuscript/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://habi.github.io/sticklebacks-manuscript/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://habi.github.io/sticklebacks-manuscript/v/3b159e925e3e4e5ea1aba26242b76bb749220d3b/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://habi.github.io/sticklebacks-manuscript/v/3b159e925e3e4e5ea1aba26242b76bb749220d3b/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://habi.github.io/sticklebacks-manuscript/v/3b159e925e3e4e5ea1aba26242b76bb749220d3b/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->\n",
     "bibliography": [
       "content/manual-references.json"
     ],
@@ -27,7 +27,7 @@
   "manubot": {
     "date": "2026-01-14",
     "date_long": "January 14, 2026",
-    "generated": "2026-01-14T09:40:38+00:00",
+    "generated": "2026-01-14T09:49:22+00:00",
     "generated_date_long": "January 14, 2026",
     "randomize_author_order": false,
     "authors": [
@@ -64,122 +64,46 @@
         ]
       },
       {
-        "name": "Pui Ching Chu",
-        "initials": "PC",
-        "orcid": "0009-0006-5408-300X",
-        "github": "puipuichu",
-        "email": "pui.chu@unibe.ch",
-        "affiliations": [
-          "Animal Welfare Division, Veterinary Public Health Institute, University of Bern, Länggassstrasse 120, CH-3012 Bern, Switzerland"
-        ],
-        "contributions": [
-          "Investigation",
-          "Methodology",
-          "Project administration",
-          "Resources",
-          "Validation",
-          "Writing – review & editing"
-        ],
-        "funders": [
-          "Swiss National Science Foundation (SNSF) (Grant 310030_219196)"
-        ],
+        "name": "Ben Sulser",
         "coi": {
-          "string": "None",
-          "lastapproved": "2025-06-27"
-        },
-        "corresponding": false,
-        "affiliation_numbers": [
-          2
-        ]
-      },
-      {
-        "name": "Larisa Petra Kaija",
-        "initials": "LPK",
-        "orcid": "0009-0001-1871-5915",
-        "github": "LarisaKaija",
-        "email": "larisa.kaija@unibe.ch",
-        "affiliations": [
-          "Animal Welfare Division, Veterinary Public Health Institute, University of Bern, Länggassstrasse 120, 3012 Bern, Switzerland"
-        ],
-        "contributions": [
-          "Data curation",
-          "Investigation",
-          "Methodology",
-          "Validation",
-          "Writing – review & editing"
-        ],
-        "coi": {
-          "string": "None",
+          "string": "",
           "lastapproved": ""
         },
         "corresponding": false,
-        "affiliation_numbers": [
-          3
-        ]
+        "affiliation_numbers": []
       },
       {
-        "name": "Bernhard Voelkl",
-        "initials": "BV",
-        "orcid": "0000-0001-5454-2508",
-        "github": "BernhardVoelkl",
-        "email": "bernhard.voelkl@unibe.ch",
-        "affiliations": [
-          "Animal Welfare Division, Veterinary Public Health Institute, University of Bern, Länggassstrasse 120, 3012 Bern, Switzerland"
-        ],
-        "contributions": [
-          "Conceptualization",
-          "Funding acquisition",
-          "Formal analysis",
-          "Methodology",
-          "Project administration",
-          "Writing – review & editing"
-        ],
+        "name": "Sheila Christen",
         "coi": {
-          "string": "None",
+          "string": "",
+          "lastapproved": ""
+        },
+        "corresponding": false,
+        "affiliation_numbers": []
+      },
+      {
+        "name": "Katie Peichel",
+        "coi": {
+          "string": "",
           "lastapproved": "2025-08-19"
         },
         "corresponding": false,
-        "affiliation_numbers": [
-          3
-        ]
+        "affiliation_numbers": []
       },
       {
-        "name": "Hanno Würbel",
-        "initials": "HW",
-        "orcid": "0000-0002-2934-3010",
-        "github": null,
-        "email": "hanno wuerbel@unibe.ch",
-        "affiliations": [
-          "Animal Welfare Division, Veterinary Public Health Institute, University of Bern, Länggassstrasse 120, 3012 Bern, Switzerland"
-        ],
-        "contributions": [
-          "Conceptualization",
-          "Funding acquisition",
-          "Project administration",
-          "Writing – review & editing"
-        ],
+        "name": "Ruslan Hlushchuk",
         "coi": {
-          "string": "None",
+          "string": "",
           "lastapproved": "2025-08-19"
         },
-        "corresponding": false,
-        "affiliation_numbers": [
-          3
-        ]
+        "corresponding": true,
+        "affiliation_numbers": []
       }
     ],
     "affiliations": [
       {
         "affiliation": "Institute of Anatomy, University of Bern, Baltzerstrasse 2, 3012 Bern, Switzerland",
         "affiliation_number": 1
-      },
-      {
-        "affiliation": "Animal Welfare Division, Veterinary Public Health Institute, University of Bern, Länggassstrasse 120, CH-3012 Bern, Switzerland",
-        "affiliation_number": 2
-      },
-      {
-        "affiliation": "Animal Welfare Division, Veterinary Public Health Institute, University of Bern, Länggassstrasse 120, 3012 Bern, Switzerland",
-        "affiliation_number": 3
       }
     ],
     "ci_source": {
@@ -187,15 +111,15 @@
       "repo_slug": "habi/sticklebacks-manuscript",
       "repo_owner": "habi",
       "repo_name": "sticklebacks-manuscript",
-      "commit": "c91d668d9e711add9cb019e1b1d6a3c30e015958",
-      "triggering_commit": "c91d668d9e711add9cb019e1b1d6a3c30e015958",
-      "build_url": "https://github.com/habi/sticklebacks-manuscript/commit/c91d668d9e711add9cb019e1b1d6a3c30e015958/checks",
-      "job_url": "https://github.com/habi/sticklebacks-manuscript/actions/runs/20989409717"
+      "commit": "3b159e925e3e4e5ea1aba26242b76bb749220d3b",
+      "triggering_commit": "3b159e925e3e4e5ea1aba26242b76bb749220d3b",
+      "build_url": "https://github.com/habi/sticklebacks-manuscript/commit/3b159e925e3e4e5ea1aba26242b76bb749220d3b/checks",
+      "job_url": "https://github.com/habi/sticklebacks-manuscript/actions/runs/20989664416"
     },
     "html_url": "https://habi.github.io/sticklebacks-manuscript/",
     "pdf_url": "https://habi.github.io/sticklebacks-manuscript/manuscript.pdf",
-    "html_url_versioned": "https://habi.github.io/sticklebacks-manuscript/v/c91d668d9e711add9cb019e1b1d6a3c30e015958/",
-    "pdf_url_versioned": "https://habi.github.io/sticklebacks-manuscript/v/c91d668d9e711add9cb019e1b1d6a3c30e015958/manuscript.pdf",
+    "html_url_versioned": "https://habi.github.io/sticklebacks-manuscript/v/3b159e925e3e4e5ea1aba26242b76bb749220d3b/",
+    "pdf_url_versioned": "https://habi.github.io/sticklebacks-manuscript/v/3b159e925e3e4e5ea1aba26242b76bb749220d3b/manuscript.pdf",
     "manubot_version": "0.6.1",
     "rootstock_commit": "ca748bf4e80a830d7bee69a20b1fae18e028d9e6",
     "manuscript_stats": {
