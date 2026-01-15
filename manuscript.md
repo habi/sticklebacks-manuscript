@@ -26,8 +26,8 @@ header-includes: |
   <meta name="dc.date" content="2026-01-15" />
   <meta name="citation_publication_date" content="2026-01-15" />
   <meta property="article:published_time" content="2026-01-15" />
-  <meta name="dc.modified" content="2026-01-15T08:13:03+00:00" />
-  <meta property="article:modified_time" content="2026-01-15T08:13:03+00:00" />
+  <meta name="dc.modified" content="2026-01-15T09:58:55+00:00" />
+  <meta property="article:modified_time" content="2026-01-15T09:58:55+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -49,9 +49,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/54bbd9f33a5d1655fad699a58c03ff4f629968cb/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/54bbd9f33a5d1655fad699a58c03ff4f629968cb/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/54bbd9f33a5d1655fad699a58c03ff4f629968cb/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/b94bcb64e37ad166d3d218938ff0db4d52f8e462/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/b94bcb64e37ad166d3d218938ff0db4d52f8e462/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/b94bcb64e37ad166d3d218938ff0db4d52f8e462/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -73,9 +73,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/54bbd9f33a5d1655fad699a58c03ff4f629968cb/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/b94bcb64e37ad166d3d218938ff0db4d52f8e462/))
 was automatically generated
-from [habi/sticklebacks-manuscript@54bbd9f](https://github.com/habi/sticklebacks-manuscript/tree/54bbd9f33a5d1655fad699a58c03ff4f629968cb)
+from [habi/sticklebacks-manuscript@b94bcb6](https://github.com/habi/sticklebacks-manuscript/tree/b94bcb64e37ad166d3d218938ff0db4d52f8e462)
 on January 15, 2026.
 </em></small>
 
@@ -149,6 +149,39 @@ Ruslan Hlushchuk \<ruslan.hlushchuk@unibe.ch\>.
 ### microtomographic imaging
 
 - Sample holder generated with [OpenSCAD](https://openscad.org/), visible at https://github.com/TomoGraphics/Hol3Drs/blob/master/STL/Stickleback.Multiple.stl
+
+```stl
+solid cube_corner
+  facet normal 0.0 -1.0 0.0
+    outer loop
+      vertex 0.0 0.0 0.0
+      vertex 1.0 0.0 0.0
+      vertex 0.0 0.0 1.0
+    endloop
+  endfacet
+  facet normal 0.0 0.0 -1.0
+    outer loop
+      vertex 0.0 0.0 0.0
+      vertex 0.0 1.0 0.0
+      vertex 1.0 0.0 0.0
+    endloop
+  endfacet
+  facet normal -1.0 0.0 0.0
+    outer loop
+      vertex 0.0 0.0 0.0
+      vertex 0.0 0.0 1.0
+      vertex 0.0 1.0 0.0
+    endloop
+  endfacet
+  facet normal 0.577 0.577 0.577
+    outer loop
+      vertex 1.0 0.0 0.0
+      vertex 0.0 1.0 0.0
+      vertex 0.0 0.0 1.0
+    endloop
+  endfacet
+endsolid
+```
 
 ### Data analysis
 
