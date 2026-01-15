@@ -1,5 +1,25 @@
 [
   {
+    "URL": "https://dask.org",
+    "author": [
+      {
+        "literal": "Dask Development Team"
+      }
+    ],
+    "id": "hj1CnyWB",
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "title": "Dask: Library for dynamic task scheduling",
+    "title-short": "Dask",
+    "type": "book",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: dask"
+  },
+  {
     "publisher": "Public Library of Science (PLoS)",
     "issue": "6",
     "DOI": "10.1371/journal.pcbi.1007128",

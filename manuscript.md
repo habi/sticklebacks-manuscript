@@ -26,8 +26,8 @@ header-includes: |
   <meta name="dc.date" content="2026-01-15" />
   <meta name="citation_publication_date" content="2026-01-15" />
   <meta property="article:published_time" content="2026-01-15" />
-  <meta name="dc.modified" content="2026-01-15T11:05:44+00:00" />
-  <meta property="article:modified_time" content="2026-01-15T11:05:44+00:00" />
+  <meta name="dc.modified" content="2026-01-15T13:21:00+00:00" />
+  <meta property="article:modified_time" content="2026-01-15T13:21:00+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -49,9 +49,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/2ac157fa564f0288f1154a5d070f122aff1d867f/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/2ac157fa564f0288f1154a5d070f122aff1d867f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/2ac157fa564f0288f1154a5d070f122aff1d867f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/a0542b5d5a81d5bed4306c2c46dfc53fc34171ae/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/a0542b5d5a81d5bed4306c2c46dfc53fc34171ae/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/a0542b5d5a81d5bed4306c2c46dfc53fc34171ae/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -59,7 +59,7 @@ header-includes: |
   <meta name="theme-color" content="#ad1457" />
   <!-- end Manubot generated metadata -->
 bibliography:
-- content/manual-references.json
+- content/manual-references.bib
 manubot-output-bibliography: output/references.json
 manubot-output-citekeys: output/citations.tsv
 manubot-requests-cache-path: ci/cache/requests-cache
@@ -73,9 +73,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/2ac157fa564f0288f1154a5d070f122aff1d867f/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/a0542b5d5a81d5bed4306c2c46dfc53fc34171ae/))
 was automatically generated
-from [habi/sticklebacks-manuscript@2ac157f](https://github.com/habi/sticklebacks-manuscript/tree/2ac157fa564f0288f1154a5d070f122aff1d867f)
+from [habi/sticklebacks-manuscript@a0542b5](https://github.com/habi/sticklebacks-manuscript/tree/a0542b5d5a81d5bed4306c2c46dfc53fc34171ae)
 on January 15, 2026.
 </em></small>
 
@@ -148,11 +148,22 @@ Ruslan Hlushchuk \<ruslan.hlushchuk@unibe.ch\>.
 
 ### microtomographic imaging
 
+- Scanned on a [Bruker SkyScan 2214](https://www.bruker.com/en/products-and-solutions/diffractometers-and-x-ray-microscopes/3d-x-ray-microscopes/skyscan-2214.html)
 - Sample holder generated with [OpenSCAD](https://openscad.org/), available online at [GitHub](https://github.com/TomoGraphics/Hol3Drs/blob/master/STL/Stickleback.Multiple.stl) [@doi:10.5281/zenodo.2587555]
+  - Scanning several fish toghether to efficiently use machine time
+  - Full in Bruker workflow
+  - Results in PNG stacks on disk
 
 ### Data analysis
 
 - [Jupyter notebooks](https://github.com/habi/sticklebacks)
+  - Efficiently loading data from disk with [`dask`](https://www.dask.org/) [@dask]
+  - Extract position of single fish (all scanned together), based on the MIP of the scan
+  - Crop out each fish (with a buffer) and write to cropped dataset
+    - Cropped datasets are saved to discrete folders for easy handling.
+      In both original gray-scale plus as thresholded dataset, e.g. binarized into bone and "not bone".
+      These sare saved out as [`zarr`](https://zarr.dev/) [@wiki:Zarr_(data_format)] and [`nrrd`](https://teem.sourceforge.net/nrrd/) files.
+
 
 ## Results {.page_break_before}
 
