@@ -26,8 +26,8 @@ header-includes: |
   <meta name="dc.date" content="2026-01-15" />
   <meta name="citation_publication_date" content="2026-01-15" />
   <meta property="article:published_time" content="2026-01-15" />
-  <meta name="dc.modified" content="2026-01-15T13:32:42+00:00" />
-  <meta property="article:modified_time" content="2026-01-15T13:32:42+00:00" />
+  <meta name="dc.modified" content="2026-01-15T13:37:00+00:00" />
+  <meta property="article:modified_time" content="2026-01-15T13:37:00+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -49,9 +49,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/835b68c9c3c1c75482ebcdb6133409d738e7b873/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/835b68c9c3c1c75482ebcdb6133409d738e7b873/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/835b68c9c3c1c75482ebcdb6133409d738e7b873/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/b1a8023595fdc2338581a2953b63843be0ad26c9/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/b1a8023595fdc2338581a2953b63843be0ad26c9/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/b1a8023595fdc2338581a2953b63843be0ad26c9/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -73,9 +73,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/835b68c9c3c1c75482ebcdb6133409d738e7b873/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/b1a8023595fdc2338581a2953b63843be0ad26c9/))
 was automatically generated
-from [habi/sticklebacks-manuscript@835b68c](https://github.com/habi/sticklebacks-manuscript/tree/835b68c9c3c1c75482ebcdb6133409d738e7b873)
+from [habi/sticklebacks-manuscript@b1a8023](https://github.com/habi/sticklebacks-manuscript/tree/b1a8023595fdc2338581a2953b63843be0ad26c9)
 on January 15, 2026.
 </em></small>
 
@@ -161,7 +161,7 @@ Ruslan Hlushchuk \<ruslan.hlushchuk@unibe.ch\>.
   - Crop out each fish (with a buffer) and write to cropped dataset
     - Cropped datasets are saved to discrete folders for easy handling.
       In both original gray-scale plus as thresholded dataset, e.g. binarized into bone and "not bone".
-      These sare saved out as [`zarr`](https://zarr.dev/) [@wiki:Zarr_(data_format)] and [`nrrd`](https://teem.sourceforge.net/nrrd/) files.
+      These sare saved out as [`zarr`](https://zarr.dev/) [@wikidata:Q130377195] and [`nrrd`](https://teem.sourceforge.net/nrrd/) files.
 
 
 ## Results {.page_break_before}
