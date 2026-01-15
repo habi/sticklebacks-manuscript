@@ -26,8 +26,8 @@ header-includes: |
   <meta name="dc.date" content="2026-01-15" />
   <meta name="citation_publication_date" content="2026-01-15" />
   <meta property="article:published_time" content="2026-01-15" />
-  <meta name="dc.modified" content="2026-01-15T14:03:29+00:00" />
-  <meta property="article:modified_time" content="2026-01-15T14:03:29+00:00" />
+  <meta name="dc.modified" content="2026-01-15T14:37:04+00:00" />
+  <meta property="article:modified_time" content="2026-01-15T14:37:04+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -49,9 +49,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/1cc5e34d3aa6725ee704075159d2de3be60ab544/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/1cc5e34d3aa6725ee704075159d2de3be60ab544/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/1cc5e34d3aa6725ee704075159d2de3be60ab544/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/176eab39ea8d49b17ef24dedb81596dfc1a1d33d/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/176eab39ea8d49b17ef24dedb81596dfc1a1d33d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/176eab39ea8d49b17ef24dedb81596dfc1a1d33d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -73,9 +73,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/1cc5e34d3aa6725ee704075159d2de3be60ab544/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/176eab39ea8d49b17ef24dedb81596dfc1a1d33d/))
 was automatically generated
-from [habi/sticklebacks-manuscript@1cc5e34](https://github.com/habi/sticklebacks-manuscript/tree/1cc5e34d3aa6725ee704075159d2de3be60ab544)
+from [habi/sticklebacks-manuscript@176eab3](https://github.com/habi/sticklebacks-manuscript/tree/176eab39ea8d49b17ef24dedb81596dfc1a1d33d)
 on January 15, 2026.
 </em></small>
 
@@ -152,8 +152,11 @@ Ruslan Hlushchuk \<ruslan.hlushchuk@unibe.ch\>.
   - Scanning several fish toghether to efficiently use machine time
   - Full in Bruker workflow
   - Results in PNG stacks on disk
+- All log files available here: https://github.com/habi/sticklebacks/tree/main/logfiles
 
 ### Data analysis
+
+#### Preparation and handling of tomographic datasets
 
 - [Jupyter notebooks](https://github.com/habi/sticklebacks) [@doi:10.5281/zenodo.18257528]
   - Efficiently loading data from disk with [`dask`](https://www.dask.org/) [@dask]
@@ -171,11 +174,22 @@ Ruslan Hlushchuk \<ruslan.hlushchuk@unibe.ch\>.
 
 ![Doublechecking crop extent and fish ID.](images/Sticklebucket_H.rec.Regions.Check.png){#fig:cropping}
 
+#### Extraction of features of interest
+
+- Biomedisa [@doi:10.1038/s41467-020-19303-w]
+
 ## Results {.page_break_before}
 
+- 3D shape variation on internal pharyngobranchial bone.
+  Only possible to get this information in 3D.
 
 ## Discussion {.page_break_before}
 
+- Both *repeatable* and *reproducible* research
+- Automated cropping out of single fish from combined scan very efficiently uses machine time.
+  Several fish can be scanned together, splitting is performed after the fact, reproducibly and without manual input.
+- Combination of methdes cust down on time **a lot**.  
+- Biomedisa makes more "extraction" possible. Other biological questions can be answered, too.
 
 ## Conclusion {.page_break_before}
 
