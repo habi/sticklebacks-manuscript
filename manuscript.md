@@ -5,7 +5,7 @@ keywords:
 - sticklebacks
 - ecology
 lang: en-US
-date-meta: '2026-01-14'
+date-meta: '2026-01-15'
 author-meta:
 - David Haberthür
 - Ben Sulser
@@ -23,11 +23,11 @@ header-includes: |
   <meta name="citation_title" content="microCT imaging of threespine stickleback" />
   <meta property="og:title" content="microCT imaging of threespine stickleback" />
   <meta property="twitter:title" content="microCT imaging of threespine stickleback" />
-  <meta name="dc.date" content="2026-01-14" />
-  <meta name="citation_publication_date" content="2026-01-14" />
-  <meta property="article:published_time" content="2026-01-14" />
-  <meta name="dc.modified" content="2026-01-14T11:06:46+00:00" />
-  <meta property="article:modified_time" content="2026-01-14T11:06:46+00:00" />
+  <meta name="dc.date" content="2026-01-15" />
+  <meta name="citation_publication_date" content="2026-01-15" />
+  <meta property="article:published_time" content="2026-01-15" />
+  <meta name="dc.modified" content="2026-01-15T08:13:03+00:00" />
+  <meta property="article:modified_time" content="2026-01-15T08:13:03+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -35,21 +35,23 @@ header-includes: |
   <meta name="citation_journal_title" content="Manubot" />
   <meta name="citation_technical_report_institution" content="Manubot" />
   <meta name="citation_author" content="David Haberthür" />
-  <meta name="citation_author_institution" content="Institute of Anatomy, University of Bern, Baltzerstrasse 2, 3012 Bern, Switzerland" />
+  <meta name="citation_author_institution" content="microCT research group, Institute of Anatomy, University of Bern, Baltzerstrasse 2, 3012 Bern, Switzerland" />
   <meta name="citation_author_orcid" content="0000-0003-3388-9187" />
   <meta name="citation_author" content="Ben Sulser" />
   <meta name="citation_author" content="Sheila Christen" />
   <meta name="citation_author" content="Katie Peichel" />
   <meta name="citation_author" content="Ruslan Hlushchuk" />
+  <meta name="citation_author_institution" content="microCT research group, Institute of Anatomy, University of Bern, Baltzerstrasse 2, 3012 Bern, Switzerland" />
+  <meta name="citation_author_orcid" content="0000-0001-2345-6789" />
   <link rel="canonical" href="https://habi.github.io/sticklebacks-manuscript/" />
   <meta property="og:url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta property="twitter:url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/afc8e7e1a4aed492ce0c02cc4723b9d7e4299632/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/afc8e7e1a4aed492ce0c02cc4723b9d7e4299632/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/afc8e7e1a4aed492ce0c02cc4723b9d7e4299632/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/54bbd9f33a5d1655fad699a58c03ff4f629968cb/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/54bbd9f33a5d1655fad699a58c03ff4f629968cb/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/54bbd9f33a5d1655fad699a58c03ff4f629968cb/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,10 +73,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/afc8e7e1a4aed492ce0c02cc4723b9d7e4299632/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/54bbd9f33a5d1655fad699a58c03ff4f629968cb/))
 was automatically generated
-from [habi/sticklebacks-manuscript@afc8e7e](https://github.com/habi/sticklebacks-manuscript/tree/afc8e7e1a4aed492ce0c02cc4723b9d7e4299632)
-on January 14, 2026.
+from [habi/sticklebacks-manuscript@54bbd9f](https://github.com/habi/sticklebacks-manuscript/tree/54bbd9f33a5d1655fad699a58c03ff4f629968cb)
+on January 15, 2026.
 </em></small>
 
 
@@ -93,7 +95,7 @@ on January 14, 2026.
     [\@habi@mastodon.social](https://mastodon.social/@habi)
     <br>
   <small>
-     Institute of Anatomy, University of Bern, Baltzerstrasse 2, 3012 Bern, Switzerland
+     microCT research group, Institute of Anatomy, University of Bern, Baltzerstrasse 2, 3012 Bern, Switzerland
   </small>
 
 + **Ben Sulser**
@@ -113,7 +115,13 @@ on January 14, 2026.
 
 + **Ruslan Hlushchuk**
   ^[✉](#correspondence)^<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0001-2345-6789](https://orcid.org/0000-0001-2345-6789)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [RuslanHlushchuk](https://github.com/RuslanHlushchuk)
+    <br>
   <small>
+     microCT research group, Institute of Anatomy, University of Bern, Baltzerstrasse 2, 3012 Bern, Switzerland
   </small>
 
 
@@ -131,11 +139,20 @@ Ruslan Hlushchuk \<ruslan.hlushchuk@unibe.ch\>.
 
 ## Introduction {.page_break_before}
 
+- Embedded into [Alaska Stickleback Restoration Project](https://alaskastickleback.com/), [Genomics axis](https://alaskastickleback.com/genomics) where Katie Peichel, Ben Sulser and Sheila Christen are affiliated.
 
 ## Materials & Methods {.page_break_before}
 
-- [Jupyter notebooks](https://github.com/habi/sticklebacks), 
+### Sample preparation
 
+
+### microtomographic imaging
+
+- Sample holder generated with [OpenSCAD](https://openscad.org/), visible at https://github.com/TomoGraphics/Hol3Drs/blob/master/STL/Stickleback.Multiple.stl
+
+### Data analysis
+
+- [Jupyter notebooks](https://github.com/habi/sticklebacks)
 
 ## Results {.page_break_before}
 
