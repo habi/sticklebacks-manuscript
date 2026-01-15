@@ -26,8 +26,8 @@ header-includes: |
   <meta name="dc.date" content="2026-01-15" />
   <meta name="citation_publication_date" content="2026-01-15" />
   <meta property="article:published_time" content="2026-01-15" />
-  <meta name="dc.modified" content="2026-01-15T13:37:00+00:00" />
-  <meta property="article:modified_time" content="2026-01-15T13:37:00+00:00" />
+  <meta name="dc.modified" content="2026-01-15T14:03:29+00:00" />
+  <meta property="article:modified_time" content="2026-01-15T14:03:29+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -49,9 +49,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/b1a8023595fdc2338581a2953b63843be0ad26c9/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/b1a8023595fdc2338581a2953b63843be0ad26c9/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/b1a8023595fdc2338581a2953b63843be0ad26c9/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/1cc5e34d3aa6725ee704075159d2de3be60ab544/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/1cc5e34d3aa6725ee704075159d2de3be60ab544/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/1cc5e34d3aa6725ee704075159d2de3be60ab544/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -73,9 +73,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/b1a8023595fdc2338581a2953b63843be0ad26c9/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/1cc5e34d3aa6725ee704075159d2de3be60ab544/))
 was automatically generated
-from [habi/sticklebacks-manuscript@b1a8023](https://github.com/habi/sticklebacks-manuscript/tree/b1a8023595fdc2338581a2953b63843be0ad26c9)
+from [habi/sticklebacks-manuscript@1cc5e34](https://github.com/habi/sticklebacks-manuscript/tree/1cc5e34d3aa6725ee704075159d2de3be60ab544)
 on January 15, 2026.
 </em></small>
 
@@ -157,12 +157,19 @@ Ruslan Hlushchuk \<ruslan.hlushchuk@unibe.ch\>.
 
 - [Jupyter notebooks](https://github.com/habi/sticklebacks) [@doi:10.5281/zenodo.18257528]
   - Efficiently loading data from disk with [`dask`](https://www.dask.org/) [@dask]
-  - Extract position of single fish (all scanned together), based on the MIP of the scan
-  - Crop out each fish (with a buffer) and write to cropped dataset
+  - Extract position of single fish (all scanned together), based on the MIP of the scan (see Figure @fig:labels).
+  - Crop out each fish (with a buffer) and write to cropped dataset (see Figure @fig:cropping).
     - Cropped datasets are saved to discrete folders for easy handling.
       In both original gray-scale plus as thresholded dataset, e.g. binarized into bone and "not bone".
-      These sare saved out as [`zarr`](https://zarr.dev/) [@wikidata:Q130377195] and [`nrrd`](https://teem.sourceforge.net/nrrd/) files.
+      These are saved out as [`zarr`](https://zarr.dev/) [@wikidata:Q130377195] and [`nrrd`](https://teem.sourceforge.net/nrrd/) files.
+      
+![Maximum intensity projections of one acquired dataset along all three cardinal axes.](images/Sticklebucket_H.rec.MIPs.png){#fig:mips}
 
+![Automatically detected regions based on maximum intensity projection along the rotation axis of the tomographic scan. The regions are numbered consecutively from the top left to the bottom right. These numbers are mapped to the correct fish ID in the next step.](images/Sticklebucket_H.rec.Labels.Detected.png){#fig:labels}
+
+![Mapping lab book notes, photos and detected regions to fish ID.](images/Sticklebucket_H.rec.Labels.Check.png){#fig:checking}
+
+![Doublechecking crop extent and fish ID.](images/Sticklebucket_H.rec.Regions.Check.png){#fig:cropping}
 
 ## Results {.page_break_before}
 
