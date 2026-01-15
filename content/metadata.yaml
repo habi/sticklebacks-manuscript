@@ -15,7 +15,7 @@ authors:
     mastodon-server: mastodon.social
     email: david.haberthuer@unibe.ch
     affiliations:
-      - Institute of Anatomy, University of Bern, Baltzerstrasse 2, 3012 Bern, Switzerland
+      - microCT research group, Institute of Anatomy, University of Bern, Baltzerstrasse 2, 3012 Bern, Switzerland    #  - Exemplary institute, Some University, 123 Example St, City, Country
     contributions:
       - Data curation
       - Formal analysis
@@ -31,7 +31,7 @@ authors:
       string: "None"
       lastapproved: !!str 2026-01-14
   - name: Ben Sulser
-    # initials: XX
+    # initials: XYZ
     # orcid: 0000-0001-2345-6789
     # github: janedoe
     email: r.benjamin.sulser@unibe.ch
@@ -58,7 +58,7 @@ authors:
       string: ""
       lastapproved: !!str
   - name: Sheila Christen
-    # initials: XX
+    # initials: XYZ
     # orcid: 0000-0001-2345-6789
     # github: janedoe
     email: sheila.christen@students.unibe.ch
@@ -86,7 +86,7 @@ authors:
       lastapproved: !!str
     corresponding: false
   - name: Katie Peichel
-    # initials: XX
+    # initials: XYZ
     # orcid: 0000-0001-2345-6789
     # github: janedoe
     email: catherine.peichel@unibe.ch
@@ -114,12 +114,12 @@ authors:
       lastapproved: !!str
     corresponding: false
   - name: Ruslan Hlushchuk
-    # initials: XX
-    # orcid: 0000-0001-2345-6789
-    # github: janedoe
+    initials: RH
+    orcid: 0000-0001-2345-6789
+    github: RuslanHlushchuk
     email: ruslan.hlushchuk@unibe.ch
-    # affiliations:
-    #  - Exemplary institute, Some University, 123 Example St, City, Country
+    affiliations:
+      - microCT research group, Institute of Anatomy, University of Bern, Baltzerstrasse 2, 3012 Bern, Switzerland    #  - Exemplary institute, Some University, 123 Example St, City, Country
     # contributions:
     #     - Conceptualization
     #     - Data curation
