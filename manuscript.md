@@ -5,7 +5,7 @@ keywords:
 - sticklebacks
 - ecology
 lang: en-US
-date-meta: '2026-01-15'
+date-meta: '2026-01-16'
 author-meta:
 - David Haberthür
 - Ben Sulser
@@ -23,11 +23,11 @@ header-includes: |
   <meta name="citation_title" content="microCT imaging of threespine stickleback" />
   <meta property="og:title" content="microCT imaging of threespine stickleback" />
   <meta property="twitter:title" content="microCT imaging of threespine stickleback" />
-  <meta name="dc.date" content="2026-01-15" />
-  <meta name="citation_publication_date" content="2026-01-15" />
-  <meta property="article:published_time" content="2026-01-15" />
-  <meta name="dc.modified" content="2026-01-15T14:37:04+00:00" />
-  <meta property="article:modified_time" content="2026-01-15T14:37:04+00:00" />
+  <meta name="dc.date" content="2026-01-16" />
+  <meta name="citation_publication_date" content="2026-01-16" />
+  <meta property="article:published_time" content="2026-01-16" />
+  <meta name="dc.modified" content="2026-01-16T16:20:14+00:00" />
+  <meta property="article:modified_time" content="2026-01-16T16:20:14+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -38,6 +38,8 @@ header-includes: |
   <meta name="citation_author_institution" content="microCT research group, Institute of Anatomy, University of Bern, Baltzerstrasse 2, 3012 Bern, Switzerland" />
   <meta name="citation_author_orcid" content="0000-0003-3388-9187" />
   <meta name="citation_author" content="Ben Sulser" />
+  <meta name="citation_author_institution" content="Evolutionary Ecology Group, Institute of Ecology and Evolution, University of Bern, Baltzerstrasse 6, 3012 Bern, Switzerland" />
+  <meta name="citation_author_orcid" content="0000-0002-8750-0942" />
   <meta name="citation_author" content="Sheila Christen" />
   <meta name="citation_author" content="Katie Peichel" />
   <meta name="citation_author" content="Ruslan Hlushchuk" />
@@ -49,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/176eab39ea8d49b17ef24dedb81596dfc1a1d33d/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/176eab39ea8d49b17ef24dedb81596dfc1a1d33d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/176eab39ea8d49b17ef24dedb81596dfc1a1d33d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/59c086477f9f5739a9f5972ccc0f332021ecfb32/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/59c086477f9f5739a9f5972ccc0f332021ecfb32/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/59c086477f9f5739a9f5972ccc0f332021ecfb32/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -73,10 +75,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/176eab39ea8d49b17ef24dedb81596dfc1a1d33d/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/59c086477f9f5739a9f5972ccc0f332021ecfb32/))
 was automatically generated
-from [habi/sticklebacks-manuscript@176eab3](https://github.com/habi/sticklebacks-manuscript/tree/176eab39ea8d49b17ef24dedb81596dfc1a1d33d)
-on January 15, 2026.
+from [habi/sticklebacks-manuscript@59c0864](https://github.com/habi/sticklebacks-manuscript/tree/59c086477f9f5739a9f5972ccc0f332021ecfb32)
+on January 16, 2026.
 </em></small>
 
 
@@ -100,7 +102,14 @@ on January 15, 2026.
 
 + **Ben Sulser**
   <br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0002-8750-0942](https://orcid.org/0000-0002-8750-0942)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [sulserrb](https://github.com/sulserrb)
+    <br>
   <small>
+     Evolutionary Ecology Group, Institute of Ecology and Evolution, University of Bern, Baltzerstrasse 6, 3012 Bern, Switzerland
+     · Funded by Bern Burgergemeinde
   </small>
 
 + **Sheila Christen**
@@ -135,6 +144,15 @@ Ruslan Hlushchuk \<ruslan.hlushchuk@unibe.ch\>.
 
 
 ## Abstract {.page_break_before}
+
+Can we predict evolution?
+The threespine stickleback (Gasterosteus aculeatus) is a well-recognized system for understanding adaptation to divergent habitats.
+Populations of benthic and limnetic stickleback differ in a number of phenotypic traits that are associated with shifts in dietary specialization.
+However, analyses of the structures required for feeding – especially the jaws and complex internal branchial anatomy – requires considerable time and expertise, with destructive sampling and fine dissection skills needed for quantitative analysis.
+The advent of µCT and 3D-scanning technology affords non-destructive sampling and an increase the resolution of data available for study, but at the substantial cost of increasing complexity and processing time for each specimen.
+To address these concerns, we developed a rapid and semi-automated segmentation and analysis pipeline based around the Biomedisa Image Segmentation platform for investigating three-dimensional morphological adaptation within the threespine stickleback.
+The pipeline includes splitting a multi-specimen scan into regions of interest for each specimen, reconstruction of targeted anatomy, and morphometric analyses.
+We then applied this pipeline to a sampling effort encompassing hundreds of samples of divergent benthic and limnetic stickleback populations, showcasing the possibility of using high-throughput scanning data to provide tests of ecological and evolutionary hypotheses.  
 
 
 ## Introduction {.page_break_before}
@@ -203,16 +221,20 @@ Ruslan Hlushchuk \<ruslan.hlushchuk@unibe.ch\>.
 
 
 
-- [Data curation](https://credit.niso.org/contributor-roles/data-curation/): David Haberthür
-- [Formal analysis](https://credit.niso.org/contributor-roles/formal-analysis/): David Haberthür
-- [Investigation](https://credit.niso.org/contributor-roles/investigation/): David Haberthür
-- [Methodology](https://credit.niso.org/contributor-roles/methodology/): David Haberthür
-- [Project administration](https://credit.niso.org/contributor-roles/project-administration/): David Haberthür
-- [Software](https://credit.niso.org/contributor-roles/software/): David Haberthür
-- [Validation](https://credit.niso.org/contributor-roles/validation/): David Haberthür
-- [Visualization](https://credit.niso.org/contributor-roles/visualization/): David Haberthür
-- [Writing – original draft](https://credit.niso.org/contributor-roles/writing---original-draft/): David Haberthür
-- [Writing – review & editing](https://credit.niso.org/contributor-roles/writing---review-&-editing/): David Haberthür
+- [Conceptualization](https://credit.niso.org/contributor-roles/conceptualization/): Ben Sulser
+- [Data curation](https://credit.niso.org/contributor-roles/data-curation/): David Haberthür, Ben Sulser
+- [Formal analysis](https://credit.niso.org/contributor-roles/formal-analysis/): David Haberthür, Ben Sulser
+- [Funding acquisition](https://credit.niso.org/contributor-roles/funding-acquisition/): Ben Sulser
+- [Investigation](https://credit.niso.org/contributor-roles/investigation/): David Haberthür, Ben Sulser
+- [Methodology](https://credit.niso.org/contributor-roles/methodology/): David Haberthür, Ben Sulser
+- [Project administration](https://credit.niso.org/contributor-roles/project-administration/): David Haberthür, Ben Sulser
+- [Resources](https://credit.niso.org/contributor-roles/resources/): Ben Sulser
+- [Software](https://credit.niso.org/contributor-roles/software/): David Haberthür, Ben Sulser
+- [Supervision](https://credit.niso.org/contributor-roles/supervision/): Ben Sulser
+- [Validation](https://credit.niso.org/contributor-roles/validation/): David Haberthür, Ben Sulser
+- [Visualization](https://credit.niso.org/contributor-roles/visualization/): David Haberthür, Ben Sulser
+- [Writing – original draft](https://credit.niso.org/contributor-roles/writing---original-draft/): David Haberthür, Ben Sulser
+- [Writing – review & editing](https://credit.niso.org/contributor-roles/writing---review-&-editing/): David Haberthür, Ben Sulser
 
 
 
@@ -221,7 +243,7 @@ Ruslan Hlushchuk \<ruslan.hlushchuk@unibe.ch\>.
 |Author|Competing Interests|Last Reviewed|
 |---|---|---|
 |David Haberthür|None|2026-01-14|
-|Ben Sulser|||
+|Ben Sulser|Nothing to Declare||
 |Sheila Christen|||
 |Katie Peichel|||
 |Ruslan Hlushchuk|||
