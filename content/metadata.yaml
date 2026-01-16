@@ -31,29 +31,29 @@ authors:
       string: "None"
       lastapproved: !!str 2026-01-14
   - name: Ben Sulser
-     initials: XYZ
-     orcid: 0000-0002-8750-0942
-     github: sulserrb
+    initials: XYZ
+    orcid: 0000-0002-8750-0942
+    github: sulserrb
     email: r.benjamin.sulser@unibe.ch
-     affiliations:
-      Evolutionary Ecology Group, Institute of Ecology and Evolution, University of Bern, Baltzerstrasse 6, 3012 Bern, Switzerland
+    affiliations:
+      - Evolutionary Ecology Group, Institute of Ecology and Evolution, University of Bern, Baltzerstrasse 6, 3012 Bern, Switzerland
     contributions:
-         - Conceptualization
-         - Data curation
-         - Formal analysis
-         - Funding acquisition
-         - Investigation
-         - Methodology
-         - Project administration
-         - Resources
-         - Software
-         - Supervision
-         - Validation
-         - Visualization
-         - Writing – original draft
-         - Writing – review & editing
-       funders:
-         - Bern Burgergemeinde 
+      - Conceptualization
+      - Data curation
+      - Formal analysis
+      - Funding acquisition
+      - Investigation
+      - Methodology
+      - Project administration
+      - Resources
+      - Software
+      - Supervision
+      - Validation
+      - Visualization
+      - Writing – original draft
+      - Writing – review & editing
+    funders:
+      - Bern Burgergemeinde 
     coi:
       string: "Nothing to Declare"
       lastapproved: !!str
