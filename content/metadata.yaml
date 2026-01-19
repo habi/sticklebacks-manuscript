@@ -85,33 +85,23 @@ authors:
       string: ""
       lastapproved: !!str
     corresponding: false
-  - name: Katie Peichel
-    # initials: XYZ
-    # orcid: 0000-0001-2345-6789
-    # github: janedoe
+  - name: Catherine L. Peichel
+    # initials: CLP
+    # orcid: 0000-0002-7731-8944
+    # github: cpeichel
     email: catherine.peichel@unibe.ch
     # affiliations:
-    #  - Exemplary institute, Some University, 123 Example St, City, Country
+    #  - Division of Evolutionary Ecology, Institute of Ecology and Evolution, University of Bern, Baltzerstrasse 6, 3012 Bern, Switzerland
     # contributions:
-    #     - Conceptualization
-    #     - Data curation
-    #     - Formal analysis
     #     - Funding acquisition
-    #     - Investigation
-    #     - Methodology
     #     - Project administration
-    #     - Resources
-    #     - Software
     #     - Supervision
-    #     - Validation
-    #     - Visualization
-    #     - Writing – original draft
     #     - Writing – review & editing
     #   funders:
-    #     - some exemplary institution (Grant 123-456-789)  
+    #     - Swiss National Science Foundation (TMAG-3_209309/1)  
     coi:
-      string: ""
-      lastapproved: !!str
+      string: "none"
+      lastapproved: 19.01.2026
     corresponding: false
   - name: Ruslan Hlushchuk
     initials: RH
