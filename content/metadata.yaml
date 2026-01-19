@@ -110,24 +110,15 @@ authors:
     email: ruslan.hlushchuk@unibe.ch
     affiliations:
       - microCT research group, Institute of Anatomy, University of Bern, Baltzerstrasse 2, 3012 Bern, Switzerland    #  - Exemplary institute, Some University, 123 Example St, City, Country
-    # contributions:
-    #     - Conceptualization
-    #     - Data curation
-    #     - Formal analysis
-    #     - Funding acquisition
-    #     - Investigation
-    #     - Methodology
-    #     - Project administration
-    #     - Resources
-    #     - Software
-    #     - Supervision
-    #     - Validation
-    #     - Visualization
-    #     - Writing – original draft
-    #     - Writing – review & editing
-    #   funders:
-    #     - some exemplary institution (Grant 123-456-789)  
+    contributions:
+        - Conceptualization
+        - Funding acquisition
+        - Methodology
+        - Project administration
+        - Resources
+        - Supervision
+        - Writing – review & editing 
     coi:
-      string: ""
-      lastapproved: !!str
+      string: "None"
+      lastapproved: !!str 2026-01-19
     corresponding: true
