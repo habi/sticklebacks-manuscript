@@ -26,8 +26,8 @@ header-includes: |
   <meta name="dc.date" content="2026-01-19" />
   <meta name="citation_publication_date" content="2026-01-19" />
   <meta property="article:published_time" content="2026-01-19" />
-  <meta name="dc.modified" content="2026-01-19T08:57:37+00:00" />
-  <meta property="article:modified_time" content="2026-01-19T08:57:37+00:00" />
+  <meta name="dc.modified" content="2026-01-19T10:43:11+00:00" />
+  <meta property="article:modified_time" content="2026-01-19T10:43:11+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -53,9 +53,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/11919d08aab7c72bf211ec16a28dbb1ddaf6c512/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/11919d08aab7c72bf211ec16a28dbb1ddaf6c512/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/11919d08aab7c72bf211ec16a28dbb1ddaf6c512/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/954b994a973e5b3ed34bb804afe229a9b16d6e29/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/954b994a973e5b3ed34bb804afe229a9b16d6e29/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/954b994a973e5b3ed34bb804afe229a9b16d6e29/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/11919d08aab7c72bf211ec16a28dbb1ddaf6c512/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/954b994a973e5b3ed34bb804afe229a9b16d6e29/))
 was automatically generated
-from [habi/sticklebacks-manuscript@11919d0](https://github.com/habi/sticklebacks-manuscript/tree/11919d08aab7c72bf211ec16a28dbb1ddaf6c512)
+from [habi/sticklebacks-manuscript@954b994](https://github.com/habi/sticklebacks-manuscript/tree/954b994a973e5b3ed34bb804afe229a9b16d6e29)
 on January 19, 2026.
 </em></small>
 
@@ -230,20 +230,20 @@ We then applied this pipeline to a sampling effort encompassing hundreds of samp
 
 
 
-- [Conceptualization](https://credit.niso.org/contributor-roles/conceptualization/): Ben Sulser
+- [Conceptualization](https://credit.niso.org/contributor-roles/conceptualization/): Ben Sulser, Ruslan Hlushchuk
 - [Data curation](https://credit.niso.org/contributor-roles/data-curation/): David Haberthür, Ben Sulser
 - [Formal analysis](https://credit.niso.org/contributor-roles/formal-analysis/): David Haberthür, Ben Sulser
-- [Funding acquisition](https://credit.niso.org/contributor-roles/funding-acquisition/): Ben Sulser, Catherine L. Peichel
+- [Funding acquisition](https://credit.niso.org/contributor-roles/funding-acquisition/): Ben Sulser, Catherine L. Peichel, Ruslan Hlushchuk
 - [Investigation](https://credit.niso.org/contributor-roles/investigation/): David Haberthür, Ben Sulser
-- [Methodology](https://credit.niso.org/contributor-roles/methodology/): David Haberthür, Ben Sulser
-- [Project administration](https://credit.niso.org/contributor-roles/project-administration/): David Haberthür, Ben Sulser, Catherine L. Peichel
-- [Resources](https://credit.niso.org/contributor-roles/resources/): Ben Sulser
+- [Methodology](https://credit.niso.org/contributor-roles/methodology/): David Haberthür, Ben Sulser, Ruslan Hlushchuk
+- [Project administration](https://credit.niso.org/contributor-roles/project-administration/): David Haberthür, Ben Sulser, Catherine L. Peichel, Ruslan Hlushchuk
+- [Resources](https://credit.niso.org/contributor-roles/resources/): Ben Sulser, Ruslan Hlushchuk
 - [Software](https://credit.niso.org/contributor-roles/software/): David Haberthür, Ben Sulser
-- [Supervision](https://credit.niso.org/contributor-roles/supervision/): Ben Sulser, Catherine L. Peichel
+- [Supervision](https://credit.niso.org/contributor-roles/supervision/): Ben Sulser, Catherine L. Peichel, Ruslan Hlushchuk
 - [Validation](https://credit.niso.org/contributor-roles/validation/): David Haberthür, Ben Sulser
 - [Visualization](https://credit.niso.org/contributor-roles/visualization/): David Haberthür, Ben Sulser
 - [Writing – original draft](https://credit.niso.org/contributor-roles/writing---original-draft/): David Haberthür, Ben Sulser
-- [Writing – review & editing](https://credit.niso.org/contributor-roles/writing---review-&-editing/): David Haberthür, Ben Sulser, Catherine L. Peichel
+- [Writing – review & editing](https://credit.niso.org/contributor-roles/writing---review-&-editing/): David Haberthür, Ben Sulser, Catherine L. Peichel, Ruslan Hlushchuk
 
 
 
@@ -255,7 +255,7 @@ We then applied this pipeline to a sampling effort encompassing hundreds of samp
 |Ben Sulser|Nothing to Declare||
 |Sheila Christen|||
 |Catherine L. Peichel|none|19.01.2026|
-|Ruslan Hlushchuk|||
+|Ruslan Hlushchuk|None|2026-01-19|
 
 
 ## Acknowledgements
