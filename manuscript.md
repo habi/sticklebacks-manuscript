@@ -26,8 +26,8 @@ header-includes: |
   <meta name="dc.date" content="2026-01-19" />
   <meta name="citation_publication_date" content="2026-01-19" />
   <meta property="article:published_time" content="2026-01-19" />
-  <meta name="dc.modified" content="2026-01-19T10:43:11+00:00" />
-  <meta property="article:modified_time" content="2026-01-19T10:43:11+00:00" />
+  <meta name="dc.modified" content="2026-01-19T11:05:15+00:00" />
+  <meta property="article:modified_time" content="2026-01-19T11:05:15+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -53,9 +53,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/954b994a973e5b3ed34bb804afe229a9b16d6e29/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/954b994a973e5b3ed34bb804afe229a9b16d6e29/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/954b994a973e5b3ed34bb804afe229a9b16d6e29/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/1eb1b0ed6474cbbafa597cef4051931561a98931/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/1eb1b0ed6474cbbafa597cef4051931561a98931/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/1eb1b0ed6474cbbafa597cef4051931561a98931/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/954b994a973e5b3ed34bb804afe229a9b16d6e29/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/1eb1b0ed6474cbbafa597cef4051931561a98931/))
 was automatically generated
-from [habi/sticklebacks-manuscript@954b994](https://github.com/habi/sticklebacks-manuscript/tree/954b994a973e5b3ed34bb804afe229a9b16d6e29)
+from [habi/sticklebacks-manuscript@1eb1b0e](https://github.com/habi/sticklebacks-manuscript/tree/1eb1b0ed6474cbbafa597cef4051931561a98931)
 on January 19, 2026.
 </em></small>
 
@@ -155,18 +155,19 @@ Ruslan Hlushchuk \<ruslan.hlushchuk@unibe.ch\>.
 ## Abstract {.page_break_before}
 
 Can we predict evolution?
-The threespine stickleback (Gasterosteus aculeatus) is a well-recognized system for understanding adaptation to divergent habitats.
+The three-spined stickleback (Gasterosteus aculeatus) is a well-recognized system for understanding adaptation to divergent habitats.
 Populations of benthic and limnetic stickleback differ in a number of phenotypic traits that are associated with shifts in dietary specialization.
 However, analyses of the structures required for feeding – especially the jaws and complex internal branchial anatomy – requires considerable time and expertise, with destructive sampling and fine dissection skills needed for quantitative analysis.
 The advent of µCT and 3D-scanning technology affords non-destructive sampling and an increase the resolution of data available for study, but at the substantial cost of increasing complexity and processing time for each specimen.
-To address these concerns, we developed a rapid and semi-automated segmentation and analysis pipeline based around the Biomedisa Image Segmentation platform for investigating three-dimensional morphological adaptation within the threespine stickleback.
+To address these concerns, we developed a rapid and semi-automated segmentation and analysis pipeline based around the Biomedisa Image Segmentation platform for investigating three-dimensional morphological adaptation within the three-spined stickleback.
 The pipeline includes splitting a multi-specimen scan into regions of interest for each specimen, reconstruction of targeted anatomy, and morphometric analyses.
-We then applied this pipeline to a sampling effort encompassing hundreds of samples of divergent benthic and limnetic stickleback populations, showcasing the possibility of using high-throughput scanning data to provide tests of ecological and evolutionary hypotheses.  
+We then applied this pipeline to a sampling effort encompassing hundreds of samples of divergent benthic and limnetic stickleback populations, showcasing the possibility of using high-throughput scanning data to provide tests of ecological and evolutionary hypotheses.
 
 
 ## Introduction {.page_break_before}
 
 - Embedded into [Alaska Stickleback Restoration Project](https://alaskastickleback.com/), [Genomics axis](https://alaskastickleback.com/genomics) where Katie Peichel, Ben Sulser and Sheila Christen are affiliated.
+
 
 ## Materials & Methods {.page_break_before}
 
@@ -176,10 +177,10 @@ We then applied this pipeline to a sampling effort encompassing hundreds of samp
 
 - Scanned on a [Bruker SkyScan 2214](https://www.bruker.com/en/products-and-solutions/diffractometers-and-x-ray-microscopes/3d-x-ray-microscopes/skyscan-2214.html)
 - Sample holder generated with [OpenSCAD](https://openscad.org/), available online at [GitHub](https://github.com/TomoGraphics/Hol3Drs/blob/master/STL/Stickleback.Multiple.stl) [@doi:10.5281/zenodo.2587555]
-  - Scanning several fish toghether to efficiently use machine time
-  - Full in Bruker workflow
-  - Results in PNG stacks on disk
-- All log files available here: https://github.com/habi/sticklebacks/tree/main/logfiles
+- Scanning several fish together to efficiently use machine time
+- Full in Bruker workflow
+- Results in PNG stacks on disk
+- All log files online as part of [the analysis script repository](https://github.com/habi/sticklebacks/tree/main/logfiles) from David.
 
 ### Data analysis
 
@@ -192,7 +193,7 @@ We then applied this pipeline to a sampling effort encompassing hundreds of samp
     - Cropped datasets are saved to discrete folders for easy handling.
       In both original gray-scale plus as thresholded dataset, e.g. binarized into bone and "not bone".
       These are saved out as [`zarr`](https://zarr.dev/) [@wikidata:Q130377195] and [`nrrd`](https://teem.sourceforge.net/nrrd/) files.
-      
+
 ![Maximum intensity projections of one acquired dataset along all three cardinal axes.](images/Sticklebucket_H.rec.MIPs.png){#fig:mips}
 
 ![Automatically detected regions based on maximum intensity projection along the rotation axis of the tomographic scan. The regions are numbered consecutively from the top left to the bottom right. These numbers are mapped to the correct fish ID in the next step.](images/Sticklebucket_H.rec.Labels.Detected.png){#fig:labels}
@@ -210,13 +211,15 @@ We then applied this pipeline to a sampling effort encompassing hundreds of samp
 - 3D shape variation on internal pharyngobranchial bone.
   Only possible to get this information in 3D.
 
+
 ## Discussion {.page_break_before}
 
 - Both *repeatable* and *reproducible* research
 - Automated cropping out of single fish from combined scan very efficiently uses machine time.
   Several fish can be scanned together, splitting is performed after the fact, reproducibly and without manual input.
-- Combination of methdes cust down on time **a lot**.  
+- Combination of methods cuts down on time **a lot**.
 - Biomedisa makes more "extraction" possible. Other biological questions can be answered, too.
+
 
 ## Conclusion {.page_break_before}
 
@@ -258,7 +261,7 @@ We then applied this pipeline to a sampling effort encompassing hundreds of samp
 |Ruslan Hlushchuk|None|2026-01-19|
 
 
-## Acknowledgements
+## Acknowledgments
 
 We are grateful to the [Microscopy Imaging Center](https://mic.unibe.ch/) of the University of Bern for their infrastructural support.
 We also thank the `manubot` project [@doi:10.1371/journal.pcbi.1007128] for facilitating collaborative writing of this manuscript.

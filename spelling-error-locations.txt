@@ -1,12 +1,12 @@
 content/01.abstract.md:4:aculeatus
 content/01.abstract.md:4:Gasterosteus
-content/01.abstract.md:4:threespine
+content/01.abstract.md:4:spined
 content/01.abstract.md:5:benthic
 content/01.abstract.md:5:limnetic
 content/01.abstract.md:5:phenotypic
 content/01.abstract.md:6:branchial
 content/01.abstract.md:8:Biomedisa
-content/01.abstract.md:8:threespine
+content/01.abstract.md:8:spined
 content/01.abstract.md:9:morphometric
 content/01.abstract.md:10:benthic
 content/01.abstract.md:10:limnetic
@@ -19,7 +19,6 @@ content/03.materials_methods.md:7:skyscan
 content/03.materials_methods.md:7:SkyScan
 content/03.materials_methods.md:8:openscad
 content/03.materials_methods.md:8:OpenSCAD
-content/03.materials_methods.md:9:toghether
 content/03.materials_methods.md:10:Bruker
 content/03.materials_methods.md:11:PNG
 content/03.materials_methods.md:12:habi
@@ -35,7 +34,5 @@ content/03.materials_methods.md:32:png
 content/03.materials_methods.md:36:Biomedisa
 content/04.results.md:3:pharyngobranchial
 content/05.discussion.md:5:reproducibly
-content/05.discussion.md:6:cust
-content/05.discussion.md:6:methdes
 content/05.discussion.md:7:Biomedisa
 content/07.contributions.md:7:curation

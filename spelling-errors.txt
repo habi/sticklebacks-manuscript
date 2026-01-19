@@ -7,7 +7,6 @@ Bruker
 Burgergemeinde
 cpeichel
 curation
-cust
 Doublechecking
 Gasterosteus
 Haberthür
@@ -15,7 +14,6 @@ habi
 Hlushchuk
 Jupyter
 limnetic
-methdes
 microCT
 microtomographic
 MIP
@@ -29,9 +27,8 @@ reproducibly
 Ruslan
 RuslanHlushchuk
 SkyScan
+spined
 Sulser
 sulserrb
-threespine
 thresholded
 TMAG
-toghether
