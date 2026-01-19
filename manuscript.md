@@ -5,12 +5,12 @@ keywords:
 - sticklebacks
 - ecology
 lang: en-US
-date-meta: '2026-01-16'
+date-meta: '2026-01-19'
 author-meta:
 - David Haberthür
 - Ben Sulser
 - Sheila Christen
-- Katie Peichel
+- Catherine L. Peichel
 - Ruslan Hlushchuk
 header-includes: |
   <!--
@@ -23,11 +23,11 @@ header-includes: |
   <meta name="citation_title" content="microCT imaging of threespine stickleback" />
   <meta property="og:title" content="microCT imaging of threespine stickleback" />
   <meta property="twitter:title" content="microCT imaging of threespine stickleback" />
-  <meta name="dc.date" content="2026-01-16" />
-  <meta name="citation_publication_date" content="2026-01-16" />
-  <meta property="article:published_time" content="2026-01-16" />
-  <meta name="dc.modified" content="2026-01-16T16:20:14+00:00" />
-  <meta property="article:modified_time" content="2026-01-16T16:20:14+00:00" />
+  <meta name="dc.date" content="2026-01-19" />
+  <meta name="citation_publication_date" content="2026-01-19" />
+  <meta property="article:published_time" content="2026-01-19" />
+  <meta name="dc.modified" content="2026-01-19T08:46:40+00:00" />
+  <meta property="article:modified_time" content="2026-01-19T08:46:40+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -41,7 +41,7 @@ header-includes: |
   <meta name="citation_author_institution" content="Evolutionary Ecology Group, Institute of Ecology and Evolution, University of Bern, Baltzerstrasse 6, 3012 Bern, Switzerland" />
   <meta name="citation_author_orcid" content="0000-0002-8750-0942" />
   <meta name="citation_author" content="Sheila Christen" />
-  <meta name="citation_author" content="Katie Peichel" />
+  <meta name="citation_author" content="Catherine L. Peichel" />
   <meta name="citation_author" content="Ruslan Hlushchuk" />
   <meta name="citation_author_institution" content="microCT research group, Institute of Anatomy, University of Bern, Baltzerstrasse 2, 3012 Bern, Switzerland" />
   <meta name="citation_author_orcid" content="0000-0001-2345-6789" />
@@ -51,9 +51,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/59c086477f9f5739a9f5972ccc0f332021ecfb32/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/59c086477f9f5739a9f5972ccc0f332021ecfb32/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/59c086477f9f5739a9f5972ccc0f332021ecfb32/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/c0a33e3e512ff131a4a7194bc521c57e448dc7c8/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/c0a33e3e512ff131a4a7194bc521c57e448dc7c8/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/c0a33e3e512ff131a4a7194bc521c57e448dc7c8/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,10 +75,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/59c086477f9f5739a9f5972ccc0f332021ecfb32/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/c0a33e3e512ff131a4a7194bc521c57e448dc7c8/))
 was automatically generated
-from [habi/sticklebacks-manuscript@59c0864](https://github.com/habi/sticklebacks-manuscript/tree/59c086477f9f5739a9f5972ccc0f332021ecfb32)
-on January 16, 2026.
+from [habi/sticklebacks-manuscript@c0a33e3](https://github.com/habi/sticklebacks-manuscript/tree/c0a33e3e512ff131a4a7194bc521c57e448dc7c8)
+on January 19, 2026.
 </em></small>
 
 
@@ -117,7 +117,7 @@ on January 16, 2026.
   <small>
   </small>
 
-+ **Katie Peichel**
++ **Catherine L. Peichel**
   <br>
   <small>
   </small>
@@ -245,7 +245,7 @@ We then applied this pipeline to a sampling effort encompassing hundreds of samp
 |David Haberthür|None|2026-01-14|
 |Ben Sulser|Nothing to Declare||
 |Sheila Christen|||
-|Katie Peichel|||
+|Catherine L. Peichel|none|19.01.2026|
 |Ruslan Hlushchuk|||
 
 
