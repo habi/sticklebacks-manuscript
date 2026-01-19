@@ -26,8 +26,8 @@ header-includes: |
   <meta name="dc.date" content="2026-01-19" />
   <meta name="citation_publication_date" content="2026-01-19" />
   <meta property="article:published_time" content="2026-01-19" />
-  <meta name="dc.modified" content="2026-01-19T08:46:40+00:00" />
-  <meta property="article:modified_time" content="2026-01-19T08:46:40+00:00" />
+  <meta name="dc.modified" content="2026-01-19T08:57:37+00:00" />
+  <meta property="article:modified_time" content="2026-01-19T08:57:37+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -42,6 +42,8 @@ header-includes: |
   <meta name="citation_author_orcid" content="0000-0002-8750-0942" />
   <meta name="citation_author" content="Sheila Christen" />
   <meta name="citation_author" content="Catherine L. Peichel" />
+  <meta name="citation_author_institution" content="Division of Evolutionary Ecology, Institute of Ecology and Evolution, University of Bern, Baltzerstrasse 6, 3012 Bern, Switzerland" />
+  <meta name="citation_author_orcid" content="0000-0002-7731-8944" />
   <meta name="citation_author" content="Ruslan Hlushchuk" />
   <meta name="citation_author_institution" content="microCT research group, Institute of Anatomy, University of Bern, Baltzerstrasse 2, 3012 Bern, Switzerland" />
   <meta name="citation_author_orcid" content="0000-0001-2345-6789" />
@@ -51,9 +53,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/c0a33e3e512ff131a4a7194bc521c57e448dc7c8/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/c0a33e3e512ff131a4a7194bc521c57e448dc7c8/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/c0a33e3e512ff131a4a7194bc521c57e448dc7c8/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/11919d08aab7c72bf211ec16a28dbb1ddaf6c512/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/11919d08aab7c72bf211ec16a28dbb1ddaf6c512/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/11919d08aab7c72bf211ec16a28dbb1ddaf6c512/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/c0a33e3e512ff131a4a7194bc521c57e448dc7c8/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/11919d08aab7c72bf211ec16a28dbb1ddaf6c512/))
 was automatically generated
-from [habi/sticklebacks-manuscript@c0a33e3](https://github.com/habi/sticklebacks-manuscript/tree/c0a33e3e512ff131a4a7194bc521c57e448dc7c8)
+from [habi/sticklebacks-manuscript@11919d0](https://github.com/habi/sticklebacks-manuscript/tree/11919d08aab7c72bf211ec16a28dbb1ddaf6c512)
 on January 19, 2026.
 </em></small>
 
@@ -119,7 +121,14 @@ on January 19, 2026.
 
 + **Catherine L. Peichel**
   <br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0002-7731-8944](https://orcid.org/0000-0002-7731-8944)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [cpeichel](https://github.com/cpeichel)
+    <br>
   <small>
+     Division of Evolutionary Ecology, Institute of Ecology and Evolution, University of Bern, Baltzerstrasse 6, 3012 Bern, Switzerland
+     · Funded by Swiss National Science Foundation (TMAG-3_209309/1)
   </small>
 
 + **Ruslan Hlushchuk**
@@ -224,17 +233,17 @@ We then applied this pipeline to a sampling effort encompassing hundreds of samp
 - [Conceptualization](https://credit.niso.org/contributor-roles/conceptualization/): Ben Sulser
 - [Data curation](https://credit.niso.org/contributor-roles/data-curation/): David Haberthür, Ben Sulser
 - [Formal analysis](https://credit.niso.org/contributor-roles/formal-analysis/): David Haberthür, Ben Sulser
-- [Funding acquisition](https://credit.niso.org/contributor-roles/funding-acquisition/): Ben Sulser
+- [Funding acquisition](https://credit.niso.org/contributor-roles/funding-acquisition/): Ben Sulser, Catherine L. Peichel
 - [Investigation](https://credit.niso.org/contributor-roles/investigation/): David Haberthür, Ben Sulser
 - [Methodology](https://credit.niso.org/contributor-roles/methodology/): David Haberthür, Ben Sulser
-- [Project administration](https://credit.niso.org/contributor-roles/project-administration/): David Haberthür, Ben Sulser
+- [Project administration](https://credit.niso.org/contributor-roles/project-administration/): David Haberthür, Ben Sulser, Catherine L. Peichel
 - [Resources](https://credit.niso.org/contributor-roles/resources/): Ben Sulser
 - [Software](https://credit.niso.org/contributor-roles/software/): David Haberthür, Ben Sulser
-- [Supervision](https://credit.niso.org/contributor-roles/supervision/): Ben Sulser
+- [Supervision](https://credit.niso.org/contributor-roles/supervision/): Ben Sulser, Catherine L. Peichel
 - [Validation](https://credit.niso.org/contributor-roles/validation/): David Haberthür, Ben Sulser
 - [Visualization](https://credit.niso.org/contributor-roles/visualization/): David Haberthür, Ben Sulser
 - [Writing – original draft](https://credit.niso.org/contributor-roles/writing---original-draft/): David Haberthür, Ben Sulser
-- [Writing – review & editing](https://credit.niso.org/contributor-roles/writing---review-&-editing/): David Haberthür, Ben Sulser
+- [Writing – review & editing](https://credit.niso.org/contributor-roles/writing---review-&-editing/): David Haberthür, Ben Sulser, Catherine L. Peichel
 
 
 

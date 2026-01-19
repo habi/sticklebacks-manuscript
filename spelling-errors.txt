@@ -5,6 +5,7 @@ Biomedisa
 branchial
 Bruker
 Burgergemeinde
+cpeichel
 curation
 cust
 Doublechecking
@@ -32,4 +33,5 @@ Sulser
 sulserrb
 threespine
 thresholded
+TMAG
 toghether
