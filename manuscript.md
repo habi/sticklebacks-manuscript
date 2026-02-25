@@ -26,8 +26,8 @@ header-includes: |
   <meta name="dc.date" content="2026-02-25" />
   <meta name="citation_publication_date" content="2026-02-25" />
   <meta property="article:published_time" content="2026-02-25" />
-  <meta name="dc.modified" content="2026-02-25T10:19:04+00:00" />
-  <meta property="article:modified_time" content="2026-02-25T10:19:04+00:00" />
+  <meta name="dc.modified" content="2026-02-25T10:54:18+00:00" />
+  <meta property="article:modified_time" content="2026-02-25T10:54:18+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -53,9 +53,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/0ca94c65c39a0bc02ef550c8251cd329a85e4fcd/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/0ca94c65c39a0bc02ef550c8251cd329a85e4fcd/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/0ca94c65c39a0bc02ef550c8251cd329a85e4fcd/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/6016dd992cdcce77928275d12e611d35b345557d/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/6016dd992cdcce77928275d12e611d35b345557d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/6016dd992cdcce77928275d12e611d35b345557d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/0ca94c65c39a0bc02ef550c8251cd329a85e4fcd/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/6016dd992cdcce77928275d12e611d35b345557d/))
 was automatically generated
-from [habi/sticklebacks-manuscript@0ca94c6](https://github.com/habi/sticklebacks-manuscript/tree/0ca94c65c39a0bc02ef550c8251cd329a85e4fcd)
+from [habi/sticklebacks-manuscript@6016dd9](https://github.com/habi/sticklebacks-manuscript/tree/6016dd992cdcce77928275d12e611d35b345557d)
 on February 25, 2026.
 </em></small>
 
@@ -167,32 +167,64 @@ We then applied this pipeline to a sampling effort encompassing hundreds of samp
 ## Introduction {.page_break_before}
 
 - Embedded into [Alaska Stickleback Restoration Project](https://alaskastickleback.com/), [Genomics axis](https://alaskastickleback.com/genomics) where Katie Peichel, Ben Sulser and Sheila Christen are affiliated.
+- Why are we studying what we are studying in these fish?
 
+## Micro-computed tomography
+
+X-ray microtomography is an indispensable tool to gain non-destructive insights into the inner structure of highly diverse samples, namely for specimens studied in the biomedical sciences [@doi:10.1186/s12915-020-0753-2].
+Microtomographic imaging is ideally suited to nondestructively assess the morphology of different fish species, large and small [@doi:10.1093/iob/obad008].
+
+<!---
+Do we have to give a bit more background on uCT imaging, e.g. write about resolution, staining, etc?
+--->
 
 ## Materials & Methods {.page_break_before}
 
-### Sample preparation
+### Sample procurement and preparation
+
+<!--- How did the fish get from Alaska to Bern? -->
+<!--- How were they kept? -->
+
+Due to their inherent contrast difference to the surrounding tissue, the structures of interest we touch upon in this manuscript (teeth and bones, i.e. jaws and skull) are well visualized in unstained samples, hence no further preparation of the fish was necessary.
 
 ### microtomographic imaging
 
-- Scanned on a [Bruker SkyScan 2214](https://www.bruker.com/en/products-and-solutions/diffractometers-and-x-ray-microscopes/3d-x-ray-microscopes/skyscan-2214.html)
-- Sample holder generated with [OpenSCAD](https://openscad.org/), available online at [GitHub](https://github.com/TomoGraphics/Hol3Drs/blob/master/STL/Stickleback.Multiple.stl) [@doi:10.5281/zenodo.2587555]
-- Scanning several fish together to efficiently use machine time
-- Full in Bruker workflow
-- Results in PNG stacks on disk
-- All log files online as part of [the analysis script repository](https://github.com/habi/sticklebacks/tree/main/logfiles) from David.
+In a small pilot study we determined the optimal scanning parameters to fit the constraints on total scanning time, resolution and sample handling.
+To optimize for these constraints, we scanned all the sticklebacks in batches of six fish in a custom-made 3D printed sample holder in a single scan.
+This holder was generated with [OpenSCAD](https://openscad.org/) and is available online, either directly as [STL file for printing](https://github.com/TomoGraphics/Hol3Drs/blob/master/STL/Stickleback.Multiple.stl) or as [(parametrized) OpenSCAD file](https://github.com/TomoGraphics/Hol3Drs/blob/master/Stickleback.Multiple.scad) for adaptation to other classes of samples.
+Both files are part of a library of 3D-printable sample holders for tomographic imaging [@doi:10.5281/zenodo.2587555].
+
+Tomographic imaging was performed on a [Bruker SkyScan 2214](https://www.bruker.com/en/products-and-solutions/diffractometers-and-x-ray-microscopes/3d-x-ray-microscopes/skyscan-2214.html) at the Institute of Anatomy, University of Bern, Switzerland.
+In total we performed 44 scans, each of the scan usually containing 6 fish in the sample holder.
+
+<!-- How many fish IDs did we scan in total? -->
+<!-- Figure this out with both the XLS sheet from Ben *and* the folders written to `rec_regions` on disk! -->
+
+The relevant details of each scan are collated in a table in the [Supplementary Materials]; a short overview of the scanning parameters is given below.
+The X-ray source was set to a voltage of 60 kV and a current of around 110 µA for all but one scan where we used a source voltage of 49	kV and 159 µA due to operator error.
+For each sample, we recorded a set of 3601 projections of approximately 3000 x 2000 pixels at every 0.1° over a 360° sample rotation.
+Every single projection was exposed for about a second (depending on the sample).
+Due to the lenght of the fish, we had to acquire so-called stacked scans, on average we scanned 3 fields of view along the rotation axis of the sample holder.
+This resulted in scan times between 3 to 5 hours hours.
+The projection images were then subsequently reconstructed into a 3D stack of images with NRecon (Bruker microCT, Kontich Belgium, Version: 2.1.0.1 or 2.2.0.6).
+The isometric voxel sized in the resulting datasets vary from 15 to 19 µm.
+
+<!-- What did we write to disk as PNG files? -->
 
 ### Data analysis
 
 #### Preparation and handling of tomographic datasets
 
-- [Jupyter notebooks](https://github.com/habi/sticklebacks) [@doi:10.5281/zenodo.18257528]
-  - Efficiently loading data from disk with [`dask`](https://www.dask.org/) [@dask]
-  - Extract position of single fish (all scanned together), based on the MIP of the scan (see Figure @fig:labels).
-  - Crop out each fish (with a buffer) and write to cropped dataset (see Figure @fig:cropping).
-    - Cropped datasets are saved to discrete folders for easy handling.
-      In both original gray-scale plus as thresholded dataset, e.g. binarized into bone and "not bone".
-      These are saved out as [`zarr`](https://zarr.dev/) [@wikidata:Q130377195] and [`nrrd`](https://teem.sourceforge.net/nrrd/) files.
+After acquisition, [a simple script](https://github.com/habi/sticklebacks/blob/main/rsync-sticklebacks.sh) was used to copy the relevant data to both archival storage and storage accessible by all co-authors at the same time.
+
+Further processing of the tomographic dataset was performed with a set of Jupyter [@doi:10.3233/978-1-61499-649-1-87] [notebooks](https://github.com/habi/sticklebacks) [@doi:10.5281/zenodo.18257528].
+
+- Efficiently loading data from disk with [`dask`](https://www.dask.org/) [@dask]
+- Extract position of single fish (all scanned together), based on the MIP of the scan (see Figure @fig:labels).
+- Crop out each fish (with a buffer) and write to cropped dataset (see Figure @fig:cropping).
+- Cropped datasets are saved to discrete folders for easy handling.
+  In both original gray-scale plus as thresholded dataset, e.g. binarized into bone and "not bone".
+  These are saved out as [`zarr`](https://zarr.dev/) [@wikidata:Q130377195] and [`nrrd`](https://teem.sourceforge.net/nrrd/) files.
 
 ![Maximum intensity projections of one acquired dataset along all three cardinal axes.](images/Sticklebucket_H.rec.MIPs.png){#fig:mips}
 
@@ -205,6 +237,7 @@ We then applied this pipeline to a sampling effort encompassing hundreds of samp
 #### Extraction of features of interest
 
 - Biomedisa [@doi:10.1038/s41467-020-19303-w]
+
 
 ## Results {.page_break_before}
 
@@ -272,8 +305,8 @@ We also thank the `manubot` project [@doi:10.1371/journal.pcbi.1007128] for faci
 ### Parameters of tomographic scans of all the fishes
 
 The CSV file [ScanningDetails.csv](https://github.com/habi/stickleback-manuscript/blob/main/content/data/ScanningDetails.csv) gives a tabular overview of all the (relevant) parameters of all the scans we performed.
-This file was generated with the [data processing notebook](https://github.com/habi/sticklebacks/blob/main/DataWrangling.ipynb) and collates the data read from *all* the log files of *all* the scans we performed.
-A copy of each log file is available in a [folder in the data processing repository](https://github.com/habi/sticklebacks/tree/main/logfiles).
+This file was generated with the [data processing notebook](https://github.com/habi/sticklebacks/blob/main/DataWrangling.ipynb) and collates the relevant data read from *all* the log files of *all* the scans we performed.
+A copy of each log file containing *all* scanning parameters is available in a [folder in the data processing repository](https://github.com/habi/sticklebacks/tree/main/logfiles).
 
 
 ## References {.page_break_before}
