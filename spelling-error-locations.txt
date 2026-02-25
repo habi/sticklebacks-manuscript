@@ -36,3 +36,11 @@ content/04.results.md:3:pharyngobranchial
 content/05.discussion.md:5:reproducibly
 content/05.discussion.md:7:Biomedisa
 content/07.contributions.md:7:curation
+content/10.supplementary.md:5:csv
+content/10.supplementary.md:5:csv
+content/10.supplementary.md:5:CSV
+content/10.supplementary.md:5:habi
+content/10.supplementary.md:5:ScanningDetails
+content/10.supplementary.md:5:ScanningDetails
+content/10.supplementary.md:6:habi
+content/10.supplementary.md:7:habi

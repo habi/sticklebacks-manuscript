@@ -5,7 +5,7 @@ keywords:
 - sticklebacks
 - ecology
 lang: en-US
-date-meta: '2026-01-19'
+date-meta: '2026-02-25'
 author-meta:
 - David Haberthür
 - Ben Sulser
@@ -23,11 +23,11 @@ header-includes: |
   <meta name="citation_title" content="microCT imaging of threespine stickleback" />
   <meta property="og:title" content="microCT imaging of threespine stickleback" />
   <meta property="twitter:title" content="microCT imaging of threespine stickleback" />
-  <meta name="dc.date" content="2026-01-19" />
-  <meta name="citation_publication_date" content="2026-01-19" />
-  <meta property="article:published_time" content="2026-01-19" />
-  <meta name="dc.modified" content="2026-01-19T11:05:15+00:00" />
-  <meta property="article:modified_time" content="2026-01-19T11:05:15+00:00" />
+  <meta name="dc.date" content="2026-02-25" />
+  <meta name="citation_publication_date" content="2026-02-25" />
+  <meta property="article:published_time" content="2026-02-25" />
+  <meta name="dc.modified" content="2026-02-25T10:19:04+00:00" />
+  <meta property="article:modified_time" content="2026-02-25T10:19:04+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -53,9 +53,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/1eb1b0ed6474cbbafa597cef4051931561a98931/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/1eb1b0ed6474cbbafa597cef4051931561a98931/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/1eb1b0ed6474cbbafa597cef4051931561a98931/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/0ca94c65c39a0bc02ef550c8251cd329a85e4fcd/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/0ca94c65c39a0bc02ef550c8251cd329a85e4fcd/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/0ca94c65c39a0bc02ef550c8251cd329a85e4fcd/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,10 +77,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/1eb1b0ed6474cbbafa597cef4051931561a98931/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/0ca94c65c39a0bc02ef550c8251cd329a85e4fcd/))
 was automatically generated
-from [habi/sticklebacks-manuscript@1eb1b0e](https://github.com/habi/sticklebacks-manuscript/tree/1eb1b0ed6474cbbafa597cef4051931561a98931)
-on January 19, 2026.
+from [habi/sticklebacks-manuscript@0ca94c6](https://github.com/habi/sticklebacks-manuscript/tree/0ca94c65c39a0bc02ef550c8251cd329a85e4fcd)
+on February 25, 2026.
 </em></small>
 
 
@@ -265,6 +265,15 @@ We then applied this pipeline to a sampling effort encompassing hundreds of samp
 
 We are grateful to the [Microscopy Imaging Center](https://mic.unibe.ch/) of the University of Bern for their infrastructural support.
 We also thank the `manubot` project [@doi:10.1371/journal.pcbi.1007128] for facilitating collaborative writing of this manuscript.
+
+
+## Supplementary Materials
+
+### Parameters of tomographic scans of all the fishes
+
+The CSV file [ScanningDetails.csv](https://github.com/habi/stickleback-manuscript/blob/main/content/data/ScanningDetails.csv) gives a tabular overview of all the (relevant) parameters of all the scans we performed.
+This file was generated with the [data processing notebook](https://github.com/habi/sticklebacks/blob/main/DataWrangling.ipynb) and collates the data read from *all* the log files of *all* the scans we performed.
+A copy of each log file is available in a [folder in the data processing repository](https://github.com/habi/sticklebacks/tree/main/logfiles).
 
 
 ## References {.page_break_before}

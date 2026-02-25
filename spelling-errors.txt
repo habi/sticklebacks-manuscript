@@ -6,6 +6,7 @@ branchial
 Bruker
 Burgergemeinde
 cpeichel
+csv
 curation
 Doublechecking
 Gasterosteus
@@ -26,6 +27,7 @@ PNG
 reproducibly
 Ruslan
 RuslanHlushchuk
+ScanningDetails
 SkyScan
 spined
 Sulser
