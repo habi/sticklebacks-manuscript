@@ -5,7 +5,7 @@ keywords:
 - sticklebacks
 - ecology
 lang: en-US
-date-meta: '2026-02-25'
+date-meta: '2026-02-26'
 author-meta:
 - David Haberthür
 - Ben Sulser
@@ -23,11 +23,11 @@ header-includes: |
   <meta name="citation_title" content="microCT imaging of threespine stickleback" />
   <meta property="og:title" content="microCT imaging of threespine stickleback" />
   <meta property="twitter:title" content="microCT imaging of threespine stickleback" />
-  <meta name="dc.date" content="2026-02-25" />
-  <meta name="citation_publication_date" content="2026-02-25" />
-  <meta property="article:published_time" content="2026-02-25" />
-  <meta name="dc.modified" content="2026-02-25T10:54:18+00:00" />
-  <meta property="article:modified_time" content="2026-02-25T10:54:18+00:00" />
+  <meta name="dc.date" content="2026-02-26" />
+  <meta name="citation_publication_date" content="2026-02-26" />
+  <meta property="article:published_time" content="2026-02-26" />
+  <meta name="dc.modified" content="2026-02-26T10:02:23+00:00" />
+  <meta property="article:modified_time" content="2026-02-26T10:02:23+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -53,9 +53,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/6016dd992cdcce77928275d12e611d35b345557d/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/6016dd992cdcce77928275d12e611d35b345557d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/6016dd992cdcce77928275d12e611d35b345557d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/f35b55dd0cffd68b4cc046fe19815dca180f502a/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/f35b55dd0cffd68b4cc046fe19815dca180f502a/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/f35b55dd0cffd68b4cc046fe19815dca180f502a/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,10 +77,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/6016dd992cdcce77928275d12e611d35b345557d/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/f35b55dd0cffd68b4cc046fe19815dca180f502a/))
 was automatically generated
-from [habi/sticklebacks-manuscript@6016dd9](https://github.com/habi/sticklebacks-manuscript/tree/6016dd992cdcce77928275d12e611d35b345557d)
-on February 25, 2026.
+from [habi/sticklebacks-manuscript@f35b55d](https://github.com/habi/sticklebacks-manuscript/tree/f35b55dd0cffd68b4cc046fe19815dca180f502a)
+on February 26, 2026.
 </em></small>
 
 
@@ -201,7 +201,7 @@ In total we performed 44 scans, each of the scan usually containing 6 fish in th
 <!-- Figure this out with both the XLS sheet from Ben *and* the folders written to `rec_regions` on disk! -->
 
 The relevant details of each scan are collated in a table in the [Supplementary Materials]; a short overview of the scanning parameters is given below.
-The X-ray source was set to a voltage of 60 kV and a current of around 110 µA for all but one scan where we used a source voltage of 49	kV and 159 µA due to operator error.
+The X-ray source was set to a voltage of 60 kV and a current of around 110 µA for all but one scan where we used a source voltage of 49 kV and 159 µA due to operator error.
 For each sample, we recorded a set of 3601 projections of approximately 3000 x 2000 pixels at every 0.1° over a 360° sample rotation.
 Every single projection was exposed for about a second (depending on the sample).
 Due to the lenght of the fish, we had to acquire so-called stacked scans, on average we scanned 3 fields of view along the rotation axis of the sample holder.
