@@ -6,7 +6,7 @@ branchial
 Bruker
 Burgergemeinde
 cpeichel
-csv
+CSV
 curation
 Doublechecking
 Gasterosteus
@@ -16,7 +16,6 @@ Hlushchuk
 Jupyter
 Kontich
 kV
-lenght
 limnetic
 microCT
 microtomographic
@@ -26,10 +25,11 @@ morphometric
 nondestructively
 NRecon
 OpenSCAD
-parametrized
 Peichel
 pharyngobranchial
 phenotypic
+PNG
+PNGs
 reproducibly
 Ruslan
 RuslanHlushchuk

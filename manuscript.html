@@ -57,8 +57,8 @@
   <meta name="dc.date" content="2026-02-26" />
   <meta name="citation_publication_date" content="2026-02-26" />
   <meta property="article:published_time" content="2026-02-26" />
-  <meta name="dc.modified" content="2026-02-26T10:02:23+00:00" />
-  <meta property="article:modified_time" content="2026-02-26T10:02:23+00:00" />
+  <meta name="dc.modified" content="2026-02-26T17:36:26+00:00" />
+  <meta property="article:modified_time" content="2026-02-26T17:36:26+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -84,9 +84,9 @@
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/f35b55dd0cffd68b4cc046fe19815dca180f502a/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/f35b55dd0cffd68b4cc046fe19815dca180f502a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/f35b55dd0cffd68b4cc046fe19815dca180f502a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/ec33381c88f166787855dd6659adacd34d345f3d/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/ec33381c88f166787855dd6659adacd34d345f3d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/ec33381c88f166787855dd6659adacd34d345f3d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -103,9 +103,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://habi.github.io/sticklebacks-manuscript/v/f35b55dd0cffd68b4cc046fe19815dca180f502a/">permalink</a>)
+(<a href="https://habi.github.io/sticklebacks-manuscript/v/ec33381c88f166787855dd6659adacd34d345f3d/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/habi/sticklebacks-manuscript/tree/f35b55dd0cffd68b4cc046fe19815dca180f502a">habi/sticklebacks-manuscript@f35b55d</a>
+from <a href="https://github.com/habi/sticklebacks-manuscript/tree/ec33381c88f166787855dd6659adacd34d345f3d">habi/sticklebacks-manuscript@ec33381</a>
 on February 26, 2026.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -171,8 +171,8 @@ Populations of benthic and limnetic stickleback differ in a number of phenotypic
 However, analyses of the structures required for feeding – especially the jaws and complex internal branchial anatomy – requires considerable time and expertise, with destructive sampling and fine dissection skills needed for quantitative analysis.
 The advent of µCT and 3D-scanning technology affords non-destructive sampling and an increase the resolution of data available for study, but at the substantial cost of increasing complexity and processing time for each specimen.
 To address these concerns, we developed a rapid and semi-automated segmentation and analysis pipeline based around the Biomedisa Image Segmentation platform for investigating three-dimensional morphological adaptation within the three-spined stickleback.
-The pipeline includes splitting a multi-specimen scan into regions of interest for each specimen, reconstruction of targeted anatomy, and morphometric analyses.
-We then applied this pipeline to a sampling effort encompassing hundreds of samples of divergent benthic and limnetic stickleback populations, showcasing the possibility of using high-throughput scanning data to provide tests of ecological and evolutionary hypotheses.</p>
+The pipeline includes splitting 44 multi-specimen scans into regions of interest for each specimen, reconstruction of targeted anatomy, and morphometric analyses.
+We then applied this pipeline to a sampling effort encompassing hundreds of samples of divergent benthic and limnetic stickleback populations (N=216), showcasing the possibility of using high-throughput scanning data to provide tests of ecological and evolutionary hypotheses.</p>
 <h2 class="page_break_before" id="introduction">Introduction</h2>
 <ul>
 <li>Embedded into <a href="https://alaskastickleback.com/">Alaska Stickleback Restoration Project</a>, <a href="https://alaskastickleback.com/genomics">Genomics axis</a> where Katie Peichel, Ben Sulser and Sheila Christen are affiliated.</li>
@@ -182,7 +182,7 @@ We then applied this pipeline to a sampling effort encompassing hundreds of samp
 <p>X-ray microtomography is an indispensable tool to gain non-destructive insights into the inner structure of highly diverse samples, namely for specimens studied in the biomedical sciences <span class="citation" data-cites="IKVBgaCE">[<a href="#ref-IKVBgaCE" role="doc-biblioref">1</a>]</span>.
 Microtomographic imaging is ideally suited to nondestructively assess the morphology of different fish species, large and small <span class="citation" data-cites="19h9vxsYG">[<a href="#ref-19h9vxsYG" role="doc-biblioref">2</a>]</span>.</p>
 <!---
-Do we have to give a bit more background on uCT imaging, e.g. write about resolution, staining, etc?
+Do we have to give a bit of background on uCT imaging, e.g. write about resolution, staining, etc?
 --->
 <h2 class="page_break_before" id="materials-methods">Materials &amp; Methods</h2>
 <h3 id="sample-procurement-and-preparation">Sample procurement and preparation</h3>
@@ -192,39 +192,44 @@ Do we have to give a bit more background on uCT imaging, e.g. write about resolu
 <h3 id="microtomographic-imaging">microtomographic imaging</h3>
 <p>In a small pilot study we determined the optimal scanning parameters to fit the constraints on total scanning time, resolution and sample handling.
 To optimize for these constraints, we scanned all the sticklebacks in batches of six fish in a custom-made 3D printed sample holder in a single scan.
-This holder was generated with <a href="https://openscad.org/">OpenSCAD</a> and is available online, either directly as <a href="https://github.com/TomoGraphics/Hol3Drs/blob/master/STL/Stickleback.Multiple.stl">STL file for printing</a> or as <a href="https://github.com/TomoGraphics/Hol3Drs/blob/master/Stickleback.Multiple.scad">(parametrized) OpenSCAD file</a> for adaptation to other classes of samples.
+This holder was generated with <a href="https://openscad.org/">OpenSCAD</a> and is available online, either directly as <a href="https://github.com/TomoGraphics/Hol3Drs/blob/master/STL/Stickleback.Multiple.stl">STL file for printing</a> or as <a href="https://github.com/TomoGraphics/Hol3Drs/blob/master/Stickleback.Multiple.scad">(parameterized) OpenSCAD file</a> for adaptation to other classes of samples.
 Both files are part of a library of 3D-printable sample holders for tomographic imaging <span class="citation" data-cites="115PPSuQp">[<a href="#ref-115PPSuQp" role="doc-biblioref">3</a>]</span>.</p>
 <p>Tomographic imaging was performed on a <a href="https://www.bruker.com/en/products-and-solutions/diffractometers-and-x-ray-microscopes/3d-x-ray-microscopes/skyscan-2214.html">Bruker SkyScan 2214</a> at the Institute of Anatomy, University of Bern, Switzerland.
 In total we performed 44 scans, each of the scan usually containing 6 fish in the sample holder.</p>
-<!-- How many fish IDs did we scan in total? -->
-<!-- Figure this out with both the XLS sheet from Ben *and* the folders written to `rec_regions` on disk! -->
 <p>The relevant details of each scan are collated in a table in the <a href="#supplementary-materials">Supplementary Materials</a>; a short overview of the scanning parameters is given below.
 The X-ray source was set to a voltage of 60 kV and a current of around 110 µA for all but one scan where we used a source voltage of 49 kV and 159 µA due to operator error.
 For each sample, we recorded a set of 3601 projections of approximately 3000 x 2000 pixels at every 0.1° over a 360° sample rotation.
 Every single projection was exposed for about a second (depending on the sample).
-Due to the lenght of the fish, we had to acquire so-called stacked scans, on average we scanned 3 fields of view along the rotation axis of the sample holder.
+Due to the length of the fish, we had to acquire so-called stacked scans, on average we scanned 3 fields of view along the rotation axis of the sample holder.
 This resulted in scan times between 3 to 5 hours hours.
 The projection images were then subsequently reconstructed into a 3D stack of images with NRecon (Bruker microCT, Kontich Belgium, Version: 2.1.0.1 or 2.2.0.6).
 The isometric voxel sized in the resulting datasets vary from 15 to 19 µm.</p>
-<!-- What did we write to disk as PNG files? -->
 <h3 id="data-analysis">Data analysis</h3>
 <h4 id="preparation-and-handling-of-tomographic-datasets">Preparation and handling of tomographic datasets</h4>
 <p>After acquisition, <a href="https://github.com/habi/sticklebacks/blob/main/rsync-sticklebacks.sh">a simple script</a> was used to copy the relevant data to both archival storage and storage accessible by all co-authors at the same time.</p>
-<p>Further processing of the tomographic dataset was performed with a set of Jupyter <span class="citation" data-cites="1Bh7g5XAe">[<a href="#ref-1Bh7g5XAe" role="doc-biblioref">4</a>]</span> <a href="https://github.com/habi/sticklebacks">notebooks</a> <span class="citation" data-cites="4vi5Vvpx">[<a href="#ref-4vi5Vvpx" role="doc-biblioref">5</a>]</span>.</p>
-<ul>
-<li>Efficiently loading data from disk with <a href="https://www.dask.org/"><code>dask</code></a> <span class="citation" data-cites="hj1CnyWB">[<a href="#ref-hj1CnyWB" role="doc-biblioref">6</a>]</span></li>
-<li>Extract position of single fish (all scanned together), based on the MIP of the scan (see Figure <a href="#fig:labels">2</a>).</li>
-<li>Crop out each fish (with a buffer) and write to cropped dataset (see Figure <a href="#fig:cropping">4</a>).</li>
-<li>Cropped datasets are saved to discrete folders for easy handling.
-In both original gray-scale plus as thresholded dataset, e.g. binarized into bone and “not bone”.
-These are saved out as <a href="https://zarr.dev/"><code>zarr</code></a> <span class="citation" data-cites="q1fyIkxX">[<a href="#ref-q1fyIkxX" role="doc-biblioref">7</a>]</span> and <a href="https://teem.sourceforge.net/nrrd/"><code>nrrd</code></a> files.</li>
-</ul>
+<p>Further processing of the tomographic dataset was performed with a set of Jupyter <span class="citation" data-cites="1Bh7g5XAe">[<a href="#ref-1Bh7g5XAe" role="doc-biblioref">4</a>]</span> <a href="https://github.com/habi/sticklebacks">notebooks</a> <span class="citation" data-cites="4vi5Vvpx">[<a href="#ref-4vi5Vvpx" role="doc-biblioref">5</a>]</span>.
+The scripts are freely available online under the MIT License and may be freely used, modified, and redistributed for research, teaching, and other non-military purposes.</p>
+<h5 id="preview-notebook">Preview notebook</h5>
+<p>The <a href="https://nbviewer.org/github/habi/sticklebacks/blob/main/PreviewScans.ipynb">preview notebook</a> is used for surfacing issues with the scanning.
+For this, we read all relevant scanning and reconstruction parameters from the log files of each scan.
+Afterwards, we efficiently loading the reconstruction PNG images from disk with the <a href="https://image.dask.org/en/latest/dask_image.imread.html"><code>dask_image.imread.imread</code></a> function <span class="citation" data-cites="hj1CnyWB">[<a href="#ref-hj1CnyWB" role="doc-biblioref">6</a>]</span>.
+Like so, we can map all the generated reconstructions to memory and quickly generate maximum intensity projections (MIP) of each scan (see Figure <a href="#fig:mips">1</a> for an example) for both quality control and further processing.</p>
 <div id="fig:mips" class="fignos">
 <figure>
 <img src="images/Sticklebucket_H.rec.MIPs.png" alt="Figure 1: Maximum intensity projections of one acquired dataset along all three cardinal axes." />
 <figcaption aria-hidden="true"><span>Figure 1:</span> Maximum intensity projections of one acquired dataset along all three cardinal axes.</figcaption>
 </figure>
 </div>
+<h5 id="separation-notebook">Separation notebook</h5>
+<p>The <a href="https://nbviewer.org/github/habi/sticklebacks/blob/main/BucketSeparator.ipynb">separation notebook</a> processes all the performed scans to extract the single fish out from each scan, where 6 fish have been scanned.
+As in the preview notebook, we efficiently load all the PNGs from disk with <a href="https://www.dask.org/"><code>dask</code></a> <span class="citation" data-cites="hj1CnyWB">[<a href="#ref-hj1CnyWB" role="doc-biblioref">6</a>]</span>.
+Based on the previously extracted MIP and simple labeling of the image (<code>skimage.measure.label</code>, we extract the positions of single fish (<code>skimage.measure.regionprops</code>) (see Figure <a href="#fig:labels">2</a>).</p>
+<ul>
+<li>Crop out each fish (with a buffer) and write to cropped dataset (see Figure <a href="#fig:cropping">4</a>).</li>
+<li>Cropped datasets are saved to discrete folders for easy handling.
+In both original gray-scale plus as thresholded dataset, e.g. binarized into bone and “not bone”.
+These are saved out as <a href="https://zarr.dev/"><code>zarr</code></a> <span class="citation" data-cites="q1fyIkxX">[<a href="#ref-q1fyIkxX" role="doc-biblioref">7</a>]</span> and <a href="https://teem.sourceforge.net/nrrd/"><code>nrrd</code></a> files.</li>
+</ul>
 <div id="fig:labels" class="fignos">
 <figure>
 <img src="images/Sticklebucket_H.rec.Labels.Detected.png" alt="Figure 2: Automatically detected regions based on maximum intensity projection along the rotation axis of the tomographic scan. The regions are numbered consecutively from the top left to the bottom right. These numbers are mapped to the correct fish ID in the next step." />
@@ -248,6 +253,16 @@ These are saved out as <a href="https://zarr.dev/"><code>zarr</code></a> <span c
 <li>Biomedisa <span class="citation" data-cites="jHalJ9Zw">[<a href="#ref-jHalJ9Zw" role="doc-biblioref">8</a>]</span></li>
 </ul>
 <h2 class="page_break_before" id="results">Results</h2>
+<h3 id="microct-data">microCT data</h3>
+<!-- Should the microCT "result" (numbers, etc.) be shown/noted in the Materials&Methods section instead of here? -->
+<ul>
+<li>We actually scanned N=216 fishes (unique Fish IDs)</li>
+<li>The total scanning duration was 18 days, 12 hours and 6 minutes</li>
+<li>In total, we acquired 158444 projections</li>
+<li>These were reconstructed into a total of 177749 reconstructions
+Which is about 4040 files per scan (N=44)</li>
+</ul>
+<h3 id="analysis">Analysis</h3>
 <ul>
 <li>3D shape variation on internal pharyngobranchial bone.
 Only possible to get this information in 3D.</li>
