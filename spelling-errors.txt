@@ -6,7 +6,7 @@ branchial
 Bruker
 Burgergemeinde
 cpeichel
-CSV
+csv
 curation
 Doublechecking
 Gasterosteus
