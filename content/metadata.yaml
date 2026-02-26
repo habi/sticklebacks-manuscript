@@ -101,7 +101,7 @@ authors:
       - Swiss National Science Foundation (TMAG-3_209309/1)  
     coi:
       string: "none"
-      lastapproved: 19.01.2026
+      lastapproved: !!str 2026-01-19
     corresponding: false
   - name: Ruslan Hlushchuk
     initials: RH
