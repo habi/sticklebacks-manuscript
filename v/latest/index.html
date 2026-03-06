@@ -9,7 +9,7 @@
   <meta name="author" content="Sheila Christen" />
   <meta name="author" content="Catherine L. Peichel" />
   <meta name="author" content="Ruslan Hlushchuk" />
-  <meta name="dcterms.date" content="2026-02-26" />
+  <meta name="dcterms.date" content="2026-03-06" />
   <meta name="keywords" content="tomography, sticklebacks, ecology" />
   <title>microCT imaging of threespine stickleback</title>
   <style>
@@ -54,11 +54,11 @@
   <meta name="citation_title" content="microCT imaging of threespine stickleback" />
   <meta property="og:title" content="microCT imaging of threespine stickleback" />
   <meta property="twitter:title" content="microCT imaging of threespine stickleback" />
-  <meta name="dc.date" content="2026-02-26" />
-  <meta name="citation_publication_date" content="2026-02-26" />
-  <meta property="article:published_time" content="2026-02-26" />
-  <meta name="dc.modified" content="2026-02-26T17:44:08+00:00" />
-  <meta property="article:modified_time" content="2026-02-26T17:44:08+00:00" />
+  <meta name="dc.date" content="2026-03-06" />
+  <meta name="citation_publication_date" content="2026-03-06" />
+  <meta property="article:published_time" content="2026-03-06" />
+  <meta name="dc.modified" content="2026-03-06T16:32:00+00:00" />
+  <meta property="article:modified_time" content="2026-03-06T16:32:00+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -84,9 +84,9 @@
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/685209b960a1146c77fadfaef4d09af4be2001db/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/685209b960a1146c77fadfaef4d09af4be2001db/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/685209b960a1146c77fadfaef4d09af4be2001db/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/92f090f4dcba262b7fded829d2a67fd336fb0f24/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/92f090f4dcba262b7fded829d2a67fd336fb0f24/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/92f090f4dcba262b7fded829d2a67fd336fb0f24/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -103,10 +103,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://habi.github.io/sticklebacks-manuscript/v/685209b960a1146c77fadfaef4d09af4be2001db/">permalink</a>)
+(<a href="https://habi.github.io/sticklebacks-manuscript/v/92f090f4dcba262b7fded829d2a67fd336fb0f24/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/habi/sticklebacks-manuscript/tree/685209b960a1146c77fadfaef4d09af4be2001db">habi/sticklebacks-manuscript@685209b</a>
-on February 26, 2026.
+from <a href="https://github.com/habi/sticklebacks-manuscript/tree/92f090f4dcba262b7fded829d2a67fd336fb0f24">habi/sticklebacks-manuscript@92f090f</a>
+on March 6, 2026.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -180,7 +180,7 @@ We then applied this pipeline to a sampling effort encompassing hundreds of samp
 </ul>
 <h2 id="micro-computed-tomography">Micro-computed tomography</h2>
 <p>X-ray microtomography is an indispensable tool to gain non-destructive insights into the inner structure of highly diverse samples, namely for specimens studied in the biomedical sciences <span class="citation" data-cites="IKVBgaCE">[<a href="#ref-IKVBgaCE" role="doc-biblioref">1</a>]</span>.
-Microtomographic imaging is ideally suited to nondestructively assess the morphology of different fish species, large and small <span class="citation" data-cites="19h9vxsYG">[<a href="#ref-19h9vxsYG" role="doc-biblioref">2</a>]</span>.</p>
+Microtomographic imaging is ideally suited to non-destructively assess the morphology of different fish species, large and small <span class="citation" data-cites="19h9vxsYG">[<a href="#ref-19h9vxsYG" role="doc-biblioref">2</a>]</span>.</p>
 <!---
 Do we have to give a bit of background on uCT imaging, e.g. write about resolution, staining, etc?
 --->
@@ -223,34 +223,35 @@ Like so, we can map all the generated reconstructions to memory and quickly gene
 <h5 id="separation-notebook">Separation notebook</h5>
 <p>The <a href="https://nbviewer.org/github/habi/sticklebacks/blob/main/BucketSeparator.ipynb">separation notebook</a> processes all the performed scans to extract the single fish out from each scan, where 6 fish have been scanned.
 As in the preview notebook, we efficiently load all the PNGs from disk with <a href="https://www.dask.org/"><code>dask</code></a> <span class="citation" data-cites="hj1CnyWB">[<a href="#ref-hj1CnyWB" role="doc-biblioref">6</a>]</span>.
-Based on the previously extracted MIP and simple labeling of the image (<code>skimage.measure.label</code>, we extract the positions of single fish (<code>skimage.measure.regionprops</code>) (see Figure <a href="#fig:labels">2</a>).</p>
-<ul>
-<li>Crop out each fish (with a buffer) and write to cropped dataset (see Figure <a href="#fig:cropping">4</a>).</li>
-<li>Cropped datasets are saved to discrete folders for easy handling.
-In both original gray-scale plus as thresholded dataset, e.g. binarized into bone and “not bone”.
-These are saved out as <a href="https://zarr.dev/"><code>zarr</code></a> <span class="citation" data-cites="q1fyIkxX">[<a href="#ref-q1fyIkxX" role="doc-biblioref">7</a>]</span> and <a href="https://teem.sourceforge.net/nrrd/"><code>nrrd</code></a> files.</li>
-</ul>
+Based on the previously extracted MIP images and a simple labeling of the image (<code>skimage.measure.label</code>), we extract both the labels in the custom-made sample holder and the positions of single fish in the scan (<code>skimage.measure.regionprops</code>) (see Figure <a href="#fig:labels">2</a>).</p>
 <div id="fig:labels" class="fignos">
 <figure>
 <img src="images/Sticklebucket_H.rec.Labels.Detected.png" alt="Figure 2: Automatically detected regions based on maximum intensity projection along the rotation axis of the tomographic scan. The regions are numbered consecutively from the top left to the bottom right. These numbers are mapped to the correct fish ID in the next step." />
 <figcaption aria-hidden="true"><span>Figure 2:</span> Automatically detected regions based on maximum intensity projection along the rotation axis of the tomographic scan. The regions are numbered consecutively from the top left to the bottom right. These numbers are mapped to the correct fish ID in the next step.</figcaption>
 </figure>
 </div>
+<p>Based on a simple mapping of the detected region to the ID numbers of the scanned fish, we labeled the resulting images and presented these images together with photos of the lab book and sample tubes for double-checking (see Figure <a href="#fig:checking">3</a>).</p>
 <div id="fig:checking" class="fignos">
 <figure>
 <img src="images/Sticklebucket_H.rec.Labels.Check.png" alt="Figure 3: Mapping lab book notes, photos and detected regions to fish ID." />
 <figcaption aria-hidden="true"><span>Figure 3:</span> Mapping lab book notes, photos and detected regions to fish ID.</figcaption>
 </figure>
 </div>
+<p>The <code>skimage.measure.regionprops</code> function we used for labeling returns not only the positions of the detected fish, but also the extent of the bounding box of the region of the fish shown in the original image.
+We extracted each region of each fish separately out of the large reconstructions (with a configurable border buffer, see Figure <a href="#fig:cropping">4</a>) and wrote these extracted regions to disk in discrete folders for efficient further analysis.
+In a first step, we wrote the regions of the single fish to disk in <code>zarr</code> <span class="citation" data-cites="p38Gm1rT">[<a href="#ref-p38Gm1rT" role="doc-biblioref">7</a>]</span> format, which is a preferred format to store n-dimensional arrays on disk.
+In addition to this, we also wrote a log file for each extracted region, containing all relevant information to redo the cropping step completely manually (an <a href="https://github.com/habi/sticklebacks/blob/main/logfiles/BucketOfFish_H/rec_regions/SL.X23.016/SL.X23.016.log">example of such a log file</a> is shown as part of the processing repository).</p>
 <div id="fig:cropping" class="fignos">
 <figure>
-<img src="images/Sticklebucket_H.rec.Regions.Check.png" alt="Figure 4: Doublechecking crop extent and fish ID." />
-<figcaption aria-hidden="true"><span>Figure 4:</span> Doublechecking crop extent and fish ID.</figcaption>
+<img src="images/Sticklebucket_H.rec.Regions.Check.png" alt="Figure 4: Double-checking crop extent and fish ID." />
+<figcaption aria-hidden="true"><span>Figure 4:</span> Double-checking crop extent and fish ID.</figcaption>
 </figure>
 </div>
+<p>Saving out the regions as <code>zarr</code> files made it possible to efficiently work with the image data of each extracted fish and to convert that data to any desired format for further analysis.
+For this further analysis, we wrote out stacks of PNG images and additionally, as <a href="https://teem.sourceforge.net/nrrd/"><code>nrrd</code></a> files for each fish region as a simple crop out of the original dataset and as binarized regions, which are segmented into bone and background based on a simple multi-level Otsu thresholding method <span class="citation" data-cites="JICzDA7P">[<a href="#ref-JICzDA7P" role="doc-biblioref">8</a>]</span>.</p>
 <h4 id="extraction-of-features-of-interest">Extraction of features of interest</h4>
 <ul>
-<li>Biomedisa <span class="citation" data-cites="jHalJ9Zw">[<a href="#ref-jHalJ9Zw" role="doc-biblioref">8</a>]</span></li>
+<li>Biomedisa <span class="citation" data-cites="jHalJ9Zw">[<a href="#ref-jHalJ9Zw" role="doc-biblioref">9</a>]</span></li>
 </ul>
 <h2 class="page_break_before" id="results">Results</h2>
 <h3 id="microct-data">microCT data</h3>
@@ -277,7 +278,7 @@ Several fish can be scanned together, splitting is performed after the fact, rep
 </ul>
 <h2 class="page_break_before" id="conclusion">Conclusion</h2>
 <h2 class="page_break_before" id="author-contributions">Author Contributions</h2>
-<p><a href="https://credit.niso.org/">Contributor Roles Taxonomy (CRediT)</a>, as defined in <span class="citation" data-cites="11ofsO2hq">[<a href="#ref-11ofsO2hq" role="doc-biblioref">9</a>]</span>:</p>
+<p><a href="https://credit.niso.org/">Contributor Roles Taxonomy (CRediT)</a>, as defined in <span class="citation" data-cites="11ofsO2hq">[<a href="#ref-11ofsO2hq" role="doc-biblioref">10</a>]</span>:</p>
 <ul>
 <li><a href="https://credit.niso.org/contributor-roles/conceptualization/">Conceptualization</a>: Ben Sulser, Ruslan Hlushchuk</li>
 <li><a href="https://credit.niso.org/contributor-roles/data-curation/">Data curation</a>: David Haberthür, Ben Sulser</li>
@@ -333,7 +334,7 @@ Several fish can be scanned together, splitting is performed after the fact, rep
 </table>
 <h2 id="acknowledgments">Acknowledgments</h2>
 <p>We are grateful to the <a href="https://mic.unibe.ch/">Microscopy Imaging Center</a> of the University of Bern for their infrastructural support.
-We also thank the <code>manubot</code> project <span class="citation" data-cites="YuJbg3zO">[<a href="#ref-YuJbg3zO" role="doc-biblioref">10</a>]</span> for facilitating collaborative writing of this manuscript.</p>
+We also thank the <code>manubot</code> project <span class="citation" data-cites="YuJbg3zO">[<a href="#ref-YuJbg3zO" role="doc-biblioref">11</a>]</span> for facilitating collaborative writing of this manuscript.</p>
 <h2 id="supplementary-materials">Supplementary Materials</h2>
 <h3 id="parameters-of-tomographic-scans-of-all-the-fishes">Parameters of tomographic scans of all the fishes</h3>
 <p>The CSV file <a href="https://github.com/habi/stickleback-manuscript/blob/main/content/data/ScanningDetails.csv">ScanningDetails.csv</a> gives a tabular overview of all the (relevant) parameters of all the scans we performed.
@@ -360,17 +361,20 @@ A copy of each log file containing <em>all</em> scanning parameters is available
 <div id="ref-hj1CnyWB" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">6. </div><div class="csl-right-inline"><strong>Dask: Library for dynamic task scheduling</strong> <div class="csl-block">Dask Development Team</div> (2016) <a href="https://dask.org">https://dask.org</a></div>
 </div>
-<div id="ref-q1fyIkxX" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">7. </div><div class="csl-right-inline"><strong>Zarr</strong> <a href="https://www.wikidata.org/wiki/Q130377195">https://www.wikidata.org/wiki/Q130377195</a></div>
+<div id="ref-p38Gm1rT" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">7. </div><div class="csl-right-inline"><strong>zarr-developers/zarr-python: v2.4.0</strong> <div class="csl-block">Alistair Miles, John Kirkham, Martin Durant, James Bourbeau, Tarik Onalan, Joe Hamman, Zain Patel, Shikharsg, Matthew Rocklin, Raphael Dussin, … Anderson Banihirwe</div> <em>Zenodo</em> (2020-01-11) <a href="https://doi.org/grbf32">https://doi.org/grbf32</a> <div class="csl-block">DOI: <a href="https://doi.org/10.5281/zenodo.3773450">10.5281/zenodo.3773450</a></div></div>
+</div>
+<div id="ref-JICzDA7P" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">8. </div><div class="csl-right-inline"><strong>A Fast Algorithm for Multilevel Thresholding</strong> <div class="csl-block">廖炳松, 陳澤生, 詹寶珠</div> <em>Journal of Information Science and Engineering</em> (2001-09-01) <a href="https://doi.org/hbrn6v">https://doi.org/hbrn6v</a> <div class="csl-block">DOI: <a href="https://doi.org/10.6688/jise.2001.17.5.1">10.6688/jise.2001.17.5.1</a></div></div>
 </div>
 <div id="ref-jHalJ9Zw" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">8. </div><div class="csl-right-inline"><strong>Introducing Biomedisa as an open-source online platform for biomedical image segmentation</strong> <div class="csl-block">Philipp D Lösel, Thomas van de Kamp, Alejandra Jayme, Alexey Ershov, Tomáš Faragó, Olaf Pichler, Nicholas Tan Jerome, Narendar Aadepu, Sabine Bremer, Suren A Chilingaryan, … Vincent Heuveline</div> <em>Nature Communications</em> (2020-11-04) <a href="https://doi.org/gh58qn">https://doi.org/gh58qn</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41467-020-19303-w">10.1038/s41467-020-19303-w</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/33149150">33149150</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7642381">PMC7642381</a></div></div>
+<div class="csl-left-margin">9. </div><div class="csl-right-inline"><strong>Introducing Biomedisa as an open-source online platform for biomedical image segmentation</strong> <div class="csl-block">Philipp D Lösel, Thomas van de Kamp, Alejandra Jayme, Alexey Ershov, Tomáš Faragó, Olaf Pichler, Nicholas Tan Jerome, Narendar Aadepu, Sabine Bremer, Suren A Chilingaryan, … Vincent Heuveline</div> <em>Nature Communications</em> (2020-11-04) <a href="https://doi.org/gh58qn">https://doi.org/gh58qn</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41467-020-19303-w">10.1038/s41467-020-19303-w</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/33149150">33149150</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7642381">PMC7642381</a></div></div>
 </div>
 <div id="ref-11ofsO2hq" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">9. </div><div class="csl-right-inline"><strong>ANSI/NISO Z39.104-2022, CRediT, Contributor Roles Taxonomy</strong> <em>NISO</em> <a href="https://doi.org/gqx265">https://doi.org/gqx265</a> <div class="csl-block">DOI: <a href="https://doi.org/10.3789/ansi.niso.z39.104-2022">10.3789/ansi.niso.z39.104-2022</a></div></div>
+<div class="csl-left-margin">10. </div><div class="csl-right-inline"><strong>ANSI/NISO Z39.104-2022, CRediT, Contributor Roles Taxonomy</strong> <em>NISO</em> <a href="https://doi.org/gqx265">https://doi.org/gqx265</a> <div class="csl-block">DOI: <a href="https://doi.org/10.3789/ansi.niso.z39.104-2022">10.3789/ansi.niso.z39.104-2022</a></div></div>
 </div>
 <div id="ref-YuJbg3zO" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">10. </div><div class="csl-right-inline"><strong>Open collaborative writing with Manubot</strong> <div class="csl-block">Daniel S Himmelstein, Vincent Rubinetti, David R Slochower, Dongbo Hu, Venkat S Malladi, Casey S Greene, Anthony Gitter</div> <em>PLOS Computational Biology</em> (2019-06-24) <a href="https://doi.org/c7np">https://doi.org/c7np</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1371/journal.pcbi.1007128">10.1371/journal.pcbi.1007128</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31233491">31233491</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6611653">PMC6611653</a></div></div>
+<div class="csl-left-margin">11. </div><div class="csl-right-inline"><strong>Open collaborative writing with Manubot</strong> <div class="csl-block">Daniel S Himmelstein, Vincent Rubinetti, David R Slochower, Dongbo Hu, Venkat S Malladi, Casey S Greene, Anthony Gitter</div> <em>PLOS Computational Biology</em> (2019-06-24) <a href="https://doi.org/c7np">https://doi.org/c7np</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1371/journal.pcbi.1007128">10.1371/journal.pcbi.1007128</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31233491">31233491</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6611653">PMC6611653</a></div></div>
 </div>
 </div>
 <!-- default theme -->
