@@ -26,8 +26,8 @@ header-includes: |
   <meta name="dc.date" content="2026-03-06" />
   <meta name="citation_publication_date" content="2026-03-06" />
   <meta property="article:published_time" content="2026-03-06" />
-  <meta name="dc.modified" content="2026-03-06T16:37:49+00:00" />
-  <meta property="article:modified_time" content="2026-03-06T16:37:49+00:00" />
+  <meta name="dc.modified" content="2026-03-06T16:47:15+00:00" />
+  <meta property="article:modified_time" content="2026-03-06T16:47:15+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -53,9 +53,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/4da134576294f3acec3cb51d9784e39cd8b8498d/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/4da134576294f3acec3cb51d9784e39cd8b8498d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/4da134576294f3acec3cb51d9784e39cd8b8498d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/05e5d1cc29e50b63b25088232e610a7f13ef327d/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/05e5d1cc29e50b63b25088232e610a7f13ef327d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/05e5d1cc29e50b63b25088232e610a7f13ef327d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/4da134576294f3acec3cb51d9784e39cd8b8498d/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/05e5d1cc29e50b63b25088232e610a7f13ef327d/))
 was automatically generated
-from [habi/sticklebacks-manuscript@4da1345](https://github.com/habi/sticklebacks-manuscript/tree/4da134576294f3acec3cb51d9784e39cd8b8498d)
+from [habi/sticklebacks-manuscript@05e5d1c](https://github.com/habi/sticklebacks-manuscript/tree/05e5d1cc29e50b63b25088232e610a7f13ef327d)
 on March 6, 2026.
 </em></small>
 
@@ -241,10 +241,17 @@ We extracted each region of each fish separately out of the large reconstruction
 In a first step, we wrote the regions of the single fish to disk in `zarr` [@doi:10.5281/zenodo.3773450] format, which is a preferred format to store n-dimensional arrays on disk.
 In addition to this, we also wrote a log file for each extracted region, containing all relevant information to redo the cropping step completely manually (an [example of such a log file](https://github.com/habi/sticklebacks/blob/main/logfiles/BucketOfFish_H/rec_regions/SL.X23.016/SL.X23.016.log) is shown as part of the processing repository).
 
-![Double-checking crop extent and fish ID.](images/Sticklebucket_H.rec.Regions.Check.png){#fig:cropping}
+![Double-checking crop extent and fish ID.
+  The top row shows the extracted regions from the previously calculated MIP of the full scan, the bottom row shows the MIP images of the extracted regions.
+  Both rows must show exactly the same region.](images/Sticklebucket_H.rec.Regions.Check.png){#fig:cropping}
 
 Saving out the regions as `zarr` files made it possible to efficiently work with the image data of each extracted fish and to convert that data to any desired format for further analysis.
 For this further analysis, we wrote out stacks of PNG images and additionally, as [`nrrd`](https://teem.sourceforge.net/nrrd/) files for each fish region as a simple crop out of the original dataset and as binarized regions, which are segmented into bone and background based on a simple multi-level Otsu thresholding method [@doi:10.6688/JISE.2001.17.5.1].
+
+Using `K3D-jupyter` [@url:https://k3d-jupyter.org/] we implemented a quick way to view any of the extracted regions directly in the Jupyter notebook (see Figure @fig:k3d).
+An [interactive version of this figure](https://htmlpreview.github.io/?https://raw.githubusercontent.com/habi/sticklebacks-manuscript/refs/heads/main/content/data/SL.X23.012.3D.html) is available online.
+
+![Three-dimensional preview of extracted region, automatically thresholded.](images/SL.X23.012.3D.png){#fig:k3d}
 
 #### Extraction of features of interest
 

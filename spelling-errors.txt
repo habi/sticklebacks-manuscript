@@ -7,7 +7,7 @@ branchial
 Bruker
 Burgergemeinde
 cpeichel
-csv
+CSV
 curation
 Gasterosteus
 Haberthür
@@ -39,6 +39,7 @@ spined
 STL
 Sulser
 sulserrb
+thresholded
 thresholding
 TMAG
 voxel
