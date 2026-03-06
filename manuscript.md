@@ -26,8 +26,8 @@ header-includes: |
   <meta name="dc.date" content="2026-03-06" />
   <meta name="citation_publication_date" content="2026-03-06" />
   <meta property="article:published_time" content="2026-03-06" />
-  <meta name="dc.modified" content="2026-03-06T16:47:15+00:00" />
-  <meta property="article:modified_time" content="2026-03-06T16:47:15+00:00" />
+  <meta name="dc.modified" content="2026-03-06T17:02:03+00:00" />
+  <meta property="article:modified_time" content="2026-03-06T17:02:03+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -53,9 +53,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/05e5d1cc29e50b63b25088232e610a7f13ef327d/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/05e5d1cc29e50b63b25088232e610a7f13ef327d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/05e5d1cc29e50b63b25088232e610a7f13ef327d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/a7cd79f20294f92afeebe0a989b335cc71528fed/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/a7cd79f20294f92afeebe0a989b335cc71528fed/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/a7cd79f20294f92afeebe0a989b335cc71528fed/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/05e5d1cc29e50b63b25088232e610a7f13ef327d/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/a7cd79f20294f92afeebe0a989b335cc71528fed/))
 was automatically generated
-from [habi/sticklebacks-manuscript@05e5d1c](https://github.com/habi/sticklebacks-manuscript/tree/05e5d1cc29e50b63b25088232e610a7f13ef327d)
+from [habi/sticklebacks-manuscript@a7cd79f](https://github.com/habi/sticklebacks-manuscript/tree/a7cd79f20294f92afeebe0a989b335cc71528fed)
 on March 6, 2026.
 </em></small>
 
@@ -155,11 +155,15 @@ Ruslan Hlushchuk \<ruslan.hlushchuk@unibe.ch\>.
 ## Abstract {.page_break_before}
 
 Can we predict evolution?
+
 The three-spined stickleback (Gasterosteus aculeatus) is a well-recognized system for understanding adaptation to divergent habitats.
 Populations of benthic and limnetic stickleback differ in a number of phenotypic traits that are associated with shifts in dietary specialization.
 However, analyses of the structures required for feeding – especially the jaws and complex internal branchial anatomy – requires considerable time and expertise, with destructive sampling and fine dissection skills needed for quantitative analysis.
+
 The advent of µCT and 3D-scanning technology affords non-destructive sampling and an increase the resolution of data available for study, but at the substantial cost of increasing complexity and processing time for each specimen.
-To address these concerns, we developed a rapid and semi-automated segmentation and analysis pipeline based around the Biomedisa Image Segmentation platform for investigating three-dimensional morphological adaptation within the three-spined stickleback.
+
+To address these concerns, we developed a rapid and semi-automated segmentation and analysis pipeline based on both the Jupyter interactive development environment and the Biomedisa image segmentation platform for investigating three-dimensional morphological adaptation within the three-spined stickleback.
+
 The pipeline includes splitting 44 multi-specimen scans into regions of interest for each specimen, reconstruction of targeted anatomy, and morphometric analyses.
 We then applied this pipeline to a sampling effort encompassing hundreds of samples of divergent benthic and limnetic stickleback populations (N=216), showcasing the possibility of using high-throughput scanning data to provide tests of ecological and evolutionary hypotheses.
 
@@ -248,7 +252,7 @@ In addition to this, we also wrote a log file for each extracted region, contain
 Saving out the regions as `zarr` files made it possible to efficiently work with the image data of each extracted fish and to convert that data to any desired format for further analysis.
 For this further analysis, we wrote out stacks of PNG images and additionally, as [`nrrd`](https://teem.sourceforge.net/nrrd/) files for each fish region as a simple crop out of the original dataset and as binarized regions, which are segmented into bone and background based on a simple multi-level Otsu thresholding method [@doi:10.6688/JISE.2001.17.5.1].
 
-Using `K3D-jupyter` [@url:https://k3d-jupyter.org/] we implemented a quick way to view any of the extracted regions directly in the Jupyter notebook (see Figure @fig:k3d).
+Using `K3D-jupyter` [@url:https://k3d-jupyter.org] we implemented a quick way to view any of the extracted regions directly in the Jupyter notebook (see Figure @fig:k3d).
 An [interactive version of this figure](https://htmlpreview.github.io/?https://raw.githubusercontent.com/habi/sticklebacks-manuscript/refs/heads/main/content/data/SL.X23.012.3D.html) is available online.
 
 ![Three-dimensional preview of extracted region, automatically thresholded.](images/SL.X23.012.3D.png){#fig:k3d}
