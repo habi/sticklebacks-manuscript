@@ -1,6 +1,7 @@
 aculeatus
 Baltzerstrasse
 benthic
+binarized
 Biomedisa
 branchial
 Bruker
@@ -8,7 +9,6 @@ Burgergemeinde
 cpeichel
 csv
 curation
-Doublechecking
 Gasterosteus
 Haberthür
 habi
@@ -22,9 +22,9 @@ microtomographic
 microtomography
 MIP
 morphometric
-nondestructively
 NRecon
 OpenSCAD
+Otsu
 Peichel
 pharyngobranchial
 phenotypic
@@ -39,6 +39,6 @@ spined
 STL
 Sulser
 sulserrb
-thresholded
+thresholding
 TMAG
 voxel

@@ -5,7 +5,7 @@ keywords:
 - sticklebacks
 - ecology
 lang: en-US
-date-meta: '2026-02-26'
+date-meta: '2026-03-06'
 author-meta:
 - David Haberthür
 - Ben Sulser
@@ -23,11 +23,11 @@ header-includes: |
   <meta name="citation_title" content="microCT imaging of threespine stickleback" />
   <meta property="og:title" content="microCT imaging of threespine stickleback" />
   <meta property="twitter:title" content="microCT imaging of threespine stickleback" />
-  <meta name="dc.date" content="2026-02-26" />
-  <meta name="citation_publication_date" content="2026-02-26" />
-  <meta property="article:published_time" content="2026-02-26" />
-  <meta name="dc.modified" content="2026-02-26T17:44:08+00:00" />
-  <meta property="article:modified_time" content="2026-02-26T17:44:08+00:00" />
+  <meta name="dc.date" content="2026-03-06" />
+  <meta name="citation_publication_date" content="2026-03-06" />
+  <meta property="article:published_time" content="2026-03-06" />
+  <meta name="dc.modified" content="2026-03-06T16:32:00+00:00" />
+  <meta property="article:modified_time" content="2026-03-06T16:32:00+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -53,9 +53,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/685209b960a1146c77fadfaef4d09af4be2001db/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/685209b960a1146c77fadfaef4d09af4be2001db/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/685209b960a1146c77fadfaef4d09af4be2001db/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/92f090f4dcba262b7fded829d2a67fd336fb0f24/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/92f090f4dcba262b7fded829d2a67fd336fb0f24/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/92f090f4dcba262b7fded829d2a67fd336fb0f24/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,10 +77,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/685209b960a1146c77fadfaef4d09af4be2001db/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/92f090f4dcba262b7fded829d2a67fd336fb0f24/))
 was automatically generated
-from [habi/sticklebacks-manuscript@685209b](https://github.com/habi/sticklebacks-manuscript/tree/685209b960a1146c77fadfaef4d09af4be2001db)
-on February 26, 2026.
+from [habi/sticklebacks-manuscript@92f090f](https://github.com/habi/sticklebacks-manuscript/tree/92f090f4dcba262b7fded829d2a67fd336fb0f24)
+on March 6, 2026.
 </em></small>
 
 
@@ -172,7 +172,7 @@ We then applied this pipeline to a sampling effort encompassing hundreds of samp
 ## Micro-computed tomography
 
 X-ray microtomography is an indispensable tool to gain non-destructive insights into the inner structure of highly diverse samples, namely for specimens studied in the biomedical sciences [@doi:10.1186/s12915-020-0753-2].
-Microtomographic imaging is ideally suited to nondestructively assess the morphology of different fish species, large and small [@doi:10.1093/iob/obad008].
+Microtomographic imaging is ideally suited to non-destructively assess the morphology of different fish species, large and small [@doi:10.1093/iob/obad008].
 
 <!---
 Do we have to give a bit of background on uCT imaging, e.g. write about resolution, staining, etc?
@@ -219,7 +219,7 @@ The scripts are freely available online under the MIT License and may be freely 
 
 The [preview notebook](https://nbviewer.org/github/habi/sticklebacks/blob/main/PreviewScans.ipynb) is used for surfacing issues with the scanning.
 For this, we read all relevant scanning and reconstruction parameters from the log files of each scan.
-Afterwards, we efficiently loading the reconstruction PNG images from disk with the [` dask_image.imread.imread`](https://image.dask.org/en/latest/dask_image.imread.html) function [@dask].
+Afterwards, we efficiently loading the reconstruction PNG images from disk with the [`dask_image.imread.imread`](https://image.dask.org/en/latest/dask_image.imread.html) function [@dask].
 Like so, we can map all the generated reconstructions to memory and quickly generate maximum intensity projections (MIP) of each scan (see Figure @fig:mips for an example) for both quality control and further processing.
 
 ![Maximum intensity projections of one acquired dataset along all three cardinal axes.](images/Sticklebucket_H.rec.MIPs.png){#fig:mips}
@@ -228,18 +228,23 @@ Like so, we can map all the generated reconstructions to memory and quickly gene
 
 The [separation notebook](https://nbviewer.org/github/habi/sticklebacks/blob/main/BucketSeparator.ipynb) processes all the performed scans to extract the single fish out from each scan, where 6 fish have been scanned.
 As in the preview notebook, we efficiently load all the PNGs from disk with [`dask`](https://www.dask.org/) [@dask].
-Based on the previously extracted MIP and simple labeling of the image (`skimage.measure.label`, we extract the positions of single fish (`skimage.measure.regionprops`) (see Figure @fig:labels).
-
-- Crop out each fish (with a buffer) and write to cropped dataset (see Figure @fig:cropping).
-- Cropped datasets are saved to discrete folders for easy handling.
-  In both original gray-scale plus as thresholded dataset, e.g. binarized into bone and "not bone".
-  These are saved out as [`zarr`](https://zarr.dev/) [@wikidata:Q130377195] and [`nrrd`](https://teem.sourceforge.net/nrrd/) files.
+Based on the previously extracted MIP images and a simple labeling of the image (`skimage.measure.label`), we extract both the labels in the custom-made sample holder and the positions of single fish in the scan (`skimage.measure.regionprops`) (see Figure @fig:labels).
 
 ![Automatically detected regions based on maximum intensity projection along the rotation axis of the tomographic scan. The regions are numbered consecutively from the top left to the bottom right. These numbers are mapped to the correct fish ID in the next step.](images/Sticklebucket_H.rec.Labels.Detected.png){#fig:labels}
 
+Based on a simple mapping of the detected region to the ID numbers of the scanned fish, we labeled the resulting images and presented these images together with photos of the lab book and sample tubes for double-checking (see Figure @fig:checking).
+
 ![Mapping lab book notes, photos and detected regions to fish ID.](images/Sticklebucket_H.rec.Labels.Check.png){#fig:checking}
 
-![Doublechecking crop extent and fish ID.](images/Sticklebucket_H.rec.Regions.Check.png){#fig:cropping}
+The `skimage.measure.regionprops` function we used for labeling returns not only the positions of the detected fish, but also the extent of the bounding box of the region of the fish shown in the original image.
+We extracted each region of each fish separately out of the large reconstructions (with a configurable border buffer, see Figure @fig:cropping) and wrote these extracted regions to disk in discrete folders for efficient further analysis.
+In a first step, we wrote the regions of the single fish to disk in `zarr` [@doi:10.5281/zenodo.3773450] format, which is a preferred format to store n-dimensional arrays on disk.
+In addition to this, we also wrote a log file for each extracted region, containing all relevant information to redo the cropping step completely manually (an [example of such a log file](https://github.com/habi/sticklebacks/blob/main/logfiles/BucketOfFish_H/rec_regions/SL.X23.016/SL.X23.016.log) is shown as part of the processing repository).
+
+![Double-checking crop extent and fish ID.](images/Sticklebucket_H.rec.Regions.Check.png){#fig:cropping}
+
+Saving out the regions as `zarr` files made it possible to efficiently work with the image data of each extracted fish and to convert that data to any desired format for further analysis.
+For this further analysis, we wrote out stacks of PNG images and additionally, as [`nrrd`](https://teem.sourceforge.net/nrrd/) files for each fish region as a simple crop out of the original dataset and as binarized regions, which are segmented into bone and background based on a simple multi-level Otsu thresholding method [@doi:10.6688/JISE.2001.17.5.1].
 
 #### Extraction of features of interest
 
