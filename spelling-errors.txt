@@ -7,7 +7,7 @@ branchial
 Bruker
 Burgergemeinde
 cpeichel
-CSV
+csv
 curation
 Gasterosteus
 Haberthür
@@ -18,7 +18,7 @@ Kontich
 kV
 limnetic
 microCT
-microtomographic
+Microtomographic
 microtomography
 MIP
 morphometric
