@@ -84,6 +84,10 @@ if [ "${BUILD_PDF}" != "false" ] && [ "${MANUBOT_USE_DOCKER}" == "true" ]; then
   rm -rf output/images
 fi
 
+# Build PDF with page numbers
+# https://github.com/manubot/rootstock/issues/244#issuecomment-586686155
+bash build/pagenum.sh output/manuscript.pdf
+
 # Create DOCX output (if BUILD_DOCX environment variable equals "true")
 if [ "${BUILD_DOCX}" = "true" ]; then
   echo >&2 "Exporting Word Docx manuscript"
