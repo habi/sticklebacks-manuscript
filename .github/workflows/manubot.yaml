@@ -87,6 +87,8 @@ jobs:
       - name: Install Spellcheck
         if: env.SPELLCHECK == 'true'
         run: bash ci/install-spellcheck.sh
+      - name: Install Typst
+        uses: typst-community/setup-typst@v3        
       - name: Build Manuscript
         run: bash build/build.sh
       - name: Upload Artifacts

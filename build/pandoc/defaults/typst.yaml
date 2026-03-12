@@ -1,0 +1,5 @@
+from: markdown
+to: typst
+variables:
+  paper: "a4"
+  columns: 1
