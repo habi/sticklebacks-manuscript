@@ -18,7 +18,6 @@ DOCKER_RUNNING="$(docker info &> /dev/null && echo "true" || (true && echo "fals
 # Set option defaults
 CI="${CI:-false}"
 BUILD_PDF="${BUILD_PDF:-true}"
-BUILD_TYPST="${BUILD_TYPST:-true}"
 BUILD_DOCX="${BUILD_DOCX:-false}"
 BUILD_LATEX="${BUILD_LATEX:-false}"
 SPELLCHECK="${SPELLCHECK:-false}"
@@ -136,23 +135,6 @@ if [ "${SPELLCHECK}" = "true" ]; then
   cat output/spelling-error-locations.txt
 
   rm output/expanded-spelling-errors.txt
-fi
-
-# Create Typst PDF output (if BUILD_TYPST environment variable equals "true")
-if [ "${BUILD_TYPST}" = "true" ]; then
-  echo >&2 "Exporting Typst PDF manuscript"
-  
-  # Ensure images are accessible to Typst during the build
-  if [ -L images ]; then rm images; fi
-  ln -s content/images
-  
-  pandoc \
-    --data-dir="$PANDOC_DATA_DIR" \
-    --defaults=typst.yaml \
-    --to=typst \
-    --output=output/manuscript-typst.pdf
-    
-  rm images
 fi
 
 echo >&2 "Build complete"
