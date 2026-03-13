@@ -1,4 +1,13 @@
-graph LR
+---
+title: Overview of workflow
+config:
+  theme: base
+  layout: elk
+  elk:
+    mergeEdges: true
+    nodePlacementStrategy: LINEAR_SEGMENTS
+---
+flowchart LR
     subgraph Katie [<b>Sample collection</b>]
         direction TB
         k1(Planning) --> k2(Sampling)
