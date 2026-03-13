@@ -1,0 +1,35 @@
+graph LR
+    subgraph Katie [<b>Sample collection</b>]
+        direction TB
+        k1(Planning) --> k2(Sampling)
+        k2 --> k3(Storing)
+    end
+    k3 --> uct
+    subgraph David [<b>microCT imaging & fish separationaration</b>]
+        direction TB
+        uct(microCT imaging) --> proj(Projection images)
+        proj --> rec(Reconstructions)
+        rec --> jupyter(Jupyter scripts)
+        jupyter --> preview(Preview) --> rec
+        jupyter --> separation(Fish Separation) --> jupyter
+        jupyter --> reporting(Reporting) --> jupyter
+        separation --> fish0(Fish ID) --> region(Extracted region)
+        fish0 --> region_thresholded(Thresholded region)        
+        separation --> fish1(Fish ID)
+        separation --> fish2(Fish ID)
+    end
+    subgraph Ben [<b>Biomedisa</b>]
+        direction TB
+        region --> biomedisa(Biomedisa script)
+        region_thresholded --> biomedisa
+        fish1 --> biomedisa
+        fish2 --> biomedisa
+        biomedisa --> regions(Segmented regions of interest)
+    end
+    subgraph Sheila [<b>Gill rakers</b>]
+        direction TB
+        regions --> rakers(gill rakers) --> analysis
+        regions --> jaws(internal jaws) --> analysis(Analysis)
+    end
+    reporting --> manubot(Manuscript)
+    analysis --> manubot
