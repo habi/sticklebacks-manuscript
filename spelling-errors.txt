@@ -8,7 +8,7 @@ Bruker
 Burgergemeinde
 ceratobranchials
 cpeichel
-csv
+CSV
 curation
 donwstream
 ecotype
@@ -44,9 +44,7 @@ reproducibly
 Ruslan
 RuslanHlushchuk
 ScanningDetails
-seperate
 SkyScan
-speciefic
 spined
 STL
 Sulser

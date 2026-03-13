@@ -26,8 +26,8 @@ header-includes: |
   <meta name="dc.date" content="2026-03-13" />
   <meta name="citation_publication_date" content="2026-03-13" />
   <meta property="article:published_time" content="2026-03-13" />
-  <meta name="dc.modified" content="2026-03-13T12:44:34+00:00" />
-  <meta property="article:modified_time" content="2026-03-13T12:44:34+00:00" />
+  <meta name="dc.modified" content="2026-03-13T13:03:49+00:00" />
+  <meta property="article:modified_time" content="2026-03-13T13:03:49+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -53,9 +53,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/6f25d6b61b089e93abd2185cf1d113ea6189934c/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/6f25d6b61b089e93abd2185cf1d113ea6189934c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/6f25d6b61b089e93abd2185cf1d113ea6189934c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/c8d809c7e6fca968019aa30bbefb91015d154342/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/c8d809c7e6fca968019aa30bbefb91015d154342/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/c8d809c7e6fca968019aa30bbefb91015d154342/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/6f25d6b61b089e93abd2185cf1d113ea6189934c/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/c8d809c7e6fca968019aa30bbefb91015d154342/))
 was automatically generated
-from [habi/sticklebacks-manuscript@6f25d6b](https://github.com/habi/sticklebacks-manuscript/tree/6f25d6b61b089e93abd2185cf1d113ea6189934c)
+from [habi/sticklebacks-manuscript@c8d809c](https://github.com/habi/sticklebacks-manuscript/tree/c8d809c7e6fca968019aa30bbefb91015d154342)
 on March 13, 2026.
 </em></small>
 
@@ -170,8 +170,17 @@ We then applied this pipeline to a sampling effort encompassing hundreds of samp
 
 ## Introduction {.page_break_before}
 
- The threespine stickleback (Gasterosteus aculeatus) is an oft-studied organism for understanding the independent evolution of similar traits in similar environments. This species exhibits marked differences in marine-freshwater, lake-stream, and benthic-limnetic ecotypes4. This study will focus on the benthic-limnetic axis, using samples from a long-term evolutionary experiment currently in-process studying divergent populations of limnetic and benthic stickleback within the Kenai peninsula of Alaska (USA). This project, the Forward In Time Natural Experimental Study of Selection (FITNESS), aims to study the predictability and repeated of evolution. Two pools of sticklebacks — one made from four source populations of limnetic and four source populations of benthic sticklebacks — have been placed into eight destination lakes, four of which are small and benthic and four of which are large and limnetic. These new populations have been sampled every year in order to track the genotypic and phenotypic trajectories of these introduced populations. Understanding the initial variation in the source populations is essential to this endeavor, as this initial variation would be expected to reflect which phenotypes are associated with each ecotype under study. Among these and other bony fish, the internal hyoid arch-branchial arch complex is an important structure implicated in diet and feeding ecology. The pharyngobranchial bones at the posterior margin of this complex (and their corresponding ceratobranchials) aid in dietary processing. The "gill rakers" on the ceratobranchials and the "internal jaws" of the are strong indicators of different foraging styles, and have been shown to be related to genotypic and phenotypic changes in different species, and even among different populations. These structures are, however, difficult to study without full cranial dissection and distortion of the branchial anatomy.
-
+ The threespine stickleback (Gasterosteus aculeatus) is an oft-studied organism for understanding the independent evolution of similar traits in similar environments.
+ This species exhibits marked differences in marine-freshwater, lake-stream, and benthic-limnetic ecotypes4.
+ This study will focus on the benthic-limnetic axis, using samples from a long-term evolutionary experiment currently in-process studying divergent populations of limnetic and benthic stickleback within the Kenai peninsula of Alaska (USA).
+ This project, the Forward In Time Natural Experimental Study of Selection (FITNESS), aims to study the predictability and repeated of evolution.
+ Two pools of sticklebacks — one made from four source populations of limnetic and four source populations of benthic sticklebacks — have been placed into eight destination lakes, four of which are small and benthic and four of which are large and limnetic.
+ These new populations have been sampled every year in order to track the genotypic and phenotypic trajectories of these introduced populations.
+ Understanding the initial variation in the source populations is essential to this endeavor, as this initial variation would be expected to reflect which phenotypes are associated with each ecotype under study.
+ Among these and other bony fish, the internal hyoid arch-branchial arch complex is an important structure implicated in diet and feeding ecology.
+ The pharyngobranchial bones at the posterior margin of this complex (and their corresponding ceratobranchials) aid in dietary processing.
+ The "gill rakers" on the ceratobranchials and the "internal jaws" of the are strong indicators of different foraging styles, and have been shown to be related to genotypic and phenotypic changes in different species, and even among different populations.
+ These structures are, however, difficult to study without full cranial dissection and distortion of the branchial anatomy.
 
 - Embedded into [Alaska Stickleback Restoration Project](https://alaskastickleback.com/), [Genomics axis](https://alaskastickleback.com/genomics) where Katie Peichel, Ben Sulser and Sheila Christen are affiliated.
 - Why are we studying what we are studying in these fish?
@@ -179,7 +188,10 @@ We then applied this pipeline to a sampling effort encompassing hundreds of samp
 ## Micro-computed tomography
 
 X-ray microtomography is an indispensable tool to gain non-destructive insights into the inner structure of highly diverse samples, namely for specimens studied in the biomedical sciences [@doi:10.1186/s12915-020-0753-2].
-Microtomographic imaging is ideally suited to non-destructively assess the morphology of different fish species, large and small [@doi:10.1093/iob/obad008], including the internal anatomy. While these structures can be rendered by-hand by a skilled investigator, the time and cost required per-specimen is inefficient for the scale required via eco-evolutionary study. This project aims to address these gaps, demonstrating a novel pipeline for rendering and auto-splitting of a multispecimen scan for mass sampling, creating a dataset with consistent parameters that can be fed to donwstream machine-learning techniques [Biomedisa] to aid in the segmentation of individual bony structures in each scan. Once a Biomedisa model is trained, the entire pipeline runs from multi-specimen input to rendered structures for each specimen in a fraction of the time and resources used in traditional analysis. 
+Microtomographic imaging is ideally suited to non-destructively assess the morphology of different fish species, large and small [@doi:10.1093/iob/obad008], including the internal anatomy.
+While these structures can be rendered by-hand by a skilled investigator, the time and cost required per-specimen is inefficient for the scale required via eco-evolutionary study.
+This project aims to address these gaps, demonstrating a novel pipeline for rendering and auto-splitting of a multispecimen scan for mass sampling, creating a dataset with consistent parameters that can be fed to donwstream machine-learning techniques [Biomedisa] to aid in the segmentation of individual bony structures in each scan.
+Once a Biomedisa model is trained, the entire pipeline runs from multi-specimen input to rendered structures for each specimen in a fraction of the time and resources used in traditional analysis.
 
 <!---
 Do we have to give a bit of background on uCT imaging, e.g. write about resolution, staining, etc? 
@@ -192,9 +204,14 @@ Do we have to give a bit of background on uCT imaging, e.g. write about resoluti
 
 ### Sample procurement and preparation
 
-The specimens used for this study were collected from source lakes as a part of the FITNESS project in the region of Cook Inlet, Alaska. Fish were collected using unbaited minnow traps in two seperate field seasons, the first taking place from May 26 - June 10 2023 and the second taking place from May 25 - June 11 2024. Specimen collections were taken from a random sample of 30 fish from each lake. Fish were euthanized with MS-222, photographed, and preserved in formalin in a bag with a speciefic label. At the end of each field season, samples were shipped from Anchorage (AK, USA) to Bern (BE, CH) where they were stored until scanning time. 
-<!--- How did the fish get from Alaska to Bern? -->
-<!--- How were they kept? I'll add the permits and numbers once I'm able to get them! -->
+The specimens used for this study were collected from source lakes as a part of the FITNESS project in the region of Cook Inlet, Alaska.
+Fish were collected using unbaited minnow traps in two separate field seasons, the first taking place from May 26 - June 10 2023 and the second taking place from May 25 - June 11 2024.
+Specimen collections were taken from a random sample of 30 fish from each lake.
+Fish were euthanized with MS-222, photographed, and preserved in formalin in a bag with a specific label.
+At the end of each field season, samples were shipped from Anchorage (AK, USA) to Bern (BE, CH) where they were stored until scanning time.
+
+<!--- How were they kept/stored? 75% Ethanol?-->
+<!-- Add the permits and numbers once we get them! -->
 
 Due to their inherent contrast difference to the surrounding tissue, the structures of interest we touch upon in this manuscript (teeth and bones, i.e. jaws and skull) are well visualized in unstained samples, hence no further preparation of the fish was necessary.
 
@@ -241,7 +258,9 @@ The [separation notebook](https://nbviewer.org/github/habi/sticklebacks/blob/mai
 As in the preview notebook, we efficiently load all the PNGs from disk with [`dask`](https://www.dask.org/) [@dask].
 Based on the previously extracted MIP images and a simple labeling of the image (`skimage.measure.label`), we extract both the labels in the custom-made sample holder and the positions of single fish in the scan (`skimage.measure.regionprops`) (see Figure @fig:labels).
 
-![Automatically detected regions based on maximum intensity projection along the rotation axis of the tomographic scan. The regions are numbered consecutively from the top left to the bottom right. These numbers are mapped to the correct fish ID in the next step.](images/Sticklebucket_H.rec.Labels.Detected.png){#fig:labels}
+![Automatically detected regions based on maximum intensity projection along the rotation axis of the tomographic scan.
+  The regions are numbered consecutively from the top left to the bottom right.
+  These numbers are mapped to the correct fish ID in the next step.](images/Sticklebucket_H.rec.Labels.Detected.png){#fig:labels}
 
 Based on a simple mapping of the detected region to the ID numbers of the scanned fish, we labeled the resulting images and presented these images together with photos of the lab book and sample tubes for double-checking (see Figure @fig:checking).
 
@@ -293,7 +312,8 @@ An [interactive version of this figure](https://htmlpreview.github.io/?https://r
 - Automated cropping out of single fish from combined scan very efficiently uses machine time.
   Several fish can be scanned together, splitting is performed after the fact, reproducibly and without manual input.
 - Combination of methods cuts down on time **a lot**.
-- Biomedisa makes more "extraction" possible. Other biological questions can be answered, too.
+- Biomedisa makes more "extraction" possible.
+  Other biological questions can be answered, too.
 
 
 ## Conclusion {.page_break_before}
