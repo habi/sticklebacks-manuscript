@@ -9,13 +9,10 @@ config:
 ---
 flowchart LR
     subgraph Katie [<b>Sample collection</b>]
-        direction TB
-        k1(Planning) --> k2(Sampling)
-        k2 --> k3(Storing)
+       Planning --> Sampling
+       Sampling --> Storing
     end
-    k3 --> uct
-    subgraph David [<b>microCT imaging & fish separationaration</b>]
-        direction TB
+    Storing --> uct
         uct(microCT imaging) --> proj(Projection images)
         proj --> rec(Reconstructions)
         rec --> jupyter(Jupyter scripts)
