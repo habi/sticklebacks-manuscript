@@ -9,7 +9,7 @@
   <meta name="author" content="Sheila Christen" />
   <meta name="author" content="Catherine L. Peichel" />
   <meta name="author" content="Ruslan Hlushchuk" />
-  <meta name="dcterms.date" content="2026-03-13" />
+  <meta name="dcterms.date" content="2026-03-18" />
   <meta name="keywords" content="tomography, sticklebacks, ecology" />
   <title>microCT imaging of threespine stickleback</title>
   <style>
@@ -54,11 +54,11 @@
   <meta name="citation_title" content="microCT imaging of threespine stickleback" />
   <meta property="og:title" content="microCT imaging of threespine stickleback" />
   <meta property="twitter:title" content="microCT imaging of threespine stickleback" />
-  <meta name="dc.date" content="2026-03-13" />
-  <meta name="citation_publication_date" content="2026-03-13" />
-  <meta property="article:published_time" content="2026-03-13" />
-  <meta name="dc.modified" content="2026-03-13T17:18:52+00:00" />
-  <meta property="article:modified_time" content="2026-03-13T17:18:52+00:00" />
+  <meta name="dc.date" content="2026-03-18" />
+  <meta name="citation_publication_date" content="2026-03-18" />
+  <meta property="article:published_time" content="2026-03-18" />
+  <meta name="dc.modified" content="2026-03-18T10:40:15+00:00" />
+  <meta property="article:modified_time" content="2026-03-18T10:40:15+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -84,9 +84,9 @@
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/67a189d65e40927cf5c615d690d4b08c3166f5eb/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/67a189d65e40927cf5c615d690d4b08c3166f5eb/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/67a189d65e40927cf5c615d690d4b08c3166f5eb/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/701911c1091f018ddbfec26a3d3c7cd6f208f744/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/701911c1091f018ddbfec26a3d3c7cd6f208f744/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/701911c1091f018ddbfec26a3d3c7cd6f208f744/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -103,10 +103,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://habi.github.io/sticklebacks-manuscript/v/67a189d65e40927cf5c615d690d4b08c3166f5eb/">permalink</a>)
+(<a href="https://habi.github.io/sticklebacks-manuscript/v/701911c1091f018ddbfec26a3d3c7cd6f208f744/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/habi/sticklebacks-manuscript/tree/67a189d65e40927cf5c615d690d4b08c3166f5eb">habi/sticklebacks-manuscript@67a189d</a>
-on March 13, 2026.
+from <a href="https://github.com/habi/sticklebacks-manuscript/tree/701911c1091f018ddbfec26a3d3c7cd6f208f744">habi/sticklebacks-manuscript@701911c</a>
+on March 18, 2026.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -213,7 +213,7 @@ Fish were collected using unbaited minnow traps in two separate field seasons, t
 Specimen collections were taken from a random sample of 30 fish from each lake.
 Fish were euthanized with MS-222, photographed, and preserved in formalin in a bag with a specific label.
 At the end of each field season, samples were shipped from Anchorage (AK, USA) to Bern (BE, CH) where they were stored until scanning time.</p>
-<!--- How were they kept/stored? 75% Ethanol?-->
+<!-- How were they kept/stored? 75% Ethanol?-->
 <!-- Add the permits and numbers once we get them! -->
 <p>Due to their inherent contrast difference to the surrounding tissue, the structures of interest we touch upon in this manuscript (teeth and bones, i.e. jaws and skull) are well visualized in unstained samples, hence no further preparation of the fish was necessary.</p>
 <h3 id="microtomographic-imaging">microtomographic imaging</h3>
@@ -250,7 +250,8 @@ Like so, we can map all the generated reconstructions to memory and quickly gene
 <h5 id="separation-notebook">Separation notebook</h5>
 <p>The <a href="https://nbviewer.org/github/habi/sticklebacks/blob/main/BucketSeparator.ipynb">separation notebook</a> processes all the performed scans to extract the single fish out from each scan, where 6 fish have been scanned.
 As in the preview notebook, we efficiently load all the PNGs from disk with <a href="https://www.dask.org/"><code>dask</code></a> <span class="citation" data-cites="hj1CnyWB">(<a href="#ref-hj1CnyWB" role="doc-biblioref">Dask Development Team, 2016</a>)</span>.
-Based on the previously extracted MIP images and a simple labeling of the image (<code>skimage.measure.label</code>), we extract both the labels in the custom-made sample holder and the positions of single fish in the scan (<code>skimage.measure.regionprops</code>) (see Figure <a href="#fig:labels">3</a>).</p>
+Based on the previously extracted MIP images and a simple labeling of these images (<code>skimage.measure.label</code>), we extract both the labels in the custom-made sample holder and the positions of single fish in the scan (<code>skimage.measure.regionprops</code>) (see Figure <a href="#fig:labels">3</a>).
+This extraction is completely reproducible and well-adapted to the custom-made sample holder.</p>
 <div id="fig:labels" class="fignos">
 <figure>
 <img src="images/Sticklebucket_H.rec.Labels.Detected.png" alt="Figure 3: Automatically detected regions based on maximum intensity projection along the rotation axis of the tomographic scan. The regions are numbered consecutively from the top left to the bottom right. These numbers are mapped to the correct fish ID in the next step." />
@@ -301,7 +302,21 @@ An <a href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/hab
 <li>In total, we acquired 158444 projections</li>
 <li>These were reconstructed into a total of 177749 reconstructions
 Which is about 4040 files per scan (N=44)</li>
+<li>~44 GB of <code>.zarr</code> files, ~64 GB of <code>.nrrd</code> files</li>
 </ul>
+<h3 id="fish-separation">Fish separation</h3>
+<p>Our method reproducibly extracts each of the 6 fish scanned simultaneously in one scan.
+The custom-made sample holder aligns the single fish in the vertical axis around the rotation axis of the tomographic scan.
+The extraction based on the MIP image along the rotation axis is completely automated and very robust, since the detected fish ‘regions’ do not overlap in the resulting image.</p>
+<p>Depending on the available machine it would even not be possible to load the full stack of each scan into a software to manually perform the cropping, such as Fiji <span class="citation" data-cites="Fkmz2cmo">(<a href="#ref-Fkmz2cmo" role="doc-biblioref">Schindelin et al., 2012</a>)</span>.
+Large stacks of images (in other words larger than the RAM of the available machine) can be loaded as ‘virtual stacks’, but o manually crop the region of each fish from the large scan with the <a href="https://www.longair.net/edinburgh/imagej/three-pane-crop/">Crop (3D)</a> function, one needs to load the full dataset.
+Since one (excemplary dataset (Sticklebucket_10)) is 7 GB on disk and reported as being 35.4 GB when loaded in Fiji, using the 3D cropping function directly is not even possible.</p>
+<p>&lt;– Manual ROI-ing in Dragonfly? –&gt;</p>
+<p>Cropping would thus be a two-step manual process, e.g. croppin the full dataset loaded as ‘<a href="https://imagej.net/ij/docs/guide/146-8.html#sub:Virtual-Stacks">virtual stack</a>’ and then cropping it down further before writing out the cropped stack.
+For each encompassing scan this would need to be repeated 6 times (for <em>each</em> of the six fish in each of the encompassing scans).
+In addition, this manual process is not reproducible since it is a manual/visual process.</p>
+<p>&lt;– In addition, we write log files of the cropping, e.g. process <em>can</em> be checked after the fact manually –&gt;</p>
+<p>Algorithmically/automaticaly cropping the large datasets based on the axial MIP image leads to both reproducible cropped regions and efficiently uses the operator time, namely <em>no</em> operator time.</p>
 <h3 id="analysis">Analysis</h3>
 <ul>
 <li>3D shape variation on internal pharyngobranchial bone.
@@ -411,10 +426,13 @@ Lösel, P. D., van de Kamp, T., Jayme, A., Ershov, A., Faragó, T., Pichler, O.,
 Miles, A., Kirkham, J., Durant, M., Bourbeau, J., Onalan, T., Hamman, J., Zain Patel, Shikharsg, Rocklin, M., Dussin, R., Schut, V., Andrade, E. S. D., Abernathey, R., Noyes, C., Sbalmer, Pyup.Io Bot, Tran, T., Saalfeld, S., Swaney, J., … Banihirwe, A. (2020). <em>zarr-developers/zarr-python: v2.4.0</em> (Version v2.4.0). Zenodo. <a href="https://doi.org/10.5281/zenodo.3773450">https://doi.org/10.5281/zenodo.3773450</a>
 </div>
 <div id="ref-jxVw2kt2" class="csl-entry" role="doc-biblioentry">
-<em>Overview — K3D-jupyter documentation</em>. (n.d.). Retrieved March 13, 2026, from <a href="https://k3d-jupyter.org/">https://k3d-jupyter.org/</a>
+<em>Overview — K3D-jupyter documentation</em>. (n.d.). Retrieved March 18, 2026, from <a href="https://k3d-jupyter.org/">https://k3d-jupyter.org/</a>
 </div>
 <div id="ref-IKVBgaCE" class="csl-entry" role="doc-biblioentry">
 Rawson, S. D., Maksimcuka, J., Withers, P. J., &amp; Cartmell, S. H. (2020). X-ray computed tomography in life sciences. <em>BMC Biology</em>, <em>18</em>(1). <a href="https://doi.org/10.1186/s12915-020-0753-2">https://doi.org/10.1186/s12915-020-0753-2</a>
+</div>
+<div id="ref-Fkmz2cmo" class="csl-entry" role="doc-biblioentry">
+Schindelin, J., Arganda-Carreras, I., Frise, E., Kaynig, V., Longair, M., Pietzsch, T., Preibisch, S., Rueden, C., Saalfeld, S., Schmid, B., Tinevez, J.-Y., White, D. J., Hartenstein, V., Eliceiri, K., Tomancak, P., &amp; Cardona, A. (2012). Fiji: an open-source platform for biological-image analysis. <em>Nature Methods</em>, <em>9</em>(7), 676–682. <a href="https://doi.org/10.1038/nmeth.2019">https://doi.org/10.1038/nmeth.2019</a>
 </div>
 <div id="ref-JICzDA7P" class="csl-entry" role="doc-biblioentry">
 廖炳松, 陳澤生, &amp; 詹寶珠. (2001). A Fast Algorithm for Multilevel Thresholding. <em>Journal of Information Science and Engineering</em>, <em>17</em>(5). <a href="https://doi.org/10.6688/jise.2001.17.5.1">https://doi.org/10.6688/jise.2001.17.5.1</a>
