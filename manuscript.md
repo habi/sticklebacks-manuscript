@@ -5,7 +5,7 @@ keywords:
 - sticklebacks
 - ecology
 lang: en-US
-date-meta: '2026-03-13'
+date-meta: '2026-03-18'
 author-meta:
 - David Haberthür
 - Ben Sulser
@@ -23,11 +23,11 @@ header-includes: |
   <meta name="citation_title" content="microCT imaging of threespine stickleback" />
   <meta property="og:title" content="microCT imaging of threespine stickleback" />
   <meta property="twitter:title" content="microCT imaging of threespine stickleback" />
-  <meta name="dc.date" content="2026-03-13" />
-  <meta name="citation_publication_date" content="2026-03-13" />
-  <meta property="article:published_time" content="2026-03-13" />
-  <meta name="dc.modified" content="2026-03-13T17:18:52+00:00" />
-  <meta property="article:modified_time" content="2026-03-13T17:18:52+00:00" />
+  <meta name="dc.date" content="2026-03-18" />
+  <meta name="citation_publication_date" content="2026-03-18" />
+  <meta property="article:published_time" content="2026-03-18" />
+  <meta name="dc.modified" content="2026-03-18T10:40:15+00:00" />
+  <meta property="article:modified_time" content="2026-03-18T10:40:15+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -53,9 +53,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/67a189d65e40927cf5c615d690d4b08c3166f5eb/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/67a189d65e40927cf5c615d690d4b08c3166f5eb/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/67a189d65e40927cf5c615d690d4b08c3166f5eb/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/701911c1091f018ddbfec26a3d3c7cd6f208f744/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/701911c1091f018ddbfec26a3d3c7cd6f208f744/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/701911c1091f018ddbfec26a3d3c7cd6f208f744/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,10 +77,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/67a189d65e40927cf5c615d690d4b08c3166f5eb/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/701911c1091f018ddbfec26a3d3c7cd6f208f744/))
 was automatically generated
-from [habi/sticklebacks-manuscript@67a189d](https://github.com/habi/sticklebacks-manuscript/tree/67a189d65e40927cf5c615d690d4b08c3166f5eb)
-on March 13, 2026.
+from [habi/sticklebacks-manuscript@701911c](https://github.com/habi/sticklebacks-manuscript/tree/701911c1091f018ddbfec26a3d3c7cd6f208f744)
+on March 18, 2026.
 </em></small>
 
 
@@ -212,7 +212,7 @@ Specimen collections were taken from a random sample of 30 fish from each lake.
 Fish were euthanized with MS-222, photographed, and preserved in formalin in a bag with a specific label.
 At the end of each field season, samples were shipped from Anchorage (AK, USA) to Bern (BE, CH) where they were stored until scanning time.
 
-<!--- How were they kept/stored? 75% Ethanol?-->
+<!-- How were they kept/stored? 75% Ethanol?-->
 <!-- Add the permits and numbers once we get them! -->
 
 Due to their inherent contrast difference to the surrounding tissue, the structures of interest we touch upon in this manuscript (teeth and bones, i.e. jaws and skull) are well visualized in unstained samples, hence no further preparation of the fish was necessary.
@@ -258,7 +258,8 @@ Like so, we can map all the generated reconstructions to memory and quickly gene
 
 The [separation notebook](https://nbviewer.org/github/habi/sticklebacks/blob/main/BucketSeparator.ipynb) processes all the performed scans to extract the single fish out from each scan, where 6 fish have been scanned.
 As in the preview notebook, we efficiently load all the PNGs from disk with [`dask`](https://www.dask.org/) [@dask].
-Based on the previously extracted MIP images and a simple labeling of the image (`skimage.measure.label`), we extract both the labels in the custom-made sample holder and the positions of single fish in the scan (`skimage.measure.regionprops`) (see Figure @fig:labels).
+Based on the previously extracted MIP images and a simple labeling of these images (`skimage.measure.label`), we extract both the labels in the custom-made sample holder and the positions of single fish in the scan (`skimage.measure.regionprops`) (see Figure @fig:labels).
+This extraction is completely reproducible and well-adapted to the custom-made sample holder.
 
 ![Automatically detected regions based on maximum intensity projection along the rotation axis of the tomographic scan.
   The regions are numbered consecutively from the top left to the bottom right.
@@ -301,6 +302,27 @@ An [interactive version of this figure](https://htmlpreview.github.io/?https://r
 - In total, we acquired 158444 projections
 - These were reconstructed into a total of 177749 reconstructions
   Which is about 4040 files per scan (N=44)
+- ~44 GB of `.zarr` files, ~64 GB of `.nrrd` files
+
+### Fish separation
+
+Our method reproducibly extracts each of the 6 fish scanned simultaneously in one scan.
+The custom-made sample holder aligns the single fish in the vertical axis around the rotation axis of the tomographic scan.
+The extraction based on the MIP image along the rotation axis is completely automated and very robust, since the detected fish 'regions' do not overlap in the resulting image.
+
+Depending on the available machine it would even not be possible to load the full stack of each scan into a software to manually perform the cropping, such as Fiji [@doi:10.1038/nmeth.2019].
+Large stacks of images (in other words larger than the RAM of the available machine) can be loaded as 'virtual stacks', but o manually crop the region of each fish from the large scan with the [Crop (3D)](https://www.longair.net/edinburgh/imagej/three-pane-crop/) function, one needs to load the full dataset.
+Since one (excemplary dataset (Sticklebucket_10)) is 7 GB on disk and reported as being 35.4 GB when loaded in Fiji, using the 3D cropping function directly is not even possible.
+
+<-- Manual ROI-ing in Dragonfly? -->
+
+Cropping would thus be a two-step manual process, e.g. croppin the full dataset loaded as '[virtual stack](https://imagej.net/ij/docs/guide/146-8.html#sub:Virtual-Stacks)' and then cropping it down further before writing out the cropped stack.
+For each encompassing scan this would need to be repeated 6 times (for *each* of the six fish in each of the encompassing scans).
+In addition, this manual process is not reproducible since it is a manual/visual process.
+
+<-- In addition, we write log files of the cropping, e.g. process *can* be checked after the fact manually -->
+
+Algorithmically/automaticaly cropping the large datasets based on the axial MIP image leads to both reproducible cropped regions and efficiently uses the operator time, namely *no* operator time.
 
 ### Analysis
 

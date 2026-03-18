@@ -1,4 +1,6 @@
 aculeatus
+Algorithmically
+automaticaly
 Baltzerstrasse
 benthic
 binarized
@@ -13,6 +15,7 @@ curation
 donwstream
 ecotype
 ecotypes
+excemplary
 Gasterosteus
 genotypic
 Haberthür
@@ -25,7 +28,7 @@ Kontich
 kV
 limnetic
 microCT
-Microtomographic
+microtomographic
 microtomography
 MIP
 morphometric
@@ -41,11 +44,13 @@ PNG
 PNGs
 rakers
 reproducibly
+ROI
 Ruslan
 RuslanHlushchuk
 ScanningDetails
 SkyScan
 spined
+Sticklebucket
 STL
 Sulser
 sulserrb
