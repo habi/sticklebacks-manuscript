@@ -28,7 +28,7 @@ Kontich
 kV
 limnetic
 microCT
-Microtomographic
+microtomographic
 microtomography
 MIP
 morphometric
