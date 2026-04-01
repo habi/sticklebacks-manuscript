@@ -10,7 +10,7 @@ Bruker
 Burgergemeinde
 ceratobranchials
 cpeichel
-CSV
+csv
 curation
 donwstream
 ecotype
@@ -28,7 +28,7 @@ Kontich
 kV
 limnetic
 microCT
-microtomographic
+Microtomographic
 microtomography
 MIP
 morphometric
@@ -44,7 +44,6 @@ PNG
 PNGs
 rakers
 reproducibly
-ROI
 Ruslan
 RuslanHlushchuk
 ScanningDetails
@@ -59,4 +58,5 @@ thresholded
 thresholding
 TMAG
 unbaited
+uncropped
 voxel

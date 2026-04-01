@@ -26,8 +26,8 @@ header-includes: |
   <meta name="dc.date" content="2026-04-01" />
   <meta name="citation_publication_date" content="2026-04-01" />
   <meta property="article:published_time" content="2026-04-01" />
-  <meta name="dc.modified" content="2026-04-01T08:55:17+00:00" />
-  <meta property="article:modified_time" content="2026-04-01T08:55:17+00:00" />
+  <meta name="dc.modified" content="2026-04-01T09:48:53+00:00" />
+  <meta property="article:modified_time" content="2026-04-01T09:48:53+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -53,9 +53,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/8020eb43b1632d62c2b7b842451a5810763bc8f0/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/8020eb43b1632d62c2b7b842451a5810763bc8f0/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/8020eb43b1632d62c2b7b842451a5810763bc8f0/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/6a154d9b585986f943b22245def6513fddde23de/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/6a154d9b585986f943b22245def6513fddde23de/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/6a154d9b585986f943b22245def6513fddde23de/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/8020eb43b1632d62c2b7b842451a5810763bc8f0/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/6a154d9b585986f943b22245def6513fddde23de/))
 was automatically generated
-from [habi/sticklebacks-manuscript@8020eb4](https://github.com/habi/sticklebacks-manuscript/tree/8020eb43b1632d62c2b7b842451a5810763bc8f0)
+from [habi/sticklebacks-manuscript@6a154d9](https://github.com/habi/sticklebacks-manuscript/tree/6a154d9b585986f943b22245def6513fddde23de)
 on April 1, 2026.
 </em></small>
 
@@ -312,17 +312,15 @@ The extraction based on the MIP image along the rotation axis is completely auto
 
 Depending on the available machine it would even not be possible to load the full stack of each scan into a software to manually perform the cropping, such as Fiji [@doi:10.1038/nmeth.2019].
 Large stacks of images (in other words larger than the RAM of the available machine) can be loaded as 'virtual stacks', but o manually crop the region of each fish from the large scan with the [Crop (3D)](https://www.longair.net/edinburgh/imagej/three-pane-crop/) function, one needs to load the full dataset.
-Since one (excemplary dataset (Sticklebucket_10)) is 7 GB on disk and reported as being 35.4 GB when loaded in Fiji, using the 3D cropping function directly is not even possible.
+Since one (excemplary dataset (Sticklebucket_10)) is 7 GB on disk and reported as being 35.4 GB when loaded in Fiji, using the 3D cropping function on an uncropped single dataset is not possible without using a powerful workstation.
 
-<-- Manual ROI-ing in Dragonfly? -->
-
-Cropping would thus be a two-step manual process, e.g. croppin the full dataset loaded as '[virtual stack](https://imagej.net/ij/docs/guide/146-8.html#sub:Virtual-Stacks)' and then cropping it down further before writing out the cropped stack.
+Extracting the single fish from the encompassing dataset would thus be a two-step manual process, e.g. croppin the full dataset loaded as '[virtual stack](https://imagej.net/ij/docs/guide/146-8.html#sub:Virtual-Stacks)' and then cropping it down further before writing out the cropped stack.
 For each encompassing scan this would need to be repeated 6 times (for *each* of the six fish in each of the encompassing scans).
-In addition, this manual process is not reproducible since it is a manual/visual process.
+In addition, such a manual process is not reproducible in the sense that it cannot be consistently replicated by others using the same data since the manual cropping is operator-dependent.
+Algorithmically/automaticaly cropping the large datasets based on the axial MIP image leads to both reproducible cropped regions and efficiently uses the operator time (namely *no* operator time).
 
-<-- In addition, we write log files of the cropping, e.g. process *can* be checked after the fact manually -->
-
-Algorithmically/automaticaly cropping the large datasets based on the axial MIP image leads to both reproducible cropped regions and efficiently uses the operator time, namely *no* operator time. 
+Our automated extraction process also writes human-readable log files documenting the cropping position in the encompassing dataset and the crop extent.
+This enables reproducible double-checking and confirmation of the process after the fact (see this [direct link for one such log file](https://github.com/habi/sticklebacks/blob/main/logfiles/Sticklebucket_10/rec_regions/FG.X24.027/FG.X24.027.log)).
 
 ### Analysis
 

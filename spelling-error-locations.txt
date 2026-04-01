@@ -98,11 +98,12 @@ content/04.results.md:5:microCT
 content/04.results.md:16:reproducibly
 content/04.results.md:18:MIP
 content/04.results.md:22:excemplary
-content/04.results.md:24:ROI
-content/04.results.md:32:Algorithmically
-content/04.results.md:32:automaticaly
-content/04.results.md:32:MIP
-content/04.results.md:36:pharyngobranchial
+content/04.results.md:22:uncropped
+content/04.results.md:27:Algorithmically
+content/04.results.md:27:automaticaly
+content/04.results.md:27:MIP
+content/04.results.md:30:habi
+content/04.results.md:34:pharyngobranchial
 content/05.discussion.md:5:reproducibly
 content/05.discussion.md:7:Biomedisa
 content/07.contributions.md:7:curation
