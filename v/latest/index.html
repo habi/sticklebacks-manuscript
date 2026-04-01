@@ -57,8 +57,8 @@
   <meta name="dc.date" content="2026-04-01" />
   <meta name="citation_publication_date" content="2026-04-01" />
   <meta property="article:published_time" content="2026-04-01" />
-  <meta name="dc.modified" content="2026-04-01T08:55:17+00:00" />
-  <meta property="article:modified_time" content="2026-04-01T08:55:17+00:00" />
+  <meta name="dc.modified" content="2026-04-01T09:48:53+00:00" />
+  <meta property="article:modified_time" content="2026-04-01T09:48:53+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -84,9 +84,9 @@
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/8020eb43b1632d62c2b7b842451a5810763bc8f0/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/8020eb43b1632d62c2b7b842451a5810763bc8f0/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/8020eb43b1632d62c2b7b842451a5810763bc8f0/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/6a154d9b585986f943b22245def6513fddde23de/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/6a154d9b585986f943b22245def6513fddde23de/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/6a154d9b585986f943b22245def6513fddde23de/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -103,9 +103,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://habi.github.io/sticklebacks-manuscript/v/8020eb43b1632d62c2b7b842451a5810763bc8f0/">permalink</a>)
+(<a href="https://habi.github.io/sticklebacks-manuscript/v/6a154d9b585986f943b22245def6513fddde23de/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/habi/sticklebacks-manuscript/tree/8020eb43b1632d62c2b7b842451a5810763bc8f0">habi/sticklebacks-manuscript@8020eb4</a>
+from <a href="https://github.com/habi/sticklebacks-manuscript/tree/6a154d9b585986f943b22245def6513fddde23de">habi/sticklebacks-manuscript@6a154d9</a>
 on April 1, 2026.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -310,13 +310,13 @@ The custom-made sample holder aligns the single fish in the vertical axis around
 The extraction based on the MIP image along the rotation axis is completely automated and very robust, since the detected fish ‘regions’ do not overlap in the resulting image.</p>
 <p>Depending on the available machine it would even not be possible to load the full stack of each scan into a software to manually perform the cropping, such as Fiji <span class="citation" data-cites="Fkmz2cmo">(<a href="#ref-Fkmz2cmo" role="doc-biblioref">Schindelin et al., 2012</a>)</span>.
 Large stacks of images (in other words larger than the RAM of the available machine) can be loaded as ‘virtual stacks’, but o manually crop the region of each fish from the large scan with the <a href="https://www.longair.net/edinburgh/imagej/three-pane-crop/">Crop (3D)</a> function, one needs to load the full dataset.
-Since one (excemplary dataset (Sticklebucket_10)) is 7 GB on disk and reported as being 35.4 GB when loaded in Fiji, using the 3D cropping function directly is not even possible.</p>
-<p>&lt;– Manual ROI-ing in Dragonfly? –&gt;</p>
-<p>Cropping would thus be a two-step manual process, e.g. croppin the full dataset loaded as ‘<a href="https://imagej.net/ij/docs/guide/146-8.html#sub:Virtual-Stacks">virtual stack</a>’ and then cropping it down further before writing out the cropped stack.
+Since one (excemplary dataset (Sticklebucket_10)) is 7 GB on disk and reported as being 35.4 GB when loaded in Fiji, using the 3D cropping function on an uncropped single dataset is not possible without using a powerful workstation.</p>
+<p>Extracting the single fish from the encompassing dataset would thus be a two-step manual process, e.g. croppin the full dataset loaded as ‘<a href="https://imagej.net/ij/docs/guide/146-8.html#sub:Virtual-Stacks">virtual stack</a>’ and then cropping it down further before writing out the cropped stack.
 For each encompassing scan this would need to be repeated 6 times (for <em>each</em> of the six fish in each of the encompassing scans).
-In addition, this manual process is not reproducible since it is a manual/visual process.</p>
-<p>&lt;– In addition, we write log files of the cropping, e.g. process <em>can</em> be checked after the fact manually –&gt;</p>
-<p>Algorithmically/automaticaly cropping the large datasets based on the axial MIP image leads to both reproducible cropped regions and efficiently uses the operator time, namely <em>no</em> operator time.</p>
+In addition, such a manual process is not reproducible in the sense that it cannot be consistently replicated by others using the same data since the manual cropping is operator-dependent.
+Algorithmically/automaticaly cropping the large datasets based on the axial MIP image leads to both reproducible cropped regions and efficiently uses the operator time (namely <em>no</em> operator time).</p>
+<p>Our automated extraction process also writes human-readable log files documenting the cropping position in the encompassing dataset and the crop extent.
+This enables reproducible double-checking and confirmation of the process after the fact (see this <a href="https://github.com/habi/sticklebacks/blob/main/logfiles/Sticklebucket_10/rec_regions/FG.X24.027/FG.X24.027.log">direct link for one such log file</a>).</p>
 <h3 id="analysis">Analysis</h3>
 <ul>
 <li>3D shape variation on internal pharyngobranchial bone.
