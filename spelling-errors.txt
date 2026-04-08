@@ -10,7 +10,7 @@ Bruker
 Burgergemeinde
 ceratobranchials
 cpeichel
-CSV
+csv
 curation
 donwstream
 ecotype
@@ -55,7 +55,7 @@ Sulser
 sulserrb
 threespine
 thresholded
-thresholding
+Thresholding
 TMAG
 unbaited
 uncropped
