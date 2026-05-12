@@ -26,8 +26,8 @@ header-includes: |
   <meta name="dc.date" content="2026-05-12" />
   <meta name="citation_publication_date" content="2026-05-12" />
   <meta property="article:published_time" content="2026-05-12" />
-  <meta name="dc.modified" content="2026-05-12T09:28:44+00:00" />
-  <meta property="article:modified_time" content="2026-05-12T09:28:44+00:00" />
+  <meta name="dc.modified" content="2026-05-12T10:10:49+00:00" />
+  <meta property="article:modified_time" content="2026-05-12T10:10:49+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -53,9 +53,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/6409ddd2473a5c75547c04d99d489aaf2f439fb7/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/6409ddd2473a5c75547c04d99d489aaf2f439fb7/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/6409ddd2473a5c75547c04d99d489aaf2f439fb7/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/9bc4e1bcfd6d369145756260693a4190e82e38ff/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/9bc4e1bcfd6d369145756260693a4190e82e38ff/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/9bc4e1bcfd6d369145756260693a4190e82e38ff/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/6409ddd2473a5c75547c04d99d489aaf2f439fb7/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/9bc4e1bcfd6d369145756260693a4190e82e38ff/))
 was automatically generated
-from [habi/sticklebacks-manuscript@6409ddd](https://github.com/habi/sticklebacks-manuscript/tree/6409ddd2473a5c75547c04d99d489aaf2f439fb7)
+from [habi/sticklebacks-manuscript@9bc4e1b](https://github.com/habi/sticklebacks-manuscript/tree/9bc4e1bcfd6d369145756260693a4190e82e38ff)
 on May 12, 2026.
 </em></small>
 
@@ -170,14 +170,16 @@ We then applied this pipeline to a sampling effort encompassing 44 multi-specime
 
 ## Introduction {.page_break_before}
 
- The threespine stickleback (Gasterosteus aculeatus) is an oft-studied organism for understanding the independent evolution of similar traits in similar environments [Bell and Foster 1994; [Reid et al 2021](https://doi.org/10.1146/annurev-genom-111720-081402)]. This species exhibits marked differences in marine-freshwater, lake-stream, and benthic-limnetic ecotypes [Willacker et al 2021](https://doi.org/10.1111/j.1095-8312.2010.01531.x).
- This study will focus on the benthic-limnetic axis, using samples from a long-term evolutionary experiment currently in-process studying divergent populations of limnetic and benthic stickleback within the Kenai peninsula of Alaska (USA) [Hendry et al 2024](https://doi.org/10.1002/ece3.11503).
- This project, the Forward In Time Natural Experimental Study of Selection (FITNESS), aims to study the predictability and repeatability of evolution. Two pools of sticklebacks — one made from four source populations of limnetic and four source populations of benthic sticklebacks — have been placed into eight destination lakes, four of which are small and benthic and four of which are large and limnetic. These new populations have been sampled every year in order to track the genotypic and phenotypic trajectories of these introduced populations.
- Understanding the initial variation in the source populations is essential to this project, as this initial variation would be expected to reflect which phenotypes are associated with each ecotype under study.
- 
- Among these and other bony fish, the internal hyoid arch-branchial arch complex is an important structure implicated in diet and feeding ecology [XXX Citation to add!]. The paired ceratobranchial and pharyngobranchial bones within this complex aid in dietary processing.
- The "gill rakers" on the ceratobranchials and the "internal jaws" of pharyngobranchials the are strong indicators of different foraging styles, and have been shown to be related to genotypic and phenotypic changes in different species, and even among different populations [CITE]. The shape and arrangement of these structures contain important anatomical and foraging signifiers[CITE HAINES PADDLEFISH] 
- These structures are, however, difficult to study without full cranial dissection and corresponding distortion of the branchial anatomy. 
+The threespine stickleback (Gasterosteus aculeatus) is an oft-studied organism for understanding the independent evolution of similar traits in similar environments [Bell and Foster 1994] [@doi:10.1146/annurev-genom-111720-081402].
+This species exhibits marked differences in marine-freshwater, lake-stream, and benthic-limnetic ecotypes [@doi:10.1111/j.1095-8312.2010.01531.x].
+This study will focus on the benthic-limnetic axis, using samples from a long-term evolutionary experiment currently in-process studying divergent populations of limnetic and benthic stickleback within the Kenai peninsula of Alaska (USA) [@doi:10.1002/ece3.11503].
+This project, the Forward In Time Natural Experimental Study of Selection (FITNESS), aims to study the predictability and repeatability of evolution. Two pools of sticklebacks — one made from four source populations of limnetic and four source populations of benthic sticklebacks — have been placed into eight destination lakes, four of which are small and benthic and four of which are large and limnetic. These new populations have been sampled every year in order to track the genotypic and phenotypic trajectories of these introduced populations.
+Understanding the initial variation in the source populations is essential to this project, as this initial variation would be expected to reflect which phenotypes are associated with each ecotype under study.
+
+Among these and other bony fish, the internal hyoid arch-branchial arch complex is an important structure implicated in diet and feeding ecology [XXX Citation to add!]. The paired ceratobranchial and pharyngobranchial bones within this complex aid in dietary processing.
+The "gill rakers" on the ceratobranchials and the "internal jaws" of pharyngobranchials the are strong indicators of different foraging styles, and have been shown to be related to genotypic and phenotypic changes in different species, and even among different populations [CITE]. The shape and arrangement of these structures contain important anatomical and foraging signifiers [CITE HAINES PADDLEFISH].
+These structures are, however, difficult to study without full cranial dissection and corresponding distortion of the branchial anatomy.
+
 - Embedded into [Alaska Stickleback Restoration Project](https://alaskastickleback.com/), [Genomics axis](https://alaskastickleback.com/genomics) where Katie Peichel, Ben Sulser and Sheila Christen are affiliated.
 
 ## Micro-computed tomography
@@ -197,9 +199,9 @@ Once a Biomedisa model is trained, the entire pipeline runs from multi-specimen 
 
 The specimens used for this study were collected from source lakes as a part of the FITNESS project in the region of Cook Inlet, Alaska.
 Fish were collected using unbaited minnow traps in two separate field seasons, the first taking place from May 26 - June 10 2023 and the second taking place from May 25 - June 11 2024.
-Specimen collections were taken from a random sample of 30 fish from each lake, under Alaska Department of Fish and Game (ADFG) permits SF2023-030 and P-24-015 for 2023 and 2024, respectivley. 
+Specimen collections were taken from a random sample of 30 fish from each lake, under Alaska Department of Fish and Game (ADFG) permits SF2023-030 and P-24-015 for 2023 and 2024, respectively.
 Fish were euthanized with MS-222, photographed, and preserved in 10% formalin in a bag with a specific label, under Animal Use Protocol (AUP) MCGL-8265.
-At the end of each field season, samples were shipped from Anchorage (AK, USA) to Bern (BE, CH) where they were stored until scanning time. 
+At the end of each field season, samples were shipped from Anchorage (AK, USA) to Bern (BE, CH) where they were stored until scanning time.
 
 Due to their inherent contrast difference to the surrounding tissue, the structures of interest we touch upon in this manuscript (teeth and bones, i.e. jaws and skull) are well visualized in unstained samples, hence no further preparation of the fish was necessary.
 
@@ -275,11 +277,15 @@ An [interactive version of this figure](https://htmlpreview.github.io/?https://r
 
 #### Extraction of features of interest
 
-After seperation, the imagefiles were checked and rendered via the use of 3DSlicer [@doi:10.1007/978-1-4614-7657-3_19] and the Slicermorph extension [@doi:10.1111/2041-210X.13669]. The individual elements of the branchial apparatus were rendered using a combination of thresholding and split islands tools to seperate the pharyngobranchials, epibranchials, basibranchials, hypobranchials and ceratobranchials (FIGURE XXX). Once rendered, these bones were exported as a colored labelmap alongside the .nrrd from which they were segmented to pass to the Biomedisa program. 
+After separation, the image files were checked and rendered via the use of 3DSlicer [@doi:10.1007/978-1-4614-7657-3_19] and the SlicerMorph extension [@doi:10.1111/2041-210X.13669].
+The individual elements of the branchial apparatus were rendered using a combination of thresholding and split islands tools to separate the pharyngobranchials, epibranchials, basibranchials, hypobranchials and ceratobranchials (FIGURE XXX).
+Once rendered, these bones were exported as a colored labelmap alongside the `.nrrd` from which they were segmented to pass to the Biomedisa program.
 
 #### Machine learning and model training
 
-As a group, a dataset of 51 specimens (including .nrrd and .label files) were passed to Biomedisa [@doi:10.1038/s41467-020-19303-w] to train a segmentation model. We allowed the for rotation of 180* to account for possible specimen variability, and used a 80/20 split between training and validation data. The model was trained with a batch size of 24 and epoch number of 50, under Network archictecture 32-64-128-256-512. 
+As a group, a dataset of 51 specimens (including `.nrrd` and `.label` files) were passed to Biomedisa [@doi:10.1038/s41467-020-19303-w] to train a segmentation model.
+We allowed the for rotation of 180° to account for possible specimen variability, and used a 80/20 split between training and validation data.
+The model was trained with a batch size of 24 and epoch number of 50, under Network architecture 32-64-128-256-512.
 
 #### Testing of models and results
 
@@ -307,12 +313,12 @@ The extraction based on the MIP image along the rotation axis is completely auto
 
 Depending on the available machine it would even not be possible to load the full stack of each scan into a software to manually perform the cropping, such as Fiji [@doi:10.1038/nmeth.2019].
 Large stacks of images (in other words larger than the RAM of the available machine) can be loaded as 'virtual stacks', but o manually crop the region of each fish from the large scan with the [Crop (3D)](https://www.longair.net/edinburgh/imagej/three-pane-crop/) function, one needs to load the full dataset.
-Since one (excemplary dataset (Sticklebucket_10)) is 7 GB on disk and reported as being 35.4 GB when loaded in Fiji, using the 3D cropping function on an uncropped single dataset is not possible without using a powerful workstation.
+Since one (exemplary dataset (`Sticklebucket_10`)) is 7 GB on disk and reported as being 35.4 GB when loaded in Fiji, using the 3D cropping function on an uncropped single dataset is not possible without using a powerful workstation.
 
-Extracting the single fish from the encompassing dataset would thus be a two-step manual process, e.g. croppin the full dataset loaded as '[virtual stack](https://imagej.net/ij/docs/guide/146-8.html#sub:Virtual-Stacks)' and then cropping it down further before writing out the cropped stack.
+Extracting the single fish from the encompassing dataset would thus be a two-step manual process, e.g. cropping the full dataset loaded as '[virtual stack](https://imagej.net/ij/docs/guide/146-8.html#sub:Virtual-Stacks)' and then cropping it down further before writing out the cropped stack.
 For each encompassing scan this would need to be repeated 6 times (for *each* of the six fish in each of the encompassing scans).
 In addition, such a manual process is not reproducible in the sense that it cannot be consistently replicated by others using the same data since the manual cropping is operator-dependent.
-Algorithmically/automaticaly cropping the large datasets based on the axial MIP image leads to both reproducible cropped regions and efficiently uses the operator time (namely *no* operator time).
+Algorithmically/automatically cropping the large datasets based on the axial MIP image leads to both reproducible cropped regions and efficiently uses the operator time (namely *no* operator time).
 
 Our automated extraction process also writes human-readable log files documenting the cropping position in the encompassing dataset and the crop extent.
 This enables reproducible double-checking and confirmation of the process after the fact (see this [direct link for one such log file](https://github.com/habi/sticklebacks/blob/main/logfiles/Sticklebucket_10/rec_regions/FG.X24.027/FG.X24.027.log)).
