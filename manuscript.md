@@ -5,7 +5,7 @@ keywords:
 - sticklebacks
 - ecology
 lang: en-US
-date-meta: '2026-04-08'
+date-meta: '2026-05-12'
 author-meta:
 - David Haberthür
 - Ben Sulser
@@ -23,11 +23,11 @@ header-includes: |
   <meta name="citation_title" content="microCT imaging of threespine stickleback" />
   <meta property="og:title" content="microCT imaging of threespine stickleback" />
   <meta property="twitter:title" content="microCT imaging of threespine stickleback" />
-  <meta name="dc.date" content="2026-04-08" />
-  <meta name="citation_publication_date" content="2026-04-08" />
-  <meta property="article:published_time" content="2026-04-08" />
-  <meta name="dc.modified" content="2026-04-08T11:21:49+00:00" />
-  <meta property="article:modified_time" content="2026-04-08T11:21:49+00:00" />
+  <meta name="dc.date" content="2026-05-12" />
+  <meta name="citation_publication_date" content="2026-05-12" />
+  <meta property="article:published_time" content="2026-05-12" />
+  <meta name="dc.modified" content="2026-05-12T09:28:44+00:00" />
+  <meta property="article:modified_time" content="2026-05-12T09:28:44+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -53,9 +53,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/704814a4ad6d8fabe767c9b253d5ca513bf4671e/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/704814a4ad6d8fabe767c9b253d5ca513bf4671e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/704814a4ad6d8fabe767c9b253d5ca513bf4671e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/6409ddd2473a5c75547c04d99d489aaf2f439fb7/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/6409ddd2473a5c75547c04d99d489aaf2f439fb7/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/6409ddd2473a5c75547c04d99d489aaf2f439fb7/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,10 +77,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/704814a4ad6d8fabe767c9b253d5ca513bf4671e/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/6409ddd2473a5c75547c04d99d489aaf2f439fb7/))
 was automatically generated
-from [habi/sticklebacks-manuscript@704814a](https://github.com/habi/sticklebacks-manuscript/tree/704814a4ad6d8fabe767c9b253d5ca513bf4671e)
-on April 8, 2026.
+from [habi/sticklebacks-manuscript@6409ddd](https://github.com/habi/sticklebacks-manuscript/tree/6409ddd2473a5c75547c04d99d489aaf2f439fb7)
+on May 12, 2026.
 </em></small>
 
 
@@ -157,47 +157,36 @@ Ruslan Hlushchuk \<ruslan.hlushchuk@unibe.ch\>.
 Can we predict evolution?
 
 The three-spined stickleback (Gasterosteus aculeatus) is a well-recognized system for understanding adaptation to divergent habitats.
-Populations of benthic and limnetic stickleback differ in a number of phenotypic traits that are associated with shifts in dietary specialization.
-However, analyses of the structures required for feeding – especially the jaws and complex internal branchial anatomy – requires considerable time and expertise, with destructive sampling and fine dissection skills needed for quantitative analysis.
+Populations of benthic (benthos-feeding) and limnetic (water-column feeding) stickleback differ in a number of phenotypic traits that are associated with shifts in dietary specialization.
+Modern investigation of the evolutionary changes in this organism often requires the analysis of hundreds, if not thousands, of individuals. However, analyses of the structures required for feeding – especially the jaws and complex internal branchial anatomy – require considerable time and expertise, with destructive sampling and fine dissection skills needed for quantitative analysis. 
 
-The advent of µCT and 3D-scanning technology affords non-destructive sampling and an increase the resolution of data available for study, but at the substantial cost of increasing complexity and processing time for each specimen.
+The advent of µCT and 3D-scanning technology affords non-destructive sampling and an increase the resolution of data available for study, but at the substantial cost of increasing complexity and processing time for each specimen such that these techniques are often unfeasible for studies of eco-evolutionary scale. 
 
 To address these concerns, we developed a rapid and semi-automated segmentation and analysis pipeline based on both the Jupyter interactive development environment and the Biomedisa image segmentation platform for investigating three-dimensional morphological adaptation within the three-spined stickleback.
 
-The pipeline includes splitting 44 multi-specimen scans into regions of interest for each specimen, reconstruction of targeted anatomy, and morphometric analyses.
-We then applied this pipeline to a sampling effort encompassing hundreds of samples of divergent benthic and limnetic stickleback populations (N=216), showcasing the possibility of using high-throughput scanning data to provide tests of ecological and evolutionary hypotheses.
+The pipeline includes splitting multi-specimen scans into regions of interest for each specimen, reconstruction of targeted anatomy, and morphometric analyses.
+We then applied this pipeline to a sampling effort encompassing 44 multi-specimen scans encompassing hundreds of samples of divergent benthic and limnetic stickleback populations (N=216), showcasing the possibility of using high-throughput scanning data to provide tests of ecological and evolutionary hypotheses.
 
 
 ## Introduction {.page_break_before}
 
- The threespine stickleback (Gasterosteus aculeatus) is an oft-studied organism for understanding the independent evolution of similar traits in similar environments.
- This species exhibits marked differences in marine-freshwater, lake-stream, and benthic-limnetic ecotypes4.
- This study will focus on the benthic-limnetic axis, using samples from a long-term evolutionary experiment currently in-process studying divergent populations of limnetic and benthic stickleback within the Kenai peninsula of Alaska (USA).
- This project, the Forward In Time Natural Experimental Study of Selection (FITNESS), aims to study the predictability and repeated of evolution.
- Two pools of sticklebacks — one made from four source populations of limnetic and four source populations of benthic sticklebacks — have been placed into eight destination lakes, four of which are small and benthic and four of which are large and limnetic.
- These new populations have been sampled every year in order to track the genotypic and phenotypic trajectories of these introduced populations.
- Understanding the initial variation in the source populations is essential to this endeavor, as this initial variation would be expected to reflect which phenotypes are associated with each ecotype under study.
- Among these and other bony fish, the internal hyoid arch-branchial arch complex is an important structure implicated in diet and feeding ecology.
- The pharyngobranchial bones at the posterior margin of this complex (and their corresponding ceratobranchials) aid in dietary processing.
- The "gill rakers" on the ceratobranchials and the "internal jaws" of the are strong indicators of different foraging styles, and have been shown to be related to genotypic and phenotypic changes in different species, and even among different populations.
- These structures are, however, difficult to study without full cranial dissection and distortion of the branchial anatomy.
-
+ The threespine stickleback (Gasterosteus aculeatus) is an oft-studied organism for understanding the independent evolution of similar traits in similar environments [Bell and Foster 1994; [Reid et al 2021](https://doi.org/10.1146/annurev-genom-111720-081402)]. This species exhibits marked differences in marine-freshwater, lake-stream, and benthic-limnetic ecotypes [Willacker et al 2021](https://doi.org/10.1111/j.1095-8312.2010.01531.x).
+ This study will focus on the benthic-limnetic axis, using samples from a long-term evolutionary experiment currently in-process studying divergent populations of limnetic and benthic stickleback within the Kenai peninsula of Alaska (USA) [Hendry et al 2024](https://doi.org/10.1002/ece3.11503).
+ This project, the Forward In Time Natural Experimental Study of Selection (FITNESS), aims to study the predictability and repeatability of evolution. Two pools of sticklebacks — one made from four source populations of limnetic and four source populations of benthic sticklebacks — have been placed into eight destination lakes, four of which are small and benthic and four of which are large and limnetic. These new populations have been sampled every year in order to track the genotypic and phenotypic trajectories of these introduced populations.
+ Understanding the initial variation in the source populations is essential to this project, as this initial variation would be expected to reflect which phenotypes are associated with each ecotype under study.
+ 
+ Among these and other bony fish, the internal hyoid arch-branchial arch complex is an important structure implicated in diet and feeding ecology [XXX Citation to add!]. The paired ceratobranchial and pharyngobranchial bones within this complex aid in dietary processing.
+ The "gill rakers" on the ceratobranchials and the "internal jaws" of pharyngobranchials the are strong indicators of different foraging styles, and have been shown to be related to genotypic and phenotypic changes in different species, and even among different populations [CITE]. The shape and arrangement of these structures contain important anatomical and foraging signifiers[CITE HAINES PADDLEFISH] 
+ These structures are, however, difficult to study without full cranial dissection and corresponding distortion of the branchial anatomy. 
 - Embedded into [Alaska Stickleback Restoration Project](https://alaskastickleback.com/), [Genomics axis](https://alaskastickleback.com/genomics) where Katie Peichel, Ben Sulser and Sheila Christen are affiliated.
-- Why are we studying what we are studying in these fish?
 
 ## Micro-computed tomography
 
 X-ray microtomography is an indispensable tool to gain non-destructive insights into the inner structure of highly diverse samples, namely for specimens studied in the biomedical sciences [@doi:10.1186/s12915-020-0753-2].
-Microtomographic imaging is ideally suited to non-destructively assess the morphology of different fish species, large and small [@doi:10.1093/iob/obad008], including the internal anatomy.
+Microtomographic imaging is ideally suited to non-destructively assess the morphology of different fish species [@doi:10.1093/iob/obad008], including the internal anatomy and small structures difficult to quantify without additional preparation.
 While these structures can be rendered by-hand by a skilled investigator, the time and cost required per-specimen is inefficient for the scale required via eco-evolutionary study.
-This project aims to address these gaps, demonstrating a novel pipeline for rendering and auto-splitting of a multispecimen scan for mass sampling, creating a dataset with consistent parameters that can be fed to donwstream machine-learning techniques [Biomedisa] to aid in the segmentation of individual bony structures in each scan.
+This project aims to address these gaps, demonstrating a novel pipeline for rendering and auto-splitting of a multispecimen scan for mass sampling, creating a dataset with consistent parameters that can be fed to donwstream machine-learning techniques [@doi:10.1038/s41467-020-19303-w] to aid in the segmentation of individual bony structures in each scan.
 Once a Biomedisa model is trained, the entire pipeline runs from multi-specimen input to rendered structures for each specimen in a fraction of the time and resources used in traditional analysis.
-
-<!---
-Do we have to give a bit of background on uCT imaging, e.g. write about resolution, staining, etc? 
-
----I don't think so? Some of this can be offloaded in to materials and methods, I think
---->
 
 
 ## Materials & Methods {.page_break_before}
@@ -208,12 +197,9 @@ Do we have to give a bit of background on uCT imaging, e.g. write about resoluti
 
 The specimens used for this study were collected from source lakes as a part of the FITNESS project in the region of Cook Inlet, Alaska.
 Fish were collected using unbaited minnow traps in two separate field seasons, the first taking place from May 26 - June 10 2023 and the second taking place from May 25 - June 11 2024.
-Specimen collections were taken from a random sample of 30 fish from each lake.
-Fish were euthanized with MS-222, photographed, and preserved in formalin in a bag with a specific label.
-At the end of each field season, samples were shipped from Anchorage (AK, USA) to Bern (BE, CH) where they were stored until scanning time.
-
-<!-- How were they kept/stored? 75% Ethanol?-->
-<!-- Add the permits and numbers once we get them! -->
+Specimen collections were taken from a random sample of 30 fish from each lake, under Alaska Department of Fish and Game (ADFG) permits SF2023-030 and P-24-015 for 2023 and 2024, respectivley. 
+Fish were euthanized with MS-222, photographed, and preserved in 10% formalin in a bag with a specific label, under Animal Use Protocol (AUP) MCGL-8265.
+At the end of each field season, samples were shipped from Anchorage (AK, USA) to Bern (BE, CH) where they were stored until scanning time. 
 
 Due to their inherent contrast difference to the surrounding tissue, the structures of interest we touch upon in this manuscript (teeth and bones, i.e. jaws and skull) are well visualized in unstained samples, hence no further preparation of the fish was necessary.
 
@@ -289,7 +275,15 @@ An [interactive version of this figure](https://htmlpreview.github.io/?https://r
 
 #### Extraction of features of interest
 
-- Biomedisa [@doi:10.1038/s41467-020-19303-w]
+After seperation, the imagefiles were checked and rendered via the use of 3DSlicer [@doi:10.1007/978-1-4614-7657-3_19] and the Slicermorph extension [@doi:10.1111/2041-210X.13669]. The individual elements of the branchial apparatus were rendered using a combination of thresholding and split islands tools to seperate the pharyngobranchials, epibranchials, basibranchials, hypobranchials and ceratobranchials (FIGURE XXX). Once rendered, these bones were exported as a colored labelmap alongside the .nrrd from which they were segmented to pass to the Biomedisa program. 
+
+#### Machine learning and model training
+
+As a group, a dataset of 51 specimens (including .nrrd and .label files) were passed to Biomedisa [@doi:10.1038/s41467-020-19303-w] to train a segmentation model. We allowed the for rotation of 180* to account for possible specimen variability, and used a 80/20 split between training and validation data. The model was trained with a batch size of 24 and epoch number of 50, under Network archictecture 32-64-128-256-512. 
+
+#### Testing of models and results
+
+Once trained, we applied the segmentation algorithm to the remaining 160 specimen volumes and inspected the results (viewable in FIGURE XXX)
 
 
 ## Results {.page_break_before}
