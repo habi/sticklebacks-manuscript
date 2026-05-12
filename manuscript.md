@@ -26,8 +26,8 @@ header-includes: |
   <meta name="dc.date" content="2026-05-12" />
   <meta name="citation_publication_date" content="2026-05-12" />
   <meta property="article:published_time" content="2026-05-12" />
-  <meta name="dc.modified" content="2026-05-12T10:10:49+00:00" />
-  <meta property="article:modified_time" content="2026-05-12T10:10:49+00:00" />
+  <meta name="dc.modified" content="2026-05-12T10:24:17+00:00" />
+  <meta property="article:modified_time" content="2026-05-12T10:24:17+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -53,9 +53,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/9bc4e1bcfd6d369145756260693a4190e82e38ff/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/9bc4e1bcfd6d369145756260693a4190e82e38ff/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/9bc4e1bcfd6d369145756260693a4190e82e38ff/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/c89c73eab8e6806e65807d9c73108827ea5bce4a/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/c89c73eab8e6806e65807d9c73108827ea5bce4a/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/c89c73eab8e6806e65807d9c73108827ea5bce4a/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/9bc4e1bcfd6d369145756260693a4190e82e38ff/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/c89c73eab8e6806e65807d9c73108827ea5bce4a/))
 was automatically generated
-from [habi/sticklebacks-manuscript@9bc4e1b](https://github.com/habi/sticklebacks-manuscript/tree/9bc4e1bcfd6d369145756260693a4190e82e38ff)
+from [habi/sticklebacks-manuscript@c89c73e](https://github.com/habi/sticklebacks-manuscript/tree/c89c73eab8e6806e65807d9c73108827ea5bce4a)
 on May 12, 2026.
 </em></small>
 
@@ -158,9 +158,10 @@ Can we predict evolution?
 
 The three-spined stickleback (Gasterosteus aculeatus) is a well-recognized system for understanding adaptation to divergent habitats.
 Populations of benthic (benthos-feeding) and limnetic (water-column feeding) stickleback differ in a number of phenotypic traits that are associated with shifts in dietary specialization.
-Modern investigation of the evolutionary changes in this organism often requires the analysis of hundreds, if not thousands, of individuals. However, analyses of the structures required for feeding – especially the jaws and complex internal branchial anatomy – require considerable time and expertise, with destructive sampling and fine dissection skills needed for quantitative analysis. 
+Modern investigation of the evolutionary changes in this organism often requires the analysis of hundreds, if not thousands, of individuals.
+However, analyses of the structures required for feeding – especially the jaws and complex internal branchial anatomy — require considerable time and expertise, with destructive sampling and fine dissection skills needed for quantitative analysis.
 
-The advent of µCT and 3D-scanning technology affords non-destructive sampling and an increase the resolution of data available for study, but at the substantial cost of increasing complexity and processing time for each specimen such that these techniques are often unfeasible for studies of eco-evolutionary scale. 
+The advent of µCT and 3D-scanning technology affords non-destructive sampling and an increase the resolution of data available for study, but at the substantial cost of increasing complexity and processing time for each specimen such that these techniques are often unfeasible for studies of eco-evolutionary scale.
 
 To address these concerns, we developed a rapid and semi-automated segmentation and analysis pipeline based on both the Jupyter interactive development environment and the Biomedisa image segmentation platform for investigating three-dimensional morphological adaptation within the three-spined stickleback.
 
@@ -173,11 +174,15 @@ We then applied this pipeline to a sampling effort encompassing 44 multi-specime
 The threespine stickleback (Gasterosteus aculeatus) is an oft-studied organism for understanding the independent evolution of similar traits in similar environments [Bell and Foster 1994] [@doi:10.1146/annurev-genom-111720-081402].
 This species exhibits marked differences in marine-freshwater, lake-stream, and benthic-limnetic ecotypes [@doi:10.1111/j.1095-8312.2010.01531.x].
 This study will focus on the benthic-limnetic axis, using samples from a long-term evolutionary experiment currently in-process studying divergent populations of limnetic and benthic stickleback within the Kenai peninsula of Alaska (USA) [@doi:10.1002/ece3.11503].
-This project, the Forward In Time Natural Experimental Study of Selection (FITNESS), aims to study the predictability and repeatability of evolution. Two pools of sticklebacks — one made from four source populations of limnetic and four source populations of benthic sticklebacks — have been placed into eight destination lakes, four of which are small and benthic and four of which are large and limnetic. These new populations have been sampled every year in order to track the genotypic and phenotypic trajectories of these introduced populations.
+This project, the Forward In Time Natural Experimental Study of Selection (FITNESS), aims to study the predictability and repeatability of evolution.
+Two pools of sticklebacks — one made from four source populations of limnetic and four source populations of benthic sticklebacks — have been placed into eight destination lakes, four of which are small and benthic and four of which are large and limnetic.
+These new populations have been sampled every year in order to track the genotypic and phenotypic trajectories of these introduced populations.
 Understanding the initial variation in the source populations is essential to this project, as this initial variation would be expected to reflect which phenotypes are associated with each ecotype under study.
 
-Among these and other bony fish, the internal hyoid arch-branchial arch complex is an important structure implicated in diet and feeding ecology [XXX Citation to add!]. The paired ceratobranchial and pharyngobranchial bones within this complex aid in dietary processing.
-The "gill rakers" on the ceratobranchials and the "internal jaws" of pharyngobranchials the are strong indicators of different foraging styles, and have been shown to be related to genotypic and phenotypic changes in different species, and even among different populations [CITE]. The shape and arrangement of these structures contain important anatomical and foraging signifiers [CITE HAINES PADDLEFISH].
+Among these and other bony fish, the internal hyoid arch-branchial arch complex is an important structure implicated in diet and feeding ecology [XXX Citation to add!].
+The paired ceratobranchial and pharyngobranchial bones within this complex aid in dietary processing.
+The "gill rakers" on the ceratobranchials and the "internal jaws" of pharyngobranchials the are strong indicators of different foraging styles, and have been shown to be related to genotypic and phenotypic changes in different species, and even among different populations [CITE].
+The shape and arrangement of these structures contain important anatomical and foraging signifiers [CITE HAINES PADDLEFISH].
 These structures are, however, difficult to study without full cranial dissection and corresponding distortion of the branchial anatomy.
 
 - Embedded into [Alaska Stickleback Restoration Project](https://alaskastickleback.com/), [Genomics axis](https://alaskastickleback.com/genomics) where Katie Peichel, Ben Sulser and Sheila Christen are affiliated.

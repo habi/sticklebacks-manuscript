@@ -14,7 +14,7 @@ Burgergemeinde
 ceratobranchial
 ceratobranchials
 cpeichel
-CSV
+csv
 curation
 donwstream
 DSlicer
@@ -37,7 +37,7 @@ labelmap
 limnetic
 MCGL
 microCT
-microtomographic
+Microtomographic
 microtomography
 MIP
 morphometric
