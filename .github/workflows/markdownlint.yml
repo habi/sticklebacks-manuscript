@@ -25,6 +25,7 @@ jobs:
         with:
           globs: |
             content/*.md
-            !content/00*.md
-            !content/90*.md
+            !content/00.front-matter.md
+            !content/07.contributions.md
+            !content/90.back-matter.md
           config: .markdownlint-cli2.json
