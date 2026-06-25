@@ -10,11 +10,11 @@ AUP
 averate
 Baltzerstrasse
 basibranchials
-benthic
+Benthic
 benthos
 binarized
 biomedisa
-branchial
+Branchial
 Bruker
 Burgergemeinde
 catgeories
@@ -28,7 +28,6 @@ curation
 destructieve
 differnces
 donwstream
-DSlicer
 ecotype
 ecotypes
 epaxial
@@ -58,7 +57,7 @@ limnetic
 lm
 MCGL
 microCT
-microtomographic
+Microtomographic
 microtomography
 MIP
 morphometric
