@@ -10,11 +10,11 @@ AUP
 averate
 Baltzerstrasse
 basibranchials
-benthic
+Benthic
 benthos
 binarized
 Biomedisa
-branchial
+Branchial
 Bruker
 Burgergemeinde
 catgeories
@@ -27,7 +27,6 @@ csv
 curation
 destructieve
 differnces
-dimorphism
 donwstream
 DSlicer
 ecotype
@@ -35,7 +34,6 @@ ecotypes
 epaxial
 epibranchials
 exmplary
-filement
 fo
 functiona
 Gasterosteus
@@ -60,7 +58,7 @@ limnetic
 lm
 MCGL
 microCT
-Microtomographic
+microtomographic
 microtomography
 MIP
 morphometric
@@ -73,6 +71,7 @@ nrrd
 OpenSCAD
 Otsu
 paramaters
+patern
 PCA
 Peichel
 pharyngobranchial
@@ -91,6 +90,8 @@ repeateable
 replicability
 represnted
 reproducibly
+Rolly
+Rsq
 Ruslan
 RuslanHlushchuk
 scannign
@@ -101,19 +102,19 @@ semilanmarks
 seperate
 seperately
 seperation
+signficant
 SkyScan
 Slicermorph
 smpling
+specializaiton
 spinalis
 spined
 stickelback
 STL
 Stratovan
-strcutures
 Sulser
 sulserrb
 teh
-tehse
 threespine
 thresholded
 thresholding

@@ -57,8 +57,8 @@
   <meta name="dc.date" content="2026-06-25" />
   <meta name="citation_publication_date" content="2026-06-25" />
   <meta property="article:published_time" content="2026-06-25" />
-  <meta name="dc.modified" content="2026-06-25T15:14:16+00:00" />
-  <meta property="article:modified_time" content="2026-06-25T15:14:16+00:00" />
+  <meta name="dc.modified" content="2026-06-25T16:01:13+00:00" />
+  <meta property="article:modified_time" content="2026-06-25T16:01:13+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -84,9 +84,9 @@
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/f406d55b23f14814669b1fefa062b09880d40f1a/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/f406d55b23f14814669b1fefa062b09880d40f1a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/f406d55b23f14814669b1fefa062b09880d40f1a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/7762a438fdf3f54b8812e440d999976637e45cc8/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/7762a438fdf3f54b8812e440d999976637e45cc8/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/7762a438fdf3f54b8812e440d999976637e45cc8/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -103,9 +103,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://habi.github.io/sticklebacks-manuscript/v/f406d55b23f14814669b1fefa062b09880d40f1a/">permalink</a>)
+(<a href="https://habi.github.io/sticklebacks-manuscript/v/7762a438fdf3f54b8812e440d999976637e45cc8/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/habi/sticklebacks-manuscript/tree/f406d55b23f14814669b1fefa062b09880d40f1a">habi/sticklebacks-manuscript@f406d55</a>
+from <a href="https://github.com/habi/sticklebacks-manuscript/tree/7762a438fdf3f54b8812e440d999976637e45cc8">habi/sticklebacks-manuscript@7762a43</a>
 on June 25, 2026.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -297,7 +297,7 @@ The individual elements of the branchial apparatus were rendered using a combina
 We allowed the for rotation of 180* to account for possible specimen variability, and used a 80/20 split between training and validation data.
 The model was trained with a batch size of 24 and epoch number of 50, under Network archictecture 32-64-128-256-512.</p>
 <h4 id="landmarking-of-models">Landmarking of models</h4>
-<p>Once trained, we applied the segmentation algorithm to the remaining 160 specimen volumes and landmarked the final results using Stratovan Checkpoint [https://www.stratovan.com/products/checkpoint].
+<p>To demonstrate the effectiveness of this tool and the importance for 3D morphometrics for answering eco-evolutionary questions, we have run a demonstration quantifying the shape differences of the ceratobranchial bones. Once trained, we applied the biomedisa segmentation model to the remaining 160 specimen volumes and landmarked the final results using Stratovan Checkpoint [https://www.stratovan.com/products/checkpoint].
 As a test and for subsequent analysis, the first two ceratobranchials on the right side were chosen for comparison across all specimens.
 Type II landmarks were set on the ends of each bone, with semilanmarks in-between each to cover axes of curvature along the bone (see figure XX).
 In total 7 landmarks and 4 semilandmark curves (two containing 20 semilandmarks, two containing 15) on the first ceratobranchial (CB1), and 5 landmarks and 3 semilandmark curves (one containing 20 semilandmarks, two containing 15) on the second ceratobranchial (CB2).</p>
@@ -305,7 +305,8 @@ In total 7 landmarks and 4 semilandmark curves (two containing 20 semilandmarks,
 <p>Equal distances were ensured using the “resample_curves” function in 3DSlicer <span class="citation" data-cites="EsDua5wx">(<a href="#ref-EsDua5wx" role="doc-biblioref">Kikinis et al., 2013</a>)</span>.</p>
 <h4 id="analysis-of-shape">Analysis of shape</h4>
 <p>All subsequent analyses were run using R version 4.4.1 [R Core Team] and the geomorph package <span class="citation" data-cites="2kwEzoCR">(<a href="#ref-2kwEzoCR" role="doc-biblioref">Adams &amp; Otárola‐Castillo, 2013</a>)</span>.
-Both bones were split and analyzed seperately after generalized Procrustes analsyis (GPA) usign the “gpagen()” function, with Principal Component Analysis (PCA) and linear models run with “gm.prcomp()” and “procD.lm()”, respectively.</p>
+Both bones were split and analyzed seperately after generalized Procrustes analsyis (GPA) usign the “gpagen()” function, with Principal Component Analysis (PCA) and linear models run with “gm.prcomp()” and “procD.lm()”, respectively.
+Linear fits were further investigated via the “pairwise()” function to analyse differences in pairwise statistics.</p>
 <h2 class="page_break_before" id="results">Results</h2>
 <h3 id="microct-data">microCT data</h3>
 <!-- Let's try it here - after all, it is technically a result of your work! -->
@@ -339,23 +340,28 @@ Selection and individual rendering of the branchial structures takes between 10-
 3D analyses preserve these features at a high resolution.</p>
 <p>After GPA alignment, we are able to quantify the shape differences among all fish scanned for this project.
 Changes due to allometry (using the metric of centroid size or standard length of the fish) were significant, but slight: explaining only a small fraction of shape variation in both bones.
+Both linear models and PCA results suggest that the lakes themselves - and not overarching catgeories of ecotype or sex - drive most of the shape variation in these bones (CB1: p = .001, Rsq = 0.03246, CB2: p =.001, Rsq = .06220).
+The ecological variation present across the first ceratobranchial shows a significant but quite small effect with lake origin (p = .009, Rsq = 0.02056 ), and with a large amount of overlap in the resulting shape space<img src="images/PCA_CB1_Plot.png" alt="Figure_PCA_CB1" />.
+The second ceratobranchial bone, on the other hand, shows equally small yet significant shifts associated with the ecotype (p = .001, Rsq = 0.0377).
+The patern of difference between benthic and limnetic gill rakers are, for this bone, clearly divergent <img src="images/PCA_CB2_Plot.png" alt="Figure_PCA_CB2" />.</p>
+<p>These differences in ecological patterning were also broken down by lake <img src="images/PCA_CB1_Plot_Lake.png" alt="Figure_PCA_CB2_Lake" />, <img src="images/PCA_CB2_Plot_Lake.png" alt="Figure_PCA_CB2_Lake" />. The differences in the 2nd ceratobranchial appear to be driven by divergence in the South Rolly population, supported by significant pairwise differences observed between this lake and all other lakes observed in CB2 and not in CB1 (see supplementary information).</p>
+<p>After GPA alignment, we are able to quantify the shape differences among all fish scanned for this project.
+Changes due to allometry (using the metric of centroid size or standard length of the fish) were significant, but slight: explaining only a small fraction of shape variation in both bones.
 Both linear models and PCA results suggest that the lakes themselves - and not overarching catgeories of ecotype or sex - drive most of the shape variation in these bones.</p>
 <h2 class="page_break_before" id="discussion">Discussion</h2>
 <h3 id="pipeline-and-efficiency">Pipeline and efficiency</h3>
 <p>Once all elements of the pipeline are together, running a simple script allows for automatic reconstruction, splitting, thresholding, and segmentation of stickelback specimens.
 All steps in the automated pipeline are much faster than our human expert, with minimal active time on the part of the user.
 This reproducible pipeline allows for mass sampling and population-scale analysis of stickleback specimens.</p>
-<p>With respect to internal strcutures: we can quantify the differences in gill raker number and add an additional layer of 3D morphometrics to these specimens, without destroying the jaw anatomy.</p>
-<p>The 1st and 2nd gill rakers are remarkably different in morphology and in size and breadth.</p>
-<p>The first ceratobranchial (CB1) is rather unrelated to ecology and sexual dimorphism, but the 2nd second ceratobranchial (CB2) shows signals of both.</p>
-<p>Within CB2 limnetic fish appear to have narrower bones than benthic fish.
-The muscles that change teh fill rakers (m. abdcuter spinalis and m abductor filement) are attached along the side of tehse muscles - the increase surface area in benthic fish would relate to increased muscle attachment, which would directly influence the fish to abduct these structures during water filtration.
-Across all lake types, CB2 shows narrower, flatter, and less curved shapes than males - this matches with the observation that males are more “benthic” than females in terms of foraging behaviour <span class="citation" data-cites="ivfnBcoK">(<a href="#ref-ivfnBcoK" role="doc-biblioref">McGee &amp; Wainwright, 2013</a>)</span>.</p>
 <!-- David - do we have a time estimate for how long the pipeline would take to run if we did this section by hand.-->
+<h3 id="findings-from-ceratobranchial-analysis">Findings from Ceratobranchial Analysis</h3>
+<p>The 1st and 2nd gill rakers are remarkably different in morphology and in size and breadth, suggesting that these structures may respond differently to shifts in diet - even within the same feeding apparatus. CB1 does have statistically signficant differences as observed by the linear and pairwise analyse (and PC4, corresponding to 4.33% of the variation, appears to pull out these differences - see supplementary figures) but we caution that there are also more lakes and specimens available for this study - these differences could be due to the statistically different variances observed between the two groups. Thankfully, this pipeline will allow for more extensive analysis from future sampling years to confirm these findings.</p>
+<p>Within CB2, limnetic fish (and particularly those from South Rolly lake) appear to have narrower, less “keeled” bones than benthic fish. The muscles that attach to the ceratobranchials (m. abdcuter spinalis and m abductor filament) are attached along the side of these bones - the increased surface area in benthic fish would relate to increased muscle attachment, which would directly influence the fish to abduct these structures during water filtration. While dietary analyses of these fish are still ongoing, these findings suggest that the South Rolly population may have unique dietary specializations and would be expected to feed on different prey all other lakes in this study. In terms of reintroduction, populations from this lake might be expected to fare better than others in terms of limnetic specializaiton. Indeed, not all “ecotypes” represented in the FITNESS study present a uniform monolith - indeed, fish with South Rolly heritage outperform Spirit lake fish in every transplant in which they are both included <span class="citation" data-cites="11i8vzpUp">(<a href="#ref-11i8vzpUp" role="doc-biblioref">Eckert et al., 2026</a>)</span>.</p>
+<p>The different response of the first and second ceratobranchial brings up the possibility of a modular response to dietary shifts within the branchial basket. Studies treating the unit as single structure, focusing on the first ceratobranchial, or investigating gross morphology might potentially miss significant changes in shape and size of these structures - and this pipeline has provided the investigators with a wealth of data with which to perform a followup study.</p>
 <h3 id="future-improvements-and-issues">Future improvements and issues</h3>
 <p>As with many multiscan projects, the scannign paramaters can be tooled individually for each scan but not for each individual specimen.
 In addiiton, atypically large or dense specimens cause an issue for the holder and the replicability across scans.</p>
-<p>As with most machine learning approaches, it is important to ensure that the entire dataset is represnted in training.</p>
+<p>As with most machine learning approaches, it is also important to ensure that the entire dataset is represnted in training.</p>
 <h2 class="page_break_before" id="conclusion">Conclusion</h2>
 <p>The provided pipeline for the analysis fo stickleback specimens provides a repeateable, high-throughbput method for teh analysis of 3D shape
 Although used here on exmplary stickleback specimens, this study and the methods used could be readily applied to mass sampling efforts of multiptle taxonomic groups.
@@ -448,6 +454,9 @@ Dask Development Team. (2016). <em>Dask: Library for dynamic task scheduling</em
 <div id="ref-4vi5Vvpx" class="csl-entry" role="doc-biblioentry">
 David Haberthür. (2026). <em>habi/sticklebacks: Maintenance release</em> (Version 0.99) [Computer software]. Zenodo. <a href="https://doi.org/10.5281/zenodo.18257528">https://doi.org/10.5281/zenodo.18257528</a>
 </div>
+<div id="ref-11i8vzpUp" class="csl-entry" role="doc-biblioentry">
+Eckert, L., Bolnick, D. I., Derry, A. M., Haines, G. E., Heckley, A. M., Lind, Å. J., Peichel, C. L., Roth, A. M., Steinel, N. C., Vlahiotis, K., Weber, J. N., Hendry, A. P., &amp; Barrett, R. D. H. (2026). <em>Intrinsic fitness differences outweigh environmental matching in shaping introduction outcomes in nature</em>. openRxiv. <a href="https://doi.org/10.64898/2026.02.04.699496">https://doi.org/10.64898/2026.02.04.699496</a>
+</div>
 <div id="ref-RdhjaIDe" class="csl-entry" role="doc-biblioentry">
 Ellis, N. A., &amp; Miller, C. T. (2016). Dissection and Flat-mounting of the Threespine Stickleback Branchial Skeleton. <em>Journal of Visualized Experiments</em>, (111). <a href="https://doi.org/10.3791/54056">https://doi.org/10.3791/54056</a>
 </div>
@@ -474,9 +483,6 @@ Lösel, P. D., van de Kamp, T., Jayme, A., Ershov, A., Faragó, T., Pichler, O.,
 </div>
 <div id="ref-ZUWTpAJ8" class="csl-entry" role="doc-biblioentry">
 McGee, M. D., Schluter, D., &amp; Wainwright, P. C. (2013). Functional basis of ecological divergence in sympatric stickleback. <em>BMC Evolutionary Biology</em>, <em>13</em>(1), 277. <a href="https://doi.org/10.1186/1471-2148-13-277">https://doi.org/10.1186/1471-2148-13-277</a>
-</div>
-<div id="ref-ivfnBcoK" class="csl-entry" role="doc-biblioentry">
-McGee, M. D., &amp; Wainwright, P. C. (2013). Sexual dimorphism in the feeding mechanism of threespine stickleback. <em>Journal of Experimental Biology</em>, <em>216</em>(5), 835–840. <a href="https://doi.org/10.1242/jeb.074948">https://doi.org/10.1242/jeb.074948</a>
 </div>
 <div id="ref-p38Gm1rT" class="csl-entry" role="doc-biblioentry">
 Miles, A., Kirkham, J., Durant, M., Bourbeau, J., Onalan, T., Hamman, J., Zain Patel, Shikharsg, Rocklin, M., Dussin, R., Schut, V., Andrade, E. S. D., Abernathey, R., Noyes, C., Sbalmer, Pyup.Io Bot, Tran, T., Saalfeld, S., Swaney, J., … Banihirwe, A. (2020). <em>zarr-developers/zarr-python: v2.4.0</em> (Version v2.4.0) [Computer software]. Zenodo. <a href="https://doi.org/10.5281/zenodo.3773450">https://doi.org/10.5281/zenodo.3773450</a>
