@@ -13,7 +13,7 @@ basibranchials
 benthic
 benthos
 binarized
-biomedisa
+Biomedisa
 branchial
 Bruker
 Burgergemeinde
@@ -23,7 +23,7 @@ ceratobranchial
 ceratobranchials
 comapratively
 cpeichel
-csv
+CSV
 curation
 destructieve
 differnces
