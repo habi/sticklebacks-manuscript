@@ -26,8 +26,8 @@ header-includes: |
   <meta name="dc.date" content="2026-06-25" />
   <meta name="citation_publication_date" content="2026-06-25" />
   <meta property="article:published_time" content="2026-06-25" />
-  <meta name="dc.modified" content="2026-06-25T18:11:30+00:00" />
-  <meta property="article:modified_time" content="2026-06-25T18:11:30+00:00" />
+  <meta name="dc.modified" content="2026-06-25T19:10:34+00:00" />
+  <meta property="article:modified_time" content="2026-06-25T19:10:34+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -53,9 +53,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/e01205c6aeab1ef90f05e31c3a1e7e2dd2d6cae4/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/e01205c6aeab1ef90f05e31c3a1e7e2dd2d6cae4/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/e01205c6aeab1ef90f05e31c3a1e7e2dd2d6cae4/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/b5550177ec5f77501e8f15c179979c1cde2ee02c/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/b5550177ec5f77501e8f15c179979c1cde2ee02c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/b5550177ec5f77501e8f15c179979c1cde2ee02c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/e01205c6aeab1ef90f05e31c3a1e7e2dd2d6cae4/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/b5550177ec5f77501e8f15c179979c1cde2ee02c/))
 was automatically generated
-from [habi/sticklebacks-manuscript@e01205c](https://github.com/habi/sticklebacks-manuscript/tree/e01205c6aeab1ef90f05e31c3a1e7e2dd2d6cae4)
+from [habi/sticklebacks-manuscript@b555017](https://github.com/habi/sticklebacks-manuscript/tree/b5550177ec5f77501e8f15c179979c1cde2ee02c)
 on June 25, 2026.
 </em></small>
 
@@ -286,7 +286,7 @@ An [interactive version of this figure](https://htmlpreview.github.io/?https://r
 After seperation, the imagefiles were checked and rendered via the use of 3D Slicer [@doi:10.1007/978-1-4614-7657-3_19] and the Slicermorph extension [@doi:10.1111/2041-210X.13669].
 The individual elements of the branchial apparatus were rendered using a combination of thresholding and split islands tools to seperate the pharyngobranchials, epibranchials, basibranchials, hypobranchials and ceratobranchials.
 
-![Branchial Anatomy](images/Branchial_Figure.png)
+![Branchial Anatomy](images/Branchial_Figure.png){#fig:branchial_anatomy}
 
 Once rendered, these bones were exported as a colored labelmap alongside the .nrrd from which they were segmented to pass to the Biomedisa program.
 
@@ -304,7 +304,7 @@ As a test and for subsequent analysis, the first two ceratobranchials on the rig
 Type II landmarks were set on the ends of each bone, with semilanmarks in-between each to cover axes of curvature along the bone (see figure XX).
 In total 7 landmarks and 4 semilandmark curves (two containing 20 semilandmarks, two containing 15) on the first ceratobranchial (CB1), and 5 landmarks and 3 semilandmark curves (one containing 20 semilandmarks, two containing 15) on the second ceratobranchial (CB2).
 
-![Landmarks](images/Landmark_Figure.png)
+![Landmarks](images/Landmark_Figure.png){#fig:landmarks}
 
 Equal distances were ensured using the "resample_curves" function in 3D Slicer  [@doi:10.1007/978-1-4614-7657-3_19].
 
@@ -365,20 +365,20 @@ This is likely due to the flattening and destructive sampling used in traditiona
 After GPA alignment, we are able to quantify the shape differences among all fish scanned for this project.
 Changes due to allometry (using the metric of centroid size or standard length of the fish) were significant, but slight: explaining only a small fraction of shape variation in both bones.
 Both linear models and PCA results suggest that the lakes themselves - and not overarching catgeories of ecotype or sex - drive most of the shape variation in these bones (CB1: p = .001, Rsq = 0.03246, CB2: p =.001, Rsq = .06220).
-The ecological variation present across the first ceratobranchial shows a significant but quite small effect with lake origin (p = .009, Rsq = 0.02056 ), and with a large amount of overlap in the resulting shape space
+The ecological variation present across the first ceratobranchial shows a significant but quite small effect with lake origin (p = .009, Rsq = 0.02056 ), and with a large amount of overlap in the resulting shape space.
 
-![Figure_PCA_CB1](images/PCA_CB1_Plot.png).
+![Figure_PCA_CB1](images/PCA_CB1_Plot.png){#fig:pca_cb1}
 
 The second ceratobranchial bone, on the other hand, shows equally small yet significant shifts associated with the ecotype (p = .001, Rsq = 0.0377).
-The patern of difference between benthic and limnetic gill rakers are, for this bone, clearly divergent
+The patern of difference between benthic and limnetic gill rakers are, for this bone, clearly divergent.
 
-![Figure_PCA_CB2](images/PCA_CB2_Plot.png)
+![Figure_PCA_CB2](images/PCA_CB2_Plot.png){#fig:pca_cb2}
 
 These differences in ecological patterning were also broken down by lake.
 
-![Figure_PCA_CB2_Lake](images/PCA_CB1_Plot_Lake.png)
+![Figure_PCA_CB1_Lake](images/PCA_CB1_Plot_Lake.png){#fig:pca_cb1_lake}
 
-![Figure_PCA_CB2_Lake](images/PCA_CB2_Plot_Lake.png)
+![Figure_PCA_CB2_Lake](images/PCA_CB2_Plot_Lake.png){#fig:pca_cb2_lake}
 
 The differences in the 2nd ceratobranchial appear to be driven by divergence in the South Rolly population, supported by significant pairwise differences observed between this lake and all other lakes observed in CB2 and not in CB1 (see supplementary information).
 
