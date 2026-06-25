@@ -13,8 +13,8 @@ basibranchials
 benthic
 benthos
 binarized
-Biomedisa
-branchial
+biomedisa
+Branchial
 Bruker
 Burgergemeinde
 catgeories
@@ -23,7 +23,7 @@ ceratobranchial
 ceratobranchials
 comapratively
 cpeichel
-csv
+CSV
 curation
 destructieve
 differnces
@@ -60,7 +60,7 @@ limnetic
 lm
 MCGL
 microCT
-microtomographic
+Microtomographic
 microtomography
 MIP
 morphometric
