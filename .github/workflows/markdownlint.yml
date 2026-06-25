@@ -1,4 +1,4 @@
-name: Lint Markdown files in content/posts
+name: Lint Markdown most files in content
 
 on:
   pull_request:
@@ -24,7 +24,7 @@ jobs:
       - uses: DavidAnson/markdownlint-cli2-action@v23.2.0
         with:
           globs: |
-            content/posts/**/*.md
-            !content/posts/**/00*.md
-            !content/posts/**/90*.md
+            content/*.md
+            !content/00*.md
+            !content/90*.md
           config: .markdownlint-cli2.json
