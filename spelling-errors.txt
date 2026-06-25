@@ -10,10 +10,10 @@ AUP
 averate
 Baltzerstrasse
 basibranchials
-Benthic
+benthic
 benthos
 binarized
-Biomedisa
+biomedisa
 branchial
 Bruker
 Burgergemeinde
@@ -23,7 +23,7 @@ ceratobranchial
 ceratobranchials
 comapratively
 cpeichel
-CSV
+csv
 curation
 destructieve
 differnces
@@ -117,7 +117,7 @@ sulserrb
 teh
 threespine
 thresholded
-thresholding
+Thresholding
 throughbput
 TMAG
 unbaited
