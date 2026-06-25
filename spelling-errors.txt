@@ -13,7 +13,7 @@ basibranchials
 benthic
 benthos
 binarized
-Biomedisa
+biomedisa
 branchial
 Bruker
 Burgergemeinde
@@ -117,7 +117,7 @@ sulserrb
 teh
 threespine
 thresholded
-Thresholding
+thresholding
 throughbput
 TMAG
 unbaited
