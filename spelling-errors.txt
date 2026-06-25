@@ -13,13 +13,13 @@ basibranchials
 benthic
 benthos
 binarized
-biomedisa
+Biomedisa
 branchial
 Bruker
 Burgergemeinde
 catgeories
 centroid
-Ceratobranchial
+ceratobranchial
 ceratobranchials
 comapratively
 cpeichel
@@ -58,7 +58,7 @@ limnetic
 lm
 MCGL
 microCT
-microtomographic
+Microtomographic
 microtomography
 MIP
 morphometric
@@ -117,7 +117,7 @@ sulserrb
 teh
 threespine
 thresholded
-thresholding
+Thresholding
 throughbput
 TMAG
 unbaited
