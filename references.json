@@ -21,89 +21,42 @@
   },
   {
     "publisher": "Wiley",
-    "issue": "6",
-    "abstract": "<jats:title>Abstract</jats:title><jats:p>Eco‐evolutionary experiments are typically conducted in semi‐unnatural controlled settings, such as mesocosms; yet inferences about how evolution and ecology interact in the real world would surely benefit from experiments in natural uncontrolled settings. Opportunities for such experiments are rare but do arise in the context of restoration ecology—where different “types” of a given species can be introduced into different “replicate” locations. Designing such experiments requires wrestling with consequential questions. (Q1) Which specific “types” of a focal species should be introduced to the restoration location? (Q2) How many sources of each type should be used—and should they be mixed together? (Q3) Which <jats:italic>specific</jats:italic> source populations should be used? (Q4) Which type(s) or population(s) should be introduced into which restoration sites? We recently grappled with these questions when designing an eco‐evolutionary experiment with threespine stickleback (<jats:italic>Gasterosteus aculeatus</jats:italic>) introduced into nine small lakes and ponds on the Kenai Peninsula in Alaska that required restoration. After considering the options at length, we decided to use benthic versus limnetic ecotypes (Q1) to create a mixed group of colonists from four source populations of each ecotype (Q2), where ecotypes were identified based on trophic morphology (Q3), and were then introduced into nine restoration lakes scaled by lake size (Q4). We hope that outlining the alternatives and resulting choices will make the rationales clear for future studies leveraging our experiment, while also proving useful for investigators considering similar experiments in the future.</jats:p>",
-    "DOI": "10.1002/ece3.11503",
+    "issue": "23",
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>Recent methodological advances have led to a rapid expansion of evolutionary studies employing three‐dimensional landmark‐based geometric morphometrics (GM). GM methods generally enable researchers to capture and compare complex shape phenotypes, and to quantify their relationship to environmental gradients. However, some recent studies have shown that the common, inexpensive, and relatively rapid two‐dimensional GM methods can distort important information and produce misleading results because they cannot capture variation in the depth (<jats:italic>Z</jats:italic>) dimension. We use micro‐CT scanned threespine stickleback (<jats:italic>Gasterosteus aculeatus</jats:italic>Linnaeus, 1758) from six parapatric lake‐stream populations on Vancouver Island, British Columbia, to test whether the loss of the depth dimension in 2D GM studies results in misleading interpretations of parallel evolution. Using joint locations described with 2D or 3D landmarks, we compare results from separate 2D and 3D shape spaces, from a combined 2D‐3D shape space, and from estimates of biomechanical function. We show that, although shape is distorted enough in 2D projections to strongly influence the interpretation of morphological parallelism, estimates of biomechanical function are relatively robust to the loss of the Z dimension.</jats:p>",
+    "DOI": "10.1002/ece3.6929",
     "type": "article-journal",
+    "page": "13297-13311",
     "source": "Crossref",
-    "title": "Designing eco‐evolutionary experiments for restoration projects: Opportunities and constraints revealed during stickleback introductions",
-    "volume": "14",
+    "title": "Adding the third dimension to studies of parallel evolution of morphology and function: An exploration based on parapatric lake‐stream stickleback",
+    "volume": "10",
     "author": [
       {
-        "given": "Andrew P.",
-        "family": "Hendry"
+        "given": "Grant E.",
+        "family": "Haines"
       },
       {
-        "given": "Rowan D. H.",
-        "family": "Barrett"
+        "given": "Yoel E.",
+        "family": "Stuart"
       },
       {
-        "given": "Alison M.",
-        "family": "Bell"
+        "given": "Dieta",
+        "family": "Hanson"
       },
       {
-        "given": "Michael A.",
-        "family": "Bell"
+        "given": "Tania",
+        "family": "Tasneem"
       },
       {
         "given": "Daniel I.",
         "family": "Bolnick"
       },
       {
-        "given": "Kiyoko M.",
-        "family": "Gotanda"
+        "given": "Hans C. E.",
+        "family": "Larsson"
       },
       {
-        "given": "Grant E.",
-        "family": "Haines"
-      },
-      {
-        "given": "Åsa J.",
-        "family": "Lind"
-      },
-      {
-        "given": "Michelle",
-        "family": "Packer"
-      },
-      {
-        "given": "Catherine L.",
-        "family": "Peichel"
-      },
-      {
-        "given": "Christopher R.",
-        "family": "Peterson"
-      },
-      {
-        "given": "Hilary A.",
-        "family": "Poore"
-      },
-      {
-        "given": "Robert L.",
-        "family": "Massengill"
-      },
-      {
-        "given": "Kathryn",
-        "family": "Milligan‐McClellan"
-      },
-      {
-        "given": "Natalie C.",
-        "family": "Steinel"
-      },
-      {
-        "given": "Sarah",
-        "family": "Sanderson"
-      },
-      {
-        "given": "Matthew R.",
-        "family": "Walsh"
-      },
-      {
-        "given": "Jesse N.",
-        "family": "Weber"
-      },
-      {
-        "given": "Alison M.",
-        "family": "Derry"
+        "given": "Andrew P.",
+        "family": "Hendry"
       }
     ],
     "container-title": "Ecology and Evolution",
@@ -111,17 +64,18 @@
     "issued": {
       "date-parts": [
         [
-          2024,
-          6
+          2020,
+          11,
+          17
         ]
       ]
     },
-    "URL": "https://doi.org/hb3kzw",
+    "URL": "https://doi.org/hb8jb6",
     "container-title-short": "Ecology and Evolution",
-    "PMCID": "PMC11199335",
-    "PMID": "38932947",
-    "id": "11BPceIkC",
-    "note": "This CSL Item was generated by Manubot v0.6.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.1002/ece3.11503"
+    "PMCID": "PMC7713967",
+    "PMID": "33304538",
+    "id": "a5G6tHdh",
+    "note": "This CSL Item was generated by Manubot v0.6.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.1002/ece3.6929"
   },
   {
     "publisher": "Springer New York",
@@ -354,6 +308,41 @@
     "note": "This CSL Item was generated by Manubot v0.6.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.1038/s41467-020-19303-w"
   },
   {
+    "publisher": "University of Chicago Press",
+    "issue": "1",
+    "DOI": "10.1086/285404",
+    "type": "article-journal",
+    "page": "85-108",
+    "source": "Crossref",
+    "title": "Ecological Character Displacement and Speciation in Sticklebacks",
+    "volume": "140",
+    "author": [
+      {
+        "given": "Dolph",
+        "family": "Schluter"
+      },
+      {
+        "given": "John Donald",
+        "family": "McPhail"
+      }
+    ],
+    "container-title": "The American Naturalist",
+    "language": "en",
+    "issued": {
+      "date-parts": [
+        [
+          1992,
+          7
+        ]
+      ]
+    },
+    "URL": "https://doi.org/fcdd2v",
+    "container-title-short": "The American Naturalist",
+    "PMID": "19426066",
+    "id": "1Dlme4sp5",
+    "note": "This CSL Item was generated by Manubot v0.6.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.1086/285404"
+  },
+  {
     "publisher": "Oxford University Press (OUP)",
     "issue": "1",
     "abstract": "<jats:title>Synopsis</jats:title><jats:p>The increased use of imaging technology in biological research has drastically altered morphological studies in recent decades and allowed for the preservation of important collection specimens alongside detailed visualization of bony and soft-tissue structures. Despite the benefits associated with these newer imaging techniques, there remains a need for more “traditional” methods of morphological examination in many comparative studies. In this paper, we describe the costs and benefits of the various methods of visualizing, examining, and comparing morphological structures. There are significant differences not only in the costs associated with these different methods (monetary, time, equipment, and software), but also in the degree to which specimens are destroyed. We argue not for any one particular method over another in morphological studies, but instead suggest a combination of methods is useful not only for breadth of visualization, but also for the financial and time constraints often imposed on early-career research scientists.</jats:p>",
@@ -410,6 +399,47 @@
     "PMID": "37035037",
     "id": "19h9vxsYG",
     "note": "This CSL Item was generated by Manubot v0.6.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.1093/iob/obad008"
+  },
+  {
+    "publisher": "Wiley",
+    "issue": "4",
+    "abstract": "<jats:title>Summary</jats:title><jats:p><jats:list><jats:list-item><jats:p>Many ecological and evolutionary studies seek to explain patterns of shape variation and its covariation with other variables. Geometric morphometrics is often used for this purpose, where a set of shape variables are obtained from landmark coordinates following a<jats:styled-content style=\"fixed-case\">P</jats:styled-content>rocrustes superimposition.</jats:p></jats:list-item><jats:list-item><jats:p>We introduce geomorph: a software package for performing geometric morphometric shape analysis in the<jats:sc>r</jats:sc>statistical computing environment.</jats:p></jats:list-item><jats:list-item><jats:p>Geomorph provides routines for all stages of landmark‐based geometric morphometric analyses in two and three‐dimensions. It is an open source package to read, manipulate, and digitize landmark data, generate shape variables via<jats:styled-content style=\"fixed-case\">P</jats:styled-content>rocrustes analysis for points, curves and surfaces, perform statistical analyses of shape variation and covariation, and to provide graphical depictions of shapes and patterns of shape variation. An important contribution of geomorph is the ability to perform<jats:styled-content style=\"fixed-case\">P</jats:styled-content>rocrustes superimposition on landmark points, as well as semilandmarks from curves and surfaces.</jats:p></jats:list-item><jats:list-item><jats:p>A wide range of statistical methods germane to testing ecological and evolutionary hypotheses of shape variation are provided. These include standard multivariate methods such as principal components analysis, and approaches for multivariate regression and group comparison. Methods for more specialized analyses, such as for assessing shape allometry, comparing shape trajectories, examining morphological integration, and for assessing phylogenetic signal, are also included.</jats:p></jats:list-item><jats:list-item><jats:p>Several functions are provided to graphically visualize results, including routines for examining variation in shape space, visualizing allometric trajectories, comparing specific shapes to one another and for plotting phylogenetic changes in morphospace.</jats:p></jats:list-item><jats:list-item><jats:p>Finally, geomorph participates to make available advanced geometric morphometric analyses through the<jats:sc>r</jats:sc>statistical computing platform.</jats:p></jats:list-item></jats:list></jats:p>",
+    "DOI": "10.1111/2041-210x.12035",
+    "type": "article-journal",
+    "page": "393-399",
+    "source": "Crossref",
+    "title": "geomorph: an<scp>r</scp>package for the collection and analysis of geometric morphometric shape data",
+    "volume": "4",
+    "author": [
+      {
+        "given": "Dean C.",
+        "family": "Adams"
+      },
+      {
+        "given": "Erik",
+        "family": "Otárola‐Castillo"
+      }
+    ],
+    "container-title": "Methods in Ecology and Evolution",
+    "language": "en",
+    "editor": [
+      {
+        "given": "Emmanuel",
+        "family": "Paradis"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2013,
+          4
+        ]
+      ]
+    },
+    "URL": "https://doi.org/f4vmsv",
+    "container-title-short": "Methods Ecol Evol",
+    "id": "2kwEzoCR",
+    "note": "This CSL Item was generated by Manubot v0.6.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.1111/2041-210x.12035"
   },
   {
     "publisher": "Wiley",
@@ -483,89 +513,87 @@
   },
   {
     "publisher": "Oxford University Press (OUP)",
-    "issue": "3",
-    "DOI": "10.1111/j.1095-8312.2010.01531.x",
+    "issue": "6",
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>To what extent are patterns of biological diversification determined by natural selection? We addressed this question by exploring divergence in foraging morphology of threespine stickleback fish inhabiting lake and stream habitats within eight independent watersheds. We found that lake fish generally displayed more developed gill structures and had more streamlined bodies than did stream fish. Diet analysis revealed that these morphological differences were associated with limnetic vs. benthic foraging modes, and that the extent of morphological divergence within watersheds reflected differences in prey resources utilized by lake and stream fish. We also found that patterns of divergence were unrelated to patterns of phenotypic trait (co)variance within populations (i.e. the ‘line of least resistance’). Instead, phenotypic (co)variances were more likely to have been shaped by adaptation to lake vs. stream habitats. Our study thus implicates natural selection as a strong deterministic force driving morphological diversification in lake–stream stickleback. The strength of this inference was obtained by complementing a standard analysis of parallel divergence in means between discrete habitat categories (lake vs. stream) with quantitative estimates of selective forces and information on trait (co)variances.</jats:p>",
+    "DOI": "10.1111/j.1420-9101.2008.01583.x",
     "type": "article-journal",
-    "page": "595-608",
+    "page": "1653-1665",
     "source": "Crossref",
-    "title": "Classification of threespine stickleback along the benthic-limnetic axis",
-    "volume": "101",
+    "title": "Natural selection drives patterns of lake–stream divergence in stickleback foraging morphology",
+    "volume": "21",
     "author": [
       {
-        "given": "JAMES J.",
-        "family": "WILLACKER"
+        "given": "D.",
+        "family": "BERNER"
       },
       {
-        "given": "FRANK A.",
-        "family": "VON HIPPEL"
+        "given": "D. C.",
+        "family": "ADAMS"
       },
       {
-        "given": "PETER R.",
-        "family": "WILTON"
+        "given": "A.‐C.",
+        "family": "GRANDCHAMP"
       },
       {
-        "given": "KELLY M.",
-        "family": "WALTON"
+        "given": "A. P.",
+        "family": "HENDRY"
       }
     ],
-    "container-title": "Biological Journal of the Linnean Society",
+    "container-title": "Journal of Evolutionary Biology",
     "language": "en",
     "issued": {
       "date-parts": [
         [
-          2010,
+          2008,
           10,
-          19
+          15
         ]
       ]
     },
-    "URL": "https://doi.org/csgrf4",
-    "PMCID": "PMC3017379",
-    "PMID": "21221422",
-    "id": "Tw8w7mV3",
-    "note": "This CSL Item was generated by Manubot v0.6.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.1111/j.1095-8312.2010.01531.x"
+    "URL": "https://doi.org/fsztzk",
+    "container-title-short": "J of Evolutionary Biology",
+    "PMID": "18691241",
+    "id": "10CsDLwDV",
+    "note": "This CSL Item was generated by Manubot v0.6.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.1111/j.1420-9101.2008.01583.x"
   },
   {
-    "publisher": "Annual Reviews",
+    "publisher": "Springer Science and Business Media LLC",
     "issue": "1",
-    "abstract": "<jats:p>The repeated adaptation of oceanic threespine sticklebacks to fresh water has made it a premier organism to study parallel evolution. These small fish have multiple distinct ecotypes that display a wide range of diverse phenotypic traits. Ecotypes are easily crossed in the laboratory, and families are large and develop quickly enough for quantitative trait locus analyses, positioning the threespine stickleback as a versatile model organism to address a wide range of biological questions. Extensive genomic resources, including linkage maps, a high-quality reference genome, and developmental genetics tools have led to insights into the genomic basis of adaptation and the identification of genomic changes controlling traits in vertebrates. Recently, threespine sticklebacks have been used as a model system to identify the genomic basis of highly complex traits, such as behavior and host–microbiome and host–parasite interactions. We review the latest findings and new avenues of research that have led the threespine stickleback to be considered a supermodel of evolutionary genomics.</jats:p>",
-    "DOI": "10.1146/annurev-genom-111720-081402",
+    "DOI": "10.1186/1471-2148-13-277",
     "type": "article-journal",
-    "page": "357-383",
+    "page": "277",
     "source": "Crossref",
-    "title": "Threespine Stickleback: A Model System For Evolutionary Genomics",
-    "volume": "22",
+    "title": "Functional basis of ecological divergence in sympatric stickleback",
+    "volume": "13",
     "author": [
       {
-        "given": "Kerry",
-        "family": "Reid"
+        "given": "Matthew D",
+        "family": "McGee"
       },
       {
-        "given": "Michael A.",
-        "family": "Bell"
+        "given": "Dolph",
+        "family": "Schluter"
       },
       {
-        "given": "Krishna R.",
-        "family": "Veeramah"
+        "given": "Peter C",
+        "family": "Wainwright"
       }
     ],
-    "container-title": "Annual Review of Genomics and Human Genetics",
+    "container-title": "BMC Evolutionary Biology",
     "language": "en",
     "issued": {
       "date-parts": [
         [
-          2021,
-          8,
-          31
+          2013
         ]
       ]
     },
-    "URL": "https://doi.org/gnw8jr",
-    "container-title-short": "Annu. Rev. Genom. Hum. Genet.",
-    "PMCID": "PMC8415275",
-    "PMID": "33909459",
-    "id": "tyLSEVnP",
-    "note": "This CSL Item was generated by Manubot v0.6.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.1146/annurev-genom-111720-081402"
+    "URL": "https://doi.org/f5nddc",
+    "container-title-short": "BMC Evol Biol",
+    "PMCID": "PMC3890603",
+    "PMID": "24380474",
+    "id": "ZUWTpAJ8",
+    "note": "This CSL Item was generated by Manubot v0.6.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.1186/1471-2148-13-277"
   },
   {
     "publisher": "Springer Science and Business Media LLC",
@@ -611,6 +639,42 @@
     "PMID": "32103752",
     "id": "IKVBgaCE",
     "note": "This CSL Item was generated by Manubot v0.6.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.1186/s12915-020-0753-2"
+  },
+  {
+    "publisher": "The Company of Biologists",
+    "issue": "5",
+    "abstract": "<jats:title>SUMMARY</jats:title><jats:p>Sexual dimorphism is common in nature and has the potential to increase intraspecific variation in performance and patterns of resource use. We sought to determine whether anadromous threespine stickleback, Gasterosteus aculeatus, exhibit sexual dimorphism in feeding kinematics. We filmed four males and four females consuming live prey in a total of 51 sequences filmed at 500 Hz, then tested for differences in cranial kinematics using a combination of principal component analysis and linear mixed models. We document, for the first time in fishes, divergence between males and females in both the timing of key movements and the magnitude of excursions reached by the hyoid, jaws and neurocranium during prey capture. Some of the largest differences are in jaw protrusion, with males exhibiting faster time to peak jaw protrusion but females exhibiting greater maximum jaw protrusion. Measurements of morphological jaw protrusion on cleared and stained specimens significantly predict jaw protrusion in kinematics. This morphological divergence could reflect ecological divergence between the sexes, or the demands of nest building and territory defense compromising male feeding performance. Remarkably, the morphological jaw protrusion divergence in anadromous males and females is similar to jaw protrusion divergence between ecomorphs in a benthic–limnetic species pair, with limnetics exhibiting female-like patterns of protrusion and benthics exhibiting male-like patterns. These results suggest that sexual dimorphism in feeding functional morphology exists in nature and may have played an important role in the radiation of threespine stickleback.</jats:p>",
+    "DOI": "10.1242/jeb.074948",
+    "type": "article-journal",
+    "page": "835-840",
+    "source": "Crossref",
+    "title": "Sexual dimorphism in the feeding mechanism of threespine stickleback",
+    "volume": "216",
+    "author": [
+      {
+        "given": "Matthew D.",
+        "family": "McGee"
+      },
+      {
+        "given": "Peter C.",
+        "family": "Wainwright"
+      }
+    ],
+    "container-title": "Journal of Experimental Biology",
+    "language": "en",
+    "issued": {
+      "date-parts": [
+        [
+          2013,
+          3,
+          1
+        ]
+      ]
+    },
+    "URL": "https://doi.org/hb8jb7",
+    "PMID": "23408802",
+    "id": "ivfnBcoK",
+    "note": "This CSL Item was generated by Manubot v0.6.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.1242/jeb.074948"
   },
   {
     "publisher": "Public Library of Science (PLoS)",
@@ -674,6 +738,57 @@
     "PMID": "31233491",
     "id": "YuJbg3zO",
     "note": "This CSL Item was generated by Manubot v0.6.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.1371/journal.pcbi.1007128"
+  },
+  {
+    "publisher": "Public Library of Science (PLoS)",
+    "issue": "3",
+    "DOI": "10.1371/journal.pone.0193874",
+    "type": "article-journal",
+    "page": "e0193874",
+    "source": "Crossref",
+    "title": "Physical modeling of vortical cross-step flow in the American paddlefish, Polyodon spathula",
+    "volume": "13",
+    "author": [
+      {
+        "given": "Hannah",
+        "family": "Brooks"
+      },
+      {
+        "given": "Grant E.",
+        "family": "Haines"
+      },
+      {
+        "given": "M. Carly",
+        "family": "Lin"
+      },
+      {
+        "given": "S. Laurie",
+        "family": "Sanderson"
+      }
+    ],
+    "container-title": "PLOS ONE",
+    "language": "en",
+    "editor": [
+      {
+        "given": "Lakshminarayana",
+        "family": "Polavarapu"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2018,
+          3,
+          21
+        ]
+      ]
+    },
+    "URL": "https://doi.org/gc645g",
+    "container-title-short": "PLoS ONE",
+    "PMCID": "PMC5862459",
+    "PMID": "29561890",
+    "id": "15G56iHS9",
+    "note": "This CSL Item was generated by Manubot v0.6.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.1371/journal.pone.0193874"
   },
   {
     "publisher": "IOS Press",
@@ -754,6 +869,41 @@
     "URL": "https://doi.org/gqx265",
     "id": "11ofsO2hq",
     "note": "This CSL Item was generated by Manubot v0.6.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.3789/ansi.niso.z39.104-2022"
+  },
+  {
+    "publisher": "MyJove Corporation",
+    "issue": "111",
+    "DOI": "10.3791/54056",
+    "type": "article-journal",
+    "source": "Crossref",
+    "title": "Dissection and Flat-mounting of the Threespine Stickleback Branchial Skeleton",
+    "author": [
+      {
+        "given": "Nicholas A.",
+        "family": "Ellis"
+      },
+      {
+        "given": "Craig T.",
+        "family": "Miller"
+      }
+    ],
+    "container-title": "Journal of Visualized Experiments",
+    "language": "en",
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          5,
+          7
+        ]
+      ]
+    },
+    "URL": "https://doi.org/hb8jb8",
+    "container-title-short": "JoVE",
+    "PMCID": "PMC4942055",
+    "PMID": "27213248",
+    "id": "RdhjaIDe",
+    "note": "This CSL Item was generated by Manubot v0.6.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.3791/54056"
   },
   {
     "type": "software",
@@ -929,10 +1079,17 @@
     "note": "This CSL Item was generated by Manubot v0.6.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.5281/zenodo.3773450"
   },
   {
-    "volume": "17",
-    "issue": "5",
-    "page-first": "713",
+    "id": "JICzDA7P",
+    "type": "article-journal",
+    "abstract": "Otsu reference proposed a criterion for maximizing the between-class variance of pixel intensity to perform picture thresholding. However, Otsu's method for image segmentation is very time-consuming because of the inefficient formulation of the between-class variance. In this paper, a faster version of Otsu's method is proposed for improving the efficiency of computation for the optimal thresholds of an image. First, a criterion for maximizing a modified between-class variance that is equivalent to the criterion of maximizing the usual between-class variance is proposed for image segmentation. Next, in accordance with the new criterion, a recursive algorithm is designed to efficiently find the optimal threshold. This procedure yields the same set of thresholds as the original method. In addition, the modified between-class variance can be pre-computed and stored in a look-up table. Our analysis of the new criterion clearly shows that it takes less computation to compute both the cumulative probability (zeroth order moment) and the mean (first order moment) of a class, and that determining the modified between-class variance by accessing a look-up table is quicker than that by performing mathematical arithmetic operations. For example, the experimental results of a five-level threshold selection show that our proposed method can reduce down the processing time from more than one hour by the conventional Otsu's method to less than 107 seconds.",
     "container-title": "Journal of Information Science and Engineering",
+    "DOI": "10.6688/jise.2001.17.5.1",
+    "issue": "5",
+    "page": "713-727",
+    "source": "www.airitilibrary.com",
+    "title": "A Fast Algorithm for Multilevel Thresholding",
+    "URL": "https://doi.org/hbrn6v",
+    "volume": "17",
     "author": [
       {
         "literal": "廖炳松"
@@ -944,22 +1101,24 @@
         "literal": "詹寶珠"
       }
     ],
-    "language": "en",
-    "abstract": "",
-    "type": "article-journal",
-    "title": "A Fast Algorithm for Multilevel Thresholding",
+    "accessed": {
+      "date-parts": [
+        [
+          "2026",
+          6,
+          25
+        ]
+      ]
+    },
     "issued": {
       "date-parts": [
         [
           "2001",
-          "9",
-          "1"
+          9,
+          1
         ]
       ]
     },
-    "URL": "https://doi.org/hbrn6v",
-    "DOI": "10.6688/jise.2001.17.5.1",
-    "id": "JICzDA7P",
     "note": "This CSL Item was generated by Manubot v0.6.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.6688/jise.2001.17.5.1"
   },
   {
@@ -971,8 +1130,8 @@
       "date-parts": [
         [
           "2026",
-          5,
-          12
+          6,
+          25
         ]
       ]
     },
