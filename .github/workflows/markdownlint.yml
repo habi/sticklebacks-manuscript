@@ -1,23 +1,30 @@
-name: Lint Markdown files in content folder
+name: Lint Markdown files in content/posts
 
 on:
   pull_request:
   push:
 
 jobs:
-  lint:
+  markdownlint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      - uses: DavidAnson/markdownlint-cli2-action@v23
-        with:
-          globs: |
-            content/*.md
-            !content/00*.md
-            !content/90*.md
-          config: |
-            {
+      - name: Create markdownlint config
+        run: |
+          cat > .markdownlint-cli2.json <<'EOF'
+          {
+            "config": {
               "MD013": false,
               "MD041": false
             }
+          }
+          EOF
+
+      - uses: DavidAnson/markdownlint-cli2-action@v23.2.0
+        with:
+        globs: |
+          content/*.md
+          !content/00*.md
+          !content/90*.md
+        config: .markdownlint-cli2.json
