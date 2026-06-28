@@ -5,7 +5,7 @@ keywords:
 - sticklebacks
 - ecology
 lang: en-US
-date-meta: '2026-06-25'
+date-meta: '2026-06-28'
 author-meta:
 - David Haberthür
 - Ben Sulser
@@ -23,11 +23,11 @@ header-includes: |
   <meta name="citation_title" content="microCT imaging of threespine stickleback" />
   <meta property="og:title" content="microCT imaging of threespine stickleback" />
   <meta property="twitter:title" content="microCT imaging of threespine stickleback" />
-  <meta name="dc.date" content="2026-06-25" />
-  <meta name="citation_publication_date" content="2026-06-25" />
-  <meta property="article:published_time" content="2026-06-25" />
-  <meta name="dc.modified" content="2026-06-25T19:10:34+00:00" />
-  <meta property="article:modified_time" content="2026-06-25T19:10:34+00:00" />
+  <meta name="dc.date" content="2026-06-28" />
+  <meta name="citation_publication_date" content="2026-06-28" />
+  <meta property="article:published_time" content="2026-06-28" />
+  <meta name="dc.modified" content="2026-06-28T18:20:46+00:00" />
+  <meta property="article:modified_time" content="2026-06-28T18:20:46+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -53,9 +53,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/b5550177ec5f77501e8f15c179979c1cde2ee02c/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/b5550177ec5f77501e8f15c179979c1cde2ee02c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/b5550177ec5f77501e8f15c179979c1cde2ee02c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/2d94c7917de793095be5dde74f00b87b388d521f/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/2d94c7917de793095be5dde74f00b87b388d521f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/2d94c7917de793095be5dde74f00b87b388d521f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,10 +77,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/b5550177ec5f77501e8f15c179979c1cde2ee02c/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/2d94c7917de793095be5dde74f00b87b388d521f/))
 was automatically generated
-from [habi/sticklebacks-manuscript@b555017](https://github.com/habi/sticklebacks-manuscript/tree/b5550177ec5f77501e8f15c179979c1cde2ee02c)
-on June 25, 2026.
+from [habi/sticklebacks-manuscript@2d94c79](https://github.com/habi/sticklebacks-manuscript/tree/2d94c7917de793095be5dde74f00b87b388d521f)
+on June 28, 2026.
 </em></small>
 
 
@@ -284,9 +284,9 @@ An [interactive version of this figure](https://htmlpreview.github.io/?https://r
 #### Extraction of features of interest
 
 After seperation, the imagefiles were checked and rendered via the use of 3D Slicer [@doi:10.1007/978-1-4614-7657-3_19] and the Slicermorph extension [@doi:10.1111/2041-210X.13669].
-The individual elements of the branchial apparatus were rendered using a combination of thresholding and split islands tools to seperate the pharyngobranchials, epibranchials, basibranchials, hypobranchials and ceratobranchials.
+The individual elements of the branchial apparatus were rendered using a combination of thresholding and split islands tools to seperate the pharyngobranchials, epibranchials, basibranchials, hypobranchials and ceratobranchials (Figure 7).
 
-![Branchial Anatomy](images/Branchial_Figure.png){#fig:branchial_anatomy}
+![Example of Branchial Anatomy with CB1 and CB2 highlighted. Abbreviations: PB = pharyngobranchials, EB = epibranchials, BB = basibranchials, HB = hypobranchials, CB = ceratobranchials.](images/Branchial_Figure.png){#fig:branchial_anatomy}
 
 Once rendered, these bones were exported as a colored labelmap alongside the .nrrd from which they were segmented to pass to the Biomedisa program.
 
@@ -301,12 +301,12 @@ The model was trained with a batch size of 24 and epoch number of 50, under Netw
 To demonstrate the effectiveness of this tool and the importance for 3D morphometrics for answering eco-evolutionary questions, we have run a demonstration quantifying the shape differences of the ceratobranchial bones
 Once trained, we applied the biomedisa segmentation model to the remaining 160 specimen volumes and landmarked the final results using Stratovan Checkpoint [https://www.stratovan.com/products/checkpoint].
 As a test and for subsequent analysis, the first two ceratobranchials on the right side were chosen for comparison across all specimens.
-Type II landmarks were set on the ends of each bone, with semilanmarks in-between each to cover axes of curvature along the bone (see figure XX).
+Type II landmarks were set on the ends of each bone, with semilanmarks in-between each to cover axes of curvature along the bone (see figure 8).
 In total 7 landmarks and 4 semilandmark curves (two containing 20 semilandmarks, two containing 15) on the first ceratobranchial (CB1), and 5 landmarks and 3 semilandmark curves (one containing 20 semilandmarks, two containing 15) on the second ceratobranchial (CB2).
-
-![Landmarks](images/Landmark_Figure.png){#fig:landmarks}
-
 Equal distances were ensured using the "resample_curves" function in 3D Slicer  [@doi:10.1007/978-1-4614-7657-3_19].
+
+![Landmarking shown on A: dorsal and B: ventral surfaces.](images/Landmark_Figure.png){#fig:landmarks}
+
 
 #### Analysis of shape
 
@@ -338,7 +338,15 @@ Since one (exemplary dataset (`Sticklebucket_10`)) is 7 GB on disk and reported 
 Extracting the single fish from the encompassing dataset would thus be a two-step manual process, e.g. cropping the full dataset loaded as '[virtual stack](https://imagej.net/ij/docs/guide/146-8.html#sub:Virtual-Stacks)' and then cropping it down further before writing out the cropped stack.
 For each encompassing scan this would need to be repeated 6 times (for *each* of the six fish in each of the encompassing scans).
 In addition, such a manual process is not reproducible in the sense that it cannot be consistently replicated by others using the same data since the manual cropping is operator-dependent.
-Algorithmically/automatically cropping the large datasets based on the axial MIP image leads to both reproducible cropped regions and efficiently uses the operator time (namely *no* operator time).
+Algorithmically/automatically cropping the large datasets based on the axial MIP image leads to both reproducible cropped regions and efficiently uses the operator time (namely *no* operator time) {#tbl:timing}.
+
+| Task | Est. Manual Time (minutes) | Pipeline Time (minutes) |
+|----------|----------|----------|
+| Scanning single scan | # | ## |
+| Splitting and rendering volumes| # | ## |
+| Segmentation| 10-15 | 2-3 |
+
+Table 1: Estimates of time comparisons between manual and pipeline runs. {#tbl:timing}
 
 Our automated extraction process also writes human-readable log files documenting the cropping position in the encompassing dataset and the crop extent.
 This enables reproducible double-checking and confirmation of the process after the fact (see this [direct link for one such log file](https://github.com/habi/sticklebacks/blob/main/logfiles/Sticklebucket_10/rec_regions/FG.X24.027/FG.X24.027.log)).
@@ -347,7 +355,7 @@ This enables reproducible double-checking and confirmation of the process after 
 
 The separated fish were segmented based on a simple multi-level Otsu thresholding method.
 This relatively simple segmentation was sufficient to extract all the features we analyzed further, and we did not have to employ more advanced thresholding methods in our separation pipeline.
-Selection and individual rendering of the branchial structures takes between 10-15 minutes; the averate biomedisa render takes 2.5 minutes once trained.
+Selection and individual rendering of the branchial structures takes between 10-15 minutes; the averate biomedisa render takes 2.5 minutes once trained {#tbl:timing}.
 
 <!-- Did Sheila even analyze the thresholded fish, or "only" the cropped ones? She focused on the cropped ones.-->
 
@@ -365,26 +373,25 @@ This is likely due to the flattening and destructive sampling used in traditiona
 After GPA alignment, we are able to quantify the shape differences among all fish scanned for this project.
 Changes due to allometry (using the metric of centroid size or standard length of the fish) were significant, but slight: explaining only a small fraction of shape variation in both bones.
 Both linear models and PCA results suggest that the lakes themselves - and not overarching catgeories of ecotype or sex - drive most of the shape variation in these bones (CB1: p = .001, Rsq = 0.03246, CB2: p =.001, Rsq = .06220).
-The ecological variation present across the first ceratobranchial shows a significant but quite small effect with lake origin (p = .009, Rsq = 0.02056 ), and with a large amount of overlap in the resulting shape space.
+The ecological variation present across the first ceratobranchial shows a significant but quite small effect with lake origin (p = .009, Rsq = 0.02056 ), and with a large amount of overlap in the resulting shape space #fig:pca_cb1.
 
-![Figure_PCA_CB1](images/PCA_CB1_Plot.png){#fig:pca_cb1}
+![PCA of CB1 colored by lake ecotype. Warps are indicated at the extremes of each axis by vectors drawn from a mean shape (red)](images/PCA_CB1_Plot.png){#fig:pca_cb1}
 
 The second ceratobranchial bone, on the other hand, shows equally small yet significant shifts associated with the ecotype (p = .001, Rsq = 0.0377).
-The patern of difference between benthic and limnetic gill rakers are, for this bone, clearly divergent.
+The patern of difference between benthic and limnetic gill rakers are, for this bone, clearly divergent in shape space #fig:pca_cb2.
 
-![Figure_PCA_CB2](images/PCA_CB2_Plot.png){#fig:pca_cb2}
+![PCA of CB2 colored by lake ecotype. Warps are indicated at the extremes of each axis by vectors drawn from a mean shape (red)](images/PCA_CB2_Plot.png){#fig:pca_cb2}
 
-These differences in ecological patterning were also broken down by lake.
+These differences in ecological patterning were also broken down by lake (#fig:pca_cb1_lake, #fig:pca_cb2_lake).
 
-![Figure_PCA_CB1_Lake](images/PCA_CB1_Plot_Lake.png){#fig:pca_cb1_lake}
+![PCA of CB1 colored by individual lake. Warps are indicated at the extremes of each axis by vectors drawn from a mean shape (red)](images/PCA_CB1_Plot_Lake.png){#fig:pca_cb1_lake}
 
-![Figure_PCA_CB2_Lake](images/PCA_CB2_Plot_Lake.png){#fig:pca_cb2_lake}
+![PCA of CB3 colored by individual lake. Warps are indicated at the extremes of each axis by vectors drawn from a mean shape (red)](images/PCA_CB2_Plot_Lake.png){#fig:pca_cb2_lake}
 
 The differences in the 2nd ceratobranchial appear to be driven by divergence in the South Rolly population, supported by significant pairwise differences observed between this lake and all other lakes observed in CB2 and not in CB1 (see supplementary information).
-
 After GPA alignment, we are able to quantify the shape differences among all fish scanned for this project.
 Changes due to allometry (using the metric of centroid size or standard length of the fish) were significant, but slight: explaining only a small fraction of shape variation in both bones.
-Both linear models and PCA results suggest that the lakes themselves - and not overarching catgeories of ecotype or sex - drive most of the shape variation in these bones.
+
 
 
 ## Discussion {.page_break_before}
@@ -404,33 +411,32 @@ CB1 does have statistically signficant differences as observed by the linear and
 Thankfully, this pipeline will allow for more extensive analysis from future sampling years to confirm these findings.
 
 Within CB2, limnetic fish (and particularly those from South Rolly lake) appear to have narrower, less "keeled" bones than benthic fish.
-The muscles that attach to the ceratobranchials (m. abdcuter spinalis and m abductor filament) are attached along the side of these bones - the increased surface area in benthic fish would relate to increased muscle attachment, which would directly influence the fish to abduct these structures during water filtration.
+The muscles that attach to the ceratobranchials (m. adductor branchialus, m. abductor filament, and m. obliquus ventralis) are attached along the side of these bones - the increased surface area in benthic fish would relate to increased muscle attachment, which would directly influence the fish to abduct these structures during water filtration [@doi:10.1007/s10228-004-0251-5], [https://hdl.handle.net/2268/14698].
 While dietary analyses of these fish are still ongoing, these findings suggest that the South Rolly population may have unique dietary specializations and would be expected to feed on different prey all other lakes in this study.
 In terms of reintroduction, populations from this lake might be expected to fare better than others in terms of limnetic specializaiton.
 Indeed, not all "ecotypes" represented in the FITNESS study present a uniform monolith - indeed, fish with South Rolly heritage outperform Spirit lake fish in every transplant in which they are both included [@doi:10.64898/2026.02.04.699496].
 
 The different response of the first and second ceratobranchial brings up the possibility of a modular response to dietary shifts within the branchial basket.
-Studies treating the unit as single structure, focusing on the first ceratobranchial, or investigating gross morphology might potentially miss significant changes in shape and size of these structures - and this pipeline has provided the investigators with a wealth of data with which to perform a followup study.
+Studies treating the unit as single structure, focusing on the first ceratobranchial, or investigating external morphology might potentially miss significant changes in shape and size of these structures - and this pipeline has provided the investigators with a wealth of data with which to perform a followup study.
 
 ### Future improvements and issues
 
-As with many multiscan projects, the scannign paramaters can be tooled individually for each scan but not for each individual specimen.
+As with many multiscan projects, the scanning paramaters can be tooled individually for each scan but not for each individual specimen.
 In addiiton, atypically large or dense specimens cause an issue for the holder and the replicability across scans.
-
-As with most machine learning approaches, it is also important to ensure that the entire dataset is represnted in training.
+As with most machine learning approaches, it is also important to ensure that the varaiation ranges across the entire dataset is represnted in training to avoid erroneous segmentations. 
 
 
 ## Conclusion {.page_break_before}
 
-The provided pipeline for the analysis fo stickleback specimens provides a repeateable, high-throughbput method for teh analysis of 3D shape
-Although used here on exmplary stickleback specimens, this study  and the methods used could be readily applied to mass sampling efforts of multiptle taxonomic groups.
+The provided pipeline for the analysis of stickleback specimens provides a repeateable, high-throughbput method for the analysis of 3D shape.
+Although used here on exmplary stickleback specimens, these methods used could be readily applied to mass sampling efforts of multiptle taxonomic groups.
 The cropping out of individual specimens from a multiscan is efficient, using custom 3D print models and associated splitting to reduce the need for active time and convert all possible steps into machine time.
 
 The reproducible scans and qualities provide a rapid amount of similar data ideal for training machine learning models.
 Biomedisa, as currently applied, performs on average five times faster than an skilled operator, and without the inter-operator bias endemic to splitting this amount of specimens across multiple investigators.
-This brings viritual, non destructive dissection of internal stickleback up to parity with hand-dissected methods.
+This brings viritual, non-destructive dissection of internal stickleback up to parity with hand-dissected methods.
 
-Finally, the 3D analysis step of the pipelien allows for insights from 3D data that are unable to be gleaned from destructieve smpling, including complex shapes and arrangements not possible under destructive sampling regimes.
+Finally, the 3D analysis step of the pipeline allows for insights from 3D data that are unable to be gleaned from traditional dissection, including complex shapes and arrangements not possible under destructive sampling regimes.
 
 
 ## Author Contributions {.page_break_before}

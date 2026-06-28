@@ -1,6 +1,6 @@
-abdcuter
 aculeatus
 addiiton
+adductor
 ADFG
 Algorithmically
 allometry
@@ -13,8 +13,9 @@ basibranchials
 benthic
 benthos
 binarized
-Biomedisa
+biomedisa
 branchial
+branchialus
 Bruker
 Burgergemeinde
 catgeories
@@ -23,17 +24,16 @@ ceratobranchial
 ceratobranchials
 comapratively
 cpeichel
-csv
+CSV
 curation
-destructieve
 differnces
 donwstream
+EB
 ecotype
 ecotypes
 epaxial
 epibranchials
 exmplary
-fo
 functiona
 Gasterosteus
 genotypic
@@ -41,6 +41,7 @@ geomorph
 gpagen
 Haberthür
 habi
+HB
 Hendry
 Hlushchuk
 hyoid
@@ -57,7 +58,7 @@ limnetic
 lm
 MCGL
 microCT
-microtomographic
+Microtomographic
 microtomography
 MIP
 morphometric
@@ -67,6 +68,7 @@ multiscan
 multispecimen
 NRecon
 nrrd
+obliquus
 OpenSCAD
 Otsu
 paramaters
@@ -77,7 +79,6 @@ pharyngobranchial
 pharyngobranchials
 phenotypes
 phenotypic
-pipelien
 PNG
 PNGs
 prcomp
@@ -93,8 +94,8 @@ Rolly
 Rsq
 Ruslan
 RuslanHlushchuk
-scannign
 ScanningDetails
+segmentations
 semilandmark
 semilandmarks
 semilanmarks
@@ -104,16 +105,13 @@ seperation
 signficant
 SkyScan
 Slicermorph
-smpling
 specializaiton
-spinalis
 spined
 stickelback
 STL
 Stratovan
 Sulser
 sulserrb
-teh
 threespine
 thresholded
 thresholding
@@ -122,6 +120,8 @@ TMAG
 unbaited
 uncropped
 usign
+varaiation
+ventralis
 viritual
 voxel
 Willacker
