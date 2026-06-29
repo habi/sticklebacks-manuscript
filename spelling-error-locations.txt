@@ -18,10 +18,8 @@ content/02.introduction.md:3:threespine
 content/02.introduction.md:4:benthic
 content/02.introduction.md:4:ecotypes
 content/02.introduction.md:4:limnetic
-content/02.introduction.md:4:Willacker
 content/02.introduction.md:5:benthic
 content/02.introduction.md:5:benthic
-content/02.introduction.md:5:Hendry
 content/02.introduction.md:5:Kenai
 content/02.introduction.md:5:limnetic
 content/02.introduction.md:5:limnetic
@@ -205,6 +203,7 @@ content/05.discussion.md:18:adductor
 content/05.discussion.md:18:benthic
 content/05.discussion.md:18:branchialus
 content/05.discussion.md:18:ceratobranchials
+content/05.discussion.md:18:hdl
 content/05.discussion.md:18:obliquus
 content/05.discussion.md:18:ventralis
 content/05.discussion.md:19:Rolly

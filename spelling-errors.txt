@@ -10,7 +10,7 @@ benthic
 benthos
 binarized
 Biomedisa
-branchial
+Branchial
 branchialus
 Bruker
 Burgergemeinde
@@ -32,7 +32,7 @@ gpagen
 Haberthür
 habi
 HB
-Hendry
+hdl
 Hlushchuk
 hyoid
 hypobranchials
@@ -47,7 +47,7 @@ limnetic
 lm
 MCGL
 microCT
-microtomographic
+Microtomographic
 microtomography
 MIP
 morphometric
@@ -96,4 +96,3 @@ unbaited
 uncropped
 ventralis
 voxel
-Willacker

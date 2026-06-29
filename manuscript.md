@@ -26,8 +26,8 @@ header-includes: |
   <meta name="dc.date" content="2026-06-29" />
   <meta name="citation_publication_date" content="2026-06-29" />
   <meta property="article:published_time" content="2026-06-29" />
-  <meta name="dc.modified" content="2026-06-29T09:47:10+00:00" />
-  <meta property="article:modified_time" content="2026-06-29T09:47:10+00:00" />
+  <meta name="dc.modified" content="2026-06-29T10:25:02+00:00" />
+  <meta property="article:modified_time" content="2026-06-29T10:25:02+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -53,9 +53,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/a652b78014bcac8576a657aa431c8ec342f4737f/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/a652b78014bcac8576a657aa431c8ec342f4737f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/a652b78014bcac8576a657aa431c8ec342f4737f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/707a9f02133c7a8b59d02d4e24fd3038cbc801a0/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/707a9f02133c7a8b59d02d4e24fd3038cbc801a0/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/707a9f02133c7a8b59d02d4e24fd3038cbc801a0/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/a652b78014bcac8576a657aa431c8ec342f4737f/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/707a9f02133c7a8b59d02d4e24fd3038cbc801a0/))
 was automatically generated
-from [habi/sticklebacks-manuscript@a652b78](https://github.com/habi/sticklebacks-manuscript/tree/a652b78014bcac8576a657aa431c8ec342f4737f)
+from [habi/sticklebacks-manuscript@707a9f0](https://github.com/habi/sticklebacks-manuscript/tree/707a9f02133c7a8b59d02d4e24fd3038cbc801a0)
 on June 29, 2026.
 </em></small>
 
@@ -171,17 +171,17 @@ We then applied this pipeline to a sampling effort encompassing 44 multi-specime
 
 ## Introduction {.page_break_before}
 
- The threespine stickleback (Gasterosteus aculeatus) is an oft-studied organism for understanding the independent evolution of similar traits in similar environments [Bell and Foster 1994; [Reid et al 2021](https://doi.org/10.1146/annurev-genom-111720-081402)].
- This species exhibits marked differences in marine-freshwater, lake-stream, and benthic-limnetic ecotypes [Willacker et al 2021](https://doi.org/10.1111/j.1095-8312.2010.01531.x).
- This study will focus on the benthic-limnetic axis, using samples from a long-term evolutionary experiment currently in-process studying divergent populations of limnetic and benthic stickleback within the Kenai peninsula of Alaska (USA) [Hendry et al 2024](https://doi.org/10.1002/ece3.11503).
- This project, the Forward In Time Natural Experimental Study of Selection (FITNESS), aims to study the predictability and repeatability of evolution.
- Two pools of sticklebacks — one made from four source populations of limnetic and four source populations of benthic sticklebacks — have been placed into eight destination lakes, four of which are small and benthic and four of which are large and limnetic.
- These new populations have been sampled every year in order to track the genotypic and phenotypic trajectories of these introduced populations.
- Understanding the initial variation in the source populations is essential to this project, as this initial variation would be expected to reflect which phenotypes are associated with each ecotype under study.
+The threespine stickleback (Gasterosteus aculeatus) is an oft-studied organism for understanding the independent evolution of similar traits in similar environments [@doi:10.1093/oso/9780198577287.001.0001; @doi:10.1146/annurev-genom-111720-081402].
+This species exhibits marked differences in marine-freshwater, lake-stream, and benthic-limnetic ecotypes [@doi:10.1111/j.1095-8312.2010.01531.x].
+This study will focus on the benthic-limnetic axis, using samples from a long-term evolutionary experiment currently in-process studying divergent populations of limnetic and benthic stickleback within the Kenai peninsula of Alaska (USA) [@doi10.1002/ece3.11503].
+This project, the Forward In Time Natural Experimental Study of Selection (FITNESS), aims to study the predictability and repeatability of evolution.
+Two pools of sticklebacks — one made from four source populations of limnetic and four source populations of benthic sticklebacks — have been placed into eight destination lakes, four of which are small and benthic and four of which are large and limnetic.
+These new populations have been sampled every year in order to track the genotypic and phenotypic trajectories of these introduced populations.
+Understanding the initial variation in the source populations is essential to this project, as this initial variation would be expected to reflect which phenotypes are associated with each ecotype under study.
 
 Among these and other bony fish, differences in jaw structures are directly related to functional and kinematic differences between different ecotypes [@doi:10.1002/ece3.6929].
 Benthic stickleback have modified jaws for enhanced suction force and hypertrophied epaxial muscles to aid in foraging on benthic invertebrates and by contrast, limnetic stickleback have modifications for larger jaw protrusions and quick strikes during ram feeding [@doi:10.1186/1471-2148-13-277].
-The internal hyoid arch-branchial arch complex is an important structure implicated in diet and feeding ecology [@doi:10.1086/285404],[@doi:10.1111/j.1420-9101.2008.01583.x].
+The internal hyoid arch-branchial arch complex is an important structure implicated in diet and feeding ecology [@doi:10.1086/285404; @doi:10.1111/j.1420-9101.2008.01583.x].
 While the shape and arrangement of paired ceratobranchial and pharyngobranchial bones within this complex aid food processing and water vortex generation during feeding [@doi:10.1371/journal.pone.0193874], the shape of these bones have received comparatively little attention relative to other aspects of dietary anatomy.
 This is likely due to the flattening and destructive sampling used in traditional raker counting methods, which dissect and deform these structures to render them visible for manual measurement [@doi:10.3791/54056].
 These structures are, however, difficult to study without full cranial dissection and corresponding distortion of the branchial anatomy.
@@ -332,7 +332,7 @@ The custom-made sample holder aligns the single fish in the vertical axis around
 The extraction based on the MIP image along the rotation axis is completely automated and very robust, since the detected fish 'regions' do not overlap in the resulting image.
 
 Depending on the available machine it would even not be possible to load the full stack of each scan into a software to manually perform the cropping, such as Fiji [@doi:10.1038/nmeth.2019].
-Large stacks of images (in other words larger than the RAM of the available machine) can be loaded as 'virtual stacks', but o manually crop the region of each fish from the large scan with the [Crop (3D)](https://www.longair.net/edinburgh/imagej/three-pane-crop/) function, one needs to load the full dataset.
+Large stacks of images (in other words larger than the RAM of the available machine) can be loaded as 'virtual stacks', but to manually crop the region of each fish from the large scan with the [Crop (3D)](https://www.longair.net/edinburgh/imagej/three-pane-crop/) function, one needs to load the full dataset.
 Since one (exemplary dataset (`Sticklebucket_10`)) is 7 GB on disk and reported as being 35.4 GB when loaded in Fiji, using the 3D cropping function on an uncropped single dataset is not possible without using a powerful workstation.
 
 Extracting the single fish from the encompassing dataset would thus be a two-step manual process, e.g. cropping the full dataset loaded as '[virtual stack](https://imagej.net/ij/docs/guide/146-8.html#sub:Virtual-Stacks)' and then cropping it down further before writing out the cropped stack.
@@ -411,7 +411,7 @@ CB1 does have statistically significant differences as observed by the linear an
 Thankfully, this pipeline will allow for more extensive analysis from future sampling years to confirm these findings.
 
 Within CB2, limnetic fish (and particularly those from South Rolly lake) appear to have narrower, less "keeled" bones than benthic fish.
-The muscles that attach to the ceratobranchials (m. adductor branchialus, m. abductor filament, and m. obliquus ventralis) are attached along the side of these bones - the increased surface area in benthic fish would relate to increased muscle attachment, which would directly influence the fish to abduct these structures during water filtration [@doi:10.1007/s10228-004-0251-5], [https://hdl.handle.net/2268/14698].
+The muscles that attach to the ceratobranchials (m. adductor branchialus, m. abductor filament, and m. obliquus ventralis) are attached along the side of these bones - the increased surface area in benthic fish would relate to increased muscle attachment, which would directly influence the fish to abduct these structures during water filtration [@doi:10.1007/s10228-004-0251-5; @hdl:2268/14698].
 While dietary analyses of these fish are still ongoing, these findings suggest that the South Rolly population may have unique dietary specializations and would be expected to feed on different prey all other lakes in this study.
 In terms of reintroduction, populations from this lake might be expected to fare better than others in terms of limnetic specialization.
 Indeed, not all "ecotypes" represented in the FITNESS study present a uniform monolith - indeed, fish with South Rolly heritage outperform Spirit lake fish in every transplant in which they are both included [@doi:10.64898/2026.02.04.699496].
