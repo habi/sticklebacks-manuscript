@@ -6,6 +6,7 @@ content/01.abstract.md:6:benthos
 content/01.abstract.md:6:limnetic
 content/01.abstract.md:6:phenotypic
 content/01.abstract.md:8:branchial
+content/01.abstract.md:10:microtomography
 content/01.abstract.md:12:Biomedisa
 content/01.abstract.md:12:Jupyter
 content/01.abstract.md:12:spined
@@ -14,7 +15,7 @@ content/01.abstract.md:15:benthic
 content/01.abstract.md:15:limnetic
 content/02.introduction.md:3:aculeatus
 content/02.introduction.md:3:Gasterosteus
-content/02.introduction.md:3:threespine
+content/02.introduction.md:3:spined
 content/02.introduction.md:4:benthic
 content/02.introduction.md:4:ecotypes
 content/02.introduction.md:4:limnetic
@@ -46,14 +47,12 @@ content/02.introduction.md:18:Peichel
 content/02.introduction.md:18:Sulser
 content/02.introduction.md:22:microtomography
 content/02.introduction.md:23:Microtomographic
-content/02.introduction.md:25:multispecimen
 content/02.introduction.md:26:Biomedisa
 content/03.materials_methods.md:3:png
 content/03.materials_methods.md:8:unbaited
 content/03.materials_methods.md:9:ADFG
 content/03.materials_methods.md:10:AUP
 content/03.materials_methods.md:10:MCGL
-content/03.materials_methods.md:15:microtomographic
 content/03.materials_methods.md:19:openscad
 content/03.materials_methods.md:19:OpenSCAD
 content/03.materials_methods.md:19:OpenSCAD
@@ -88,8 +87,6 @@ content/03.materials_methods.md:73:MIP
 content/03.materials_methods.md:73:MIP
 content/03.materials_methods.md:74:png
 content/03.materials_methods.md:77:binarized
-content/03.materials_methods.md:77:nrrd
-content/03.materials_methods.md:77:nrrd
 content/03.materials_methods.md:77:PNG
 content/03.materials_methods.md:78:binarized
 content/03.materials_methods.md:78:Otsu
@@ -119,9 +116,7 @@ content/03.materials_methods.md:90:pharyngobranchials
 content/03.materials_methods.md:90:png
 content/03.materials_methods.md:92:Biomedisa
 content/03.materials_methods.md:92:labelmap
-content/03.materials_methods.md:92:nrrd
 content/03.materials_methods.md:96:Biomedisa
-content/03.materials_methods.md:96:nrrd
 content/03.materials_methods.md:100:Landmarking
 content/03.materials_methods.md:102:ceratobranchial
 content/03.materials_methods.md:102:morphometrics
@@ -140,8 +135,6 @@ content/03.materials_methods.md:109:Landmarking
 content/03.materials_methods.md:109:png
 content/03.materials_methods.md:113:geomorph
 content/03.materials_methods.md:114:PCA
-content/04.results.md:3:microCT
-content/04.results.md:9:nrrd
 content/04.results.md:13:reproducibly
 content/04.results.md:15:MIP
 content/04.results.md:19:uncropped

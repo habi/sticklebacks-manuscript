@@ -10,15 +10,15 @@ benthic
 benthos
 binarized
 Biomedisa
-branchial
+Branchial
 branchialus
 Bruker
 Burgergemeinde
 centroid
-ceratobranchial
+Ceratobranchial
 ceratobranchials
 cpeichel
-csv
+CSV
 curation
 EB
 ecotype
@@ -51,9 +51,7 @@ MIP
 morphometric
 morphometrics
 multiscan
-multispecimen
 NRecon
-nrrd
 obliquus
 OpenSCAD
 Otsu
@@ -84,7 +82,6 @@ STL
 Stratovan
 Sulser
 sulserrb
-threespine
 thresholded
 thresholding
 TMAG

@@ -57,8 +57,8 @@
   <meta name="dc.date" content="2026-06-29" />
   <meta name="citation_publication_date" content="2026-06-29" />
   <meta property="article:published_time" content="2026-06-29" />
-  <meta name="dc.modified" content="2026-06-29T10:51:40+00:00" />
-  <meta property="article:modified_time" content="2026-06-29T10:51:40+00:00" />
+  <meta name="dc.modified" content="2026-06-29T15:35:46+00:00" />
+  <meta property="article:modified_time" content="2026-06-29T15:35:46+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -84,9 +84,9 @@
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/cad1b4fd9d1245bc73ecade953d0097e2c6a2542/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/cad1b4fd9d1245bc73ecade953d0097e2c6a2542/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/cad1b4fd9d1245bc73ecade953d0097e2c6a2542/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/e02b942be163fb2dbacae253c03b80f1d163634f/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/e02b942be163fb2dbacae253c03b80f1d163634f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/e02b942be163fb2dbacae253c03b80f1d163634f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -103,9 +103,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://habi.github.io/sticklebacks-manuscript/v/cad1b4fd9d1245bc73ecade953d0097e2c6a2542/">permalink</a>)
+(<a href="https://habi.github.io/sticklebacks-manuscript/v/e02b942be163fb2dbacae253c03b80f1d163634f/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/habi/sticklebacks-manuscript/tree/cad1b4fd9d1245bc73ecade953d0097e2c6a2542">habi/sticklebacks-manuscript@cad1b4f</a>
+from <a href="https://github.com/habi/sticklebacks-manuscript/tree/e02b942be163fb2dbacae253c03b80f1d163634f">habi/sticklebacks-manuscript@e02b942</a>
 on June 29, 2026.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -170,14 +170,14 @@ Ruslan Hlushchuk &lt;ruslan.hlushchuk@unibe.ch&gt;.</p>
 Populations of benthic (benthos-feeding) and limnetic (water-column feeding) stickleback differ in a number of phenotypic traits that are associated with shifts in dietary specialization.
 Modern investigation of the evolutionary changes in this organism often requires the analysis of hundreds, if not thousands, of individuals.
 However, analyses of the structures required for feeding – especially the jaws and complex internal branchial anatomy — require considerable time and expertise, with destructive sampling and fine dissection skills needed for quantitative analysis.</p>
-<p>The advent of µCT and 3D-scanning technology affords non-destructive sampling and an increase the resolution of data available for study, but at the substantial cost of increasing complexity and processing time for each specimen such that these techniques are often unfeasible for studies of eco-evolutionary scale.</p>
+<p>The advent of X-ray microtomography and 3D-scanning technology affords non-destructive sampling and an increases the amount of high-resolution data available for study, but at the substantial cost of increasing complexity and processing time for each specimen such that these techniques are often unfeasible for studies of eco-evolutionary scale.</p>
 <p>To address these concerns, we developed a rapid and semi-automated segmentation and analysis pipeline based on both the Jupyter interactive development environment and the Biomedisa image segmentation platform for investigating three-dimensional morphological adaptation within the three-spined stickleback.</p>
 <p>The pipeline includes splitting multi-specimen scans into regions of interest for each specimen, reconstruction of targeted anatomy, and morphometric analyses.
-We then applied this pipeline to a sampling effort encompassing 44 multi-specimen scans encompassing hundreds of samples of divergent benthic and limnetic stickleback populations (N=216), showcasing the possibility of using high-throughput scanning data to provide tests of ecological and evolutionary hypotheses.</p>
+We then applied this pipeline to a sampling effort comprising 44 multi-specimen scans representing 216 specimens of divergent benthic and limnetic stickleback populations, showcasing the possibility of using high-throughput scanning data to provide tests of ecological and evolutionary hypotheses.</p>
 <h2 class="page_break_before" id="introduction">Introduction</h2>
-<p>The threespine stickleback (Gasterosteus aculeatus) is an oft-studied organism for understanding the independent evolution of similar traits in similar environments <span class="citation" data-cites="G9fXCoFb tyLSEVnP">(<a href="#ref-G9fXCoFb" role="doc-biblioref">Bell &amp; Foster, 1994</a>; <a href="#ref-tyLSEVnP" role="doc-biblioref">Reid et al., 2021</a>)</span>.
+<p>The three-spined stickleback (Gasterosteus aculeatus) is an oft-studied organism for understanding the independent evolution of similar traits in similar environments <span class="citation" data-cites="G9fXCoFb tyLSEVnP">(<a href="#ref-G9fXCoFb" role="doc-biblioref">Bell &amp; Foster, 1994</a>; <a href="#ref-tyLSEVnP" role="doc-biblioref">Reid et al., 2021</a>)</span>.
 This species exhibits marked differences in marine-freshwater, lake-stream, and benthic-limnetic ecotypes <span class="citation" data-cites="Tw8w7mV3">(<a href="#ref-Tw8w7mV3" role="doc-biblioref">WILLACKER et al., 2010</a>)</span>.
-This study will focus on the benthic-limnetic axis, using samples from a long-term evolutionary experiment currently in-process studying divergent populations of limnetic and benthic stickleback within the Kenai peninsula of Alaska (USA) <span class="citation" data-cites="doi10.1002/ece3.11503">(<a href="#ref-doi10.1002/ece3.11503" role="doc-biblioref"><strong>doi10.1002/ece3.11503?</strong></a>)</span>.
+This study will focus on the benthic-limnetic axis, using samples from a long-term evolutionary experiment currently investigating divergent populations of limnetic and benthic stickleback within the Kenai Peninsula of Alaska (USA) <span class="citation" data-cites="doi10.1002/ece3.11503">(<a href="#ref-doi10.1002/ece3.11503" role="doc-biblioref"><strong>doi10.1002/ece3.11503?</strong></a>)</span>.
 This project, the Forward In Time Natural Experimental Study of Selection (FITNESS), aims to study the predictability and repeatability of evolution.
 Two pools of sticklebacks — one made from four source populations of limnetic and four source populations of benthic sticklebacks — have been placed into eight destination lakes, four of which are small and benthic and four of which are large and limnetic.
 These new populations have been sampled every year in order to track the genotypic and phenotypic trajectories of these introduced populations.
@@ -189,12 +189,12 @@ While the shape and arrangement of paired ceratobranchial and pharyngobranchial 
 This is likely due to the flattening and destructive sampling used in traditional raker counting methods, which dissect and deform these structures to render them visible for manual measurement <span class="citation" data-cites="RdhjaIDe">(<a href="#ref-RdhjaIDe" role="doc-biblioref">Ellis &amp; Miller, 2016</a>)</span>.
 These structures are, however, difficult to study without full cranial dissection and corresponding distortion of the branchial anatomy.
 3D analyses preserve these features at a high resolution.
-Embedded into <a href="https://alaskastickleback.com/">Alaska Stickleback Restoration Project</a>, <a href="https://alaskastickleback.com/genomics">Genomics axis</a> where Katie Peichel, Ben Sulser and Sheila Christen are affiliated.</p>
+This work is embedded within the <a href="https://alaskastickleback.com/genomics">Genomics axis</a> of the <a href="https://alaskastickleback.com/">Alaska Stickleback Restoration Project</a>, with which Katie Peichel, Ben Sulser and Sheila Christen are affiliated.</p>
 <h2 id="micro-computed-tomography">Micro-computed tomography</h2>
-<p>X-ray microtomography is an indispensable tool to gain non-destructive insights into the inner structure of highly diverse samples, namely for specimens studied in the biomedical sciences <span class="citation" data-cites="IKVBgaCE">(<a href="#ref-IKVBgaCE" role="doc-biblioref">Rawson et al., 2020</a>)</span>.
+<p>X-ray microtomography (μCT) is an indispensable tool to gain non-destructive insights into the inner structure of highly diverse samples, namely for specimens studied in the biomedical sciences <span class="citation" data-cites="IKVBgaCE">(<a href="#ref-IKVBgaCE" role="doc-biblioref">Rawson et al., 2020</a>)</span>.
 Microtomographic imaging is ideally suited to non-destructively assess the morphology of different fish species <span class="citation" data-cites="19h9vxsYG">(<a href="#ref-19h9vxsYG" role="doc-biblioref">Ford et al., 2023</a>)</span>, including the internal anatomy and small structures difficult to quantify without additional preparation.
-While these structures can be rendered by-hand by a skilled investigator, the time and cost required per-specimen is inefficient for the scale required via eco-evolutionary study and this requires destruction of the mandibular and cranial anatomy of the specimen.
-This project aims to address these gaps, demonstrating a novel pipeline for rendering and auto-splitting of a multispecimen scan for mass sampling, creating a dataset with consistent parameters that can be fed to downstream machine-learning techniques <span class="citation" data-cites="jHalJ9Zw">(<a href="#ref-jHalJ9Zw" role="doc-biblioref">Lösel et al., 2020</a>)</span> to aid in the segmentation of individual bony structures in each scan.
+While these structures can be rendered by hand by a skilled investigator, the time and cost required per-specimen is inefficient for the scale required via eco-evolutionary study and this requires destruction of the mandibular and cranial anatomy of the specimen.
+This project aims to address these gaps, demonstrating a novel pipeline for rendering and auto-splitting of a multi-specimen scan for mass sampling, creating a dataset with consistent parameters that can be fed to downstream machine learning techniques <span class="citation" data-cites="jHalJ9Zw">(<a href="#ref-jHalJ9Zw" role="doc-biblioref">Lösel et al., 2020</a>)</span> to aid in the segmentation of individual bony structures in each scan.
 Once a Biomedisa model is trained, the entire pipeline runs from multi-specimen input to rendered structures for each specimen in a fraction of the time and resources used in traditional analysis.</p>
 <h2 class="page_break_before" id="materials-methods">Materials &amp; Methods</h2>
 <div id="fig:workflow" class="fignos">
@@ -209,10 +209,10 @@ Fish were collected using unbaited minnow traps in two separate field seasons, t
 Specimen collections were taken from a random sample of 30 fish from each lake, under Alaska Department of Fish and Game (ADFG) permits SF2023-030 and P-24-015 for 2023 and 2024, respectively.
 Fish were euthanized with MS-222, photographed, and preserved in 10% formalin in a bag with a specific label, under Animal Use Protocol (AUP) MCGL-8265.
 At the end of each field season, samples were shipped from Anchorage (AK, USA) to Bern (BE, CH) where they were stored until scanning time.</p>
-<p>Due to their inherent contrast difference to the surrounding tissue, the structures of interest we touch upon in this manuscript (teeth and bones, i.e.jaws and skull) are well visualized in unstained samples, hence no further preparation of the fish was necessary.</p>
-<h3 id="microtomographic-imaging">microtomographic imaging</h3>
-<p>In a small pilot study we determined the optimal scanning parameters to fit the constraints on total scanning time, resolution and sample handling.
-To optimize for these constraints, we scanned all the sticklebacks in batches of six fish in a custom-made 3D printed sample holder in a single scan.
+<p>Due to their inherent contrast difference to the surrounding tissue, the structures of interest in this study (teeth and bones, i.e., jaws and skull) are well visualized in unstained samples, hence no further preparation of the fish was necessary.</p>
+<h3 id="μct-imaging">μCT imaging</h3>
+<p>In a small pilot study, we determined the optimal scanning parameters to meet the constraints on total scanning time, resolution and sample handling.
+To optimize for these constraints, we scanned all the sticklebacks in batches of 6 fish in a custom-made 3D printed sample holder in a single scan.
 This holder was generated with <a href="https://openscad.org/">OpenSCAD</a> and is available online, either directly as <a href="https://github.com/TomoGraphics/Hol3Drs/blob/master/STL/Stickleback.Multiple.stl">STL file for printing</a> or as <a href="https://github.com/TomoGraphics/Hol3Drs/blob/master/Stickleback.Multiple.scad">(parameterized) OpenSCAD file</a> for adaptation to other classes of samples.
 Both files are part of a library of 3D-printable sample holders for tomographic imaging <span class="citation" data-cites="115PPSuQp">(<a href="#ref-115PPSuQp" role="doc-biblioref">Haberthür, 2019</a>)</span>.</p>
 <p>Tomographic imaging was performed on a <a href="https://www.bruker.com/en/products-and-solutions/diffractometers-and-x-ray-microscopes/3d-x-ray-microscopes/skyscan-2214.html">Bruker SkyScan 2214</a> at the Institute of Anatomy, University of Bern, Switzerland.
@@ -224,7 +224,7 @@ Every single projection was exposed for about a second (depending on the sample)
 Due to the length of the fish, we had to acquire so-called stacked scans, on average we scanned 3 fields of view along the rotation axis of the sample holder.
 This resulted in scan times between 3 to 5 hours.
 The projection images were then subsequently reconstructed into a 3D stack of images with NRecon (Bruker microCT, Kontich Belgium, Version: 2.1.0.1 or 2.2.0.6).
-The isometric voxel sized in the resulting datasets vary from 15 to 19 µm.</p>
+The isometric voxel sizes in the resulting datasets vary from 15 to 19 µm.</p>
 <h3 id="data-analysis">Data analysis</h3>
 <h4 id="preparation-and-handling-of-tomographic-datasets">Preparation and handling of tomographic datasets</h4>
 <p>After acquisition, <a href="https://github.com/habi/sticklebacks/blob/main/rsync-sticklebacks.sh">a simple script</a> was used to copy the relevant data to both archival storage and storage accessible by all co-authors at the same time.</p>
@@ -233,7 +233,7 @@ The scripts are freely available online under the MIT License and may be freely 
 <h5 id="preview-notebook">Preview notebook</h5>
 <p>The <a href="https://nbviewer.org/github/habi/sticklebacks/blob/main/PreviewScans.ipynb">preview notebook</a> is used for surfacing issues with the scanning.
 For this, we read all relevant scanning and reconstruction parameters from the log files of each scan.
-Afterwards, we efficiently loading the reconstruction PNG images from disk with the <a href="https://image.dask.org/en/latest/dask_image.imread.html"><code>dask_image.imread.imread</code></a> function <span class="citation" data-cites="hj1CnyWB">(<a href="#ref-hj1CnyWB" role="doc-biblioref">Dask Development Team, 2016</a>)</span>.
+Afterwards, we efficiently loaded the reconstruction PNG images from disk with the <a href="https://image.dask.org/en/latest/dask_image.imread.html"><code>dask_image.imread.imread</code></a> function <span class="citation" data-cites="hj1CnyWB">(<a href="#ref-hj1CnyWB" role="doc-biblioref">Dask Development Team, 2016</a>)</span>.
 Like so, we can map all the generated reconstructions to memory and quickly generate maximum intensity projections (MIP) of each scan (see Figure <a href="#fig:mips">2</a> for an example) for both quality control and further processing.</p>
 <div id="fig:mips" class="fignos">
 <figure>
@@ -242,7 +242,7 @@ Like so, we can map all the generated reconstructions to memory and quickly gene
 </figure>
 </div>
 <h5 id="separation-notebook">Separation notebook</h5>
-<p>The <a href="https://nbviewer.org/github/habi/sticklebacks/blob/main/BucketSeparator.ipynb">separation notebook</a> processes all the performed scans to extract the single fish out from each scan, where 6 fish have been scanned.
+<p>The <a href="https://nbviewer.org/github/habi/sticklebacks/blob/main/BucketSeparator.ipynb">separation notebook</a> processes all the performed scans to extract each individual fish from each scan encompassing 6 fish in total.
 As in the preview notebook, we efficiently load all the PNGs from disk with <a href="https://www.dask.org/"><code>dask</code></a> <span class="citation" data-cites="hj1CnyWB">(<a href="#ref-hj1CnyWB" role="doc-biblioref">Dask Development Team, 2016</a>)</span>.
 Based on the previously extracted MIP images and a simple labeling of these images (<code>skimage.measure.label</code>), we extract both the labels in the custom-made sample holder and the positions of single fish in the scan (<code>skimage.measure.regionprops</code>) (see Figure <a href="#fig:labels">3</a>).
 This extraction is completely reproducible and well-adapted to the custom-made sample holder.</p>
@@ -254,7 +254,7 @@ The regions are numbered consecutively from the top left to the bottom right.
 These numbers are mapped to the correct fish ID in the next step.</figcaption>
 </figure>
 </div>
-<p>Based on a simple mapping of the detected region to the ID numbers of the scanned fish, we labeled the resulting images and presented these images together with photos of the lab book and sample tubes for double-checking (see Figure <a href="#fig:checking">4</a>).</p>
+<p>Based on a simple mapping of the detected region to the ID numbers of the scanned fish, we labeled the resulting images and presented these images together with photos of the lab book and sample tubes for verification (see Figure <a href="#fig:checking">4</a>).</p>
 <div id="fig:checking" class="fignos">
 <figure>
 <img src="images/Sticklebucket_H.rec.Labels.Check.png" alt="Figure 4: Mapping lab book notes, photos and detected regions to fish ID." />
@@ -273,8 +273,8 @@ The top row shows the extracted regions from the previously calculated MIP of th
 Both rows must show exactly the same region.</figcaption>
 </figure>
 </div>
-<p>Saving out the regions as <code>zarr</code> files made it possible to efficiently work with the image data of each extracted fish and to convert that data to any desired format for further analysis.
-For this further analysis, we wrote out stacks of PNG images and additionally, as <a href="https://teem.sourceforge.net/nrrd/"><code>nrrd</code></a> files for each fish region as a simple crop out of the original dataset and as binarized regions.
+<p>Writing the regions as <code>zarr</code> files made it possible to efficiently work with the image data of each extracted fish and to convert that data to any desired format for further analysis.
+For this further analysis, we wrote stacks of PNG images and additionally, as <a href="https://teem.sourceforge.net/nrrd/"><code>nrrd</code></a> files for each fish region as cropped as well as cropped and binarized regions out of the original dataset.
 These binarized regions were segmented into bone and background based on a simple multi-level Otsu thresholding method <span class="citation" data-cites="JICzDA7P">(<a href="#ref-JICzDA7P" role="doc-biblioref">廖炳松 et al., 2001</a>)</span>.</p>
 <p>Using <code>K3D-jupyter</code> <span class="citation" data-cites="jxVw2kt2">(<a href="#ref-jxVw2kt2" role="doc-biblioref"><em>Overview — K3D-Jupyter Documentation</em>, n.d.</a>)</span> we implemented a quick way to view any of the extracted regions directly in the Jupyter notebook (see Figure <a href="#fig:k3d">6</a>).
 An <a href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/habi/sticklebacks-manuscript/refs/heads/main/content/data/SL.X23.012.3D.html">interactive version of this figure</a> is available online.</p>
@@ -293,13 +293,13 @@ The individual elements of the branchial apparatus were rendered using a combina
 <figcaption aria-hidden="true"><span>Figure 7:</span> Example of Branchial Anatomy with CB1 and CB2 highlighted. Abbreviations: PB = pharyngobranchials, EB = epibranchials, BB = basibranchials, HB = hypobranchials, CB = ceratobranchials.</figcaption>
 </figure>
 </div>
-<p>Once rendered, these bones were exported as a colored labelmap alongside the .nrrd from which they were segmented to pass to the Biomedisa program.</p>
+<p>Once rendered, these bones were exported as a colored labelmap alongside the <code>.nrrd</code> file from which they were segmented to pass to the Biomedisa program.</p>
 <h4 id="machine-learning-and-model-training">Machine learning and model training</h4>
-<p>As a group, a dataset of 51 specimens (including .nrrd and .label files) were passed to Biomedisa <span class="citation" data-cites="jHalJ9Zw">(<a href="#ref-jHalJ9Zw" role="doc-biblioref">Lösel et al., 2020</a>)</span> to train a segmentation model.
-We allowed the for rotation of 180* to account for possible specimen variability, and used a 80/20 split between training and validation data.
-The model was trained with a batch size of 24 and epoch number of 50, under Network architecture 32-64-128-256-512.</p>
+<p>As a group, a dataset of 51 specimens (including <code>.nrrd</code> and <code>.label</code> files) were passed to Biomedisa <span class="citation" data-cites="jHalJ9Zw">(<a href="#ref-jHalJ9Zw" role="doc-biblioref">Lösel et al., 2020</a>)</span> to train a segmentation model.
+We allowed the for rotation of 180° to account for possible specimen variability, and an 80/20 split between training and validation data.
+The model was trained with a batch size of 24 and 50 epochs, under Network architecture 32-64-128-256-512.</p>
 <h4 id="landmarking-of-models">Landmarking of models</h4>
-<p>To demonstrate the effectiveness of this tool and the importance for 3D morphometrics for answering eco-evolutionary questions, we have run a demonstration quantifying the shape differences of the ceratobranchial bones
+<p>To demonstrate the effectiveness of this tool and the importance for 3D morphometrics for answering eco-evolutionary questions, we have run a demonstration quantifying the shape differences of the ceratobranchial bones.
 Once trained, we applied the Biomedisa segmentation model to the remaining 160 specimen volumes and landmarked the final results using Stratovan Checkpoint <span class="citation" data-cites="1EuiurioH">(<a href="#ref-1EuiurioH" role="doc-biblioref">Stratovan Corporation, n.d.</a>)</span>.
 As a test and for subsequent analysis, the first two ceratobranchials on the right side were chosen for comparison across all specimens.
 Type II landmarks were set on the ends of each bone, with semilandmarks in-between each to cover axes of curvature along the bone (see figure 8).
@@ -316,21 +316,21 @@ Equal distances were ensured using the “resample_curves” function in 3D Slic
 Both bones were split and analyzed separately after generalized Procrustes analysis (GPA) using the <code>gpagen()</code> function, with Principal Component Analysis (PCA) and linear models run with <code>gm.prcomp()</code> and <code>procD.lm()</code>, respectively.
 Linear fits were further investigated via the <code>pairwise()</code> function to analyze differences in pairwise statistics.</p>
 <h2 class="page_break_before" id="results">Results</h2>
-<h3 id="microct-data">microCT data</h3>
+<h3 id="μct-data">μCT data</h3>
 <!-- Let's try it here - after all, it is technically a result of your work! -->
 <p>Acquisition and reconstruction of fish proved successful and efficient.
-216 unique specimens were scanned in a total scanning duration of 18 days, 12 hours and 6 minutes.
+216 unique specimens were scanned in a total scanning duration of 18 days, 12 hours, and 6 minutes.
 We acquired 158444 projections, reconstructed into a total of 177749 reconstructions, to about 4040 files per scan (N=44).
-The total size of this sampling effort is ~44 GB of <code>.zarr</code> files, ~64 GB of <code>.nrrd</code> files</p>
+The total size of this sampling effort is ~44 GB of <code>.zarr</code> files, ~64 GB of <code>.nrrd</code> files.</p>
 <h3 id="fish-separation">Fish separation</h3>
 <p>Our method reproducibly extracts each of the 6 fish scanned simultaneously in one scan.
 The custom-made sample holder aligns the single fish in the vertical axis around the rotation axis of the tomographic scan.
 The extraction based on the MIP image along the rotation axis is completely automated and very robust, since the detected fish ‘regions’ do not overlap in the resulting image.</p>
-<p>Depending on the available machine it would even not be possible to load the full stack of each scan into a software to manually perform the cropping, such as Fiji <span class="citation" data-cites="Fkmz2cmo">(<a href="#ref-Fkmz2cmo" role="doc-biblioref">Schindelin et al., 2012</a>)</span>.
+<p>Depending on the available hardware, it may not even be possible to load the full stack of each scan into a software to manually perform the cropping, such as Fiji <span class="citation" data-cites="Fkmz2cmo">(<a href="#ref-Fkmz2cmo" role="doc-biblioref">Schindelin et al., 2012</a>)</span>.
 Large stacks of images (in other words larger than the RAM of the available machine) can be loaded as ‘virtual stacks’, but to manually crop the region of each fish from the large scan with the <a href="https://www.longair.net/edinburgh/imagej/three-pane-crop/">Crop (3D)</a> function, one needs to load the full dataset.
-Since one (exemplary dataset (<code>Sticklebucket_10</code>)) is 7 GB on disk and reported as being 35.4 GB when loaded in Fiji, using the 3D cropping function on an uncropped single dataset is not possible without using a powerful workstation.</p>
+Since one (exemplary) dataset (<code>Sticklebucket_10</code>) is 7 GB on disk and reported as being 35.4 GB when loaded in Fiji, using the 3D cropping function on an uncropped single dataset is not possible without using a powerful workstation.</p>
 <p>Extracting the single fish from the encompassing dataset would thus be a two-step manual process, e.g. cropping the full dataset loaded as ‘<a href="https://imagej.net/ij/docs/guide/146-8.html#sub:Virtual-Stacks">virtual stack</a>’ and then cropping it down further before writing out the cropped stack.
-For each encompassing scan this would need to be repeated 6 times (for <em>each</em> of the six fish in each of the encompassing scans).
+For each encompassing scan this would need to be repeated 6 times (for <em>each</em> of the 6 fish in each of the encompassing scans).
 In addition, such a manual process is not reproducible in the sense that it cannot be consistently replicated by others using the same data since the manual cropping is operator-dependent.
 Algorithmically/automatically cropping the large datasets based on the axial MIP image leads to both reproducible cropped regions and efficiently uses the operator time (namely <em>no</em> operator time) {#tbl:timing}.</p>
 <div id="tbl:timing" class="tablenos">
@@ -377,7 +377,7 @@ Selection and individual rendering of the branchial structures takes between 10-
 <h3 id="analysis">Analysis</h3>
 <p>The speed and quality of these data allow us to study the internal branchial anatomy at scale and in situ, without the need for fine dissection.</p>
 <p>Numerous studies have shown the relationships between gill rakers (bony protrusions off of the branchial complex) and diet <span class="citation" data-cites="1Dlme4sp5 10CsDLwDV">(<a href="#ref-10CsDLwDV" role="doc-biblioref">BERNER et al., 2008</a>; <a href="#ref-1Dlme4sp5" role="doc-biblioref">Schluter &amp; McPhail, 1992</a>)</span></p>
-<p>While the shape and arrangement of the ceratobranchials and the corresponding bony gill rakers are hypothesized to work in tandem for food processing and water vortex generation during suspension feeding <span class="citation" data-cites="15G56iHS9">(<a href="#ref-15G56iHS9" role="doc-biblioref">Brooks et al., 2018</a>)</span>, the shape of these bones have received comparatively little attention.</p>
+<p>While the shape and arrangement of the ceratobranchials and the corresponding bony gill rakers are hypothesized to work in tandem for food processing and water vortex generation during suspension feeding <span class="citation" data-cites="15G56iHS9">(<a href="#ref-15G56iHS9" role="doc-biblioref">Brooks et al., 2018</a>)</span>, the shape of these bones has received comparatively little attention.</p>
 <p>This is likely due to the flattening and destructive sampling used in traditional raker counting methods, which dissect and deform these structures to render them visible for manual measurement.
 3D analyses preserve these features at a high resolution.</p>
 <p>After GPA alignment, we are able to quantify the shape differences among all fish scanned for this project.
@@ -417,29 +417,29 @@ Changes due to allometry (using the metric of centroid size or standard length o
 <h2 class="page_break_before" id="discussion">Discussion</h2>
 <h3 id="pipeline-and-efficiency">Pipeline and efficiency</h3>
 <p>Once all elements of the pipeline are together, running a simple script allows for automatic reconstruction, splitting, thresholding, and segmentation of stickleback specimens.
-All steps in the automated pipeline are much faster than our human expert, with minimal active time on the part of the user.
+All steps in the automated pipeline are much faster than an expert operator, with minimal active time on the part of the user.
 This reproducible pipeline allows for mass sampling and population-scale analysis of stickleback specimens.</p>
 <!-- David - do we have a time estimate for how long the pipeline would take to run if we did this section by hand.-->
 <h3 id="findings-from-ceratobranchial-analysis">Findings from Ceratobranchial Analysis</h3>
 <p>The 1st and 2nd gill rakers are remarkably different in morphology and in size and breadth, suggesting that these structures may respond differently to shifts in diet - even within the same feeding apparatus.
-CB1 does have statistically significant differences as observed by the linear and pairwise analyze (and PC4, corresponding to 4.33% of the variation, appears to pull out these differences - see supplementary figures) but we caution that there are also more lakes and specimens available for this study - these differences could be due to the statistically different variances observed between the two groups.
+CB1 does have statistically significant differences as observed by the linear and pairwise analyses (and PC4, corresponding to 4.33% of the variation, appears to pull out these differences - see supplementary figures) but we caution that there are also more lakes and specimens available for this study - these differences could be due to the statistically different variances observed between the two groups.
 Thankfully, this pipeline will allow for more extensive analysis from future sampling years to confirm these findings.</p>
 <p>Within CB2, limnetic fish (and particularly those from South Rolly lake) appear to have narrower, less “keeled” bones than benthic fish.
 The muscles that attach to the ceratobranchials (m. adductor branchialus, m. abductor filament, and m. obliquus ventralis) are attached along the side of these bones - the increased surface area in benthic fish would relate to increased muscle attachment, which would directly influence the fish to abduct these structures during water filtration <span class="citation" data-cites="v1hRNLF5 EWbJLKbO">(<a href="#ref-v1hRNLF5" role="doc-biblioref">Takata &amp; Sasaki, 2005</a>; <a href="#ref-EWbJLKbO" role="doc-biblioref">Vandewalle et al., 2000</a>)</span>.
-While dietary analyses of these fish are still ongoing, these findings suggest that the South Rolly population may have unique dietary specializations and would be expected to feed on different prey all other lakes in this study.
+While dietary analyses of these fish are still ongoing, these findings suggest that the South Rolly population may have unique dietary specializations and would be expected to feed on different than fish from the other lakes in this study.
 In terms of reintroduction, populations from this lake might be expected to fare better than others in terms of limnetic specialization.
 Indeed, not all “ecotypes” represented in the FITNESS study present a uniform monolith - indeed, fish with South Rolly heritage outperform Spirit lake fish in every transplant in which they are both included <span class="citation" data-cites="11i8vzpUp">(<a href="#ref-11i8vzpUp" role="doc-biblioref">Eckert et al., 2026</a>)</span>.</p>
 <p>The different response of the first and second ceratobranchial brings up the possibility of a modular response to dietary shifts within the branchial basket.
-Studies treating the unit as single structure, focusing on the first ceratobranchial, or investigating external morphology might potentially miss significant changes in shape and size of these structures - and this pipeline has provided the investigators with a wealth of data with which to perform a followup study.</p>
+Studies treating the unit as a single structure, focusing on the first ceratobranchial, or investigating external morphology might potentially miss significant changes in shape and size of these structures - and this pipeline has provided the investigators with a wealth of data with which to perform a follow-up study.</p>
 <h3 id="future-improvements-and-issues">Future improvements and issues</h3>
 <p>As with many multiscan projects, the scanning parameters can be tooled individually for each scan but not for each individual specimen.
 In addition, atypically large or dense specimens cause an issue for the holder and the replicability across scans.
 As with most machine learning approaches, it is also important to ensure that the variation ranges across the entire dataset is represented in training to avoid erroneous segmentations.</p>
 <h2 class="page_break_before" id="conclusion">Conclusion</h2>
 <p>The provided pipeline for the analysis of stickleback specimens provides a repeatable, high-throughput method for the analysis of 3D shape.
-Although used here on exemplary stickleback specimens, these methods used could be readily applied to mass sampling efforts of multiple taxonomic groups.
-The cropping out of individual specimens from a multiscan is efficient, using custom 3D print models and associated splitting to reduce the need for active time and convert all possible steps into machine time.</p>
-<p>The reproducible scans and qualities provide a rapid amount of similar data ideal for training machine learning models.
+Although used here on exemplary stickleback specimens, these methods could readily be applied to mass sampling efforts of multiple taxonomic groups.
+The cropping out of individual specimens from a multiscan is efficient, using custom 3D print models and associated splitting to reduce the need for active time and maximized automated processing.</p>
+<p>The reproducible scans and their consistent quality rapidly provide a large amount of similar data ideal for training machine learning models.
 Biomedisa, as currently applied, performs on average five times faster than an skilled operator, and without the inter-operator bias endemic to splitting this amount of specimens across multiple investigators.
 This brings virtual, non-destructive dissection of internal stickleback up to parity with hand-dissected methods.</p>
 <p>Finally, the 3D analysis step of the pipeline allows for insights from 3D data that are unable to be gleaned from traditional dissection, including complex shapes and arrangements not possible under destructive sampling regimes.</p>
@@ -502,7 +502,7 @@ This brings virtual, non-destructive dissection of internal stickleback up to pa
 <p>We are grateful to the <a href="https://mic.unibe.ch/">Microscopy Imaging Center</a> of the University of Bern for their infrastructural support.
 We also thank the <code>manubot</code> project <span class="citation" data-cites="YuJbg3zO">(<a href="#ref-YuJbg3zO" role="doc-biblioref">Himmelstein et al., 2019</a>)</span> for facilitating collaborative writing of this manuscript.</p>
 <h2 id="supplementary-materials">Supplementary Materials</h2>
-<h3 id="parameters-of-tomographic-scans-of-all-the-fishes">Parameters of tomographic scans of all the fishes</h3>
+<h3 id="parameters-of-tomographic-scans-of-all-the-fish">Parameters of tomographic scans of all the fish</h3>
 <p>The CSV file <a href="https://github.com/habi/stickleback-manuscript/blob/main/content/data/ScanningDetails.csv">ScanningDetails.csv</a> gives a tabular overview of all the (relevant) parameters of all the scans we performed.
 This file was generated with the <a href="https://github.com/habi/sticklebacks/blob/main/DataWrangling.ipynb">data processing notebook</a> and collates the relevant data read from <em>all</em> the log files of <em>all</em> the scans we performed.
 A copy of each log file containing <em>all</em> scanning parameters is available in a <a href="https://github.com/habi/sticklebacks/tree/main/logfiles">folder in the data processing repository</a>.</p>
@@ -597,7 +597,7 @@ Vandewalle, P., Parmentier, E., &amp; Chardon, M. (2000). The branchial basket i
 WILLACKER, J. J., VON HIPPEL, F. A., WILTON, P. R., &amp; WALTON, K. M. (2010). Classification of threespine stickleback along the benthic-limnetic axis. <em>Biological Journal of the Linnean Society</em>, <em>101</em>(3), 595–608. <a href="https://doi.org/10.1111/j.1095-8312.2010.01531.x">https://doi.org/10.1111/j.1095-8312.2010.01531.x</a>
 </div>
 <div id="ref-JICzDA7P" class="csl-entry" role="doc-biblioentry">
-廖炳松, 陳澤生, &amp; 詹寶珠. (2001). A Fast Algorithm for Multilevel Thresholding. <em>Journal of Information Science and Engineering</em>, <em>17</em>(5). <a href="https://doi.org/10.6688/jise.2001.17.5.1">https://doi.org/10.6688/jise.2001.17.5.1</a>
+廖炳松, 陳澤生, &amp; 詹寶珠. (2001). A Fast Algorithm for Multilevel Thresholding. <em>Journal of Information Science and Engineering</em>, <em>17</em>(5), 713–727. <a href="https://doi.org/10.6688/jise.2001.17.5.1">https://doi.org/10.6688/jise.2001.17.5.1</a>
 </div>
 </div>
 <!-- default theme -->
