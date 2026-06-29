@@ -26,8 +26,8 @@ header-includes: |
   <meta name="dc.date" content="2026-06-29" />
   <meta name="citation_publication_date" content="2026-06-29" />
   <meta property="article:published_time" content="2026-06-29" />
-  <meta name="dc.modified" content="2026-06-29T10:25:02+00:00" />
-  <meta property="article:modified_time" content="2026-06-29T10:25:02+00:00" />
+  <meta name="dc.modified" content="2026-06-29T10:51:40+00:00" />
+  <meta property="article:modified_time" content="2026-06-29T10:51:40+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -53,9 +53,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/707a9f02133c7a8b59d02d4e24fd3038cbc801a0/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/707a9f02133c7a8b59d02d4e24fd3038cbc801a0/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/707a9f02133c7a8b59d02d4e24fd3038cbc801a0/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/cad1b4fd9d1245bc73ecade953d0097e2c6a2542/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/cad1b4fd9d1245bc73ecade953d0097e2c6a2542/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/cad1b4fd9d1245bc73ecade953d0097e2c6a2542/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/707a9f02133c7a8b59d02d4e24fd3038cbc801a0/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/cad1b4fd9d1245bc73ecade953d0097e2c6a2542/))
 was automatically generated
-from [habi/sticklebacks-manuscript@707a9f0](https://github.com/habi/sticklebacks-manuscript/tree/707a9f02133c7a8b59d02d4e24fd3038cbc801a0)
+from [habi/sticklebacks-manuscript@cad1b4f](https://github.com/habi/sticklebacks-manuscript/tree/cad1b4fd9d1245bc73ecade953d0097e2c6a2542)
 on June 29, 2026.
 </em></small>
 
@@ -303,16 +303,15 @@ Once trained, we applied the Biomedisa segmentation model to the remaining 160 s
 As a test and for subsequent analysis, the first two ceratobranchials on the right side were chosen for comparison across all specimens.
 Type II landmarks were set on the ends of each bone, with semilandmarks in-between each to cover axes of curvature along the bone (see figure 8).
 In total 7 landmarks and 4 semilandmark curves (two containing 20 semilandmarks, two containing 15) on the first ceratobranchial (CB1), and 5 landmarks and 3 semilandmark curves (one containing 20 semilandmarks, two containing 15) on the second ceratobranchial (CB2).
-Equal distances were ensured using the "resample_curves" function in 3D Slicer  [@doi:10.1007/978-1-4614-7657-3_19].
+Equal distances were ensured using the "resample_curves" function in 3D Slicer [@doi:10.1007/978-1-4614-7657-3_19].
 
-![Landmarking shown on A: dorsal and B: ventral surfaces.](images/Landmark_Figure.png){#fig:landmarks}
-
+![Landmarking shown on dorsal (a) and ventral surfaces (b).](images/Landmark_Figure.png){#fig:landmarks}
 
 #### Analysis of shape
 
-All subsequent analyses were run using R version 4.4.1 [R Core Team] and the geomorph package [@doi:10.1111/2041-210X.12035].
-Both bones were split and analyzed separately after generalized Procrustes analysis (GPA) using the "gpagen()" function, with Principal Component Analysis (PCA) and linear models run with "gm.prcomp()" and "procD.lm()", respectively.
-Linear fits were further investigated via the "pairwise()" function to analyze differences in pairwise statistics.
+All subsequent analyses were run using R (version 4.4.1, [@r] and the geomorph package [@doi:10.1111/2041-210X.12035].
+Both bones were split and analyzed separately after generalized Procrustes analysis (GPA) using the `gpagen()` function, with Principal Component Analysis (PCA) and linear models run with `gm.prcomp()` and `procD.lm()`, respectively.
+Linear fits were further investigated via the `pairwise()` function to analyze differences in pairwise statistics.
 
 
 ## Results {.page_break_before}
@@ -340,13 +339,13 @@ For each encompassing scan this would need to be repeated 6 times (for *each* of
 In addition, such a manual process is not reproducible in the sense that it cannot be consistently replicated by others using the same data since the manual cropping is operator-dependent.
 Algorithmically/automatically cropping the large datasets based on the axial MIP image leads to both reproducible cropped regions and efficiently uses the operator time (namely *no* operator time) {#tbl:timing}.
 
-| Task | Est. Manual Time (minutes) | Pipeline Time (minutes) |
-|----------|----------|----------|
-| Scanning single scan | # | ## |
-| Splitting and rendering volumes| # | ## |
-| Segmentation| 10-15 | 2-3 |
+| Task                            | Est. Manual Time [min] | Pipeline Time [min] |
+|---------------------------------|------------------------|---------------------|
+| Scanning single scan            | #                      | ##                  |
+| Splitting and rendering volumes | #                      | ##                  |
+| Segmentation                    | 10-15                  | 2-3                 |
 
-Table 1: Estimates of time comparisons between manual and pipeline runs. {#tbl:timing}
+Table: Estimates of time comparisons between manual and pipeline runs. {#tbl:timing}
 
 Our automated extraction process also writes human-readable log files documenting the cropping position in the encompassing dataset and the crop extent.
 This enables reproducible double-checking and confirmation of the process after the fact (see this [direct link for one such log file](https://github.com/habi/sticklebacks/blob/main/logfiles/Sticklebucket_10/rec_regions/FG.X24.027/FG.X24.027.log)).
@@ -363,7 +362,7 @@ Selection and individual rendering of the branchial structures takes between 10-
 
 The speed and quality of these data allow us to study the internal branchial anatomy at scale and in situ, without the need for fine dissection.
 
-Numerous studies have shown the relationships between gill rakers (bony protrusions off of the branchial complex) and diet [@doi:10.1086/285404],[@doi:10.1111/j.1420-9101.2008.01583.x]
+Numerous studies have shown the relationships between gill rakers (bony protrusions off of the branchial complex) and diet [@doi:10.1086/285404; @doi:10.1111/j.1420-9101.2008.01583.x]
 
 While the shape and arrangement of the ceratobranchials and the corresponding bony gill rakers are hypothesized to work in tandem for food processing and water vortex generation during suspension feeding [@doi:10.1371/journal.pone.0193874], the shape of these bones have received comparatively little attention.
 
@@ -391,7 +390,6 @@ These differences in ecological patterning were also broken down by lake (#fig:p
 The differences in the 2nd ceratobranchial appear to be driven by divergence in the South Rolly population, supported by significant pairwise differences observed between this lake and all other lakes observed in CB2 and not in CB1 (see supplementary information).
 After GPA alignment, we are able to quantify the shape differences among all fish scanned for this project.
 Changes due to allometry (using the metric of centroid size or standard length of the fish) were significant, but slight: explaining only a small fraction of shape variation in both bones.
-
 
 
 ## Discussion {.page_break_before}
@@ -423,7 +421,7 @@ Studies treating the unit as single structure, focusing on the first ceratobranc
 
 As with many multiscan projects, the scanning parameters can be tooled individually for each scan but not for each individual specimen.
 In addition, atypically large or dense specimens cause an issue for the holder and the replicability across scans.
-As with most machine learning approaches, it is also important to ensure that the variation ranges across the entire dataset is represented in training to avoid erroneous segmentations. 
+As with most machine learning approaches, it is also important to ensure that the variation ranges across the entire dataset is represented in training to avoid erroneous segmentations.
 
 
 ## Conclusion {.page_break_before}

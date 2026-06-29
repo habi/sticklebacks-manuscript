@@ -138,12 +138,8 @@ content/03.materials_methods.md:106:semilandmarks
 content/03.materials_methods.md:106:semilandmarks
 content/03.materials_methods.md:109:Landmarking
 content/03.materials_methods.md:109:png
-content/03.materials_methods.md:114:geomorph
-content/03.materials_methods.md:115:gpagen
-content/03.materials_methods.md:115:lm
-content/03.materials_methods.md:115:PCA
-content/03.materials_methods.md:115:prcomp
-content/03.materials_methods.md:115:procD
+content/03.materials_methods.md:113:geomorph
+content/03.materials_methods.md:114:PCA
 content/04.results.md:3:microCT
 content/04.results.md:9:nrrd
 content/04.results.md:13:reproducibly

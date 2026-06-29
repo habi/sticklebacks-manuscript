@@ -10,7 +10,7 @@ benthic
 benthos
 binarized
 Biomedisa
-Branchial
+branchial
 branchialus
 Bruker
 Burgergemeinde
@@ -28,7 +28,6 @@ epibranchials
 Gasterosteus
 genotypic
 geomorph
-gpagen
 Haberthür
 habi
 HB
@@ -44,7 +43,6 @@ labelmap
 landmarked
 Landmarking
 limnetic
-lm
 MCGL
 microCT
 Microtomographic
@@ -67,8 +65,6 @@ phenotypes
 phenotypic
 PNG
 PNGs
-prcomp
-procD
 raker
 rakers
 replicability
