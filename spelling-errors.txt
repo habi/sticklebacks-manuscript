@@ -15,7 +15,7 @@ branchialus
 Bruker
 Burgergemeinde
 centroid
-Ceratobranchial
+ceratobranchial
 ceratobranchials
 cpeichel
 csv
