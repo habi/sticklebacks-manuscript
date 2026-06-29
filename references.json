@@ -1,5 +1,27 @@
 [
   {
+    "URL": "https://www.stratovan.com/products/checkpoint",
+    "author": [
+      {
+        "literal": "Stratovan Corporation"
+      }
+    ],
+    "id": "1EuiurioH",
+    "issued": {
+      "date-parts": [
+        [
+          2018,
+          8,
+          7
+        ]
+      ]
+    },
+    "title": "Stratovan checkpoint",
+    "type": "book",
+    "version": "2018.08.07",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: checkpoint"
+  },
+  {
     "URL": "https://dask.org",
     "author": [
       {
@@ -1195,7 +1217,7 @@
         [
           "2026",
           6,
-          28
+          29
         ]
       ]
     },
