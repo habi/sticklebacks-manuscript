@@ -26,8 +26,8 @@ header-includes: |
   <meta name="dc.date" content="2026-07-01" />
   <meta name="citation_publication_date" content="2026-07-01" />
   <meta property="article:published_time" content="2026-07-01" />
-  <meta name="dc.modified" content="2026-07-01T09:28:21+00:00" />
-  <meta property="article:modified_time" content="2026-07-01T09:28:21+00:00" />
+  <meta name="dc.modified" content="2026-07-01T09:30:10+00:00" />
+  <meta property="article:modified_time" content="2026-07-01T09:30:10+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -53,9 +53,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/711e841722d3af3976b9e1f28a7b1a1e55cba757/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/711e841722d3af3976b9e1f28a7b1a1e55cba757/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/711e841722d3af3976b9e1f28a7b1a1e55cba757/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/cf48b434200c198d65b6848d0b7f40dc91eb3a4f/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/cf48b434200c198d65b6848d0b7f40dc91eb3a4f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/cf48b434200c198d65b6848d0b7f40dc91eb3a4f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/711e841722d3af3976b9e1f28a7b1a1e55cba757/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/cf48b434200c198d65b6848d0b7f40dc91eb3a4f/))
 was automatically generated
-from [habi/sticklebacks-manuscript@711e841](https://github.com/habi/sticklebacks-manuscript/tree/711e841722d3af3976b9e1f28a7b1a1e55cba757)
+from [habi/sticklebacks-manuscript@cf48b43](https://github.com/habi/sticklebacks-manuscript/tree/cf48b434200c198d65b6848d0b7f40dc91eb3a4f)
 on July 1, 2026.
 </em></small>
 
@@ -310,7 +310,8 @@ Equal distances were ensured using the `resample_curves` function in 3D Slicer.
 
 All subsequent analyses were run using R (version 4.4.1, [@r] and the geomorph package [@doi:10.1111/2041-210X.12035].
 Both bones were split and analyzed separately after generalized Procrustes analysis (GPA) using the [`gpagen()`](https://search.r-project.org/CRAN/refmans/geomorph/html/gpagen.html) function, with Principal Component Analysis (PCA) and linear models run with [`gm.prcomp()`](https://search.r-project.org/CRAN/refmans/geomorph/html/gm.prcomp.html) and [`procD.lm()`](https://search.r-project.org/CRAN/refmans/geomorph/html/procD.lm.html), respectively.
-Linear fits were further investigated via the `pairwise()` function to analyze differences in pairwise statistics
+Linear fits were further investigated via the `pairwise()` function to analyze differences in pairwise statistics.
+
 
 ## Results {.page_break_before}
 

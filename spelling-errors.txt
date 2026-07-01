@@ -55,7 +55,7 @@ NRecon
 obliquus
 OpenSCAD
 Otsu
-pca
+PCA
 Peichel
 pharyngobranchial
 pharyngobranchials
