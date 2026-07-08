@@ -53,7 +53,7 @@ jobs:
           manubot_line=$(grep "github.com/manubot/manubot" build/environment.yml)
           manubot_url=$(echo "$manubot_line" | awk -F"- " '{print $2}')
 
-          pip install ${manubot_url}#egg=manubot[ai-rev]
+          pip install "manubot[ai-rev] @ ${manubot_url}"
       - name: Revise manuscript
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
