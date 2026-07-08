@@ -16,7 +16,7 @@ on:
         description: 'Language model'
         required: true
         type: string
-        default: 'gpt-4-turbo'
+        default: 'gpt-4o'
       custom_prompt:
         description: 'Custom prompt'
         required: false
