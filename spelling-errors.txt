@@ -10,7 +10,7 @@ benthic
 benthos
 binarized
 Biomedisa
-branchial
+Branchial
 branchialus
 Bruker
 Burgergemeinde
