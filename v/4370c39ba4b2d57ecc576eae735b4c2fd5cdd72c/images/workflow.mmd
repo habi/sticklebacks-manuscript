@@ -1,0 +1,39 @@
+---
+title: Overview of workflow
+config:
+  theme: base
+  layout: elk
+  elk:
+    mergeEdges: true
+    nodePlacementStrategy: LINEAR_SEGMENTS
+---
+flowchart LR
+    subgraph Katie [<b>Sample collection</b>]
+       Planning --> Sampling
+       Sampling --> Storing
+    end
+    Storing --> uct
+    subgraph David [<b>microCT imaging & fish separation</b>]
+        uct(microCT imaging) --> proj(Projection images)
+        proj --> rec(Reconstructions)
+        rec --> jupyter(Jupyter scripts)
+        jupyter --> preview(Preview) --> rec
+        jupyter --> separation(Fish Separation) --> jupyter
+        jupyter --> reporting(Reporting) --> jupyter
+        separation --> fishid(Fish ID) --> region(Extracted region) --> fishid(Fish ID)
+        fishid --> region_thresholded(Thresholded region) --> fishid
+        fishid@{ shape: procs }
+    end
+    subgraph Ben [<b>Biomedisa analysis</b>]
+        fishid --> biomedisa(Biomedisa script)
+        biomedisa --> regions(Segmented regions of interest)
+        regions@{ shape: procs }
+        regions --> rakers(gill rakers) --> regions
+        regions --> jaws(internal jaws) --> regions
+    end
+    subgraph Sheila [<b>Gill rakers</b>]
+        regions -->  analysis(Analysis)
+    end
+        reporting --> manubot(((Manuscript)))
+        biomedisa --> manubot
+        analysis --> manubot
