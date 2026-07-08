@@ -5,7 +5,7 @@ keywords:
 - sticklebacks
 - ecology
 lang: en-US
-date-meta: '2026-07-01'
+date-meta: '2026-07-08'
 author-meta:
 - David Haberthür
 - Ben Sulser
@@ -23,11 +23,11 @@ header-includes: |
   <meta name="citation_title" content="microCT imaging of threespine stickleback" />
   <meta property="og:title" content="microCT imaging of threespine stickleback" />
   <meta property="twitter:title" content="microCT imaging of threespine stickleback" />
-  <meta name="dc.date" content="2026-07-01" />
-  <meta name="citation_publication_date" content="2026-07-01" />
-  <meta property="article:published_time" content="2026-07-01" />
-  <meta name="dc.modified" content="2026-07-01T09:30:10+00:00" />
-  <meta property="article:modified_time" content="2026-07-01T09:30:10+00:00" />
+  <meta name="dc.date" content="2026-07-08" />
+  <meta name="citation_publication_date" content="2026-07-08" />
+  <meta property="article:published_time" content="2026-07-08" />
+  <meta name="dc.modified" content="2026-07-08T08:06:33+00:00" />
+  <meta property="article:modified_time" content="2026-07-08T08:06:33+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -53,9 +53,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/cf48b434200c198d65b6848d0b7f40dc91eb3a4f/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/cf48b434200c198d65b6848d0b7f40dc91eb3a4f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/cf48b434200c198d65b6848d0b7f40dc91eb3a4f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/de625a26e0dbe8ca83ba7d708b2547a8c5646c1e/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/de625a26e0dbe8ca83ba7d708b2547a8c5646c1e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/de625a26e0dbe8ca83ba7d708b2547a8c5646c1e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,10 +77,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/cf48b434200c198d65b6848d0b7f40dc91eb3a4f/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/de625a26e0dbe8ca83ba7d708b2547a8c5646c1e/))
 was automatically generated
-from [habi/sticklebacks-manuscript@cf48b43](https://github.com/habi/sticklebacks-manuscript/tree/cf48b434200c198d65b6848d0b7f40dc91eb3a4f)
-on July 1, 2026.
+from [habi/sticklebacks-manuscript@de625a2](https://github.com/habi/sticklebacks-manuscript/tree/de625a26e0dbe8ca83ba7d708b2547a8c5646c1e)
+on July 8, 2026.
 </em></small>
 
 
@@ -415,7 +415,7 @@ Within CB2, limnetic fish (and particularly those from South Rolly lake) appear 
 The muscles that attach to the ceratobranchials (*m. adductor branchialus*, *m. abductor filament*, and *m. obliquus ventralis*) are attached along the side of these bones - the increased surface area in benthic fish would relate to increased muscle attachment, which would directly influence the fish to abduct these structures during water filtration [@doi:10.1007/s10228-004-0251-5; @hdl:2268/14698].
 While dietary analyses of these fish are still ongoing, these findings suggest that the South Rolly population may have unique dietary specializations and would be expected to feed on different than fish from the other lakes in this study.
 In terms of reintroduction, populations from this lake might be expected to fare better than others in terms of limnetic specialization.
-Indeed, not all ecotypes represented in the FITNESS study present a uniform monolith - indeed, fish with South Rolly heritage outperform Spirit lake fish in every transplant in which they are both included [@doi:10.64898/2026.02.04.699496].
+Indeed, fish with South Rolly heritage outperform Spirit lake fish in every transplant in which they are both included as a part of the FITNESS project [@doi:10.64898/2026.02.04.699496].
 
 The different response of the first and second ceratobranchial brings up the possibility of a modular response to dietary shifts within the branchial basket.
 Studies treating the unit as a single structure, focusing on the first ceratobranchial, or investigating external morphology might potentially miss significant changes in shape and size of these structures - and this pipeline has provided the investigators with a wealth of data with which to perform a follow-up study.
