@@ -26,8 +26,8 @@ header-includes: |
   <meta name="dc.date" content="2026-07-08" />
   <meta name="citation_publication_date" content="2026-07-08" />
   <meta property="article:published_time" content="2026-07-08" />
-  <meta name="dc.modified" content="2026-07-08T09:11:20+00:00" />
-  <meta property="article:modified_time" content="2026-07-08T09:11:20+00:00" />
+  <meta name="dc.modified" content="2026-07-08T09:49:51+00:00" />
+  <meta property="article:modified_time" content="2026-07-08T09:49:51+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -53,9 +53,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/d0b68200bc83aa817612ed0be4965f2dba30ec3e/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/d0b68200bc83aa817612ed0be4965f2dba30ec3e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/d0b68200bc83aa817612ed0be4965f2dba30ec3e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/ba2cce1fb6c75e6a4b090b75808bb16562fa2d70/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/ba2cce1fb6c75e6a4b090b75808bb16562fa2d70/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/ba2cce1fb6c75e6a4b090b75808bb16562fa2d70/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/d0b68200bc83aa817612ed0be4965f2dba30ec3e/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/ba2cce1fb6c75e6a4b090b75808bb16562fa2d70/))
 was automatically generated
-from [habi/sticklebacks-manuscript@d0b6820](https://github.com/habi/sticklebacks-manuscript/tree/d0b68200bc83aa817612ed0be4965f2dba30ec3e)
+from [habi/sticklebacks-manuscript@ba2cce1](https://github.com/habi/sticklebacks-manuscript/tree/ba2cce1fb6c75e6a4b090b75808bb16562fa2d70)
 on July 8, 2026.
 </em></small>
 
@@ -144,9 +144,9 @@ on July 8, 2026.
 
 
 ::: {#correspondence}
-✉ — Correspondence possible via [GitHub Issues](https://github.com/habi/sticklebacks-manuscript/issues)
+✉: Correspondence via [GitHub Issues](https://github.com/habi/sticklebacks-manuscript/issues)
 or email to
-Ruslan Hlushchuk \<ruslan.hlushchuk@unibe.ch\>.
+[Ruslan Hlushchuk](mailto:ruslan.hlushchuk@unibe.ch?subject=Feedback%20on%20habi/sticklebacks-manuscript).
 
 
 :::
@@ -159,7 +159,7 @@ Can we predict evolution?
 The three-spined stickleback (Gasterosteus aculeatus) is a well-recognized system for understanding adaptation to divergent habitats.
 Populations of benthic (benthos-feeding) and limnetic (water-column feeding) stickleback differ in a number of phenotypic traits that are associated with shifts in dietary specialization.
 Modern investigation of the evolutionary changes in this organism often requires the analysis of hundreds, if not thousands, of individuals.
-However, analyses of the structures required for feeding – especially the jaws and complex internal branchial anatomy — require considerable time and expertise, with destructive sampling and fine dissection skills needed for quantitative analysis.
+However, analyses of the structures required for feeding---especially the jaws and complex internal branchial anatomy---require considerable time and expertise, with destructive sampling and fine dissection skills needed for quantitative analysis.
 
 The advent of X-ray microtomography and 3D-scanning technology affords non-destructive sampling and an increases the amount of high-resolution data available for study, but at the substantial cost of increasing complexity and processing time for each specimen such that these techniques are often unfeasible for studies of eco-evolutionary scale.
 
@@ -175,7 +175,7 @@ The three-spined stickleback (Gasterosteus aculeatus) is an oft-studied organism
 This species exhibits marked differences in marine-freshwater, lake-stream, and benthic-limnetic ecotypes [@doi:10.1111/j.1095-8312.2010.01531.x].
 This study will focus on the benthic-limnetic axis, using samples from a long-term evolutionary experiment currently investigating divergent populations of limnetic and benthic stickleback within the Kenai Peninsula of Alaska (USA) [@doi:10.1002/ece3.11503].
 This project, the Forward In Time Natural Experimental Study of Selection (FITNESS), aims to study the predictability and repeatability of evolution.
-Two pools of sticklebacks — one made from four source populations of limnetic and four source populations of benthic sticklebacks — have been placed into eight destination lakes, four of which are small and benthic and four of which are large and limnetic.
+Two pools of sticklebacks---one made from four source populations of limnetic and four source populations of benthic sticklebacks---have been placed into eight destination lakes, four of which are small and benthic and four of which are large and limnetic.
 These new populations have been sampled every year in order to track the genotypic and phenotypic trajectories of these introduced populations.
 Understanding the initial variation in the source populations is essential to this project, as this initial variation would be expected to reflect which phenotypes are associated with each ecotype under study.
 
@@ -317,11 +317,9 @@ Linear fits were further investigated via the `pairwise()` function to analyze d
 
 ### μCT data
 
-<!-- Let's try it here - after all, it is technically a result of your work! -->
 Acquisition and reconstruction of fish proved successful and efficient.
 216 unique specimens were scanned in a total scanning duration of 18 days, 12 hours, and 6 minutes.
 We acquired 158444 projections, reconstructed into a total of 177749 reconstructions, to about 4040 files per scan (N=44).
-The total size of this sampling effort is ~44 GB of `.zarr` files, ~64 GB of `.nrrd` files.
 
 ### Fish separation
 
@@ -349,13 +347,13 @@ Table: Estimates of time comparisons between manual and pipeline runs. {#tbl:tim
 Our automated extraction process also writes human-readable log files documenting the cropping position in the encompassing dataset and the crop extent.
 This enables reproducible double-checking and confirmation of the process after the fact (see this [direct link for one such log file](https://github.com/habi/sticklebacks/blob/main/logfiles/Sticklebucket_10/rec_regions/FG.X24.027/FG.X24.027.log)).
 
+The extraction and sampling process lead to a total of ~64 GB of `.nrrd` files, which were assessed as specified before.
+
 ### Thresholding
 
 The separated fish were segmented based on a simple multi-level Otsu thresholding method.
 This relatively simple segmentation was sufficient to extract all the features we analyzed further, and we did not have to employ more advanced thresholding methods in our separation pipeline.
 Selection and individual rendering of the branchial structures takes between 10-15 minutes; the average Biomedisa render takes 2.5 minutes once trained (See Table @tbl:timing).
-
-<!-- Did Sheila even analyze the thresholded fish, or "only" the cropped ones? She focused on the cropped ones.-->
 
 ### Analysis
 
@@ -370,7 +368,7 @@ This is likely due to the flattening and destructive sampling used in traditiona
 
 After GPA alignment, we are able to quantify the shape differences among all fish scanned for this project.
 Changes due to allometry (using the metric of centroid size or standard length of the fish) were significant, but slight: explaining only a small fraction of shape variation in both bones.
-Both linear models and PCA results suggest that the lakes themselves - and not overarching categories of ecotype or sex - drive most of the shape variation in these bones (CB1: p = .001, Rsq = 0.03246, CB2: p =.001, Rsq = .06220).
+Both linear models and PCA results suggest that the lakes themselves---and not overarching categories of ecotype or sex---drive most of the shape variation in these bones (CB1: p = .001, Rsq = 0.03246, CB2: p =.001, Rsq = .06220).
 The ecological variation present across the first ceratobranchial shows a significant but quite small effect with lake origin (p = .009, Rsq = 0.02056 ), and with a large amount of overlap in the resulting shape space (see Figure @fig:pca_cb1).
 
 ![PCA of CB1 colored by lake ecotype.
@@ -407,18 +405,19 @@ This reproducible pipeline allows for mass sampling and population-scale analysi
 
 ### Findings from Ceratobranchial Analysis
 
-The 1st and 2nd gill rakers are remarkably different in morphology and in size and breadth, suggesting that these structures may respond differently to shifts in diet - even within the same feeding apparatus.
-CB1 does have statistically significant differences as observed by the linear and pairwise analyses (and PC4, corresponding to 4.33% of the variation, appears to pull out these differences - see supplementary figures) but we caution that there are also more lakes and specimens available for this study - these differences could be due to the statistically different variances observed between the two groups.
+The 1st and 2nd gill rakers are remarkably different in morphology and in size and breadth, suggesting that these structures may respond differently to shifts in diet---even within the same feeding apparatus.
+CB1 does have statistically significant differences as observed by the linear and pairwise analyses (and PC4, corresponding to 4.33% of the variation, appears to pull out these differences---see supplementary figures) but we caution that there are also more lakes and specimens available for this study---these differences could be due to the statistically different variances observed between the two groups.
 Thankfully, this pipeline will allow for more extensive analysis from future sampling years to confirm these findings.
 
 Within CB2, limnetic fish (and particularly those from South Rolly lake) appear to have narrower, less keeled bones than benthic fish.
-The muscles that attach to the ceratobranchials (*m. adductor branchialus*, *m. abductor filament*, and *m. obliquus ventralis*) are attached along the side of these bones - the increased surface area in benthic fish would relate to increased muscle attachment, which would directly influence the fish to abduct these structures during water filtration [@doi:10.1007/s10228-004-0251-5; @hdl:2268/14698].
+The muscles that attach to the ceratobranchials (*m. adductor branchialus*, *m. abductor filament*, and *m. obliquus ventralis*) are attached along the side of these bones.
+The increased surface area in benthic fish would relate to increased muscle attachment, which would directly influence the fish to abduct these structures during water filtration [@doi:10.1007/s10228-004-0251-5; @hdl:2268/14698].
 While dietary analyses of these fish are still ongoing, these findings suggest that the South Rolly population may have unique dietary specializations and would be expected to feed on different than fish from the other lakes in this study.
 In terms of reintroduction, populations from this lake might be expected to fare better than others in terms of limnetic specialization.
 Indeed, fish with South Rolly heritage outperform Spirit lake fish in every transplant in which they are both included as a part of the FITNESS project [@doi:10.64898/2026.02.04.699496].
 
 The different response of the first and second ceratobranchial brings up the possibility of a modular response to dietary shifts within the branchial basket.
-Studies treating the unit as a single structure, focusing on the first ceratobranchial, or investigating external morphology might potentially miss significant changes in shape and size of these structures - and this pipeline has provided the investigators with a wealth of data with which to perform a follow-up study.
+Studies treating the unit as a single structure, focusing on the first ceratobranchial, or investigating external morphology might potentially miss significant changes in shape and size of these structures---and this pipeline has provided the investigators with a wealth of data with which to perform a follow-up study.
 
 ### Future improvements and issues
 
@@ -488,8 +487,23 @@ We also thank the `manubot` project [@doi:10.1371/journal.pcbi.1007128] for faci
 ### Parameters of tomographic scans of all the fish
 
 The CSV file [ScanningDetails.csv](https://github.com/habi/stickleback-manuscript/blob/main/content/data/ScanningDetails.csv) gives a tabular overview of all the (relevant) parameters of all the scans we performed.
-This file was generated with the [data processing notebook](https://github.com/habi/sticklebacks/blob/main/DataWrangling.ipynb) and collates the relevant data read from *all* the log files of *all* the scans we performed.
-A copy of each log file containing *all* scanning parameters is available in a [folder in the data processing repository](https://github.com/habi/sticklebacks/tree/main/logfiles).
+This file was generated with the [data processing notebook](https://github.com/habi/sticklebacks/blob/main/DataWrangling.ipynb) and collates the relevant data read from *all* the log files of *all* the scans we performed for this study.
+A copy of each log file containing *all* scanning parameters is available in a [folder in the data processing repository](https://github.com/habi/sticklebacks/tree/main/logfiles) of this project.
+
+### Analysis scripts
+
+#### Jupyter; (pre)processing of tomographic data
+
+All Jupyter scripts to process the acquire tomographic data as described in the text are found [online at GitHub](https://github.com/habi/sticklebacks), and can be easily previewed [online](https://nbviewer.org/github/habi/sticklebacks/tree/main/), too.
+
+#### 3D Slicer; extraction
+
+The Python script we used to resample curves is found [online at GitHub](https://github.com/habi/sticklebacks-manuscript/blob/main/content/scripts/Resample_Curve.py).
+The results of the resampling is available [online](https://github.com/habi/sticklebacks-manuscript/raw/main/content/data/RESAMPLED_curves.zip), too.
+
+#### R; morphometrics
+
+The R script we used to assess the morphometrics is found [online at GitHub](https://github.com/habi/sticklebacks-manuscript/blob/main/content/scripts/Morphometrics_RScript.R).
 
 
 ## References {.page_break_before}

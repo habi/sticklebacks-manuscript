@@ -6,11 +6,11 @@ allometry
 AUP
 Baltzerstrasse
 basibranchials
-benthic
+Benthic
 benthos
 binarized
 Biomedisa
-Branchial
+branchial
 branchialus
 Bruker
 Burgergemeinde
@@ -55,7 +55,7 @@ NRecon
 obliquus
 OpenSCAD
 Otsu
-PCA
+pca
 Peichel
 pharyngobranchial
 pharyngobranchials
@@ -63,6 +63,7 @@ phenotypes
 phenotypic
 PNG
 PNGs
+pre
 raker
 rakers
 replicability
@@ -83,7 +84,7 @@ Stratovan
 Sulser
 sulserrb
 thresholded
-Thresholding
+thresholding
 TMAG
 unbaited
 uncropped
