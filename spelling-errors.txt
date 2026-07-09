@@ -6,7 +6,7 @@ allometry
 AUP
 Baltzerstrasse
 basibranchials
-benthic
+Benthic
 benthos
 binarized
 Biomedisa
@@ -15,10 +15,10 @@ branchialus
 Bruker
 Burgergemeinde
 centroid
-Ceratobranchial
+ceratobranchial
 ceratobranchials
 cpeichel
-CSV
+csv
 curation
 EB
 ecotype

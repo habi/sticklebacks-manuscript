@@ -1,5 +1,5 @@
 ---
-title: microCT imaging of threespine stickleback
+title: microCT imaging of 216 three-spined stickleback
 keywords:
 - tomography
 - sticklebacks
@@ -19,15 +19,15 @@ header-includes: |
   -->
   <meta name="dc.format" content="text/html" />
   <meta property="og:type" content="article" />
-  <meta name="dc.title" content="microCT imaging of threespine stickleback" />
-  <meta name="citation_title" content="microCT imaging of threespine stickleback" />
-  <meta property="og:title" content="microCT imaging of threespine stickleback" />
-  <meta property="twitter:title" content="microCT imaging of threespine stickleback" />
+  <meta name="dc.title" content="microCT imaging of 216 three-spined stickleback" />
+  <meta name="citation_title" content="microCT imaging of 216 three-spined stickleback" />
+  <meta property="og:title" content="microCT imaging of 216 three-spined stickleback" />
+  <meta property="twitter:title" content="microCT imaging of 216 three-spined stickleback" />
   <meta name="dc.date" content="2026-07-09" />
   <meta name="citation_publication_date" content="2026-07-09" />
   <meta property="article:published_time" content="2026-07-09" />
-  <meta name="dc.modified" content="2026-07-09T14:12:02+00:00" />
-  <meta property="article:modified_time" content="2026-07-09T14:12:02+00:00" />
+  <meta name="dc.modified" content="2026-07-09T14:19:47+00:00" />
+  <meta property="article:modified_time" content="2026-07-09T14:19:47+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -53,9 +53,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/3b52ca31fa51befa753cd1a6191cac707f39da20/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/3b52ca31fa51befa753cd1a6191cac707f39da20/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/3b52ca31fa51befa753cd1a6191cac707f39da20/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/5c1acd57e85a012a49abc2fae3483cd51e5c42c1/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/5c1acd57e85a012a49abc2fae3483cd51e5c42c1/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/5c1acd57e85a012a49abc2fae3483cd51e5c42c1/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,9 +77,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/3b52ca31fa51befa753cd1a6191cac707f39da20/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/5c1acd57e85a012a49abc2fae3483cd51e5c42c1/))
 was automatically generated
-from [habi/sticklebacks-manuscript@3b52ca3](https://github.com/habi/sticklebacks-manuscript/tree/3b52ca31fa51befa753cd1a6191cac707f39da20)
+from [habi/sticklebacks-manuscript@5c1acd5](https://github.com/habi/sticklebacks-manuscript/tree/5c1acd57e85a012a49abc2fae3483cd51e5c42c1)
 on July 9, 2026.
 This version contains 4873 words.
 </em></small>
@@ -147,7 +147,7 @@ This version contains 4873 words.
 ::: {#correspondence}
 ✉: Correspondence via [GitHub Issues](https://github.com/habi/sticklebacks-manuscript/issues)
 or email to
-[Ruslan Hlushchuk](mailto:ruslan.hlushchuk@unibe.ch?subject=Feedback%20on%20microCT imaging of threespine stickleback).
+[Ruslan Hlushchuk](mailto:ruslan.hlushchuk@unibe.ch?subject=Feedback%20on%20microCT imaging of 216 three-spined stickleback).
 
 
 :::
