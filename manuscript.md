@@ -26,8 +26,8 @@ header-includes: |
   <meta name="dc.date" content="2026-07-09" />
   <meta name="citation_publication_date" content="2026-07-09" />
   <meta property="article:published_time" content="2026-07-09" />
-  <meta name="dc.modified" content="2026-07-09T16:36:50+00:00" />
-  <meta property="article:modified_time" content="2026-07-09T16:36:50+00:00" />
+  <meta name="dc.modified" content="2026-07-09T16:41:02+00:00" />
+  <meta property="article:modified_time" content="2026-07-09T16:41:02+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -53,9 +53,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/927626f6a511479393de01b8696cc1058c69ee3d/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/927626f6a511479393de01b8696cc1058c69ee3d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/927626f6a511479393de01b8696cc1058c69ee3d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/5cd30a9fa09b47cd2ed8a76a0f40a1691f265261/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/5cd30a9fa09b47cd2ed8a76a0f40a1691f265261/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/5cd30a9fa09b47cd2ed8a76a0f40a1691f265261/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,12 +77,12 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/927626f6a511479393de01b8696cc1058c69ee3d/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/5cd30a9fa09b47cd2ed8a76a0f40a1691f265261/))
 was generated
-from [habi/sticklebacks-manuscript@927626f](https://github.com/habi/sticklebacks-manuscript/tree/927626f6a511479393de01b8696cc1058c69ee3d)
+from [habi/sticklebacks-manuscript@5cd30a9](https://github.com/habi/sticklebacks-manuscript/tree/5cd30a9fa09b47cd2ed8a76a0f40a1691f265261)
 on July 9, 2026.
 <br>
-This version contains 4873 words.
+This version contains 5029 words.
 </em></small>
 
 
@@ -338,16 +338,23 @@ For each encompassing scan this would need to be repeated 6 times (for *each* of
 In addition, such a manual process is not reproducible in the sense that it cannot be consistently replicated by others using the same data since the manual cropping is operator-dependent.
 Algorithmically/automatically cropping the large datasets based on the axial MIP image leads to both reproducible cropped regions and efficiently uses the operator time (namely *no* operator time) (see Table @tbl:timing).
 
-| Task                            | Est. Manual Time [min] | Pipeline Time [sec] |
-|---------------------------------|------------------------|---------------------|
-| Scanning single scan            | #                      | ##                  |
-| Splitting and rendering volumes | #                      | ##                  |
-| Segmentation                    | 10-15                  | 10-15                  |
+| Task                             | Est. Manual Time | Pipeline Time |
+|----------------------------------|-----------------:|--------------:|
+| Scanning single fish             | 10 hours         | 2 hours       |
+| Splitting scans into single fish | 17 minutes       | 9 minutes     |
+| Rendering volumes                | #                | 30 seconds    |
+| Segmentation                     | 10-15 minutes    | 15 seconds    |
 
-Table: Estimates of time comparisons between manual and pipeline runs. {#tbl:timing}
+Table: Estimates of time comparisons between manual and pipeline runs.
+       Note that it would have been completely infeasible to scan each fish separately.
+       On average, we scanned 5 fish per scan for a total scan time of 18 days and12 hours.
+       The manual scan time per single fish is thus a calculated 5 times longer than scanning 6 fish at a time in the adapted sample holder.
+       The manual splitting does *not* produce the accompanying log file and figures for double-checking as specified below. {#tbl:timing}
 
-Our automated extraction process also writes human-readable log files documenting the cropping position in the encompassing dataset and the crop extent.
-This enables reproducible double-checking and confirmation of the process after the fact (see this [direct link for one such log file](https://github.com/habi/sticklebacks/blob/main/logfiles/Sticklebucket_10/rec_regions/FG.X24.027/FG.X24.027.log)).
+Note that the automated extraction process writes intermediate files during the extraction process which facilitate the handling of the data (this process takes about 3 minutes per scan).
+These files are technically not necessary for the process, but we still accounted for the time spent to write them.
+In addition, human-readable log files documenting the cropping position in the encompassing dataset and the crop extent, as well as images for double-checking the process are written to disk, which the manual process does not provide reproducibly.
+This enables reproducible double-checking and confirmation of the process after the fact (see this [direct link for one such log file](https://github.com/habi/sticklebacks/blob/main/logfiles/Sticklebucket_10/rec_regions/FG.X24.027/FG.X24.027.log) and [one such image](https://github.com/habi/sticklebacks/blob/main/logfiles/Sticklebucket_10/Sticklebucket_10.rec.Labels.Check.png)).
 
 The extraction and sampling process lead to a total of ~64 GB of `.nrrd` files, which were assessed as specified before.
 

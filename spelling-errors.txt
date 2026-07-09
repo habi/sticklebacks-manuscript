@@ -84,7 +84,7 @@ Stratovan
 Sulser
 sulserrb
 thresholded
-thresholding
+Thresholding
 TMAG
 unbaited
 uncropped
