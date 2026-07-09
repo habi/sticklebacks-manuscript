@@ -15,10 +15,10 @@ branchialus
 Bruker
 Burgergemeinde
 centroid
-ceratobranchial
+Ceratobranchial
 ceratobranchials
 cpeichel
-csv
+CSV
 curation
 EB
 ecotype
