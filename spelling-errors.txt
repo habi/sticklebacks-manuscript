@@ -55,7 +55,7 @@ NRecon
 obliquus
 OpenSCAD
 Otsu
-pca
+PCA
 Peichel
 pharyngobranchial
 pharyngobranchials
@@ -84,7 +84,7 @@ Stratovan
 Sulser
 sulserrb
 thresholded
-thresholding
+Thresholding
 TMAG
 unbaited
 uncropped
