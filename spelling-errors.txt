@@ -6,7 +6,7 @@ allometry
 AUP
 Baltzerstrasse
 basibranchials
-benthic
+Benthic
 benthos
 binarized
 Biomedisa
@@ -50,12 +50,11 @@ microtomography
 MIP
 morphometric
 morphometrics
-multiscan
 NRecon
 obliquus
 OpenSCAD
 Otsu
-PCA
+pca
 Peichel
 pharyngobranchial
 pharyngobranchials
@@ -66,10 +65,9 @@ PNGs
 pre
 raker
 rakers
-replicability
+reproducibility
 reproducibly
 Rolly
-Rsq
 Ruslan
 RuslanHlushchuk
 ScanningDetails
@@ -84,7 +82,7 @@ Stratovan
 Sulser
 sulserrb
 thresholded
-Thresholding
+thresholding
 TMAG
 unbaited
 uncropped
