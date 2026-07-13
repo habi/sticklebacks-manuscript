@@ -5,7 +5,7 @@ keywords:
 - sticklebacks
 - ecology
 lang: en-US
-date-meta: '2026-07-10'
+date-meta: '2026-07-13'
 author-meta:
 - David Haberthür
 - Ben Sulser
@@ -23,11 +23,11 @@ header-includes: |
   <meta name="citation_title" content="microCT imaging of 216 three-spined stickleback" />
   <meta property="og:title" content="microCT imaging of 216 three-spined stickleback" />
   <meta property="twitter:title" content="microCT imaging of 216 three-spined stickleback" />
-  <meta name="dc.date" content="2026-07-10" />
-  <meta name="citation_publication_date" content="2026-07-10" />
-  <meta property="article:published_time" content="2026-07-10" />
-  <meta name="dc.modified" content="2026-07-10T13:03:12+00:00" />
-  <meta property="article:modified_time" content="2026-07-10T13:03:12+00:00" />
+  <meta name="dc.date" content="2026-07-13" />
+  <meta name="citation_publication_date" content="2026-07-13" />
+  <meta property="article:published_time" content="2026-07-13" />
+  <meta name="dc.modified" content="2026-07-13T14:41:59+00:00" />
+  <meta property="article:modified_time" content="2026-07-13T14:41:59+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -53,9 +53,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/9f83047295e4ff4fd00ab76a6f5b3b0e1f965bf5/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/9f83047295e4ff4fd00ab76a6f5b3b0e1f965bf5/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/9f83047295e4ff4fd00ab76a6f5b3b0e1f965bf5/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/6fda52d061564d3854b65c13467017eb5d329d48/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/6fda52d061564d3854b65c13467017eb5d329d48/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/6fda52d061564d3854b65c13467017eb5d329d48/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,12 +77,12 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/9f83047295e4ff4fd00ab76a6f5b3b0e1f965bf5/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/6fda52d061564d3854b65c13467017eb5d329d48/))
 was generated
-from [habi/sticklebacks-manuscript@9f83047](https://github.com/habi/sticklebacks-manuscript/tree/9f83047295e4ff4fd00ab76a6f5b3b0e1f965bf5)
-on July 10, 2026.
+from [habi/sticklebacks-manuscript@6fda52d](https://github.com/habi/sticklebacks-manuscript/tree/6fda52d061564d3854b65c13467017eb5d329d48)
+on July 13, 2026.
 <br>
-This version contains 4953 words.
+This version contains 4956 words.
 </em></small>
 
 
@@ -193,7 +193,7 @@ This work is embedded within the [Genomics axis](https://alaskastickleback.com/g
 
 ## Micro-computed tomography
 
-X-ray microtomography (μCT) is an indispensable tool to gain non-destructive insights into the inner structure of highly diverse samples, specifically for specimens studied in the biomedical sciences [@doi:10.1186/s12915-020-0753-2].
+X-ray micro-computed tomography (micro-CT) imaging is an indispensable tool to gain non-destructive insights into the inner structure of highly diverse samples, specifically for specimens studied in the biomedical sciences [@doi:10.1186/s12915-020-0753-2].
 Microtomographic imaging is ideally suited to non-destructively assess the morphology of different fish species [@doi:10.1093/iob/obad008], including the internal anatomy and small structures difficult to quantify without additional preparation.
 While these structures can be rendered by hand by a skilled investigator, the time and cost required per specimen is inefficient for the scale required via eco-evolutionary study and requires destruction of the mandibular and cranial anatomy of the specimen.
 This project aims to address these gaps, demonstrating a novel pipeline for automatic splitting and rendering of multi-specimen scans for mass sampling, creating a dataset with consistent parameters that can used as input for downstream machine learning approaches [@doi:10.1038/s41467-020-19303-w] to aid in the segmentation of individual bony structures in each scan.
@@ -207,14 +207,14 @@ Once a Biomedisa model is trained, the entire pipeline runs from multi-specimen 
 ### Sample procurement and preparation
 
 The specimens used for this study were collected from source lakes as part of the FITNESS project in the region of Cook Inlet, Alaska.
-Fish were collected using unbaited minnow traps in two separate field seasons, the first taking place from May 26–June 10, 2023 and the second taking place from May 25–June 11, 2024.
+Fish were collected using unbaited minnow traps in two separate field seasons, the first taking place from May 26--June 10, 2023 and the second taking place from May 25--June 11, 2024.
 Specimen collections were collected from a random sample of 30 fish from each lake, under Alaska Department of Fish and Game (ADFG) permits SF2023-030 and P-24-015 for 2023 and 2024, respectively.
 Fish were euthanized with MS-222, photographed, labeled and preserved in 10% formalin in individual bags, all under Animal Use Protocol (AUP) MCGL-8265.
 At the end of each field season, samples were shipped from Anchorage (AK, USA) to Bern (BE, CH) where they were stored until scanning.
 
 Due to their inherent contrast difference to the surrounding tissue, the structures of interest in this study (teeth and bones, i.e., jaws and skull) are well visualized in unstained samples, hence no further preparation of the fish was necessary.
 
-### μCT imaging
+### micro-CT imaging
 
 In a small pilot study, we determined the optimal scanning parameters to meet the constraints on total scanning time, resolution, and sample handling.
 To optimize for these constraints, we scanned all the sticklebacks in batches of six fish in a custom-made 3D printed sample holder in a single scan.
@@ -318,7 +318,7 @@ Linear fits were further investigated via the `pairwise()` function to analyze d
 
 ## Results {.page_break_before}
 
-### μCT data
+### micro-CT imaging data
 
 Acquisition and reconstruction of fish datasets were successful and enabled high-throughput processing.
 A total of 216 unique specimens were scanned in a total scanning duration of 18 days, 12 hours, and 6 minutes.
@@ -436,7 +436,7 @@ As with most machine learning approaches, it is also important to ensure that th
 ## Conclusion {.page_break_before}
 
 The provided pipeline enables repeatable, high-throughput analysis of 3D shape in stickleback specimens.
-Although applied here to stickleback specimens, the described methods can readily be applied to large-scale sampling efforts of multiple taxonomic groups, with data acquired on many different μCT machines and different sample holders, due to the use of simple region detection and reproducible logging.
+Although applied here to stickleback specimens, the described methods can readily be applied to large-scale sampling efforts of multiple taxonomic groups, with data acquired on many different micro-CT machines and different sample holders, due to the use of simple region detection and reproducible logging.
 The extraction of individual specimens from multi-specimen scans is efficient, using a custom 3D-printed sample holder and automated splitting procedure to reduce the need for active operator time and maximize automated processing.
 
 The reproducible scans and their consistent quality rapidly provide a large amount of similar data ideal for training machine learning models.

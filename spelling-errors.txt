@@ -6,11 +6,11 @@ allometry
 AUP
 Baltzerstrasse
 basibranchials
-Benthic
+benthic
 benthos
 binarized
 Biomedisa
-Branchial
+branchial
 branchialus
 Bruker
 Burgergemeinde
@@ -82,7 +82,7 @@ Stratovan
 Sulser
 sulserrb
 thresholded
-thresholding
+Thresholding
 TMAG
 unbaited
 uncropped
