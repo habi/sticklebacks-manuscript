@@ -26,8 +26,8 @@ header-includes: |
   <meta name="dc.date" content="2026-07-13" />
   <meta name="citation_publication_date" content="2026-07-13" />
   <meta property="article:published_time" content="2026-07-13" />
-  <meta name="dc.modified" content="2026-07-13T14:41:59+00:00" />
-  <meta property="article:modified_time" content="2026-07-13T14:41:59+00:00" />
+  <meta name="dc.modified" content="2026-07-13T14:44:29+00:00" />
+  <meta property="article:modified_time" content="2026-07-13T14:44:29+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -53,9 +53,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/6fda52d061564d3854b65c13467017eb5d329d48/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/6fda52d061564d3854b65c13467017eb5d329d48/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/6fda52d061564d3854b65c13467017eb5d329d48/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/881c5ffe5b5c7a85331ed2dc3b7f04ad94da3c49/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/881c5ffe5b5c7a85331ed2dc3b7f04ad94da3c49/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/881c5ffe5b5c7a85331ed2dc3b7f04ad94da3c49/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,12 +77,12 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/6fda52d061564d3854b65c13467017eb5d329d48/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/881c5ffe5b5c7a85331ed2dc3b7f04ad94da3c49/))
 was generated
-from [habi/sticklebacks-manuscript@6fda52d](https://github.com/habi/sticklebacks-manuscript/tree/6fda52d061564d3854b65c13467017eb5d329d48)
+from [habi/sticklebacks-manuscript@881c5ff](https://github.com/habi/sticklebacks-manuscript/tree/881c5ffe5b5c7a85331ed2dc3b7f04ad94da3c49)
 on July 13, 2026.
 <br>
-This version contains 4956 words.
+This version contains 5094 words.
 </em></small>
 
 
@@ -195,7 +195,9 @@ This work is embedded within the [Genomics axis](https://alaskastickleback.com/g
 
 X-ray micro-computed tomography (micro-CT) imaging is an indispensable tool to gain non-destructive insights into the inner structure of highly diverse samples, specifically for specimens studied in the biomedical sciences [@doi:10.1186/s12915-020-0753-2].
 Microtomographic imaging is ideally suited to non-destructively assess the morphology of different fish species [@doi:10.1093/iob/obad008], including the internal anatomy and small structures difficult to quantify without additional preparation.
-While these structures can be rendered by hand by a skilled investigator, the time and cost required per specimen is inefficient for the scale required via eco-evolutionary study and requires destruction of the mandibular and cranial anatomy of the specimen.
+
+While these structures can be rendered by hand by a skilled investigator with segmentation tools such as 3DSlicer [@doi:10.1007/978-1-4614-7657-3_19]-[@doi:10.1111/2041-210X.13669], the time and cost required per specimen is inefficient for the scale required via eco-evolutionary study and requires destruction of the mandibular and cranial anatomy of the specimen.
+
 This project aims to address these gaps, demonstrating a novel pipeline for automatic splitting and rendering of multi-specimen scans for mass sampling, creating a dataset with consistent parameters that can used as input for downstream machine learning approaches [@doi:10.1038/s41467-020-19303-w] to aid in the segmentation of individual bony structures in each scan.
 Once a Biomedisa model is trained, the entire pipeline runs from multi-specimen input to reconstructed anatomical structures for each specimen in a fraction of the time and resources required for traditional analysis.
 
@@ -208,11 +210,13 @@ Once a Biomedisa model is trained, the entire pipeline runs from multi-specimen 
 
 The specimens used for this study were collected from source lakes as part of the FITNESS project in the region of Cook Inlet, Alaska.
 Fish were collected using unbaited minnow traps in two separate field seasons, the first taking place from May 26--June 10, 2023 and the second taking place from May 25--June 11, 2024.
-Specimen collections were collected from a random sample of 30 fish from each lake, under Alaska Department of Fish and Game (ADFG) permits SF2023-030 and P-24-015 for 2023 and 2024, respectively.
+Specimen collections were collected from a random sample of up to 30 fish from each lake, under Alaska Department of Fish and Game (ADFG) permits SF2023-030 and P-24-015 for 2023 and 2024, respectively.
 Fish were euthanized with MS-222, photographed, labeled and preserved in 10% formalin in individual bags, all under Animal Use Protocol (AUP) MCGL-8265.
-At the end of each field season, samples were shipped from Anchorage (AK, USA) to Bern (BE, CH) where they were stored until scanning.
+At the end of each field season, samples were shipped from Anchorage (AK, USA) to Bern (BE, CH) where they were stored until scanning. 
+The total number of fish for each lake are: Finger lake (66), Spirit lake (41), Watson lake (52), Walby lake (20), Tern lake (26) for a total of 251 specimens.
+As an additional step, fish collected in the 2024 field season had DNA fin clips taken via a small piece of the caudal fin in order to sex each individual. Samples underwent hotshot DNA extraction protocol [doi:10.2144/000112619] and subsequent PCR followed Stickleback LRRc61 Sexing with primers for this purpose (see Archeambeault et al., 2020 [doi:10.1002/evl3.175])
 
-Due to their inherent contrast difference to the surrounding tissue, the structures of interest in this study (teeth and bones, i.e., jaws and skull) are well visualized in unstained samples, hence no further preparation of the fish was necessary.
+Due to their inherent contrast difference to the surrounding tissue, the structures of interest in this study (teeth and bones, i.e., jaws and skull) are well visualized in unstained samples, hence no further preparation of the fish was necessary. 
 
 ### micro-CT imaging
 
@@ -222,7 +226,7 @@ This holder was designed in [OpenSCAD](https://openscad.org/) (OpenSCAD Develope
 Both files are part of a library of 3D-printable sample holders for tomographic imaging [@doi:10.5281/zenodo.2587555].
 
 Tomographic imaging was performed on a [Bruker SkyScan 2214](https://www.bruker.com/en/products-and-solutions/diffractometers-and-x-ray-microscopes/3d-x-ray-microscopes/skyscan-2214.html) (Bruker microCT, Kontich, Belgium) at the Institute of Anatomy, University of Bern, Switzerland.
-In total, we performed 44 scans, each scan usually containing six fish in the sample holder (5 on average).
+In total, we performed 44 scans, each scan usually containing six fish in the sample holder.
 
 The relevant details of each scan are summarized in a table in the [Supplementary Materials]; a short overview of the scanning parameters is given below.
 The X-ray source was set to a voltage of 60 kV and a current of around 110 µA for all but one scan where we used a source voltage of 49 kV and 159 µA due to operator error.
@@ -296,7 +300,7 @@ Once rendered, these bones were exported as a colored labelmap alongside the `NR
 
 As a group, a dataset of 51 specimens (including `NRRD` and `.label` files) was passed to Biomedisa [@doi:10.1038/s41467-020-19303-w] to train a segmentation model.
 We allowed for rotation of 180° to account for possible specimen variability, and an 80/20 split between training and validation data.
-The model was trained with a batch size of 24 and 50 epochs, using a network architecture of 32-64-128-256-512.
+The model was trained with a batch size of 24 and 50 epochs, using a network architecture of 32-64-128-256-512. The final model performs well, with a dice score of 0.9159 on the validation dataset. Manual touchups were only needed and performed where bones were extremeley close together (causing their appearance to be "stuck" in the final render; this is an issue with manual segementation as well). 
 
 #### Landmarking of models
 

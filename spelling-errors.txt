@@ -3,6 +3,7 @@ adductor
 ADFG
 Algorithmically
 allometry
+Archeambeault
 AUP
 Baltzerstrasse
 basibranchials
@@ -15,16 +16,18 @@ branchialus
 Bruker
 Burgergemeinde
 centroid
-ceratobranchial
+Ceratobranchial
 ceratobranchials
 cpeichel
-csv
+CSV
 curation
+DSlicer
 EB
 ecotype
 ecotypes
 epaxial
 epibranchials
+extremeley
 Gasterosteus
 genotypic
 geomorph
@@ -43,6 +46,7 @@ labelmap
 landmarked
 Landmarking
 limnetic
+LRRc
 MCGL
 microCT
 Microtomographic
@@ -55,6 +59,7 @@ obliquus
 OpenSCAD
 Otsu
 pca
+PCR
 Peichel
 pharyngobranchial
 pharyngobranchials
@@ -71,6 +76,7 @@ Rolly
 Ruslan
 RuslanHlushchuk
 ScanningDetails
+segementation
 segmentations
 semilandmark
 semilandmarks
@@ -82,9 +88,11 @@ Stratovan
 Sulser
 sulserrb
 thresholded
-Thresholding
+thresholding
 TMAG
+touchups
 unbaited
 uncropped
 ventralis
 voxel
+Walby
