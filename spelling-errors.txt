@@ -16,10 +16,10 @@ branchialus
 Bruker
 Burgergemeinde
 centroid
-Ceratobranchial
+ceratobranchial
 ceratobranchials
 cpeichel
-CSV
+csv
 curation
 DSlicer
 EB
@@ -80,6 +80,7 @@ segementation
 segmentations
 semilandmark
 semilandmarks
+SheilaChristen
 SkyScan
 SlicerMorph
 spined
@@ -88,7 +89,7 @@ Stratovan
 Sulser
 sulserrb
 thresholded
-thresholding
+Thresholding
 TMAG
 touchups
 unbaited

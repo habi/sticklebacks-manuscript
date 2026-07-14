@@ -5,7 +5,7 @@ keywords:
 - sticklebacks
 - ecology
 lang: en-US
-date-meta: '2026-07-13'
+date-meta: '2026-07-14'
 author-meta:
 - David Haberthür
 - Ben Sulser
@@ -23,11 +23,11 @@ header-includes: |
   <meta name="citation_title" content="microCT imaging of 216 three-spined stickleback" />
   <meta property="og:title" content="microCT imaging of 216 three-spined stickleback" />
   <meta property="twitter:title" content="microCT imaging of 216 three-spined stickleback" />
-  <meta name="dc.date" content="2026-07-13" />
-  <meta name="citation_publication_date" content="2026-07-13" />
-  <meta property="article:published_time" content="2026-07-13" />
-  <meta name="dc.modified" content="2026-07-13T14:44:29+00:00" />
-  <meta property="article:modified_time" content="2026-07-13T14:44:29+00:00" />
+  <meta name="dc.date" content="2026-07-14" />
+  <meta name="citation_publication_date" content="2026-07-14" />
+  <meta property="article:published_time" content="2026-07-14" />
+  <meta name="dc.modified" content="2026-07-14T09:14:33+00:00" />
+  <meta property="article:modified_time" content="2026-07-14T09:14:33+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -41,6 +41,7 @@ header-includes: |
   <meta name="citation_author_institution" content="Evolutionary Ecology Group, Institute of Ecology and Evolution, University of Bern, Baltzerstrasse 6, 3012 Bern, Switzerland" />
   <meta name="citation_author_orcid" content="0000-0002-8750-0942" />
   <meta name="citation_author" content="Sheila Christen" />
+  <meta name="citation_author_institution" content="Evolutionary Ecology Group, Institute of Ecology and Evolution, University of Bern, Baltzerstrasse 6, 3012 Bern," />
   <meta name="citation_author" content="Catherine L. Peichel" />
   <meta name="citation_author_institution" content="Division of Evolutionary Ecology, Institute of Ecology and Evolution, University of Bern, Baltzerstrasse 6, 3012 Bern, Switzerland" />
   <meta name="citation_author_orcid" content="0000-0002-7731-8944" />
@@ -53,9 +54,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/881c5ffe5b5c7a85331ed2dc3b7f04ad94da3c49/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/881c5ffe5b5c7a85331ed2dc3b7f04ad94da3c49/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/881c5ffe5b5c7a85331ed2dc3b7f04ad94da3c49/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/0a18636e73bddd87bf881b2f3801e0aaf26f39a2/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/0a18636e73bddd87bf881b2f3801e0aaf26f39a2/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/0a18636e73bddd87bf881b2f3801e0aaf26f39a2/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,10 +78,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/881c5ffe5b5c7a85331ed2dc3b7f04ad94da3c49/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/0a18636e73bddd87bf881b2f3801e0aaf26f39a2/))
 was generated
-from [habi/sticklebacks-manuscript@881c5ff](https://github.com/habi/sticklebacks-manuscript/tree/881c5ffe5b5c7a85331ed2dc3b7f04ad94da3c49)
-on July 13, 2026.
+from [habi/sticklebacks-manuscript@0a18636](https://github.com/habi/sticklebacks-manuscript/tree/0a18636e73bddd87bf881b2f3801e0aaf26f39a2)
+on July 14, 2026.
 <br>
 This version contains 5094 words.
 </em></small>
@@ -113,12 +114,16 @@ This version contains 5094 words.
     <br>
   <small>
      Evolutionary Ecology Group, Institute of Ecology and Evolution, University of Bern, Baltzerstrasse 6, 3012 Bern, Switzerland
-     · Funded by Bern Burgergemeinde
+     · Funded by Burgergemeinde Bern
   </small>
 
 + **Sheila Christen**
   <br>
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [SheilaChristen](https://github.com/SheilaChristen)
+    <br>
   <small>
+     Evolutionary Ecology Group, Institute of Ecology and Evolution, University of Bern, Baltzerstrasse 6, 3012 Bern,
   </small>
 
 + **Catherine L. Peichel**
@@ -212,11 +217,12 @@ The specimens used for this study were collected from source lakes as part of th
 Fish were collected using unbaited minnow traps in two separate field seasons, the first taking place from May 26--June 10, 2023 and the second taking place from May 25--June 11, 2024.
 Specimen collections were collected from a random sample of up to 30 fish from each lake, under Alaska Department of Fish and Game (ADFG) permits SF2023-030 and P-24-015 for 2023 and 2024, respectively.
 Fish were euthanized with MS-222, photographed, labeled and preserved in 10% formalin in individual bags, all under Animal Use Protocol (AUP) MCGL-8265.
-At the end of each field season, samples were shipped from Anchorage (AK, USA) to Bern (BE, CH) where they were stored until scanning. 
+At the end of each field season, samples were shipped from Anchorage (AK, USA) to Bern (BE, CH) where they were stored until scanning.
 The total number of fish for each lake are: Finger lake (66), Spirit lake (41), Watson lake (52), Walby lake (20), Tern lake (26) for a total of 251 specimens.
-As an additional step, fish collected in the 2024 field season had DNA fin clips taken via a small piece of the caudal fin in order to sex each individual. Samples underwent hotshot DNA extraction protocol [doi:10.2144/000112619] and subsequent PCR followed Stickleback LRRc61 Sexing with primers for this purpose (see Archeambeault et al., 2020 [doi:10.1002/evl3.175])
+As an additional step, fish collected in the 2024 field season had DNA fin clips taken via a small piece of the caudal fin in order to sex each individual.
+Samples underwent hotshot DNA extraction protocol [doi:10.2144/000112619] and subsequent PCR followed Stickleback LRRc61 Sexing with primers for this purpose (see Archeambeault et al., 2020 [doi:10.1002/evl3.175])
 
-Due to their inherent contrast difference to the surrounding tissue, the structures of interest in this study (teeth and bones, i.e., jaws and skull) are well visualized in unstained samples, hence no further preparation of the fish was necessary. 
+Due to their inherent contrast difference to the surrounding tissue, the structures of interest in this study (teeth and bones, i.e., jaws and skull) are well visualized in unstained samples, hence no further preparation of the fish was necessary.
 
 ### micro-CT imaging
 
@@ -292,7 +298,8 @@ An [interactive version of this figure](https://htmlpreview.github.io/?https://r
 After separation, the cropped image files were checked and rendered using 3D Slicer [@doi:10.1007/978-1-4614-7657-3_19] and the SlicerMorph extension [@doi:10.1111/2041-210X.13669].
 The individual elements of the branchial apparatus were rendered using a combination of thresholding and 'Split Islands' tools to separate the pharyngobranchials, epibranchials, basibranchials, hypobranchials and ceratobranchials (see Figure @fig:branchial_anatomy).
 
-![Example of Branchial Anatomy with CB1 and CB2 highlighted. Abbreviations: PB = pharyngobranchials, EB = epibranchials, BB = basibranchials, HB = hypobranchials, CB = ceratobranchials.](images/Branchial_Figure.png){#fig:branchial_anatomy}
+![Example of Branchial Anatomy with CB1 and CB2 highlighted.
+  Abbreviations: PB = pharyngobranchials, EB = epibranchials, BB = basibranchials, HB = hypobranchials, CB = ceratobranchials.](images/Branchial_Figure.png){#fig:branchial_anatomy}
 
 Once rendered, these bones were exported as a colored labelmap alongside the `NRRD` file from which they were segmented to pass to the Biomedisa program.
 
@@ -300,7 +307,9 @@ Once rendered, these bones were exported as a colored labelmap alongside the `NR
 
 As a group, a dataset of 51 specimens (including `NRRD` and `.label` files) was passed to Biomedisa [@doi:10.1038/s41467-020-19303-w] to train a segmentation model.
 We allowed for rotation of 180° to account for possible specimen variability, and an 80/20 split between training and validation data.
-The model was trained with a batch size of 24 and 50 epochs, using a network architecture of 32-64-128-256-512. The final model performs well, with a dice score of 0.9159 on the validation dataset. Manual touchups were only needed and performed where bones were extremeley close together (causing their appearance to be "stuck" in the final render; this is an issue with manual segementation as well). 
+The model was trained with a batch size of 24 and 50 epochs, using a network architecture of 32-64-128-256-512.
+The final model performs well, with a dice score of 0.9159 on the validation dataset.
+Manual touchups were only needed and performed where bones were extremeley close together (causing their appearance to be "stuck" in the final render; this is an issue with manual segementation as well).
 
 #### Landmarking of models
 
@@ -459,20 +468,20 @@ Finally, the 3D analysis step of the pipeline allows for insights from 3D data t
 
 
 
-- [Conceptualization](https://credit.niso.org/contributor-roles/conceptualization/): Ben Sulser, Ruslan Hlushchuk
-- [Data curation](https://credit.niso.org/contributor-roles/data-curation/): David Haberthür, Ben Sulser
-- [Formal analysis](https://credit.niso.org/contributor-roles/formal-analysis/): David Haberthür, Ben Sulser
+- [Conceptualization](https://credit.niso.org/contributor-roles/conceptualization/): Ben Sulser, Sheila Christen, Ruslan Hlushchuk
+- [Data curation](https://credit.niso.org/contributor-roles/data-curation/): David Haberthür, Ben Sulser, Sheila Christen
+- [Formal analysis](https://credit.niso.org/contributor-roles/formal-analysis/): David Haberthür, Ben Sulser, Sheila Christen
 - [Funding acquisition](https://credit.niso.org/contributor-roles/funding-acquisition/): Ben Sulser, Catherine L. Peichel, Ruslan Hlushchuk
-- [Investigation](https://credit.niso.org/contributor-roles/investigation/): David Haberthür, Ben Sulser
-- [Methodology](https://credit.niso.org/contributor-roles/methodology/): David Haberthür, Ben Sulser, Ruslan Hlushchuk
+- [Investigation](https://credit.niso.org/contributor-roles/investigation/): David Haberthür, Ben Sulser, Sheila Christen
+- [Methodology](https://credit.niso.org/contributor-roles/methodology/): David Haberthür, Ben Sulser, Sheila Christen, Ruslan Hlushchuk
 - [Project administration](https://credit.niso.org/contributor-roles/project-administration/): David Haberthür, Ben Sulser, Catherine L. Peichel, Ruslan Hlushchuk
-- [Resources](https://credit.niso.org/contributor-roles/resources/): Ben Sulser, Ruslan Hlushchuk
-- [Software](https://credit.niso.org/contributor-roles/software/): David Haberthür, Ben Sulser
+- [Resources](https://credit.niso.org/contributor-roles/resources/): Ben Sulser, Sheila Christen, Ruslan Hlushchuk
+- [Software](https://credit.niso.org/contributor-roles/software/): David Haberthür, Ben Sulser, Sheila Christen
 - [Supervision](https://credit.niso.org/contributor-roles/supervision/): Ben Sulser, Catherine L. Peichel, Ruslan Hlushchuk
-- [Validation](https://credit.niso.org/contributor-roles/validation/): David Haberthür, Ben Sulser
-- [Visualization](https://credit.niso.org/contributor-roles/visualization/): David Haberthür, Ben Sulser
+- [Validation](https://credit.niso.org/contributor-roles/validation/): David Haberthür, Ben Sulser, Sheila Christen
+- [Visualization](https://credit.niso.org/contributor-roles/visualization/): David Haberthür, Ben Sulser, Sheila Christen
 - [Writing – original draft](https://credit.niso.org/contributor-roles/writing---original-draft/): David Haberthür, Ben Sulser
-- [Writing – review & editing](https://credit.niso.org/contributor-roles/writing---review-&-editing/): David Haberthür, Ben Sulser, Catherine L. Peichel, Ruslan Hlushchuk
+- [Writing – review & editing](https://credit.niso.org/contributor-roles/writing---review-&-editing/): David Haberthür, Ben Sulser, Sheila Christen, Catherine L. Peichel, Ruslan Hlushchuk
 
 
 
@@ -480,11 +489,11 @@ Finally, the 3D analysis step of the pipeline allows for insights from 3D data t
 
 |Author|Competing Interests|Last Reviewed|
 |---|---|---|
-|David Haberthür|None|2026-01-14|
-|Ben Sulser|Nothing to Declare||
-|Sheila Christen|||
-|Catherine L. Peichel|none|2026-01-19|
-|Ruslan Hlushchuk|None|2026-01-19|
+|David Haberthür|Nothing to declare|2026-01-14|
+|Ben Sulser|Nothing to declare||
+|Sheila Christen|Nothing to declare|2026-07-13|
+|Catherine L. Peichel|Nothing to declare|2026-01-19|
+|Ruslan Hlushchuk|Nothing to declare|2026-01-19|
 
 
 ## Acknowledgments
