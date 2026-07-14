@@ -57,6 +57,8 @@ authors:
       string: "Nothing to declare"
       lastapproved: !!str
   - name: Sheila Christen
+    initials: SC
+    orcid: 0009-0008-3514-0800
     github: SheilaChristen
     email: sheila.christen00.christen@gmail.com
     affiliations:
@@ -67,11 +69,11 @@ authors:
          - Formal analysis
          - Investigation
          - Methodology
-         - Resources
-         - Software
          - Validation
          - Visualization
          - Writing – review & editing
+    funders:
+         - Burgergemeinde Bern
     coi:
       string: "Nothing to declare"
       lastapproved: !!str 2026-07-13
