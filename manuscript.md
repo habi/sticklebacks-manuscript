@@ -26,8 +26,8 @@ header-includes: |
   <meta name="dc.date" content="2026-07-14" />
   <meta name="citation_publication_date" content="2026-07-14" />
   <meta property="article:published_time" content="2026-07-14" />
-  <meta name="dc.modified" content="2026-07-14T09:14:33+00:00" />
-  <meta property="article:modified_time" content="2026-07-14T09:14:33+00:00" />
+  <meta name="dc.modified" content="2026-07-14T09:30:46+00:00" />
+  <meta property="article:modified_time" content="2026-07-14T09:30:46+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -42,6 +42,7 @@ header-includes: |
   <meta name="citation_author_orcid" content="0000-0002-8750-0942" />
   <meta name="citation_author" content="Sheila Christen" />
   <meta name="citation_author_institution" content="Evolutionary Ecology Group, Institute of Ecology and Evolution, University of Bern, Baltzerstrasse 6, 3012 Bern," />
+  <meta name="citation_author_orcid" content="0009-0008-3514-0800" />
   <meta name="citation_author" content="Catherine L. Peichel" />
   <meta name="citation_author_institution" content="Division of Evolutionary Ecology, Institute of Ecology and Evolution, University of Bern, Baltzerstrasse 6, 3012 Bern, Switzerland" />
   <meta name="citation_author_orcid" content="0000-0002-7731-8944" />
@@ -54,9 +55,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/0a18636e73bddd87bf881b2f3801e0aaf26f39a2/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/0a18636e73bddd87bf881b2f3801e0aaf26f39a2/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/0a18636e73bddd87bf881b2f3801e0aaf26f39a2/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/04476dd5ce3fef383e4fe81978a676e140c81c3d/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/04476dd5ce3fef383e4fe81978a676e140c81c3d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/04476dd5ce3fef383e4fe81978a676e140c81c3d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -78,9 +79,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/0a18636e73bddd87bf881b2f3801e0aaf26f39a2/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/04476dd5ce3fef383e4fe81978a676e140c81c3d/))
 was generated
-from [habi/sticklebacks-manuscript@0a18636](https://github.com/habi/sticklebacks-manuscript/tree/0a18636e73bddd87bf881b2f3801e0aaf26f39a2)
+from [habi/sticklebacks-manuscript@04476dd](https://github.com/habi/sticklebacks-manuscript/tree/04476dd5ce3fef383e4fe81978a676e140c81c3d)
 on July 14, 2026.
 <br>
 This version contains 5094 words.
@@ -119,11 +120,14 @@ This version contains 5094 words.
 
 + **Sheila Christen**
   <br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0009-0008-3514-0800](https://orcid.org/0009-0008-3514-0800)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [SheilaChristen](https://github.com/SheilaChristen)
     <br>
   <small>
      Evolutionary Ecology Group, Institute of Ecology and Evolution, University of Bern, Baltzerstrasse 6, 3012 Bern,
+     · Funded by Burgergemeinde Bern
   </small>
 
 + **Catherine L. Peichel**
@@ -475,8 +479,8 @@ Finally, the 3D analysis step of the pipeline allows for insights from 3D data t
 - [Investigation](https://credit.niso.org/contributor-roles/investigation/): David Haberthür, Ben Sulser, Sheila Christen
 - [Methodology](https://credit.niso.org/contributor-roles/methodology/): David Haberthür, Ben Sulser, Sheila Christen, Ruslan Hlushchuk
 - [Project administration](https://credit.niso.org/contributor-roles/project-administration/): David Haberthür, Ben Sulser, Catherine L. Peichel, Ruslan Hlushchuk
-- [Resources](https://credit.niso.org/contributor-roles/resources/): Ben Sulser, Sheila Christen, Ruslan Hlushchuk
-- [Software](https://credit.niso.org/contributor-roles/software/): David Haberthür, Ben Sulser, Sheila Christen
+- [Resources](https://credit.niso.org/contributor-roles/resources/): Ben Sulser, Ruslan Hlushchuk
+- [Software](https://credit.niso.org/contributor-roles/software/): David Haberthür, Ben Sulser
 - [Supervision](https://credit.niso.org/contributor-roles/supervision/): Ben Sulser, Catherine L. Peichel, Ruslan Hlushchuk
 - [Validation](https://credit.niso.org/contributor-roles/validation/): David Haberthür, Ben Sulser, Sheila Christen
 - [Visualization](https://credit.niso.org/contributor-roles/visualization/): David Haberthür, Ben Sulser, Sheila Christen

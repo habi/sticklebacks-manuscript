@@ -11,7 +11,7 @@ benthic
 benthos
 binarized
 Biomedisa
-branchial
+Branchial
 branchialus
 Bruker
 Burgergemeinde
@@ -58,7 +58,7 @@ NRecon
 obliquus
 OpenSCAD
 Otsu
-pca
+PCA
 PCR
 Peichel
 pharyngobranchial
