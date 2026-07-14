@@ -28,10 +28,9 @@ authors:
       - Writing – original draft
       - Writing – review & editing
     coi:
-      string: "None"
+      string: "Nothing to declare"
       lastapproved: !!str 2026-01-14
   - name: Ben Sulser
-    initials: XYZ
     orcid: 0000-0002-8750-0942
     github: sulserrb
     email: r.benjamin.sulser@unibe.ch
@@ -53,37 +52,29 @@ authors:
       - Writing – original draft
       - Writing – review & editing
     funders:
-      - Bern Burgergemeinde 
+      - Burgergemeinde Bern
     coi:
-      string: "Nothing to Declare"
+      string: "Nothing to declare"
       lastapproved: !!str
   - name: Sheila Christen
-    # initials: XYZ
-    # orcid: 0000-0001-2345-6789
-    # github: janedoe
+    github: SheilaChristen
     email: sheila.christen00.christen@gmail.com
-    # affiliations:
-    #  - Exemplary institute, Some University, 123 Example St, City, Country
-    # contributions:
+    affiliations:
+      - Evolutionary Ecology Group, Institute of Ecology and Evolution, University of Bern, Baltzerstrasse 6, 3012 Bern, 
+    contributions:
          - Conceptualization
          - Data curation
          - Formal analysis
-    #     - Funding acquisition
          - Investigation
          - Methodology
-    #     - Project administration
          - Resources
          - Software
-    #     - Supervision
          - Validation
          - Visualization
-    #     - Writing – original draft
-    #     - Writing – review & editing
-    #   funders:
-    #     - some exemplary institution (Grant 123-456-789)
+         - Writing – review & editing
     coi:
-      string: ""
-      lastapproved: !!str
+      string: "Nothing to declare"
+      lastapproved: !!str 2026-07-13
     corresponding: false
   - name: Catherine L. Peichel
     initials: CLP
@@ -100,7 +91,7 @@ authors:
     funders:
       - Swiss National Science Foundation (TMAG-3_209309/1)  
     coi:
-      string: "none"
+      string: "Nothing to declare"
       lastapproved: !!str 2026-01-19
     corresponding: false
   - name: Ruslan Hlushchuk
@@ -119,6 +110,6 @@ authors:
         - Supervision
         - Writing – review & editing 
     coi:
-      string: "None"
+      string: "Nothing to declare"
       lastapproved: !!str 2026-01-19
     corresponding: true
