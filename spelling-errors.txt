@@ -16,7 +16,7 @@ branchialus
 Bruker
 Burgergemeinde
 centroid
-ceratobranchial
+Ceratobranchial
 ceratobranchials
 cpeichel
 csv
@@ -58,7 +58,7 @@ NRecon
 obliquus
 OpenSCAD
 Otsu
-pca
+PCA
 PCR
 Peichel
 pharyngobranchial
