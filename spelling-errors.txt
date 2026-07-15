@@ -11,7 +11,7 @@ benthic
 benthos
 binarized
 Biomedisa
-Branchial
+branchial
 branchialus
 Bruker
 Burgergemeinde
@@ -58,7 +58,7 @@ NRecon
 obliquus
 OpenSCAD
 Otsu
-PCA
+pca
 PCR
 Peichel
 pharyngobranchial
@@ -89,7 +89,7 @@ Stratovan
 Sulser
 sulserrb
 thresholded
-Thresholding
+thresholding
 TMAG
 touchups
 unbaited
