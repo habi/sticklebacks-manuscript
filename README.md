@@ -4,14 +4,14 @@
 
 [![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://habi.github.io/sticklebacks-manuscript/)
 [![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://habi.github.io/sticklebacks-manuscript/manuscript.pdf)
+[![DOCX Manuscript](https://img.shields.io/badge/manuscript-DOCX-blue.svg)](https://github.com/habi/sticklebacks-manuscript/raw/output/manuscript.docx)
 [![GitHub Actions Status](https://github.com/habi/sticklebacks-manuscript/workflows/Manubot/badge.svg)](https://github.com/habi/sticklebacks-manuscript/actions)
 
 ## Manuscript description
 
 <!-- usage note: edit this section. -->
 
-This repository is a template manuscript (a.k.a. rootstock).
-Actual manuscript instances will clone this repository (see [`SETUP.md`](SETUP.md)) and replace this paragraph with a description of their manuscript.
+This repository generates the manurscript on our work on tomographic imaging of a bunch of three-spined stickleback (*Gasterosteus aculeatus*).
 
 ## Manubot
 
