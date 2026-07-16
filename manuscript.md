@@ -26,8 +26,8 @@ header-includes: |
   <meta name="dc.date" content="2026-07-16" />
   <meta name="citation_publication_date" content="2026-07-16" />
   <meta property="article:published_time" content="2026-07-16" />
-  <meta name="dc.modified" content="2026-07-16T16:51:51+00:00" />
-  <meta property="article:modified_time" content="2026-07-16T16:51:51+00:00" />
+  <meta name="dc.modified" content="2026-07-16T18:30:02+00:00" />
+  <meta property="article:modified_time" content="2026-07-16T18:30:02+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -55,9 +55,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/a653a82305f8636f0f87070cd4c03702189f6d8f/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/a653a82305f8636f0f87070cd4c03702189f6d8f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/a653a82305f8636f0f87070cd4c03702189f6d8f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/e697ad689c2bd51dfc45c8509546e3c46d6f0a4b/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/e697ad689c2bd51dfc45c8509546e3c46d6f0a4b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/e697ad689c2bd51dfc45c8509546e3c46d6f0a4b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -79,9 +79,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/a653a82305f8636f0f87070cd4c03702189f6d8f/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/e697ad689c2bd51dfc45c8509546e3c46d6f0a4b/))
 was generated
-from [habi/sticklebacks-manuscript@a653a82](https://github.com/habi/sticklebacks-manuscript/tree/a653a82305f8636f0f87070cd4c03702189f6d8f)
+from [habi/sticklebacks-manuscript@e697ad6](https://github.com/habi/sticklebacks-manuscript/tree/e697ad689c2bd51dfc45c8509546e3c46d6f0a4b)
 on July 16, 2026.
 <br>
 This version contains 5105 words.
@@ -207,7 +207,7 @@ Microtomographic imaging is ideally suited to non-destructively assess the morph
 
 While these structures can be rendered by hand by a skilled investigator with segmentation tools such as 3DSlicer [@doi:10.1007/978-1-4614-7657-3_19]-[@doi:10.1111/2041-210X.13669], the time and cost required per specimen is inefficient for the scale required via eco-evolutionary study and requires destruction of the mandibular and cranial anatomy of the specimen.
 
-This project aims to address these gaps, demonstrating a novel pipeline for automatic splitting and rendering of multi-specimen scans for mass sampling, creating a dataset with consistent parameters that can used as input for downstream machine learning approaches [@doi:10.1038/s41467-020-19303-w] to aid in the segmentation of individual bony structures in each scan.
+This project aims to address these gaps, demonstrating a novel pipeline for automatic splitting and rendering of multi-specimen scans for mass sampling, creating a dataset with consistent parameters that can be used as input for downstream machine learning approaches [@doi:10.1038/s41467-020-19303-w] to aid in the segmentation of individual bony structures in each scan.
 Once a Biomedisa model is trained, the entire pipeline runs from multi-specimen input to reconstructed anatomical structures for each specimen in a fraction of the time and resources required for traditional analysis.
 
 
@@ -219,12 +219,12 @@ Once a Biomedisa model is trained, the entire pipeline runs from multi-specimen 
 
 The specimens used for this study were collected from source lakes as part of the FITNESS project in the region of Cook Inlet, Alaska.
 Fish were collected using unbaited minnow traps in two separate field seasons, the first taking place from May 26--June 10, 2023 and the second taking place from May 25--June 11, 2024.
-Specimen collections were collected from a random sample of up to 30 fish from each lake, under Alaska Department of Fish and Game (ADFG) permits SF2023-030 and P-24-015 for 2023 and 2024, respectively.
+Specimens were collected from a random sample of up to 30 fish from each lake, under Alaska Department of Fish and Game (ADFG) permits SF2023-030 and P-24-015 for 2023 and 2024, respectively.
 Fish were euthanized with MS-222, photographed, labeled and preserved in 10% formalin in individual bags, all under Animal Use Protocol (AUP) MCGL-8265.
 At the end of each field season, samples were shipped from Anchorage (AK, USA) to Bern (BE, CH) where they were stored until scanning.
 The total number of fish for each lake are: Watson lake (52), Finger lake (48), Spirit lake (46), South Rolly lake (35), Walby lake (20), and Tern lake (14) for a total of 215 specimens.
 As an additional step, fish collected in the 2024 field season had DNA fin clips taken via a small piece of the caudal fin in order to sex each individual.
-Samples underwent hotshot DNA extraction protocol [doi:10.2144/000112619] and subsequent PCR followed Stickleback LRRc61 Sexing with primers for this purpose (see Archeambeault et al., 2020 [doi:10.1002/evl3.175])
+Samples underwent hotshot DNA extraction protocol [@doi:10.2144/000112619] and subsequent PCR followed Stickleback LRRc61 Sexing with primers for this purpose (see Archambeault et al., 2020 [@doi:10.1002/evl3.175]).
 
 Due to their inherent contrast difference to the surrounding tissue, the structures of interest in this study (teeth and bones, i.e., jaws and skull) are well visualized in unstained samples, hence no further preparation of the fish was necessary.
 
@@ -313,7 +313,7 @@ As a group, a dataset of 51 specimens (including `NRRD` and `.label` files) was 
 We allowed for rotation of 180° to account for possible specimen variability, and an 80/20 split between training and validation data.
 The model was trained with a batch size of 24 and 50 epochs, using a network architecture of 32-64-128-256-512.
 The final model performs well, with a dice score of 0.9159 on the validation dataset.
-Manual touchups were only needed and performed where bones were extremeley close together (causing their appearance to be "stuck" in the final render; this is an issue with manual segementation as well).
+Manual touchups were only needed and performed where bones were extremely close together (causing their appearance to be "stuck" in the final render; this is an issue with manual segmentation as well).
 
 #### Landmarking of models
 
@@ -339,7 +339,7 @@ Linear fits were further investigated via the `pairwise()` function to analyze d
 
 Acquisition and reconstruction of fish datasets were successful and enabled high-throughput processing.
 A total of 215 unique specimens were scanned in 38 different scans with a total scanning duration of nearly 16 days.
-We acquired 136838 projections, reconstructed into a total of 154622 reconstructions, resulting in approximately 4000 reconstrucions files per scan (N=38).
+We acquired 136838 projections, reconstructed into a total of 154622 reconstructions, resulting in approximately 4000 reconstruction PNG files per scan (N=38).
 
 ### Fish separation
 
@@ -434,14 +434,14 @@ However, we caution that the greater number of lakes and specimens available for
 This pipeline will allow for more extensive analysis from future sampling years to confirm these findings.
 
 Within CB2, limnetic fish (and particularly those from South Rolly lake) appear to have narrower, less keeled bones than benthic fish.
-The muscles that attach to the ceratobranchials (*m. adductor branchialus*, *m. abductor filament*, and *m. obliquus ventralis*) are attached along the lateral surfaces of these bones.
+The muscles that attach to the ceratobranchials (*m. adductor branchialis*, *m. abductor filament*, and *m. obliquus ventralis*) are attached along the lateral surfaces of these bones.
 The increased surface area observed in benthic fish may provide greater area for muscle attachment, which may enhance the ability of fish to abduct these structures during water filtration [@doi:10.1007/s10228-004-0251-5; @hdl:2268/14698].
 While dietary analyses of these fish are still ongoing, these findings suggest that the South Rolly population may have unique dietary specializations and would be expected to feed differently than fish from the other lakes in this study.
 In terms of reintroduction, populations from this lake might be expected to fare better than others in terms of limnetic specialization.
 Indeed, fish with South Rolly heritage outperform Spirit lake fish in every transplant experiment in which both populations are included as a part of the FITNESS project [@doi:10.64898/2026.02.04.699496].
 
 The different response of the first and second ceratobranchial raises the possibility of a modular response to dietary shifts within the branchial basket.
-Studies treating the branchial basket as a single structure, focusing on the first ceratobranchial, or investigating external morphology might potentially miss significant changes in shape and size of these structures---and this pipeline has provides a wealth of data with which to perform a follow-up study.
+Studies treating the branchial basket as a single structure, focusing on the first ceratobranchial, or investigating external morphology might potentially miss significant changes in shape and size of these structures---and this pipeline provides a wealth of data with which to perform a follow-up study.
 
 ### Future improvements and issues
 
@@ -489,7 +489,7 @@ Finally, the 3D analysis step of the pipeline allows for insights from 3D data t
 
 
 
-## Competing Interest
+## Competing Interests
 
 |Author|Competing Interests|Last Reviewed|
 |---|---|---|
@@ -518,7 +518,7 @@ A copy of each log file containing *all* scanning parameters is available in a [
 
 #### Jupyter; (pre)processing of tomographic data
 
-All Jupyter scripts to process the acquire tomographic data as described in the text are found [online at GitHub](https://github.com/habi/sticklebacks), and can be easily previewed [online](https://nbviewer.org/github/habi/sticklebacks/tree/main/), too.
+All Jupyter scripts to process the acquired tomographic data as described in the text are found [online at GitHub](https://github.com/habi/sticklebacks), and can be easily previewed [online](https://nbviewer.org/github/habi/sticklebacks/tree/main/), too.
 
 #### 3D Slicer; extraction
 
