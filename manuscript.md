@@ -5,7 +5,7 @@ keywords:
 - sticklebacks
 - ecology
 lang: en-US
-date-meta: '2026-07-15'
+date-meta: '2026-07-16'
 author-meta:
 - David Haberthür
 - Ben Sulser
@@ -23,11 +23,11 @@ header-includes: |
   <meta name="citation_title" content="microCT imaging of 216 three-spined stickleback" />
   <meta property="og:title" content="microCT imaging of 216 three-spined stickleback" />
   <meta property="twitter:title" content="microCT imaging of 216 three-spined stickleback" />
-  <meta name="dc.date" content="2026-07-15" />
-  <meta name="citation_publication_date" content="2026-07-15" />
-  <meta property="article:published_time" content="2026-07-15" />
-  <meta name="dc.modified" content="2026-07-15T13:40:47+00:00" />
-  <meta property="article:modified_time" content="2026-07-15T13:40:47+00:00" />
+  <meta name="dc.date" content="2026-07-16" />
+  <meta name="citation_publication_date" content="2026-07-16" />
+  <meta property="article:published_time" content="2026-07-16" />
+  <meta name="dc.modified" content="2026-07-16T16:05:42+00:00" />
+  <meta property="article:modified_time" content="2026-07-16T16:05:42+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -55,9 +55,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/e37413b7f76c0f83560fedb359ad1794fee62826/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/e37413b7f76c0f83560fedb359ad1794fee62826/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/e37413b7f76c0f83560fedb359ad1794fee62826/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/e23a7d5d8e8d02ada2d42ae7e191d3ff9f8fc4c7/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/e23a7d5d8e8d02ada2d42ae7e191d3ff9f8fc4c7/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/e23a7d5d8e8d02ada2d42ae7e191d3ff9f8fc4c7/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -79,12 +79,12 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/e37413b7f76c0f83560fedb359ad1794fee62826/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/e23a7d5d8e8d02ada2d42ae7e191d3ff9f8fc4c7/))
 was generated
-from [habi/sticklebacks-manuscript@e37413b](https://github.com/habi/sticklebacks-manuscript/tree/e37413b7f76c0f83560fedb359ad1794fee62826)
-on July 15, 2026.
+from [habi/sticklebacks-manuscript@e23a7d5](https://github.com/habi/sticklebacks-manuscript/tree/e23a7d5d8e8d02ada2d42ae7e191d3ff9f8fc4c7)
+on July 16, 2026.
 <br>
-This version contains 5094 words.
+This version contains 5105 words.
 </em></small>
 
 
@@ -178,7 +178,7 @@ However, the resulting increase in data complexity and processing demands often 
 To address these challenges, we developed a rapid and semi-automated segmentation and analysis pipeline based on the Jupyter interactive development environment and the Biomedisa image segmentation platform to investigate three-dimensional morphological adaptation in the three-spined stickleback.
 
 The pipeline includes separation of multi-specimen scans into individual regions of interest, reconstruction of targeted anatomical structures, and morphometric analyses.
-We applied this pipeline to 44 multi-specimen scans comprising 216 specimens from divergent benthic and limnetic stickleback populations, demonstrating the potential of high-throughput imaging approaches for testing ecological and evolutionary hypotheses.
+We applied this pipeline to 38 multi-specimen scans comprising 215 specimens from divergent benthic and limnetic stickleback populations, demonstrating the potential of high-throughput imaging approaches for testing ecological and evolutionary hypotheses.
 
 
 ## Introduction {.page_break_before}
@@ -222,7 +222,7 @@ Fish were collected using unbaited minnow traps in two separate field seasons, t
 Specimen collections were collected from a random sample of up to 30 fish from each lake, under Alaska Department of Fish and Game (ADFG) permits SF2023-030 and P-24-015 for 2023 and 2024, respectively.
 Fish were euthanized with MS-222, photographed, labeled and preserved in 10% formalin in individual bags, all under Animal Use Protocol (AUP) MCGL-8265.
 At the end of each field season, samples were shipped from Anchorage (AK, USA) to Bern (BE, CH) where they were stored until scanning.
-The total number of fish for each lake are: Finger lake (66), Spirit lake (41), Watson lake (52), Walby lake (20), Tern lake (26) for a total of 251 specimens.
+The total number of fish for each lake are: Watson lake (52), Finger lake (48), Spirit lake (46), South Rolly lake (35), Walby lake (20), and Tern lake (14) for a total of 215 specimens.
 As an additional step, fish collected in the 2024 field season had DNA fin clips taken via a small piece of the caudal fin in order to sex each individual.
 Samples underwent hotshot DNA extraction protocol [doi:10.2144/000112619] and subsequent PCR followed Stickleback LRRc61 Sexing with primers for this purpose (see Archeambeault et al., 2020 [doi:10.1002/evl3.175])
 
@@ -236,16 +236,16 @@ This holder was designed in [OpenSCAD](https://openscad.org/) (OpenSCAD Develope
 Both files are part of a library of 3D-printable sample holders for tomographic imaging [@doi:10.5281/zenodo.2587555].
 
 Tomographic imaging was performed on a [Bruker SkyScan 2214](https://www.bruker.com/en/products-and-solutions/diffractometers-and-x-ray-microscopes/3d-x-ray-microscopes/skyscan-2214.html) (Bruker microCT, Kontich, Belgium) at the Institute of Anatomy, University of Bern, Switzerland.
-In total, we performed 44 scans, each scan usually containing six fish in the sample holder.
+In total, we performed 38 scans, each scan usually containing six fish in the sample holder.
 
 The relevant details of each scan are summarized in a table in the [Supplementary Materials]; a short overview of the scanning parameters is given below.
 The X-ray source was set to a voltage of 60 kV and a current of around 110 µA for all but one scan where we used a source voltage of 49 kV and 159 µA due to operator error.
 For each sample, we recorded a set of 3601 projections of approximately 3000 x 2000 pixels at 0.1° intervals over a 360° sample rotation.
-Every single projection was exposed for about a second (depending on the sample).
+Every single projection was exposed for about a second.
 Because of the length of the fish, we had to acquire so-called stacked scans, on average we scanned 3 fields of view along the rotation axis of the sample holder.
-This resulted in scan times between 3 to 5 hours.
-The projection images were then subsequently reconstructed into stacks of 8bit PNG images with NRecon (Bruker microCT, Kontich, Belgium. Version: 2.1.0.1 or 2.2.0.6), without applying any ring artefact or beam hardening correction.
-The isometric voxel sizes in the resulting datasets vary from 15 to 19 µm.
+This resulted in an average scan time of 10 hours for each scan.
+The projection images were then subsequently reconstructed into stacks of 8bit PNG images with NRecon (Bruker microCT, Kontich, Belgium. Version: 2.2.0.6), without applying any ring artefact or beam hardening correction.
+The isometric voxel sizes in the resulting datasets vary from 15 to 17.5 µm.
 
 ### Data analysis
 
@@ -338,8 +338,8 @@ Linear fits were further investigated via the `pairwise()` function to analyze d
 ### micro-CT imaging data
 
 Acquisition and reconstruction of fish datasets were successful and enabled high-throughput processing.
-A total of 216 unique specimens were scanned in a total scanning duration of 18 days, 12 hours, and 6 minutes.
-We acquired 158444 projections, reconstructed into a total of 177749 reconstructions, resulting in approximately 4040 files per scan (N=44).
+A total of 215 unique specimens were scanned in 38 different scans with a total scanning duration of nearly 16 days.
+We acquired 136838 projections, reconstructed into a total of 154622 reconstructions, resulting in approximately 4000 reconstrucions files per scan (N=38).
 
 ### Fish separation
 
@@ -356,16 +356,16 @@ For each encompassing scan this would need to be repeated 6 times (for *each* of
 In addition, such a manual process is not reproducible in the sense that it cannot be consistently replicated by others using the same data since the manual cropping is operator-dependent.
 Algorithmically/automatically cropping the large datasets based on the axial MIP image leads to both reproducible cropped regions and efficiently uses the operator time by eliminating manual cropping steps (see Table @tbl:timing).
 
-| Task                             | Est. Manual Time | Pipeline Time | Speed-up |
-|----------------------------------|-----------------:|--------------:|---------:|
-| Scanning single fish             | ~10 hours        | 2 hours       |     ~5 x |
-| Splitting scans into single fish | 17 minutes       | 9 minutes     |     ~2 x |
-| Rendering volumes                | #                | 11 seconds    |        # |
-| Segmentation                     | 10-15 minutes    | 15 seconds    |    ~60 x |
+| Task                             | Est. Manual Time | Pipeline Time      | Speed-up |
+|----------------------------------|-----------------:|-------------------:|---------:|
+| Scanning single fish             | ~10 hours        | 1 hour, 45 minutes |   ~5.5 x |
+| Splitting scans into single fish | 17 minutes       | 9 minutes          |   ~2   x |
+| Rendering volumes                | 5 minutes        | 15 seconds         |   20   x |
+| Segmentation                     | 10-15 minutes    | 15 seconds         |  ~60   x |
 
 Table: Estimates of time comparisons between manual and pipeline runs.
        Note that it would have been completely infeasible to scan each fish separately.
-       On average, we scanned 5 fish per scan for a total scan time of 18 days and 12 hours.
+       On average, we scanned 5.66 fish per scan for a total scan time of 15 days, 23 hours, 50 minutes and 24 seconds.
        The manual scan time per single fish is thus a calculated 5 times longer than scanning 6 fish at a time in a single scan and separating them after the fact.
        Also note that the manual splitting does *not* produce the accompanying log file and figures for double-checking as specified below. {#tbl:timing}
 

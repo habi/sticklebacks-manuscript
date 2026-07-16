@@ -16,7 +16,7 @@ branchialus
 Bruker
 Burgergemeinde
 centroid
-Ceratobranchial
+ceratobranchial
 ceratobranchials
 cpeichel
 csv
@@ -70,6 +70,7 @@ PNGs
 pre
 raker
 rakers
+reconstrucions
 reproducibility
 reproducibly
 Rolly
@@ -89,7 +90,7 @@ Stratovan
 Sulser
 sulserrb
 thresholded
-thresholding
+Thresholding
 TMAG
 touchups
 unbaited

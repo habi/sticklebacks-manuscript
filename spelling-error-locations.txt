@@ -52,6 +52,7 @@ content/03.materials_methods.md:8:unbaited
 content/03.materials_methods.md:9:ADFG
 content/03.materials_methods.md:10:AUP
 content/03.materials_methods.md:10:MCGL
+content/03.materials_methods.md:12:Rolly
 content/03.materials_methods.md:12:Walby
 content/03.materials_methods.md:14:Archeambeault
 content/03.materials_methods.md:14:PCR
@@ -147,6 +148,7 @@ content/03.materials_methods.md:119:geomorph
 content/03.materials_methods.md:119:geomorph
 content/03.materials_methods.md:119:geomorph
 content/03.materials_methods.md:119:PCA
+content/04.results.md:7:reconstrucions
 content/04.results.md:11:reproducibly
 content/04.results.md:13:MIP
 content/04.results.md:17:uncropped
