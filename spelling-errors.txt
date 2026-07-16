@@ -16,7 +16,7 @@ branchialus
 Bruker
 Burgergemeinde
 centroid
-ceratobranchial
+Ceratobranchial
 ceratobranchials
 cpeichel
 csv
@@ -90,7 +90,7 @@ Stratovan
 Sulser
 sulserrb
 thresholded
-Thresholding
+thresholding
 TMAG
 touchups
 unbaited
