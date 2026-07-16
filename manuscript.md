@@ -26,8 +26,8 @@ header-includes: |
   <meta name="dc.date" content="2026-07-16" />
   <meta name="citation_publication_date" content="2026-07-16" />
   <meta property="article:published_time" content="2026-07-16" />
-  <meta name="dc.modified" content="2026-07-16T18:30:02+00:00" />
-  <meta property="article:modified_time" content="2026-07-16T18:30:02+00:00" />
+  <meta name="dc.modified" content="2026-07-16T18:28:32+00:00" />
+  <meta property="article:modified_time" content="2026-07-16T18:28:32+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -55,9 +55,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/e697ad689c2bd51dfc45c8509546e3c46d6f0a4b/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/e697ad689c2bd51dfc45c8509546e3c46d6f0a4b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/e697ad689c2bd51dfc45c8509546e3c46d6f0a4b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/09cdbbc2d409ef26784697d955aea04343bec814/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/09cdbbc2d409ef26784697d955aea04343bec814/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/09cdbbc2d409ef26784697d955aea04343bec814/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -79,12 +79,12 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/e697ad689c2bd51dfc45c8509546e3c46d6f0a4b/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/09cdbbc2d409ef26784697d955aea04343bec814/))
 was generated
-from [habi/sticklebacks-manuscript@e697ad6](https://github.com/habi/sticklebacks-manuscript/tree/e697ad689c2bd51dfc45c8509546e3c46d6f0a4b)
+from [habi/sticklebacks-manuscript@09cdbbc](https://github.com/habi/sticklebacks-manuscript/tree/09cdbbc2d409ef26784697d955aea04343bec814)
 on July 16, 2026.
 <br>
-This version contains 5105 words.
+This version contains 5104 words.
 </em></small>
 
 
@@ -339,7 +339,7 @@ Linear fits were further investigated via the `pairwise()` function to analyze d
 
 Acquisition and reconstruction of fish datasets were successful and enabled high-throughput processing.
 A total of 215 unique specimens were scanned in 38 different scans with a total scanning duration of nearly 16 days.
-We acquired 136838 projections, reconstructed into a total of 154622 reconstructions, resulting in approximately 4000 reconstruction PNG files per scan (N=38).
+We acquired 136838 projections, reconstructed into a total of 154622 reconstructions, resulting in approximately 4000 reconstructions files per scan (N=38).
 
 ### Fish separation
 
