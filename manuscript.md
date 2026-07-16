@@ -26,8 +26,8 @@ header-includes: |
   <meta name="dc.date" content="2026-07-16" />
   <meta name="citation_publication_date" content="2026-07-16" />
   <meta property="article:published_time" content="2026-07-16" />
-  <meta name="dc.modified" content="2026-07-16T21:07:06+00:00" />
-  <meta property="article:modified_time" content="2026-07-16T21:07:06+00:00" />
+  <meta name="dc.modified" content="2026-07-16T21:20:32+00:00" />
+  <meta property="article:modified_time" content="2026-07-16T21:20:32+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -48,16 +48,16 @@ header-includes: |
   <meta name="citation_author_orcid" content="0000-0002-7731-8944" />
   <meta name="citation_author" content="Ruslan Hlushchuk" />
   <meta name="citation_author_institution" content="microCT research group, Institute of Anatomy, University of Bern, Baltzerstrasse 2, 3012 Bern, Switzerland" />
-  <meta name="citation_author_orcid" content="0000-0001-2345-6789" />
+  <meta name="citation_author_orcid" content="0000-0002-6722-8996" />
   <link rel="canonical" href="https://habi.github.io/sticklebacks-manuscript/" />
   <meta property="og:url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta property="twitter:url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/85b7924e14dfee0eab29bb97a33cbba64893fa2d/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/85b7924e14dfee0eab29bb97a33cbba64893fa2d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/85b7924e14dfee0eab29bb97a33cbba64893fa2d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/4ad3704ae2a5f56bc04891838cf4e2226410dfbc/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/4ad3704ae2a5f56bc04891838cf4e2226410dfbc/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/4ad3704ae2a5f56bc04891838cf4e2226410dfbc/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -79,9 +79,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/85b7924e14dfee0eab29bb97a33cbba64893fa2d/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/4ad3704ae2a5f56bc04891838cf4e2226410dfbc/))
 was generated
-from [habi/sticklebacks-manuscript@85b7924](https://github.com/habi/sticklebacks-manuscript/tree/85b7924e14dfee0eab29bb97a33cbba64893fa2d)
+from [habi/sticklebacks-manuscript@4ad3704](https://github.com/habi/sticklebacks-manuscript/tree/4ad3704ae2a5f56bc04891838cf4e2226410dfbc)
 on July 16, 2026.
 <br>
 This version contains 5105 words.
@@ -145,7 +145,7 @@ This version contains 5105 words.
 + **Ruslan Hlushchuk**
   ^[✉](#correspondence)^<br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [0000-0001-2345-6789](https://orcid.org/0000-0001-2345-6789)
+    [0000-0002-6722-8996](https://orcid.org/0000-0002-6722-8996)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [RuslanHlushchuk](https://github.com/RuslanHlushchuk)
     <br>
