@@ -44,11 +44,8 @@ jobs:
       GITHUB_PULL_REQUEST_SHA: ${{ github.event.pull_request.head.sha }}
       # Set SPELLCHECK to true/false for whether to check spelling in this action.
       # For workflow dispatch jobs, this SPELLCHECK setting will be overridden by the user input.
-            GITHUB_PULL_REQUEST_SHA: ${{ github.event.pull_request.head.sha }}
-      # Set SPELLCHECK to true/false for whether to check spelling in this action.
-      # For workflow dispatch jobs, this SPELLCHECK setting will be overridden by the user input.
       SPELLCHECK: false
-      BUILD_DOCX: true     
+      BUILD_DOCX: true      
     defaults:
       run:
         shell: bash --login {0}
@@ -76,7 +73,7 @@ jobs:
           echo "DEFAULT_BRANCH_REF=refs/heads/$DEFAULT_BRANCH" >> $GITHUB_ENV
           echo "DEFAULT_BRANCH=$DEFAULT_BRANCH"
       - name: Cache
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         with:
           path: ci/cache
           key: ci-cache-${{ github.ref }}
