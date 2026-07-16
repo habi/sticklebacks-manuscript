@@ -21,7 +21,7 @@ on:
       BUILD_DOCX:
         type: boolean
         description: generate DOCX output
-        default: true
+        default: false
       BUILD_LATEX:
         type: boolean
         description: generate LaTeX output
@@ -44,7 +44,11 @@ jobs:
       GITHUB_PULL_REQUEST_SHA: ${{ github.event.pull_request.head.sha }}
       # Set SPELLCHECK to true/false for whether to check spelling in this action.
       # For workflow dispatch jobs, this SPELLCHECK setting will be overridden by the user input.
-      SPELLCHECK: true
+            GITHUB_PULL_REQUEST_SHA: ${{ github.event.pull_request.head.sha }}
+      # Set SPELLCHECK to true/false for whether to check spelling in this action.
+      # For workflow dispatch jobs, this SPELLCHECK setting will be overridden by the user input.
+      SPELLCHECK: false
+      BUILD_DOCX: true     
     defaults:
       run:
         shell: bash --login {0}
