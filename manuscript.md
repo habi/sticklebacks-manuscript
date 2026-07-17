@@ -5,7 +5,7 @@ keywords:
 - sticklebacks
 - ecology
 lang: en-US
-date-meta: '2026-07-16'
+date-meta: '2026-07-17'
 author-meta:
 - David Haberthür
 - Ben Sulser
@@ -23,11 +23,11 @@ header-includes: |
   <meta name="citation_title" content="microCT imaging of 215 three-spined stickleback" />
   <meta property="og:title" content="microCT imaging of 215 three-spined stickleback" />
   <meta property="twitter:title" content="microCT imaging of 215 three-spined stickleback" />
-  <meta name="dc.date" content="2026-07-16" />
-  <meta name="citation_publication_date" content="2026-07-16" />
-  <meta property="article:published_time" content="2026-07-16" />
-  <meta name="dc.modified" content="2026-07-16T21:20:32+00:00" />
-  <meta property="article:modified_time" content="2026-07-16T21:20:32+00:00" />
+  <meta name="dc.date" content="2026-07-17" />
+  <meta name="citation_publication_date" content="2026-07-17" />
+  <meta property="article:published_time" content="2026-07-17" />
+  <meta name="dc.modified" content="2026-07-17T06:41:07+00:00" />
+  <meta property="article:modified_time" content="2026-07-17T06:41:07+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -55,9 +55,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/4ad3704ae2a5f56bc04891838cf4e2226410dfbc/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/4ad3704ae2a5f56bc04891838cf4e2226410dfbc/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/4ad3704ae2a5f56bc04891838cf4e2226410dfbc/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/5229755170a43ce1d76085efc1523c86d192ee7f/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/5229755170a43ce1d76085efc1523c86d192ee7f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/5229755170a43ce1d76085efc1523c86d192ee7f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -79,12 +79,12 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/4ad3704ae2a5f56bc04891838cf4e2226410dfbc/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/5229755170a43ce1d76085efc1523c86d192ee7f/))
 was generated
-from [habi/sticklebacks-manuscript@4ad3704](https://github.com/habi/sticklebacks-manuscript/tree/4ad3704ae2a5f56bc04891838cf4e2226410dfbc)
-on July 16, 2026.
+from [habi/sticklebacks-manuscript@5229755](https://github.com/habi/sticklebacks-manuscript/tree/5229755170a43ce1d76085efc1523c86d192ee7f)
+on July 17, 2026.
 <br>
-This version contains 5105 words.
+This version contains 5166 words.
 </em></small>
 
 
@@ -425,6 +425,9 @@ The differences in the 2nd ceratobranchial appear to be driven by divergence in 
 Once all components of the pipeline are combined, running a simple script enables automatic reconstruction, thresholding, and segmentation of stickleback specimens.
 All automated pipeline steps are substantially faster than equivalent manual processing by an expert operator, with minimal active user input.
 This reproducible pipeline allows for high-throughput sampling and population-scale analysis of stickleback specimens.
+
+The imaging and separation step is easy to generalize to either other micro-CT setups or other species/specimen.
+As long as the specimen show up as distint blobs in the MIP (see Figure @fig:labels) our pipeline can reproducibly separate these blobs into cropped dataset for any further processing, enabling a general, reproducible and high-throughput micro-CT workflow in biology and many other fields.
 
 ### Findings from Ceratobranchial Analysis
 
