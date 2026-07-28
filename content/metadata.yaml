@@ -1,5 +1,5 @@
 ---
-title: "microCT imaging of 215 three-spined stickleback"
+title: "High-throughput microCT for eco-evolutionary studies: a case study from threespine stickleback"
 date: null  # Defaults to date generated, but can specify like '2022-10-31'.
 keywords:
   - tomography
@@ -30,12 +30,12 @@ authors:
     coi:
       string: "Nothing to declare"
       lastapproved: !!str 2026-01-14
-  - name: Ben Sulser
+  - name: R. Benjamin Sulser
     orcid: 0000-0002-8750-0942
     github: sulserrb
     email: r.benjamin.sulser@unibe.ch
     affiliations:
-      - Evolutionary Ecology Group, Institute of Ecology and Evolution, University of Bern, Baltzerstrasse 6, 3012 Bern, Switzerland
+      - Division of Evolutionary Ecology, Institute of Ecology and Evolution, University of Bern, Baltzerstrasse 6, 3012 Bern, Switzerland
     contributions:
       - Conceptualization
       - Data curation
@@ -55,14 +55,14 @@ authors:
       - Burgergemeinde Bern
     coi:
       string: "Nothing to declare"
-      lastapproved: !!str
+      lastapproved: !!str 2026-07-28
   - name: Sheila Christen
     initials: SC
     orcid: 0009-0008-3514-0800
     github: SheilaChristen
     email: sheila.christen00.christen@gmail.com
     affiliations:
-      - Evolutionary Ecology Group, Institute of Ecology and Evolution, University of Bern, Baltzerstrasse 6, 3012 Bern, 
+      - Division of Evolutionary Ecology, Institute of Ecology and Evolution, University of Bern, Baltzerstrasse 6, 3012 Bern, Switzerland
     contributions:
          - Conceptualization
          - Data curation
