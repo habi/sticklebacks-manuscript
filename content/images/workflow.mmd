@@ -8,12 +8,12 @@ config:
     nodePlacementStrategy: LINEAR_SEGMENTS
 ---
 flowchart LR
-    subgraph Katie [<b>Sample collection</b>]
+    subgraph Katie ["Sample collection"]
        Planning --> Sampling
        Sampling --> Storing
     end
     Storing --> uct
-    subgraph David [<b>microCT imaging & fish separation</b>]
+    subgraph David ["microCT imaging & fish separation"]
         uct(microCT imaging) --> proj(Projection images)
         proj --> rec(Reconstructions)
         rec --> jupyter(Jupyter scripts)
@@ -24,14 +24,14 @@ flowchart LR
         fishid --> region_thresholded(Thresholded region) --> fishid
         fishid@{ shape: procs }
     end
-    subgraph Ben [<b>Biomedisa analysis</b>]
+    subgraph Ben ["Biomedisa analysis"]
         fishid --> biomedisa(Biomedisa script)
         biomedisa --> regions(Segmented regions of interest)
         regions@{ shape: procs }
         regions --> rakers(gill rakers) --> regions
         regions --> jaws(internal jaws) --> regions
     end
-    subgraph Sheila [<b>Gill rakers</b>]
+    subgraph Sheila ["Gill rakers"]
         regions -->  analysis(Analysis)
     end
         reporting --> manubot(((Manuscript)))
