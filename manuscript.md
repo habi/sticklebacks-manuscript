@@ -26,8 +26,8 @@ header-includes: |
   <meta name="dc.date" content="2026-08-03" />
   <meta name="citation_publication_date" content="2026-08-03" />
   <meta property="article:published_time" content="2026-08-03" />
-  <meta name="dc.modified" content="2026-08-03T11:09:16+00:00" />
-  <meta property="article:modified_time" content="2026-08-03T11:09:16+00:00" />
+  <meta name="dc.modified" content="2026-08-03T11:25:28+00:00" />
+  <meta property="article:modified_time" content="2026-08-03T11:25:28+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -55,9 +55,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/0029a1c5b8c28604676e1390701fedc9d379fe2b/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/0029a1c5b8c28604676e1390701fedc9d379fe2b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/0029a1c5b8c28604676e1390701fedc9d379fe2b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/69a3fbebc9883eedc01fa36d163d99c5bc2a0035/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/69a3fbebc9883eedc01fa36d163d99c5bc2a0035/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/69a3fbebc9883eedc01fa36d163d99c5bc2a0035/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -79,9 +79,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/0029a1c5b8c28604676e1390701fedc9d379fe2b/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/69a3fbebc9883eedc01fa36d163d99c5bc2a0035/))
 was generated
-from [habi/sticklebacks-manuscript@0029a1c](https://github.com/habi/sticklebacks-manuscript/tree/0029a1c5b8c28604676e1390701fedc9d379fe2b)
+from [habi/sticklebacks-manuscript@69a3fbe](https://github.com/habi/sticklebacks-manuscript/tree/69a3fbebc9883eedc01fa36d163d99c5bc2a0035)
 on August 3, 2026.
 <br>
 This version contains 5230 words.
@@ -165,7 +165,6 @@ or email to
 
 ## Abstract {.page_break_before}
 
-
 The advent of X-ray microtomography and 3D-scanning technologies enables non-destructive imaging and greatly increases the availability of high-resolution morphological data.
 However, the resulting increase in data complexity and processing demands often makes these approaches impractical for large-scale studies, especially at population scales that often require hundreds to thousands of specimens to measure.
 
@@ -176,9 +175,8 @@ Benthic (benthos-feeding) and limnetic (water-column-feeding) stickleback popula
 Modern investigations of evolutionary change in this organism often require the analysis of hundreds, if not thousands, of individuals.
 However, analyses of feeding structures---particularly the jaws and complex internal branchial anatomy---remain time-consuming and require considerable expertise, with destructive sampling and fine dissection skills needed for quantitative analysis.
 
-
 The pipeline includes separation of multi-specimen scans into individual regions of interest, reconstruction of targeted anatomical structures, and morphometric analyses.
-We applied this pipeline to 38 multi-specimen scans comprising 215 specimens from divergent benthic and limnetic stickleback populations, demonstrating the potential of high-throughput imaging approaches for testing ecological and evolutionary hypotheses. 
+We applied this pipeline to 38 multi-specimen scans comprising 215 specimens from divergent benthic and limnetic stickleback populations, demonstrating the potential of high-throughput imaging approaches for testing ecological and evolutionary hypotheses.
 These methods are replicable and clade in-specific, and researchers on all systems may adapt these pipelines to aid in high-throughput, high-quality microCT sampling at scale.
 
 
@@ -200,7 +198,7 @@ While the shape and arrangement of paired ceratobranchial and pharyngobranchial 
 This is likely due to the flattening and destructive sampling used in traditional raker counting methods, which dissect and deform these structures to render them visible for manual measurements [@doi:10.3791/54056].
 These structures are, however, difficult to study without full cranial dissection and corresponding distortion of the branchial anatomy.
 3D imaging preserves these features at a high resolution and allows for non-destructive analysis.
-Imaging large numbers of stickleback specimens, however, has until now been prohibitive due to the limitations of processing time. 
+Imaging large numbers of stickleback specimens, however, has until now been prohibitive due to the limitations of processing time.
 
 ## Micro-computed tomography
 
@@ -348,7 +346,7 @@ We acquired 136838 projections, reconstructed into a total of 154622 reconstruct
 Our method reproducibly extracts each of the six fish scanned simultaneously in one scan.
 The custom-made sample holder aligns each fish along the vertical axis around the rotation axis of the tomographic scan.
 The extraction based on the MIP image along the rotation axis is completely automated and very robust, since the detected fish 'regions' do not overlap in the resulting image.
-	
+
 The resulting image stack, containing six fish in one multiscan, creates a large output dataset that can be unwieldy to manage even for experienced users.
 Depending on the available hardware, it may not even be possible to load in order to manually perform the cropping.
 Large stacks of images (in other words larger than the available RAM of the available machine) can be loaded as [virtual stacks](https://imagej.net/ij/plugins/virtual-opener.html), but to manually crop the region of each fish from the large scan with the [Crop (3D)](https://www.longair.net/edinburgh/imagej/three-pane-crop/) function, one needs to load the full dataset.
@@ -390,8 +388,8 @@ Selection and individual rendering of the branchial structures takes between 10-
 The speed and quality of these data allow us to study the internal branchial anatomy at scale and in situ, without the need for fine dissection.
 
 After GPA alignment, we quantified the shape differences among all scanned fish for this project.
-Changes due to allometry (using the metric of centroid size or standard length of the fish) were significant but slight, explaining only a small fraction of shape variation (CB1: p = 0.001, $R^2$ = 0.03246; p = 0.001 CB2: $R^2$ = 0.06220) in both bones.
-Both linear models and PCA results suggest that the lakes themselves---and not overarching categories of ecotype or sex---drive most of the shape variation in these bones (CB1: p = 0.001, $R^2$ = 0.09463, CB2: p = 0.001, $R^2$ = 0.11039).
+Changes due to allometry (using the metric of centroid size or standard length of the fish) were significant but slight, explaining only a small fraction of shape variation (CB1: p = 0.001, $R^2$ = 0.03246; CB2: p = 0.001, $R^2$ = 0.06220) in both bones.
+Both linear models and PCA results suggest that the lakes themselves---and not overarching categories of ecotype or sex---drive most of the shape variation in these bones (CB1: p = 0.001, $R^2$ = 0.09463; CB2: p = 0.001, $R^2$ = 0.11039).
 Nonetheless, variation in the first ceratobranchial was significantly associated with differing ecotypes, although the effect size was small (p = 0.009, $R^2$ = 0.02056), with a substantial overlap in the resulting shape space (see Figure @fig:pca_cb1).
 
 ![PCA of CB1 colored by lake ecotype.
