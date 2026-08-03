@@ -1,14 +1,14 @@
 ---
-title: microCT imaging of 215 three-spined stickleback
+title: 'High-throughput microCT for eco-evolutionary studies: a case study from threespine stickleback'
 keywords:
 - tomography
 - sticklebacks
 - ecology
 lang: en-US
-date-meta: '2026-07-17'
+date-meta: '2026-08-03'
 author-meta:
 - David Haberthür
-- Ben Sulser
+- R. Benjamin Sulser
 - Sheila Christen
 - Catherine L. Peichel
 - Ruslan Hlushchuk
@@ -19,15 +19,15 @@ header-includes: |
   -->
   <meta name="dc.format" content="text/html" />
   <meta property="og:type" content="article" />
-  <meta name="dc.title" content="microCT imaging of 215 three-spined stickleback" />
-  <meta name="citation_title" content="microCT imaging of 215 three-spined stickleback" />
-  <meta property="og:title" content="microCT imaging of 215 three-spined stickleback" />
-  <meta property="twitter:title" content="microCT imaging of 215 three-spined stickleback" />
-  <meta name="dc.date" content="2026-07-17" />
-  <meta name="citation_publication_date" content="2026-07-17" />
-  <meta property="article:published_time" content="2026-07-17" />
-  <meta name="dc.modified" content="2026-07-17T06:41:07+00:00" />
-  <meta property="article:modified_time" content="2026-07-17T06:41:07+00:00" />
+  <meta name="dc.title" content="High-throughput microCT for eco-evolutionary studies: a case study from threespine stickleback" />
+  <meta name="citation_title" content="High-throughput microCT for eco-evolutionary studies: a case study from threespine stickleback" />
+  <meta property="og:title" content="High-throughput microCT for eco-evolutionary studies: a case study from threespine stickleback" />
+  <meta property="twitter:title" content="High-throughput microCT for eco-evolutionary studies: a case study from threespine stickleback" />
+  <meta name="dc.date" content="2026-08-03" />
+  <meta name="citation_publication_date" content="2026-08-03" />
+  <meta property="article:published_time" content="2026-08-03" />
+  <meta name="dc.modified" content="2026-08-03T10:48:30+00:00" />
+  <meta property="article:modified_time" content="2026-08-03T10:48:30+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -37,11 +37,11 @@ header-includes: |
   <meta name="citation_author" content="David Haberthür" />
   <meta name="citation_author_institution" content="microCT research group, Institute of Anatomy, University of Bern, Baltzerstrasse 2, 3012 Bern, Switzerland" />
   <meta name="citation_author_orcid" content="0000-0003-3388-9187" />
-  <meta name="citation_author" content="Ben Sulser" />
-  <meta name="citation_author_institution" content="Evolutionary Ecology Group, Institute of Ecology and Evolution, University of Bern, Baltzerstrasse 6, 3012 Bern, Switzerland" />
+  <meta name="citation_author" content="R. Benjamin Sulser" />
+  <meta name="citation_author_institution" content="Division of Evolutionary Ecology, Institute of Ecology and Evolution, University of Bern, Baltzerstrasse 6, 3012 Bern, Switzerland" />
   <meta name="citation_author_orcid" content="0000-0002-8750-0942" />
   <meta name="citation_author" content="Sheila Christen" />
-  <meta name="citation_author_institution" content="Evolutionary Ecology Group, Institute of Ecology and Evolution, University of Bern, Baltzerstrasse 6, 3012 Bern," />
+  <meta name="citation_author_institution" content="Division of Evolutionary Ecology, Institute of Ecology and Evolution, University of Bern, Baltzerstrasse 6, 3012 Bern, Switzerland" />
   <meta name="citation_author_orcid" content="0009-0008-3514-0800" />
   <meta name="citation_author" content="Catherine L. Peichel" />
   <meta name="citation_author_institution" content="Division of Evolutionary Ecology, Institute of Ecology and Evolution, University of Bern, Baltzerstrasse 6, 3012 Bern, Switzerland" />
@@ -55,9 +55,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/5229755170a43ce1d76085efc1523c86d192ee7f/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/5229755170a43ce1d76085efc1523c86d192ee7f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/5229755170a43ce1d76085efc1523c86d192ee7f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/4b952a8355a353be37a29a1755eee58bcb3e0b57/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/4b952a8355a353be37a29a1755eee58bcb3e0b57/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/4b952a8355a353be37a29a1755eee58bcb3e0b57/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -79,12 +79,12 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/5229755170a43ce1d76085efc1523c86d192ee7f/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/4b952a8355a353be37a29a1755eee58bcb3e0b57/))
 was generated
-from [habi/sticklebacks-manuscript@5229755](https://github.com/habi/sticklebacks-manuscript/tree/5229755170a43ce1d76085efc1523c86d192ee7f)
-on July 17, 2026.
+from [habi/sticklebacks-manuscript@4b952a8](https://github.com/habi/sticklebacks-manuscript/tree/4b952a8355a353be37a29a1755eee58bcb3e0b57)
+on August 3, 2026.
 <br>
-This version contains 5166 words.
+This version contains 5199 words.
 </em></small>
 
 
@@ -106,7 +106,7 @@ This version contains 5166 words.
      microCT research group, Institute of Anatomy, University of Bern, Baltzerstrasse 2, 3012 Bern, Switzerland
   </small>
 
-+ **Ben Sulser**
++ **R. Benjamin Sulser**
   <br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0002-8750-0942](https://orcid.org/0000-0002-8750-0942)
@@ -114,7 +114,7 @@ This version contains 5166 words.
     [sulserrb](https://github.com/sulserrb)
     <br>
   <small>
-     Evolutionary Ecology Group, Institute of Ecology and Evolution, University of Bern, Baltzerstrasse 6, 3012 Bern, Switzerland
+     Division of Evolutionary Ecology, Institute of Ecology and Evolution, University of Bern, Baltzerstrasse 6, 3012 Bern, Switzerland
      · Funded by Burgergemeinde Bern
   </small>
 
@@ -126,7 +126,7 @@ This version contains 5166 words.
     [SheilaChristen](https://github.com/SheilaChristen)
     <br>
   <small>
-     Evolutionary Ecology Group, Institute of Ecology and Evolution, University of Bern, Baltzerstrasse 6, 3012 Bern,
+     Division of Evolutionary Ecology, Institute of Ecology and Evolution, University of Bern, Baltzerstrasse 6, 3012 Bern, Switzerland
      · Funded by Burgergemeinde Bern
   </small>
 
@@ -157,7 +157,7 @@ This version contains 5166 words.
 ::: {#correspondence}
 ✉: Correspondence via [GitHub Issues](https://github.com/habi/sticklebacks-manuscript/issues)
 or email to
-[Ruslan Hlushchuk](mailto:ruslan.hlushchuk@unibe.ch?subject=Feedback%20on%20%22microCT imaging of 215 three-spined stickleback%22).
+[Ruslan Hlushchuk](mailto:ruslan.hlushchuk@unibe.ch?subject=Feedback%20on%20%22High-throughput microCT for eco-evolutionary studies: a case study from threespine stickleback%22).
 
 
 :::
@@ -165,31 +165,33 @@ or email to
 
 ## Abstract {.page_break_before}
 
-Can we use high-throughput imaging to understand evolution?
 
-The three-spined stickleback (*Gasterosteus aculeatus*) is a well-recognized model system for understanding adaptation to divergent habitats.
+The advent of X-ray microtomography and 3D-scanning technologies enables non-destructive imaging and greatly increases the availability of high-resolution morphological data.
+However, the resulting increase in data complexity and processing demands often makes these approaches impractical for large-scale studies, especially at population scales that often require hundreds to thousands of specimens to measure.
+
+To address these challenges, we developed a rapid and semi-automated segmentation and analysis pipeline based on the Jupyter interactive development environment and the Biomedisa image segmentation platform to investigate three-dimensional morphological adaptation in the threespine stickleback (*Gasterosteus aculeatus*).
+
+The threespine stickleback is a well-recognized model system for understanding adaptation to divergent habitats.
 Benthic (benthos-feeding) and limnetic (water-column-feeding) stickleback populations differ in phenotypic traits associated with dietary specialization.
 Modern investigations of evolutionary change in this organism often require the analysis of hundreds, if not thousands, of individuals.
 However, analyses of feeding structures---particularly the jaws and complex internal branchial anatomy---remain time-consuming and require considerable expertise, with destructive sampling and fine dissection skills needed for quantitative analysis.
 
-The advent of X-ray microtomography and 3D-scanning technologies enables non-destructive imaging and greatly increases the availability of high-resolution morphological data.
-However, the resulting increase in data complexity and processing demands often makes these approaches impractical for studies at an eco-evolutionary scale.
-
-To address these challenges, we developed a rapid and semi-automated segmentation and analysis pipeline based on the Jupyter interactive development environment and the Biomedisa image segmentation platform to investigate three-dimensional morphological adaptation in the three-spined stickleback.
 
 The pipeline includes separation of multi-specimen scans into individual regions of interest, reconstruction of targeted anatomical structures, and morphometric analyses.
-We applied this pipeline to 38 multi-specimen scans comprising 215 specimens from divergent benthic and limnetic stickleback populations, demonstrating the potential of high-throughput imaging approaches for testing ecological and evolutionary hypotheses.
+We applied this pipeline to 38 multi-specimen scans comprising 215 specimens from divergent benthic and limnetic stickleback populations, demonstrating the potential of high-throughput imaging approaches for testing ecological and evolutionary hypotheses. 
+These methods are replicable and clade in-specific, and researchers on all systems may adapt these pipelines to aid in high-throughput, high-quality microCT sampling at scale.
 
 
 ## Introduction {.page_break_before}
 
-The three-spined stickleback (*Gasterosteus aculeatus*) is an oft-studied model system for understanding the independent evolution of similar traits in similar environments [@doi:10.1093/oso/9780198577287.001.0001; @doi:10.1146/annurev-genom-111720-081402].
-This species exhibits marked differences in marine--freshwater, lake--stream, and benthic--limnetic ecotypes [@doi:10.1111/j.1095-8312.2010.01531.x].
-This study will focus on the benthic-limnetic axis, using samples from a long-term evolutionary experiment currently investigating divergent populations of limnetic and benthic stickleback within the Kenai Peninsula of Alaska (USA) [@doi:10.1002/ece3.11503].
+The threespine stickleback (*Gasterosteus aculeatus*) is an oft-studied model system for understanding the independent evolution of similar traits in similar environments [@doi:10.1093/oso/9780198577287.001.0001; @doi:10.1146/annurev-genom-111720-081402].
+This species exhibits marked differences in marine--freshwater, lake--stream, and benthic--limnetic ecotypes [@doi:10.1086/285404; @doi:10.1111/j.1095-8649.2009.02419.x].
+This study will focus on the benthic-limnetic axis, which resolves distinct stickleback ecotypes based primarily on dietary ecology (benthic stickleback forage on macroinvertebrates on the bottom of lakes; limnetic stickleback forage on zooplankton within the water column - see [@doi:10.1111/j.1095-8312.2010.01531.x]).
+Samples for this study are collected from the benthic and limnetic source populations used to establish a long-term evolutionary experiment within the Kenai Peninsula of Alaska (USA) [@doi:10.1002/ece3.11503].
 This project, the Forward In Time Natural Experimental Study of Selection (FITNESS), aims to study the predictability and repeatability of evolution.
-Two pools of sticklebacks---one made from four source populations of limnetic sticklebacks and four source populations of benthic sticklebacks---have been placed into eight destination lakes, four of which are small and benthic and four of which are large and limnetic.
+Two pools of sticklebacks---one made from four source populations of limnetic sticklebacks and one made from four source populations of benthic sticklebacks---have been placed into eight destination lakes, four of which are small and benthic and four of which are large and limnetic.
 These new populations have been sampled every year in order to track the genotypic and phenotypic trajectories of these introduced populations.
-Understanding the initial variation in the source populations is essential to this project, as this initial variation would be expected to reflect which phenotypes are associated with each ecotype under study.
+Understanding the initial variation in the source populations is essential to this project, as it provides the raw material for evolution in the destination lakes.
 
 Among sticklebacks and other bony fishes, differences in jaw structures are directly related to functional and kinematic differences between different ecotypes [@doi:10.1002/ece3.6929].
 Benthic sticklebacks have modified jaws for enhanced suction force and hypertrophied epaxial muscles to aid in foraging on benthic invertebrates, whereas limnetic sticklebacks have modifications for larger jaw protrusions and quick strikes during ram feeding [@doi:10.1186/1471-2148-13-277].
@@ -198,14 +200,14 @@ While the shape and arrangement of paired ceratobranchial and pharyngobranchial 
 This is likely due to the flattening and destructive sampling used in traditional raker counting methods, which dissect and deform these structures to render them visible for manual measurements [@doi:10.3791/54056].
 These structures are, however, difficult to study without full cranial dissection and corresponding distortion of the branchial anatomy.
 3D imaging preserves these features at a high resolution and allows for non-destructive analysis.
-This work is embedded within the [Genomics axis](https://alaskastickleback.com/genomics) of the [Alaska Stickleback Restoration Project](https://alaskastickleback.com/), with which Katie Peichel, Ben Sulser, and Sheila Christen are affiliated.
+Imaging large numbers of stickleback specimens, however, has until now been prohibitive due to the limitations of processing time. 
 
 ## Micro-computed tomography
 
 X-ray micro-computed tomography (micro-CT) imaging is an indispensable tool to gain non-destructive insights into the inner structure of highly diverse samples, specifically for specimens studied in the biomedical sciences [@doi:10.1186/s12915-020-0753-2].
 Microtomographic imaging is ideally suited to non-destructively assess the morphology of different fish species [@doi:10.1093/iob/obad008], including the internal anatomy and small structures difficult to quantify without additional preparation.
 
-While these structures can be rendered by hand by a skilled investigator with segmentation tools such as 3DSlicer [@doi:10.1007/978-1-4614-7657-3_19]-[@doi:10.1111/2041-210X.13669], the time and cost required per specimen is inefficient for the scale required via eco-evolutionary study and requires destruction of the mandibular and cranial anatomy of the specimen.
+While these structures can be rendered by hand by a skilled investigator with segmentation tools such as 3DSlicer [@doi:10.1007/978-1-4614-7657-3_19]-[@doi:10.1111/2041-210X.13669], the time and cost required per specimen is inefficient for the scale required for population-level and evolutionary studies and further requires destruction of the mandibular and cranial anatomy of the specimen.
 
 This project aims to address these gaps, demonstrating a novel pipeline for automatic splitting and rendering of multi-specimen scans for mass sampling, creating a dataset with consistent parameters that can be used as input for downstream machine learning approaches [@doi:10.1038/s41467-020-19303-w] to aid in the segmentation of individual bony structures in each scan.
 Once a Biomedisa model is trained, the entire pipeline runs from multi-specimen input to reconstructed anatomical structures for each specimen in a fraction of the time and resources required for traditional analysis.
@@ -217,14 +219,14 @@ Once a Biomedisa model is trained, the entire pipeline runs from multi-specimen 
 
 ### Sample procurement and preparation
 
-The specimens used for this study were collected from source lakes as part of the FITNESS project in the region of Cook Inlet, Alaska.
+The specimens used for this study were collected from six of the source lakes used for the FITNESS project in the region of Cook Inlet, Alaska.
 Fish were collected using unbaited minnow traps in two separate field seasons, the first taking place from May 26--June 10, 2023 and the second taking place from May 25--June 11, 2024.
 Specimens were collected from a random sample of up to 30 fish from each lake, under Alaska Department of Fish and Game (ADFG) permits SF2023-030 and P-24-015 for 2023 and 2024, respectively.
 Fish were euthanized with MS-222, photographed, labeled and preserved in 10% formalin in individual bags, all under Animal Use Protocol (AUP) MCGL-8265.
 At the end of each field season, samples were shipped from Anchorage (AK, USA) to Bern (BE, CH) where they were stored until scanning.
-The total number of fish for each lake are: Watson lake (52), Finger lake (48), Spirit lake (46), South Rolly lake (35), Walby lake (20), and Tern lake (14) for a total of 215 specimens.
-As an additional step, fish collected in the 2024 field season had DNA fin clips taken via a small piece of the caudal fin in order to sex each individual.
-Samples underwent hotshot DNA extraction protocol [@doi:10.2144/000112619] and subsequent PCR followed Stickleback LRRc61 Sexing with primers for this purpose (see Archambeault et al., 2020 [@doi:10.1002/evl3.175]).
+The total number of fish for each lake are: 52 from Watson lake  (benthic), 48 from Finger lake (benthic), 46 from Spirit lake (limnetic), 35 from South Rolly lake (limnetic), 20 from Walby lake (benthic), and  14 from Tern lake (benthic) for a total of 215 specimens.
+As an additional step, a small piece of the caudal fin was taken from fish collected in the 2024 field season in order to identify the sex of each individual via genotyping.
+DNA was extracted from the fin tissue following Meeker et al. [@doi:10.2144/000112619] and subsequent PCR genotyping was performed with LRRc61 primers for this purpose following Archambeault et al. [@doi:10.1002/evl3.175].
 
 Due to their inherent contrast difference to the surrounding tissue, the structures of interest in this study (teeth and bones, i.e., jaws and skull) are well visualized in unstained samples, hence no further preparation of the fish was necessary.
 
@@ -313,11 +315,11 @@ As a group, a dataset of 51 specimens (including `NRRD` and `.label` files) was 
 We allowed for rotation of 180° to account for possible specimen variability, and an 80/20 split between training and validation data.
 The model was trained with a batch size of 24 and 50 epochs, using a network architecture of 32-64-128-256-512.
 The final model performs well, with a dice score of 0.9159 on the validation dataset.
-Manual touchups were only needed and performed where bones were extremely close together (causing their appearance to be "stuck" in the final render; this is an issue with manual segmentation as well).
+Manual touchups were only needed and performed where bones were extremely close together (causing their appearance to be "stuck" in the final render; this is also an issue with manual segmentation and not exclusive to these methods).
 
 #### Landmarking of models
 
-To demonstrate the effectiveness of this tool and the importance of 3D morphometrics for answering eco-evolutionary questions, we have run a demonstration quantifying the shape differences of the ceratobranchial bones.
+To demonstrate the effectiveness of this tool and the importance of 3D morphometrics for answering evolutionary questions, we quantified the shape differences of the ceratobranchial bones.
 Once trained, we applied the Biomedisa segmentation model to the remaining 160 specimen volumes and landmarked the final results using Stratovan Checkpoint [@checkpoint].
 As a test and for subsequent analysis, the first and second right ceratobranchials were chosen for comparison across all specimens.
 Type II landmarks were set on the ends of each bone, with semilandmarks in-between each to cover axes of curvature along the bone (see Figure @fig:landmarks).
@@ -380,29 +382,22 @@ The extraction and sampling process led to a total of ~64 GB of `NRRD` files, wh
 
 The separated fish were segmented based on a simple multi-level Otsu thresholding method.
 This relatively simple segmentation was sufficient to extract all the features we analyzed further, and we did not have to employ more advanced thresholding methods in our separation pipeline.
-Selection and individual rendering of the branchial structures takes between 10-15 minutes; the average Biomedisa render takes 2.5 minutes once trained (see Table @tbl:timing).
+Selection and individual rendering of the branchial structures takes between 10-15 minutes; the segmentation of an average Biomedisa render takes 15 seconds once trained (see Table @tbl:timing).
 
 ### Analysis
 
 The speed and quality of these data allow us to study the internal branchial anatomy at scale and in situ, without the need for fine dissection.
 
-Numerous studies have shown the relationships between gill rakers (bony protrusions arising from the branchial complex) and diet [@doi:10.1086/285404; @doi:10.1111/j.1420-9101.2008.01583.x].
-
-While the shape and arrangement of the ceratobranchials and the corresponding bony gill rakers are hypothesized to work in tandem for food processing and water vortex generation during suspension feeding [@doi:10.1371/journal.pone.0193874], the shape of these bones has received comparatively little attention.
-
-This is likely due to the flattening and destructive sampling used in traditional raker counting methods, which dissect and deform these structures to render them visible for manual measurement.
-3D imaging preserves these features at high resolution.
-
 After GPA alignment, we quantified the shape differences among all scanned fish for this project.
 Changes due to allometry (using the metric of centroid size or standard length of the fish) were significant but slight, explaining only a small fraction of shape variation in both bones.
 Both linear models and PCA results suggest that the lakes themselves---and not overarching categories of ecotype or sex---drive most of the shape variation in these bones (CB1: p = 0.001, R^2 = 0.03246, CB2: p = 0.001, R^2 = 0.06220).
-Variation in the first ceratobranchial was significantly associated with lake of origin, although the effect size was small (p = 0.009, R^2 = 0.02056), and with a substantial overlap in the resulting shape space (see Figure @fig:pca_cb1).
+Nonetheless, variation in the first ceratobranchial was significantly associated with differing ecotypes, although the effect size was small (p = 0.009, R^2 = 0.02056), with a substantial overlap in the resulting shape space (see Figure @fig:pca_cb1).
 
 ![PCA of CB1 colored by lake ecotype.
   Warps are indicated at the extremes of each axis by vectors drawn from a mean shape (red).](images/PCA_CB1_Plot.png){#fig:pca_cb1}
 
 The second ceratobranchial bone, on the other hand, shows equally small yet significant shifts associated with the ecotype (p = 0.001, R^2 = 0.0377).
-The differences between benthic and limnetic gill rakers are, for this bone, clearly divergent in shape space (see Figure @fig:pca_cb2).
+The differences between benthic and limnetic specimens are, for this bone, clearly divergent in shape space (see Figure @fig:pca_cb2).
 
 ![PCA of CB2 colored by lake ecotype.
   Warps are indicated at the extremes of each axis by vectors drawn from a mean shape (red).](images/PCA_CB2_Plot.png){#fig:pca_cb2}
@@ -410,12 +405,12 @@ The differences between benthic and limnetic gill rakers are, for this bone, cle
 These ecological patterns were further examined at the level of individual lakes (see Figures @fig:pca_cb1_lake and @fig:pca_cb2_lake).
 
 ![PCA of CB1 colored by individual lake.
-  Warps are indicated at the extremes of each axis by vectors drawn from a mean shape (red).](images/PCA_CB1_Plot_Lake.png){#fig:pca_cb1_lake}
+  Benthic lakes are indicated in shades of red and orange, while limnetic lakes are indicated in shades of blue. Warps are indicated at the extremes of each axis by vectors drawn from a mean shape (red).](images/PCA_CB1_Plot_Lake.png){#fig:pca_cb1_lake}
 
 ![PCA of CB2 colored by individual lake.
-  Warps are indicated at the extremes of each axis by vectors drawn from a mean shape (red).](images/PCA_CB2_Plot_Lake.png){#fig:pca_cb2_lake}
+  Benthic lakes are indicated in shades of red and orange, while limnetic lakes are indicated in shades of blue. Warps are indicated at the extremes of each axis by vectors drawn from a mean shape (red).](images/PCA_CB2_Plot_Lake.png){#fig:pca_cb2_lake}
 
-The differences in the 2nd ceratobranchial appear to be driven by divergence in the South Rolly population, supported by significant pairwise differences observed between this lake and all other lakes observed in CB2 and not in CB1 (see supplementary information).
+The differences in the second ceratobranchial appear to be driven by divergence in the South Rolly population, supported by significant pairwise differences observed between this lake and all other lakes observed in CB2 and not in CB1 (see supplementary information).
 
 
 ## Discussion {.page_break_before}
@@ -426,14 +421,14 @@ Once all components of the pipeline are combined, running a simple script enable
 All automated pipeline steps are substantially faster than equivalent manual processing by an expert operator, with minimal active user input.
 This reproducible pipeline allows for high-throughput sampling and population-scale analysis of stickleback specimens.
 
-The imaging and separation step is easy to generalize to either other micro-CT setups or other species/specimen.
-As long as the specimen show up as distint blobs in the MIP (see Figure @fig:labels) our pipeline can reproducibly separate these blobs into cropped dataset for any further processing, enabling a general, reproducible and high-throughput micro-CT workflow in biology and many other fields.
+The imaging and separation step is easy to generalize to either other micro-CT setups or other species/specimens.
+As long as the specimens show up as distinct blobs in the MIP (see Figure @fig:labels) our pipeline can reproducibly separate these blobs into a cropped dataset for any further processing, enabling a general, reproducible and high-throughput micro-CT workflow in biology and many other fields.
 
 ### Findings from Ceratobranchial Analysis
 
-The first and second gill rakers differ remarkably in morphology, size, and breadth, suggesting that these structures may respond differently to shifts in diet---even within the same feeding apparatus.
-CB1 showed statistically significant differences based on linear and pairwise analyses (and PC4, accounting for 4.33% of the variation, appears to capture these differences; see supplementary figures).
-However, we caution that the greater number of lakes and specimens available for this study may contribute to these patterns, as the two groups exhibited statistically different variances.
+The first and second ceratobranchials differ remarkably in morphology, size, and breadth, suggesting that these structures may respond differently to shifts in diet---even within the same feeding apparatus.
+CB1 showed statistically significant differences between benthic and limnetic ecotypes based on linear and pairwise analyses (and PC4, accounting for 4.33% of the variation, appears to capture these differences; see supplementary figures).
+However, we caution that the greater number of benthic lakes and specimens available for this study may contribute to these patterns, as the two groups (benthic and limnetic) exhibit statistically different variances.
 This pipeline will allow for more extensive analysis from future sampling years to confirm these findings.
 
 Within CB2, limnetic fish (and particularly those from South Rolly lake) appear to have narrower, less keeled bones than benthic fish.
@@ -441,10 +436,10 @@ The muscles that attach to the ceratobranchials (*m. adductor branchialis*, *m. 
 The increased surface area observed in benthic fish may provide greater area for muscle attachment, which may enhance the ability of fish to abduct these structures during water filtration [@doi:10.1007/s10228-004-0251-5; @hdl:2268/14698].
 While dietary analyses of these fish are still ongoing, these findings suggest that the South Rolly population may have unique dietary specializations and would be expected to feed differently than fish from the other lakes in this study.
 In terms of reintroduction, populations from this lake might be expected to fare better than others in terms of limnetic specialization.
-Indeed, fish with South Rolly heritage outperform Spirit lake fish in every transplant experiment in which both populations are included as a part of the FITNESS project [@doi:10.64898/2026.02.04.699496].
+Indeed, fish with South Rolly heritage outperform Spirit lake fish in every transplant experiment in which both limnetic populations are included as a part of the FITNESS project [@doi:10.64898/2026.02.04.699496].
 
 The different response of the first and second ceratobranchial raises the possibility of a modular response to dietary shifts within the branchial basket.
-Studies treating the branchial basket as a single structure, focusing on the first ceratobranchial, or investigating external morphology might potentially miss significant changes in shape and size of these structures---and this pipeline provides a wealth of data with which to perform a follow-up study.
+Studies treating the branchial basket as a single structure, focusing only on the first ceratobranchial, or investigating only external morphology might potentially miss significant changes in shape and size of these structures---and this pipeline provides a wealth of data with which to perform a follow-up study.
 
 ### Future improvements and issues
 
@@ -475,20 +470,20 @@ Finally, the 3D analysis step of the pipeline allows for insights from 3D data t
 
 
 
-- [Conceptualization](https://credit.niso.org/contributor-roles/conceptualization/): Ben Sulser, Sheila Christen, Ruslan Hlushchuk
-- [Data curation](https://credit.niso.org/contributor-roles/data-curation/): David Haberthür, Ben Sulser, Sheila Christen
-- [Formal analysis](https://credit.niso.org/contributor-roles/formal-analysis/): David Haberthür, Ben Sulser, Sheila Christen
-- [Funding acquisition](https://credit.niso.org/contributor-roles/funding-acquisition/): Ben Sulser, Catherine L. Peichel, Ruslan Hlushchuk
-- [Investigation](https://credit.niso.org/contributor-roles/investigation/): David Haberthür, Ben Sulser, Sheila Christen
-- [Methodology](https://credit.niso.org/contributor-roles/methodology/): David Haberthür, Ben Sulser, Sheila Christen, Ruslan Hlushchuk
-- [Project administration](https://credit.niso.org/contributor-roles/project-administration/): David Haberthür, Ben Sulser, Catherine L. Peichel, Ruslan Hlushchuk
-- [Resources](https://credit.niso.org/contributor-roles/resources/): Ben Sulser, Ruslan Hlushchuk
-- [Software](https://credit.niso.org/contributor-roles/software/): David Haberthür, Ben Sulser
-- [Supervision](https://credit.niso.org/contributor-roles/supervision/): Ben Sulser, Catherine L. Peichel, Ruslan Hlushchuk
-- [Validation](https://credit.niso.org/contributor-roles/validation/): David Haberthür, Ben Sulser, Sheila Christen
-- [Visualization](https://credit.niso.org/contributor-roles/visualization/): David Haberthür, Ben Sulser, Sheila Christen
-- [Writing – original draft](https://credit.niso.org/contributor-roles/writing---original-draft/): David Haberthür, Ben Sulser
-- [Writing – review & editing](https://credit.niso.org/contributor-roles/writing---review-&-editing/): David Haberthür, Ben Sulser, Sheila Christen, Catherine L. Peichel, Ruslan Hlushchuk
+- [Conceptualization](https://credit.niso.org/contributor-roles/conceptualization/): R. Benjamin Sulser, Sheila Christen, Ruslan Hlushchuk
+- [Data curation](https://credit.niso.org/contributor-roles/data-curation/): David Haberthür, R. Benjamin Sulser, Sheila Christen
+- [Formal analysis](https://credit.niso.org/contributor-roles/formal-analysis/): David Haberthür, R. Benjamin Sulser, Sheila Christen
+- [Funding acquisition](https://credit.niso.org/contributor-roles/funding-acquisition/): R. Benjamin Sulser, Catherine L. Peichel, Ruslan Hlushchuk
+- [Investigation](https://credit.niso.org/contributor-roles/investigation/): David Haberthür, R. Benjamin Sulser, Sheila Christen
+- [Methodology](https://credit.niso.org/contributor-roles/methodology/): David Haberthür, R. Benjamin Sulser, Sheila Christen, Ruslan Hlushchuk
+- [Project administration](https://credit.niso.org/contributor-roles/project-administration/): David Haberthür, R. Benjamin Sulser, Catherine L. Peichel, Ruslan Hlushchuk
+- [Resources](https://credit.niso.org/contributor-roles/resources/): R. Benjamin Sulser, Ruslan Hlushchuk
+- [Software](https://credit.niso.org/contributor-roles/software/): David Haberthür, R. Benjamin Sulser
+- [Supervision](https://credit.niso.org/contributor-roles/supervision/): R. Benjamin Sulser, Catherine L. Peichel, Ruslan Hlushchuk
+- [Validation](https://credit.niso.org/contributor-roles/validation/): David Haberthür, R. Benjamin Sulser, Sheila Christen
+- [Visualization](https://credit.niso.org/contributor-roles/visualization/): David Haberthür, R. Benjamin Sulser, Sheila Christen
+- [Writing – original draft](https://credit.niso.org/contributor-roles/writing---original-draft/): David Haberthür, R. Benjamin Sulser
+- [Writing – review & editing](https://credit.niso.org/contributor-roles/writing---review-&-editing/): David Haberthür, R. Benjamin Sulser, Sheila Christen, Catherine L. Peichel, Ruslan Hlushchuk
 
 
 
@@ -497,7 +492,7 @@ Finally, the 3D analysis step of the pipeline allows for insights from 3D data t
 |Author|Competing Interests|Last Reviewed|
 |---|---|---|
 |David Haberthür|Nothing to declare|2026-01-14|
-|Ben Sulser|Nothing to declare||
+|R. Benjamin Sulser|Nothing to declare|2026-07-28|
 |Sheila Christen|Nothing to declare|2026-07-13|
 |Catherine L. Peichel|Nothing to declare|2026-01-19|
 |Ruslan Hlushchuk|Nothing to declare|2026-01-19|
