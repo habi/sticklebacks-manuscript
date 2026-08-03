@@ -26,8 +26,8 @@ header-includes: |
   <meta name="dc.date" content="2026-08-03" />
   <meta name="citation_publication_date" content="2026-08-03" />
   <meta property="article:published_time" content="2026-08-03" />
-  <meta name="dc.modified" content="2026-08-03T10:48:30+00:00" />
-  <meta property="article:modified_time" content="2026-08-03T10:48:30+00:00" />
+  <meta name="dc.modified" content="2026-08-03T11:09:16+00:00" />
+  <meta property="article:modified_time" content="2026-08-03T11:09:16+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -55,9 +55,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/4b952a8355a353be37a29a1755eee58bcb3e0b57/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/4b952a8355a353be37a29a1755eee58bcb3e0b57/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/4b952a8355a353be37a29a1755eee58bcb3e0b57/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/0029a1c5b8c28604676e1390701fedc9d379fe2b/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/0029a1c5b8c28604676e1390701fedc9d379fe2b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/0029a1c5b8c28604676e1390701fedc9d379fe2b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -79,12 +79,12 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/4b952a8355a353be37a29a1755eee58bcb3e0b57/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/0029a1c5b8c28604676e1390701fedc9d379fe2b/))
 was generated
-from [habi/sticklebacks-manuscript@4b952a8](https://github.com/habi/sticklebacks-manuscript/tree/4b952a8355a353be37a29a1755eee58bcb3e0b57)
+from [habi/sticklebacks-manuscript@0029a1c](https://github.com/habi/sticklebacks-manuscript/tree/0029a1c5b8c28604676e1390701fedc9d379fe2b)
 on August 3, 2026.
 <br>
-This version contains 5199 words.
+This version contains 5230 words.
 </em></small>
 
 
@@ -348,10 +348,11 @@ We acquired 136838 projections, reconstructed into a total of 154622 reconstruct
 Our method reproducibly extracts each of the six fish scanned simultaneously in one scan.
 The custom-made sample holder aligns each fish along the vertical axis around the rotation axis of the tomographic scan.
 The extraction based on the MIP image along the rotation axis is completely automated and very robust, since the detected fish 'regions' do not overlap in the resulting image.
-
-Depending on the available hardware, it may not even be possible to load the full stack of each scan into software to manually perform the cropping, such as Fiji [@doi:10.1038/nmeth.2019].
+	
+The resulting image stack, containing six fish in one multiscan, creates a large output dataset that can be unwieldy to manage even for experienced users.
+Depending on the available hardware, it may not even be possible to load in order to manually perform the cropping.
 Large stacks of images (in other words larger than the available RAM of the available machine) can be loaded as [virtual stacks](https://imagej.net/ij/plugins/virtual-opener.html), but to manually crop the region of each fish from the large scan with the [Crop (3D)](https://www.longair.net/edinburgh/imagej/three-pane-crop/) function, one needs to load the full dataset.
-Since one (exemplary) dataset (`Sticklebucket_10`) is 7 GB on disk and reported as 35.4 GB when loaded in Fiji, using the 3D cropping function on an uncropped single dataset is not possible without a powerful workstation.
+Since one (exemplary) dataset (`Sticklebucket_10`) is 7 GB on disk and reported as 35.4 GB when loaded in Fiji [@doi:10.1038/nmeth.2019], using the 3D cropping function on an original single multiscan dataset is not possible without a powerful workstation.
 
 Extracting individual fish from the encompassing dataset would thus be a two-step manual process, e.g. cropping the full dataset loaded as virtual stack and then cropping it down further before writing out the cropped stack.
 For each encompassing scan this would need to be repeated 6 times (for *each* of the 6 fish in each of the encompassing scans).
@@ -389,14 +390,14 @@ Selection and individual rendering of the branchial structures takes between 10-
 The speed and quality of these data allow us to study the internal branchial anatomy at scale and in situ, without the need for fine dissection.
 
 After GPA alignment, we quantified the shape differences among all scanned fish for this project.
-Changes due to allometry (using the metric of centroid size or standard length of the fish) were significant but slight, explaining only a small fraction of shape variation in both bones.
-Both linear models and PCA results suggest that the lakes themselves---and not overarching categories of ecotype or sex---drive most of the shape variation in these bones (CB1: p = 0.001, R^2 = 0.03246, CB2: p = 0.001, R^2 = 0.06220).
-Nonetheless, variation in the first ceratobranchial was significantly associated with differing ecotypes, although the effect size was small (p = 0.009, R^2 = 0.02056), with a substantial overlap in the resulting shape space (see Figure @fig:pca_cb1).
+Changes due to allometry (using the metric of centroid size or standard length of the fish) were significant but slight, explaining only a small fraction of shape variation (CB1: p = 0.001, $R^2$ = 0.03246; p = 0.001 CB2: $R^2$ = 0.06220) in both bones.
+Both linear models and PCA results suggest that the lakes themselves---and not overarching categories of ecotype or sex---drive most of the shape variation in these bones (CB1: p = 0.001, $R^2$ = 0.09463, CB2: p = 0.001, $R^2$ = 0.11039).
+Nonetheless, variation in the first ceratobranchial was significantly associated with differing ecotypes, although the effect size was small (p = 0.009, $R^2$ = 0.02056), with a substantial overlap in the resulting shape space (see Figure @fig:pca_cb1).
 
 ![PCA of CB1 colored by lake ecotype.
   Warps are indicated at the extremes of each axis by vectors drawn from a mean shape (red).](images/PCA_CB1_Plot.png){#fig:pca_cb1}
 
-The second ceratobranchial bone, on the other hand, shows equally small yet significant shifts associated with the ecotype (p = 0.001, R^2 = 0.0377).
+The second ceratobranchial bone, on the other hand, shows equally small yet significant shifts associated with the ecotype (p = 0.001, $R^2$ = 0.0377).
 The differences between benthic and limnetic specimens are, for this bone, clearly divergent in shape space (see Figure @fig:pca_cb2).
 
 ![PCA of CB2 colored by lake ecotype.
