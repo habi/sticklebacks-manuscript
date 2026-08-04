@@ -1,9 +1,10 @@
 ---
-title: "High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine SticklebackHigh-Throughput micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback"
+title: "High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback"
 date: null  # Defaults to date generated, but can specify like '2022-10-31'.
 keywords:
   - tomography
-  - sticklebacks
+  - high-throughput
+  - stickleback
   - ecology
 lang: en-US
 authors:
