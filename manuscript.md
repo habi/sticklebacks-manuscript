@@ -1,8 +1,9 @@
 ---
-title: 'High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine SticklebackHigh-Throughput micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback'
+title: 'High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback'
 keywords:
 - tomography
-- sticklebacks
+- high-throughput
+- stickleback
 - ecology
 lang: en-US
 date-meta: '2026-08-04'
@@ -19,15 +20,15 @@ header-includes: |
   -->
   <meta name="dc.format" content="text/html" />
   <meta property="og:type" content="article" />
-  <meta name="dc.title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine SticklebackHigh-Throughput micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
-  <meta name="citation_title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine SticklebackHigh-Throughput micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
-  <meta property="og:title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine SticklebackHigh-Throughput micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
-  <meta property="twitter:title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine SticklebackHigh-Throughput micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
+  <meta name="dc.title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
+  <meta name="citation_title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
+  <meta property="og:title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
+  <meta property="twitter:title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
   <meta name="dc.date" content="2026-08-04" />
   <meta name="citation_publication_date" content="2026-08-04" />
   <meta property="article:published_time" content="2026-08-04" />
-  <meta name="dc.modified" content="2026-08-04T13:55:28+00:00" />
-  <meta property="article:modified_time" content="2026-08-04T13:55:28+00:00" />
+  <meta name="dc.modified" content="2026-08-04T15:13:00+00:00" />
+  <meta property="article:modified_time" content="2026-08-04T15:13:00+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -55,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/27d1dd9d13baf2651f7b55c7a3d441f303ca3964/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/27d1dd9d13baf2651f7b55c7a3d441f303ca3964/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/27d1dd9d13baf2651f7b55c7a3d441f303ca3964/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/017797c962771361c00d6249059fdc5be056f4b7/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/017797c962771361c00d6249059fdc5be056f4b7/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/017797c962771361c00d6249059fdc5be056f4b7/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -79,9 +80,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/27d1dd9d13baf2651f7b55c7a3d441f303ca3964/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/017797c962771361c00d6249059fdc5be056f4b7/))
 was generated
-from [habi/sticklebacks-manuscript@27d1dd9](https://github.com/habi/sticklebacks-manuscript/tree/27d1dd9d13baf2651f7b55c7a3d441f303ca3964)
+from [habi/sticklebacks-manuscript@017797c](https://github.com/habi/sticklebacks-manuscript/tree/017797c962771361c00d6249059fdc5be056f4b7)
 on August 4, 2026.
 <br>
 This version contains 5248 words.
@@ -157,7 +158,7 @@ This version contains 5248 words.
 ::: {#correspondence}
 ✉: Correspondence via [GitHub Issues](https://github.com/habi/sticklebacks-manuscript/issues)
 or email to
-[Ruslan Hlushchuk](mailto:ruslan.hlushchuk@unibe.ch?subject=Feedback%20on%20%22High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine SticklebackHigh-Throughput micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback%22).
+[Ruslan Hlushchuk](mailto:ruslan.hlushchuk@unibe.ch?subject=Feedback%20on%20%22High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback%22).
 
 
 :::
