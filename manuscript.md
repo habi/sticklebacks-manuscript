@@ -6,7 +6,7 @@ keywords:
 - stickleback
 - ecology
 lang: en-US
-date-meta: '2026-08-04'
+date-meta: '2026-08-05'
 author-meta:
 - David Haberthür
 - R. Benjamin Sulser
@@ -24,11 +24,11 @@ header-includes: |
   <meta name="citation_title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
   <meta property="og:title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
   <meta property="twitter:title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
-  <meta name="dc.date" content="2026-08-04" />
-  <meta name="citation_publication_date" content="2026-08-04" />
-  <meta property="article:published_time" content="2026-08-04" />
-  <meta name="dc.modified" content="2026-08-04T15:13:00+00:00" />
-  <meta property="article:modified_time" content="2026-08-04T15:13:00+00:00" />
+  <meta name="dc.date" content="2026-08-05" />
+  <meta name="citation_publication_date" content="2026-08-05" />
+  <meta property="article:published_time" content="2026-08-05" />
+  <meta name="dc.modified" content="2026-08-05T12:57:20+00:00" />
+  <meta property="article:modified_time" content="2026-08-05T12:57:20+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/017797c962771361c00d6249059fdc5be056f4b7/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/017797c962771361c00d6249059fdc5be056f4b7/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/017797c962771361c00d6249059fdc5be056f4b7/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/54a10cbb691d7abe4a788ece138a633589556192/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/54a10cbb691d7abe4a788ece138a633589556192/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/54a10cbb691d7abe4a788ece138a633589556192/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,12 +80,12 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/017797c962771361c00d6249059fdc5be056f4b7/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/54a10cbb691d7abe4a788ece138a633589556192/))
 was generated
-from [habi/sticklebacks-manuscript@017797c](https://github.com/habi/sticklebacks-manuscript/tree/017797c962771361c00d6249059fdc5be056f4b7)
-on August 4, 2026.
+from [habi/sticklebacks-manuscript@54a10cb](https://github.com/habi/sticklebacks-manuscript/tree/54a10cbb691d7abe4a788ece138a633589556192)
+on August 5, 2026.
 <br>
-This version contains 5248 words.
+This version contains 5311 words.
 </em></small>
 
 
@@ -178,7 +178,7 @@ To address these challenges, we developed a rapid and semi-automated segmentatio
 
 The pipeline includes separation of multi-specimen scans into individual regions of interest, reconstruction of targeted anatomical structures, and morphometric analyses.
 We applied this pipeline to 38 multi-specimen scans comprising 215 specimens from divergent benthic and limnetic stickleback populations, demonstrating the potential of a high-throughput micro-CT imaging approach for testing ecological and evolutionary hypotheses.
-These methods are replicable and clade in-specific, and researchers on all systems may adapt these pipelines to aid in high-throughput microCT sampling at scale.
+These replicable, clade-agnostic methods provide a scalable pipeline that researchers working across diverse systems can adapt for high-throughput microCT sampling at scale.
 
 
 ## Introduction {.page_break_before}
@@ -249,6 +249,12 @@ This resulted in an average scan time of 10 hours for each scan.
 The projection images were then subsequently reconstructed into stacks of 8bit PNG images with NRecon (Bruker microCT, Kontich, Belgium. Version: 2.2.0.6), without applying any ring artifact or beam hardening correction.
 The isometric voxel sizes in the resulting datasets vary from 15 to 17.5 µm.
 
+The result of one such multi-specimen scan is visualized in Figure @fig:visualization, where it is shown how this scan contains six fish.
+The labels on the holder are colored red, and shown extracted (in yellow) later in @fig:labels.
+
+![Three-dimensional visualization of one multi-specimen scan.
+  The 3D printed labels are colored in red, the holder itself is shown semitransparently, containing six specimen for this scan.](images/Sticklebucket_H.rec.3D.png){#fig:visualization}
+
 ### Data analysis
 
 #### Preparation and handling of tomographic datasets
@@ -291,7 +297,7 @@ In addition to this, we also wrote a log file for each extracted region, contain
 
 Writing the regions as `zarr` files made it possible to efficiently work with the image data of each extracted fish and to convert that data to any desired format for further analysis.
 For this further analysis, we also wrote stacks of PNG images and, additionally, [`NRRD`](https://teem.sourceforge.net/nrrd/) files for each fish region in both cropped and cropped-and-binarized forms.
-These binarized regions were segmented into bone and background based on a simple multi-level Otsu thresholding method [@doi:10.6688/JISE.2001.17.5.1].
+These binarized regions were segmented into bone and background based on a simple multi-level Otsu thresholding method [@doi:10.6688/JISE.2001.17.5.1], (with 4 classes, using only the middle threshold).
 Providing the regions as `NRRD` files helped to efficiently work with the datasets as specified in the following sections.
 
 Using `K3D-jupyter` [@url:https://k3d-jupyter.org] we implemented a quick way to view any of the extracted regions directly in the Jupyter notebook (see Figure @fig:k3d).
@@ -349,10 +355,10 @@ Our method reproducibly extracts each of the six fish scanned simultaneously in 
 The custom-made sample holder aligns each fish along the vertical axis around the rotation axis of the tomographic scan.
 The extraction based on the MIP image along the rotation axis is completely automated and very robust, since the detected fish 'regions' do not overlap in the resulting image.
 
-The resulting image stack, containing six fish in one multiscan, creates a large output dataset that can be unwieldy to manage even for experienced users.
+The resulting image stack, containing six fish in one multi-specimen scan, creates a large output dataset that can be unwieldy to manage even for experienced users.
 Depending on the available hardware, it may not even be possible to load the resulting image stack into an image processing software in order to manually perform the cropping.
 Large stacks of images (in other words larger than the available RAM of the available machine) can be loaded as [virtual stacks](https://imagej.net/ij/plugins/virtual-opener.html), but to manually crop the region of each fish from the large scan with the [Crop (3D)](https://www.longair.net/edinburgh/imagej/three-pane-crop/) function, one needs to load the full dataset.
-Since one (exemplary) dataset (`Sticklebucket_10`) is 7 GB on disk and reported as 35.4 GB when loaded in Fiji [@doi:10.1038/nmeth.2019], using the 3D cropping function on an original single multiscan dataset is not possible without a powerful workstation.
+Since one (exemplary) dataset (`Sticklebucket_10`) is 7 GB on disk and reported as 35.4 GB when loaded in Fiji [@doi:10.1038/nmeth.2019], using the 3D cropping function on an original single multi-specimen dataset is not possible without a powerful workstation.
 
 Extracting individual fish from the encompassing dataset would thus be a two-step manual process, e.g. cropping the full dataset loaded as virtual stack and then cropping it down further before writing out the cropped stack.
 For each encompassing scan this would need to be repeated 6 times (for *each* of the 6 fish in each of the encompassing scans).
@@ -444,10 +450,9 @@ Studies treating the branchial basket as a single structure, focusing only on th
 
 ### Future improvements and issues
 
-As with many multi-scan projects, the scanning parameters can be optimized individually for each scan but not for each individual specimen.
+As with many multi-specimen scanning projects, the scanning parameters can be optimized individually for each scan but not for each individual specimen.
 In addition, atypically large or dense specimens cause an issue for the holder and the reproducibility across scans.
-As with most machine learning approaches, it is also important to ensure that the full range of variations across the entire dataset are represented in training to avoid erroneous segmentations.
-
+As with most machine learning frameworks, the training dataset must encompass the full range of anatomical variation to prevent segmentation errors.
 
 ## Conclusion {.page_break_before}
 
