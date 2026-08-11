@@ -6,7 +6,7 @@ keywords:
 - stickleback
 - ecology
 lang: en-US
-date-meta: '2026-08-05'
+date-meta: '2026-08-11'
 author-meta:
 - David Haberthür
 - R. Benjamin Sulser
@@ -24,11 +24,11 @@ header-includes: |
   <meta name="citation_title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
   <meta property="og:title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
   <meta property="twitter:title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
-  <meta name="dc.date" content="2026-08-05" />
-  <meta name="citation_publication_date" content="2026-08-05" />
-  <meta property="article:published_time" content="2026-08-05" />
-  <meta name="dc.modified" content="2026-08-05T12:57:20+00:00" />
-  <meta property="article:modified_time" content="2026-08-05T12:57:20+00:00" />
+  <meta name="dc.date" content="2026-08-11" />
+  <meta name="citation_publication_date" content="2026-08-11" />
+  <meta property="article:published_time" content="2026-08-11" />
+  <meta name="dc.modified" content="2026-08-11T11:01:16+00:00" />
+  <meta property="article:modified_time" content="2026-08-11T11:01:16+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/54a10cbb691d7abe4a788ece138a633589556192/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/54a10cbb691d7abe4a788ece138a633589556192/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/54a10cbb691d7abe4a788ece138a633589556192/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/186654d7f64402e3a96452c424da00416c5fb56d/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/186654d7f64402e3a96452c424da00416c5fb56d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/186654d7f64402e3a96452c424da00416c5fb56d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,10 +80,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/54a10cbb691d7abe4a788ece138a633589556192/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/186654d7f64402e3a96452c424da00416c5fb56d/))
 was generated
-from [habi/sticklebacks-manuscript@54a10cb](https://github.com/habi/sticklebacks-manuscript/tree/54a10cbb691d7abe4a788ece138a633589556192)
-on August 5, 2026.
+from [habi/sticklebacks-manuscript@186654d](https://github.com/habi/sticklebacks-manuscript/tree/186654d7f64402e3a96452c424da00416c5fb56d)
+on August 11, 2026.
 <br>
 This version contains 5311 words.
 </em></small>
@@ -453,6 +453,7 @@ Studies treating the branchial basket as a single structure, focusing only on th
 As with many multi-specimen scanning projects, the scanning parameters can be optimized individually for each scan but not for each individual specimen.
 In addition, atypically large or dense specimens cause an issue for the holder and the reproducibility across scans.
 As with most machine learning frameworks, the training dataset must encompass the full range of anatomical variation to prevent segmentation errors.
+
 
 ## Conclusion {.page_break_before}
 
