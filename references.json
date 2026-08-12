@@ -1323,6 +1323,560 @@
   },
   {
     "type": "software",
+    "id": "YEMgt2T4",
+    "author": [
+      {
+        "family": "Sofroniew",
+        "given": "Nicholas"
+      },
+      {
+        "family": "Lambert",
+        "given": "Talley"
+      },
+      {
+        "family": "Bokota",
+        "given": "Grzegorz"
+      },
+      {
+        "family": "Nunez-Iglesias",
+        "given": "Juan"
+      },
+      {
+        "family": "Sobolewski",
+        "given": "Peter"
+      },
+      {
+        "family": "Sweet",
+        "given": "Andrew"
+      },
+      {
+        "family": "Gaifas",
+        "given": "Lorenzo"
+      },
+      {
+        "family": "Evans",
+        "given": "Kira"
+      },
+      {
+        "family": "Burt",
+        "given": "Alister"
+      },
+      {
+        "family": "Doncila Pop",
+        "given": "Draga"
+      },
+      {
+        "family": "Yamauchi",
+        "given": "Kevin"
+      },
+      {
+        "family": "Weber Mendonça",
+        "given": "Melissa"
+      },
+      {
+        "family": "Rodríguez-Guerra",
+        "given": "Jaime"
+      },
+      {
+        "family": "Liu",
+        "given": "Lucy"
+      },
+      {
+        "family": "Buckley",
+        "given": "Genevieve"
+      },
+      {
+        "family": "Vierdag",
+        "given": "Wouter-Michiel"
+      },
+      {
+        "family": "Anderson",
+        "given": "Ashley"
+      },
+      {
+        "family": "Monko",
+        "given": "Timothy"
+      },
+      {
+        "family": "Willing",
+        "given": "Carol"
+      },
+      {
+        "family": "Rodríguez-Reza",
+        "given": "Carlos M."
+      },
+      {
+        "family": "Royer",
+        "given": "Loic"
+      },
+      {
+        "family": "Can Solak",
+        "given": "Ahmet"
+      },
+      {
+        "family": "Harrington",
+        "given": "Kyle I. S."
+      },
+      {
+        "family": "Abramo",
+        "given": "Jacopo"
+      },
+      {
+        "family": "Ahlers",
+        "given": "Jannis"
+      },
+      {
+        "family": "Ajina",
+        "given": "Sesan"
+      },
+      {
+        "family": "Althviz Moré",
+        "given": "Daniel"
+      },
+      {
+        "family": "Ambroset",
+        "given": "Mélodie"
+      },
+      {
+        "family": "Amsalem",
+        "given": "Oren"
+      },
+      {
+        "family": "Andò",
+        "given": "Edward"
+      },
+      {
+        "family": "Annex",
+        "given": "Andrew"
+      },
+      {
+        "family": "Archit",
+        "given": "Anwai"
+      },
+      {
+        "family": "Aronssohn",
+        "given": "Constantin"
+      },
+      {
+        "family": "Balzaretti",
+        "given": "Filippo"
+      },
+      {
+        "family": "Boone",
+        "given": "Peter"
+      },
+      {
+        "family": "Bestak",
+        "given": "Kresimir"
+      },
+      {
+        "family": "Bragantini",
+        "given": "Jordão"
+      },
+      {
+        "family": "Bunten",
+        "given": "David"
+      },
+      {
+        "family": "Bussonnier",
+        "given": "Matthias"
+      },
+      {
+        "family": "Caporal",
+        "given": "Clément"
+      },
+      {
+        "family": "Chazotte",
+        "given": "Margot"
+      },
+      {
+        "family": "Coccimiglio",
+        "given": "Ian"
+      },
+      {
+        "family": "Čočková",
+        "given": "Zuzana"
+      },
+      {
+        "family": "Defauw",
+        "given": "Arne"
+      },
+      {
+        "family": "Czasak",
+        "given": "Sara"
+      },
+      {
+        "family": "Eglinger",
+        "given": "Jan"
+      },
+      {
+        "family": "Eisenbarth",
+        "given": "Andreas"
+      },
+      {
+        "family": "Freeman",
+        "given": "Jeremy"
+      },
+      {
+        "family": "Fukai T.",
+        "given": "Yohsuke"
+      },
+      {
+        "family": "Garnett",
+        "given": "Arbor"
+      },
+      {
+        "family": "Gohlke",
+        "given": "Christoph"
+      },
+      {
+        "family": "Gunalan",
+        "given": "Kabilar"
+      },
+      {
+        "family": "Halchenko",
+        "given": "Yaroslav Olegovich"
+      },
+      {
+        "family": "Har-Gil",
+        "given": "Hagai"
+      },
+      {
+        "family": "Harfouche",
+        "given": "Mark"
+      },
+      {
+        "family": "Hilsenstein",
+        "given": "Volker"
+      },
+      {
+        "family": "Huijben",
+        "given": "Teun A.P.M."
+      },
+      {
+        "family": "Hutchings",
+        "given": "Katherine"
+      },
+      {
+        "family": "Kawai",
+        "given": "Hiroki"
+      },
+      {
+        "family": "Kozar",
+        "given": "Robert"
+      },
+      {
+        "family": "Lauer",
+        "given": "Jessy"
+      },
+      {
+        "family": "Le Meur-Diebolt",
+        "given": "Samuel"
+      },
+      {
+        "family": "Lefebvre",
+        "given": "Austin E. Y. T."
+      },
+      {
+        "family": "Lichtner",
+        "given": "Gregor"
+      },
+      {
+        "family": "Liu",
+        "given": "Hanjin"
+      },
+      {
+        "family": "Liu",
+        "given": "Ziyang"
+      },
+      {
+        "family": "Lowe",
+        "given": "Alan"
+      },
+      {
+        "family": "Malin-Mayor",
+        "given": "Caroline"
+      },
+      {
+        "family": "Marconato",
+        "given": "Luca"
+      },
+      {
+        "family": "Martin",
+        "given": "Sean"
+      },
+      {
+        "family": "McGovern",
+        "given": "Abigail"
+      },
+      {
+        "family": "Migas",
+        "given": "Lukasz"
+      },
+      {
+        "family": "Miller",
+        "given": "Nadalyn"
+      },
+      {
+        "family": "Miñano",
+        "given": "Sofía"
+      },
+      {
+        "family": "Muñoz",
+        "given": "Hector"
+      },
+      {
+        "family": "Müller",
+        "given": "Jan-Hendrik"
+      },
+      {
+        "family": "Nauroth-Kreß",
+        "given": "Christopher"
+      },
+      {
+        "family": "Newstein",
+        "given": "Peter"
+      },
+      {
+        "family": "Obenhaus",
+        "given": "Horst A."
+      },
+      {
+        "family": "Palecek",
+        "given": "David"
+      },
+      {
+        "family": "Pape",
+        "given": "Constantin"
+      },
+      {
+        "family": "Pellegrini",
+        "given": "Yann"
+      },
+      {
+        "family": "Perlman",
+        "given": "Eric"
+      },
+      {
+        "family": "Theart",
+        "given": "Rensu Petrus"
+      },
+      {
+        "family": "Pevey",
+        "given": "Kim"
+      },
+      {
+        "family": "Peña-Castellanos",
+        "given": "Gonzalo"
+      },
+      {
+        "family": "Phelps",
+        "given": "Jasper"
+      },
+      {
+        "family": "Pierré",
+        "given": "Andrea"
+      },
+      {
+        "family": "Pinto",
+        "given": "David"
+      },
+      {
+        "family": "Reksoatmodjo",
+        "given": "Anthony"
+      },
+      {
+        "family": "Ross",
+        "given": "David"
+      },
+      {
+        "family": "Russell",
+        "given": "Craig T."
+      },
+      {
+        "family": "Ryan",
+        "given": "James"
+      },
+      {
+        "family": "Saveur",
+        "given": "Tom"
+      },
+      {
+        "family": "Schabel",
+        "given": "Matthias Christian"
+      },
+      {
+        "family": "Selzer",
+        "given": "Gabriel"
+      },
+      {
+        "family": "Sharma",
+        "given": "Rupesh"
+      },
+      {
+        "family": "Sheikh",
+        "given": "Imad Uddin"
+      },
+      {
+        "family": "Sirmpilatze",
+        "given": "Nikoloz"
+      },
+      {
+        "family": "Smith",
+        "given": "MB"
+      },
+      {
+        "family": "Smith",
+        "given": "Paul"
+      },
+      {
+        "family": "Sofiiuk",
+        "given": "Konstantin"
+      },
+      {
+        "family": "Soltwedel",
+        "given": "Johannes"
+      },
+      {
+        "family": "Stansby",
+        "given": "David"
+      },
+      {
+        "family": "Steuer",
+        "given": "Michal"
+      },
+      {
+        "family": "Teo",
+        "given": "Wulin"
+      },
+      {
+        "family": "Vanaret",
+        "given": "Jules"
+      },
+      {
+        "family": "Wadhwa",
+        "given": "Pam"
+      },
+      {
+        "family": "Weigert",
+        "given": "Martin"
+      },
+      {
+        "family": "Windhager",
+        "given": "Jonas"
+      },
+      {
+        "family": "Winston",
+        "given": "Philip"
+      },
+      {
+        "family": "Yu",
+        "given": "Qin"
+      },
+      {
+        "family": "Zhang",
+        "given": "Liudeng"
+      },
+      {
+        "family": "Zhao",
+        "given": "Rubin"
+      },
+      {
+        "family": "Witz",
+        "given": "Guillaume"
+      },
+      {
+        "family": "Leomil Zoccoler",
+        "given": "Marcelo"
+      },
+      {
+        "family": "Yadav",
+        "given": "Aniket Singh"
+      },
+      {
+        "family": "Hinderling",
+        "given": "Lucien"
+      },
+      {
+        "family": "Kabde",
+        "given": "Omkar"
+      },
+      {
+        "family": "Roald-Arbøl",
+        "given": "Mikkel"
+      },
+      {
+        "family": "Rochat",
+        "given": "Giliane"
+      },
+      {
+        "family": "Castelli",
+        "given": "Filippo Maria"
+      },
+      {
+        "family": "Venugopal",
+        "given": "Revathy"
+      },
+      {
+        "family": "Coussoux",
+        "given": "Edouard"
+      },
+      {
+        "family": "Seth",
+        "given": "Mridul"
+      },
+      {
+        "family": "Becht",
+        "given": "Job"
+      },
+      {
+        "family": "Creeten",
+        "given": "Christophe"
+      },
+      {
+        "family": "Morais",
+        "given": "Sébastien"
+      },
+      {
+        "family": "Bloemsaat",
+        "given": "Bas"
+      },
+      {
+        "family": "Kania",
+        "given": "Kamil"
+      },
+      {
+        "family": "Liaskas",
+        "given": "Ioannis"
+      },
+      {
+        "family": "Hada",
+        "given": "Aroj"
+      },
+      {
+        "family": "Nagineni",
+        "given": "Venkateswarlu"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          10
+        ]
+      ]
+    },
+    "abstract": "napari 0.9.0\n\n⚠️ Note: these release notes are still in draft while 0.9.0a1 is in prerelease testing. ⚠️\n\nMon, Aug 17, 2026\n\nWe're happy to announce the release of napari 0.9.0!\nnapari is a fast, interactive, multi-dimensional image viewer for Python.\nIt's designed for browsing, annotating, and analyzing large multi-dimensional\nimages. It's built on top of Qt (for the GUI), vispy (for performant GPU-based\nrendering), and the scientific Python stack (numpy, scipy).\n\nFor more information, examples, and documentation, please visit our website,\nhttps://napari.org.\n\nnapari follows EffVer (Intended Effort Versioning); this is a Macro release containing awesome new features, but may require dedication of some significant time when upgrading projects to use this version.\n\nHighlights\n\nFuzzy find in command palette\n\nImplement fuzzy find for the command palette (#8661)\n\nAdjust grid rendering with hidden layers\n\nIf using grid layout without using stride, there are no blanks fields for hidden layers\nthanks to #9244\n\nInherit axis labels from layers\n\nThanks to #9282 the axis labels in interface, next to slide and Dims.axis_labels\nare calculated based on axis labels of layers\n\nStatus bar coordinates as floats\n\nThanks to #9287 we no longer render coordinates on scale bar\nas integers, but as floats. It is important for all who use fractional\nLayer.scale\n\nPublic API for auto contrast limit\n\nIn #9271 the public API for auto contrast limits is added\n\n\n\n\nCanvas model (#8633)\n\n\n\nImplement Surface slicing with async request/response (#8783)\n\n\n\nRemove translations code (#8935)\n\n\n\nAdd builtin Wavefront OBJ to surfaces reader (#9228)\n\n\n\nDynamically construct layer controls based on selection (#9318)\n\n\n\nNew Features\n\n\n\nImplement fuzzy find for the command palette (#8661)\n\nImplement Surface slicing with async request/response (#8783)\n\nSmall refactor of point slicing + rescale projection mode to replace out_of_slice_display (#8786)\n\nfeat: add new label button to the labels controls (#9215)\n\nAdd builtin Wavefront OBJ to surfaces reader (#9228)\n\nDynamically construct layer controls based on selection (#9318)\n\n\nImprovements\n\n\n\nMAINT Always raise error when widget_name given in get_widget_contribution (#6544)\n\nmove features table widget command to the Metadata menu (#9231)\n\nfix: change the order of edge/face color and border (#9232)\n\nMove the layer lock to group with link/unlink, rather than with visib… (#9235)\n\nfix: adjust the layout based on the hidden layers in grid (#9244)\n\nImprove slider handle conspicuity by using theme's current color for active dim  (#9255)\n\npublicly expose auto contrast limits (#9271)\n\nupdate dims axis labels from layers axis labels (#9282)\n\nStatus bar coordinates as floats (#9287)\n\nUX: Indicate web links in Help menu with ↗ (unicode character) (#9291)\n\nNew layer inherits axis labels when derived from another layer (#9293)\n\nAdding histogram to surfaces (#9306)\n\nDynamically construct layer controls based on selection (#9318)\n\nUX/UI: Bump the splitter (separator) size by 1px (#9344)\n\n\nPerformance\n\n\n\n[perf] Defer PIL import in labels.py polygon mask (#9205)\n\n\nBug Fixes\n\n\n\nFix multiscale level selection for anisotropic data (#9201)\n\nfix async colormap (#9209)\n\nFix cross layer in multiple viewer example to use line vectors. (#9213)\n\nDo not update current_properties on Shapes selection changed  (#9221)\n\nfix: action binding the new-label tooltips  with shortcuts (#9230)\n\nfix: add minimum value to grid mode strides to allow negative strides (#9236)\n\nfix(qt): dimension sliders need a minimum width (#9254)\n\nFix sync slicing when toggling to 3D with auto contrast (#9263)\n\nFix enum breaks from translations removal (#9274)\n\nFix auto_contrast button state initialization (#9289)\n\nVectors: make edge_color_mode = 'direct' actually leave the feature mapping (#9333)\n\nUse magnitude of Layer.scale for points/shape handles (#9339)\n\nChange Dims slider connection from textChanged to textEdited to stop wrong updates (#9355)\n\n\nDocumentation\n\n\n\n[pre-commit.ci] pre-commit autoupdate (docs#1069)\n\nUpdate homepage video for 0.8.0/.1 changes (docs#1070)\n\nEnhance contributing documentation with GitHub edit info (docs#1075)\n\nAdding uv to getting started - installation (docs#1076)\n\nmake napari logo usage page (docs#1077)\n\nDelete useless line (docs#1078)\n\nUpdate auto-fill-labels loop video to extend end frame (docs#1082)\n\nBring several NAPs up to date (docs#1091)\n\n[pre-commit.ci] pre-commit autoupdate (docs#1095)\n\nUpdate dev instructions to use prek (docs#1096)\n\nAdd initial release notes for 0.9.0 (docs#1097)\n\nUpdate recommended Python version in README from 3.11 to 3.13 (#9223)\n\nLoad data from zarr in map example if contextily fails (#9307)\n\n\nOther Pull Requests\n\n\n\nUpdate label name in condition of label trigger build (docs#1067)\n\nUpdate version switcher to point to 0.8.0 as stable (docs#1071)\n\nRemove contributing text about adding translations (docs#1081)\n\nci(dependabot): bump the github-actions group with 4 updates (docs#1094)\n\nfix(typing): add typing and fix mypy error in qt_mode_buttons.py (#9110)\n\nUse shared version of label clean workflow (#9116)\n\nRemove qt_dict_table.py as its unused  (#9119)\n\nfix(typing): add typing and fix mypy error in qt_face_color.py  (#9123)\n\nfix(typing): add typing and fix mypy error in _base_item_model.py (#9126)\n\nfix(typing): add typing and fix mypy error in _base_item_view.py (#9127)\n\nfix(typing): add typing and fix mypy error in qt_axis_model.py (#9167)\n\nfix(typing): add typing and fix mypy error in qt_list_model.py (#9169)\n\ntyping: remove experimental.qt_poll.py from mypy ignore (#9171)\n\nfix(typing): add typing and fix mypy error in qt_border_color.py (#9179)\n\nfix(typing): add typing and fix mypy error in qt_edge_color.py (#9183)\n\nfix(typing): resolve mypy errors for qt_widget_controls_base (#9185)\n\nUpdate coverage, dask, hypothesis, imageio, matplotlib, platformdirs, tifffile, tqdm, virtualenv, xarray (#9194)\n\n[pre-commit.ci] pre-commit autoupdate (#9197)\n\nAdd example to allowed_labels in check_labels job of label_and_milestone_checker.yml workflow (#9214)\n\nTST: parameterizing with iterables is deprecated in pytest (#9217)\n\nAdd stereo 3D viewer widget example (#9219)\n\nMake tensorstore optional dependency of test_labels again (#9220)\n\nRemove unnecessary FutureWarning ignore for test_layers_save_svg (#9225)\n\nDisable part of test matrix to increase runner availability during sprints/hackathon (#9226)\n\nAdd (Euro)SciPy Sprint Authors to Citation (#9234)\n\nfix(typing): add typing and fix mypy error in qt_brush_size_slider.py (#9238)\n\nfix(typing): add typing and fix mypy error in _evented_dict.py (#9240)\n\nGallery example of using a background map (#9245)\n\nAdding 4D sample data as a heat diffusion (#9246)\n\nDisable interaction with vispy.gloo in test_vispy_labels_polygon_overlay (#9264)\n\nci(dependabot): bump the actions group across 1 directory with 11 updates (#9265)\n\nRemove missing translations GH action (#9266)\n\nAsynchronous loading text fix (#9267)\n\nPin octokit to tag, not use main branch (#9268)\n\nFix typing problem by provide strict version of _BaseEventedItemModel.getItem (#9272)\n\nFix test failures when running napari in tiling window managers by forcing the screenshot size. (#9284)\n\nUpdate certifi, hypothesis, pandas, platformdirs, tqdm, virtualenv (#9295)\n\ndeprecate setting dims axis labels in examples (#9297)\n\n[pre-commit.ci] pre-commit autoupdate (#9303)\n\nUpdate latlon with map example to follow PEP8 (#9312)\n\nExample: combine points and vectors to build a 3D structured object (#9340)\n\nRevert \"Disable part of test matrix to increase runner availability during sprints/hackathon (#9226)\" (#9348)\n\n\n24 authors added to this release (alphabetical)\n\n(+) denotes first-time contributors 🥳\n\n\n\nAniket - @Aniketsy\n\nArne Defauw - @ArneDefauw +\n\nAroj Hada - @ArozHada +\n\nBadPrograms - @BadPrograms +\n\nBas Bloemsaat - @basbloemsaat +\n\nChristophe Creeten - @ccreeten +\n\nEdouard Coussoux - @ecoussoux-ansys +\n\nFilippo  Maria Castelli, PhD - @filippocastelli +\n\ngirochat - @girochat +\n\nGrzegorz Bokota (docs)  - @Czaki\n\nJacopo Abramo - @jacopoabramo\n\nJuan Nunez-Iglesias (docs)  - @jni\n\nKamil Kania - @Grzyb33k +\n\nLorenzo Gaifas (docs)  - @brisvag\n\nMargot Chazotte - @MargotCh\n\nMatthias Schabel - @matthiasschabel +\n\nmichalslabs (docs)  - @michalslabs +\n\nMridul Seth - @MridulS +\n\nPeter Sobolewski - @psobolewskiPhD\n\nRevathy Venugopal - @Revathyvenugopal162 +\n\nSara Czasak - @sara-czasak +\n\nSébastien Morais - @SMoraisAnsys +\n\nTim Monko (docs)  - @TimMonko\n\nZuzana Čočková - @cockovaz\n\n\n16 reviewers added to this release (alphabetical)\n\n(+) denotes first-time contributors 🥳\n\n\n\nAniket - @Aniketsy\n\narbor - @arbormoss\n\nArne Defauw - @ArneDefauw +\n\nCarol Willing - @willingc\n\nDraga Doncila Pop - @DragaDoncila\n\nFilippo  Maria Castelli, PhD - @filippocastelli +\n\ngirochat - @girochat +\n\nGrzegorz Bokota (docs)  - @Czaki\n\nJacopo Abramo - @jacopoabramo\n\nJuan Nunez-Iglesias (docs)  - @jni\n\nLorenzo Gaifas (docs)  - @brisvag\n\nMaxime Rey - @MaxJPRey\n\nPeter Sobolewski - @psobolewskiPhD\n\nSara Czasak - @sara-czasak +\n\nTim Monko (docs)  - @TimMonko\n\nZuzana Čočková - @cockovaz",
+    "DOI": "10.5281/zenodo.3555620",
+    "publisher": "Zenodo",
+    "title": "napari: a multi-dimensional image viewer for Python",
+    "URL": "https://doi.org/gjpsxz",
+    "version": "v0.9.0a2",
+    "note": "This CSL Item was generated by Manubot v0.6.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.5281/zenodo.3555620"
+  },
+  {
+    "type": "software",
     "id": "p38Gm1rT",
     "author": [
       {
@@ -1552,47 +2106,9 @@
     "note": "This CSL Item was generated by Manubot v0.6.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.6688/jise.2001.17.5.1"
   },
   {
+    "URL": "http://hdl.handle.net/2268/14698",
+    "type": "webpage",
     "id": "EWbJLKbO",
-    "type": "article-journal",
-    "abstract": "In teleosts, feeding is effected principally by suction and food is handled by the branchial\r\nbasket. Preys are carried to the oesophagus by the pharyngeal jaws (PJs). The pharyngobranchial bones constitute the upper pharyngeal jaws (UPJs) and the 5th ceratobranchial bones, the lower pharyngeal jaws (LPJs). In lower teleosts, these jaws have well-separated spindly parts attached to the neurocranium, pectoral girdle, and hyoid bar; they only transport food and LPJ activity predominates. In acanthopterygians, the PJs become stronger, the left and right ceratobranchials fuse into one LPJ, and the pharyngobranchials\r\njoin together to form two big UPJs articulating with the neurocranium. In labrids and scarids,\r\nthe LPJ is also joined to the pectoral girdle. In acanthopterygians, a new retractor dorsalis muscle gives the UPJs the major role in food chewing and transport. Cypriniforms have developed original PJs with strong 5th ceratobranchials opposed to a postero-ventral neurocranial plate. Small-sized preys and food particles are seized by the gill rakers, small skeletal pieces supported by the branchial arches.",
-    "container-title": "Cybium",
-    "ISSN": "0399-0974",
-    "issue": "4",
-    "language": "English",
-    "source": "orbi.uliege.be",
-    "title": "The branchial basket in Teleost feeding.",
-    "URL": "https://orbi.uliege.be/handle/2268/14698",
-    "volume": "24",
-    "author": [
-      {
-        "family": "Vandewalle",
-        "given": "Pierre"
-      },
-      {
-        "family": "Parmentier",
-        "given": "Eric"
-      },
-      {
-        "family": "Chardon",
-        "given": "Michel"
-      }
-    ],
-    "accessed": {
-      "date-parts": [
-        [
-          "2026",
-          8,
-          11
-        ]
-      ]
-    },
-    "issued": {
-      "date-parts": [
-        [
-          "2000"
-        ]
-      ]
-    },
     "note": "This CSL Item was generated by Manubot v0.6.1 from its persistent identifier (standard_id).\nstandard_id: hdl:2268/14698"
   },
   {
@@ -1627,7 +2143,7 @@
         [
           "2026",
           8,
-          11
+          12
         ]
       ]
     },

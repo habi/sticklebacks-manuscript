@@ -6,7 +6,7 @@ keywords:
 - stickleback
 - ecology
 lang: en-US
-date-meta: '2026-08-11'
+date-meta: '2026-08-12'
 author-meta:
 - David Haberthür
 - R. Benjamin Sulser
@@ -24,11 +24,11 @@ header-includes: |
   <meta name="citation_title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
   <meta property="og:title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
   <meta property="twitter:title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
-  <meta name="dc.date" content="2026-08-11" />
-  <meta name="citation_publication_date" content="2026-08-11" />
-  <meta property="article:published_time" content="2026-08-11" />
-  <meta name="dc.modified" content="2026-08-11T14:12:03+00:00" />
-  <meta property="article:modified_time" content="2026-08-11T14:12:03+00:00" />
+  <meta name="dc.date" content="2026-08-12" />
+  <meta name="citation_publication_date" content="2026-08-12" />
+  <meta property="article:published_time" content="2026-08-12" />
+  <meta name="dc.modified" content="2026-08-12T08:42:28+00:00" />
+  <meta property="article:modified_time" content="2026-08-12T08:42:28+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/aa244c556cc7ee0da27993e6fddf6833e63a3038/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/aa244c556cc7ee0da27993e6fddf6833e63a3038/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/aa244c556cc7ee0da27993e6fddf6833e63a3038/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/183c207c15ad67fab1d114049fe6c39fae91db6c/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/183c207c15ad67fab1d114049fe6c39fae91db6c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/183c207c15ad67fab1d114049fe6c39fae91db6c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,12 +80,12 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/aa244c556cc7ee0da27993e6fddf6833e63a3038/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/183c207c15ad67fab1d114049fe6c39fae91db6c/))
 was generated
-from [habi/sticklebacks-manuscript@aa244c5](https://github.com/habi/sticklebacks-manuscript/tree/aa244c556cc7ee0da27993e6fddf6833e63a3038)
-on August 11, 2026.
+from [habi/sticklebacks-manuscript@183c207](https://github.com/habi/sticklebacks-manuscript/tree/183c207c15ad67fab1d114049fe6c39fae91db6c)
+on August 12, 2026.
 <br>
-This version contains 5311 words.
+This version contains 5355 words.
 </em></small>
 
 
@@ -300,10 +300,12 @@ For this further analysis, we also wrote stacks of PNG images and, additionally,
 These binarized regions were segmented into bone and background based on a simple multi-level Otsu thresholding method [@doi:10.6688/JISE.2001.17.5.1], (with 4 classes, using only the middle threshold).
 Providing the regions as `NRRD` files helped to efficiently work with the datasets as specified in the following sections.
 
-Using `K3D-jupyter` [@url:https://k3d-jupyter.org] we implemented a quick way to view any of the extracted regions directly in the Jupyter notebook (see Figure @fig:k3d).
-An [interactive version of this figure](https://htmlpreview.github.io/?https://raw.githubusercontent.com/habi/sticklebacks-manuscript/refs/heads/main/content/data/SL.X23.012.3D.html) is available online.
+Using either `K3D-jupyter` [@url:https://k3d-jupyter.org] or `napari` [@doi:10.5281/zenodo.3555620] we implemented a quick way to view any of the extracted regions directly in the Jupyter notebook.
+`K3D-jupyter` allows to save an interactive version of the preview.
+One such interactive preview is [available online](https://htmlpreview.github.io/?https://raw.githubusercontent.com/habi/sticklebacks-manuscript/refs/heads/main/content/data/SL.X23.012.3D.html).
+`napari` is well suited to load the intermediately generated `*.zarr` files, Figure @fig:SLX23012_3D below shows such a preview.
 
-![Three-dimensional preview of extracted region, automatically thresholded.](images/SL.X23.012.3D.png){#fig:k3d}
+![Three-dimensional visualization of one extracted region. Extracted region (label 1 visible upside-down on the left) at the bottom, automatically thresholded (treshold=50) region on top.](images/SL.X23.012.3D.png){#fig:SLX23012_3D}
 
 #### Extraction of features of interest
 

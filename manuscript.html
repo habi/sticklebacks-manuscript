@@ -9,7 +9,7 @@
   <meta name="author" content="Sheila Christen" />
   <meta name="author" content="Catherine L. Peichel" />
   <meta name="author" content="Ruslan Hlushchuk" />
-  <meta name="dcterms.date" content="2026-08-11" />
+  <meta name="dcterms.date" content="2026-08-12" />
   <meta name="keywords" content="tomography, high-throughput, stickleback, ecology" />
   <title>High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback</title>
   <style>
@@ -54,11 +54,11 @@
   <meta name="citation_title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
   <meta property="og:title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
   <meta property="twitter:title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
-  <meta name="dc.date" content="2026-08-11" />
-  <meta name="citation_publication_date" content="2026-08-11" />
-  <meta property="article:published_time" content="2026-08-11" />
-  <meta name="dc.modified" content="2026-08-11T14:12:03+00:00" />
-  <meta property="article:modified_time" content="2026-08-11T14:12:03+00:00" />
+  <meta name="dc.date" content="2026-08-12" />
+  <meta name="citation_publication_date" content="2026-08-12" />
+  <meta property="article:published_time" content="2026-08-12" />
+  <meta name="dc.modified" content="2026-08-12T08:42:28+00:00" />
+  <meta property="article:modified_time" content="2026-08-12T08:42:28+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -86,9 +86,9 @@
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/aa244c556cc7ee0da27993e6fddf6833e63a3038/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/aa244c556cc7ee0da27993e6fddf6833e63a3038/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/aa244c556cc7ee0da27993e6fddf6833e63a3038/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/183c207c15ad67fab1d114049fe6c39fae91db6c/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/183c207c15ad67fab1d114049fe6c39fae91db6c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/183c207c15ad67fab1d114049fe6c39fae91db6c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -105,12 +105,12 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://habi.github.io/sticklebacks-manuscript/v/aa244c556cc7ee0da27993e6fddf6833e63a3038/">permalink</a>)
+(<a href="https://habi.github.io/sticklebacks-manuscript/v/183c207c15ad67fab1d114049fe6c39fae91db6c/">permalink</a>)
 was generated
-from <a href="https://github.com/habi/sticklebacks-manuscript/tree/aa244c556cc7ee0da27993e6fddf6833e63a3038">habi/sticklebacks-manuscript@aa244c5</a>
-on August 11, 2026.
+from <a href="https://github.com/habi/sticklebacks-manuscript/tree/183c207c15ad67fab1d114049fe6c39fae91db6c">habi/sticklebacks-manuscript@183c207</a>
+on August 12, 2026.
 <br>
-This version contains 5311 words.
+This version contains 5355 words.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -302,12 +302,14 @@ Both rows must show exactly the same region.</figcaption>
 For this further analysis, we also wrote stacks of PNG images and, additionally, <a href="https://teem.sourceforge.net/nrrd/"><code>NRRD</code></a> files for each fish region in both cropped and cropped-and-binarized forms.
 These binarized regions were segmented into bone and background based on a simple multi-level Otsu thresholding method <span class="citation" data-cites="JICzDA7P">(<a href="#ref-JICzDA7P" role="doc-biblioref">廖炳松 et al., 2001</a>)</span>, (with 4 classes, using only the middle threshold).
 Providing the regions as <code>NRRD</code> files helped to efficiently work with the datasets as specified in the following sections.</p>
-<p>Using <code>K3D-jupyter</code> <span class="citation" data-cites="jxVw2kt2">(<a href="#ref-jxVw2kt2" role="doc-biblioref"><em>Overview — K3D-Jupyter Documentation</em>, n.d.</a>)</span> we implemented a quick way to view any of the extracted regions directly in the Jupyter notebook (see Figure <a href="#fig:k3d">7</a>).
-An <a href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/habi/sticklebacks-manuscript/refs/heads/main/content/data/SL.X23.012.3D.html">interactive version of this figure</a> is available online.</p>
-<div id="fig:k3d" class="fignos">
+<p>Using either <code>K3D-jupyter</code> <span class="citation" data-cites="jxVw2kt2">(<a href="#ref-jxVw2kt2" role="doc-biblioref"><em>Overview — K3D-Jupyter Documentation</em>, n.d.</a>)</span> or <code>napari</code> <span class="citation" data-cites="YEMgt2T4">(<a href="#ref-YEMgt2T4" role="doc-biblioref">Sofroniew et al., 2026</a>)</span> we implemented a quick way to view any of the extracted regions directly in the Jupyter notebook.
+<code>K3D-jupyter</code> allows to save an interactive version of the preview.
+One such interactive preview is <a href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/habi/sticklebacks-manuscript/refs/heads/main/content/data/SL.X23.012.3D.html">available online</a>.
+<code>napari</code> is well suited to load the intermediately generated <code>*.zarr</code> files, Figure <a href="#fig:SLX23012_3D">7</a> below shows such a preview.</p>
+<div id="fig:SLX23012_3D" class="fignos">
 <figure>
-<img src="images/SL.X23.012.3D.png" alt="Figure 7: Three-dimensional preview of extracted region, automatically thresholded." />
-<figcaption aria-hidden="true"><span>Figure 7:</span> Three-dimensional preview of extracted region, automatically thresholded.</figcaption>
+<img src="images/SL.X23.012.3D.png" alt="Figure 7: Three-dimensional visualization of one extracted region. Extracted region (label 1 visible upside-down on the left) at the bottom, automatically thresholded (treshold=50) region on top." />
+<figcaption aria-hidden="true"><span>Figure 7:</span> Three-dimensional visualization of one extracted region. Extracted region (label 1 visible upside-down on the left) at the bottom, automatically thresholded (treshold=50) region on top.</figcaption>
 </figure>
 </div>
 <h4 id="extraction-of-features-of-interest">Extraction of features of interest</h4>
@@ -471,7 +473,7 @@ However, we caution that the greater number of benthic lakes and specimens avail
 This pipeline will allow for more extensive analysis from future sampling years to confirm these findings.</p>
 <p>Within CB2, limnetic fish (and particularly those from South Rolly Lake) appear to have narrower, less keeled bones than benthic fish.
 The muscles that attach to the ceratobranchials (<em>m. adductor branchialis</em>, <em>m. abductor filament</em>, and <em>m. obliquus ventralis</em>) are attached along the lateral surfaces of these bones.
-The increased surface area observed in benthic fish may provide greater area for muscle attachment, which may enhance the ability of fish to abduct these structures during water filtration <span class="citation" data-cites="v1hRNLF5 EWbJLKbO">(<a href="#ref-v1hRNLF5" role="doc-biblioref">Takata &amp; Sasaki, 2005</a>; <a href="#ref-EWbJLKbO" role="doc-biblioref">Vandewalle et al., 2000</a>)</span>.
+The increased surface area observed in benthic fish may provide greater area for muscle attachment, which may enhance the ability of fish to abduct these structures during water filtration <span class="citation" data-cites="v1hRNLF5 EWbJLKbO">(<a href="#ref-EWbJLKbO" role="doc-biblioref">n.d.-a</a>; <a href="#ref-v1hRNLF5" role="doc-biblioref">Takata &amp; Sasaki, 2005</a>)</span>.
 While dietary analyses of these fish are still ongoing, these findings suggest that the South Rolly population may have unique dietary specializations and would be expected to feed differently than fish from the other lakes in this study.
 In terms of reintroduction, populations from this lake might be expected to fare better than others in terms of limnetic specialization.
 Indeed, fish with South Rolly heritage outperform Spirit lake fish in every transplant experiment in which both limnetic populations are included as a part of the FITNESS project <span class="citation" data-cites="11i8vzpUp">(<a href="#ref-11i8vzpUp" role="doc-biblioref">Eckert et al., 2026</a>)</span>.</p>
@@ -490,7 +492,7 @@ In its current implementation, Biomedisa performs on average 60 times faster tha
 This brings virtual, non-destructive dissection of internal stickleback anatomy up to parity with hand-dissected methods, if not further.</p>
 <p>Finally, the 3D analysis step of the pipeline allows for insights from 3D data that cannot be obtained from traditional dissection, including complex shapes and arrangements not possible through destructive sampling approaches.</p>
 <h2 class="page_break_before" id="author-contributions">Author Contributions</h2>
-<p><a href="https://credit.niso.org/">Contributor Roles Taxonomy (CRediT)</a>, as defined in <span class="citation" data-cites="11ofsO2hq">(<a href="#ref-11ofsO2hq" role="doc-biblioref">n.d.</a>)</span>:</p>
+<p><a href="https://credit.niso.org/">Contributor Roles Taxonomy (CRediT)</a>, as defined in <span class="citation" data-cites="11ofsO2hq">(<a href="#ref-11ofsO2hq" role="doc-biblioref">n.d.-b</a>)</span>:</p>
 <ul>
 <li><a href="https://credit.niso.org/contributor-roles/conceptualization/">Conceptualization</a>: R. Benjamin Sulser, Sheila Christen, Ruslan Hlushchuk</li>
 <li><a href="https://credit.niso.org/contributor-roles/data-curation/">Data curation</a>: David Haberthür, R. Benjamin Sulser, Sheila Christen</li>
@@ -563,8 +565,11 @@ The results of the resampling is available <a href="https://github.com/habi/stic
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="doc-bibliography">
+<div id="ref-EWbJLKbO" class="csl-entry" role="doc-biblioentry">
+(n.d.-a). Retrieved <a href="http://hdl.handle.net/2268/14698">http://hdl.handle.net/2268/14698</a>
+</div>
 <div id="ref-11ofsO2hq" class="csl-entry" role="doc-biblioentry">
-(n.d.). <em>ANSI/NISO Z39.104-2022, CRediT, Contributor Roles Taxonomy</em>. NISO. <a href="https://doi.org/10.3789/ansi.niso.z39.104-2022">https://doi.org/10.3789/ansi.niso.z39.104-2022</a>
+(n.d.-b). <em>ANSI/NISO Z39.104-2022, CRediT, Contributor Roles Taxonomy</em>. NISO. <a href="https://doi.org/10.3789/ansi.niso.z39.104-2022">https://doi.org/10.3789/ansi.niso.z39.104-2022</a>
 </div>
 <div id="ref-2kwEzoCR" class="csl-entry" role="doc-biblioentry">
 Adams, D. C., &amp; Otárola‐Castillo, E. (2013). geomorph: an&lt;scp&gt;r&lt;/scp&gt;package for the collection and analysis of geometric morphometric shape data. <em>Methods in Ecology and Evolution</em>, <em>4</em>(4), 393–399. <a href="https://doi.org/10.1111/2041-210x.12035">https://doi.org/10.1111/2041-210x.12035</a>
@@ -630,7 +635,7 @@ Meeker, N. D., Hutchinson, S. A., Ho, L., &amp; Trede, N. S. (2007). Method for 
 Miles, A., Kirkham, J., Durant, M., Bourbeau, J., Onalan, T., Hamman, J., Zain Patel, Shikharsg, Rocklin, M., Dussin, R., Schut, V., Andrade, E. S. D., Abernathey, R., Noyes, C., Sbalmer, Pyup.Io Bot, Tran, T., Saalfeld, S., Swaney, J., … Banihirwe, A. (2020). <em>zarr-developers/zarr-python: v2.4.0</em> (Version v2.4.0) [Computer software]. Zenodo. <a href="https://doi.org/10.5281/zenodo.3773450">https://doi.org/10.5281/zenodo.3773450</a>
 </div>
 <div id="ref-jxVw2kt2" class="csl-entry" role="doc-biblioentry">
-<em>Overview — K3D-jupyter documentation</em>. (n.d.). Retrieved August 11, 2026, from <a href="https://k3d-jupyter.org/">https://k3d-jupyter.org/</a>
+<em>Overview — K3D-jupyter documentation</em>. (n.d.). Retrieved August 12, 2026, from <a href="https://k3d-jupyter.org/">https://k3d-jupyter.org/</a>
 </div>
 <div id="ref-whEyWyQh" class="csl-entry" role="doc-biblioentry">
 R Core Team. (2021). <em>R: A language and environment for statistical computing</em>. R Foundation for Statistical Computing. <a href="https://www.R-project.org/">https://www.R-project.org/</a>
@@ -650,14 +655,14 @@ Schindelin, J., Arganda-Carreras, I., Frise, E., Kaynig, V., Longair, M., Pietzs
 <div id="ref-1Dlme4sp5" class="csl-entry" role="doc-biblioentry">
 Schluter, D., &amp; McPhail, J. D. (1992). Ecological Character Displacement and Speciation in Sticklebacks. <em>The American Naturalist</em>, <em>140</em>(1), 85–108. <a href="https://doi.org/10.1086/285404">https://doi.org/10.1086/285404</a>
 </div>
+<div id="ref-YEMgt2T4" class="csl-entry" role="doc-biblioentry">
+Sofroniew, N., Lambert, T., Bokota, G., Nunez-Iglesias, J., Sobolewski, P., Sweet, A., Gaifas, L., Evans, K., Burt, A., Doncila Pop, D., Yamauchi, K., Weber Mendonça, M., Rodríguez-Guerra, J., Liu, L., Buckley, G., Vierdag, W.-M., Anderson, A., Monko, T., Willing, C., … Nagineni, V. (2026). <em>napari: a multi-dimensional image viewer for Python</em> (Version v0.9.0a2) [Computer software]. Zenodo. <a href="https://doi.org/10.5281/zenodo.3555620">https://doi.org/10.5281/zenodo.3555620</a>
+</div>
 <div id="ref-1EuiurioH" class="csl-entry" role="doc-biblioentry">
 Stratovan Corporation. (n.d.). <em>Stratovan checkpoint</em> (Version 2025.06.02.09:11 WIN x64). Retrieved <a href="https://www.stratovan.com/products/checkpoint">https://www.stratovan.com/products/checkpoint</a>
 </div>
 <div id="ref-v1hRNLF5" class="csl-entry" role="doc-biblioentry">
 Takata, Y., &amp; Sasaki, K. (2005). Branchial structures in the Gasterosteiformes, with special reference to myology and phylogenetic implications. <em>Ichthyological Research</em>, <em>52</em>(1), 33–49. <a href="https://doi.org/10.1007/s10228-004-0251-5">https://doi.org/10.1007/s10228-004-0251-5</a>
-</div>
-<div id="ref-EWbJLKbO" class="csl-entry" role="doc-biblioentry">
-Vandewalle, P., Parmentier, E., &amp; Chardon, M. (2000). The branchial basket in Teleost feeding. <em>Cybium</em>, <em>24</em>(4). <a href="https://orbi.uliege.be/handle/2268/14698">https://orbi.uliege.be/handle/2268/14698</a>
 </div>
 <div id="ref-Tw8w7mV3" class="csl-entry" role="doc-biblioentry">
 WILLACKER, J. J., VON HIPPEL, F. A., WILTON, P. R., &amp; WALTON, K. M. (2010). Classification of threespine stickleback along the benthic-limnetic axis. <em>Biological Journal of the Linnean Society</em>, <em>101</em>(3), 595–608. <a href="https://doi.org/10.1111/j.1095-8312.2010.01531.x">https://doi.org/10.1111/j.1095-8312.2010.01531.x</a>
