@@ -6,7 +6,7 @@ keywords:
 - stickleback
 - ecology
 lang: en-US
-date-meta: '2026-08-12'
+date-meta: '2026-08-14'
 author-meta:
 - David Haberthür
 - R. Benjamin Sulser
@@ -24,11 +24,11 @@ header-includes: |
   <meta name="citation_title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
   <meta property="og:title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
   <meta property="twitter:title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
-  <meta name="dc.date" content="2026-08-12" />
-  <meta name="citation_publication_date" content="2026-08-12" />
-  <meta property="article:published_time" content="2026-08-12" />
-  <meta name="dc.modified" content="2026-08-12T08:42:28+00:00" />
-  <meta property="article:modified_time" content="2026-08-12T08:42:28+00:00" />
+  <meta name="dc.date" content="2026-08-14" />
+  <meta name="citation_publication_date" content="2026-08-14" />
+  <meta property="article:published_time" content="2026-08-14" />
+  <meta name="dc.modified" content="2026-08-14T10:36:42+00:00" />
+  <meta property="article:modified_time" content="2026-08-14T10:36:42+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/183c207c15ad67fab1d114049fe6c39fae91db6c/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/183c207c15ad67fab1d114049fe6c39fae91db6c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/183c207c15ad67fab1d114049fe6c39fae91db6c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/91a53b2cd8baba5c16b531533d760a57c5a07c2e/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/91a53b2cd8baba5c16b531533d760a57c5a07c2e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/91a53b2cd8baba5c16b531533d760a57c5a07c2e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,12 +80,12 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/183c207c15ad67fab1d114049fe6c39fae91db6c/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/91a53b2cd8baba5c16b531533d760a57c5a07c2e/))
 was generated
-from [habi/sticklebacks-manuscript@183c207](https://github.com/habi/sticklebacks-manuscript/tree/183c207c15ad67fab1d114049fe6c39fae91db6c)
-on August 12, 2026.
+from [habi/sticklebacks-manuscript@91a53b2](https://github.com/habi/sticklebacks-manuscript/tree/91a53b2cd8baba5c16b531533d760a57c5a07c2e)
+on August 14, 2026.
 <br>
-This version contains 5355 words.
+This version contains 5374 words.
 </em></small>
 
 
@@ -526,6 +526,10 @@ A copy of each log file containing *all* scanning parameters is available in a [
 #### Jupyter; (pre)processing of tomographic data
 
 All Jupyter scripts to process the acquired tomographic data as described in the text are found [online at GitHub](https://github.com/habi/sticklebacks), and can be easily previewed [online](https://nbviewer.org/github/habi/sticklebacks/tree/main/), too.
+
+#### Cropped tomographic data
+
+The PNG stack of *each* cropped fish region is available in [a collection at MorphoSource](https://www.morphosource.org/projects/000885106).
 
 #### 3D Slicer; extraction
 
