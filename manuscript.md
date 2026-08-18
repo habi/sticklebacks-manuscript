@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2026-08-18" />
   <meta name="citation_publication_date" content="2026-08-18" />
   <meta property="article:published_time" content="2026-08-18" />
-  <meta name="dc.modified" content="2026-08-18T15:34:17+00:00" />
-  <meta property="article:modified_time" content="2026-08-18T15:34:17+00:00" />
+  <meta name="dc.modified" content="2026-08-18T15:51:19+00:00" />
+  <meta property="article:modified_time" content="2026-08-18T15:51:19+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/6e8d8eb8e8bc0e6e097c19d19f1eae1132aa54bf/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/6e8d8eb8e8bc0e6e097c19d19f1eae1132aa54bf/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/6e8d8eb8e8bc0e6e097c19d19f1eae1132aa54bf/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/fb5e23cf7166ab5756a44830b21f56cf3a43276d/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/fb5e23cf7166ab5756a44830b21f56cf3a43276d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/fb5e23cf7166ab5756a44830b21f56cf3a43276d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,9 +80,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/6e8d8eb8e8bc0e6e097c19d19f1eae1132aa54bf/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/fb5e23cf7166ab5756a44830b21f56cf3a43276d/))
 was generated
-from [habi/sticklebacks-manuscript@6e8d8eb](https://github.com/habi/sticklebacks-manuscript/tree/6e8d8eb8e8bc0e6e097c19d19f1eae1132aa54bf)
+from [habi/sticklebacks-manuscript@fb5e23c](https://github.com/habi/sticklebacks-manuscript/tree/fb5e23cf7166ab5756a44830b21f56cf3a43276d)
 on August 18, 2026.
 <br>
 This version contains 5355 words.
@@ -372,7 +372,7 @@ Algorithmically/automatically cropping the large datasets based on the axial MIP
 | Scanning single fish             | ~10 hours        | 1 hour, 45 minutes |   ~5.5 x |
 | Splitting scans into single fish | 17 minutes       | 9 minutes          |   ~2   x |
 | Rendering volumes                | 5 minutes        | 15 seconds         |   20   x |
-| Segmentation                     | 10--15 minutes    | 15 seconds         |  ~60   x |
+| Segmentation                     | 10--15 minutes   | 15 seconds         |  ~60   x |
 
 Table: Comparison of time estimates between manual and pipeline runs.
        Note that it would have been completely infeasible to scan each fish separately.
