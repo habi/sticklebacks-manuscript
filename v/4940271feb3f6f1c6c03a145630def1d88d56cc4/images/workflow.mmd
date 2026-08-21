@@ -1,0 +1,68 @@
+---
+config:
+  layout: elk
+---
+flowchart LR
+
+subgraph collection["Sample collection"]
+    Planning --> Sampling --> Storing
+end
+
+Storing --> imaging
+
+subgraph imaging["microCT imaging"]
+    holder@{shape: procs, label: "Multi-specimen scans (N = 38)"}
+    rec@{shape: procs, label: "Reconstructions"}
+
+    holder --> rec
+end
+
+rec --> preprocessing
+
+subgraph preprocessing["Pre-processing"]
+    jupyter("Jupyter")
+
+    preview("Preview & QC")
+    separation("Fish separation")
+    fishid@{shape: procs, label: "Fish datasets (N = 215)"}
+    reporting("Reporting")
+
+    separation -----> fishid
+
+    jupyter -....-> preview
+    jupyter -.-> separation
+    jupyter -.-> reporting
+end
+
+fishid --> segmentation
+
+subgraph segmentation["Biomedisa segmentation"]
+    Biomedisa
+
+    regions@{shape: procs, label: "Segmented regions"}
+    rakers@{shape: procs, label: "Ceratobranchials"}
+    jaws@{shape: procs, label: "Branchial bones"}
+
+    Biomedisa -.-> regions
+    regions --> rakers
+    regions --> jaws
+end
+
+rakers --> analysis
+
+subgraph analysis["Case study"]
+    morph("Morphometric Analysis")
+end
+
+manubot@{shape: doc, label: "Manuscript"}
+
+reporting ---------> manubot
+morph --> manubot
+
+Storing ~~~ holder
+rec ~~~ jupyter
+
+separation ~~~ fishid
+fishid ~~~ Biomedisa
+
+rakers ~~~ morph
