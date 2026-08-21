@@ -1,5 +1,4 @@
 ---
-title: Overview of workflow
 config:
   layout: elk
 ---
@@ -41,8 +40,8 @@ subgraph segmentation["Biomedisa segmentation"]
     Biomedisa
 
     regions@{shape: procs, label: "Segmented regions"}
-    rakers@{shape: procs, label: "Gill rakers"}
-    jaws@{shape: procs, label: "Internal jaws"}
+    rakers@{shape: procs, label: "Ceratobranchials"}
+    jaws@{shape: procs, label: "Branchial bones"}
 
     Biomedisa -.-> regions
     regions --> rakers
