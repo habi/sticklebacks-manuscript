@@ -6,7 +6,7 @@ keywords:
 - stickleback
 - ecology
 lang: en-US
-date-meta: '2026-08-18'
+date-meta: '2026-08-21'
 author-meta:
 - David Haberthür
 - R. Benjamin Sulser
@@ -24,11 +24,11 @@ header-includes: |
   <meta name="citation_title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
   <meta property="og:title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
   <meta property="twitter:title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
-  <meta name="dc.date" content="2026-08-18" />
-  <meta name="citation_publication_date" content="2026-08-18" />
-  <meta property="article:published_time" content="2026-08-18" />
-  <meta name="dc.modified" content="2026-08-18T15:51:19+00:00" />
-  <meta property="article:modified_time" content="2026-08-18T15:51:19+00:00" />
+  <meta name="dc.date" content="2026-08-21" />
+  <meta name="citation_publication_date" content="2026-08-21" />
+  <meta property="article:published_time" content="2026-08-21" />
+  <meta name="dc.modified" content="2026-08-21T07:36:14+00:00" />
+  <meta property="article:modified_time" content="2026-08-21T07:36:14+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/fb5e23cf7166ab5756a44830b21f56cf3a43276d/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/fb5e23cf7166ab5756a44830b21f56cf3a43276d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/fb5e23cf7166ab5756a44830b21f56cf3a43276d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/50b1a5ef32fd84305a795baf76babb637996ed3c/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/50b1a5ef32fd84305a795baf76babb637996ed3c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/50b1a5ef32fd84305a795baf76babb637996ed3c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,10 +80,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/fb5e23cf7166ab5756a44830b21f56cf3a43276d/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/50b1a5ef32fd84305a795baf76babb637996ed3c/))
 was generated
-from [habi/sticklebacks-manuscript@fb5e23c](https://github.com/habi/sticklebacks-manuscript/tree/fb5e23cf7166ab5756a44830b21f56cf3a43276d)
-on August 18, 2026.
+from [habi/sticklebacks-manuscript@50b1a5e](https://github.com/habi/sticklebacks-manuscript/tree/50b1a5ef32fd84305a795baf76babb637996ed3c)
+on August 21, 2026.
 <br>
 This version contains 5355 words.
 </em></small>
@@ -196,7 +196,7 @@ Among sticklebacks and other bony fishes, differences in jaw structures are dire
 Benthic sticklebacks have modified jaws for enhanced suction force and hypertrophied epaxial muscles to aid in foraging on benthic invertebrates, whereas limnetic sticklebacks have modifications for larger jaw protrusions and quick strikes during ram feeding [@doi:10.1186/1471-2148-13-277].
 The internal hyoid arch-branchial arch complex is an important structure implicated in diet and feeding ecology [@doi:10.1086/285404; @doi:10.1111/j.1420-9101.2008.01583.x].
 While the shape and arrangement of paired ceratobranchial and pharyngobranchial bones within this complex aid food processing and water vortex generation during feeding [@doi:10.1371/journal.pone.0193874], the shape of these bones has received comparatively little attention relative to other aspects of dietary anatomy.
-This is likely due to the flattening and destructive sampling used in traditional raker counting methods, which dissect and deform these structures to render them visible for manual measurements [@doi:10.3791/54056].
+This is likely due to the flattening and destructive sampling used in traditional gill raker counting methods, which dissect and deform these structures to render them visible for manual measurements [@doi:10.3791/54056].
 These structures are, however, difficult to study without full cranial dissection and corresponding distortion of the branchial anatomy.
 Micro-CT-based three-dimensional (3D) imaging preserves these features at a high resolution and allows for non-destructive analysis.
 Imaging large numbers of stickleback specimens, however, has until now been prohibitive due to the limitations of acquisition and processing time.
@@ -222,11 +222,11 @@ Once a Biomedisa model is trained, the entire pipeline runs from multi-specimen 
 The specimens used for this study were collected from six of the eight source lakes used for the FITNESS project in the region of Cook Inlet, Alaska.
 Fish were collected using unbaited minnow traps in two separate field seasons, the first taking place from May 26--June 10, 2023 and the second taking place from May 25--June 11, 2024.
 Specimens were collected from a random sample of up to 30 fish from each lake, under Alaska Department of Fish and Game (ADFG) permits SF2023-030 and P-24-015 for 2023 and 2024, respectively.
-Fish were euthanized with MS-222, photographed, labeled and preserved in 10% formalin in individual bags, all under Animal Use Protocol (AUP) MCGL-8265.
+Fish were euthanized with MS-222, photographed, labeled and preserved in 10% formalin in individual bags, all under McGill University Animal Use Protocol (AUP) MCGL-8265.
 At the end of each field season, samples were shipped from Anchorage (AK, USA) to Bern (BE, CH) where they were stored until scanning.
 The total number of fish for each lake were: 52 from Watson Lake (benthic), 48 from Finger Lake (benthic), 46 from Spirit Lake (limnetic), 35 from South Rolly Lake (limnetic), 20 from Walby Lake (benthic), and 14 from Tern Lake (benthic) for a total of 215 specimens.
 Additionally, caudal fin clips were collected from fish sampled during the 2024 field season for molecular sex identification via genotyping.
-DNA was extracted from the fin tissue following Meeker et al. [@doi:10.2144/000112619] and subsequent PCR genotyping was performed with LRRc61 primers for this purpose following Archambeault et al. [@doi:10.1002/evl3.175].
+DNA was extracted from the fin tissue following Meeker et al. [@doi:10.2144/000112619] and subsequent PCR genotyping was performed with LRRc61 primers following Archambeault et al. [@doi:10.1002/evl3.175].
 
 Due to their inherent contrast difference to the surrounding tissue, the structures of interest in this study (teeth and bones, i.e., jaws and skull) are well visualized in unstained samples, hence no further preparation of the fish was necessary.
 
@@ -320,7 +320,7 @@ Once rendered, these bones were exported as a colored labelmap alongside the `nr
 #### Machine learning and model training
 
 We passed a dataset of 51 specimens (including `nrrd` and `label` files) to Biomedisa [@doi:10.1038/s41467-020-19303-w] to train a segmentation model.
-We allowed for rotation of 180° to account for possible specimen variability, and an 80/20 split between training and validation data.
+We allowed for rotation of 180° to account for possible specimen variability, with an 80/20 split between training and validation data.
 The model was trained with a batch size of 24 and 50 epochs, using a network architecture of 32-64-128-256-512.
 The final model performs well, with a dice score of 0.9159 on the validation dataset.
 We only performed manual touchups where adjacent bones were extremely close together (causing their appearance to be "stuck" in the final render; this is also an issue with manual segmentation and not exclusive to the hereby described approach).
