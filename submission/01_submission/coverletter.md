@@ -1,5 +1,5 @@
 ---
-title: Cover letter for "High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback"
+title: "Cover letter for *High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback*"
 author: David Haberthür
 date: 2026-08-24
 ---
