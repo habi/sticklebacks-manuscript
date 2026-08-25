@@ -1,6 +1,4 @@
-# Automated scholarly manuscripts on GitHub
-
-<!-- usage note: edit the H1 title above to personalize the manuscript -->
+# High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback
 
 [![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://habi.github.io/sticklebacks-manuscript/)
 [![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://habi.github.io/sticklebacks-manuscript/manuscript.pdf)
@@ -9,9 +7,7 @@
 
 ## Manuscript description
 
-<!-- usage note: edit this section. -->
-
-This repository generates the manurscript on our work on tomographic imaging of a bunch of three-spined stickleback (*Gasterosteus aculeatus*).
+This repository generates the manuscript on our work on tomographic imaging of a bunch of threespine stickleback (*Gasterosteus aculeatus*).
 
 ## Manubot
 
