@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2026-08-25" />
   <meta name="citation_publication_date" content="2026-08-25" />
   <meta property="article:published_time" content="2026-08-25" />
-  <meta name="dc.modified" content="2026-08-25T09:01:01+00:00" />
-  <meta property="article:modified_time" content="2026-08-25T09:01:01+00:00" />
+  <meta name="dc.modified" content="2026-08-25T09:20:38+00:00" />
+  <meta property="article:modified_time" content="2026-08-25T09:20:38+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/0ebf3633558b98bda4f4856ccf4c7c6ace7ccef4/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/0ebf3633558b98bda4f4856ccf4c7c6ace7ccef4/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/0ebf3633558b98bda4f4856ccf4c7c6ace7ccef4/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/fbe5259c83f4e8d255012a28cad2c496b8ce68ee/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/fbe5259c83f4e8d255012a28cad2c496b8ce68ee/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/fbe5259c83f4e8d255012a28cad2c496b8ce68ee/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,17 +75,17 @@ manubot-clear-requests-cache: false
 
 
 
-
+*The (anonymized) version [`v1.0`](https://github.com/habi/sticklebacks-manuscript/releases/tag/v1.0) of this manuscript was submitted to [Methods in Ecology and Evolution](https://besjournals.onlinelibrary.wiley.com/journal/2041210X).*
 
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/0ebf3633558b98bda4f4856ccf4c7c6ace7ccef4/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/fbe5259c83f4e8d255012a28cad2c496b8ce68ee/))
 was generated
-from [habi/sticklebacks-manuscript@0ebf363](https://github.com/habi/sticklebacks-manuscript/tree/0ebf3633558b98bda4f4856ccf4c7c6ace7ccef4)
-on August 25, 2026.
+from [habi/sticklebacks-manuscript@fbe5259](https://github.com/habi/sticklebacks-manuscript/tree/fbe5259c83f4e8d255012a28cad2c496b8ce68ee)
+on August 25, 2026 and contains 5365 words.
 <br>
-This version contains 5358 words.
+Changes the present version to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...fbe5259c83f4e8d255012a28cad2c496b8ce68ee#files_bucket).
 </em></small>
 
 
