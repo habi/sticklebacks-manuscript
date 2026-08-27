@@ -9,4 +9,4 @@ jobs:
       - uses: actions/checkout@v4
       - uses: theserverlessdev/wsc@v1
         with:
-          files: "content/0[12345689]*.md"
+          files: "content/*.md"
