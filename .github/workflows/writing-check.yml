@@ -10,3 +10,7 @@ jobs:
       - uses: theserverlessdev/wsc@v1
         with:
           files: "content/*.md"
+          exclude: |
+            content/00.front-matter.md
+            content/07.contributions.md
+            content/90.back-matter.md
