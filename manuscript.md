@@ -6,7 +6,7 @@ keywords:
 - stickleback
 - ecology
 lang: en-US
-date-meta: '2026-10-09'
+date-meta: '2026-10-13'
 author-meta:
 - David Haberthür
 - R. Benjamin Sulser
@@ -24,11 +24,11 @@ header-includes: |
   <meta name="citation_title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
   <meta property="og:title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
   <meta property="twitter:title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
-  <meta name="dc.date" content="2026-10-09" />
-  <meta name="citation_publication_date" content="2026-10-09" />
-  <meta property="article:published_time" content="2026-10-09" />
-  <meta name="dc.modified" content="2026-10-09T13:56:25+00:00" />
-  <meta property="article:modified_time" content="2026-10-09T13:56:25+00:00" />
+  <meta name="dc.date" content="2026-10-13" />
+  <meta name="citation_publication_date" content="2026-10-13" />
+  <meta property="article:published_time" content="2026-10-13" />
+  <meta name="dc.modified" content="2026-10-13T16:04:36+00:00" />
+  <meta property="article:modified_time" content="2026-10-13T16:04:36+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/d3a51559e5e55ecbc2c12718ccc540296452791d/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/d3a51559e5e55ecbc2c12718ccc540296452791d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/d3a51559e5e55ecbc2c12718ccc540296452791d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/e1c6cb7997f9b82c58ef82dd8276009fd4c81af3/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/e1c6cb7997f9b82c58ef82dd8276009fd4c81af3/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/e1c6cb7997f9b82c58ef82dd8276009fd4c81af3/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,11 +80,11 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/d3a51559e5e55ecbc2c12718ccc540296452791d/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/e1c6cb7997f9b82c58ef82dd8276009fd4c81af3/))
 was generated
-from [habi/sticklebacks-manuscript@d3a5155](https://github.com/habi/sticklebacks-manuscript/tree/d3a51559e5e55ecbc2c12718ccc540296452791d)
-on October 9, 2026 and contains 5375 words.
-Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...d3a51559e5e55ecbc2c12718ccc540296452791d#files_bucket).
+from [habi/sticklebacks-manuscript@e1c6cb7](https://github.com/habi/sticklebacks-manuscript/tree/e1c6cb7997f9b82c58ef82dd8276009fd4c81af3)
+on October 13, 2026 and contains 5448 words.
+Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...e1c6cb7997f9b82c58ef82dd8276009fd4c81af3#files_bucket).
 </em></small>
 
 
@@ -272,27 +272,29 @@ This approach allowed us to map *all* the reconstructions to memory and quickly 
 
 ##### Separation Notebook
 
-The [separation notebook](https://nbviewer.org/github/habi/sticklebacks/blob/main/BucketSeparator.ipynb) processed all the acquired scans to extract each individual fish from each scan that encompasses six fish in total.
-As in the preview notebook, we efficiently loaded all the `png`s from disk with [`dask`](https://www.dask.org/) [@dask].
-Based on the previously extracted MIP images and a simple labeling of these images ([`skimage.measure.label`](https://scikit-image.org/docs/stable/api/skimage.measure.html#skimage.measure.label)), we extracted both the labels in the custom-made sample holder and the positions of individual fish in the scan ([`skimage.measure.regionprops`](https://scikit-image.org/docs/stable/api/skimage.measure.html#skimage.measure.regionprops)) (see Figure @fig:labels).
+The [separation notebook](https://nbviewer.org/github/habi/sticklebacks/blob/main/BucketSeparator.ipynb) processes all the acquired scans to extract each individual fish from each scan that encompasses six fish in total.
+As in the preview notebook, we efficiently load all the `png`s from disk with [`dask`](https://www.dask.org/) [@dask].
+
+A connected region labeling of the previously extracted MIP images ([`skimage.measure.label`](https://scikit-image.org/docs/stable/api/skimage.measure.html#skimage.measure.label)) was used to highlight the labels in the custom-made sample holder (colored in red in Figure @fig:visualization and highlighted in yellow in the left panel of Figure @fig:labels) and to label the single fish in their compartements.
+The centroid positions and extent of individual fish in the scan ([`skimage.measure.regionprops`](https://scikit-image.org/docs/stable/api/skimage.measure.html#skimage.measure.regionprops)) (see right panel of Figure @fig:labels) were used to extract small cropped regions from the large multi-specimen dataset.
 This extraction process is fully reproducible and is tailored to the arrangement of the samples in the custom sample holder.
 
 ![Automatically detected regions based on maximum intensity projection along the rotation axis of the tomographic scan.
   The regions are numbered consecutively from the top left to the bottom right.
   These numbers are assigned to the correct fish ID in the next step.](images/Sticklebucket_H.rec.Labels.Detected.png){#fig:labels}
 
-Based on a simple mapping of the detected regions to the ID numbers of the scanned fish, we labeled the resulting images and presented these images together with photos of the lab book and sample tubes for verification (see Figure @fig:checking).
+We then mapped the labels of the detected regions to the ID numbers of the scanned fish and presented these images together with photos of the lab book and sample tubes for verification (see Figure @fig:checking).
 
 ![Mapping lab book notes, photos, and detected regions to fish ID.](images/Sticklebucket_H.rec.Labels.Check.png){#fig:checking}
 
-The `skimage.measure.regionprops` function used for labeling returns not only the positions of each detected fish but also the extent of the bounding box of each detected region.
 We extracted each region of each fish separately from the large reconstructions (with a configurable border buffer; see Figure @fig:cropping) and wrote these extracted regions to disk in discrete folders for efficient further analysis.
 As a first step, we wrote the regions of the single fish to disk in `zarr` [@doi:10.5281/zenodo.3773450] format, which is well suited to storing n-dimensional arrays on disk.
 In addition to this, we also wrote a log file for each extracted region, containing all relevant information to redo the cropping step manually in any image processing software.
 All these log files are also available in the processing repository; an example of such a log file (from the region shown in Figure @fig:SLX23012_3D) is [shown online here](https://github.com/habi/sticklebacks/blob/main/logfiles/BucketOfFish_H/rec_regions/SL.X23.012/SL.X23.012.log).
 
 ![Double-checking crop extent and fish ID.
-  The top row shows the extracted regions from the previously calculated MIP of the full scan, and the bottom row shows the MIP images of the extracted regions.
+  The top row shows the extracted regions from the previously calculated MIP of the multi-specimen scan.
+  The bottom row show the MIP image individually calculated from each of the extracted cropped regions.
   Both rows must show exactly the same region.](images/Sticklebucket_H.rec.Regions.Check.png){#fig:cropping}
 
 Writing the regions as `zarr` files made it possible to work efficiently with the image data of each extracted fish and to convert those data to any desired format for further analysis.
@@ -306,7 +308,8 @@ One such interactive preview is [available online](https://htmlpreview.github.io
 `napari` is well suited to load the intermediate `*.zarr` files; Figure @fig:SLX23012_3D shows such a preview.
 
 ![Three-dimensional visualization of one extracted region.
-  Extracted region (label 1 visible upside down on the left) at the bottom, automatically thresholded region (threshold value: 50) on top.](images/SL.X23.012.3D.png){#fig:SLX23012_3D}
+  Extracted region (label 1 visible upside-down on the left) at the bottom, automatically thresholded region (threshold value: 50) on top.
+  Visualization created in Dragonfly 3D World (Version 2025.1.0.14177, Comet Technologies Canada Inc, Montreal, Canada).](images/SL.X23.012.3D.png){#fig:SLX23012_3D}
 
 #### Extraction of Features of Interest
 
@@ -368,12 +371,12 @@ For each encompassing scan, this would need to be repeated six times (for *each*
 In addition, such a manual process is not reproducible in the sense that it cannot be consistently replicated by others using the same data, since the manual cropping is operator-dependent.
 Algorithmically/automatically cropping the large datasets based on the axial MIP image yields reproducible cropped regions and uses operator time efficiently by eliminating manual cropping steps (see Table @tbl:timing).
 
-| Task                             | Est. Manual Time |      Pipeline Time | Speedup |
-|----------------------------------|-----------------:|-------------------:|--------:|
-| Scanning single fish             |        ~10 hours | 1 hour, 45 minutes |   ~5.5× |
-| Splitting scans into single fish |       17 minutes |          9 minutes |     ~2× |
-| Rendering volumes                |        5 minutes |         15 seconds |     20× |
-| Segmentation                     |   10--15 minutes |         15 seconds |    ~50× |
+| Task                             | Manual Time    | Our Pipeline Time  | Speed-up |
+|----------------------------------|---------------:|-------------------:|---------:|
+| Scanning single fish             |      ~10 hours | 1 hour, 45 minutes |   ~5.5 x |
+| Splitting scans into single fish |     17 minutes |          9 minutes |   ~2   x |
+| Rendering volumes                |      5 minutes |         15 seconds |   20   x |
+| Segmentation                     | 10--15 minutes |         15 seconds |  ~60   x |
 
 Table: Comparison of time estimates between manual and pipeline runs.
        Note that it would have been infeasible to scan each fish separately.
@@ -433,7 +436,7 @@ Once all components of the pipeline are combined, running a simple script enable
 Requiring minimal active user input, all automated pipeline steps are substantially faster than equivalent manual processing by an expert operator.
 This reproducible pipeline allows high-throughput sampling and population-scale analysis of stickleback specimens.
 
-The imaging and separation step is easy to generalize to either other micro-CT setups or other species/specimens.
+The imaging and separation step is easy to generalize to either other micro-CT setups or other species and specimens.
 As long as the specimens show up as distinct blobs in the MIP (see Figure @fig:labels), our pipeline can reproducibly separate these blobs into a cropped dataset for any further processing, enabling a general, reproducible, and high-throughput micro-CT workflow in biology and other fields.
 
 ### Findings from Ceratobranchial Analysis
@@ -498,6 +501,9 @@ Finally, the 3D analysis step of the pipeline allows for insights from 3D data t
 - [Writing – review & editing](https://credit.niso.org/contributor-roles/writing---review-&-editing/): David Haberthür, R. Benjamin Sulser, Sheila Christen, Catherine L. Peichel, Ruslan Hlushchuk
 
 
+Large language models were used to identify spelling and grammatical errors and to obtain feedback from [the Stanford Agentic Reviewer](https://paperreview.ai/).
+The authors reviewed and selectively incorporated all these suggestions.
+No generative AI was used to generate the scientific content of the manuscript.
 
 ## Competing Interests
 
