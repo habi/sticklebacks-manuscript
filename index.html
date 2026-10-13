@@ -9,7 +9,7 @@
   <meta name="author" content="Sheila Christen" />
   <meta name="author" content="Catherine L. Peichel" />
   <meta name="author" content="Ruslan Hlushchuk" />
-  <meta name="dcterms.date" content="2026-10-09" />
+  <meta name="dcterms.date" content="2026-10-13" />
   <meta name="keywords" content="tomography, high-throughput, stickleback, ecology" />
   <title>High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback</title>
   <style>
@@ -54,11 +54,11 @@
   <meta name="citation_title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
   <meta property="og:title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
   <meta property="twitter:title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
-  <meta name="dc.date" content="2026-10-09" />
-  <meta name="citation_publication_date" content="2026-10-09" />
-  <meta property="article:published_time" content="2026-10-09" />
-  <meta name="dc.modified" content="2026-10-09T13:56:25+00:00" />
-  <meta property="article:modified_time" content="2026-10-09T13:56:25+00:00" />
+  <meta name="dc.date" content="2026-10-13" />
+  <meta name="citation_publication_date" content="2026-10-13" />
+  <meta property="article:published_time" content="2026-10-13" />
+  <meta name="dc.modified" content="2026-10-13T16:04:36+00:00" />
+  <meta property="article:modified_time" content="2026-10-13T16:04:36+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -86,9 +86,9 @@
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/d3a51559e5e55ecbc2c12718ccc540296452791d/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/d3a51559e5e55ecbc2c12718ccc540296452791d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/d3a51559e5e55ecbc2c12718ccc540296452791d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/e1c6cb7997f9b82c58ef82dd8276009fd4c81af3/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/e1c6cb7997f9b82c58ef82dd8276009fd4c81af3/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/e1c6cb7997f9b82c58ef82dd8276009fd4c81af3/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -106,11 +106,11 @@
 <p><em>The (anonymized) version <a href="https://github.com/habi/sticklebacks-manuscript/releases/tag/v1.0"><code>v1.0</code></a> of this manuscript was submitted to <a href="https://besjournals.onlinelibrary.wiley.com/journal/2041210X">Methods in Ecology and Evolution</a>.</em></p>
 <p><small><em>
 This manuscript
-(<a href="https://habi.github.io/sticklebacks-manuscript/v/d3a51559e5e55ecbc2c12718ccc540296452791d/">permalink</a>)
+(<a href="https://habi.github.io/sticklebacks-manuscript/v/e1c6cb7997f9b82c58ef82dd8276009fd4c81af3/">permalink</a>)
 was generated
-from <a href="https://github.com/habi/sticklebacks-manuscript/tree/d3a51559e5e55ecbc2c12718ccc540296452791d">habi/sticklebacks-manuscript@d3a5155</a>
-on October 9, 2026 and contains 5375 words.
-Changes to the submitted version are visualized <a href="https://github.com/habi/sticklebacks-manuscript/compare/v1.0...d3a51559e5e55ecbc2c12718ccc540296452791d#files_bucket">here on GitHub</a>.
+from <a href="https://github.com/habi/sticklebacks-manuscript/tree/e1c6cb7997f9b82c58ef82dd8276009fd4c81af3">habi/sticklebacks-manuscript@e1c6cb7</a>
+on October 13, 2026 and contains 5448 words.
+Changes to the submitted version are visualized <a href="https://github.com/habi/sticklebacks-manuscript/compare/v1.0...e1c6cb7997f9b82c58ef82dd8276009fd4c81af3#files_bucket">here on GitHub</a>.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -267,9 +267,10 @@ This approach allowed us to map <em>all</em> the reconstructions to memory and q
 </figure>
 </div>
 <h5 id="separation-notebook">Separation Notebook</h5>
-<p>The <a href="https://nbviewer.org/github/habi/sticklebacks/blob/main/BucketSeparator.ipynb">separation notebook</a> processed all the acquired scans to extract each individual fish from each scan that encompasses six fish in total.
-As in the preview notebook, we efficiently loaded all the <code>png</code>s from disk with <a href="https://www.dask.org/"><code>dask</code></a> <span class="citation" data-cites="hj1CnyWB">(<a href="#ref-hj1CnyWB" role="doc-biblioref">Dask Development Team, 2016</a>)</span>.
-Based on the previously extracted MIP images and a simple labeling of these images (<a href="https://scikit-image.org/docs/stable/api/skimage.measure.html#skimage.measure.label"><code>skimage.measure.label</code></a>), we extracted both the labels in the custom-made sample holder and the positions of individual fish in the scan (<a href="https://scikit-image.org/docs/stable/api/skimage.measure.html#skimage.measure.regionprops"><code>skimage.measure.regionprops</code></a>) (see Figure <a href="#fig:labels">4</a>).
+<p>The <a href="https://nbviewer.org/github/habi/sticklebacks/blob/main/BucketSeparator.ipynb">separation notebook</a> processes all the acquired scans to extract each individual fish from each scan that encompasses six fish in total.
+As in the preview notebook, we efficiently load all the <code>png</code>s from disk with <a href="https://www.dask.org/"><code>dask</code></a> <span class="citation" data-cites="hj1CnyWB">(<a href="#ref-hj1CnyWB" role="doc-biblioref">Dask Development Team, 2016</a>)</span>.</p>
+<p>A connected region labeling of the previously extracted MIP images (<a href="https://scikit-image.org/docs/stable/api/skimage.measure.html#skimage.measure.label"><code>skimage.measure.label</code></a>) was used to highlight the labels in the custom-made sample holder (colored in red in Figure <a href="#fig:visualization">2</a> and highlighted in yellow in the left panel of Figure <a href="#fig:labels">4</a>) and to label the single fish in their compartements.
+The centroid positions and extent of individual fish in the scan (<a href="https://scikit-image.org/docs/stable/api/skimage.measure.html#skimage.measure.regionprops"><code>skimage.measure.regionprops</code></a>) (see right panel of Figure <a href="#fig:labels">4</a>) were used to extract small cropped regions from the large multi-specimen dataset.
 This extraction process is fully reproducible and is tailored to the arrangement of the samples in the custom sample holder.</p>
 <div id="fig:labels" class="fignos">
 <figure>
@@ -279,23 +280,23 @@ The regions are numbered consecutively from the top left to the bottom right.
 These numbers are assigned to the correct fish ID in the next step.</figcaption>
 </figure>
 </div>
-<p>Based on a simple mapping of the detected regions to the ID numbers of the scanned fish, we labeled the resulting images and presented these images together with photos of the lab book and sample tubes for verification (see Figure <a href="#fig:checking">5</a>).</p>
+<p>We then mapped the labels of the detected regions to the ID numbers of the scanned fish and presented these images together with photos of the lab book and sample tubes for verification (see Figure <a href="#fig:checking">5</a>).</p>
 <div id="fig:checking" class="fignos">
 <figure>
 <img src="images/Sticklebucket_H.rec.Labels.Check.png" alt="Figure 5: Mapping lab book notes, photos, and detected regions to fish ID." />
 <figcaption aria-hidden="true"><span>Figure 5:</span> Mapping lab book notes, photos, and detected regions to fish ID.</figcaption>
 </figure>
 </div>
-<p>The <code>skimage.measure.regionprops</code> function used for labeling returns not only the positions of each detected fish but also the extent of the bounding box of each detected region.
-We extracted each region of each fish separately from the large reconstructions (with a configurable border buffer; see Figure <a href="#fig:cropping">6</a>) and wrote these extracted regions to disk in discrete folders for efficient further analysis.
+<p>We extracted each region of each fish separately from the large reconstructions (with a configurable border buffer; see Figure <a href="#fig:cropping">6</a>) and wrote these extracted regions to disk in discrete folders for efficient further analysis.
 As a first step, we wrote the regions of the single fish to disk in <code>zarr</code> <span class="citation" data-cites="p38Gm1rT">(<a href="#ref-p38Gm1rT" role="doc-biblioref">Miles et al., 2020</a>)</span> format, which is well suited to storing n-dimensional arrays on disk.
 In addition to this, we also wrote a log file for each extracted region, containing all relevant information to redo the cropping step manually in any image processing software.
 All these log files are also available in the processing repository; an example of such a log file (from the region shown in Figure <a href="#fig:SLX23012_3D">7</a>) is <a href="https://github.com/habi/sticklebacks/blob/main/logfiles/BucketOfFish_H/rec_regions/SL.X23.012/SL.X23.012.log">shown online here</a>.</p>
 <div id="fig:cropping" class="fignos">
 <figure>
-<img src="images/Sticklebucket_H.rec.Regions.Check.png" alt="Figure 6: Double-checking crop extent and fish ID. The top row shows the extracted regions from the previously calculated MIP of the full scan, and the bottom row shows the MIP images of the extracted regions. Both rows must show exactly the same region." />
+<img src="images/Sticklebucket_H.rec.Regions.Check.png" alt="Figure 6: Double-checking crop extent and fish ID. The top row shows the extracted regions from the previously calculated MIP of the multi-specimen scan. The bottom row show the MIP image individually calculated from each of the extracted cropped regions. Both rows must show exactly the same region." />
 <figcaption aria-hidden="true"><span>Figure 6:</span> Double-checking crop extent and fish ID.
-The top row shows the extracted regions from the previously calculated MIP of the full scan, and the bottom row shows the MIP images of the extracted regions.
+The top row shows the extracted regions from the previously calculated MIP of the multi-specimen scan.
+The bottom row show the MIP image individually calculated from each of the extracted cropped regions.
 Both rows must show exactly the same region.</figcaption>
 </figure>
 </div>
@@ -309,9 +310,10 @@ One such interactive preview is <a href="https://htmlpreview.github.io/?https://
 <code>napari</code> is well suited to load the intermediate <code>*.zarr</code> files; Figure <a href="#fig:SLX23012_3D">7</a> shows such a preview.</p>
 <div id="fig:SLX23012_3D" class="fignos">
 <figure>
-<img src="images/SL.X23.012.3D.png" alt="Figure 7: Three-dimensional visualization of one extracted region. Extracted region (label 1 visible upside down on the left) at the bottom, automatically thresholded region (threshold value: 50) on top." />
+<img src="images/SL.X23.012.3D.png" alt="Figure 7: Three-dimensional visualization of one extracted region. Extracted region (label 1 visible upside-down on the left) at the bottom, automatically thresholded region (threshold value: 50) on top. Visualization created in Dragonfly 3D World (Version 2025.1.0.14177, Comet Technologies Canada Inc, Montreal, Canada)." />
 <figcaption aria-hidden="true"><span>Figure 7:</span> Three-dimensional visualization of one extracted region.
-Extracted region (label 1 visible upside down on the left) at the bottom, automatically thresholded region (threshold value: 50) on top.</figcaption>
+Extracted region (label 1 visible upside-down on the left) at the bottom, automatically thresholded region (threshold value: 50) on top.
+Visualization created in Dragonfly 3D World (Version 2025.1.0.14177, Comet Technologies Canada Inc, Montreal, Canada).</figcaption>
 </figure>
 </div>
 <h4 id="extraction-of-features-of-interest">Extraction of Features of Interest</h4>
@@ -373,17 +375,17 @@ On average, we scanned 5.66 fish per scan for a total scan time of 15 days, 23 h
 The manual scan time per single fish is thus calculated to be five times longer than scanning six fish at a time in a single scan and separating them after the fact.
 Also note that the manual splitting does <em>not</em> produce the accompanying log file and figures for double-checking as specified below. </caption>
 <colgroup>
-<col style="width: 41%" />
-<col style="width: 22%" />
-<col style="width: 24%" />
-<col style="width: 11%" />
+<col style="width: 42%" />
+<col style="width: 20%" />
+<col style="width: 25%" />
+<col style="width: 12%" />
 </colgroup>
 <thead>
 <tr class="header">
 <th>Task</th>
-<th style="text-align: right;">Est. Manual Time</th>
-<th style="text-align: right;">Pipeline Time</th>
-<th style="text-align: right;">Speedup</th>
+<th style="text-align: right;">Manual Time</th>
+<th style="text-align: right;">Our Pipeline Time</th>
+<th style="text-align: right;">Speed-up</th>
 </tr>
 </thead>
 <tbody>
@@ -391,25 +393,25 @@ Also note that the manual splitting does <em>not</em> produce the accompanying l
 <td>Scanning single fish</td>
 <td style="text-align: right;">~10 hours</td>
 <td style="text-align: right;">1 hour, 45 minutes</td>
-<td style="text-align: right;">~5.5×</td>
+<td style="text-align: right;">~5.5 x</td>
 </tr>
 <tr class="even">
 <td>Splitting scans into single fish</td>
 <td style="text-align: right;">17 minutes</td>
 <td style="text-align: right;">9 minutes</td>
-<td style="text-align: right;">~2×</td>
+<td style="text-align: right;">~2 x</td>
 </tr>
 <tr class="odd">
 <td>Rendering volumes</td>
 <td style="text-align: right;">5 minutes</td>
 <td style="text-align: right;">15 seconds</td>
-<td style="text-align: right;">20×</td>
+<td style="text-align: right;">20 x</td>
 </tr>
 <tr class="even">
 <td>Segmentation</td>
 <td style="text-align: right;">10–15 minutes</td>
 <td style="text-align: right;">15 seconds</td>
-<td style="text-align: right;">~50×</td>
+<td style="text-align: right;">~60 x</td>
 </tr>
 </tbody>
 </table>
@@ -468,7 +470,7 @@ Warps are indicated at the extremes of each axis by vectors drawn from a mean sh
 <p>Once all components of the pipeline are combined, running a simple script enables automatic reconstruction, thresholding, and segmentation of stickleback specimens.
 Requiring minimal active user input, all automated pipeline steps are substantially faster than equivalent manual processing by an expert operator.
 This reproducible pipeline allows high-throughput sampling and population-scale analysis of stickleback specimens.</p>
-<p>The imaging and separation step is easy to generalize to either other micro-CT setups or other species/specimens.
+<p>The imaging and separation step is easy to generalize to either other micro-CT setups or other species and specimens.
 As long as the specimens show up as distinct blobs in the MIP (see Figure <a href="#fig:labels">4</a>), our pipeline can reproducibly separate these blobs into a cropped dataset for any further processing, enabling a general, reproducible, and high-throughput micro-CT workflow in biology and other fields.</p>
 <h3 id="findings-from-ceratobranchial-analysis">Findings from Ceratobranchial Analysis</h3>
 <p>The first and second ceratobranchials differ remarkably in morphology, size, and breadth, suggesting that these structures may respond differently to changes in diet, even within the same feeding apparatus.
@@ -513,6 +515,9 @@ This puts virtual, nondestructive dissection of internal stickleback anatomy on 
 <li><a href="https://credit.niso.org/contributor-roles/writing---original-draft/">Writing – original draft</a>: David Haberthür, R. Benjamin Sulser</li>
 <li><a href="https://credit.niso.org/contributor-roles/writing---review-&amp;-editing/">Writing – review &amp; editing</a>: David Haberthür, R. Benjamin Sulser, Sheila Christen, Catherine L. Peichel, Ruslan Hlushchuk</li>
 </ul>
+<p>Large language models were used to identify spelling and grammatical errors and to obtain feedback from <a href="https://paperreview.ai/">the Stanford Agentic Reviewer</a>.
+The authors reviewed and selectively incorporated all these suggestions.
+No generative AI was used to generate the scientific content of the manuscript.</p>
 <h2 id="competing-interests">Competing Interests</h2>
 <table>
 <thead>
@@ -649,7 +654,7 @@ Meeker, N. D., Hutchinson, S. A., Ho, L., &amp; Trede, N. S. (2007). Method for 
 Miles, A., Kirkham, J., Durant, M., Bourbeau, J., Onalan, T., Hamman, J., Zain Patel, Shikharsg, Rocklin, M., Dussin, R., Schut, V., Andrade, E. S. D., Abernathey, R., Noyes, C., Sbalmer, Pyup.Io Bot, Tran, T., Saalfeld, S., Swaney, J., … Banihirwe, A. (2020). <em>zarr-developers/zarr-python: v2.4.0</em> (Version v2.4.0) [Computer software]. Zenodo. <a href="https://doi.org/10.5281/zenodo.3773450">https://doi.org/10.5281/zenodo.3773450</a>
 </div>
 <div id="ref-jxVw2kt2" class="csl-entry" role="doc-biblioentry">
-<em>Overview</em>. (n.d.). K3D-Jupyter. Retrieved October 9, 2026, from <a href="https://k3d-jupyter.org/index.html">https://k3d-jupyter.org/index.html</a>
+<em>Overview</em>. (n.d.). K3D-Jupyter. Retrieved October 13, 2026, from <a href="https://k3d-jupyter.org/index.html">https://k3d-jupyter.org/index.html</a>
 </div>
 <div id="ref-whEyWyQh" class="csl-entry" role="doc-biblioentry">
 R Core Team. (2021). <em>R: A language and environment for statistical computing</em>. R Foundation for Statistical Computing. <a href="https://www.R-project.org/">https://www.R-project.org/</a>
