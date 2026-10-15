@@ -64,7 +64,13 @@ The merging does correct for minute differences in rotation and usually works ab
 
 > Line 129: I don’t understand what you mean by “shown extracted”.
 
->Line 130: I assume it should be “Figure 4” not just “4”.
+As a non-native English writer we've chosen the wrong word here.
+The labels are "extracted" from the MIP by image processing and shown as (yellow) highlights over the image to enable quality assurance.
+We reformulated the sentence and specified where the labels are shown/highlighted.
+This also lead to a change in the 3D visualization, as the red labels there were simply an "artistic" choice; the labels are now also yellow in that figure.
+So the labels are now highlighted in yellow in the Dragonfly visualization, highlighted yellow by our script and simply visible in the napari visualization of the extracted region.
+
+> Line 130: I assume it should be “Figure 4” not just “4”.
 
 Fixed in https://github.com/habi/sticklebacks-manuscript/commit/a11b1d6674a7956df60d6bd66f4d4eec1dc0f9ca
 
