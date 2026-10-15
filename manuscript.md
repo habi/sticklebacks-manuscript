@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2026-10-15" />
   <meta name="citation_publication_date" content="2026-10-15" />
   <meta property="article:published_time" content="2026-10-15" />
-  <meta name="dc.modified" content="2026-10-15T09:14:04+00:00" />
-  <meta property="article:modified_time" content="2026-10-15T09:14:04+00:00" />
+  <meta name="dc.modified" content="2026-10-15T16:18:27+00:00" />
+  <meta property="article:modified_time" content="2026-10-15T16:18:27+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/dcfbabc1db07c44f93498fa86eab985f6643bfc6/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/dcfbabc1db07c44f93498fa86eab985f6643bfc6/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/dcfbabc1db07c44f93498fa86eab985f6643bfc6/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/68e372714d9cf90dd28a3426be335fd1a31103ee/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/68e372714d9cf90dd28a3426be335fd1a31103ee/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/68e372714d9cf90dd28a3426be335fd1a31103ee/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,11 +80,11 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/dcfbabc1db07c44f93498fa86eab985f6643bfc6/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/68e372714d9cf90dd28a3426be335fd1a31103ee/))
 was generated
-from [habi/sticklebacks-manuscript@dcfbabc](https://github.com/habi/sticklebacks-manuscript/tree/dcfbabc1db07c44f93498fa86eab985f6643bfc6)
-on October 15, 2026 and contains 5448 words.
-Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...dcfbabc1db07c44f93498fa86eab985f6643bfc6#files_bucket).
+from [habi/sticklebacks-manuscript@68e3727](https://github.com/habi/sticklebacks-manuscript/tree/68e372714d9cf90dd28a3426be335fd1a31103ee)
+on October 15, 2026 and contains 5478 words.
+Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...68e372714d9cf90dd28a3426be335fd1a31103ee#files_bucket).
 </em></small>
 
 
@@ -249,10 +249,11 @@ The projection images were subsequently reconstructed into stacks of 8-bit `png`
 The isotropic voxel sizes in the resulting datasets vary from 15 to 17.5 µm.
 
 The result of one such multispecimen scan is visualized in Figure @fig:visualization, which shows the six fish contained in this scan.
-The labels on the holder are colored red and are shown extracted (in yellow) later in Figure @fig:labels.
+The 3D-printed labels on the holder are highlighted in yellow in Figures @fig:visualization and @fig:labels--@fig:cropping (image processing in notebooks), and visible (upside down) in Figure @fig:SLX23012_3D.
 
 ![Three-dimensional visualization of one multispecimen scan.
-  The 3D-printed labels are colored in red; the holder itself is shown semitransparently, containing six specimens for this scan.](images/Sticklebucket_H.rec.3D.png){#fig:visualization}
+  The 3D-printed labels are highlighted in yellow; the holder itself is shown semitransparently, containing six specimens for this scan.
+  Visualization created with Dragonfly 3D World (Version 2025.1.0.14177, Comet Technologies Canada Inc, Montreal, Canada).](images/Sticklebucket_H.rec.3D.png){#fig:visualization}
 
 ### Data Analysis
 
@@ -275,13 +276,14 @@ This approach allowed us to map *all* the reconstructions to memory and quickly 
 The [separation notebook](https://nbviewer.org/github/habi/sticklebacks/blob/main/BucketSeparator.ipynb) processes all the acquired scans to extract each individual fish from each scan that encompasses six fish in total.
 As in the preview notebook, we efficiently load all the `png`s from disk with [`dask`](https://www.dask.org/) [@dask].
 
-A connected region labeling of the previously extracted MIP images ([`skimage.measure.label`](https://scikit-image.org/docs/stable/api/skimage.measure.html#skimage.measure.label)) was used to highlight the labels in the custom-made sample holder (colored in red in Figure @fig:visualization and highlighted in yellow in the left panel of Figure @fig:labels) and to label the single fish in their compartements.
+A connected region labeling of the previously extracted MIP images ([`skimage.measure.label`](https://scikit-image.org/docs/stable/api/skimage.measure.html#skimage.measure.label)) was used to highlight the labels in the custom-made sample holder (highlighted in yellow in the left panel of Figure @fig:labels) and to label the single fish in their compartements.
 The centroid positions and extent of individual fish in the scan ([`skimage.measure.regionprops`](https://scikit-image.org/docs/stable/api/skimage.measure.html#skimage.measure.regionprops)) (see right panel of Figure @fig:labels) were used to extract small cropped regions from the large multi-specimen dataset.
 This extraction process is fully reproducible and is tailored to the arrangement of the samples in the custom sample holder.
 
 ![Automatically detected regions based on maximum intensity projection along the rotation axis of the tomographic scan.
-  The regions are numbered consecutively from the top left to the bottom right.
-  These numbers are assigned to the correct fish ID in the next step.](images/Sticklebucket_H.rec.Labels.Detected.png){#fig:labels}
+  The left panel shows the highlighted compartement labels as they have been 3D printed.
+  The right panels shows the regions as detected by `skimage`, they are numbered consecutively from top left to bottom right.
+  Detected label numbes are mapped to the correct fish ID in the next step.](images/Sticklebucket_H.rec.Labels.Detected.png){#fig:labels}
 
 We then mapped the labels of the detected regions to the ID numbers of the scanned fish and presented these images together with photos of the lab book and sample tubes for verification (see Figure @fig:checking).
 
@@ -309,7 +311,7 @@ One such interactive preview is [available online](https://htmlpreview.github.io
 
 ![Three-dimensional visualization of one extracted region.
   Extracted region (label 1 visible upside-down on the left) at the bottom, automatically thresholded region (threshold value: 50) on top.
-  Visualization created in Dragonfly 3D World (Version 2025.1.0.14177, Comet Technologies Canada Inc, Montreal, Canada).](images/SL.X23.012.3D.png){#fig:SLX23012_3D}
+  Visualization created with `napari` (Version 0.6.1, [@doi:10.5281/zenodo.3555620]).](images/SL.X23.012.3D.png){#fig:SLX23012_3D}
 
 #### Extraction of Features of Interest
 
