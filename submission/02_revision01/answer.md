@@ -60,7 +60,7 @@ We added a bit of explanation in the text.
 > How were they merged/stacked?
 
 Merging of the substacks is performed automatically in the reconstruction software NRecon provided by Bruker.
-The merging does correct for minute differences in rotation and usually works absolutely flawlessly by blending the overlapping regions in the reconstructed stack, so there are also no cone-beam reconstruction artefacts discernible.
+The merging does correct for minute differences in rotation and usually works absolutely flawlessly by blending the overlapping regions in the reconstructed stack, so there are also no cone-beam reconstruction artifacts discernible.
 
 > Line 129: I don’t understand what you mean by “shown extracted”.
 
@@ -95,10 +95,10 @@ Removed by making it more precise, e.g. not "simple labeling", but "connected re
 Your assumptions about the fish not overlapping in are correct in three-dimensional space.
 Due to slight warping of the 3D-printed sample holder (due to age, temperature and x-ray exposure), it is not aligned completely vertical in the machine during a scan.
 This is visible in the (automatically stitched) preview image (from 3 subscans) shown below, where the sample holder is "tilted" by approximately 3.25° off the vertical.
-Even though the fish are located in a dedicated compartement in the sample holder, the tail of the fish in compartement 2 is just about overlappig the head of the fish in compartement 3.
+Even though the fish are located in a dedicated compartment in the sample holder, the tail of the fish in compartment 2 is just about overlapping the head of the fish in compartment 3.
 They do overlap *only* in the top-down MIP image, but do *not* overlap in 3D space.
-Since the region of the fish are individually cropped out of the large datasets *with* a buffer of +50 px in each direction the extracted regions *do* overlap in some cases, even if the fish don't overlap.
-As a consequence, this also means that one extracted region could contain a small region of the fish in the adjacent compartement, but this has not been an issue in the further analysis of the cropped datasets.
+Since the region of the fish are individually cropped out of the large datasets *with* a buffer of +50 pixels in each direction the extracted regions *do* overlap in some cases, even if the fish don't overlap.
+As a consequence, this also means that one extracted region could contain a small region of the fish in the adjacent compartment, but this has not been an issue in the further analysis of the cropped datasets.
 
 ![Preview image of Sticklebucket_H, the same as shown in Figures 2--6](Sticklebucket_H_rec_spr.png)
 
@@ -109,10 +109,10 @@ As a consequence, this also means that one extracted region could contain a smal
 #61
 Your assumption is mostly correct, the labels in the black circles are the ones assigned by `skimage.label`.
 The yellow numbers in the left panel of the Fig. 4--6 (and red ones in Fig. 2) are the ones "imprinted" on the sample holder by the 3D printer, simply highlighted on this image in yellow, by a step in our script (not described in detail in the manuscript).
-Assignment/Matching of compartement number to detected label to fish ID was performed manually on the first half of the scans and performed in the script for the second half of the scans.
-The matching for the second half of the scans was performed by writing a small text file matching compartement number to fish ID, where the script then read this file.
+Assignment/Matching of compartment number to detected label to fish ID was performed manually on the first half of the scans and performed in the script for the second half of the scans.
+The matching for the second half of the scans was performed by writing a small text file matching compartment number to fish ID, where the script then read this file.
 We tried to improve the explanation in the manuscript text, but deliberately left out how the mapping is performed exactly to now over-complicate the explanation.
-   
+
 > Line 169: I don’t think skimage.measure.regionprops is “labeling” the data.
 > It only provides properties of the regions labeled by skimage.measure.label.
 
@@ -125,7 +125,7 @@ We've completely removed that sentence by improving the paragraph above to remov
 > What could potentially have gone wrong, and what would the images look like?
 
 #63
-As specified in the figure caption both rows *must* show the same image (except the yellow highlight), as the top rop shows the regions cropped from the originally generated MIP of the multi-specimen scan and the bottom row shows the MIP individually created from the cropped regions.
+As specified in the figure caption both rows *must* show the same image (except the yellow highlight), as the top row shows the regions cropped from the originally generated MIP of the multi-specimen scan and the bottom row shows the MIP individually created from the cropped regions.
 We've expanded the figure caption a bit with the aim to clarify it.
 
 > Figure 8: Were all the different structures used for model training or only CB1 and CB2.
@@ -164,7 +164,7 @@ Thanks, updated.
 > Redundant “The”
 
 Thanks for notifying us about that.
-We edited the caption(s) according to the Writefill suggesion and completely removed the the's.
+We edited the caption(s) according to the Writefull suggesion and completely removed the the's.
 
 > Line 341: species/species.
 > Redundant “species”
@@ -292,6 +292,9 @@ It was always stating "Sample Procurement and Preparation" and still is so.
 >The extraction of features, a.k.a the segmentation process, is later done in 3Dslicer.
 
 > Figure 12: There is a typo with a double The.
+
+Thanks for notifying us about that.
+We edited the caption(s) according to the Writefull suggestion and completely removed the the's.
 
 > Line 376: In order to make the pipeline reproductible for larger or more dense specimens:
 > - The separation process should only rely on contrast between the specimen and a radio-transparent sample holder, or the sample holder should be designed differently to prevent the wrong labeling of the separation process.
