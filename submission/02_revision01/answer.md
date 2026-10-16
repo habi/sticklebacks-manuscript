@@ -2,7 +2,6 @@
 title: "Revisions for *High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback*"
 author: David Haberthür
 date: 
-
 ---
 
 # Associate Editor Comments to Author:
@@ -219,6 +218,7 @@ We are sorry for that, as in our original manuscript the section title was alway
 > There is focus in this study on the feeding structures and the branchial anatomy but it is not explained why the authors chose to scan the whole fishes with all the consequences in terms of scanning time and post-processing heavy datasets.
 > From Figure 3., we can see that almost half the dataset is outside these regions of interest, so probably two fields of view instead of three along the rotation axis would have been enough.
 > This needs to be addressed and justified.
+
 > I could not acess the OpenScad files due to the anonymization process of the paper.
 > A picture of the sample holder containing the fishes would be appreciated.
 > The printing material can be documented as it needs to be radio-transparent enough.
@@ -295,6 +295,7 @@ We are sorry for that, as in our original manuscript the section title was alway
 >In my opinion, it is the main motivation behind the authors’ developments.
 > When estimating the time needed to scan a single fish, the duration would not be the same as a batch because one would need less than 3600 projections per scan.
 >From the MIP, it seems that a single fish would fit in half the width of the field of view, thus a scan duration for a single fish would be 5h while keeping the same voxel size and exposition time.
+
 > Can the authors explain what is included in the 17 minutes manual time needed to split a single fish scan of a single fish ?
 
 > Line 290: It would be great to provide the average size of a cropped .nrrd dataset for a single fish.
