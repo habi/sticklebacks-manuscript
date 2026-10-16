@@ -1,70 +1,49 @@
 ---
 config:
-  layout: elk
-  themeVariables:
-    fontSize: 36px
+    theme: redux-color
+    themeVariables:
+        fontSize: 18pt
 ---
-flowchart LR
+%% Render the thing at https://mermaid.live/ for best results
+swimlane-beta TB
 
-subgraph collection["Sample collection"]
+subgraph collection["Collection"]
     Planning --> Sampling --> Storing
 end
 
-Storing --> imaging
+Storing --> setup
 
-subgraph imaging["microCT imaging"]
-    holder@{shape: procs, label: "Multi-specimen scans (N = 38)"}
-    rec@{shape: procs, label: "Reconstructions"}
-
-    holder --> rec
+subgraph imaging["micro-CT"]
+    setup["Preparation"] --> scan@{ shape: procs, label: "Multi-specimen scans\n(N = 38)" }
+    scan --> rec@{ shape: procs, label: "Reconstructions" }
 end
 
-rec --> preprocessing
+rec --> preview["Preview, Quality control"]
 
-subgraph preprocessing["Pre-processing"]
-    jupyter("Jupyter")
-
-    preview("Preview & QC")
-    separation("Fish separation")
-    fishid@{shape: procs, label: "Fish datasets (N = 215)"}
-    reporting("Reporting")
-
-    separation -----> fishid
-
-    jupyter -....-> preview
-    jupyter -.-> separation
-    jupyter -.-> reporting
+subgraph notebooks["Notebooks"]
+    preview --> separation["Fish separation"]
+    separation --> fishid@{ shape: procs, label: "Fish datasets (N = 215)" }
+    preview --> rec
+    preview --> Reporting   
 end
 
-fishid --> segmentation
+fishid --> Training
+Reporting --> manubot
 
-subgraph segmentation["Biomedisa segmentation"]
-    Biomedisa
-
-    regions@{shape: procs, label: "Segmented regions"}
-    rakers@{shape: procs, label: "Ceratobranchials"}
-    jaws@{shape: procs, label: "Branchial bones"}
-
-    Biomedisa -.-> regions
-    regions --> rakers
-    regions --> jaws
+subgraph segmentation["Biomedisa"]
+    Training --> regions@{ shape: procs, label: "Segmented regions" }
+    regions --> jaws@{ shape: procs, label: "Brachial bones" }
+    jaws --> rakers@{ shape: procs, label: "Ceratobranchials" }
 end
 
-rakers --> analysis
+rakers --> morph
 
 subgraph analysis["Case study"]
-    morph("Morphometric Analysis")
+    morph["Morphometric Analysis"]
 end
 
-manubot@{shape: doc, label: "Manuscript"}
+subgraph manuscript["Manuscript"]
+    manubot@{ shape: doc, label: "Manuscript" }
+end
 
-reporting ---------> manubot
 morph --> manubot
-
-Storing ~~~ holder
-rec ~~~ jupyter
-
-separation ~~~ fishid
-fishid ~~~ Biomedisa
-
-rakers ~~~ morph
