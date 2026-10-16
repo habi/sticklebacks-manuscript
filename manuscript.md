@@ -6,7 +6,7 @@ keywords:
 - stickleback
 - ecology
 lang: en-US
-date-meta: '2026-10-15'
+date-meta: '2026-10-16'
 author-meta:
 - David Haberthür
 - R. Benjamin Sulser
@@ -24,11 +24,11 @@ header-includes: |
   <meta name="citation_title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
   <meta property="og:title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
   <meta property="twitter:title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
-  <meta name="dc.date" content="2026-10-15" />
-  <meta name="citation_publication_date" content="2026-10-15" />
-  <meta property="article:published_time" content="2026-10-15" />
-  <meta name="dc.modified" content="2026-10-15T16:49:46+00:00" />
-  <meta property="article:modified_time" content="2026-10-15T16:49:46+00:00" />
+  <meta name="dc.date" content="2026-10-16" />
+  <meta name="citation_publication_date" content="2026-10-16" />
+  <meta property="article:published_time" content="2026-10-16" />
+  <meta name="dc.modified" content="2026-10-16T08:05:03+00:00" />
+  <meta property="article:modified_time" content="2026-10-16T08:05:03+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/5427e843b6dfdc61fb51341fb4c706ca1170e408/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/5427e843b6dfdc61fb51341fb4c706ca1170e408/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/5427e843b6dfdc61fb51341fb4c706ca1170e408/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/99ea9aafa3518f1a5b051f55cdbf10449c61beff/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/99ea9aafa3518f1a5b051f55cdbf10449c61beff/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/99ea9aafa3518f1a5b051f55cdbf10449c61beff/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,11 +80,11 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/5427e843b6dfdc61fb51341fb4c706ca1170e408/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/99ea9aafa3518f1a5b051f55cdbf10449c61beff/))
 was generated
-from [habi/sticklebacks-manuscript@5427e84](https://github.com/habi/sticklebacks-manuscript/tree/5427e843b6dfdc61fb51341fb4c706ca1170e408)
-on October 15, 2026 and contains 5478 words.
-Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...5427e843b6dfdc61fb51341fb4c706ca1170e408#files_bucket).
+from [habi/sticklebacks-manuscript@99ea9aa](https://github.com/habi/sticklebacks-manuscript/tree/99ea9aafa3518f1a5b051f55cdbf10449c61beff)
+on October 16, 2026 and contains 5532 words.
+Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...99ea9aafa3518f1a5b051f55cdbf10449c61beff#files_bucket).
 </em></small>
 
 
@@ -224,7 +224,7 @@ Specimens were collected from a random sample of up to 30 fish from each lake, u
 The fish were sacrificed with MS-222, photographed, labeled, and preserved in 10% formalin in individual bags, all under McGill University Animal Use Protocol (AUP) MCGL-8265.
 At the end of each field season, samples were shipped from Anchorage (AK, USA) to Bern (BE, CH), where they were stored until scanning.
 The total number of fish for each lake was: 52 from Watson Lake (benthic), 48 from Finger Lake (benthic), 46 from Spirit Lake (limnetic), 35 from South Rolly Lake (limnetic), 20 from Walby Lake (benthic), and 14 from Tern Lake (benthic) for a total of 215 specimens.
-Additionally, caudal fin clips were collected from fish sampled during the 2024 field season for molecular sex identification through genotyping.
+As there is evidence that sexual dimorphism is present in the stickleback feeding structures [@doi:10.1242/jeb.074948], caudal fin clips were additionally collected from fish sampled during the 2024 field season for molecular sex identification through genotyping.
 DNA was extracted from fin tissue following Meeker et al. [@doi:10.2144/000112619], and subsequent PCR genotyping with LRRc61 primers was performed, following Archambeault et al. [@doi:10.1002/evl3.175].
 
 Due to their inherent contrast difference with the surrounding tissue, the structures of interest in this study (teeth and bones, i.e., jaws and skull) are well visualized in unstained samples, so no further preparation of the fish was necessary.
@@ -315,27 +315,29 @@ One such interactive preview is [available online](https://htmlpreview.github.io
 
 #### Extraction of Features of Interest
 
-After separation, the cropped image files were checked and rendered using 3D Slicer [@doi:10.1007/978-1-4614-7657-3_19] and the SlicerMorph extension [@doi:10.1111/2041-210X.13669].
-Individual elements of the branchial apparatus were rendered using a combination of thresholding and "Split Islands" tools to separate the pharyngobranchials, epibranchials, basibranchials, hypobranchials, and ceratobranchials (see Figure @fig:branchial_anatomy).
+After separation, the cropped image files were checked and rendered using 3D Slicer [@doi:10.1007/978-1-4614-7657-3_19] and the SlicerMorph extension [@doi:10.1111/2041-210X.13669]. A subset of 51 specimens was chosen to create initial training dataset. 
+For these samples, individual elements of the branchial apparatus were rendered and cleaned by hand using a combination of thresholding and "Split Islands" tools to separate the pharyngobranchials, epibranchials, basibranchials, hypobranchials, and ceratobranchials (see Figure @fig:branchial_anatomy).
 
 ![Example of branchial anatomy with CB1 and CB2 highlighted in pink.
   Abbreviations: PB = pharyngobranchials, EB = epibranchials, BB = basibranchials, HB = hypobranchials, CB = ceratobranchials.](images/Branchial_Figure.png){#fig:branchial_anatomy}
 
-Once rendered, these bones were exported as a colored labelmap along with the `nrrd` file from which they were segmented to pass to the Biomedisa program.
+Once segmented, these bones were exported as a colored labelmap along with the `nrrd` file from which they were segmented to pass to the Biomedisa program.
 
 #### Machine Learning and Model Training
 
-We passed a dataset of 51 samples (including `nrrd` and `label` files) to Biomedisa [@doi:10.1038/s41467-020-19303-w] to train a segmentation model.
+The hand-labelled dataset of 51 samples (including `nrrd` and `label` files) was input into Biomedisa [@doi:10.1038/s41467-020-19303-w] to train a segmentation model.
 We allowed a 180° rotation to account for possible specimen variability, with an 80/20 split between training and validation data.
 The model was trained with a batch size of 24 for 50 epochs, using a network architecture of 32-64-128-256-512.
 The final model performs well, with a Dice score of 0.9159 on the validation dataset.
-We only performed manual touch-ups where the adjacent bones were in close proximity (causing their appearance to be "stuck" in the final render; this is also an issue with manual segmentation and not exclusive to the approach described here).
+We only performed manual touch-ups on the resulting segmentation output where the adjacent bones were in close proximity (causing their appearance to be "stuck" in the final render; this is also an issue with manual segmentation and not exclusive to the approach described here).
 
 #### Landmarking of Models
 
 To demonstrate the effectiveness of this tool and the importance of 3D morphometry to answer evolutionary questions, we quantified the shape differences of the ceratobranchial bones.
 Once trained, we applied the Biomedisa segmentation model to the remaining 160 specimens and landmarked the final results using Stratovan Checkpoint [@checkpoint].
-As a test and for subsequent analysis, the first and second right ceratobranchials were chosen for comparison between all samples.
+
+As a test and for subsequent analysis, the first and second right ceratobranchials were chosen for comparison between all samples. The segmentations corresponding to these bones were imported together for landmarking. 
+
 Type II landmarks were placed at the ends of each bone, with semilandmarks between them to cover the curvature axes along the bone (see Figure @fig:landmarks).
 In total, seven landmarks and four semilandmark curves (two containing 20 semilandmarks, two containing 15) were placed on the first ceratobranchial (CB1), and five landmarks and three semilandmark curves (one containing 20 semilandmarks, two containing 15) were placed on the second ceratobranchial (CB2).
 Equal distances were ensured using the `resample_curves` function in 3D Slicer.
@@ -345,7 +347,7 @@ Equal distances were ensured using the `resample_curves` function in 3D Slicer.
 #### Analysis of Shape
 
 All subsequent analyses were run using R (version 4.4.1, [@r]) and the geomorph package [@doi:10.1111/2041-210X.13723; @doi:10.32614/CRAN.package.geomorph; @doi:10.32614/CRAN.package.RRPP; @doi:10.1111/2041-210X.13029].
-Both bones were split and analyzed separately after generalized Procrustes analysis (GPA) using the [`gpagen()`](https://search.r-project.org/CRAN/refmans/geomorph/html/gpagen.html) function, with principal component analysis (PCA) and linear models run with [`gm.prcomp()`](https://search.r-project.org/CRAN/refmans/geomorph/html/gm.prcomp.html) and [`procD.lm()`](https://search.r-project.org/CRAN/refmans/geomorph/html/procD.lm.html), respectively.
+Landmarks corresponding to each bones were split and analyzed separately after generalized Procrustes analysis (GPA) using the [`gpagen()`](https://search.r-project.org/CRAN/refmans/geomorph/html/gpagen.html) function, with principal component analysis (PCA) and linear models run with [`gm.prcomp()`](https://search.r-project.org/CRAN/refmans/geomorph/html/gm.prcomp.html) and [`procD.lm()`](https://search.r-project.org/CRAN/refmans/geomorph/html/procD.lm.html), respectively.
 Linear fits were further investigated using the `pairwise()` function to analyze differences in pairwise statistics.
 
 
@@ -444,7 +446,8 @@ As long as the specimens show up as distinct blobs in the MIP (see Figure @fig:l
 ### Findings from Ceratobranchial Analysis
 
 The first and second ceratobranchials differ remarkably in morphology, size, and breadth, suggesting that these structures may respond differently to changes in diet, even within the same feeding apparatus.
-CB1 showed statistically significant differences between benthic and limnetic ecotypes based on linear and pairwise analyses (and PC4, accounting for 4.33% of the variation, appears to capture these differences; see the supplementary figures).
+
+CB1 showed statistically significant, albiet small, differences between benthic and limnetic ecotypes based on linear and pairwise analyses (PC4, accounting for 4.33% of the variation, appears to capture these differences; see supplementary figures).
 However, we caution that the greater number of benthic lakes and specimens available for this study may contribute to these patterns, as the two groups (benthic and limnetic) exhibit statistically different variances.
 This pipeline will allow for more extensive analysis from future sampling years to confirm these findings.
 
