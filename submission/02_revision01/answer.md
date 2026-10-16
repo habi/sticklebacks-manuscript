@@ -207,8 +207,7 @@ As 'sample positioning' is *always* a step in microCT imaging, we deliberately o
 > Line 83: the title seems incomplete
 
 This wrong section title was probably introduced during anonymization or by the Writefull editing step, when we search-and-replaced some words.
-It was always stating "Sample Procurement and Preparation" and still is so.
-
+We are sorry for that, as in our original manuscript the section title was always "Sample Procurement and Preparation" and still is so.
 
 > Sample positioning
 > Extra information is needed regarding the specimens.
