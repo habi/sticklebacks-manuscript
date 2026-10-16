@@ -215,6 +215,9 @@ We are sorry for that, as in our original manuscript the section title was alway
 > There is a mention of foam in the notebook, can the authors elaborate ?
 
 > The sample positioning and reporting in the lab book is a time-consuming task that should be taken into account in the time estimates in Table 1.
+
+#67
+
 > There is focus in this study on the feeding structures and the branchial anatomy but it is not explained why the authors chose to scan the whole fishes with all the consequences in terms of scanning time and post-processing heavy datasets.
 > From Figure 3., we can see that almost half the dataset is outside these regions of interest, so probably two fields of view instead of three along the rotation axis would have been enough.
 > This needs to be addressed and justified.
@@ -233,12 +236,17 @@ We are sorry for that, as in our original manuscript the section title was alway
 > Line 126: Can the authors elaborate on why they chose not to apply any beam hardening correction .
 > How did the beam hardening was checked not to have an impact on the segmentation of small bony structures close to denser structures like otoliths or remaining dense particles ?
 
+#66
+Not necessary for these samples, but we'll have to justify it.
+
 > Preview notebook
 > A general remark on the preview notebook is that it is not clear what scanning issues are detected then that could not have been seen while reconstructing the data in Nrecon.
 > Could the authors elaborate on why the CT operator was not in charge of this check, while the specimens are still in the lab .
 > It sounds counter-productive to re-open everything later and maybe having to come back to CTscan again what went wrong.
 > The following steps (XY-alignment, ring removal, beam hardening, defect pixel masking, checking for overexposure) should be mandatory in a robust reconstruction protocol, before exporting the slices from Nrecon.
 > MIP images could be easily generated with CTan or ImageJ using virtual stack, on the reconstruction computer for a quality assessment before storing the datasets and sending them to the collaborators.
+
+#69
 
 > Separation notebook
 > A major issue in the separation workflow is that the region detection numbers the fishes from left to right starting at the top-left of the image while the sample holder numbers the fishes from 1 to 6 counter-clockwise.
@@ -277,6 +285,9 @@ We are sorry for that, as in our original manuscript the section title was alway
 > Line 247: The total number of projections and reconstructions are not meaningful and should be removed.
 > 4000 images in a CTscan is far too much when only 2000 images contain the region of interest of the morphometrics study, please consider CTscanning only this ROI or running the post-processing on a crop in the anterior-posterior direction if the scan of the whole specimen is needed.
 
+#73
+Valid point, we'll need to justify why we scanned the whole fish and only analyzed the heads.
+
 > Line 261: The justification that ImageJ could not be used is wrong.
 > There is no need to use Crop3D in this workflow as the authors only crop in XY and not in Z direction.
 > The workflow can be done automatically and would be reproducible with a similar approach the authors used in the detect_fish_position function:
@@ -284,8 +295,8 @@ We are sorry for that, as in our original manuscript the section title was alway
 > - run a Z projection of maximum intensity, threshold it to get a binary image
 > - run an Analyse particles with a pixel size limit to discard the small speckels
 > - add the results as ROIs in the ROI manager (each fish is a ROI with a label)
- >- for each ROI, compute its bounding box, add a margin and record its coordinates in a log file for reproductibility
->  - transfer the ROI on the virtual stack and crop
+> - for each ROI, compute its bounding box, add a margin and record its coordinates in a log file for reproductibility
+> - transfer the ROI on the virtual stack and crop
 > The RAM usage would be up to the cropped subvolume weight, that can be handled with a standard workstation.
 > Still it has to be done 6 times, so it should be run in a macro or a plugin to save operator time.
 >
@@ -293,12 +304,18 @@ We are sorry for that, as in our original manuscript the section title was alway
 
 > Table 1. The comment on how it would have been completely infeasible to scan each fish separately should be more salient than a side note in a table.
 >In my opinion, it is the main motivation behind the authors’ developments.
+
+#72, major :) !
+
 > When estimating the time needed to scan a single fish, the duration would not be the same as a batch because one would need less than 3600 projections per scan.
 >From the MIP, it seems that a single fish would fit in half the width of the field of view, thus a scan duration for a single fish would be 5h while keeping the same voxel size and exposition time.
 
 > Can the authors explain what is included in the 17 minutes manual time needed to split a single fish scan of a single fish ?
 
 > Line 290: It would be great to provide the average size of a cropped .nrrd dataset for a single fish.
+
+Kinda a duplicate of https://github.com/habi/sticklebacks-manuscript/issues/59
+
 > Line 293: The sentence “ This relatively simple segmentation was sufficient to extract all of the features we analyzed further and we did not have to employ more advanced thresholding methods in our separation pipeline “ is confusing.
 >The separation pipeline is used to get the subvolumes, there is no extraction of features with the multi-level thresholding in this method, only a rendering.
 >The extraction of features, a.k.a the segmentation process, is later done in 3Dslicer.
