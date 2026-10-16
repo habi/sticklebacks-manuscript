@@ -224,6 +224,12 @@ We are sorry for that, as in our original manuscript the section title was alway
 > The printing material can be documented as it needs to be radio-transparent enough.
 > What are the benefits of the petal design when the central zone needs to be later removed in the separation process ?
 
+#68
+- A preview (temporary, *without* the connector to the machine) is available here: https://openscad-studio.pages.dev/s/ue5Aw3bW, the "original" copy is shown in the de-anonymized GitHub repository.
+- Formlabs clear resin details: https://media.formlabs.com/m/5fd5e7daf1460058/original/-ENUS-Clear-Resin-V5-TDS.pdf
+  The material *is* radiotransparent enough, otherwise our process would not have worked...
+- Petal design is a balance between ease of generation, printing optimization and handling.
+
 > Line 126: Can the authors elaborate on why they chose not to apply any beam hardening correction .
 > How did the beam hardening was checked not to have an impact on the segmentation of small bony structures close to denser structures like otoliths or remaining dense particles ?
 
