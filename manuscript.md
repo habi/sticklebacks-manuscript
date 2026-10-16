@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2026-10-16" />
   <meta name="citation_publication_date" content="2026-10-16" />
   <meta property="article:published_time" content="2026-10-16" />
-  <meta name="dc.modified" content="2026-10-16T08:05:03+00:00" />
-  <meta property="article:modified_time" content="2026-10-16T08:05:03+00:00" />
+  <meta name="dc.modified" content="2026-10-16T08:31:19+00:00" />
+  <meta property="article:modified_time" content="2026-10-16T08:31:19+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/99ea9aafa3518f1a5b051f55cdbf10449c61beff/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/99ea9aafa3518f1a5b051f55cdbf10449c61beff/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/99ea9aafa3518f1a5b051f55cdbf10449c61beff/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/e8cfdd04da197ff695e7d6f25c0e5a6d7ce9041e/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/e8cfdd04da197ff695e7d6f25c0e5a6d7ce9041e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/e8cfdd04da197ff695e7d6f25c0e5a6d7ce9041e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,11 +80,11 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/99ea9aafa3518f1a5b051f55cdbf10449c61beff/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/e8cfdd04da197ff695e7d6f25c0e5a6d7ce9041e/))
 was generated
-from [habi/sticklebacks-manuscript@99ea9aa](https://github.com/habi/sticklebacks-manuscript/tree/99ea9aafa3518f1a5b051f55cdbf10449c61beff)
-on October 16, 2026 and contains 5532 words.
-Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...99ea9aafa3518f1a5b051f55cdbf10449c61beff#files_bucket).
+from [habi/sticklebacks-manuscript@e8cfdd0](https://github.com/habi/sticklebacks-manuscript/tree/e8cfdd04da197ff695e7d6f25c0e5a6d7ce9041e)
+on October 16, 2026 and contains 5548 words.
+Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...e8cfdd04da197ff695e7d6f25c0e5a6d7ce9041e#files_bucket).
 </em></small>
 
 
@@ -315,7 +315,7 @@ One such interactive preview is [available online](https://htmlpreview.github.io
 
 #### Extraction of Features of Interest
 
-After separation, the cropped image files were checked and rendered using 3D Slicer [@doi:10.1007/978-1-4614-7657-3_19] and the SlicerMorph extension [@doi:10.1111/2041-210X.13669]. A subset of 51 specimens was chosen to create initial training dataset. 
+After separation, the cropped image files were checked and rendered using 3D Slicer [@doi:10.1007/978-1-4614-7657-3_19] and the SlicerMorph extension [@doi:10.1111/2041-210X.13669]. A subset of 51 specimens was chosen to create initial training dataset.
 For these samples, individual elements of the branchial apparatus were rendered and cleaned by hand using a combination of thresholding and "Split Islands" tools to separate the pharyngobranchials, epibranchials, basibranchials, hypobranchials, and ceratobranchials (see Figure @fig:branchial_anatomy).
 
 ![Example of branchial anatomy with CB1 and CB2 highlighted in pink.
@@ -336,7 +336,7 @@ We only performed manual touch-ups on the resulting segmentation output where th
 To demonstrate the effectiveness of this tool and the importance of 3D morphometry to answer evolutionary questions, we quantified the shape differences of the ceratobranchial bones.
 Once trained, we applied the Biomedisa segmentation model to the remaining 160 specimens and landmarked the final results using Stratovan Checkpoint [@checkpoint].
 
-As a test and for subsequent analysis, the first and second right ceratobranchials were chosen for comparison between all samples. The segmentations corresponding to these bones were imported together for landmarking. 
+As a test and for subsequent analysis, the first and second right ceratobranchials were chosen for comparison between all samples. The segmentations corresponding to these bones were imported together for landmarking.
 
 Type II landmarks were placed at the ends of each bone, with semilandmarks between them to cover the curvature axes along the bone (see Figure @fig:landmarks).
 In total, seven landmarks and four semilandmark curves (two containing 20 semilandmarks, two containing 15) were placed on the first ceratobranchial (CB1), and five landmarks and three semilandmark curves (one containing 20 semilandmarks, two containing 15) were placed on the second ceratobranchial (CB2).
@@ -528,6 +528,13 @@ We also thank the `manubot` project [@doi:10.1371/journal.pcbi.1007128] for faci
 
 
 ## Supplementary Materials
+
+
+### Supplementary figure
+
+![PCA of first ceratobranchial.
+  PC4 is accounting for 4.33% of the variation.](images/Supplementary_Figure_CB1_CB4.png)
+  {#fig:branchial_anatomy}
 
 ### Parameters of Tomographic Scans of All Fish
 
