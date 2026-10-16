@@ -10,6 +10,11 @@ date:
 > I would like to thank the authors for their contribution, this is an interesting study detailing a pipeline that would be of interest and use for many researchers.
 > However, the manuscript does not provide sufficient evidence for the claim that this pipeline is replicable and clade-agnostic, which would require testing on different specimens, across different taxonomic groups.
 
+Thanks for this supportive comment, appreciated.
+We have applied the same pipeline to different species already, namely *Spinachia spinachia* (with co-authors of this manuscript), and Lake Victoria and Neotropical cichlid species (manuscript in preparation, with other collaborators), so replicability and clade-agnostics are given.
+In addition, the pipeline is deterministic, meaning that based on the same input images (reconstructed stack) it always produces the same outputs (cropped single-species datasets with the same size/extent, ensuring predictability and repeatability.
+From the "theoretical" standpoint we see absolutely no issue in applying the exact pipeline to multi-*object* scans where the scanned objects are separable in the top-down maximum intensity projection.
+
 > The pipeline itself should be better defined.
 > The abstract states "The pipeline includes separation of multi-species scans into individual regions of interest, reconstruction of targeted anatomical structures, and morphometric analyses.", but the landmarking and geometric morphometric analyses detailed are conducted using established software and methods (manual landmarking in Checkpoint, analysis in R), that are not a novel or unique part of the pipeline developed for this paper.
 > The current text obscures the actual contribution of the work.
