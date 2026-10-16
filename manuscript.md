@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2026-10-16" />
   <meta name="citation_publication_date" content="2026-10-16" />
   <meta property="article:published_time" content="2026-10-16" />
-  <meta name="dc.modified" content="2026-10-16T08:31:19+00:00" />
-  <meta property="article:modified_time" content="2026-10-16T08:31:19+00:00" />
+  <meta name="dc.modified" content="2026-10-16T15:07:50+00:00" />
+  <meta property="article:modified_time" content="2026-10-16T15:07:50+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/e8cfdd04da197ff695e7d6f25c0e5a6d7ce9041e/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/e8cfdd04da197ff695e7d6f25c0e5a6d7ce9041e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/e8cfdd04da197ff695e7d6f25c0e5a6d7ce9041e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/d5c21dde54c33f4f527abf9e6010f9930085e6c5/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/d5c21dde54c33f4f527abf9e6010f9930085e6c5/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/d5c21dde54c33f4f527abf9e6010f9930085e6c5/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,11 +80,11 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/e8cfdd04da197ff695e7d6f25c0e5a6d7ce9041e/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/d5c21dde54c33f4f527abf9e6010f9930085e6c5/))
 was generated
-from [habi/sticklebacks-manuscript@e8cfdd0](https://github.com/habi/sticklebacks-manuscript/tree/e8cfdd04da197ff695e7d6f25c0e5a6d7ce9041e)
+from [habi/sticklebacks-manuscript@d5c21dd](https://github.com/habi/sticklebacks-manuscript/tree/d5c21dde54c33f4f527abf9e6010f9930085e6c5)
 on October 16, 2026 and contains 5548 words.
-Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...e8cfdd04da197ff695e7d6f25c0e5a6d7ce9041e#files_bucket).
+Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...d5c21dde54c33f4f527abf9e6010f9930085e6c5#files_bucket).
 </em></small>
 
 
@@ -173,10 +173,10 @@ However, analysis of feeding structures---particularly jaws and complex internal
 The advent of X-ray microtomography and three-dimensional scanning technologies enables nondestructive imaging and greatly increases the availability of high-resolution morphological data.
 However, the resulting increase in data complexity and processing demands often makes these approaches impractical for large-scale studies, especially at population scales that require measuring and analyzing hundreds to thousands of samples.
 
-To address these challenges, we developed a rapid and semiautomated segmentation and analysis pipeline based on the Jupyter interactive development environment and the Biomedisa image segmentation platform to investigate three-dimensional morphological adaptation in the threespine stickleback (*Gasterosteus aculeatus*).
+To address these challenges, we developed a rapid and semi-automated segmentation and analysis pipeline based on the Jupyter interactive development environment and the Biomedisa image segmentation platform to investigate three-dimensional morphological adaptation in the threespine stickleback (*Gasterosteus aculeatus*).
 
-The pipeline includes separation of multispecimen scans into individual regions of interest, reconstruction of targeted anatomical structures, and morphometric analyses.
-We applied this pipeline to 38 multispecimen scans comprising 215 specimens from divergent benthic and limnetic stickleback populations, demonstrating the potential of a high-throughput micro-CT imaging approach for testing ecological and evolutionary hypotheses.
+The pipeline includes separation of multi-specimen scans into individual regions of interest, reconstruction of targeted anatomical structures, and morphometric analyses.
+We applied this pipeline to 38 multi-specimen scans comprising 215 specimens from divergent benthic and limnetic stickleback populations, demonstrating the potential of a high-throughput micro-CT imaging approach for testing ecological and evolutionary hypotheses.
 These replicable, clade-agnostic methods provide a scalable pipeline that researchers working across diverse systems can adapt for high-throughput micro-CT sampling at scale.
 
 
@@ -208,8 +208,8 @@ Micro-CT imaging is ideally suited for nondestructive anatomical assessments in 
 Although these small structures can be manually rendered by a skilled investigator using segmentation tools such as 3D Slicer [@doi:10.1007/978-1-4614-7657-3_19; @doi:10.1111/2041-210X.13669], the time and resources required per sample make this approach infeasible for population-level and evolutionary studies.
 Furthermore, accessing these structures typically requires destruction of the mandibular and cranial anatomy, preventing subsequent analyses of these features.
 
-This project aims to address these gaps, demonstrating a novel pipeline for automatic splitting and rendering of multispecimen scans for mass sampling, creating a dataset with consistent parameters that can be used as input for downstream machine learning approaches [@doi:10.1038/s41467-020-19303-w] to aid in the segmentation of individual bony structures in each scan.
-Once a Biomedisa model is trained, the entire pipeline runs from multispecimen input to reconstructed anatomical structures for each specimen in a fraction of the time and resources required for traditional analysis.
+This project aims to address these gaps, demonstrating a novel pipeline for automatic splitting and rendering of multi-specimen scans for mass sampling, creating a dataset with consistent parameters that can be used as input for downstream machine learning approaches [@doi:10.1038/s41467-020-19303-w] to aid in the segmentation of individual bony structures in each scan.
+Once a Biomedisa model is trained, the entire pipeline runs from multi-specimen input to reconstructed anatomical structures for each specimen in a fraction of the time and resources required for traditional analysis.
 
 
 ## Materials & Methods {.page_break_before}
@@ -248,10 +248,10 @@ This resulted in an average scan time of 10 hours for each scan.
 The projection images were subsequently reconstructed into stacks of 8-bit `png` images with NRecon (Bruker microCT, Kontich, Belgium; version 2.2.0.6), without applying any ring artifact or beam hardening correction.
 The isotropic voxel sizes in the resulting datasets vary from 15 to 17.5 µm.
 
-The result of one such multispecimen scan is visualized in Figure @fig:visualization, which shows the six fish contained in this scan.
+The result of one such multi-specimen scan is visualized in Figure @fig:visualization, which shows the six fish contained in this scan.
 The 3D-printed labels on the holder are highlighted in yellow in Figures @fig:visualization and @fig:labels--@fig:cropping (image processing in notebooks), and visible (upside down) in Figure @fig:SLX23012_3D.
 
-![Three-dimensional visualization of one multispecimen scan.
+![Three-dimensional visualization of one multi-specimen scan.
   The 3D-printed labels are highlighted in yellow; the holder itself is shown semitransparently, containing six specimens for this scan.
   Visualization created with Dragonfly 3D World (Version 2025.1.0.14177, Comet Technologies Canada Inc, Montreal, Canada).](images/Sticklebucket_H.rec.3D.png){#fig:visualization}
 
@@ -365,10 +365,10 @@ Our method reproducibly extracts each of the six fish scanned simultaneously in 
 The custom-made sample holder aligns each fish along the vertical axis around the rotation axis of the tomographic scan.
 The extraction based on the MIP image along the rotation axis is fully automated, reproducible, and robust, since the detected fish "regions" do not overlap in the resulting image.
 
-The resulting image stack, containing six fish in one multispecimen scan, creates a large output dataset that can be unwieldy to manage even for experienced users.
+The resulting image stack, containing six fish in one multi-specimen scan, creates a large output dataset that can be unwieldy to manage even for experienced users.
 Depending on the available hardware, it may not even be possible to load the resulting image stack into image processing software to manually perform the cropping.
 Large stacks of images (i.e., larger than the RAM of the machine used) can be loaded as [virtual stacks](https://imagej.net/ij/plugins/virtual-opener.html), but to manually crop the region of each fish from the large scan with the [Crop (3D)](https://www.longair.net/edinburgh/imagej/three-pane-crop/) function, one needs to load the full dataset.
-Since one (exemplary) dataset (`Sticklebucket_10`) is 7 GB on disk and reported as 35.4 GB when loaded in Fiji [@doi:10.1038/nmeth.2019], using the 3D cropping function on an original single multispecimen dataset is not possible without a powerful workstation.
+Since one (exemplary) dataset (`Sticklebucket_10`) is 7 GB on disk and reported as 35.4 GB when loaded in Fiji [@doi:10.1038/nmeth.2019], using the 3D cropping function on an original single multi-specimen dataset is not possible without a powerful workstation.
 
 Extracting individual fish from the encompassing dataset would thus be a two-step manual process, e.g., cropping the full dataset loaded as a virtual stack and then cropping it down further before writing out the cropped stack.
 For each encompassing scan, this would need to be repeated six times (for *each* of the six fish in each of the encompassing scans).
@@ -463,7 +463,7 @@ Studies treating the branchial basket as a single structure, focusing only on th
 
 ### Future Improvements and Issues
 
-As with other multispecimen scanning projects, the scanning parameters can be optimized individually for each scan but not for each individual specimen.
+As with other multi-specimen scanning projects, the scanning parameters can be optimized individually for each scan but not for each individual specimen.
 Additionally, atypically large or dense specimens cause an issue for the holder and the reproducibility between scans.
 As with most machine learning frameworks, the training dataset must encompass the full range of anatomical variation to prevent segmentation errors.
 
@@ -472,7 +472,7 @@ As with most machine learning frameworks, the training dataset must encompass th
 
 The provided pipeline enables repeatable, high-throughput analysis of 3D shape in stickleback specimens.
 Although applied here to stickleback specimens, the described methods can readily be applied to large-scale sampling efforts of multiple taxonomic groups, with data acquired with diverse imaging setups (not only micro-CT) and different sample holders, due to the use of simple region detection and reproducible logging.
-Extracting individual specimens from multispecimen scans is efficient; a custom 3D-printed holder and automated splitting pipeline minimize operator time and maximize throughput.
+Extracting individual specimens from multi-specimen scans is efficient; a custom 3D-printed holder and automated splitting pipeline minimize operator time and maximize throughput.
 
 The reproducible scans and their consistent quality rapidly provide a large amount of similar data, ideal for training machine learning models.
 In its current implementation, Biomedisa is on average 50 times faster than manual segmentation by a skilled operator, and without the interoperator variability inherent to manually segmenting large numbers of specimens.
