@@ -6,7 +6,7 @@ keywords:
 - stickleback
 - ecology
 lang: en-US
-date-meta: '2026-10-16'
+date-meta: '2026-10-18'
 author-meta:
 - David Haberthür
 - R. Benjamin Sulser
@@ -24,11 +24,11 @@ header-includes: |
   <meta name="citation_title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
   <meta property="og:title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
   <meta property="twitter:title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
-  <meta name="dc.date" content="2026-10-16" />
-  <meta name="citation_publication_date" content="2026-10-16" />
-  <meta property="article:published_time" content="2026-10-16" />
-  <meta name="dc.modified" content="2026-10-16T16:20:51+00:00" />
-  <meta property="article:modified_time" content="2026-10-16T16:20:51+00:00" />
+  <meta name="dc.date" content="2026-10-18" />
+  <meta name="citation_publication_date" content="2026-10-18" />
+  <meta property="article:published_time" content="2026-10-18" />
+  <meta name="dc.modified" content="2026-10-18T08:05:51+00:00" />
+  <meta property="article:modified_time" content="2026-10-18T08:05:51+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/2619a5eae7e5d73db20f06abf62e91a270909c5a/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/2619a5eae7e5d73db20f06abf62e91a270909c5a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/2619a5eae7e5d73db20f06abf62e91a270909c5a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/40d6b0e92813af795cd5da76819cca476f8dde48/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/40d6b0e92813af795cd5da76819cca476f8dde48/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/40d6b0e92813af795cd5da76819cca476f8dde48/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,11 +80,11 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/2619a5eae7e5d73db20f06abf62e91a270909c5a/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/40d6b0e92813af795cd5da76819cca476f8dde48/))
 was generated
-from [habi/sticklebacks-manuscript@2619a5e](https://github.com/habi/sticklebacks-manuscript/tree/2619a5eae7e5d73db20f06abf62e91a270909c5a)
-on October 16, 2026 and contains 5548 words.
-Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...2619a5eae7e5d73db20f06abf62e91a270909c5a#files_bucket).
+from [habi/sticklebacks-manuscript@40d6b0e](https://github.com/habi/sticklebacks-manuscript/tree/40d6b0e92813af795cd5da76819cca476f8dde48)
+on October 18, 2026 and contains 5548 words.
+Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...40d6b0e92813af795cd5da76819cca476f8dde48#files_bucket).
 </em></small>
 
 
