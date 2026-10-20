@@ -6,7 +6,7 @@ keywords:
 - stickleback
 - ecology
 lang: en-US
-date-meta: '2026-10-18'
+date-meta: '2026-10-20'
 author-meta:
 - David Haberthür
 - R. Benjamin Sulser
@@ -24,11 +24,11 @@ header-includes: |
   <meta name="citation_title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
   <meta property="og:title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
   <meta property="twitter:title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
-  <meta name="dc.date" content="2026-10-18" />
-  <meta name="citation_publication_date" content="2026-10-18" />
-  <meta property="article:published_time" content="2026-10-18" />
-  <meta name="dc.modified" content="2026-10-18T08:05:51+00:00" />
-  <meta property="article:modified_time" content="2026-10-18T08:05:51+00:00" />
+  <meta name="dc.date" content="2026-10-20" />
+  <meta name="citation_publication_date" content="2026-10-20" />
+  <meta property="article:published_time" content="2026-10-20" />
+  <meta name="dc.modified" content="2026-10-20T16:07:06+00:00" />
+  <meta property="article:modified_time" content="2026-10-20T16:07:06+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/40d6b0e92813af795cd5da76819cca476f8dde48/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/40d6b0e92813af795cd5da76819cca476f8dde48/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/40d6b0e92813af795cd5da76819cca476f8dde48/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/4dda39b644baf95ff703b208d7e7d860152f0767/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/4dda39b644baf95ff703b208d7e7d860152f0767/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/4dda39b644baf95ff703b208d7e7d860152f0767/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,11 +80,11 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/40d6b0e92813af795cd5da76819cca476f8dde48/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/4dda39b644baf95ff703b208d7e7d860152f0767/))
 was generated
-from [habi/sticklebacks-manuscript@40d6b0e](https://github.com/habi/sticklebacks-manuscript/tree/40d6b0e92813af795cd5da76819cca476f8dde48)
-on October 18, 2026 and contains 5548 words.
-Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...40d6b0e92813af795cd5da76819cca476f8dde48#files_bucket).
+from [habi/sticklebacks-manuscript@4dda39b](https://github.com/habi/sticklebacks-manuscript/tree/4dda39b644baf95ff703b208d7e7d860152f0767)
+on October 20, 2026 and contains 5563 words.
+Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...4dda39b644baf95ff703b208d7e7d860152f0767#files_bucket).
 </em></small>
 
 
@@ -241,7 +241,7 @@ In total, we performed 38 scans, each scan usually containing up to six fish in 
 
 The relevant details of each scan are summarized in a table in the [Supplementary Materials]; a short overview of the scanning parameters is given below.
 The X-ray source was set to a voltage of 60 kV and a current of around 110 µA for all scans except one, where we used a source voltage of 49 kV and 159 µA due to operator error.
-For each sample, we recorded a set of 3601 projections (each with a size of 3000 by 2000 pixels) at 0.1° intervals over a 360° sample rotation.
+For each sample, we recorded a set of 3601 projections per stack (each projection with a size of 3000 by 2000 pixels) at 0.1° intervals over a 360° sample rotation.
 Every single projection was exposed for about a second.
 Because of the length of the fish, we had to acquire so-called stacked scans; on average, we scanned three fields of view along the rotation axis of the sample holder.
 This resulted in an average scan time of 10 hours for each scan.
@@ -357,7 +357,7 @@ Linear fits were further investigated using the `pairwise()` function to analyze
 
 The acquisition and reconstruction of fish datasets were successful and enabled high-throughput processing.
 A total of 215 unique specimens were scanned in 38 different scans with a total scan duration of nearly 16 days.
-We acquired 136838 projections, reconstructed into a total of 154622 reconstructions, resulting in approximately 4000 reconstruction `png` files per scan (*N* = 38).
+We acquired 403312 projections, reconstructed into a total of 154645 reconstructions, resulting in approximately 4000 reconstruction `png` files per scan (*N* = 38), covering (on average) a length parallel to the fish of 65 mm.
 
 ### Fish Separation
 
