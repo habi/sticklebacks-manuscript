@@ -283,10 +283,14 @@ Not necessary for these samples, but we'll have to justify it.
 #74
 
 > Line 247: The total number of projections and reconstructions are not meaningful and should be removed.
+
+We kept the exact numbers in the manuscript, as we *do* think they are meaningful, to assess the total data acquired.
+
 > 4000 images in a CTscan is far too much when only 2000 images contain the region of interest of the morphometrics study, please consider CTscanning only this ROI or running the post-processing on a crop in the anterior-posterior direction if the scan of the whole specimen is needed.
 
-#73
-Valid point, we'll need to justify why we scanned the whole fish and only analyzed the heads.
+The presented case study analyzing the internal branchial anatomy was focusing on cropped datasets only covering the region of interest, e.g. the head of the fish.
+Further projects dealing with the same acquired datasets focus on other parts of the anatomy, so we *had* to acquire datasets covering the whole length of all the single fish scanned together in the same multi-specimen scan.
+To be able to separate the scans we also had to include the 3D printed label in the visible field of view, otherwise we would not have been able to map the correspondence of the scanned regions with the ID of the scanned fish.
 
 > Line 261: The justification that ImageJ could not be used is wrong.
 > There is no need to use Crop3D in this workflow as the authors only crop in XY and not in Z direction.
@@ -308,6 +312,11 @@ Valid point, we'll need to justify why we scanned the whole fish and only analyz
 #72, major :) !
 
 > When estimating the time needed to scan a single fish, the duration would not be the same as a batch because one would need less than 3600 projections per scan.
+
+The duration of the scan would be the same, as the number of projections is given *per* stack (360° scanning rotation at 0.1° rotation step).
+Since we would have needed to cover a smaller *lateral* field of view for a scan of a single fish, we could have either increased the rotation step to really reduce the scanning time by acquiring less projections, or increase the resolution of the scan by decreasing the distance of the object to the source.
+Since such a reduction would also decrease the vertical field of view, we would have needed to acquire more stacks to cover the whole length of the fish.
+
 >From the MIP, it seems that a single fish would fit in half the width of the field of view, thus a scan duration for a single fish would be 5h while keeping the same voxel size and exposition time.
 
 > Can the authors explain what is included in the 17 minutes manual time needed to split a single fish scan of a single fish ?
