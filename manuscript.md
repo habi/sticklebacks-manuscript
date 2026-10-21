@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2026-10-21" />
   <meta name="citation_publication_date" content="2026-10-21" />
   <meta property="article:published_time" content="2026-10-21" />
-  <meta name="dc.modified" content="2026-10-21T16:03:29+00:00" />
-  <meta property="article:modified_time" content="2026-10-21T16:03:29+00:00" />
+  <meta name="dc.modified" content="2026-10-21T16:23:36+00:00" />
+  <meta property="article:modified_time" content="2026-10-21T16:23:36+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/2829657113256662a54ec44436eb738be7c30118/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/2829657113256662a54ec44436eb738be7c30118/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/2829657113256662a54ec44436eb738be7c30118/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/729dc21455bf2f1d1c48a84699d273bd49507cfb/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/729dc21455bf2f1d1c48a84699d273bd49507cfb/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/729dc21455bf2f1d1c48a84699d273bd49507cfb/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,11 +80,11 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/2829657113256662a54ec44436eb738be7c30118/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/729dc21455bf2f1d1c48a84699d273bd49507cfb/))
 was generated
-from [habi/sticklebacks-manuscript@2829657](https://github.com/habi/sticklebacks-manuscript/tree/2829657113256662a54ec44436eb738be7c30118)
-on October 21, 2026 and contains 5563 words.
-Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...2829657113256662a54ec44436eb738be7c30118#files_bucket).
+from [habi/sticklebacks-manuscript@729dc21](https://github.com/habi/sticklebacks-manuscript/tree/729dc21455bf2f1d1c48a84699d273bd49507cfb)
+on October 21, 2026 and contains 5562 words.
+Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...729dc21455bf2f1d1c48a84699d273bd49507cfb#files_bucket).
 </em></small>
 
 
@@ -166,7 +166,7 @@ or email to
 ## Abstract {.page_break_before}
 
 The threespine stickleback is a well-recognized model system for understanding adaptation to divergent habitats.
-The populations of benthic stickleback (benthos-feeding) and limnetic stickleback (water-column-feeding) differ in the phenotypic traits associated with dietary specialization.
+The populations of benthic stickleback (benthos-feeding) and limnetic stickleback (water-column-feeding) differ in phenotypic traits associated with dietary specialization.
 Modern investigations of evolutionary change in this organism often require the analysis of hundreds, if not thousands, of individuals.
 However, analysis of feeding structures---particularly jaws and complex internal branchial anatomy---remains time-consuming and requires considerable expertise, with destructive sampling and fine dissection skills needed for quantitative analysis.
 
@@ -221,7 +221,7 @@ Once a Biomedisa model is trained, the entire pipeline runs from multi-specimen 
 The samples used for this study were collected from six of the eight source lakes used for the FITNESS project in the region of Cook Inlet, Alaska.
 Fish were collected using unbaited minnow traps in two separate field seasons, the first from May 26--June 10, 2023, and the second from May 25--June 11, 2024.
 Specimens were collected from a random sample of up to 30 fish from each lake, under Alaska Department of Fish and Game (ADFG) permits SF2023-030 and P-24-015 for 2023 and 2024, respectively.
-The fish were sacrificed with MS-222, photographed, labeled, and preserved in 10% formalin in individual bags, all under McGill University Animal Use Protocol (AUP) MCGL-8265.
+The fish were euthanized with MS-222, photographed, labeled, and preserved in 10% formalin in individual bags, all under McGill University Animal Use Protocol (AUP) MCGL-8265.
 At the end of each field season, samples were shipped from Anchorage (AK, USA) to Bern (BE, CH), where they were stored until scanning.
 The total number of fish for each lake was: 52 from Watson Lake (benthic), 48 from Finger Lake (benthic), 46 from Spirit Lake (limnetic), 35 from South Rolly Lake (limnetic), 20 from Walby Lake (benthic), and 14 from Tern Lake (benthic) for a total of 215 specimens.
 As there is evidence that sexual dimorphism is present in the stickleback feeding structures [@doi:10.1242/jeb.074948], caudal fin clips were additionally collected from fish sampled during the 2024 field season for molecular sex identification through genotyping.
@@ -241,7 +241,7 @@ In total, we performed 38 scans, each scan usually containing up to six fish in 
 
 The relevant details of each scan are summarized in a table in the [Supplementary Materials]; a short overview of the scanning parameters is given below.
 The X-ray source was set to a voltage of 60 kV and a current of around 110 µA for all scans except one, where we used a source voltage of 49 kV and 159 µA due to operator error.
-For each sample, we recorded a set of 3601 projections per stack (each projection with a size of 3000 by 2000 pixels) at 0.1° intervals over a 360° sample rotation.
+For each scan, we recorded a set of 3601 projections per stack (each projection with a size of 3000 by 2000 pixels) at 0.1° intervals over a 360° sample rotation.
 Every single projection was exposed for about a second.
 Because of the length of the fish, we had to acquire so-called stacked scans; on average, we scanned three fields of view along the rotation axis of the sample holder.
 This resulted in an average scan time of 10 hours for each scan.
@@ -276,14 +276,14 @@ This approach allowed us to map *all* the reconstructions to memory and quickly 
 The [separation notebook](https://nbviewer.org/github/habi/sticklebacks/blob/main/BucketSeparator.ipynb) processes all the acquired scans to extract each individual fish from each scan that encompasses six fish in total.
 As in the preview notebook, we efficiently load all the `png`s from disk with [`dask`](https://www.dask.org/) [@dask].
 
-A connected region labeling of the previously extracted MIP images ([`skimage.measure.label`](https://scikit-image.org/docs/stable/api/skimage.measure.html#skimage.measure.label)) was used to highlight the labels in the custom-made sample holder (highlighted in yellow in the left panel of Figure @fig:labels) and to label the single fish in their compartements.
+A connected region labeling of the previously extracted MIP images ([`skimage.measure.label`](https://scikit-image.org/docs/stable/api/skimage.measure.html#skimage.measure.label)) was used to highlight the labels in the custom-made sample holder (highlighted in yellow in the left panel of Figure @fig:labels) and to label the single fish in their compartments.
 The centroid positions and extent of individual fish in the scan ([`skimage.measure.regionprops`](https://scikit-image.org/docs/stable/api/skimage.measure.html#skimage.measure.regionprops)) (see right panel of Figure @fig:labels) were used to extract small cropped regions from the large multi-specimen dataset.
 This extraction process is fully reproducible and is tailored to the arrangement of the samples in the custom sample holder.
 
 ![Automatically detected regions based on maximum intensity projection along the rotation axis of the tomographic scan.
   The left panel shows the highlighted compartement labels as they have been 3D printed.
-  The right panels shows the regions as detected by `skimage`, they are numbered consecutively from top left to bottom right.
-  Detected label numbes are mapped to the correct fish ID in the next step.](images/Sticklebucket_H.rec.Labels.Detected.png){#fig:labels}
+  The right panels shows the regions as detected by `skimage`; they are numbered consecutively from top left to bottom right.
+  Detected label numbers are mapped to the correct fish ID in the next step.](images/Sticklebucket_H.rec.Labels.Detected.png){#fig:labels}
 
 We then mapped the labels of the detected regions to the ID numbers of the scanned fish and presented these images together with photos of the lab book and sample tubes for verification (see Figure @fig:checking).
 
@@ -296,7 +296,7 @@ All these log files are also available in the processing repository; an example 
 
 ![Double-checking crop extent and fish ID.
   The top row shows the extracted regions from the previously calculated MIP of the multi-specimen scan.
-  The bottom row show the MIP image individually calculated from each of the extracted cropped regions.
+  The bottom row shows the MIP image individually calculated from each of the extracted cropped regions.
   Both rows must show exactly the same region.](images/Sticklebucket_H.rec.Regions.Check.png){#fig:cropping}
 
 Writing the regions as `zarr` files made it possible to work efficiently with the image data of each extracted fish and to convert those data to any desired format for further analysis.
@@ -316,7 +316,7 @@ One such interactive preview is [available online](https://htmlpreview.github.io
 #### Extraction of Features of Interest
 
 After separation, the cropped image files were checked and rendered using 3D Slicer [@doi:10.1007/978-1-4614-7657-3_19] and the SlicerMorph extension [@doi:10.1111/2041-210X.13669].
-A subset of 51 specimens was chosen to create initial training dataset.
+A subset of 51 specimens was chosen to create an initial training dataset.
 For these samples, individual elements of the branchial apparatus were rendered and cleaned by hand using a combination of thresholding and "Split Islands" tools to separate the pharyngobranchials, epibranchials, basibranchials, hypobranchials, and ceratobranchials (see Figure @fig:branchial_anatomy).
 
 ![Example of branchial anatomy with CB1 and CB2 highlighted in pink.
@@ -326,7 +326,7 @@ Once segmented, these bones were exported as a colored labelmap along with the `
 
 #### Machine Learning and Model Training
 
-The hand-labelled dataset of 51 samples (including `nrrd` and `label` files) was input into Biomedisa [@doi:10.1038/s41467-020-19303-w] to train a segmentation model.
+The hand-labeled dataset of 51 samples (including `nrrd` and `label` files) was input into Biomedisa [@doi:10.1038/s41467-020-19303-w] to train a segmentation model.
 We allowed a 180° rotation to account for possible specimen variability, with an 80/20 split between training and validation data.
 The model was trained with a batch size of 24 for 50 epochs, using a network architecture of 32-64-128-256-512.
 The final model performs well, with a Dice score of 0.9159 on the validation dataset.
@@ -349,7 +349,7 @@ Equal distances were ensured using the `resample_curves` function in 3D Slicer.
 #### Analysis of Shape
 
 All subsequent analyses were run using R (version 4.4.1, [@r]) and the geomorph package [@doi:10.1111/2041-210X.13723; @doi:10.32614/CRAN.package.geomorph; @doi:10.32614/CRAN.package.RRPP; @doi:10.1111/2041-210X.13029].
-Landmarks corresponding to each bones were split and analyzed separately after generalized Procrustes analysis (GPA) using the [`gpagen()`](https://search.r-project.org/CRAN/refmans/geomorph/html/gpagen.html) function, with principal component analysis (PCA) and linear models run with [`gm.prcomp()`](https://search.r-project.org/CRAN/refmans/geomorph/html/gm.prcomp.html) and [`procD.lm()`](https://search.r-project.org/CRAN/refmans/geomorph/html/procD.lm.html), respectively.
+Landmarks corresponding to each bone were split and analyzed separately after generalized Procrustes analysis (GPA) using the [`gpagen()`](https://search.r-project.org/CRAN/refmans/geomorph/html/gpagen.html) function, with principal component analysis (PCA) and linear models run with [`gm.prcomp()`](https://search.r-project.org/CRAN/refmans/geomorph/html/gm.prcomp.html) and [`procD.lm()`](https://search.r-project.org/CRAN/refmans/geomorph/html/procD.lm.html), respectively.
 Linear fits were further investigated using the `pairwise()` function to analyze differences in pairwise statistics.
 
 
@@ -359,7 +359,7 @@ Linear fits were further investigated using the `pairwise()` function to analyze
 
 The acquisition and reconstruction of fish datasets were successful and enabled high-throughput processing.
 A total of 215 unique specimens were scanned in 38 different scans with a total scan duration of nearly 16 days.
-We acquired 403312 projections, reconstructed into a total of 154645 reconstructions, resulting in approximately 4000 reconstruction `png` files per scan (*N* = 38), covering (on average) a length parallel to the fish of 65 mm.
+We acquired 403312 projections, reconstructed into a total of 154645 slices, resulting in approximately 4000 reconstruction `png` files per scan (*N* = 38), covering (on average) a length parallel to the fish of 65 mm.
 
 ### Fish Separation
 
@@ -449,7 +449,7 @@ As long as the specimens show up as distinct blobs in the MIP (see Figure @fig:l
 
 The first and second ceratobranchials differ remarkably in morphology, size, and breadth, suggesting that these structures may respond differently to changes in diet, even within the same feeding apparatus.
 
-CB1 showed statistically significant, albiet small, differences between benthic and limnetic ecotypes based on linear and pairwise analyses (PC4, accounting for 4.33% of the variation, appears to capture these differences; see supplementary figures).
+CB1 showed statistically significant, albeit small, differences between benthic and limnetic ecotypes based on linear and pairwise analyses (PC4, accounting for 4.33% of the variation, appears to capture these differences; see supplementary figure).
 However, we caution that the greater number of benthic lakes and specimens available for this study may contribute to these patterns, as the two groups (benthic and limnetic) exhibit statistically different variances.
 This pipeline will allow for more extensive analysis from future sampling years to confirm these findings.
 
@@ -534,8 +534,8 @@ We also thank the `manubot` project [@doi:10.1371/journal.pcbi.1007128] for faci
 ### Supplementary figure
 
 ![PCA of first ceratobranchial.
-  PC4 is accounting for 4.33% of the variation.](images/Supplementary_Figure_CB1_CB4.png)
-  {#fig:branchial_anatomy}
+  PC4 accounts for 4.33% of the variation.](images/Supplementary_Figure_PC1_vs_PC4.png)
+  {#fig:pc4}
 
 ### Parameters of Tomographic Scans of All Fish
 
