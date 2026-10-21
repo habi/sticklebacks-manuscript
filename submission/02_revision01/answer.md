@@ -236,8 +236,28 @@ We are sorry for that, as in our original manuscript the section title was alway
 > Line 126: Can the authors elaborate on why they chose not to apply any beam hardening correction .
 > How did the beam hardening was checked not to have an impact on the segmentation of small bony structures close to denser structures like otoliths or remaining dense particles ?
 
-#66
-Not necessary for these samples, but we'll have to justify it.
+We performed pilot scans for this study and did *not* observe classic classic cupping beam hardening artefacts, as specified for example in [@doi:10.1007/978-3-030-16641-0_4, section 4.2.1.1].
+Faint streaking artefacts close to the teeth and otoliths are visible in the reconstructions, but only discernible by eye if the contrast/brightness of the reconstructions is increased.
+But we also did *not* fully study the influence of no or very moderate beam hardening correction through the full pipeline and kindly refrain from doing so.
+The influence of the beam hardening correction as explained below on the segmentation and cleaning of the elements of the branchial apparatus using a combination of thresholding and "Split Islands" as specified in the manuscript are in our opinion *completely* negligible.
+
+Nonetheless, now that you highlighted this potential issue we looked at it in a bit more detail.
+We thus reconstructed the head-region of one multi-specimen scan (`BucketOfFish_H`) with beam hardening correction varying from 0% to 100% in 10% steps (NRecon only allows for setting the correcion between 0% and 100%, no further parameters can be tuned).
+Unsing a custom made notebook (`BeamHardening.ipynb` in the (anonymized) repository), we extracted both the histograms of the regions (2001 x 3064 x 3064 px) and plotted the gray value mean across the horizontal wall of the holder in one of the reconstructions.
+
+The gray value histograms of the regions reconstructed with different beam hardening corrections *do* show differences, but the discernible differences are present in the gray value ranges around 20 (for the plastic in the holder mostly) and around 170 (the bone region).
+The differences in the bone region are only very minute and really only visible/discernible in the plot due to the logarithmic scale, as seen below.
+Keep in mind that 5 x 10^4 voxels that show the difference are *very* few compared to the 1.8 x 10^10 voxels of these whole datasets.
+
+![Gray value histograms of datasets reconstructed with different beam hardening correction value](Sticklebucket_H.Combined.Histograms.Beamhardening.png)
+
+Plotting the gray value profile mean across the horizontal plastic wall of the multi-specimen holder with increased contrast shows that this gray value varies from 18--23, and---if looking really hard---a very slight cupping might be visible in the completely uniform material at *no* beam hardening correction.
+The coefficient of variation of the gray value mean through the wall is at its lowest when the beam hardening correction is performed at 20% and increases greatly when the correction is increased to 100%, showing pronounced over-correction.
+Additionally, since the beam hardening correction in NRecon corrects for a radial gray value cupping effect, the influence of the correction on the specimens aligned radially in the multi-specimen holder at nearly identical radii is even more negligible.
+In all honesty, we still believe that *no* beam hardening correction was necessary for the reconstruction of these datasets.
+
+![Beam hardening correction value influence on gray value](BeamHardening.gif)
+
 
 > Preview notebook
 > A general remark on the preview notebook is that it is not clear what scanning issues are detected then that could not have been seen while reconstructing the data in Nrecon.
