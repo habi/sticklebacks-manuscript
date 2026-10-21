@@ -6,7 +6,7 @@ keywords:
 - stickleback
 - ecology
 lang: en-US
-date-meta: '2026-10-20'
+date-meta: '2026-10-21'
 author-meta:
 - David Haberthür
 - R. Benjamin Sulser
@@ -24,11 +24,11 @@ header-includes: |
   <meta name="citation_title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
   <meta property="og:title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
   <meta property="twitter:title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
-  <meta name="dc.date" content="2026-10-20" />
-  <meta name="citation_publication_date" content="2026-10-20" />
-  <meta property="article:published_time" content="2026-10-20" />
-  <meta name="dc.modified" content="2026-10-20T16:07:06+00:00" />
-  <meta property="article:modified_time" content="2026-10-20T16:07:06+00:00" />
+  <meta name="dc.date" content="2026-10-21" />
+  <meta name="citation_publication_date" content="2026-10-21" />
+  <meta property="article:published_time" content="2026-10-21" />
+  <meta name="dc.modified" content="2026-10-21T16:03:29+00:00" />
+  <meta property="article:modified_time" content="2026-10-21T16:03:29+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/4dda39b644baf95ff703b208d7e7d860152f0767/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/4dda39b644baf95ff703b208d7e7d860152f0767/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/4dda39b644baf95ff703b208d7e7d860152f0767/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/2829657113256662a54ec44436eb738be7c30118/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/2829657113256662a54ec44436eb738be7c30118/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/2829657113256662a54ec44436eb738be7c30118/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,11 +80,11 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/4dda39b644baf95ff703b208d7e7d860152f0767/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/2829657113256662a54ec44436eb738be7c30118/))
 was generated
-from [habi/sticklebacks-manuscript@4dda39b](https://github.com/habi/sticklebacks-manuscript/tree/4dda39b644baf95ff703b208d7e7d860152f0767)
-on October 20, 2026 and contains 5563 words.
-Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...4dda39b644baf95ff703b208d7e7d860152f0767#files_bucket).
+from [habi/sticklebacks-manuscript@2829657](https://github.com/habi/sticklebacks-manuscript/tree/2829657113256662a54ec44436eb738be7c30118)
+on October 21, 2026 and contains 5563 words.
+Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...2829657113256662a54ec44436eb738be7c30118#files_bucket).
 </em></small>
 
 
@@ -315,7 +315,8 @@ One such interactive preview is [available online](https://htmlpreview.github.io
 
 #### Extraction of Features of Interest
 
-After separation, the cropped image files were checked and rendered using 3D Slicer [@doi:10.1007/978-1-4614-7657-3_19] and the SlicerMorph extension [@doi:10.1111/2041-210X.13669]. A subset of 51 specimens was chosen to create initial training dataset.
+After separation, the cropped image files were checked and rendered using 3D Slicer [@doi:10.1007/978-1-4614-7657-3_19] and the SlicerMorph extension [@doi:10.1111/2041-210X.13669].
+A subset of 51 specimens was chosen to create initial training dataset.
 For these samples, individual elements of the branchial apparatus were rendered and cleaned by hand using a combination of thresholding and "Split Islands" tools to separate the pharyngobranchials, epibranchials, basibranchials, hypobranchials, and ceratobranchials (see Figure @fig:branchial_anatomy).
 
 ![Example of branchial anatomy with CB1 and CB2 highlighted in pink.
@@ -336,7 +337,8 @@ We only performed manual touch-ups on the resulting segmentation output where th
 To demonstrate the effectiveness of this tool and the importance of 3D morphometry to answer evolutionary questions, we quantified the shape differences of the ceratobranchial bones.
 Once trained, we applied the Biomedisa segmentation model to the remaining 160 specimens and landmarked the final results using Stratovan Checkpoint [@checkpoint].
 
-As a test and for subsequent analysis, the first and second right ceratobranchials were chosen for comparison between all samples. The segmentations corresponding to these bones were imported together for landmarking.
+As a test and for subsequent analysis, the first and second right ceratobranchials were chosen for comparison between all samples.
+The segmentations corresponding to these bones were imported together for landmarking.
 
 Type II landmarks were placed at the ends of each bone, with semilandmarks between them to cover the curvature axes along the bone (see Figure @fig:landmarks).
 In total, seven landmarks and four semilandmark curves (two containing 20 semilandmarks, two containing 15) were placed on the first ceratobranchial (CB1), and five landmarks and three semilandmark curves (one containing 20 semilandmarks, two containing 15) were placed on the second ceratobranchial (CB2).
