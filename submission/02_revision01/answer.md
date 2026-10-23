@@ -45,7 +45,7 @@ date:
 > Line 98ff: “DNA was extracted […], and subsequent PCR genotyping […] was performed […]”.
 > Why is this relevant to this study?
 
-#49
+#49 In our pilot analysis of stickelback ceratobranchial shapes, sexual dimorphism is a potential explanatory factor. Sex assignments from preserved specimens can often be difficult; using genomic data gives a less ambiguous designation. We have rewritten this line to better explain this segment.  
 
 > Line 119: You mention that different voltage and current were used for one scan, due to operator error.
 > How did that affect the scan quality and subsequent segmentation?
