@@ -132,7 +132,7 @@ We've expanded the figure caption a bit with the aim to clarify it.
 > And were CB1 and CB2 labeled differently or with the same label value.
 > Figure 8 suggests they have the same value.
 
-#64, asked Ben
+#64 All structures were used for model training, with all ceratobranchials (including CB1 and CB2 having the same value) yet still distinguishable in the scan output. We have reworded our text to ensure clarity in this section.
 
 > Line 212: Could you provide the range of image dimensions of the cropped images.
 > From the supplementary data, I gathered that x and y dimensions are approximately 500 voxels, but what about the z dimension?
