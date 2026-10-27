@@ -6,7 +6,7 @@ keywords:
 - stickleback
 - ecology
 lang: en-US
-date-meta: '2026-10-21'
+date-meta: '2026-10-27'
 author-meta:
 - David Haberthür
 - R. Benjamin Sulser
@@ -24,11 +24,11 @@ header-includes: |
   <meta name="citation_title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
   <meta property="og:title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
   <meta property="twitter:title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
-  <meta name="dc.date" content="2026-10-21" />
-  <meta name="citation_publication_date" content="2026-10-21" />
-  <meta property="article:published_time" content="2026-10-21" />
-  <meta name="dc.modified" content="2026-10-21T16:23:36+00:00" />
-  <meta property="article:modified_time" content="2026-10-21T16:23:36+00:00" />
+  <meta name="dc.date" content="2026-10-27" />
+  <meta name="citation_publication_date" content="2026-10-27" />
+  <meta property="article:published_time" content="2026-10-27" />
+  <meta name="dc.modified" content="2026-10-27T14:27:12+00:00" />
+  <meta property="article:modified_time" content="2026-10-27T14:27:12+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/729dc21455bf2f1d1c48a84699d273bd49507cfb/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/729dc21455bf2f1d1c48a84699d273bd49507cfb/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/729dc21455bf2f1d1c48a84699d273bd49507cfb/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/e387c57608f7a97e3fc436a51acdd9bf76f9e758/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/e387c57608f7a97e3fc436a51acdd9bf76f9e758/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/e387c57608f7a97e3fc436a51acdd9bf76f9e758/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,11 +80,11 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/729dc21455bf2f1d1c48a84699d273bd49507cfb/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/e387c57608f7a97e3fc436a51acdd9bf76f9e758/))
 was generated
-from [habi/sticklebacks-manuscript@729dc21](https://github.com/habi/sticklebacks-manuscript/tree/729dc21455bf2f1d1c48a84699d273bd49507cfb)
-on October 21, 2026 and contains 5562 words.
-Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...729dc21455bf2f1d1c48a84699d273bd49507cfb#files_bucket).
+from [habi/sticklebacks-manuscript@e387c57](https://github.com/habi/sticklebacks-manuscript/tree/e387c57608f7a97e3fc436a51acdd9bf76f9e758)
+on October 27, 2026 and contains 5622 words.
+Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...e387c57608f7a97e3fc436a51acdd9bf76f9e758#files_bucket).
 </em></small>
 
 
@@ -236,6 +236,9 @@ To optimize for these constraints, we scanned all sticklebacks in batches of six
 This holder was designed in [OpenSCAD](https://openscad.org/) (OpenSCAD Developers; version 2021.01) and is available online, either directly as an [STL file for printing](https://github.com/TomoGraphics/Hol3Drs/blob/master/STL/Stickleback.Multiple.stl) or as a [(parameterized) OpenSCAD file](https://github.com/TomoGraphics/Hol3Drs/blob/master/Stickleback.Multiple.scad) for adaptation to other classes of samples.
 Both files are part of a library of 3D-printable sample holders for tomographic imaging [@doi:10.5281/zenodo.2587555].
 
+Fish were taken out of single, labeled falcon tubes, wrapped in melamine resin foam (virtually radiotransparent, but stable) and put head-first into the labeled compartments of the sample holder.
+The foam was moistened with formalin and the top of the sample holder was sealed with Parafilm to avoid drying of the fish during the tomographic imaging.
+
 Tomographic imaging was performed on a [Bruker SkyScan 2214](https://www.bruker.com/en/products-and-solutions/diffractometers-and-x-ray-microscopes/3d-x-ray-microscopes/skyscan-2214.html) (Bruker microCT, Kontich, Belgium) at the Institute of Anatomy, University of Bern, Switzerland.
 In total, we performed 38 scans, each scan usually containing up to six fish in the sample holder.
 
@@ -358,7 +361,7 @@ Linear fits were further investigated using the `pairwise()` function to analyze
 ### Micro-CT Imaging Data
 
 The acquisition and reconstruction of fish datasets were successful and enabled high-throughput processing.
-A total of 215 unique specimens were scanned in 38 different scans with a total scan duration of nearly 16 days.
+A total of 215 unique specimens were scanned in 38 different scans with a total scan duration of nearly 16 days (spread over 209 calendar days).
 We acquired 403312 projections, reconstructed into a total of 154645 slices, resulting in approximately 4000 reconstruction `png` files per scan (*N* = 38), covering (on average) a length parallel to the fish of 65 mm.
 
 ### Fish Separation
@@ -534,8 +537,7 @@ We also thank the `manubot` project [@doi:10.1371/journal.pcbi.1007128] for faci
 ### Supplementary figure
 
 ![PCA of first ceratobranchial.
-  PC4 accounts for 4.33% of the variation.](images/Supplementary_Figure_PC1_vs_PC4.png)
-  {#fig:pc4}
+  PC4 accounts for 4.33% of the variation.](images/Supplementary_Figure_PC1_vs_PC4.png){#fig:pc4}
 
 ### Parameters of Tomographic Scans of All Fish
 
