@@ -4,6 +4,23 @@ author: David Haberthür
 date: 
 ---
 
+<!--
+Text is copy-pasted from the email we got, block-quoted *in toto*, answered inbetween.
+Use
+```bash
+pandoc answer.md \
+  --output=output.pdf \
+  --to=typst-citations \
+  --from=markdown \
+  --lua-filter=quote-style.lua \
+  --citeproc \
+  --bibliography="$HOME/P/Documents/library.bib" \
+  --csl="../../build/assets/style.csl" \
+  --pdf-engine=typst
+```
+to make a PDF with nicely styled quotes (hat tip to ChatGPT for whipping up the lua styling filter (I only changed the color to UniBe red)) and references (using the manubot CSL in this repo)
+-->
+
 # Associate Editor Comments to Author:
 
 > I would like to thank the authors for their contribution, this is an interesting study detailing a pipeline that would be of interest and use for many researchers.
@@ -89,7 +106,6 @@ This is now mentioned in the figure caption.
 > I would remove it.
 
 Removed by making it more precise, e.g. not "simple labeling", but "connected region labeling".
-
 
 > Line 155: Second, I understand you binarized the data using Otsu thresholding and then used skimage.measure.label to label connected components (each fish) with an individual label value.
 > Thinking in 3D, I agree that the fish should not overlap, because each one is located in a dedicated container.
@@ -244,7 +260,7 @@ We thus would like to kindly refrain from ading this to our timing table, since 
 > Line 126: Can the authors elaborate on why they chose not to apply any beam hardening correction .
 > How did the beam hardening was checked not to have an impact on the segmentation of small bony structures close to denser structures like otoliths or remaining dense particles ?
 
-We performed pilot scans for this study and did *not* observe classic classic cupping beam hardening artefacts, as specified for example in [@doi:10.1007/978-3-030-16641-0_4, section 4.2.1.1].
+We performed pilot scans for this study and did *not* observe classic classic cupping beam hardening artefacts, as specified for example in [@Orhan2020, section 4.2.1.1].
 Faint streaking artefacts close to the teeth and otoliths are visible in the reconstructions, but only discernible by eye if the contrast/brightness of the reconstructions is increased.
 But we also did *not* fully study the influence of no or very moderate beam hardening correction through the full pipeline and kindly refrain from doing so.
 The influence of the beam hardening correction as explained below on the segmentation and cleaning of the elements of the branchial apparatus using a combination of thresholding and "Split Islands" as specified in the manuscript are in our opinion *completely* negligible.
