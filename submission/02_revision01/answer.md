@@ -214,9 +214,17 @@ We are sorry for that, as in our original manuscript the section title was alway
 >How where the fishes placed into the sample holder to ensure that they won’t create a movement artefact and/or dry as the scans duration is 10h?
 > There is a mention of foam in the notebook, can the authors elaborate ?
 
+The specimen were stored in single, labeled (tea) bags in formalin-filled jars at the Institute of Ecology and Evolution, several fish together in one jar.
+For scanning, Ben Sulser singled the fish out into labeled falcon tubes and brought the fish over to the Institute of Anatomy.
+For scanning, David Haberthür took out each fish from its tube, wrapped it lightly in Basotect (a melamine resin foam, which is virtually transparen to x-rays, and quite stable) and put the fish heads-down into the compartments, noting which fish ID went into which compartment in the lab book.
+After putting all 6 fish for one scan into the holder, the foam was moistened with formalin and the holder was sealed with Parafilm.
+Wrapping the fish in Basotect avoids movement artefacts, and moistening the foam and sealing the holder with Parafilm avoids any drying.
+We added a paragraph to detail this into the manuscript and thank the reviewer for bringing up these missing details.
+
 > The sample positioning and reporting in the lab book is a time-consuming task that should be taken into account in the time estimates in Table 1.
 
-#67
+Putting the fish into the sample holder, reporting in the lab book and sample positioning really didn't take longer than 30 minutes for each scan, making it a negligible contribution to the scanning time.
+We thus would like to kindly refrain from ading this to our timing table, since this is technically included in *every* tomographic scan, not only in our manuscript.
 
 > There is focus in this study on the feeding structures and the branchial anatomy but it is not explained why the authors chose to scan the whole fishes with all the consequences in terms of scanning time and post-processing heavy datasets.
 > From Figure 3., we can see that almost half the dataset is outside these regions of interest, so probably two fields of view instead of three along the rotation axis would have been enough.
