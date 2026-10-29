@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2026-10-29" />
   <meta name="citation_publication_date" content="2026-10-29" />
   <meta property="article:published_time" content="2026-10-29" />
-  <meta name="dc.modified" content="2026-10-29T15:32:27+00:00" />
-  <meta property="article:modified_time" content="2026-10-29T15:32:27+00:00" />
+  <meta name="dc.modified" content="2026-10-29T16:09:11+00:00" />
+  <meta property="article:modified_time" content="2026-10-29T16:09:11+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/f175d5abd8d609327e8ce9782cc938fe4458c3a4/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/f175d5abd8d609327e8ce9782cc938fe4458c3a4/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/f175d5abd8d609327e8ce9782cc938fe4458c3a4/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/9fe1154fda4950f0776d13ae358e9278089b765c/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/9fe1154fda4950f0776d13ae358e9278089b765c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/9fe1154fda4950f0776d13ae358e9278089b765c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,11 +80,11 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/f175d5abd8d609327e8ce9782cc938fe4458c3a4/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/9fe1154fda4950f0776d13ae358e9278089b765c/))
 was generated
-from [habi/sticklebacks-manuscript@f175d5a](https://github.com/habi/sticklebacks-manuscript/tree/f175d5abd8d609327e8ce9782cc938fe4458c3a4)
-on October 29, 2026 and contains 5968 words.
-Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...f175d5abd8d609327e8ce9782cc938fe4458c3a4#files_bucket).
+from [habi/sticklebacks-manuscript@9fe1154](https://github.com/habi/sticklebacks-manuscript/tree/9fe1154fda4950f0776d13ae358e9278089b765c)
+on October 29, 2026 and contains 5988 words.
+Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...9fe1154fda4950f0776d13ae358e9278089b765c#files_bucket).
 </em></small>
 
 
@@ -224,7 +224,7 @@ Specimens were collected from a random sample of up to 30 fish from each lake, u
 The fish were euthanized with MS-222, photographed, labeled, and preserved in 10% formalin in individual bags, all under McGill University Animal Use Protocol (AUP) MCGL-8265.
 At the end of each field season, samples were shipped from Anchorage (AK, USA) to Bern (BE, CH), where they were stored until scanning.
 The total number of fish for each lake was: 52 from Watson Lake (benthic), 48 from Finger Lake (benthic), 46 from Spirit Lake (limnetic), 35 from South Rolly Lake (limnetic), 20 from Walby Lake (benthic), and 14 from Tern Lake (benthic) for a total of 215 specimens.
-As there is evidence that sexual dimorphism is present in the stickleback feeding structures [@doi:10.1242/jeb.074948], caudal fin clips were additionally collected from fish sampled during the 2024 field season for molecular sex identification through genotyping.
+As there is evidence that sexual dimorphism may be present in the stickleback feeding structures [@doi:10.1242/jeb.074948], caudal fin clips were additionally collected from fish sampled during the 2024 field season for molecular sex identification through genotyping.
 DNA was extracted from fin tissue following Meeker et al. [@doi:10.2144/000112619], and subsequent PCR genotyping with LRRc61 primers was performed, following Archambeault et al. [@doi:10.1002/evl3.175].
 
 Due to their inherent contrast difference with the surrounding tissue, the structures of interest in this study (teeth and bones, i.e., jaws and skull) are well visualized in unstained samples, so no further preparation of the fish was necessary.
@@ -255,7 +255,7 @@ The result of one such multi-specimen scan is visualized in Figure @fig:visualiz
 The 3D-printed labels on the holder are highlighted in yellow in Figures @fig:visualization and @fig:labels--@fig:cropping (image processing in notebooks), and visible (upside down) in Figure @fig:SLX23012_3D.
 
 ![Three-dimensional visualization of one multi-specimen scan.
-  The 3D-printed labels are highlighted in yellow; the holder itself is shown semitransparently, containing six specimens for this scan.
+  The 3D-printed labels are highlighted in yellow; the holder itself is shown semi-transparently, containing six specimens for this scan.
   Visualization created with Dragonfly 3D World (Version 2025.1.0.14177, Comet Technologies Canada Inc, Montreal, Canada).](images/Sticklebucket_H.rec.3D.png){#fig:visualization}
 
 ### Data Analysis
@@ -290,11 +290,11 @@ The bounding boxes of the individual fish in the scan (see right panel of Figure
 This extraction process is fully reproducible and is tailored to the arrangement of the samples in the custom sample holder.
 
 ![Automatically detected regions based on maximum intensity projection along the rotation axis of the tomographic scan.
-  The left panel shows the highlighted compartement labels as they have been 3D printed.
+  The left panel shows the highlighted compartment labels as they have been 3D printed.
   The right panels shows the regions as detected by `skimage`; they are numbered consecutively from top left to bottom right.
   These region numbers are assigned to the compartments based on their angle around the rotation axis (see text) and subsequently mapped to the fish ID.](images/Sticklebucket_H.rec.Labels.Detected.png){#fig:labels}
 
-We then mapped the labels of the detected regions to the ID numbers of the scanned fish and presented these images together with photos of the lab book and sample tubes for verification (see Figure @fig:checking).
+We then mapped the compartment numbers to the ID numbers of the scanned fish, as noted in the lab book during sample mounting, and presented these images together with photos of the lab book and sample tubes for visual verification (see Figure @fig:checking).
 
 ![Mapping lab book notes, photos, and detected regions to fish ID.](images/Sticklebucket_H.rec.Labels.Check.png){#fig:checking}
 
@@ -308,7 +308,7 @@ All these log files are also available in the processing repository; an example 
   The bottom row shows the MIP image individually calculated from each of the extracted cropped regions.
   Both rows must show exactly the same region.](images/Sticklebucket_H.rec.Regions.Check.png){#fig:cropping}
 
-Writing the regions as `zarr` files made it possible to work efficiently with the image data of each extracted fish and to convert those data to any desired format for further analysis.
+Writing the regions as `zarr` files made it possible to efficiently work with the image data of each extracted fish and to convert those data to any desired format for further analysis.
 For this further analysis, we also wrote stacks of `png` images and [`nrrd`](https://teem.sourceforge.net/nrrd/) files for each fish region in both cropped and cropped-and-binarized forms.
 These binarized regions were segmented into bone and background based on a simple multi-Otsu thresholding algorithm [@doi:10.6688/JISE.2001.17.5.1] (with four classes, using only the middle threshold).
 Providing the regions as `nrrd` files helped to efficiently work with the datasets as specified in the following sections.
@@ -331,7 +331,7 @@ For these samples, individual elements of the branchial apparatus were rendered 
 ![Example of branchial anatomy with CB1 and CB2 highlighted in pink.
   Abbreviations: PB = pharyngobranchials, EB = epibranchials, BB = basibranchials, HB = hypobranchials, CB = ceratobranchials.](images/Branchial_Figure.png){#fig:branchial_anatomy}
 
-Once segmented, these bones were exported as a colored labelmap along with the `nrrd` file from which they were segmented to pass to the Biomedisa program.
+Once segmented, the labels corresponding to each set of bones were exported as a colored labelmap along with the `nrrd` file from which they were segmented to pass to Biomedisa.
 
 #### Machine Learning and Model Training
 
@@ -344,13 +344,13 @@ We only performed manual touch-ups on the resulting segmentation output where th
 #### Landmarking of Models
 
 To demonstrate the effectiveness of this tool and the importance of 3D morphometry to answer evolutionary questions, we quantified the shape differences of the ceratobranchial bones.
-Once trained, we applied the Biomedisa segmentation model to the remaining 160 specimens and landmarked the final results using Stratovan Checkpoint [@checkpoint].
+Once trained, we applied the Biomedisa segmentation model to the remaining 160 specimens, resulting in segmentation labels for all structures in the branchial apparatus.
 
-As a test and for subsequent analysis, the first and second right ceratobranchials were chosen for comparison between all samples.
-The segmentations corresponding to these bones were imported together for landmarking.
+As a test and for subsequent analysis, only the first and second right ceratobranchials were chosen for comparison between all samples.
+The segmentation label corresponding to these bones were imported together for landmarking using Stratovan Checkpoint [@checkpoint]. 
 
-Type II landmarks were placed at the ends of each bone, with semilandmarks between them to cover the curvature axes along the bone (see Figure @fig:landmarks).
-In total, seven landmarks and four semilandmark curves (two containing 20 semilandmarks, two containing 15) were placed on the first ceratobranchial (CB1), and five landmarks and three semilandmark curves (one containing 20 semilandmarks, two containing 15) were placed on the second ceratobranchial (CB2).
+Type II landmarks were placed at the ends of each bone, with semi-landmarks between them to cover the curvature axes along the bone (see Figure @fig:landmarks).
+In total, seven landmarks and four semi-landmark curves (two containing 20 semi-landmarks, two containing 15) were placed on the first ceratobranchial (CB1), and five landmarks and three semi-landmark curves (one containing 20 semi-landmarks, two containing 15) were placed on the second ceratobranchial (CB2).
 Equal distances were ensured using the `resample_curves` function in 3D Slicer.
 
 ![Landmarks on the dorsal (a) and ventral (b) surfaces.](images/Landmark_Figure.png){#fig:landmarks}
@@ -375,7 +375,7 @@ We acquired 403312 projections, reconstructed into a total of 154645 slices, res
 Our method reproducibly extracts each of the six fish scanned simultaneously in one scan.
 The custom-made sample holder aligns each fish along the vertical axis around the rotation axis of the tomographic scan.
 The extraction based on the MIP image along the rotation axis is deterministic and reproducible.
-Thhe assignment of detected regions to compartments is computed from their position around the rotation axis, and the only manual input is the mapping of compartment number to fish ID from the lab book.
+The assignment of detected regions to compartments is computed from their position around the rotation axis, and the only manual input is the mapping of compartment number to fish ID from the lab book.
 
 The resulting image stack, containing six fish in one multi-specimen scan, creates a large output dataset that can be unwieldy to manage even for experienced users.
 Depending on the available hardware, it may not even be possible to load the resulting image stack into image processing software to manually perform the cropping.
@@ -566,7 +566,7 @@ All Jupyter notebooks used to process the acquired tomographic data as described
 #### Cropped Tomographic Data of Each Extracted Fish
 
 The cropped datasets for analysis include the region with the 3D-printed label of the multi-specimen holder to keep the process reproducible in an end-to-end fashion.
-We further cropped the datasets along the anterioposterior axis with a [helper notebook](https://github.com/habi/sticklebacks/blob/main/PrepareForMorphoSource.ipynb).
+We further cropped the datasets along the anteroposterior axis with a [helper notebook](https://github.com/habi/sticklebacks/blob/main/PrepareForMorphoSource.ipynb).
 These datasets do *not* include the region of the 3D-printed label, but are minimized to only the fish region.
 A `png` stack of *each* such cropped fish region is available in [a collection at MorphoSource](https://www.morphosource.org/projects/000885106) and can be downloaded on request.
 
