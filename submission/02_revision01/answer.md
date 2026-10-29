@@ -127,9 +127,8 @@ As a consequence, this also means that one extracted region could contain a smal
 > Is that correct.
 > Were they assigned manually to the correct fish ID (which I assume are the yellow numbers)?
 
-#61
-Your assumption is mostly correct, the labels in the black circles are the ones assigned by `skimage.label`.
-The yellow numbers in the left panel of the Fig. 4--6 (and red ones in Fig. 2) are the ones "imprinted" on the sample holder by the 3D printer, simply highlighted on this image in yellow, by a step in our script (not described in detail in the manuscript).
+Your assumption is correct, the labels in the black circles are the ones assigned by `skimage.label` in raster order from top left to bottom right.
+The yellow numbers in the left panel of the Fig. 4--6 (and the ones that were red in in Fig. 2 (now yellow, too)) are the ones "imprinted" on the sample holder by the 3D printer, simply highlighted on this image by a step in our script (not described in detail in the manuscript).
 Assignment/Matching of compartment number to detected label to fish ID was performed manually on the first half of the scans and performed in the script for the second half of the scans.
 The matching for the second half of the scans was performed by writing a small text file matching compartment number to fish ID, where the script then read this file.
 We tried to improve the explanation in the manuscript text, but deliberately left out how the mapping is performed exactly to now over-complicate the explanation.
@@ -305,10 +304,36 @@ In all honesty, we still believe that *no* beam hardening correction was necessa
 > The calculated labels do not fit the sample holder labels in every 38 scans, and the labelling is different w.r.t the sizes of the fishes within their petal.
 > When reviewing the notebook code, it appears that each list has been manually edited in the reorder_list function.
 
+This is a personal pain point of the first author of this manuscript.
+We thank the reviewer for this careful review of our code, which correctly identified this weak spot of our pipeline.
+For the two pairs of laterally adjacent compartments (2/6 and 3/5), which of the two fish is detected first depends on the exact position of each fish within its compartment and on the slight tilt of the sample holder in the scanner.
+In practice, four different orderings occurred across the six-fish scans, which we had corrected by manually supplying the order for each scan.
+
+The 3D printed holder has the labels arranged circularly around the center, while the detection of the regions with `skimage.measure.label` numbers the detected regions in raster order, i.e. according to the top-most pixel of each region in the axial MIP.
+The allocation you mention here is not wrong *per se*, but differing between the printed labels and detected labels.
+This led to a manual editing of the resorting order, since 13 bucket regions are detected in the default order, 9 are detected in another specific order and 15 are detected in an order where either NW--NE and/or SW--SE regions are swapped.
+
 > The statement that the extraction process is fully automatic and reproductible does not hold.
 > The authors should comment on that error and how to correct the labels efficiently.
 > In my opinion, the way it is handled now makes the pipeline flawed.
 > As a manual reordering of the labels is needed anyway, the authors should acknowledge it and come up with a cleaner way to let the operator assign the labels within the notebook.
+
+Up to your comment we honestly didn't put too much thought into the discrepancy with writing "fully automatic" and "manual double-checking and resorting", since all the scans were performed over a period of 1.5 years (!).
+The first batch of fish was scanned from 2023-11-10 to 2024-03-27, where also most of the notebooks were written.
+The second batch was scanned from 2025-04-08 to 2025-06-18, and added scan-wise to the notebooks.
+Once all the resorting cells in the notebook were written, a re-run of the notebook always reproducibly produced the identical output, hence we laid a lot of weight onto the automatic process and discarded the manual work for double-checking (and potential manual resorting) for each new scan.
+
+Following the reviewer's suggestion, we replaced this manual step with a deterministic assignment and thus greatly improved both the reproducibility and quality of our code.
+We are thankful for this suggestion of the reviewer, as the ideas presented in the code here are being used in other follow-up projects and make these more robust, too.
+
+Each detected region is now assigned to a compartment based on the angle of the regions centroid around the rotation axis of the scan, which closely mathces the center of the radially symmetric 3D-printed sample holder.
+The function flags scans where two regions are assigned to the same compartment or where a region deviates considerably from the nominal direction of its compartment, and it writes a control image showing the assigned compartment number of each region.
+Applied to all the scan again, this automatic assignment reproduces the manually corrected order as before, so *none* of the extracted datasets or the downstream analyses change.
+The notebook has been updated in the repository, which is still accessible anonymized and linked in the manuscript..
+
+The only remaining manual input is the mapping from compartment number to fish ID.
+This is noted while preparing the specimen for scanning (photographically and in a text note on disk) and is read by the notebook from a small text file per scan.
+We have rephrased the corresponding paragraphs in the Materials & Methods and Results sections and no longer describe the extraction as "fully automatic"; instead we describe it as deterministic, with the manual input explicitly stated.
 
 > In order to validate the separation method, creating a MIP of the cropped version and comparing with the full scan MIP seems enough.
 > It is confusing to me why the authors go through a multilevel threshold that shows an interactive rendering within the notebook.
@@ -391,3 +416,6 @@ We edited the caption(s) according to the Writefull suggestion and completely re
 > Those are the expectations to rightfully claim that the pipeline is replicable and clade-agnostic as stated in the abstract.
 > The authors should consider the amount of revisions needed to achieve this statement or correct the statement with general guidelines on what would be the limitations of the pipeline (dimensions of the specimens, conservation (dry vs in solution), only vertebrates, etc.).
 > I would recommand minor revisions and a more restricted description of the taxonomic groups that the pipeline can handle in the conclusion.
+
+Since updating the assignment of detected sample region to angular region in the sample holder the whole pipeline generalizes even more to any sample holder whose compartments are arranged at known angles around the rotation axis.
+As long as the multiple specimen *centers* can be separated on the axial MIP image, their cropped regions can be extracted from the multi-specimen scan (with the detected outline of the region plus a buffer, if necessary).
