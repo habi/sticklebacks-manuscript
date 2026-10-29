@@ -166,6 +166,9 @@ The smallest export is 486 x 722 x 1743 pixels (x, y, z), the largest 1322 x 862
 The smallest sized crop is a crop from a scan that one is actually from a scan that didn't turn out good (see https://anonymous.4open.science/r/sticklebacks-01A4/logfiles/Sticklebucket_14/README.md), but was nonetheless the one we used for extracting the rakers.
 The same folder does contain datasets spanning the whole fish, so the *median* size of the cropped regions is a better estimate of the sizes.
 
+While compiling these numbers we found that the numbers on dataset *size* were off (based on earlier export of the data), the total size is 385 GB instead of the previously mentioned 64 GB..
+The cropped regions have a median size of 4250 × 650 × 650 voxels (anteroposterior length × x × y) and are stored as uncompressed 8-bit volumes.
+
 For the analysis in Biomedisa, all datasets were further *cropped* to only include the head, so no resampling was performed by Biomedisa.
 
 > How were the training labels created.
@@ -177,7 +180,13 @@ For the analysis in Biomedisa, all datasets were further *cropped* to only inclu
 > This suggests that the data is compressed.
 > Maybe mention the compression method and could you also provide the data type (e.g., 16-bit unsigned integer)?
 
-#56
+See above.
+The .nrrd files of the exported fish regions are stored as uncompressed 8-bit datasets.
+
+The original reconstructions are stored as losslessly compressed 8-bit PNG files, which take up the noted disk space mentioned in the manuscript.
+While implementing the changes suggested by the reviewers, we "homogenized" the examples we mention, the reported size is now 8.5 GB on disk for the dataset mentioned in the manuscript.
+Fiji reports the size of the decompressed stack in memory, i.e., 3064 × 3064 pixels × 4891 slices × 1 byte = 42.8 GB.
+This amount of RAM is only needed when loading the full stack, not when working with a virtual stack, and we have clarified this in the text.
 
 > Table 1: Maybe call it “Our Pipeline Time”.
 
@@ -391,6 +400,11 @@ To be able to separate the scans we also had to include the 3D printed label in 
 >
 > The indication of an extra weight in Fiji might come from the software working with .tif format by default and not taking into account the compression in the .png format.
 
+The reviewer is correct about the reported size.
+The reconstructions are stored as losslessly compressed 8-bit PNG files, which take up 8.5 GB on disk for `Sticklebucket_H`.
+Fiji reports the size of the decompressed stack in memory, i.e., 3064 × 3064 pixels × 4891 slices × 1 byte = 42.8 GB.
+This amount of RAM is only needed when loading the full stack, not when working with a virtual stack, and we have clarified this in the text.
+
 > Table 1. The comment on how it would have been completely infeasible to scan each fish separately should be more salient than a side note in a table.
 >In my opinion, it is the main motivation behind the authors’ developments.
 
@@ -410,7 +424,11 @@ TODO: Explain the connection between FOV/voxel size/scanning time in a bit more 
 
 > Line 290: It would be great to provide the average size of a cropped .nrrd dataset for a single fish.
 
-Kinda a duplicate of https://github.com/habi/sticklebacks-manuscript/issues/59
+Thank you for this suggestion, which was also raised by the other reviewer.
+We have added the information about the average/median size of the extracted datasets to the Results.
+The automated extraction produced 215 `nrrd` files with a total size of 385 GB, i.e., a median size of 1.65 GB per fish (range 0.6--6.2 GB).
+The cropped regions have a median size of 4250 × 650 × 650 voxels (anteroposterior length × x × y) and are stored as uncompressed 8-bit volumes.
+The size of each dataset depends on the length of the fish and on its orientation in the sample holder, since a tilted fish results in a larger bounding box.
 
 > Line 293: The sentence “ This relatively simple segmentation was sufficient to extract all of the features we analyzed further and we did not have to employ more advanced thresholding methods in our separation pipeline “ is confusing.
 >The separation pipeline is used to get the subvolumes, there is no extraction of features with the multi-level thresholding in this method, only a rendering.
