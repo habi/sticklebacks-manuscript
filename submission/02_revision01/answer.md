@@ -191,7 +191,7 @@ Thanks, updated.
 > Redundant “The”
 
 Thanks for notifying us about that.
-We edited the caption(s) according to the Writefull suggesion and completely removed the the's.
+We edited the caption(s) according to the Writefull suggestion and completely removed the the's.
 
 > Line 341: species/species.
 > Redundant “species”
@@ -304,7 +304,7 @@ In all honesty, we still believe that *no* beam hardening correction was necessa
 > The calculated labels do not fit the sample holder labels in every 38 scans, and the labelling is different w.r.t the sizes of the fishes within their petal.
 > When reviewing the notebook code, it appears that each list has been manually edited in the reorder_list function.
 
-This is a personal pain point of the first author of this manuscript.
+This was a personal pain point of the first author of this manuscript.
 We thank the reviewer for this careful review of our code, which correctly identified this weak spot of our pipeline.
 For the two pairs of laterally adjacent compartments (2/6 and 3/5), which of the two fish is detected first depends on the exact position of each fish within its compartment and on the slight tilt of the sample holder in the scanner.
 In practice, four different orderings occurred across the six-fish scans, which we had corrected by manually supplying the order for each scan.
