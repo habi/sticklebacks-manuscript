@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2026-10-29" />
   <meta name="citation_publication_date" content="2026-10-29" />
   <meta property="article:published_time" content="2026-10-29" />
-  <meta name="dc.modified" content="2026-10-29T16:16:34+00:00" />
-  <meta property="article:modified_time" content="2026-10-29T16:16:34+00:00" />
+  <meta name="dc.modified" content="2026-10-29T17:41:18+00:00" />
+  <meta property="article:modified_time" content="2026-10-29T17:41:18+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/4c5b40def0d643d2e09097130ae30189e7c8b94d/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/4c5b40def0d643d2e09097130ae30189e7c8b94d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/4c5b40def0d643d2e09097130ae30189e7c8b94d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/75aa48d78c35a0badb7a19cb6d467abf7a48e9f1/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/75aa48d78c35a0badb7a19cb6d467abf7a48e9f1/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/75aa48d78c35a0badb7a19cb6d467abf7a48e9f1/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,11 +80,11 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/4c5b40def0d643d2e09097130ae30189e7c8b94d/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/75aa48d78c35a0badb7a19cb6d467abf7a48e9f1/))
 was generated
-from [habi/sticklebacks-manuscript@4c5b40d](https://github.com/habi/sticklebacks-manuscript/tree/4c5b40def0d643d2e09097130ae30189e7c8b94d)
-on October 29, 2026 and contains 5991 words.
-Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...4c5b40def0d643d2e09097130ae30189e7c8b94d#files_bucket).
+from [habi/sticklebacks-manuscript@75aa48d](https://github.com/habi/sticklebacks-manuscript/tree/75aa48d78c35a0badb7a19cb6d467abf7a48e9f1)
+on October 29, 2026 and contains 5945 words.
+Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...75aa48d78c35a0badb7a19cb6d467abf7a48e9f1#files_bucket).
 </em></small>
 
 
@@ -379,11 +379,10 @@ The assignment of detected regions to compartments is computed from their positi
 
 The resulting image stack, containing six fish in one multi-specimen scan, creates a large output dataset that can be unwieldy to manage even for experienced users.
 Depending on the available hardware, it may not even be possible to load the resulting image stack into image processing software to manually perform the cropping.
-Large stacks of images (i.e., larger than the RAM of the machine used) can be loaded as [virtual stacks](https://imagej.net/ij/plugins/virtual-opener.html), but to manually crop the region of each fish from the large scan with the [Crop (3D)](https://www.longair.net/edinburgh/imagej/three-pane-crop/) function, one needs to load the full dataset.
-Since one (exemplary) dataset (`Sticklebucket_10`) is 7 GB on disk and reported as 35.4 GB when loaded in Fiji [@doi:10.1038/nmeth.2019], using the 3D cropping function on an original single multi-specimen dataset is not possible without a powerful workstation.
+The reconstructions of one exemplary dataset (`Sticklebucket_H`) are stored as losslessly compressed 8-bit PNG files and take up 8.5 GB on disk, but require 42.8 GB of memory when fully loaded in Fiji [@doi:10.1038/nmeth.2019] (3064 × 3064 pixels × 4891 slices).
+Large stacks can be loaded as [virtual stacks](https://imagej.net/ij/plugins/virtual-opener.html) and cropped in XY with low memory requirements, either manually or with a macro implementing steps similar to our pipeline.
+Done manually, this would need to be repeated six times per scan, followed by assigning each cropped stack to its fish ID in an error-prone manual way.
 
-Extracting individual fish from the encompassing dataset would thus be a two-step manual process, e.g., cropping the full dataset loaded as a virtual stack and then cropping it down further before writing out the cropped stack.
-For each encompassing scan, this would need to be repeated six times (for *each* of the six fish in each of the encompassing scans).
 In addition, such a manual process is not reproducible in the sense that it cannot be consistently replicated by others using the same data, since the manual cropping is operator-dependent.
 Algorithmically/automatically cropping the large datasets based on the axial MIP image yields reproducible cropped regions and uses operator time efficiently by eliminating manual cropping steps (see Table @tbl:timing).
 
@@ -403,10 +402,10 @@ Table: Comparison of time estimates between manual and pipeline runs.
 Note that the automated extraction writes intermediate files, which facilitate the handling of the data (this step takes about 3 minutes per scan).
 These files are technically not necessary for the process, but we still took into account the time spent to write them.
 In addition, human-readable log files documenting the cropping position in the encompassing dataset and the crop extent, as well as images for double-checking the process, are written to disk, which the manual process does not provide reproducibly.
-This enables reproducible double-checking and confirmation of the process after the fact (see this [direct link for one such log file](https://github.com/habi/sticklebacks/blob/main/logfiles/Sticklebucket_10/rec_regions/FG.X24.027/FG.X24.027.log) and [one such image](https://github.com/habi/sticklebacks/blob/main/logfiles/Sticklebucket_10/Sticklebucket_10.rec.Labels.Check.png)).
+This enables reproducible double-checking and confirmation of the process after the fact (see this [direct link for one such log file](https://github.com/habi/sticklebacks/blob/main/logfiles/BucketOfFish_H/rec_regions/SL.X23.012/SL.X23.012.log) and [one such image](https://github.com/habi/sticklebacks/blob/main/logfiles/BucketOfFish_H/Sticklebucket_H.rec.Labels.Check.png)).
 
-The extraction and sampling process led to a total of ~64 GB of `nrrd` files, which were evaluated as specified before.
-The exported regions varied in size, with a median anteroposterior length of 4250 px and median x- and y- dimensions of 650 px (due to the rotation of the fish, the x- and y- dimensions do not map to anatomical directions).
+The automated extraction produced 215 `nrrd` files with a total size of 385 GB (median 1.65 GB).
+The exported regions varied in physical size, resulting in datasets with a median anteroposterior length of 4250 px and median x- and y- dimensions of 650 px (due to the rotation of the fish, the x- and y- dimensions do not map to anatomical directions).
 These cropped regions include the region of the originally acquired data where the 3D-printed label is visible, aiding in end-to-end reproducibility of the extraction process.
 
 We have uploaded further cropped datasets of each analyzed fish to MorphoSource (see [Supplementary Materials]).
