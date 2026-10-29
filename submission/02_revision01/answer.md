@@ -67,7 +67,7 @@ The extraction of the anatomical structures, landmarking and geometric morphomet
 > Line 98ff: “DNA was extracted […], and subsequent PCR genotyping […] was performed […]”.
 > Why is this relevant to this study?
 
-#49
+#49 In our pilot analysis of stickelback ceratobranchial shapes, sexual dimorphism is a potential explanatory factor. Sex assignments from preserved specimens can often be difficult; using genomic data gives a less ambiguous designation. We have rewritten this line to better explain this segment.  
 
 > Line 119: You mention that different voltage and current were used for one scan, due to operator error.
 > How did that affect the scan quality and subsequent segmentation?
@@ -152,7 +152,7 @@ We've expanded the figure caption a bit with the aim to clarify it.
 > And were CB1 and CB2 labeled differently or with the same label value.
 > Figure 8 suggests they have the same value.
 
-#64, asked Ben
+#64 All structures were used for model training, with all ceratobranchials (including CB1 and CB2 having the same value) yet still distinguishable in the scan output. We have reworded our text to ensure clarity in this section.
 
 > Line 212: Could you provide the range of image dimensions of the cropped images.
 > From the supplementary data, I gathered that x and y dimensions are approximately 500 voxels, but what about the z dimension?
