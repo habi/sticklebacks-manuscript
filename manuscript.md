@@ -6,7 +6,7 @@ keywords:
 - stickleback
 - ecology
 lang: en-US
-date-meta: '2026-10-27'
+date-meta: '2026-10-29'
 author-meta:
 - David Haberthür
 - R. Benjamin Sulser
@@ -24,11 +24,11 @@ header-includes: |
   <meta name="citation_title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
   <meta property="og:title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
   <meta property="twitter:title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
-  <meta name="dc.date" content="2026-10-27" />
-  <meta name="citation_publication_date" content="2026-10-27" />
-  <meta property="article:published_time" content="2026-10-27" />
-  <meta name="dc.modified" content="2026-10-27T14:27:12+00:00" />
-  <meta property="article:modified_time" content="2026-10-27T14:27:12+00:00" />
+  <meta name="dc.date" content="2026-10-29" />
+  <meta name="citation_publication_date" content="2026-10-29" />
+  <meta property="article:published_time" content="2026-10-29" />
+  <meta name="dc.modified" content="2026-10-29T15:32:27+00:00" />
+  <meta property="article:modified_time" content="2026-10-29T15:32:27+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/e387c57608f7a97e3fc436a51acdd9bf76f9e758/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/e387c57608f7a97e3fc436a51acdd9bf76f9e758/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/e387c57608f7a97e3fc436a51acdd9bf76f9e758/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/f175d5abd8d609327e8ce9782cc938fe4458c3a4/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/f175d5abd8d609327e8ce9782cc938fe4458c3a4/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/f175d5abd8d609327e8ce9782cc938fe4458c3a4/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,11 +80,11 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/e387c57608f7a97e3fc436a51acdd9bf76f9e758/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/f175d5abd8d609327e8ce9782cc938fe4458c3a4/))
 was generated
-from [habi/sticklebacks-manuscript@e387c57](https://github.com/habi/sticklebacks-manuscript/tree/e387c57608f7a97e3fc436a51acdd9bf76f9e758)
-on October 27, 2026 and contains 5622 words.
-Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...e387c57608f7a97e3fc436a51acdd9bf76f9e758#files_bucket).
+from [habi/sticklebacks-manuscript@f175d5a](https://github.com/habi/sticklebacks-manuscript/tree/f175d5abd8d609327e8ce9782cc938fe4458c3a4)
+on October 29, 2026 and contains 5968 words.
+Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...f175d5abd8d609327e8ce9782cc938fe4458c3a4#files_bucket).
 </em></small>
 
 
@@ -279,14 +279,20 @@ This approach allowed us to map *all* the reconstructions to memory and quickly 
 The [separation notebook](https://nbviewer.org/github/habi/sticklebacks/blob/main/BucketSeparator.ipynb) processes all the acquired scans to extract each individual fish from each scan that encompasses six fish in total.
 As in the preview notebook, we efficiently load all the `png`s from disk with [`dask`](https://www.dask.org/) [@dask].
 
-A connected region labeling of the previously extracted MIP images ([`skimage.measure.label`](https://scikit-image.org/docs/stable/api/skimage.measure.html#skimage.measure.label)) was used to highlight the labels in the custom-made sample holder (highlighted in yellow in the left panel of Figure @fig:labels) and to label the single fish in their compartments.
-The centroid positions and extent of individual fish in the scan ([`skimage.measure.regionprops`](https://scikit-image.org/docs/stable/api/skimage.measure.html#skimage.measure.regionprops)) (see right panel of Figure @fig:labels) were used to extract small cropped regions from the large multi-specimen dataset.
+A connected region labeling ([`skimage.measure.label`](https://scikit-image.org/docs/stable/api/skimage.measure.html#skimage.measure.label)) of the previously extracted MIP images was used to detect the single fish in their compartments  (see right panel of Figure @fig:labels).
+The 3D-printed compartment labels of the sample holder were detected in the same way and are highlighted in yellow in the left panel of Figure @fig:labels.
+Since `skimage` numbers the detected regions in raster order (top to bottom, left to right), this numbering depends on the exact position of each fish within its compartment.
+Due to a slight tilt of the sample holder in the scanner and inconsistent size of the single fish, the detected numbering does not consistently follow the 3D-printed compartment numbering.
+We thus assigned each detected region to a compartment based on the angle of its centroid ([`skimage.measure.regionprops`](https://scikit-image.org/docs/stable/api/skimage.measure.html#skimage.measure.regionprops)) around the rotation axis of the scan, which coincides with the center of the sample holder.
+Each region is assigned to the compartment with the closest nominal direction (spaced by 60°, counted anticlockwise from compartment 1); empty compartments are skipped.
+
+The bounding boxes of the individual fish in the scan (see right panel of Figure @fig:labels) were used to extract small cropped regions from the large multi-specimen dataset.
 This extraction process is fully reproducible and is tailored to the arrangement of the samples in the custom sample holder.
 
 ![Automatically detected regions based on maximum intensity projection along the rotation axis of the tomographic scan.
   The left panel shows the highlighted compartement labels as they have been 3D printed.
   The right panels shows the regions as detected by `skimage`; they are numbered consecutively from top left to bottom right.
-  Detected label numbers are mapped to the correct fish ID in the next step.](images/Sticklebucket_H.rec.Labels.Detected.png){#fig:labels}
+  These region numbers are assigned to the compartments based on their angle around the rotation axis (see text) and subsequently mapped to the fish ID.](images/Sticklebucket_H.rec.Labels.Detected.png){#fig:labels}
 
 We then mapped the labels of the detected regions to the ID numbers of the scanned fish and presented these images together with photos of the lab book and sample tubes for verification (see Figure @fig:checking).
 
@@ -368,7 +374,8 @@ We acquired 403312 projections, reconstructed into a total of 154645 slices, res
 
 Our method reproducibly extracts each of the six fish scanned simultaneously in one scan.
 The custom-made sample holder aligns each fish along the vertical axis around the rotation axis of the tomographic scan.
-The extraction based on the MIP image along the rotation axis is fully automated, reproducible, and robust, since the detected fish "regions" do not overlap in the resulting image.
+The extraction based on the MIP image along the rotation axis is deterministic and reproducible.
+Thhe assignment of detected regions to compartments is computed from their position around the rotation axis, and the only manual input is the mapping of compartment number to fish ID from the lab book.
 
 The resulting image stack, containing six fish in one multi-specimen scan, creates a large output dataset that can be unwieldy to manage even for experienced users.
 Depending on the available hardware, it may not even be possible to load the resulting image stack into image processing software to manually perform the cropping.
@@ -399,6 +406,11 @@ In addition, human-readable log files documenting the cropping position in the e
 This enables reproducible double-checking and confirmation of the process after the fact (see this [direct link for one such log file](https://github.com/habi/sticklebacks/blob/main/logfiles/Sticklebucket_10/rec_regions/FG.X24.027/FG.X24.027.log) and [one such image](https://github.com/habi/sticklebacks/blob/main/logfiles/Sticklebucket_10/Sticklebucket_10.rec.Labels.Check.png)).
 
 The extraction and sampling process led to a total of ~64 GB of `nrrd` files, which were evaluated as specified before.
+The exported regions varied in size, with a median anteroposterior length of 4250 px and median x- and y- dimensions of 650 px (due to the rotation of the fish, the x- and y- dimensions do not map to anatomical directions).
+These cropped regions include the region of the originally acquired data where the 3D-printed label is visible, aiding in end-to-end reproducibility of the extraction process.
+
+We have uploaded further cropped datasets of each analyzed fish to MorphoSource (see [Supplementary Materials]).
+These further cropped datasets include only the region of the fish in anteroposterior direction, drop the 3D-printed label region and have a median size of approximately 3000 pixels, the x- and y-directions are the same as for the previously mentioned datasets.
 
 ### Thresholding
 
@@ -551,9 +563,12 @@ A copy of each log file containing *all* scanning parameters is available in a [
 
 All Jupyter notebooks used to process the acquired tomographic data as described in the text are available [on GitHub](https://github.com/habi/sticklebacks) and can be previewed with [nbviewer](https://nbviewer.org/github/habi/sticklebacks/tree/main/).
 
-#### Cropped Tomographic Data
+#### Cropped Tomographic Data of Each Extracted Fish
 
-The `png` stack of *each* cropped fish region is available in [a collection at MorphoSource](https://www.morphosource.org/projects/000885106).
+The cropped datasets for analysis include the region with the 3D-printed label of the multi-specimen holder to keep the process reproducible in an end-to-end fashion.
+We further cropped the datasets along the anterioposterior axis with a [helper notebook](https://github.com/habi/sticklebacks/blob/main/PrepareForMorphoSource.ipynb).
+These datasets do *not* include the region of the 3D-printed label, but are minimized to only the fish region.
+A `png` stack of *each* such cropped fish region is available in [a collection at MorphoSource](https://www.morphosource.org/projects/000885106) and can be downloaded on request.
 
 #### 3D Slicer; Extraction
 
