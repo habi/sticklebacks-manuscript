@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2026-10-29" />
   <meta name="citation_publication_date" content="2026-10-29" />
   <meta property="article:published_time" content="2026-10-29" />
-  <meta name="dc.modified" content="2026-10-29T17:41:18+00:00" />
-  <meta property="article:modified_time" content="2026-10-29T17:41:18+00:00" />
+  <meta name="dc.modified" content="2026-10-29T17:53:43+00:00" />
+  <meta property="article:modified_time" content="2026-10-29T17:53:43+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/75aa48d78c35a0badb7a19cb6d467abf7a48e9f1/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/75aa48d78c35a0badb7a19cb6d467abf7a48e9f1/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/75aa48d78c35a0badb7a19cb6d467abf7a48e9f1/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/1528b0e948804fe84854bcda21179ead9322a4cc/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/1528b0e948804fe84854bcda21179ead9322a4cc/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/1528b0e948804fe84854bcda21179ead9322a4cc/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,11 +80,11 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/75aa48d78c35a0badb7a19cb6d467abf7a48e9f1/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/1528b0e948804fe84854bcda21179ead9322a4cc/))
 was generated
-from [habi/sticklebacks-manuscript@75aa48d](https://github.com/habi/sticklebacks-manuscript/tree/75aa48d78c35a0badb7a19cb6d467abf7a48e9f1)
-on October 29, 2026 and contains 5945 words.
-Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...75aa48d78c35a0badb7a19cb6d467abf7a48e9f1#files_bucket).
+from [habi/sticklebacks-manuscript@1528b0e](https://github.com/habi/sticklebacks-manuscript/tree/1528b0e948804fe84854bcda21179ead9322a4cc)
+on October 29, 2026 and contains 5981 words.
+Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...1528b0e948804fe84854bcda21179ead9322a4cc#files_bucket).
 </em></small>
 
 
@@ -522,8 +522,10 @@ Finally, the 3D analysis step of the pipeline allows for insights from 3D data t
 - [Writing – review & editing](https://credit.niso.org/contributor-roles/writing---review-&-editing/): David Haberthür, R. Benjamin Sulser, Sheila Christen, Catherine L. Peichel, Ruslan Hlushchuk
 
 
-Large language models were used to identify spelling and grammatical errors and to obtain feedback from [the Stanford Agentic Reviewer](https://paperreview.ai/).
-The authors reviewed and selectively incorporated all these suggestions.
+## Use of AI tools
+
+Large language models were used to identify spelling and grammatical errors and to suggest wording for individual sentences during the revision, to assist with writing and debugging the analysis code, and to obtain feedback from [the Stanford Agentic Reviewer](https://paperreview.ai/).
+The authors reviewed all suggestions, selectively incorporated them, and take full responsibility for the content of the manuscript and the code.
 No generative AI was used to generate the scientific content of the manuscript.
 
 ## Competing Interests
