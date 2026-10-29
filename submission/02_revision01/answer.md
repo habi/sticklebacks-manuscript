@@ -160,7 +160,14 @@ We've expanded the figure caption a bit with the aim to clarify it.
 > Were the regions manually or automatically cropped to the head, or was only the field of view containing the head processed?
 > If the entire fish was processed there might be substantial resizing artifacts, because the default behavior of Biomedisa is to resample the input data to 256x256x256 voxels before processing.
 
-#59
+You are correct, that the the x- and y-dimensions of the cropped datasets are approximately 500 voxels.
+We looked at the sizes of the exported files in detail.
+The smallest export is 486 x 722 x 1743 pixels (x, y, z), the largest 1322 x 862 x 5398 voxels, and the median export is 512 x 840 x 3857 voxels.
+
+The smallest sized crop is a crop from a scan that one is actually from a scan that didn't turn out good (see https://anonymous.4open.science/r/sticklebacks-01A4/logfiles/Sticklebucket_14/README.md), but was nonetheless the one we used for extracting the rakers.
+The same folder does contain datasets spanning the whole fish, so the *median* size of the cropped regions is a better estimate of the sizes.
+
+For the analysis in Biomedisa, all datasets were further *cropped* to only include the head, so no resampling was performed by Biomedisa.
 
 > How were the training labels created.
 > Manually?
