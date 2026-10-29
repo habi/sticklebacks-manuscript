@@ -442,6 +442,12 @@ TODO: Explain the connection between FOV/voxel size/scanning time in a bit more 
 
 > Can the authors explain what is included in the 17 minutes manual time needed to split a single fish scan of a single fish ?
 
+The manual time was measured for the manual extraction of the fish regions as described in the text.
+We loaded the PNG stack of the reconstructions of one multi-specimen scan and generated the axial MIP of this stack.
+We then used the selection tool to mark rectangular regions on this MIP and copied the coordinates into the original, full stack.
+Using the cropping function we then cropped the stack into a new dataset and saved this dataset to disk.
+Repeating this step 6 times for one dataset and all the steps for another dataset took us a about 35 minutes, resulting in the stated time of 17 minutes.
+
 > Line 290: It would be great to provide the average size of a cropped .nrrd dataset for a single fish.
 
 Thank you for this suggestion, which was also raised by the other reviewer.
