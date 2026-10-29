@@ -397,7 +397,27 @@ To be able to separate the scans we also had to include the 3D printed label in 
 > - transfer the ROI on the virtual stack and crop
 > The RAM usage would be up to the cropped subvolume weight, that can be handled with a standard workstation.
 > Still it has to be done 6 times, so it should be run in a macro or a plugin to save operator time.
->
+
+We thank the reviewer for this detailed suggestion, and agree that our reasoning was too strong.
+We did lay a very strong focus on the end-to-end reproducibility of our pipeline, which *is* given, but it would also be possible to get to the same results with several manual steps in ImageJ.
+
+As we've specified above, the scanning of the fish did take about two weeks, but was done in the time-span of many months, making a reproducible, automated cropping even more important.
+
+Since we only crop in XY, the cropping does not require Crop (3D), and a Fiji macro working on a virtual stack (maximum intensity projection, thresholding, *Analyze Particles*, cropping each ROI with a margin and logging its coordinates) would extract the fish reproducibly and with memory requirements permitting to perform the process on a not very powerful machine.
+This is essentially the same algorithm our pipeline implements, and we have rewritten the paragraph in the Results accordingly.
+
+We nonetheless implemented the extraction in the same Jupyter notebooks as the rest of the pipeline, because cropping is only one of the steps needed to get from a multi-specimen scan to an identified single-fish dataset:
+
+- The detected regions are assigned to the compartments of the sample holder based on their angle around the rotation axis, and then mapped to the fish IDs from the lab book.
+  A cropped stack without a reliable fish ID is of no use for the later analysis.
+- For each fish, the pipeline writes the cropped dataset as `nrrd` with the voxel size in the header, a log file with the crop coordinates in the original dataset, and control images showing the detected regions and their assignment.
+- The MIPs used for the detection are the same ones used in the preview notebook for quality control, so the whole chain from reconstructions to single-fish datasets runs on the same data in one reproducible, documented environment.
+- All 38 scans are processed in one batch without user interaction.
+  Technically, user interaction was necessary for 2 of the 38 scans, since in one scan we were able to only mount fish into 5 of the 6 petals due to the size of the fish and we scanned the last batch in a sample holder with only three petals (with two remaining fish from the batch and the one that was too big from the 5-of-6-petals scan).
+
+A Fiji macro could be extended to do all this, but would then amount to a reimplementation of our pipeline in a different language.
+We see the main contribution of our work in automating and documenting the full chain, not in the choice of a particular tool for the cropping step.
+
 > The indication of an extra weight in Fiji might come from the software working with .tif format by default and not taking into account the compression in the .png format.
 
 The reviewer is correct about the reported size.
