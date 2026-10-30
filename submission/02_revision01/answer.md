@@ -261,7 +261,7 @@ It was always stating "Sample Procurement and Preparation" and still is so.
 > This is especially confusing as 3Dslicer is later used for ensuring equal distances.
 > And Stratovan is not free/open-source.
 
-#74 We agree with the reviewer about generally preferring open-source pipelines for analyses. In this case, Stratovan in particular was used for the template-import to speed up fixed landmark placements (which far outperformed ALPACA/MALPACA modules in Slicer in our tests), with the python-scriptable elements of Slicer to assist in the semilandmarks. In theory, any preferred landmarking tool could be used for this process. We have clarified as such in the main text. 
+We agree with the reviewer about generally preferring open-source pipelines for analyses. In this case, Stratovan in particular was used for the template-import to speed up fixed landmark placements (which far outperformed ALPACA/MALPACA modules in Slicer in our tests), with the python-scriptable elements of Slicer to assist with the semilandmarks. In theory, any preferred landmarking tool could be used for this process. We have clarified as such in the main text. 
 
 > Line 247: The total number of projections and reconstructions are not meaningful and should be removed.
 > 4000 images in a CTscan is far too much when only 2000 images contain the region of interest of the morphometrics study, please consider CTscanning only this ROI or running the post-processing on a crop in the anterior-posterior direction if the scan of the whole specimen is needed.
