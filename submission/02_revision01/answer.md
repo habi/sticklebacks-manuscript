@@ -9,7 +9,7 @@ Text is copy-pasted from the email we got, block-quoted *in toto*, answered inbe
 Use
 ```bash
 pandoc answer.md \
-  --output=output.pdf \
+  --output=answer.pdf \
   --to=typst-citations \
   --from=markdown \
   --lua-filter=quote-style.lua \
