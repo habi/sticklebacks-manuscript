@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2026-10-30" />
   <meta name="citation_publication_date" content="2026-10-30" />
   <meta property="article:published_time" content="2026-10-30" />
-  <meta name="dc.modified" content="2026-10-30T15:46:19+00:00" />
-  <meta property="article:modified_time" content="2026-10-30T15:46:19+00:00" />
+  <meta name="dc.modified" content="2026-10-30T16:54:48+00:00" />
+  <meta property="article:modified_time" content="2026-10-30T16:54:48+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/c3f8d2c9d82944b1550710256046921dd2c57ffd/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/c3f8d2c9d82944b1550710256046921dd2c57ffd/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/c3f8d2c9d82944b1550710256046921dd2c57ffd/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/028463252501bc5bb7c4c09d098eaa8cc6d2f3e5/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/028463252501bc5bb7c4c09d098eaa8cc6d2f3e5/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/028463252501bc5bb7c4c09d098eaa8cc6d2f3e5/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,11 +80,11 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/c3f8d2c9d82944b1550710256046921dd2c57ffd/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/028463252501bc5bb7c4c09d098eaa8cc6d2f3e5/))
 was generated
-from [habi/sticklebacks-manuscript@c3f8d2c](https://github.com/habi/sticklebacks-manuscript/tree/c3f8d2c9d82944b1550710256046921dd2c57ffd)
-on October 30, 2026 and contains 6417 words.
-Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...c3f8d2c9d82944b1550710256046921dd2c57ffd#files_bucket).
+from [habi/sticklebacks-manuscript@0284632](https://github.com/habi/sticklebacks-manuscript/tree/028463252501bc5bb7c4c09d098eaa8cc6d2f3e5)
+on October 30, 2026 and contains 6468 words.
+Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...028463252501bc5bb7c4c09d098eaa8cc6d2f3e5#files_bucket).
 </em></small>
 
 
@@ -205,13 +205,12 @@ However, imaging large numbers of stickleback specimens has until now been prohi
 High-resolution X-ray tomography (micro-CT) imaging is an indispensable tool to gain nondestructive insights into the inner structure of highly diverse samples, specifically for specimens in biomedical research [@doi:10.1186/s12915-020-0753-2].
 Micro-CT imaging is ideally suited for nondestructive anatomical assessments in fish [@doi:10.1093/iob/obad008], capturing internal structures and delicate skeletal elements that are otherwise difficult to quantify without destructive preparation.
 
-While in theory, each specimen could be scanned individually, performing hundreds of scans of individual specimens 
-would represent a large drain of time, resources, and data storage.
-Instead many investigators and tomogrpahy institutes choose to scan several specimens at once in a "multiscan" format.
-Although efficient in terms of scanning beam-time and number of individuals per-scan, multiscans are considerably large files that must be partitioned correctly with respect to each individual specimen prior to downstream analysis. 
-This creates a bottleneck for large-scale research where sizable multiscans bloat processing time, in addition to potential risks regarding errors with specimen splitting and specimen identification. 
+While in theory, each specimen could be scanned individually, performing hundreds of scans of individual specimens would represent a large drain of time and resources.
+Instead many investigators and tomography institutes choose to scan several specimens at once in a "multiscan" format.
+Although efficient in terms of beam time and number of individuals per scan, multiscans result in considerably larger datasets that must be partitioned correctly with respect to each individual specimen prior to downstream analysis.
+This creates a bottleneck for large-scale research where sizable multiscans bloat processing time, in addition to potential risks regarding errors with specimen splitting and specimen identification.
 
-Furthermore, once pratitioned, small structures can be manually rendered by a skilled investigator using segmentation tools such as 3D Slicer [@doi:10.1007/978-1-4614-7657-3_19; @doi:10.1111/2041-210X.13669] yet the time and resources required per sample make this approach, too, infeasible for population-level and evolutionary studies.
+Furthermore, once partitioned, small structures can be manually rendered by a skilled investigator using segmentation tools such as 3D Slicer [@doi:10.1007/978-1-4614-7657-3_19; @doi:10.1111/2041-210X.13669], yet the time and resources required per sample make this approach, too, infeasible for population-level and evolutionary studies.
 Accessing these structures instead typically requires destruction of the mandibular and cranial anatomy, preventing subsequent analyses of these features.
 
 This project aims to address these gaps, demonstrating a novel pipeline for automatic splitting and rendering of multi-specimen scans for mass sampling, creating a dataset with consistent parameters that can be used as input for downstream machine learning approaches [@doi:10.1038/s41467-020-19303-w] to aid in the segmentation of individual bony structures in each scan.
@@ -243,7 +242,7 @@ To optimize for these constraints, we scanned all sticklebacks in batches of six
 This holder was designed in [OpenSCAD](https://openscad.org/) (OpenSCAD Developers; version 2021.01) and is available online, either directly as an [STL file for printing](https://github.com/TomoGraphics/Hol3Drs/blob/master/STL/Stickleback.Multiple.stl) or as a [(parameterized) OpenSCAD file](https://github.com/TomoGraphics/Hol3Drs/blob/master/Stickleback.Multiple.scad) for adaptation to other classes of samples.
 Both files are part of a library of 3D-printable sample holders for tomographic imaging [@doi:10.5281/zenodo.2587555].
 
-Fish were taken out of single, labeled falcon tubes, wrapped in melamine resin foam (virtually radiotransparent, but stable) and put head-first into the labeled compartments of the sample holder.
+Fish were taken out of single, labeled Falcon tubes, wrapped in melamine resin foam (virtually radiotransparent, but stable) and put head-first into the labeled compartments of the sample holder.
 The foam was moistened with formalin and the top of the sample holder was sealed with Parafilm to avoid drying of the fish during the tomographic imaging.
 
 Tomographic imaging was performed on a [Bruker SkyScan 2214](https://www.bruker.com/en/products-and-solutions/diffractometers-and-x-ray-microscopes/3d-x-ray-microscopes/skyscan-2214.html) (Bruker microCT, Kontich, Belgium) at the Institute of Anatomy, University of Bern, Switzerland.
@@ -287,7 +286,7 @@ This approach allowed us to map *all* the reconstructions to memory and quickly 
 The [separation notebook](https://nbviewer.org/github/habi/sticklebacks/blob/main/BucketSeparator.ipynb) processes all the acquired scans to extract each individual fish from each scan that encompasses six fish in total.
 As in the preview notebook, we efficiently load all the `png`s from disk with [`dask`](https://www.dask.org/) [@dask].
 
-A connected region labeling ([`skimage.measure.label`](https://scikit-image.org/docs/stable/api/skimage.measure.html#skimage.measure.label)) of the previously extracted MIP images was used to detect the single fish in their compartments  (see right panel of Figure @fig:labels).
+A connected region labeling ([`skimage.measure.label`](https://scikit-image.org/docs/stable/api/skimage.measure.html#skimage.measure.label)) of the previously extracted MIP images was used to detect the single fish in their compartments (see right panel of Figure @fig:labels).
 The 3D-printed compartment labels of the sample holder were detected in the same way and are highlighted in yellow in the left panel of Figure @fig:labels.
 Since `skimage` numbers the detected regions in raster order (top to bottom, left to right), this numbering depends on the exact position of each fish within its compartment.
 Due to a slight tilt of the sample holder in the scanner and inconsistent size of the single fish, the detected numbering does not consistently follow the 3D-printed compartment numbering.
@@ -299,7 +298,7 @@ This extraction process is fully reproducible and is tailored to the arrangement
 
 ![Automatically detected regions based on maximum intensity projection along the rotation axis of the tomographic scan.
   The left panel shows the highlighted compartment labels as they have been 3D printed.
-  The right panels shows the regions as detected by `skimage`; they are numbered consecutively from top left to bottom right.
+  The right panel shows the regions as detected by `skimage`; they are numbered consecutively from top left to bottom right.
   These region numbers are assigned to the compartments based on their angle around the rotation axis (see text) and subsequently mapped to the fish ID.](images/Sticklebucket_H.rec.Labels.Detected.png){#fig:labels}
 
 We then mapped the compartment numbers to the ID numbers of the scanned fish, as noted in the lab book during sample mounting, and presented these images together with photos of the lab book and sample tubes for visual verification (see Figure @fig:checking).
@@ -357,14 +356,12 @@ Once trained, we applied the Biomedisa segmentation model to the remaining 160 s
 As a test and for subsequent analysis, only the first and second right ceratobranchials were chosen for comparison between all samples.
 The segmentation labels corresponding to these bones were imported together for landmarking using Stratovan Checkpoint [@checkpoint] and 3D Slicer [@doi:10.1007/978-1-4614-7657-3_19].
 
+Type II landmarks were placed at the ends of each bone, with semi-landmarks between them to cover the curvature axes along the bone (see Figure @fig:landmarks).
 
-Type II landmarks were placed at the ends of each bone, with semil-andmarks between them to cover the curvature axes along the bone (see Figure @fig:landmarks).
-
-In total, seven landmarks and four semilandmark curves (two containing 20 semi-landmarks, two containing 15) were placed on the first ceratobranchial (CB1), and five landmarks and three semilandmark curves (one containing 20 semilandmarks, two containing 15) were placed on the second ceratobranchial (CB2).
-Fixed landmarks were transferred using the "Import/Apply Template" function in Stratovan Checkpoint, and checked for manual inspection and adjustment prior to export.
+In total, seven landmarks and four semi-landmark curves (two containing 20 semi-landmarks, two containing 15) were placed on the first ceratobranchial (CB1), and five landmarks and three semi-landmark curves (one containing 20 semi-landmarks, two containing 15) were placed on the second ceratobranchial (CB2).
+Fixed landmarks were transferred using the "Import/Apply Template" function in Stratovan Checkpoint, and manually inspected and adjusted prior to export.
 Once curves and fixed points were established, equal distances of semi-landmark curves were ensured using the `resample_curves` function in 3D Slicer.
 While this particular workflow was chosen for time-efficiency, accuracy, and user familiarity, any preferred 3D landmarking program should be able to replicate these results.
-
 
 ![Landmarks on the dorsal (a) and ventral (b) surfaces.](images/Landmark_Figure.png){#fig:landmarks}
 
@@ -408,7 +405,7 @@ Algorithmically/automatically cropping the large datasets based on the axial MIP
 
 Table: Comparison of time estimates between manual and pipeline runs.
        On average, we scanned 5.66 fish per scan for a total scan time of 15 days, 23 hours, 50 minutes, and 24 seconds.
-       The manual scan time per single fish is thus calculated to be five times longer than scanning six fish at a time in a single scan and separating them after the fact.
+       The manual scan time per single fish is thus calculated to be about 5.5 times longer than scanning six fish at a time in a single scan and separating them after the fact.
        Also note that the manual splitting does *not* produce the accompanying log file and figures for double-checking as specified below. {#tbl:timing}
 
 Note that the automated extraction writes intermediate files, which facilitate the handling of the data (this step takes about 3 minutes per scan).
@@ -417,11 +414,11 @@ In addition, human-readable log files documenting the cropping position in the e
 This enables reproducible double-checking and confirmation of the process after the fact (see this [direct link for one such log file](https://github.com/habi/sticklebacks/blob/main/logfiles/BucketOfFish_H/rec_regions/SL.X23.012/SL.X23.012.log) and [one such image](https://github.com/habi/sticklebacks/blob/main/logfiles/BucketOfFish_H/Sticklebucket_H.rec.Labels.Check.png)).
 
 The automated extraction produced 215 `nrrd` files with a total size of 385 GB (median 1.65 GB).
-The exported regions varied in physical size, resulting in datasets with a median anteroposterior length of 4250 px and median x- and y- dimensions of 650 px (due to the rotation of the fish, the x- and y- dimensions do not map to anatomical directions).
+The exported regions varied in physical size, resulting in datasets with a median anteroposterior length of 4250 px and median x- and y-dimensions of 650 px (due to the rotation of the fish, the x- and y-dimensions do not map to anatomical directions).
 These cropped regions include the region of the originally acquired data where the 3D-printed label is visible, aiding in end-to-end reproducibility of the extraction process.
 
 We have uploaded further cropped datasets of each analyzed fish to MorphoSource (see [Supplementary Materials]).
-These further cropped datasets include only the region of the fish in anteroposterior direction, drop the 3D-printed label region and have a median size of approximately 3000 pixels, the x- and y-directions are the same as for the previously mentioned datasets.
+These further cropped datasets include only the region of the fish in anteroposterior direction, drop the 3D-printed label region and have a median length of approximately 3000 pixels; the x- and y-directions are the same as for the previously mentioned datasets.
 
 ### Thresholding
 
@@ -434,14 +431,14 @@ Selection and individual rendering of branchial structures takes between 10 and 
 The speed and quality of these data allow us to study the internal branchial anatomy on a large scale and in situ, without the need for fine dissection.
 
 After GPA alignment, we quantified the shape differences among all scanned fish for this project.
-Changes due to allometry (using centroid size or standard length as the size metric) were significant but slight, explaining only a small fraction of shape variation (CB1: *p* = 0.001, *R^2* = 0.03246; CB2: *p* = 0.001, *R^2* = 0.06220) in both bones.
-Both linear models and PCA results suggest that the lakes themselves---and not overarching categories of ecotype or sex---drive most of the shape variation in these bones (CB1: *p* = 0.001, *R^2* = 0.09463; CB2: *p* = 0.001, *R^2* = 0.11039).
-However, the variation in the first ceratobranchial was significantly associated with different ecotypes, although the effect size was small (*p* = 0.009, *R^2* = 0.02056), with substantial overlap in the resulting shape space (see Figure @fig:pca_cb1).
+Changes due to allometry (using centroid size or standard length as the size metric) were significant but slight, explaining only a small fraction of shape variation (CB1: *p* = 0.001, $R^2$ = 0.03246; CB2: *p* = 0.001, $R^2$ = 0.06220) in both bones.
+Both linear models and PCA results suggest that the lakes themselves---and not overarching categories of ecotype or sex---drive most of the shape variation in these bones (CB1: *p* = 0.001, $R^2$ = 0.09463; CB2: *p* = 0.001, $R^2$ = 0.11039).
+However, the variation in the first ceratobranchial was significantly associated with different ecotypes, although the effect size was small (*p* = 0.009, $R^2$ = 0.02056), with substantial overlap in the resulting shape space (see Figure @fig:pca_cb1).
 
 ![PCA of CB1 colored by lake ecotype.
   Warps are indicated at the extremes of each axis by vectors drawn from a mean shape (red).](images/PCA_CB1_Plot.png){#fig:pca_cb1}
 
-On the other hand, the second ceratobranchial bone showed equally small but significant changes associated with the ecotype (*p* = 0.001, *R^2* = 0.0377).
+On the other hand, the second ceratobranchial bone showed equally small but significant changes associated with the ecotype (*p* = 0.001, $R^2$ = 0.0377).
 The differences between benthic and limnetic specimens are, for this bone, clearly divergent in shape space (see Figure @fig:pca_cb2).
 
 ![PCA of CB2 colored by lake ecotype.
@@ -462,32 +459,33 @@ The differences in the second ceratobranchial appear to be driven by divergence 
 
 ## Discussion {.page_break_before}
 
-### Data acquisition
+### Data Acquisition
 
-The main driver for developing our pipeline was efficient use of both machine-time and human time in this project.
+The main driver for developing our pipeline was efficient use of both machine time and human time in this project.
 
 At the voxel size needed to unambiguously resolve the branchial skeleton (less than 20 µm, as determined in pilot experiments), the time needed for acquisition of a tomographic scan is determined by the number of projections and exposure time, not by the number of fish in the field of view.
 Efficiently "filling" the field of view of the scanner with as many fish as possible in one scan enabled us to scan a total of 215 unique specimens in 38 different scans with a total scan duration of 16 days.
-If we would have scanned each specimen individually, we would have required about 90 days of scan time; while not impossible, this would have increased the intstrument time and its costs severalfold.
+If we would have scanned each specimen individually, we would have required about 90 days of scan time; while not impossible, this would have increased the instrument time and its costs severalfold.
 
 Scanning up to six fish at once makes efficient use of the scanner, but does shift the effort to the processing of the data, since each scan has to be separated into single-fish datasets.
-Since our pipeline fully automates the separation (see [Fish Separation]) reproducibly, this shift of effort is cost-effective.
+Since our pipeline automates the separation (see [Fish Separation]) reproducibly, this shift of effort is cost-effective.
 
 ### Pipeline and Efficiency
 
 Once all components of the pipeline are combined, running a simple script enables automatic separation, thresholding, and segmentation of stickleback specimens.
 Requiring minimal active user input, all automated pipeline steps are substantially faster than equivalent manual processing by an expert operator.
 This reproducible pipeline allows high-throughput sampling and population-scale analysis of stickleback specimens.
-Adding more (multi-specimen) scans to the pipeline does *not* increase the time users have to spend on manually separating these scan into single fish regions.
+Adding more (multi-specimen) scans to the pipeline does *not* increase the time users have to spend on manually separating these scans into single fish regions.
 
 The imaging and separation step is easy to generalize to either other micro-CT setups or other species and specimens.
 As long as the specimens show up as distinct blobs in the MIP (see Figure @fig:labels), our pipeline can reproducibly separate these blobs into a cropped dataset for any further processing, enabling a general, reproducible, and high-throughput micro-CT workflow in biology and other fields.
+We have already applied the same pipeline to multi-specimen scans of other fish species, namely *Spinachia spinachia* and several Lake Victoria and Neotropical cichlid species (manuscripts in preparation).
 
 ### Findings from Ceratobranchial Analysis
 
 The first and second ceratobranchials differ remarkably in morphology, size, and breadth, suggesting that these structures may respond differently to changes in diet, even within the same feeding apparatus.
 
-CB1 showed statistically significant, albeit small, differences between benthic and limnetic ecotypes based on linear and pairwise analyses (PC4, accounting for 4.33% of the variation, appears to capture these differences; see supplementary figure).
+CB1 showed statistically significant, albeit small, differences between benthic and limnetic ecotypes based on linear and pairwise analyses (PC4, accounting for 4.33% of the variation, appears to capture these differences; see supplementary figure @fig:pc4).
 However, we caution that the greater number of benthic lakes and specimens available for this study may contribute to these patterns, as the two groups (benthic and limnetic) exhibit statistically different variances.
 This pipeline will allow for more extensive analysis from future sampling years to confirm these findings.
 
@@ -506,6 +504,7 @@ Studies treating the branchial basket as a single structure, focusing only on th
 As with other multi-specimen scanning projects, the scanning parameters can be optimized individually for each scan but not for each individual specimen.
 Additionally, atypically large or dense specimens cause an issue for the holder and the reproducibility between scans.
 As with most machine learning frameworks, the training dataset must encompass the full range of anatomical variation to prevent segmentation errors.
+And while the separation step outlined in this manuscript is independent of the scanned specimens, the segmentation model has to be retrained for other species or anatomical structures.
 
 
 ## Conclusions {.page_break_before}
@@ -515,7 +514,7 @@ Although applied here to stickleback specimens, the described methods can readil
 Extracting individual specimens from multi-specimen scans is efficient; a custom 3D-printed holder and automated splitting pipeline minimize operator time and maximize throughput.
 
 The reproducible scans and their consistent quality rapidly provide a large amount of similar data, ideal for training machine learning models.
-In its current implementation, Biomedisa is on average 50 times faster than manual segmentation by a skilled operator, and without the interoperator variability inherent to manually segmenting large numbers of specimens.
+In its current implementation, Biomedisa is on average 60 times faster than manual segmentation by a skilled operator, and without the interoperator variability inherent to manually segmenting large numbers of specimens.
 This puts virtual, nondestructive dissection of internal stickleback anatomy on par with, if not beyond, hand dissection.
 
 Finally, the 3D analysis step of the pipeline allows for insights from 3D data that cannot be obtained from traditional dissection, including complex shapes and arrangements not accessible through destructive sampling approaches.
@@ -548,9 +547,15 @@ Finally, the 3D analysis step of the pipeline allows for insights from 3D data t
 
 ## Use of AI tools
 
-Large language models were used to identify spelling and grammatical errors and to suggest wording for individual sentences during the revision, to assist with writing and debugging the analysis code, and to obtain feedback from [the Stanford Agentic Reviewer](https://paperreview.ai/).
-The authors reviewed all suggestions, selectively incorporated them, and take full responsibility for the content of the manuscript and the code.
 No generative AI was used to generate the scientific content of the manuscript.
+
+Large language models were used to:
+- identify spelling and grammatical errors
+- to suggest wording for individual sentences during the revision
+- to assist with writing and debugging the analysis code,
+- and to obtain feedback from [the Stanford Agentic Reviewer](https://paperreview.ai/).
+
+The authors reviewed all suggestions, selectively incorporated them, and take full responsibility for the content of the manuscript and the code.
 
 ## Competing Interests
 
@@ -571,29 +576,24 @@ We also thank the `manubot` project [@doi:10.1371/journal.pcbi.1007128] for faci
 
 ## Supplementary Materials
 
-### Supplementary figure
-
-![PCA of first ceratobranchial.
-  PC4 accounts for 4.33% of the variation.](images/Supplementary_Figure_PC1_vs_PC4.png){#fig:pc4}
-
 ### Parameters of Tomographic Scans of All Fish
 
 The CSV file [ScanningDetails.csv](https://github.com/habi/sticklebacks-manuscript/blob/main/content/data/ScanningDetails.csv) gives a tabular overview of all the (relevant) parameters of all the scans we performed.
 This file was generated with the [data processing notebook](https://github.com/habi/sticklebacks/blob/main/DataWrangling.ipynb) and collates the relevant data read from *all* the log files of *all* the scans we performed for this study.
 A copy of each log file containing *all* scanning parameters is available in a [folder in the data processing repository](https://github.com/habi/sticklebacks/tree/main/logfiles) of this project.
 
-### Analysis Scripts
-
-#### Jupyter; (Pre)processing of Tomographic Data
-
-All Jupyter notebooks used to process the acquired tomographic data as described in the text are available [on GitHub](https://github.com/habi/sticklebacks) and can be previewed with [nbviewer](https://nbviewer.org/github/habi/sticklebacks/tree/main/).
-
-#### Cropped Tomographic Data of Each Extracted Fish
+### Cropped Tomographic Data of Each Extracted Fish
 
 The cropped datasets for analysis include the region with the 3D-printed label of the multi-specimen holder to keep the process reproducible in an end-to-end fashion.
 We further cropped the datasets along the anteroposterior axis with a [helper notebook](https://github.com/habi/sticklebacks/blob/main/PrepareForMorphoSource.ipynb).
 These datasets do *not* include the region of the 3D-printed label, but are minimized to only the fish region.
 A `png` stack of *each* such cropped fish region is available in [a collection at MorphoSource](https://www.morphosource.org/projects/000885106) and can be downloaded on request.
+
+### Analysis Scripts
+
+#### Jupyter; (Pre)processing of Tomographic Data
+
+All Jupyter notebooks used to process the acquired tomographic data as described in the text are available [on GitHub](https://github.com/habi/sticklebacks) and can be previewed with [nbviewer](https://nbviewer.org/github/habi/sticklebacks/tree/main/).
 
 #### 3D Slicer; Extraction
 
@@ -604,10 +604,11 @@ The result of the resampling is also available [online](https://github.com/habi/
 
 The R script we used to assess the morphometrics is available [online on GitHub](https://github.com/habi/sticklebacks-manuscript/blob/main/content/scripts/Morphometrics_RScript.R).
 
-#### Supplementary Figure
+### Supplementary Figure
 
-![PCA of CB1 colored by lake ecotype, highlighting PC1 and PC4. Warps are indicated at the extremes of each axis by vectors drawn from a mean shape (red).](images/Supplementary_Figure_CB1_CB4.pngg){#fig:supplement1}
-
+![PCA of first ceratobranchial, colored by lake ecotype, highlighting PC1 and PC4.
+  Warps are indicated at the extremes of each axis by vectors drawn from a mean shape (red).
+  PC4 accounts for 4.33% of the variation.](images/Supplementary_Figure_PC1_vs_PC4.png){#fig:pc4}
 
 ## References {.page_break_before}
 
