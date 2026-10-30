@@ -176,7 +176,7 @@ The sentence has been slightly changed to avoid it to happen again.
 
 > Line 350: There are no supplementary figures.
 
-We apologize for the error in supplementary material uploads, we have attached this with the manuscript files.
+We apologize for the error in supplementary material uploads, we have attached these with the updated manuscript files to ensure they are included appropriately. 
 
 ## Reviewer: 2
 
