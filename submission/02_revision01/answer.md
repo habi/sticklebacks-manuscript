@@ -361,7 +361,23 @@ We have rephrased the corresponding paragraphs in the Materials & Methods and Re
 > The workflow could be simplified with discarding the interactive rendering and the need to keep a .zarr version of the cropped files.
 > Dealing with storage limitations, it is quite inefficient to keep three versions of the same dataset, only the .nrrd is needed from here to the end of the pipeline and can be handled with skimage.
 
-#71
+The reviewer is correctly "flagging" this here.
+Visualization of the separation method would correctly only need the axial MIP for comparison.
+It is correct that the multilevel thresholding is not needed for the results presented in this manuscript.
+The visualization step is technically also not needed, but produced Fig. 7 in the manuscript.
+
+The thresholding step is in *in* the notebook for treating of the data for further studies, as specified below, keeping all steps in an end-to-end reproducible notebook fosters the reproducible research we're aiming at in general.
+The suggestion that the thresholded datasets could have been loaded into 3DSlicer is a very good one, but - as specified in the text - we choose another semi-automated approach.
+
+We also do not really need to generate any "intermediate" `.zarr` files in the notebook, as the reviewer is correctly stating.
+But since the `.zarr` format is *extremely* well suited to store n-dimensional arrays, on disk and supports chunking, compression, and many backends, we generally use this as an intermediate storage on disk.
+
+As several authors of the manuscript looked at the data with ImageJ prior to analyzing them, keeping an intermediate "baseline" status of the cropped regions in `.zarr` made it easy to look at them with [n5-ij](https://github.com/saalfeldlab/n5-ij) and very efficiently write these files to many different needed formats (`.nrrd` for further analysis and `PNG` stacks for "archival").
+The reviewer correctly notes that keeping different versions of the datasets on disk is inefficient, but this was of secondary concern during the "working" phase of this manuscript.
+Now that we're reaching a more "archival" state of the project, the `.zarr` files are deleted and the network drive only keeps the `PNG` stacks.
+Keep in mind that *all* the now deleted data is regenerate bit-for-bit by re-running the separation notebook and the other notebooks in the pipeline.
+
+At the beginning of the project it was also not already decided how we are going to be sharing the cropped datasets, and the `.zarr` format would also have been a well suited format for sharing if we wouldn't have chosen to upload to MorphoSource.
 
 > Extraction of features of interest
 > Does the processing time needed to segment a single fish correspond to the 10-15 minutes stated in Table 1.?
