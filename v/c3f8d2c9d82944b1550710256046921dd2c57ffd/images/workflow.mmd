@@ -1,0 +1,49 @@
+---
+config:
+    theme: redux-color
+    themeVariables:
+        fontSize: 18pt
+---
+%% Render the thing at https://mermaid.live/ for best results
+swimlane-beta TB
+
+subgraph collection["Collection"]
+    Planning --> Sampling --> Storing
+end
+
+Storing --> setup
+
+subgraph imaging["micro-CT"]
+    setup["Preparation"] --> scan@{ shape: procs, label: "Multi-specimen scans\n(N = 38)" }
+    scan --> rec@{ shape: procs, label: "Reconstructions" }
+end
+
+rec --> preview["Preview, Quality control"]
+
+subgraph notebooks["Notebooks"]
+    preview --> separation["Fish separation"]
+    separation --> fishid@{ shape: procs, label: "Fish datasets (N = 215)" }
+    preview --> rec
+    preview --> Reporting   
+end
+
+fishid --> Training
+Reporting --> manubot
+
+subgraph segmentation["Biomedisa"]
+    Training --> regions@{ shape: procs, label: "Segmented regions" }
+    regions --> jaws@{ shape: procs, label: "Brachial bones" }
+    jaws --> rakers@{ shape: procs, label: "Ceratobranchials" }
+end
+
+rakers --> morph
+
+subgraph analysis["Case study"]
+    morph["Morphometric Analysis"]
+end
+
+subgraph manuscript["Manuscript"]
+    manubot@{ shape: doc, label: "Manuscript" }
+end
+
+morph --> manubot
