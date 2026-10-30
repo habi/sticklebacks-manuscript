@@ -445,7 +445,17 @@ This amount of RAM is only needed when loading the full stack, not when working 
 > Table 1. The comment on how it would have been completely infeasible to scan each fish separately should be more salient than a side note in a table.
 >In my opinion, it is the main motivation behind the authors’ developments.
 
-#72, major :) !
+We thank the reviewer for flagging this.
+
+Honestly, the *main* motivation for the development of the script are efficient use of human time and machine time.
+Scanning them in the multi-specimen holder made for efficient use of machine time, technically it would *not* have been infeasible to scan each fish individually.
+Even if all co-authors are working at the University of Bern, as part of the [Microscopy Imaging Center](https://www.mic.unibe.ch/), a compensation for scanning time was needed, and efficient use of both time and monetary resources has to lead to scanning several fish at the desired voxel size in a single scan.
+
+From the start we knew that the project needs scans of *many* fish, but at first only envisioned about 100 fish.
+Most parts of the processing script were written after having scanned the first batch, the second batch was "simply" treated by the already written separation script with only minimal human input needed.
+
+The suggestion that this should have a more prominent mention in the manuscript than in a table caption is a very good one, and we've added this to the discussion.
+We also removed the statement from the table caption, as it now has a better place in the manuscript.
 
 > When estimating the time needed to scan a single fish, the duration would not be the same as a batch because one would need less than 3600 projections per scan.
 
@@ -455,7 +465,12 @@ Since such a reduction would also decrease the vertical field of view, we would 
 
 >From the MIP, it seems that a single fish would fit in half the width of the field of view, thus a scan duration for a single fish would be 5h while keeping the same voxel size and exposition time.
 
-TODO: Explain the connection between FOV/voxel size/scanning time in a bit more detail.
+Technically, one single fish would fit into a FOV even smaller than half the chosenw width.
+In pilot experiments we found that we need to scan the fish with a voxel size of smaller than 20 µm to safely resolve the features of interest.
+Since we also *wanted* to have tomographic scans of the whole anteroposterior length of the fish (for follow-up studies) we would have needed to acquire the so-called  stacked scans of the fish anyways, as the single fish are well approximated by a long and thin cylinder, and such a cylinder cannot be scanned at 20 µm otherwise.
+The amount of stacks limits the field of view of the scan in the chosen (and ideal) scanning configuration for the fish.
+As a consequence, we were able to "fill" the *lateral* field of view of the machine with more fish, e.g. by filling a multi-specimen sample holder with several fish, and acquirding the data of many (6) fish together in one scan.
+Even at the (wrong) estimate of 5 per fish we would have scanned for ~45 days (215 x 5h), three times longer than the actual scanning time we accumulated for the present data.
 
 > Can the authors explain what is included in the 17 minutes manual time needed to split a single fish scan of a single fish ?
 
