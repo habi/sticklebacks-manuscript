@@ -153,7 +153,8 @@ We've expanded the figure caption a bit with the aim to clarify it.
 > And were CB1 and CB2 labeled differently or with the same label value.
 > Figure 8 suggests they have the same value.
 
-#64 All structures were used for model training, with all ceratobranchials (including CB1 and CB2 having the same value) yet still distinguishable in the scan output. We have reworded our text to ensure clarity in this section.
+All structures were used for model training, with all ceratobranchials (including CB1 and CB2 having the same value) yet still distinguishable in the scan output. 
+We have reworded our text to ensure clarity in this section.
 
 > Line 212: Could you provide the range of image dimensions of the cropped images.
 > From the supplementary data, I gathered that x and y dimensions are approximately 500 voxels, but what about the z dimension?
@@ -175,7 +176,8 @@ For the analysis in Biomedisa, all datasets were further *cropped* to only inclu
 > How were the training labels created.
 > Manually?
 
-#57, asked Ben
+All training labels were created and inspected by hand within 3D Slicer.
+We have rephrased our materials and methods to make this more clear.
 
 > Line 262: “7 GB on disk and reported as 35.4 GB”.
 > This suggests that the data is compressed.
@@ -195,7 +197,7 @@ Thanks, updated.
 
 > In all of your test statistics, the symbol identifying the test statistic is missing.
 
-#65, asked Ben.
+We believe that this may have been an issue in file conversion (in our original file, this was a mathematical formula format and, in certain viewers, wouldn't convert correctly). We hope our changes have fixed this issue. 
 
 > Line 323: “The The benthic”.
 > Redundant “The”
@@ -211,7 +213,7 @@ The sentence has been slightly changed to avoid it to happen again.
 
 > Line 350: There are no supplementary figures.
 
-#55, asked Ben
+We apologize for the error in supplementary material uploads, we have attached these with the updated manuscript files to ensure they are included appropriately. 
 
 ## Reviewer: 2
 
@@ -391,7 +393,7 @@ At the beginning of the project it was also not already decided how we are going
 > This is especially confusing as 3Dslicer is later used for ensuring equal distances.
 > And Stratovan is not free/open-source.
 
-#74
+We agree with the reviewer about generally preferring open-source pipelines for analyses. In this case, Stratovan in particular was used for the template-import to speed up fixed landmark placements (which far outperformed ALPACA/MALPACA modules in Slicer in our tests), with the python-scriptable elements of Slicer to assist with the semilandmarks. In theory, any preferred landmarking tool could be used for this process. We have clarified as such in the main text. 
 
 > Line 247: The total number of projections and reconstructions are not meaningful and should be removed.
 
