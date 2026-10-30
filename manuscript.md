@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2026-10-30" />
   <meta name="citation_publication_date" content="2026-10-30" />
   <meta property="article:published_time" content="2026-10-30" />
-  <meta name="dc.modified" content="2026-10-30T15:31:11+00:00" />
-  <meta property="article:modified_time" content="2026-10-30T15:31:11+00:00" />
+  <meta name="dc.modified" content="2026-10-30T15:46:19+00:00" />
+  <meta property="article:modified_time" content="2026-10-30T15:46:19+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/55ff1b85a3e6067bab65b24d045aa99c7200754b/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/55ff1b85a3e6067bab65b24d045aa99c7200754b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/55ff1b85a3e6067bab65b24d045aa99c7200754b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/c3f8d2c9d82944b1550710256046921dd2c57ffd/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/c3f8d2c9d82944b1550710256046921dd2c57ffd/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/c3f8d2c9d82944b1550710256046921dd2c57ffd/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,11 +80,11 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/55ff1b85a3e6067bab65b24d045aa99c7200754b/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/c3f8d2c9d82944b1550710256046921dd2c57ffd/))
 was generated
-from [habi/sticklebacks-manuscript@55ff1b8](https://github.com/habi/sticklebacks-manuscript/tree/55ff1b85a3e6067bab65b24d045aa99c7200754b)
-on October 30, 2026 and contains 6219 words.
-Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...55ff1b85a3e6067bab65b24d045aa99c7200754b#files_bucket).
+from [habi/sticklebacks-manuscript@c3f8d2c](https://github.com/habi/sticklebacks-manuscript/tree/c3f8d2c9d82944b1550710256046921dd2c57ffd)
+on October 30, 2026 and contains 6417 words.
+Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...c3f8d2c9d82944b1550710256046921dd2c57ffd#files_bucket).
 </em></small>
 
 
@@ -205,8 +205,14 @@ However, imaging large numbers of stickleback specimens has until now been prohi
 High-resolution X-ray tomography (micro-CT) imaging is an indispensable tool to gain nondestructive insights into the inner structure of highly diverse samples, specifically for specimens in biomedical research [@doi:10.1186/s12915-020-0753-2].
 Micro-CT imaging is ideally suited for nondestructive anatomical assessments in fish [@doi:10.1093/iob/obad008], capturing internal structures and delicate skeletal elements that are otherwise difficult to quantify without destructive preparation.
 
-Although these small structures can be manually rendered by a skilled investigator using segmentation tools such as 3D Slicer [@doi:10.1007/978-1-4614-7657-3_19; @doi:10.1111/2041-210X.13669], the time and resources required per sample make this approach infeasible for population-level and evolutionary studies.
-Furthermore, accessing these structures typically requires destruction of the mandibular and cranial anatomy, preventing subsequent analyses of these features.
+While in theory, each specimen could be scanned individually, performing hundreds of scans of individual specimens 
+would represent a large drain of time, resources, and data storage.
+Instead many investigators and tomogrpahy institutes choose to scan several specimens at once in a "multiscan" format.
+Although efficient in terms of scanning beam-time and number of individuals per-scan, multiscans are considerably large files that must be partitioned correctly with respect to each individual specimen prior to downstream analysis. 
+This creates a bottleneck for large-scale research where sizable multiscans bloat processing time, in addition to potential risks regarding errors with specimen splitting and specimen identification. 
+
+Furthermore, once pratitioned, small structures can be manually rendered by a skilled investigator using segmentation tools such as 3D Slicer [@doi:10.1007/978-1-4614-7657-3_19; @doi:10.1111/2041-210X.13669] yet the time and resources required per sample make this approach, too, infeasible for population-level and evolutionary studies.
+Accessing these structures instead typically requires destruction of the mandibular and cranial anatomy, preventing subsequent analyses of these features.
 
 This project aims to address these gaps, demonstrating a novel pipeline for automatic splitting and rendering of multi-specimen scans for mass sampling, creating a dataset with consistent parameters that can be used as input for downstream machine learning approaches [@doi:10.1038/s41467-020-19303-w] to aid in the segmentation of individual bony structures in each scan.
 Once a Biomedisa model is trained, the entire pipeline runs from multi-specimen input to reconstructed anatomical structures for each specimen in a fraction of the time and resources required for traditional analysis.
@@ -232,6 +238,7 @@ Due to their inherent contrast difference with the surrounding tissue, the struc
 ### Micro-CT Imaging
 
 In a pilot study, we identified optimal scanning parameters to meet the constraints on total scanning time, resolution, and sample handling.
+
 To optimize for these constraints, we scanned all sticklebacks in batches of six fish in a custom-made 3D-printed sample holder per scan.
 This holder was designed in [OpenSCAD](https://openscad.org/) (OpenSCAD Developers; version 2021.01) and is available online, either directly as an [STL file for printing](https://github.com/TomoGraphics/Hol3Drs/blob/master/STL/Stickleback.Multiple.stl) or as a [(parameterized) OpenSCAD file](https://github.com/TomoGraphics/Hol3Drs/blob/master/Stickleback.Multiple.scad) for adaptation to other classes of samples.
 Both files are part of a library of 3D-printable sample holders for tomographic imaging [@doi:10.5281/zenodo.2587555].
@@ -327,7 +334,7 @@ One such interactive preview is [available online](https://htmlpreview.github.io
 
 After separation, the cropped image files were checked and rendered using 3D Slicer [@doi:10.1007/978-1-4614-7657-3_19] and the SlicerMorph extension [@doi:10.1111/2041-210X.13669].
 A subset of 51 specimens was chosen to create an initial training dataset.
-For these samples, individual elements of the branchial apparatus were rendered and cleaned by hand using a combination of thresholding and "Split Islands" tools to separate the pharyngobranchials, epibranchials, basibranchials, hypobranchials, and ceratobranchials as distinct labels (see Figure @fig:branchial_anatomy).
+For each of these samples, individual elements of the branchial apparatus were rendered and cleaned by hand using a combination of thresholding and "Split Islands" tools to separate the pharyngobranchials, epibranchials, basibranchials, hypobranchials, and ceratobranchials as distinct labels (see Figure @fig:branchial_anatomy).
 
 ![Example of branchial anatomy with CB1 and CB2 highlighted in pink.
   Abbreviations: PB = pharyngobranchials, EB = epibranchials, BB = basibranchials, HB = hypobranchials, CB = ceratobranchials.](images/Branchial_Figure.png){#fig:branchial_anatomy}
@@ -348,11 +355,16 @@ To demonstrate the effectiveness of this tool and the importance of 3D morphomet
 Once trained, we applied the Biomedisa segmentation model to the remaining 160 specimens, resulting in segmentation labels for all structures in the branchial apparatus.
 
 As a test and for subsequent analysis, only the first and second right ceratobranchials were chosen for comparison between all samples.
-The segmentation labels corresponding to these bones were imported together for landmarking using Stratovan Checkpoint [@checkpoint].
+The segmentation labels corresponding to these bones were imported together for landmarking using Stratovan Checkpoint [@checkpoint] and 3D Slicer [@doi:10.1007/978-1-4614-7657-3_19].
 
-Type II landmarks were placed at the ends of each bone, with semi-landmarks between them to cover the curvature axes along the bone (see Figure @fig:landmarks).
-In total, seven landmarks and four semi-landmark curves (two containing 20 semi-landmarks, two containing 15) were placed on the first ceratobranchial (CB1), and five landmarks and three semi-landmark curves (one containing 20 semi-landmarks, two containing 15) were placed on the second ceratobranchial (CB2).
-Equal distances were ensured using the `resample_curves` function in 3D Slicer.
+
+Type II landmarks were placed at the ends of each bone, with semil-andmarks between them to cover the curvature axes along the bone (see Figure @fig:landmarks).
+
+In total, seven landmarks and four semilandmark curves (two containing 20 semi-landmarks, two containing 15) were placed on the first ceratobranchial (CB1), and five landmarks and three semilandmark curves (one containing 20 semilandmarks, two containing 15) were placed on the second ceratobranchial (CB2).
+Fixed landmarks were transferred using the "Import/Apply Template" function in Stratovan Checkpoint, and checked for manual inspection and adjustment prior to export.
+Once curves and fixed points were established, equal distances of semi-landmark curves were ensured using the `resample_curves` function in 3D Slicer.
+While this particular workflow was chosen for time-efficiency, accuracy, and user familiarity, any preferred 3D landmarking program should be able to replicate these results.
+
 
 ![Landmarks on the dorsal (a) and ventral (b) surfaces.](images/Landmark_Figure.png){#fig:landmarks}
 
@@ -422,14 +434,14 @@ Selection and individual rendering of branchial structures takes between 10 and 
 The speed and quality of these data allow us to study the internal branchial anatomy on a large scale and in situ, without the need for fine dissection.
 
 After GPA alignment, we quantified the shape differences among all scanned fish for this project.
-Changes due to allometry (using centroid size or standard length as the size metric) were significant but slight, explaining only a small fraction of shape variation (CB1: *p* = 0.001, $R^2$ = 0.03246; CB2: *p* = 0.001, $R^2$ = 0.06220) in both bones.
-Both linear models and PCA results suggest that the lakes themselves---and not overarching categories of ecotype or sex---drive most of the shape variation in these bones (CB1: *p* = 0.001, $R^2$ = 0.09463; CB2: *p* = 0.001, $R^2$ = 0.11039).
-However, the variation in the first ceratobranchial was significantly associated with different ecotypes, although the effect size was small (*p* = 0.009, $R^2$ = 0.02056), with substantial overlap in the resulting shape space (see Figure @fig:pca_cb1).
+Changes due to allometry (using centroid size or standard length as the size metric) were significant but slight, explaining only a small fraction of shape variation (CB1: *p* = 0.001, *R^2* = 0.03246; CB2: *p* = 0.001, *R^2* = 0.06220) in both bones.
+Both linear models and PCA results suggest that the lakes themselves---and not overarching categories of ecotype or sex---drive most of the shape variation in these bones (CB1: *p* = 0.001, *R^2* = 0.09463; CB2: *p* = 0.001, *R^2* = 0.11039).
+However, the variation in the first ceratobranchial was significantly associated with different ecotypes, although the effect size was small (*p* = 0.009, *R^2* = 0.02056), with substantial overlap in the resulting shape space (see Figure @fig:pca_cb1).
 
 ![PCA of CB1 colored by lake ecotype.
   Warps are indicated at the extremes of each axis by vectors drawn from a mean shape (red).](images/PCA_CB1_Plot.png){#fig:pca_cb1}
 
-On the other hand, the second ceratobranchial bone showed equally small but significant changes associated with the ecotype (*p* = 0.001, $R^2$ = 0.0377).
+On the other hand, the second ceratobranchial bone showed equally small but significant changes associated with the ecotype (*p* = 0.001, *R^2* = 0.0377).
 The differences between benthic and limnetic specimens are, for this bone, clearly divergent in shape space (see Figure @fig:pca_cb2).
 
 ![PCA of CB2 colored by lake ecotype.
@@ -591,6 +603,10 @@ The result of the resampling is also available [online](https://github.com/habi/
 #### R; Morphometrics
 
 The R script we used to assess the morphometrics is available [online on GitHub](https://github.com/habi/sticklebacks-manuscript/blob/main/content/scripts/Morphometrics_RScript.R).
+
+#### Supplementary Figure
+
+![PCA of CB1 colored by lake ecotype, highlighting PC1 and PC4. Warps are indicated at the extremes of each axis by vectors drawn from a mean shape (red).](images/Supplementary_Figure_CB1_CB4.pngg){#fig:supplement1}
 
 
 ## References {.page_break_before}
