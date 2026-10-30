@@ -72,7 +72,6 @@ The extraction of the anatomical structures, landmarking and geometric morphomet
 > Line 119: You mention that different voltage and current were used for one scan, due to operator error.
 > How did that affect the scan quality and subsequent segmentation?
 
-#50
 There's no discernible difference in the outcome, since the segmentation is based on thresholding the datasets.
 This threshold was tweaked for each of the specimens anyways.
 The scan quality was not affected visibly, but the scan did take a little bit longer though.
