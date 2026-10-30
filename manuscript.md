@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2026-10-30" />
   <meta name="citation_publication_date" content="2026-10-30" />
   <meta property="article:published_time" content="2026-10-30" />
-  <meta name="dc.modified" content="2026-10-30T16:54:48+00:00" />
-  <meta property="article:modified_time" content="2026-10-30T16:54:48+00:00" />
+  <meta name="dc.modified" content="2026-10-30T17:03:12+00:00" />
+  <meta property="article:modified_time" content="2026-10-30T17:03:12+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/028463252501bc5bb7c4c09d098eaa8cc6d2f3e5/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/028463252501bc5bb7c4c09d098eaa8cc6d2f3e5/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/028463252501bc5bb7c4c09d098eaa8cc6d2f3e5/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/9dbbba3a15d172c622925236168fa873cf818a98/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/9dbbba3a15d172c622925236168fa873cf818a98/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/9dbbba3a15d172c622925236168fa873cf818a98/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,11 +80,11 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/028463252501bc5bb7c4c09d098eaa8cc6d2f3e5/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/9dbbba3a15d172c622925236168fa873cf818a98/))
 was generated
-from [habi/sticklebacks-manuscript@0284632](https://github.com/habi/sticklebacks-manuscript/tree/028463252501bc5bb7c4c09d098eaa8cc6d2f3e5)
+from [habi/sticklebacks-manuscript@9dbbba3](https://github.com/habi/sticklebacks-manuscript/tree/9dbbba3a15d172c622925236168fa873cf818a98)
 on October 30, 2026 and contains 6468 words.
-Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...028463252501bc5bb7c4c09d098eaa8cc6d2f3e5#files_bucket).
+Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...9dbbba3a15d172c622925236168fa873cf818a98#files_bucket).
 </em></small>
 
 
@@ -609,6 +609,7 @@ The R script we used to assess the morphometrics is available [online on GitHub]
 ![PCA of first ceratobranchial, colored by lake ecotype, highlighting PC1 and PC4.
   Warps are indicated at the extremes of each axis by vectors drawn from a mean shape (red).
   PC4 accounts for 4.33% of the variation.](images/Supplementary_Figure_PC1_vs_PC4.png){#fig:pc4}
+
 
 ## References {.page_break_before}
 
