@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2026-10-30" />
   <meta name="citation_publication_date" content="2026-10-30" />
   <meta property="article:published_time" content="2026-10-30" />
-  <meta name="dc.modified" content="2026-10-30T13:26:24+00:00" />
-  <meta property="article:modified_time" content="2026-10-30T13:26:24+00:00" />
+  <meta name="dc.modified" content="2026-10-30T15:31:11+00:00" />
+  <meta property="article:modified_time" content="2026-10-30T15:31:11+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/e8b369d01c448c5257dc24a636c4f65ec308e716/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/e8b369d01c448c5257dc24a636c4f65ec308e716/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/e8b369d01c448c5257dc24a636c4f65ec308e716/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/55ff1b85a3e6067bab65b24d045aa99c7200754b/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/55ff1b85a3e6067bab65b24d045aa99c7200754b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/55ff1b85a3e6067bab65b24d045aa99c7200754b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,11 +80,11 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/e8b369d01c448c5257dc24a636c4f65ec308e716/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/55ff1b85a3e6067bab65b24d045aa99c7200754b/))
 was generated
-from [habi/sticklebacks-manuscript@e8b369d](https://github.com/habi/sticklebacks-manuscript/tree/e8b369d01c448c5257dc24a636c4f65ec308e716)
-on October 30, 2026 and contains 5981 words.
-Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...e8b369d01c448c5257dc24a636c4f65ec308e716#files_bucket).
+from [habi/sticklebacks-manuscript@55ff1b8](https://github.com/habi/sticklebacks-manuscript/tree/55ff1b85a3e6067bab65b24d045aa99c7200754b)
+on October 30, 2026 and contains 6219 words.
+Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...55ff1b85a3e6067bab65b24d045aa99c7200754b#files_bucket).
 </em></small>
 
 
@@ -244,6 +244,7 @@ In total, we performed 38 scans, each scan usually containing up to six fish in 
 
 The relevant details of each scan are summarized in a table in the [Supplementary Materials]; a short overview of the scanning parameters is given below.
 The X-ray source was set to a voltage of 60 kV and a current of around 110 µA for all scans except one, where we used a source voltage of 49 kV and 159 µA due to operator error.
+Setting different voltage and current for one scan had no discernible influence on the downstream pipeline, since the segmentation of the features of interest was performed semi-automatically, as explained later.
 For each scan, we recorded a set of 3601 projections per stack (each projection with a size of 3000 by 2000 pixels) at 0.1° intervals over a 360° sample rotation.
 Every single projection was exposed for about a second.
 Because of the length of the fish, we had to acquire so-called stacked scans; on average, we scanned three fields of view along the rotation axis of the sample holder.
@@ -394,7 +395,6 @@ Algorithmically/automatically cropping the large datasets based on the axial MIP
 | Segmentation                     | 10--15 minutes |         15 seconds |  ~60   x |
 
 Table: Comparison of time estimates between manual and pipeline runs.
-       Note that it would have been infeasible to scan each fish separately.
        On average, we scanned 5.66 fish per scan for a total scan time of 15 days, 23 hours, 50 minutes, and 24 seconds.
        The manual scan time per single fish is thus calculated to be five times longer than scanning six fish at a time in a single scan and separating them after the fact.
        Also note that the manual splitting does *not* produce the accompanying log file and figures for double-checking as specified below. {#tbl:timing}
@@ -450,11 +450,23 @@ The differences in the second ceratobranchial appear to be driven by divergence 
 
 ## Discussion {.page_break_before}
 
+### Data acquisition
+
+The main driver for developing our pipeline was efficient use of both machine-time and human time in this project.
+
+At the voxel size needed to unambiguously resolve the branchial skeleton (less than 20 µm, as determined in pilot experiments), the time needed for acquisition of a tomographic scan is determined by the number of projections and exposure time, not by the number of fish in the field of view.
+Efficiently "filling" the field of view of the scanner with as many fish as possible in one scan enabled us to scan a total of 215 unique specimens in 38 different scans with a total scan duration of 16 days.
+If we would have scanned each specimen individually, we would have required about 90 days of scan time; while not impossible, this would have increased the intstrument time and its costs severalfold.
+
+Scanning up to six fish at once makes efficient use of the scanner, but does shift the effort to the processing of the data, since each scan has to be separated into single-fish datasets.
+Since our pipeline fully automates the separation (see [Fish Separation]) reproducibly, this shift of effort is cost-effective.
+
 ### Pipeline and Efficiency
 
-Once all components of the pipeline are combined, running a simple script enables automatic reconstruction, thresholding, and segmentation of stickleback specimens.
+Once all components of the pipeline are combined, running a simple script enables automatic separation, thresholding, and segmentation of stickleback specimens.
 Requiring minimal active user input, all automated pipeline steps are substantially faster than equivalent manual processing by an expert operator.
 This reproducible pipeline allows high-throughput sampling and population-scale analysis of stickleback specimens.
+Adding more (multi-specimen) scans to the pipeline does *not* increase the time users have to spend on manually separating these scan into single fish regions.
 
 The imaging and separation step is easy to generalize to either other micro-CT setups or other species and specimens.
 As long as the specimens show up as distinct blobs in the MIP (see Figure @fig:labels), our pipeline can reproducibly separate these blobs into a cropped dataset for any further processing, enabling a general, reproducible, and high-throughput micro-CT workflow in biology and other fields.
