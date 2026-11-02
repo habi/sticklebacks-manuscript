@@ -30,9 +30,9 @@ end
 fishid --> Training
 Reporting --> manubot
 
-subgraph segmentation["Biomedisa"]
+subgraph segmentation["Machine learning"]
     Training --> regions@{ shape: procs, label: "Segmented regions" }
-    regions --> jaws@{ shape: procs, label: "Brachial bones" }
+    regions --> jaws@{ shape: procs, label: "Branchial bones" }
     jaws --> rakers@{ shape: procs, label: "Ceratobranchials" }
 end
 
