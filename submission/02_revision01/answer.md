@@ -102,7 +102,6 @@ Fixed in https://github.com/habi/sticklebacks-manuscript/commit/a11b1d6674a7956d
 
 > Line 132: Which tool/software was used to render Figure 2?
 
-#54
 We visualized the multi-specimen scan with Dragonfly 3D World.
 This is now mentioned in the figure caption.
 
