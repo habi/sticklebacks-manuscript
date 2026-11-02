@@ -65,7 +65,7 @@ The extraction of the anatomical structures, landmarking and geometric morphomet
 
 We never really looked at the figure in detail in print, only on screen.
 You are absolutely correct that the text is too small.
-We updated the figure showing the workflow in a so-called swimlane layout, giving it more breathing room.
+We updated the figure showing the workflow in a so-called swimlane layout, giving it more breathing room and improved the caption.
 
 > Line 98ff: “DNA was extracted […], and subsequent PCR genotyping […] was performed […]”.
 > Why is this relevant to this study?
