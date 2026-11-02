@@ -98,7 +98,7 @@ So the labels are now highlighted in yellow in the Dragonfly visualization, high
 
 > Line 130: I assume it should be “Figure 4” not just “4”.
 
-Fixed in https://github.com/habi/sticklebacks-manuscript/commit/a11b1d6674a7956df60d6bd66f4d4eec1dc0f9ca
+Thanks for noting this, we've fixed the internal reference.
 
 > Line 132: Which tool/software was used to render Figure 2?
 
