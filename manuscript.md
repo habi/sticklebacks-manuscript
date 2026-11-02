@@ -6,7 +6,7 @@ keywords:
 - stickleback
 - ecology
 lang: en-US
-date-meta: '2026-10-30'
+date-meta: '2026-11-02'
 author-meta:
 - David Haberthür
 - R. Benjamin Sulser
@@ -24,11 +24,11 @@ header-includes: |
   <meta name="citation_title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
   <meta property="og:title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
   <meta property="twitter:title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
-  <meta name="dc.date" content="2026-10-30" />
-  <meta name="citation_publication_date" content="2026-10-30" />
-  <meta property="article:published_time" content="2026-10-30" />
-  <meta name="dc.modified" content="2026-10-30T17:03:12+00:00" />
-  <meta property="article:modified_time" content="2026-10-30T17:03:12+00:00" />
+  <meta name="dc.date" content="2026-11-02" />
+  <meta name="citation_publication_date" content="2026-11-02" />
+  <meta property="article:published_time" content="2026-11-02" />
+  <meta name="dc.modified" content="2026-11-02T14:34:06+00:00" />
+  <meta property="article:modified_time" content="2026-11-02T14:34:06+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/9dbbba3a15d172c622925236168fa873cf818a98/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/9dbbba3a15d172c622925236168fa873cf818a98/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/9dbbba3a15d172c622925236168fa873cf818a98/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/b5a16f717c99ed5c179b7d20f5149c6fac9b852c/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/b5a16f717c99ed5c179b7d20f5149c6fac9b852c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/b5a16f717c99ed5c179b7d20f5149c6fac9b852c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,11 +80,11 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/9dbbba3a15d172c622925236168fa873cf818a98/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/b5a16f717c99ed5c179b7d20f5149c6fac9b852c/))
 was generated
-from [habi/sticklebacks-manuscript@9dbbba3](https://github.com/habi/sticklebacks-manuscript/tree/9dbbba3a15d172c622925236168fa873cf818a98)
-on October 30, 2026 and contains 6468 words.
-Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...9dbbba3a15d172c622925236168fa873cf818a98#files_bucket).
+from [habi/sticklebacks-manuscript@b5a16f7](https://github.com/habi/sticklebacks-manuscript/tree/b5a16f717c99ed5c179b7d20f5149c6fac9b852c)
+on November 2, 2026 and contains 6561 words.
+Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...b5a16f717c99ed5c179b7d20f5149c6fac9b852c#files_bucket).
 </em></small>
 
 
@@ -211,7 +211,6 @@ Although efficient in terms of beam time and number of individuals per scan, mul
 This creates a bottleneck for large-scale research where sizable multiscans bloat processing time, in addition to potential risks regarding errors with specimen splitting and specimen identification.
 
 Furthermore, once partitioned, small structures can be manually rendered by a skilled investigator using segmentation tools such as 3D Slicer [@doi:10.1007/978-1-4614-7657-3_19; @doi:10.1111/2041-210X.13669], yet the time and resources required per sample make this approach, too, infeasible for population-level and evolutionary studies.
-Accessing these structures instead typically requires destruction of the mandibular and cranial anatomy, preventing subsequent analyses of these features.
 
 This project aims to address these gaps, demonstrating a novel pipeline for automatic splitting and rendering of multi-specimen scans for mass sampling, creating a dataset with consistent parameters that can be used as input for downstream machine learning approaches [@doi:10.1038/s41467-020-19303-w] to aid in the segmentation of individual bony structures in each scan.
 Once a Biomedisa model is trained, the entire pipeline runs from multi-specimen input to reconstructed anatomical structures for each specimen in a fraction of the time and resources required for traditional analysis.
@@ -219,7 +218,12 @@ Once a Biomedisa model is trained, the entire pipeline runs from multi-specimen 
 
 ## Materials & Methods {.page_break_before}
 
-![Workflow overview](images/workflow.png){#fig:workflow}
+![Overview of the workflow, from fish collection to the morphometric case study.
+  After collection and storage, up to 6 fish were mounted in a custom-made sample holder and imaged together in 38 multi-specimen micro-CT scans.
+  Tomographic reconstructions were checked in a preview notebook, while another notebook generated the numbers reported in this manuscript.
+  The main block of work of the notebooks is in the separation notebook, where the multi-specimen reconstruction stacks are automatically separated into 215 single-fish datasets.
+  A segmentation model trained on a subset of 51 manually labelled fish segmented the branchial bones of all fish, from which the ceratobranchials were extracted and landmarked for the morphometric analysis of our case study.
+  ](images/workflow.png){#fig:workflow}
 
 ### Sample Procurement and Preparation
 
@@ -550,12 +554,14 @@ Finally, the 3D analysis step of the pipeline allows for insights from 3D data t
 No generative AI was used to generate the scientific content of the manuscript.
 
 Large language models were used to:
+
 - identify spelling and grammatical errors
 - to suggest wording for individual sentences during the revision
 - to assist with writing and debugging the analysis code,
 - and to obtain feedback from [the Stanford Agentic Reviewer](https://paperreview.ai/).
 
 The authors reviewed all suggestions, selectively incorporated them, and take full responsibility for the content of the manuscript and the code.
+
 
 ## Competing Interests
 
