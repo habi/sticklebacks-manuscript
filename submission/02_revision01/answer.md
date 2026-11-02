@@ -244,6 +244,9 @@ So we not only believe the pipeline to be clade-agnostic (and have already shown
 
 > Line 71-72: « Furthermore, accessing these structures requires destruction of the mandibular and cranial anatomy, preventing subsequent analyses of these features” refers to the destructive dissection of the structures of interest and does not fit in this paragraph where the authors describe the non-destructive benefits of micro-CT.
 
+We improved that paragraph while addressing the comments on the efficiency of our pipeline.
+This line confirming the non-destructiveness of micro-CT imaging stated at the beginning of the paragraph was removed in the course of this improvement.
+
 > Figure 1: The font is too small, please consider editing a more readable figure.
 > The sample positioning in the holder is a required step in the workflow that should be visible between sample collection and microCT imaging.
 
