@@ -222,24 +222,32 @@ We apologize for the error in supplementary material uploads, we have attached t
 > This paper presents a pipeline that make it possible to analyse a large corpus (215 specimens) of fishes with geometric morphometrics on internal structures only accessible with micro-CT.
 > The time constraints that led to develop the pipeline are well explained.
 > Most of the pipeline runs with Jupyter notebooks and open libraries or softwares, which is appreciated when a project involves different collaborators in an OpenScience approach.
+
+We thank the anonymous reviewer for these kind general comments.
+
 > The paper lacks a few references to protocols aiming at optimizing the workflow of CTscanning multiple specimens, focusing on either mounting specimens together or automatizating the post-processing the data, or both.
 > Discussion would benefit from comparisons with those protocols (fishes in the #ScanAllFish project, other high-throughput micro-CT scanning for 3D morphometrics studies).
 > The pipeline could be further optimized, some steps are redundant or not justified enough.
 > The code relies too much on hard-written adjustments or manual corrections, especially in the separation notebook.
 
+Thanks to your detailed input on the (manual) resorting of the labels we improved the separation pipeline.The radial resorting of the detected labels is as robust as possible and now makes the separation step fully automated (except noting which fish is in which petal of the multi-specimen holder).
+We honestly thank the reviewer to bring this point forward and were able to greatly improve the quality and robustness of the separation pipeline, without altering the output of the pipeline.
+
 > As such, the pipeline is sometimes confusing.
 > I suggest some revisions to clarify the authors' approach and make the pipeline more robust.
 > The claim that the pipeline is replicable and clade-agnostic should be adapted to the amount of revisions that can be done to reach this objective.
 
-TODO: Clade-agnostic pipeline is added.
-Answer this question/suggestion in detail.
+With the improvement on radially resorting the detected labels and robustly corresponding those to radially aligned petals in a multi-specimen sample holder (with configurable amounts of petals, of which we used 6 except for one scan) we improved the robustness of the separation notebook even more.
+We honestly believe there is *nothing* blocking any person that can produce tomographic scans of any multi-object scans in a radially sorted multi-object holder to apply our notebook to their data.
+When the objects scanned are possible to be labeled on the axial MIP image of the scan, individual objects can be extracted from this scan in a reproducible fashion, with the only manual input needed being the connection of object ID to petal number (which anyways has to be noted in a lab notebook) and the amount of petals in the multi-object holder.
+So we not only believe the pipeline to be clade-agnostic (and have already shown that by applying the separation notebook in other projects as mentioned in the discussion and comment to the editor), but also believe the *separation* pipeline to be object-agnostic, as long as the objects centers are possible to be separated on the axial MIP of the multi-object scan.
 
 > Line 71-72: « Furthermore, accessing these structures requires destruction of the mandibular and cranial anatomy, preventing subsequent analyses of these features” refers to the destructive dissection of the structures of interest and does not fit in this paragraph where the authors describe the non-destructive benefits of micro-CT.
 
 > Figure 1: The font is too small, please consider editing a more readable figure.
 > The sample positioning in the holder is a required step in the workflow that should be visible between sample collection and microCT imaging.
 
-Reviewer1 also noted that the font size is too small, we've updated the figure.
+Reviewer 1 also noted that the font size is too small, we've updated the figure.
 As 'sample positioning' is *always* a step in microCT imaging, we deliberately omitted it from the workflow and would like to keep omitting it to not clutter the workflow image more.
 
 > Line 83: the title seems incomplete
