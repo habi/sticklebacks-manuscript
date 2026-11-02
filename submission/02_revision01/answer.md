@@ -63,7 +63,9 @@ The extraction of the anatomical structures, landmarking and geometric morphomet
 > Figure 1 is impossible to read.
 > Please enlarge the text and maybe add some description in the caption.
 
-#45
+We never really looked at the figure in detail in print, only on screen.
+You are absolutely correct that the text is too small.
+We updated the figure showing the workflow in a so-called swimlane layout, giving it more breathing room.
 
 > Line 98ff: “DNA was extracted […], and subsequent PCR genotyping […] was performed […]”.
 > Why is this relevant to this study?
