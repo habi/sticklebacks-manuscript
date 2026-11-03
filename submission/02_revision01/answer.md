@@ -51,6 +51,10 @@ The extraction of the anatomical structures, landmarking and geometric morphomet
 >- SPROUT
 >- Existing protocols in ImageJ/Fiji
 
+Thank you for the suggestions! We have added to our discussion of additional tools in the main manuscript. To respond directly for each point raised: 
+ - SAM/SAM2/SAM 3D, while excellent for 2D images, fall rather short in non-medical datasets (as demonstrated quite nicely in Isensee et al's preprint on nnInteractive, Figure 7: http://arxiv.org/abs/2503.08373 )
+ - While we use Slicer and associated tools in this mansucript, the creation of labels for the training step can be done with any program that can create segementation labels (including but not limited to SlicerNNInteractive, Avizo and Dragonfly tools, BounTI, and SPROUT). We see this growing field as complementary to our work, as it decreases the time required to build quality segmentations necessary for Biomedisa training (indeed, the preprint for SPROUT does this directly: https://www.biorxiv.org/content/10.1101/2024.11.22.624847v2).
+
 # Reviewer(s)' Comments to Author:
 ## Reviewer: 1
 
@@ -229,9 +233,6 @@ We apologize for the error in supplementary material uploads, we have attached t
 > As such, the pipeline is sometimes confusing.
 > I suggest some revisions to clarify the authors' approach and make the pipeline more robust.
 > The claim that the pipeline is replicable and clade-agnostic should be adapted to the amount of revisions that can be done to reach this objective.
-
-TODO: Clade-agnostic pipeline is added.
-Answer this question/suggestion in detail.
 
 > Line 71-72: « Furthermore, accessing these structures requires destruction of the mandibular and cranial anatomy, preventing subsequent analyses of these features” refers to the destructive dissection of the structures of interest and does not fit in this paragraph where the authors describe the non-destructive benefits of micro-CT.
 
