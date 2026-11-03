@@ -40,9 +40,18 @@ The separation pipeline itself is *defined* in the presented code.
 The extraction of the anatomical structures, landmarking and geometric morphometric analysis *are* conducted using established software, but are essential parts of the presented pipeline, albeit neither novel nor unique as you correctly state.
 
 > As discussed by Reviewer 2, the pipeline is underexplained and, as mentioned by Reviewer 1 the discussion is brief and does not sufficiently discuss the pipeline, its advantages or disadvantages.
+The explanation of the pipeline lives in the code, which is available online; nonetheless we added some more text in the Materials & Methods section.
+
 > There is general lack of detail throughout the text: the introduction does not mention alternative methods or sufficiently explain why this pipeline was developed.
 > It is true that time and resources are required to segment scans, and these factors compound as the number of specimens increases, but what does this pipeline solve uniquely or better than existing methods.
-> 
+
+One of the main benefits we see in our separation pipeline is the end-to-end reproducibility, e.g. if it's run again on the acquired data we get exactly the same output (separated specimen regions).
+In the course of implementing the revisions for this manuscript we changed the resorting/labeling logic of the extracted regions to make that part of the pipeline *fully* automatic, and ran the splitting/cropping notebook again on the full input data on our local machine.
+The results was bit-for-bit the same as what was present on the network folder shared by all co-authors.
+This strengthens our argument on the automated separation of the individual fish from the multi-specimen scans.
+As it is now, the separation part of the pipeline is applicable to any multi-object scan where the objects can be separated in the top-down axial view of the original to split these objects into individual datasets.
+We concede that the further steps in our pipeline are generally agnostic to the software used, but the chosen combination of SlicerMorph and Biomedisa offers great scalability and is keeps all parts of the workflow in Free and open-source software.
+
 > There are many pieces of software used for processing scans, separating out specimens and segmentation, which could warrant discussion, including:
 >- Segment Anything Model (SAM) and SAM2
 >- Computer Vision and Deep Learning pipelines in AVIZO, Dragonfly and Slicer
@@ -50,6 +59,17 @@ The extraction of the anatomical structures, landmarking and geometric morphomet
 >- BounTI
 >- SPROUT
 >- Existing protocols in ImageJ/Fiji
+
+The editor is absolutely correct that there are many pieces of software that can be used for processing scans, separating out specimens and segmentation.
+The processing and separating part is done fully automated in our pipeline, which we see as a great help to facilitate high-througput studies in a reproducible fashion.
+
+The segmentation part can be performed with many different software, as correctly stated, too.
+All the mentioned items are somehow connected, and could act interchangeably in our model.
+SPROUT, BounTI and nnInteractive are especially interesting, as SPROUT was inspired by BounTI, and SPROUT can use nnInteractive as its prediction backend.
+
+Biomedisas deep learning mode mode can in principle be combined with any of the above as a pre- or post-processing step, and works particularly well as an online platform with no local install or on the cluster infrastructure of the University of Bern, so the choice of it was driven by reaching a local optimum in our workflow.
+
+We explain the reproducibility and automation of the presented notebooks in more detail and expanded the discussion on alternatives.
 
 # Reviewer(s)' Comments to Author:
 ## Reviewer: 1
