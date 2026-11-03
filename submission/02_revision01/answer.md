@@ -305,11 +305,11 @@ We thus would like to kindly refrain from ading this to our timing table, since 
 > The printing material can be documented as it needs to be radio-transparent enough.
 > What are the benefits of the petal design when the central zone needs to be later removed in the separation process ?
 
-#68
-- A preview (temporary, *without* the connector to the machine) is available here: https://openscad-studio.pages.dev/s/ue5Aw3bW, the "original" copy is shown in the de-anonymized GitHub repository.
-- Formlabs clear resin details: https://media.formlabs.com/m/5fd5e7daf1460058/original/-ENUS-Clear-Resin-V5-TDS.pdf
-  The material *is* radiotransparent enough, otherwise our process would not have worked...
-- Petal design is a balance between ease of generation, printing optimization and handling.
+A preview (temporary, *without* the connector to the machine) is available here: https://openscad-studio.pages.dev/s/ue5Aw3bW, the "original" copy is shown in the de-anonymized GitHub repository.
+The grayish outline in Figure 2. shows the petal structure of the multi-specimen holder.
+As repeated later, the sample holder is made from UV-hardened, 3D-printed polymer resin on a Formlabs printer.
+The material ([datasheet](https://media.formlabs.com/m/5fd5e7daf1460058/original/-ENUS-Clear-Resin-V5-TDS.pdf)) *is* radiotransparent enough, otherwise our process would not have worked, the chosen petal design is a balance between ease of generation, printing optimization and handling.
+Additionally, the petal design offers a distinct radial separation of the objects to be scanned, enabling a fully automated separation of the individual objects in the multi-object scan as presented in our pipeline.
 
 > Line 126: Can the authors elaborate on why they chose not to apply any beam hardening correction .
 > How did the beam hardening was checked not to have an impact on the segmentation of small bony structures close to denser structures like otoliths or remaining dense particles ?
@@ -542,6 +542,10 @@ We edited the caption(s) according to the Writefull suggestion and completely re
 > Those are the expectations to rightfully claim that the pipeline is replicable and clade-agnostic as stated in the abstract.
 > The authors should consider the amount of revisions needed to achieve this statement or correct the statement with general guidelines on what would be the limitations of the pipeline (dimensions of the specimens, conservation (dry vs in solution), only vertebrates, etc.).
 > I would recommand minor revisions and a more restricted description of the taxonomic groups that the pipeline can handle in the conclusion.
+
+The separation step is *not* relying on the contrast between the specimen and a radio-transparent sample holder, but only relying on the contrast between the specimens and the background.
+The sample holder we used is a UV-hardened, 3D-printed polymer which has approximately the same density as the soft tissue of the fish, which we were *not* interested in in this study.
+As long as the individual specimen are possible to be detected on the top-down axial MIP image, our pipeline can separate them out of the multi-specimen scan.
 
 Since updating the assignment of detected sample region to angular region in the sample holder the whole pipeline generalizes even more to any sample holder whose compartments are arranged at known angles around the rotation axis.
 As long as the multiple specimen *centers* can be separated on the axial MIP image, their cropped regions can be extracted from the multi-specimen scan (with the detected outline of the region plus a buffer, if necessary).
