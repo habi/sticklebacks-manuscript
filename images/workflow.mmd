@@ -5,7 +5,7 @@ config:
         fontSize: 18pt
 ---
 %% Render the thing at https://mermaid.live/ for best results
-swimlane-beta TB
+swimlane-beta
 
 subgraph collection["Collection"]
     Planning --> Sampling --> Storing
@@ -13,25 +13,29 @@ end
 
 Storing --> setup
 
-subgraph imaging["micro-CT"]
-    setup["Preparation"] --> scan@{ shape: procs, label: "Multi-specimen scans\n(N = 38)" }
+subgraph imaging["micro-CT imaging"]
+    setup["Preparation & Setup"] --> scan@{ shape: procs, label: "Multi-specimen scans\n(N = 38)" }
     scan --> rec@{ shape: procs, label: "Reconstructions" }
 end
 
-rec --> preview["Preview, Quality control"]
+scan --> Reporting --> manubot
+rec <--> preview["Preview, Quality control"]
 
-subgraph notebooks["Notebooks"]
+subgraph notebooks["Jupyter notebooks"]
+    Reporting
     preview --> separation["Fish separation"]
-    separation --> fishid@{ shape: procs, label: "Fish datasets (N = 215)" }
-    preview --> rec
-    preview --> Reporting   
+
+    separation --> individualfish@{ shape: procs, label: "Fish datasets (N = 215)" }
+
+    msnotebook["Minimal cropping"]
 end
 
-fishid --> Training
-Reporting --> manubot
+individualfish -->|N=51| labeling["Manual labels (SlicerMorph)"]
+individualfish -->|N=215| apply
+individualfish --> msnotebook -->|N=215|   ms
 
 subgraph segmentation["Machine learning"]
-    Training --> regions@{ shape: procs, label: "Segmented regions" }
+    labeling --> training["Train ML model"] --> apply["Apply ML model (Biomedisa)"] --> regions@{ shape: procs, label: "Segmented regions" }
     regions --> jaws@{ shape: procs, label: "Branchial bones" }
     jaws --> rakers@{ shape: procs, label: "Ceratobranchials" }
 end
@@ -42,8 +46,10 @@ subgraph analysis["Case study"]
     morph["Morphometric Analysis"]
 end
 
-subgraph manuscript["Manuscript"]
+subgraph manuscript["Output"]
     manubot@{ shape: doc, label: "Manuscript" }
+    ms["MorphoSource"]
 end
 
 morph --> manubot
+manubot ~~~ Reporting
