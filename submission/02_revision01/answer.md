@@ -332,9 +332,10 @@ Keep in mind that 5 x 10^4 voxels that show the difference are *very* few compar
 Plotting the gray value profile mean across the horizontal plastic wall of the multi-specimen holder with increased contrast shows that this gray value varies from 18--23, and---if looking really hard---a very slight cupping might be visible in the completely uniform material at *no* beam hardening correction.
 The coefficient of variation of the gray value mean through the wall is at its lowest when the beam hardening correction is performed at 20% and increases greatly when the correction is increased to 100%, showing pronounced over-correction.
 Additionally, since the beam hardening correction in NRecon corrects for a radial gray value cupping effect, the influence of the correction on the specimens aligned radially in the multi-specimen holder at nearly identical radii is even more negligible.
-In all honesty, we still believe that *no* beam hardening correction was necessary for the reconstruction of these datasets.
+In all honesty, we believe that *no* beam hardening correction was necessary for the reconstruction of these datasets.
 
-![Beam hardening correction value influence on gray value](BeamHardening.gif)
+![Animation of beam hardening correction value influence on the gray value along a horizontal line in the sample holder.
+ An (animated) copy of the file is available on [imgur](https://imgur.com/a/6MsCcyw).](BeamHardening.gif)
 
 > Preview notebook
 > A general remark on the preview notebook is that it is not clear what scanning issues are detected then that could not have been seen while reconstructing the data in Nrecon.
