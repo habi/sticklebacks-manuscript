@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2026-11-03" />
   <meta name="citation_publication_date" content="2026-11-03" />
   <meta property="article:published_time" content="2026-11-03" />
-  <meta name="dc.modified" content="2026-11-03T14:52:59+00:00" />
-  <meta property="article:modified_time" content="2026-11-03T14:52:59+00:00" />
+  <meta name="dc.modified" content="2026-11-03T16:26:39+00:00" />
+  <meta property="article:modified_time" content="2026-11-03T16:26:39+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/cd15161629df46257a135032643a1276fe658d50/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/cd15161629df46257a135032643a1276fe658d50/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/cd15161629df46257a135032643a1276fe658d50/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/2c0e9c4f7a4a89b2c6d6079ac453a3c913b37dde/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/2c0e9c4f7a4a89b2c6d6079ac453a3c913b37dde/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/2c0e9c4f7a4a89b2c6d6079ac453a3c913b37dde/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,11 +80,11 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/cd15161629df46257a135032643a1276fe658d50/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/2c0e9c4f7a4a89b2c6d6079ac453a3c913b37dde/))
 was generated
-from [habi/sticklebacks-manuscript@cd15161](https://github.com/habi/sticklebacks-manuscript/tree/cd15161629df46257a135032643a1276fe658d50)
-on November 3, 2026 and contains 6561 words.
-Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...cd15161629df46257a135032643a1276fe658d50#files_bucket).
+from [habi/sticklebacks-manuscript@2c0e9c4](https://github.com/habi/sticklebacks-manuscript/tree/2c0e9c4f7a4a89b2c6d6079ac453a3c913b37dde)
+on November 3, 2026 and contains 6603 words.
+Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...2c0e9c4f7a4a89b2c6d6079ac453a3c913b37dde#files_bucket).
 </em></small>
 
 
@@ -229,7 +229,7 @@ Once a Biomedisa model is trained, the entire pipeline runs from multi-specimen 
 
 The samples used for this study were collected from six of the eight source lakes used for the FITNESS project in the region of Cook Inlet, Alaska.
 Fish were collected using unbaited minnow traps in two separate field seasons, the first from May 26--June 10, 2023, and the second from May 25--June 11, 2024.
-Specimens were collected from a random sample of up to 30 fish from each lake, under Alaska Department of Fish and Game (ADFG) permits SF2023-030 and P-24-015 for 2023 and 2024, respectively.
+Specimens were collected from a random sample of up to 30 fish from each lake per sampling year, under Alaska Department of Fish and Game (ADFG) permits SF2023-030 and P-24-015 for 2023 and 2024, respectively.
 The fish were euthanized with MS-222, photographed, labeled, and preserved in 10% formalin in individual bags, all under McGill University Animal Use Protocol (AUP) MCGL-8265.
 At the end of each field season, samples were shipped from Anchorage (AK, USA) to Bern (BE, CH), where they were stored until scanning.
 The total number of fish for each lake was: 52 from Watson Lake (benthic), 48 from Finger Lake (benthic), 46 from Spirit Lake (limnetic), 35 from South Rolly Lake (limnetic), 20 from Walby Lake (benthic), and 14 from Tern Lake (benthic) for a total of 215 specimens.
@@ -355,7 +355,7 @@ We only performed manual touch-ups on the resulting segmentation output where th
 #### Landmarking of Models
 
 To demonstrate the effectiveness of this tool and the importance of 3D morphometry to answer evolutionary questions, we quantified the shape differences of the ceratobranchial bones.
-Once trained, we applied the Biomedisa segmentation model to the remaining 160 specimens, resulting in segmentation labels for all structures in the branchial apparatus.
+Once trained, we applied the Biomedisa segmentation model to the remaining specimens, resulting in segmentation labels for all structures in the branchial apparatus.
 
 As a test and for subsequent analysis, only the first and second right ceratobranchials were chosen for comparison between all samples.
 The segmentation labels corresponding to these bones were imported together for landmarking using Stratovan Checkpoint [@checkpoint] and 3D Slicer [@doi:10.1007/978-1-4614-7657-3_19].
@@ -421,13 +421,16 @@ The automated extraction produced 215 `nrrd` files with a total size of 385 GB (
 The exported regions varied in physical size, resulting in datasets with a median anteroposterior length of 4250 px and median x- and y-dimensions of 650 px (due to the rotation of the fish, the x- and y-dimensions do not map to anatomical directions).
 These cropped regions include the region of the originally acquired data where the 3D-printed label is visible, aiding in end-to-end reproducibility of the extraction process.
 
-We have uploaded further cropped datasets of each analyzed fish to MorphoSource (see [Supplementary Materials]).
+We have uploaded further cropped datasets of each imaged fish to MorphoSource (N=215, see [Supplementary Materials]).
 These further cropped datasets include only the region of the fish in anteroposterior direction, drop the 3D-printed label region and have a median length of approximately 3000 pixels; the x- and y-directions are the same as for the previously mentioned datasets.
 
 ### Thresholding
 
 The separated fish were segmented based on a simple multi-Otsu thresholding algorithm.
 This simple segmentation was sufficient to extract all of the features we analyzed further, and we did not have to employ more advanced thresholding methods in our separation pipeline.
+
+19 specimen were excluded from further analysis due to them being damaged and/or being clearly juvenile fish.
+For the remaining datasets (N=196) we applied the Biomedisa segmentation model, resulting in segmentation labels for all structures in the branchial apparatus.
 Selection and individual rendering of branchial structures takes between 10 and 15 minutes; the segmentation of an average Biomedisa render takes 15 seconds once trained (see Table @tbl:timing).
 
 ### Analysis
@@ -494,7 +497,7 @@ However, we caution that the greater number of benthic lakes and specimens avail
 This pipeline will allow for more extensive analysis from future sampling years to confirm these findings.
 
 Within CB2, limnetic fish (and particularly those from South Rolly Lake) appear to have narrower, less keeled bones than benthic fish.
-The muscles that attach to the ceratobranchials (*m. adductor branchialis*, *m. abductor filament*, and *m. obliquus ventralis*) are attached along the lateral surfaces of these bones.
+The muscles that attach to the ceratobranchials (*m. adductor branchialis*, *m. abductor filamenti*, and *m. obliquus ventralis*) are attached along the lateral surfaces of these bones.
 The increased surface area observed in benthic fish may provide a greater area for muscle attachment, which could enhance the ability of fish to abduct these structures during water filtration [@doi:10.1007/s10228-004-0251-5; @hdl:2268/14698].
 Although the dietary analyses of these fish are still ongoing, these findings suggest that the South Rolly population may have unique dietary specializations and would be expected to feed differently than the fish from the other lakes in this study.
 In terms of reintroduction, populations from this lake might be expected to fare better than others in terms of limnetic specialization.
