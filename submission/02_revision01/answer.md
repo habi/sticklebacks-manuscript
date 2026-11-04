@@ -60,16 +60,21 @@ We concede that the further steps in our pipeline are generally agnostic to the 
 >- SPROUT
 >- Existing protocols in ImageJ/Fiji
 
+Thank you for the suggestions!
 The editor is absolutely correct that there are many pieces of software that can be used for processing scans, separating out specimens and segmentation.
 The processing and separating part is done fully automated in our pipeline, which we see as a great help to facilitate high-througput studies in a reproducible fashion.
 
-The segmentation part can be performed with many different software, as correctly stated, too.
-All the mentioned items are somehow connected, and could act interchangeably in our model.
-SPROUT, BounTI and nnInteractive are especially interesting, as SPROUT was inspired by BounTI, and SPROUT can use nnInteractive as its prediction backend.
+Some details on the mentioned software:
 
-Biomedisas deep learning mode mode can in principle be combined with any of the above as a pre- or post-processing step, and works particularly well as an online platform with no local install or on the cluster infrastructure of the University of Bern, so the choice of it was driven by reaching a local optimum in our workflow.
+- All the mentioned items are somehow connected, and could act interchangeably in our model.
+- SPROUT, BounTI and nnInteractive are especially interesting, as SPROUT was inspired by BounTI, and SPROUT can use nnInteractive as its prediction backend.
+- SAM/SAM2/SAM 3D, while excellent for 2D images, fall rather short in non-medical datasets (as demonstrated quite nicely in Isensee et al's preprint on nnInteractive, [@Isensee2025, Figure 7]).
+- While we use Slicer and associated tools in this mansucript, the creation of labels for the training step can be done with any program that can create segementation labels (including but not limited to Slicer, NNInteractive, Avizo and Dragonfly tools, BounTI, and SPROUT).
+  We see this growing field as complementary to our work, as it decreases the time required to build quality segmentations necessary for Biomedisa training (indeed, the preprint for SPROUT [@He2025] does this directly).
 
-We explain the reproducibility and automation of the presented notebooks in more detail and expanded the discussion on alternatives.
+So, Biomedisas deep learning mode mode can in principle be combined with any of the above as a pre- or post-processing step, and works particularly well as an online platform with no local install or on the cluster infrastructure of the University of Bern, so the choice of it was driven by reaching a local optimum in our workflow.
+
+We explain the reproducibility and automation of the presented notebooks in more detail and expanded the discussion on alternatives and additional tools.
 
 # Reviewer(s)' Comments to Author:
 ## Reviewer: 1
@@ -78,7 +83,7 @@ We explain the reproducibility and automation of the presented notebooks in more
 > There are just a few points I found difficult to follow, and clarifying them would be beneficial for future readers.
 > A somewhat more significant criticism concerns the discussion: it is very brief and focuses primarily on the biological results, while neglecting the method or pipeline described.
 > A more detailed discussion of the advantages and disadvantages, as well as the potential applications and limitations of the method (when it works, when it does not, and why), would be helpful for the readership.
->Perhaps some of the following questions could be addressed in this context:
+> Perhaps some of the following questions could be addressed in this context:
 
 > Figure 1 is impossible to read.
 > Please enlarge the text and maybe add some description in the caption.
@@ -92,7 +97,7 @@ We updated the figure showing the workflow in a so-called swimlane layout, givin
 
 In our pilot analysis of stickelback ceratobranchial shapes, sexual dimorphism is a potential explanatory factor.
 Sex assignments from preserved specimens can often be difficult; using genomic data gives a less ambiguous designation.
-We have rewritten this line to better explain this segment.  
+We have rewritten this line to better explain this segment.
 
 > Line 119: You mention that different voltage and current were used for one scan, due to operator error.
 > How did that affect the scan quality and subsequent segmentation?
@@ -257,11 +262,18 @@ We honestly thank the reviewer to bring this point forward and were able to grea
 > I suggest some revisions to clarify the authors' approach and make the pipeline more robust.
 > The claim that the pipeline is replicable and clade-agnostic should be adapted to the amount of revisions that can be done to reach this objective.
 
+<<<<<<< HEAD
 With the improvement on radially resorting the detected labels and robustly corresponding those to radially aligned petals in a multi-specimen sample holder (with configurable amounts of petals, of which we used 6 except for one scan) we improved the robustness of the separation notebook even more.
 We honestly believe there is *nothing* blocking any person that can produce tomographic scans of any multi-object scans in a radially sorted multi-object holder to apply our notebook to their data.
 When the objects scanned are possible to be labeled on the axial MIP image of the scan, individual objects can be extracted from this scan in a reproducible fashion, with the only manual input needed being the connection of object ID to petal number (which anyways has to be noted in a lab notebook) and the amount of petals in the multi-object holder.
 So we not only believe the pipeline to be clade-agnostic (and have already shown that by applying the separation notebook in other projects as mentioned in the discussion and comment to the editor), but also believe the *separation* pipeline to be object-agnostic, as long as the objects centers are possible to be separated on the axial MIP of the multi-object scan.
 
+||||||| 0284632
+TODO: Clade-agnostic pipeline is added.
+Answer this question/suggestion in detail.
+
+=======
+>>>>>>> origin/edits_sulserrb
 > Line 71-72: « Furthermore, accessing these structures requires destruction of the mandibular and cranial anatomy, preventing subsequent analyses of these features” refers to the destructive dissection of the structures of interest and does not fit in this paragraph where the authors describe the non-destructive benefits of micro-CT.
 
 We improved that paragraph while addressing the comments on the efficiency of our pipeline.
@@ -506,7 +518,7 @@ Since such a reduction would also decrease the vertical field of view, we would 
 
 Technically, one single fish would fit into a FOV even smaller than half the chosenw width.
 In pilot experiments we found that we need to scan the fish with a voxel size of smaller than 20 µm to safely resolve the features of interest.
-Since we also *wanted* to have tomographic scans of the whole anteroposterior length of the fish (for follow-up studies) we would have needed to acquire the so-called  stacked scans of the fish anyways, as the single fish are well approximated by a long and thin cylinder, and such a cylinder cannot be scanned at 20 µm otherwise.
+Since we also *wanted* to have tomographic scans of the whole anteroposterior length of the fish (for follow-up studies) we would have needed to acquire the so-called stacked scans of the fish anyways, as the single fish are well approximated by a long and thin cylinder, and such a cylinder cannot be scanned at 20 µm otherwise.
 The amount of stacks limits the field of view of the scan in the chosen (and ideal) scanning configuration for the fish.
 As a consequence, we were able to "fill" the *lateral* field of view of the machine with more fish, e.g. by filling a multi-specimen sample holder with several fish, and acquirding the data of many (6) fish together in one scan.
 Even at the (wrong) estimate of 5 per fish we would have scanned for ~45 days (215 x 5h), three times longer than the actual scanning time we accumulated for the present data.
