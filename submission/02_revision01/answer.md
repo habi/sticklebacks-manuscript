@@ -553,3 +553,5 @@ As long as the individual specimen are possible to be detected on the top-down a
 Since updating the assignment of detected sample region to angular region in the sample holder the whole pipeline generalizes even more to any sample holder whose compartments are arranged at known angles around the rotation axis.
 As long as the multiple specimen *centers* can be separated on the axial MIP image, their cropped regions can be extracted from the multi-specimen scan (with the detected outline of the region plus a buffer, if necessary).
 We added details on the clade-agnosticity (if that's even a word) in the discussion section.
+
+# References
