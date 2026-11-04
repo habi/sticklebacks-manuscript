@@ -28,7 +28,7 @@ to make a PDF with nicely styled quotes (hat tip to ChatGPT for whipping up the 
 
 Thanks for this supportive comment, appreciated.
 We have applied the same pipeline to different species already, namely *Spinachia spinachia* (with co-authors of this manuscript), and Lake Victoria and Neotropical cichlid species (manuscript in preparation, with other collaborators), so replicability and clade-agnostics are given.
-In addition, the pipeline is deterministic, meaning that based on the same input images (reconstructed stack) it always produces the same outputs (cropped single-species datasets with the same size/extent, ensuring predictability and repeatability.
+In addition, the pipeline is deterministic, meaning that based on the same input images (reconstructed stack) it always produces the same outputs (cropped single-specimen datasets with the same size/extent), ensuring predictability and repeatability.
 From the "theoretical" standpoint we see absolutely no issue in applying the exact pipeline to multi-*object* scans where the scanned objects are separable in the top-down maximum intensity projection.
 We added details on the agnosticity of our pipeline to the scanned objects in the discussion section.
 
@@ -45,12 +45,12 @@ The explanation of the pipeline lives in the code, which is available online; no
 > There is general lack of detail throughout the text: the introduction does not mention alternative methods or sufficiently explain why this pipeline was developed.
 > It is true that time and resources are required to segment scans, and these factors compound as the number of specimens increases, but what does this pipeline solve uniquely or better than existing methods.
 
-One of the main benefits we see in our separation pipeline is the end-to-end reproducibility, e.g. if it's run again on the acquired data we get exactly the same output (separated specimen regions).
+One of the main benefits we see in our separation pipeline is the end-to-end reproducibility, i.e. if it's run again on the acquired data we get exactly the same output (separated specimen regions).
 In the course of implementing the revisions for this manuscript we changed the resorting/labeling logic of the extracted regions to make that part of the pipeline *fully* automatic, and ran the splitting/cropping notebook again on the full input data on our local machine.
-The results was bit-for-bit the same as what was present on the network folder shared by all co-authors.
+The results were bit-for-bit the same as what was present on the network folder shared by all co-authors.
 This strengthens our argument on the automated separation of the individual fish from the multi-specimen scans.
 As it is now, the separation part of the pipeline is applicable to any multi-object scan where the objects can be separated in the top-down axial view of the original to split these objects into individual datasets.
-We concede that the further steps in our pipeline are generally agnostic to the software used, but the chosen combination of SlicerMorph and Biomedisa offers great scalability and is keeps all parts of the workflow in Free and open-source software.
+We concede that the further steps in our pipeline are generally agnostic to the software used, but the chosen combination of SlicerMorph and Biomedisa offers great scalability and keeps all parts of the workflow in Free and open-source software.
 
 > There are many pieces of software used for processing scans, separating out specimens and segmentation, which could warrant discussion, including:
 >- Segment Anything Model (SAM) and SAM2
@@ -62,17 +62,17 @@ We concede that the further steps in our pipeline are generally agnostic to the 
 
 Thank you for the suggestions!
 The editor is absolutely correct that there are many pieces of software that can be used for processing scans, separating out specimens and segmentation.
-The processing and separating part is done fully automated in our pipeline, which we see as a great help to facilitate high-througput studies in a reproducible fashion.
+The processing and separating part is done fully automated in our pipeline, which we see as a great help to facilitate high-throughput studies in a reproducible fashion.
 
 Some details on the mentioned software:
 
 - All the mentioned items are somehow connected, and could act interchangeably in our model.
 - SPROUT, BounTI and nnInteractive are especially interesting, as SPROUT was inspired by BounTI, and SPROUT can use nnInteractive as its prediction backend.
 - SAM/SAM2/SAM 3D, while excellent for 2D images, fall rather short in non-medical datasets (as demonstrated quite nicely in Isensee et al's preprint on nnInteractive, [@Isensee2025, Figure 7]).
-- While we use Slicer and associated tools in this mansucript, the creation of labels for the training step can be done with any program that can create segementation labels (including but not limited to Slicer, NNInteractive, Avizo and Dragonfly tools, BounTI, and SPROUT).
+- While we use Slicer and associated tools in this manuscript, the creation of labels for the training step can be done with any program that can create segementation labels (including but not limited to Slicer, NNInteractive, Avizo and Dragonfly tools, BounTI, and SPROUT).
   We see this growing field as complementary to our work, as it decreases the time required to build quality segmentations necessary for Biomedisa training (indeed, the preprint for SPROUT [@He2025] does this directly).
 
-So, Biomedisas deep learning mode mode can in principle be combined with any of the above as a pre- or post-processing step, and works particularly well as an online platform with no local install or on the cluster infrastructure of the University of Bern, so the choice of it was driven by reaching a local optimum in our workflow.
+So, Biomedisas deep learning mode can in principle be combined with any of the above as a pre- or post-processing step, and works particularly well as an online platform with no local install or on the cluster infrastructure of the University of Bern, so the choice of it was driven by reaching a local optimum in our workflow.
 
 We explain the reproducibility and automation of the presented notebooks in more detail and expanded the discussion on alternatives and additional tools.
 
@@ -95,7 +95,7 @@ We updated the figure showing the workflow in a so-called swimlane layout, givin
 > Line 98ff: “DNA was extracted […], and subsequent PCR genotyping […] was performed […]”.
 > Why is this relevant to this study?
 
-In our pilot analysis of stickelback ceratobranchial shapes, sexual dimorphism is a potential explanatory factor.
+In our pilot analysis of stickleback ceratobranchial shapes, sexual dimorphism is a potential explanatory factor.
 Sex assignments from preserved specimens can often be difficult; using genomic data gives a less ambiguous designation.
 We have rewritten this line to better explain this segment.
 
@@ -115,10 +115,10 @@ The merging does correct for minute differences in rotation and usually works ab
 
 > Line 129: I don’t understand what you mean by “shown extracted”.
 
-As a non-native English writer we've chosen the wrong word here.
+As a non-native English writer (one of the first authors), we chose the wrong word here.
 The labels are "extracted" from the MIP by image processing and shown as (yellow) highlights over the image to enable quality assurance.
 We reformulated the sentence and specified where the labels are shown/highlighted.
-This also lead to a change in the 3D visualization, as the red labels there were simply an "artistic" choice; the labels are now also yellow in that figure.
+This also led to a change in the 3D visualization, as the red labels there were simply an "artistic" choice; the labels are now also yellow in that figure.
 So the labels are now highlighted in yellow in the Dragonfly visualization, highlighted yellow by our script and simply visible in the napari visualization of the extracted region.
 
 > Line 130: I assume it should be “Figure 4” not just “4”.
@@ -141,7 +141,7 @@ Removed by making it more precise, e.g. not "simple labeling", but "connected re
 > But looking at your Figure 4, it seems that fish 2 and 3 are touching.
 > So how is this separation process still possible?
 
-Your assumptions about the fish not overlapping in are correct in three-dimensional space.
+Your assumptions about the fish not overlapping are correct in three-dimensional space.
 Due to slight warping of the 3D-printed sample holder (due to age, temperature and x-ray exposure), it is not aligned completely vertical in the machine during a scan.
 This is visible in the (automatically stitched) preview image (from 3 subscans) shown below, where the sample holder is "tilted" by approximately 3.25° off the vertical.
 Even though the fish are located in a dedicated compartment in the sample holder, the tail of the fish in compartment 2 is just about overlapping the head of the fish in compartment 3.
@@ -156,10 +156,10 @@ As a consequence, this also means that one extracted region could contain a smal
 > Were they assigned manually to the correct fish ID (which I assume are the yellow numbers)?
 
 Your assumption is correct, the labels in the black circles are the ones assigned by `skimage.label` in raster order from top left to bottom right.
-The yellow numbers in the left panel of the Fig. 4--6 (and the ones that were red in in Fig. 2 (now yellow, too)) are the ones "imprinted" on the sample holder by the 3D printer, simply highlighted on this image by a step in our script (not described in detail in the manuscript).
+The yellow numbers in the left panel of the Fig. 4--6 (and the ones that were red in Fig. 2 (now yellow, too)) are the ones "imprinted" on the sample holder by the 3D printer, simply highlighted on this image by a step in our script (not described in detail in the manuscript).
 Assignment/Matching of compartment number to detected label to fish ID was performed manually on the first half of the scans and performed in the script for the second half of the scans.
 The matching for the second half of the scans was performed by writing a small text file matching compartment number to fish ID, where the script then read this file.
-We tried to improve the explanation in the manuscript text, but deliberately left out how the mapping is performed exactly to now over-complicate the explanation.
+We tried to improve the explanation in the manuscript text, but deliberately left out how the mapping is performed exactly to not over-complicate the explanation.
 
 > Line 169: I don’t think skimage.measure.regionprops is “labeling” the data.
 > It only provides properties of the regions labeled by skimage.measure.label.
@@ -195,7 +195,7 @@ The smallest export is 486 x 722 x 1743 pixels (x, y, z), the largest 1322 x 862
 The smallest sized crop is a crop from a scan that one is actually from a scan that didn't turn out good (see https://anonymous.4open.science/r/sticklebacks-01A4/logfiles/Sticklebucket_14/README.md), but was nonetheless the one we used for extracting the rakers.
 The same folder does contain datasets spanning the whole fish, so the *median* size of the cropped regions is a better estimate of the sizes.
 
-While compiling these numbers we found that the numbers on dataset *size* were off (based on earlier export of the data), the total size is 385 GB instead of the previously mentioned 64 GB..
+While compiling these numbers we found that the numbers on dataset *size* were off (based on earlier export of the data), the total size is 385 GB instead of the previously mentioned 64 GB.
 
 For the analysis in Biomedisa, all datasets were further *cropped* to only include the head, so no resampling was performed by Biomedisa.
 
@@ -254,7 +254,7 @@ We thank the anonymous reviewer for these kind general comments.
 > The pipeline could be further optimized, some steps are redundant or not justified enough.
 > The code relies too much on hard-written adjustments or manual corrections, especially in the separation notebook.
 
-Thanks to your detailed input on the (manual) resorting of the labels we improved the separation pipeline.The radial resorting of the detected labels is as robust as possible and now makes the separation step fully automated (except noting which fish is in which petal of the multi-specimen holder).
+The radial resorting of the detected labels is as robust as possible and now makes the separation step fully automated (except noting which fish is in which petal of the multi-specimen holder).
 We honestly thank the reviewer to bring this point forward and were able to greatly improve the quality and robustness of the separation pipeline, without altering the output of the pipeline.
 
 > As such, the pipeline is sometimes confusing.
@@ -285,20 +285,20 @@ We are sorry for that, as in our original manuscript the section title was alway
 > Sample positioning
 > Extra information is needed regarding the specimens.
 > The authors describe individual bags with a formalin solution and later show pictures of tubes holding a fish and some liquid.
->How where the fishes placed into the sample holder to ensure that they won’t create a movement artefact and/or dry as the scans duration is 10h?
+> How where the fishes placed into the sample holder to ensure that they won’t create a movement artefact and/or dry as the scans duration is 10h?
 > There is a mention of foam in the notebook, can the authors elaborate ?
 
 The specimen were stored in single, labeled (tea) bags in formalin-filled jars at the Institute of Ecology and Evolution, several fish together in one jar.
 For scanning, Ben Sulser singled the fish out into labeled falcon tubes and brought the fish over to the Institute of Anatomy.
-For scanning, David Haberthür took out each fish from its tube, wrapped it lightly in Basotect (a melamine resin foam, which is virtually transparen to x-rays, and quite stable) and put the fish heads-down into the compartments, noting which fish ID went into which compartment in the lab book.
+For scanning, David Haberthür took out each fish from its tube, wrapped it lightly in Basotect (a melamine resin foam, which is virtually transparent to x-rays, and quite stable) and put the fish heads-down into the compartments, noting which fish ID went into which compartment in the lab book.
 After putting all 6 fish for one scan into the holder, the foam was moistened with formalin and the holder was sealed with Parafilm.
-Wrapping the fish in Basotect avoids movement artefacts, and moistening the foam and sealing the holder with Parafilm avoids any drying.
+Wrapping the fish in Basotect avoids movement artifacts, and moistening the foam and sealing the holder with Parafilm avoids any drying.
 We added a paragraph to detail this into the manuscript and thank the reviewer for bringing up these missing details.
 
 > The sample positioning and reporting in the lab book is a time-consuming task that should be taken into account in the time estimates in Table 1.
 
 Putting the fish into the sample holder, reporting in the lab book and sample positioning really didn't take longer than 30 minutes for each scan, making it a negligible contribution to the scanning time.
-We thus would like to kindly refrain from ading this to our timing table, since this is technically included in *every* tomographic scan, not only in our manuscript.
+We thus would like to kindly refrain from adding this to our timing table, since this is technically included in *every* tomographic scan, not only in our manuscript.
 
 > There is focus in this study on the feeding structures and the branchial anatomy but it is not explained why the authors chose to scan the whole fishes with all the consequences in terms of scanning time and post-processing heavy datasets.
 > From Figure 3., we can see that almost half the dataset is outside these regions of interest, so probably two fields of view instead of three along the rotation axis would have been enough.
@@ -318,14 +318,14 @@ Additionally, the petal design offers a distinct radial separation of the object
 > Line 126: Can the authors elaborate on why they chose not to apply any beam hardening correction .
 > How did the beam hardening was checked not to have an impact on the segmentation of small bony structures close to denser structures like otoliths or remaining dense particles ?
 
-We performed pilot scans for this study and did *not* observe classic classic cupping beam hardening artefacts, as specified for example in [@Orhan2020, section 4.2.1.1].
-Faint streaking artefacts close to the teeth and otoliths are visible in the reconstructions, but only discernible by eye if the contrast/brightness of the reconstructions is increased.
+We performed pilot scans for this study and did *not* observe classic cupping beam hardening artifacts, as specified for example in [@Orhan2020, section 4.2.1.1].
+Faint streaking artifacts close to the teeth and otoliths are visible in the reconstructions, but only discernible by eye if the contrast/brightness of the reconstructions is increased.
 But we also did *not* fully study the influence of no or very moderate beam hardening correction through the full pipeline and kindly refrain from doing so.
 The influence of the beam hardening correction as explained below on the segmentation and cleaning of the elements of the branchial apparatus using a combination of thresholding and "Split Islands" as specified in the manuscript are in our opinion *completely* negligible.
 
 Nonetheless, now that you highlighted this potential issue we looked at it in a bit more detail.
-We thus reconstructed the head-region of one multi-specimen scan (`BucketOfFish_H`) with beam hardening correction varying from 0% to 100% in 10% steps (NRecon only allows for setting the correcion between 0% and 100%, no further parameters can be tuned).
-Unsing a custom made notebook (`BeamHardening.ipynb` in the (anonymized) repository), we extracted both the histograms of the regions (2001 x 3064 x 3064 px) and plotted the gray value mean across the horizontal wall of the holder in one of the reconstructions.
+We thus reconstructed the head-region of one multi-specimen scan (`BucketOfFish_H`) with beam hardening correction varying from 0% to 100% in 10% steps (NRecon only allows for setting the correction between 0% and 100%, no further parameters can be tuned).
+Using a custom made notebook (`BeamHardening.ipynb` in the (anonymized) repository), we extracted both the histograms of the regions (2001 x 3064 x 3064 px) and plotted the gray value mean across the horizontal wall of the holder in one of the reconstructions.
 
 The gray value histograms of the regions reconstructed with different beam hardening corrections *do* show differences, but the discernible differences are present in the gray value ranges around 20 (for the plastic in the holder mostly) and around 170 (the bone region).
 The differences in the bone region are only very minute and really only visible/discernible in the plot due to the logarithmic scale, as seen below.
@@ -491,7 +491,7 @@ We thank the reviewer for flagging this.
 
 Honestly, the *main* motivation for the development of the script are efficient use of human time and machine time.
 Scanning them in the multi-specimen holder made for efficient use of machine time, technically it would *not* have been infeasible to scan each fish individually.
-Even if all co-authors are working at the University of Bern, as part of the [Microscopy Imaging Center](https://www.mic.unibe.ch/), a compensation for scanning time was needed, and efficient use of both time and monetary resources has to lead to scanning several fish at the desired voxel size in a single scan.
+Even if all co-authors are working at the University of Bern, as part of the [Microscopy Imaging Center](https://www.mic.unibe.ch/), a compensation for scanning time was needed, and efficient use of both time and monetary resources led us to scan several fish at the desired voxel size in a single scan.
 
 From the start we knew that the project needs scans of *many* fish, but at first only envisioned about 100 fish.
 Most parts of the processing script were written after having scanned the first batch, the second batch was "simply" treated by the already written separation script with only minimal human input needed.
@@ -507,11 +507,11 @@ Since such a reduction would also decrease the vertical field of view, we would 
 
 >From the MIP, it seems that a single fish would fit in half the width of the field of view, thus a scan duration for a single fish would be 5h while keeping the same voxel size and exposition time.
 
-Technically, one single fish would fit into a FOV even smaller than half the chosenw width.
+Technically, one single fish would fit into a FOV even smaller than half the chosen width.
 In pilot experiments we found that we need to scan the fish with a voxel size of smaller than 20 µm to safely resolve the features of interest.
 Since we also *wanted* to have tomographic scans of the whole anteroposterior length of the fish (for follow-up studies) we would have needed to acquire the so-called stacked scans of the fish anyways, as the single fish are well approximated by a long and thin cylinder, and such a cylinder cannot be scanned at 20 µm otherwise.
 The amount of stacks limits the field of view of the scan in the chosen (and ideal) scanning configuration for the fish.
-As a consequence, we were able to "fill" the *lateral* field of view of the machine with more fish, e.g. by filling a multi-specimen sample holder with several fish, and acquirding the data of many (6) fish together in one scan.
+As a consequence, we were able to "fill" the *lateral* field of view of the machine with more fish, e.g. by filling a multi-specimen sample holder with several fish, and acquiring the data of many (6) fish together in one scan.
 Even at the (wrong) estimate of 5 per fish we would have scanned for ~45 days (215 x 5h), three times longer than the actual scanning time we accumulated for the present data.
 
 > Can the authors explain what is included in the 17 minutes manual time needed to split a single fish scan of a single fish ?
@@ -520,7 +520,7 @@ The manual time was measured for the manual extraction of the fish regions as de
 We loaded the PNG stack of the reconstructions of one multi-specimen scan and generated the axial MIP of this stack.
 We then used the selection tool to mark rectangular regions on this MIP and copied the coordinates into the original, full stack.
 Using the cropping function we then cropped the stack into a new dataset and saved this dataset to disk.
-Repeating this step 6 times for one dataset and all the steps for another dataset took us a about 35 minutes, resulting in the stated time of 17 minutes.
+Repeating this step 6 times for one dataset and all the steps for another dataset took us about 35 minutes, resulting in the stated time of 17 minutes.
 
 > Line 290: It would be great to provide the average size of a cropped .nrrd dataset for a single fish.
 
