@@ -190,13 +190,12 @@ We have reworded our text to ensure clarity in this section.
 
 You are correct, that the the x- and y-dimensions of the cropped datasets are approximately 500 voxels.
 We looked at the sizes of the exported files in detail.
-The smallest export is 486 x 722 x 1743 pixels (x, y, z), the largest 1322 x 862 x 5398 voxels, and the median export is 512 x 840 x 3857 voxels.
+The smallest export is 486 x 722 x 1743 pixels (x, y, z), the largest 1322 x 862 x 5398 voxels, and the median export is approximately 4200 × 650 × 650 voxels and are stored as uncompressed 8-bit volumes.
 
 The smallest sized crop is a crop from a scan that one is actually from a scan that didn't turn out good (see https://anonymous.4open.science/r/sticklebacks-01A4/logfiles/Sticklebucket_14/README.md), but was nonetheless the one we used for extracting the rakers.
 The same folder does contain datasets spanning the whole fish, so the *median* size of the cropped regions is a better estimate of the sizes.
 
 While compiling these numbers we found that the numbers on dataset *size* were off (based on earlier export of the data), the total size is 385 GB instead of the previously mentioned 64 GB..
-The cropped regions have a median size of 4250 × 650 × 650 voxels (anteroposterior length × x × y) and are stored as uncompressed 8-bit volumes.
 
 For the analysis in Biomedisa, all datasets were further *cropped* to only include the head, so no resampling was performed by Biomedisa.
 
