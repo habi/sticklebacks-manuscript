@@ -388,7 +388,7 @@ Once all the resorting cells in the notebook were written, a re-run of the noteb
 Following the reviewer's suggestion, we replaced this manual step with a deterministic assignment and thus greatly improved both the reproducibility and quality of our code.
 We are thankful for this suggestion of the reviewer, as the ideas presented in the code here are being used in other follow-up projects and make these more robust, too.
 
-Each detected region is now assigned to a compartment based on the angle of the regions centroid around the rotation axis of the scan, which closely mathces the center of the radially symmetric 3D-printed sample holder.
+Each detected region is now assigned to a compartment based on the angle of the regions centroid around the rotation axis of the scan, which closely matches the center of the radially symmetric 3D-printed sample holder.
 The function flags scans where two regions are assigned to the same compartment or where a region deviates considerably from the nominal direction of its compartment, and it writes a control image showing the assigned compartment number of each region.
 Applied to all the scan again, this automatic assignment reproduces the manually corrected order as before, so *none* of the extracted datasets or the downstream analyses change.
 The notebook has been updated in the repository, which is still accessible anonymized and linked in the manuscript..
