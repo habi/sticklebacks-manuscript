@@ -6,7 +6,7 @@ keywords:
 - stickleback
 - ecology
 lang: en-US
-date-meta: '2026-11-03'
+date-meta: '2026-11-04'
 author-meta:
 - David Haberthür
 - R. Benjamin Sulser
@@ -24,11 +24,11 @@ header-includes: |
   <meta name="citation_title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
   <meta property="og:title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
   <meta property="twitter:title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
-  <meta name="dc.date" content="2026-11-03" />
-  <meta name="citation_publication_date" content="2026-11-03" />
-  <meta property="article:published_time" content="2026-11-03" />
-  <meta name="dc.modified" content="2026-11-03T16:26:39+00:00" />
-  <meta property="article:modified_time" content="2026-11-03T16:26:39+00:00" />
+  <meta name="dc.date" content="2026-11-04" />
+  <meta name="citation_publication_date" content="2026-11-04" />
+  <meta property="article:published_time" content="2026-11-04" />
+  <meta name="dc.modified" content="2026-11-04T08:23:49+00:00" />
+  <meta property="article:modified_time" content="2026-11-04T08:23:49+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/2c0e9c4f7a4a89b2c6d6079ac453a3c913b37dde/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/2c0e9c4f7a4a89b2c6d6079ac453a3c913b37dde/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/2c0e9c4f7a4a89b2c6d6079ac453a3c913b37dde/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/d267219eb2de34f8f16d601b76f9fddd08eb189a/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/d267219eb2de34f8f16d601b76f9fddd08eb189a/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/d267219eb2de34f8f16d601b76f9fddd08eb189a/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,11 +80,11 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/2c0e9c4f7a4a89b2c6d6079ac453a3c913b37dde/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/d267219eb2de34f8f16d601b76f9fddd08eb189a/))
 was generated
-from [habi/sticklebacks-manuscript@2c0e9c4](https://github.com/habi/sticklebacks-manuscript/tree/2c0e9c4f7a4a89b2c6d6079ac453a3c913b37dde)
-on November 3, 2026 and contains 6603 words.
-Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...2c0e9c4f7a4a89b2c6d6079ac453a3c913b37dde#files_bucket).
+from [habi/sticklebacks-manuscript@d267219](https://github.com/habi/sticklebacks-manuscript/tree/d267219eb2de34f8f16d601b76f9fddd08eb189a)
+on November 4, 2026 and contains 6831 words.
+Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...d267219eb2de34f8f16d601b76f9fddd08eb189a#files_bucket).
 </em></small>
 
 
@@ -245,6 +245,7 @@ In a pilot study, we identified optimal scanning parameters to meet the constrai
 To optimize for these constraints, we scanned all sticklebacks in batches of six fish in a custom-made 3D-printed sample holder per scan.
 This holder was designed in [OpenSCAD](https://openscad.org/) (OpenSCAD Developers; version 2021.01) and is available online, either directly as an [STL file for printing](https://github.com/TomoGraphics/Hol3Drs/blob/master/STL/Stickleback.Multiple.stl) or as a [(parameterized) OpenSCAD file](https://github.com/TomoGraphics/Hol3Drs/blob/master/Stickleback.Multiple.scad) for adaptation to other classes of samples.
 Both files are part of a library of 3D-printable sample holders for tomographic imaging [@doi:10.5281/zenodo.2587555].
+We printed the sample holder in Clear Resin (V5) on a stereolithography 3D printer (Form 4, Formlabs, Somerville, MA, USA), the hereby presented workflow is applicable to any other sample holder radially separating the objects of interest.
 
 Fish were taken out of single, labeled Falcon tubes, wrapped in melamine resin foam (virtually radiotransparent, but stable) and put head-first into the labeled compartments of the sample holder.
 The foam was moistened with formalin and the top of the sample holder was sealed with Parafilm to avoid drying of the fish during the tomographic imaging.
@@ -473,6 +474,8 @@ The main driver for developing our pipeline was efficient use of both machine ti
 At the voxel size needed to unambiguously resolve the branchial skeleton (less than 20 µm, as determined in pilot experiments), the time needed for acquisition of a tomographic scan is determined by the number of projections and exposure time, not by the number of fish in the field of view.
 Efficiently "filling" the field of view of the scanner with as many fish as possible in one scan enabled us to scan a total of 215 unique specimens in 38 different scans with a total scan duration of 16 days.
 If we would have scanned each specimen individually, we would have required about 90 days of scan time; while not impossible, this would have increased the instrument time and its costs severalfold.
+Scanning several specimens simultaneously is an established strategy for increasing throughput in morphometric micro-CT studies; Edie et al. scanned hundreds of bivalve shells by mounting four to five specimens per scan [@doi:10.3389/fevo.2023.1127756].
+Since their features of interest could be resolved with much coarser resolution projections, each of their scans took only minutes; in contrast, resolving the branchial skeleton of stickleback required scans of several hours, making multi-specimen scanning even more beneficial in our case.
 
 Scanning up to six fish at once makes efficient use of the scanner, but does shift the effort to the processing of the data, since each scan has to be separated into single-fish datasets.
 Since our pipeline automates the separation (see [Fish Separation]) reproducibly, this shift of effort is cost-effective.
@@ -482,11 +485,16 @@ Since our pipeline automates the separation (see [Fish Separation]) reproducibly
 Once all components of the pipeline are combined, running a simple script enables automatic separation, thresholding, and segmentation of stickleback specimens.
 Requiring minimal active user input, all automated pipeline steps are substantially faster than equivalent manual processing by an expert operator.
 This reproducible pipeline allows high-throughput sampling and population-scale analysis of stickleback specimens.
-Adding more (multi-specimen) scans to the pipeline does *not* increase the time users have to spend on manually separating these scans into single fish regions.
+
+In comparable multi-specimen workflows, the assignment of each specimen in the reconstructed volume relies on manually recorded scan maps and orientation markers.
+The hereby presented pipeline performs an automated and reproducible separation based on the MIP and the known holder geometry, so adding more (multi-specimen) scans to the pipeline does *not* increase the time users have to spend on manually separating these scans into single fish regions.
 
 The imaging and separation step is easy to generalize to either other micro-CT setups or other species and specimens.
 As long as the specimens show up as distinct blobs in the MIP (see Figure @fig:labels), our pipeline can reproducibly separate these blobs into a cropped dataset for any further processing, enabling a general, reproducible, and high-throughput micro-CT workflow in biology and other fields.
 We have already applied the same pipeline to multi-specimen scans of other fish species, namely *Spinachia spinachia* and several Lake Victoria and Neotropical cichlid species (manuscripts in preparation).
+
+In addition, while we have selected 3DSlicer as our main tool for creating training labels, alternative programs such as Avizo (Thermo Fisher Scientific) and Dragonfly [@doi:10.1017/S143192761800315X] in addition to promising segmentation tools such as nnInteractive [@doi:10.48550/arXiv.2503.08373] and SPROUT [@doi:10.1101/2024.11.22.624847] could also be used for this task as long as high quality labels can be generated. 
+Our chosen combination proved to be efficient for working with the large amount of datasets in a heterogeneous lab setting.
 
 ### Findings from Ceratobranchial Analysis
 
