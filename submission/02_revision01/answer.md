@@ -262,18 +262,11 @@ We honestly thank the reviewer to bring this point forward and were able to grea
 > I suggest some revisions to clarify the authors' approach and make the pipeline more robust.
 > The claim that the pipeline is replicable and clade-agnostic should be adapted to the amount of revisions that can be done to reach this objective.
 
-<<<<<<< HEAD
 With the improvement on radially resorting the detected labels and robustly corresponding those to radially aligned petals in a multi-specimen sample holder (with configurable amounts of petals, of which we used 6 except for one scan) we improved the robustness of the separation notebook even more.
 We honestly believe there is *nothing* blocking any person that can produce tomographic scans of any multi-object scans in a radially sorted multi-object holder to apply our notebook to their data.
 When the objects scanned are possible to be labeled on the axial MIP image of the scan, individual objects can be extracted from this scan in a reproducible fashion, with the only manual input needed being the connection of object ID to petal number (which anyways has to be noted in a lab notebook) and the amount of petals in the multi-object holder.
 So we not only believe the pipeline to be clade-agnostic (and have already shown that by applying the separation notebook in other projects as mentioned in the discussion and comment to the editor), but also believe the *separation* pipeline to be object-agnostic, as long as the objects centers are possible to be separated on the axial MIP of the multi-object scan.
 
-||||||| 0284632
-TODO: Clade-agnostic pipeline is added.
-Answer this question/suggestion in detail.
-
-=======
->>>>>>> origin/edits_sulserrb
 > Line 71-72: « Furthermore, accessing these structures requires destruction of the mandibular and cranial anatomy, preventing subsequent analyses of these features” refers to the destructive dissection of the structures of interest and does not fit in this paragraph where the authors describe the non-destructive benefits of micro-CT.
 
 We improved that paragraph while addressing the comments on the efficiency of our pipeline.
@@ -358,7 +351,6 @@ In all honesty, we believe that *no* beam hardening correction was necessary for
 
 #69
 Scans over a long time (BucketOfFish_A–U from 2023-11-10--2024-03-27 (about 4.5 months) and Sticklebucket_01–17 from 2025-04-08--2025-06-18 (about 2.5 months).
-
 
 - Not really 'scanning issues', but 'homogeneity issues' in reconstruction, as mostly these parameters are checked in the preview notebook.
 - Fish went back to other lab only after this QC step was done (even though the labs are really only 200 m apart)
