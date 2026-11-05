@@ -444,11 +444,8 @@ At the beginning of the project it was also not already decided how we are going
 > An estimate of the time needed to train the model in Biomedisa should be provided.
 > Those combined should be accounted for in the pipeline segmentation time indicated in Table 1.
 
-TODO:
-
-- @David thinks so, what are @Ben's thoughts?`I think, yes
-- Was this really one very long work-day?
-- How long did training take?
+The 10--15 minutes given for segmentation in Table 1 is indeed the time needed so segment a single fish, amounting to doing that in a *very* long work day for the 51 specimen used to create the initial training dataset.
+We did not time the time needed to train the machine learning model in Biomedisa, as the training endpoint is definde by quality parameters, and the training was run unattended, meaning no operator watching the process.
 
 > Landmarking of Models
 > The authors should explain why they did not use the SlicerMorph extension to place the landmarks and chose to use a proprietary software like Stratovan.
