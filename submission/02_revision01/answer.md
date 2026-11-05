@@ -14,7 +14,7 @@ pandoc answer.md \
   --from=markdown \
   --lua-filter=quote-style.lua \
   --citeproc \
-  --bibliography="$HOME/P/Documents/library.bib" \
+  --bibliography="$HOME/Documents/library.bib" \
   --csl="../../build/assets/style.csl" \
   --pdf-engine=typst
 ```
