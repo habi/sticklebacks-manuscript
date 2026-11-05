@@ -261,16 +261,8 @@ We thank the anonymous reviewer for these kind general comments.
 > Discussion would benefit from comparisons with those protocols (fishes in the #ScanAllFish project, other high-throughput micro-CT scanning for 3D morphometrics studies).
 
 We thank the reviewer for this suggestion.
-We improved the discussion by comparing our approach in the context of other high-throughput micro-CT protocols.
-
-TODO: Discuss #ScanAllFish
-
-- #ScanAllFish: David sent a scan of a zebrafish to fishguy@uw.edu in 2016, so we're aware of them :)
-  Alexus (her project is mentioned in the discussion related to clade-agnostic) "spent time in the Adam's fish lab at Friday Harbor. That is where [she] got the term "fish burrito"".
-  All the fish we scanned are available online, in the spirit of #ScanAllFish.
-  The presented data here is only *one* of the many projects going on at the Institute of Anatomy, highlightling the streamlining (and automation) of the separation process even more.
-- https://www.antscan.info/, another high-throughput project is working at a Synchrotron, and is using Biomedisa/3D Slicer, too
-- https://doi.org/10.3389/fevo.2023.1127756 in which they analyzed (fossilized) shells with manual work in Dragonfly.
+We improved the discussion by comparing our approach in the context of other high-throughput micro-CT protocols, be it for workflows scanning many small shells or the fish-scanning effort of Adam P. Summers lab.
+Since the work presented in this manuscript is only *one* of the many projects going in our lab, streamlining (and automation) of the separation process mattered even more.
 
 > The pipeline could be further optimized, some steps are redundant or not justified enough.
 > The code relies too much on hard-written adjustments or manual corrections, especially in the separation notebook.
