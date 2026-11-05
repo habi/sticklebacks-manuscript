@@ -12,6 +12,8 @@ function Pandoc(doc)
   #set par(first-line-indent: 0pt)
   #body
 ]
+// Newer pandoc (>= 3.2 or so) emits #quote(block: true)[...] instead of #blockquote[...]
+#show quote.where(block: true): it => blockquote(it.body)
 ]=]
   table.insert(
     doc.blocks,
