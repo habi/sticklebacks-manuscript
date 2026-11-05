@@ -178,7 +178,6 @@ We've completely removed that sentence by improving the paragraph above to remov
 > To me, both rows show the exact same extracted region from the MIP images.
 > What could potentially have gone wrong, and what would the images look like?
 
-#63
 As specified in the figure caption both rows *must* show the same image (except the yellow highlight), as the top row shows the regions cropped from the originally generated MIP of the multi-specimen scan and the bottom row shows the MIP individually created from the cropped regions.
 We've expanded the figure caption a bit with the aim to clarify it.
 
