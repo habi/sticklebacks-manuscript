@@ -14,6 +14,8 @@ function Pandoc(doc)
 ]
 // Newer pandoc (>= 3.2 or so) emits #quote(block: true)[...] instead of #blockquote[...]
 #show quote.where(block: true): it => blockquote(it.body)
+// Underline hyperlinks in the same red as the quote boxes
+#show link: underline.with(stroke: 0.5pt + rgb(230, 0, 46))
 ]=]
   table.insert(
     doc.blocks,
