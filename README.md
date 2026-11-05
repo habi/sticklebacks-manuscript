@@ -1,4 +1,4 @@
-# High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback
+# From multi-specimen scans to individual bones: automated extraction and efficient, label-guided segmentation of stickleback micro-CT data
 
 [![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://habi.github.io/sticklebacks-manuscript/)
 [![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://habi.github.io/sticklebacks-manuscript/manuscript.pdf)

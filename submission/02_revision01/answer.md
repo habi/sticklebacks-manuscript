@@ -1,5 +1,6 @@
 ---
 title: "Revisions for *High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback*"
+subtitle: "In the course of implementing the revisions we changed the title of the manuscript to *From multi-specimen scans to individual bones: automated extraction and efficient, label-guided segmentation of stickleback micro-CT data*"
 author: David Haberthür
 date: 
 ---
@@ -52,6 +53,8 @@ The results were bit-for-bit the same as what was present on the network folder 
 This strengthens our argument on the automated separation of the individual fish from the multi-specimen scans.
 As it is now, the separation part of the pipeline is applicable to any multi-object scan where the objects can be separated in the top-down axial view of the original to split these objects into individual datasets.
 We concede that the further steps in our pipeline are generally agnostic to the software used, but the chosen combination of SlicerMorph and Biomedisa offers great scalability and keeps all parts of the workflow in Free and open-source software.
+
+Due to these suggestions and a more precise split of the manuscript in reproducible, automated separation and efficient segmentation we changed the title of the manuscript to "From multi-specimen scans to individual bones: automated extraction and efficient, label-guided segmentation of stickleback micro-CT data".
 
 > There are many pieces of software used for processing scans, separating out specimens and segmentation, which could warrant discussion, including:
 >
@@ -270,6 +273,7 @@ Since the work presented in this manuscript is only *one* of the many projects g
 Thanks to your detailed input on the (manual) resorting of the labels we improved the separation pipeline.
 The radial resorting of the detected labels is as robust as possible and now makes the separation step fully automated (except noting which fish is in which petal of the multi-specimen holder).
 We honestly thank the reviewer to bring this point forward and were able to greatly improve the quality and robustness of the separation pipeline, without altering the output of the pipeline.
+This ultimately lead us to change the title of the manuscript, laying focus on the automated separation of specimen and efficient segmentation.
 
 > As such, the pipeline is sometimes confusing.
 > I suggest some revisions to clarify the authors' approach and make the pipeline more robust.
