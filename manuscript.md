@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2026-11-05" />
   <meta name="citation_publication_date" content="2026-11-05" />
   <meta property="article:published_time" content="2026-11-05" />
-  <meta name="dc.modified" content="2026-11-05T11:48:06+00:00" />
-  <meta property="article:modified_time" content="2026-11-05T11:48:06+00:00" />
+  <meta name="dc.modified" content="2026-11-05T13:56:27+00:00" />
+  <meta property="article:modified_time" content="2026-11-05T13:56:27+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/7d45fa35344aa5edb05d030366559b248da8a4a5/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/7d45fa35344aa5edb05d030366559b248da8a4a5/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/7d45fa35344aa5edb05d030366559b248da8a4a5/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/b5a119c2af54d69fda0f43e46e4ea513e1eb7df0/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/b5a119c2af54d69fda0f43e46e4ea513e1eb7df0/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/b5a119c2af54d69fda0f43e46e4ea513e1eb7df0/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,11 +80,11 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/7d45fa35344aa5edb05d030366559b248da8a4a5/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/b5a119c2af54d69fda0f43e46e4ea513e1eb7df0/))
 was generated
-from [habi/sticklebacks-manuscript@7d45fa3](https://github.com/habi/sticklebacks-manuscript/tree/7d45fa35344aa5edb05d030366559b248da8a4a5)
+from [habi/sticklebacks-manuscript@b5a119c](https://github.com/habi/sticklebacks-manuscript/tree/b5a119c2af54d69fda0f43e46e4ea513e1eb7df0)
 on November 5, 2026 and contains 6914 words.
-Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...7d45fa35344aa5edb05d030366559b248da8a4a5#files_bucket).
+Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...b5a119c2af54d69fda0f43e46e4ea513e1eb7df0#files_bucket).
 </em></small>
 
 
@@ -431,7 +431,7 @@ These further cropped datasets include only the region of the fish in anteropost
 ### Segmentation
 
 In addition to the cropped regions, the separation notebook also writes a binarized version of each region, based on a simple multi-Otsu thresholding algorithm.
-These binarized regions are not used for the analysis presented here, but serve as a quick visual check of each extracted fish (for an example, see Figure @fig:SLX23012_3D). 
+These binarized regions are not used for the analysis presented here, but serve as a quick visual check of each extracted fish (for an example, see Figure @fig:SLX23012_3D).
 
 Nineteen specimen were excluded from further analysis due to them being damaged and/or being clearly juvenile fish.
 For the remaining datasets (N=196), segmentation was performed in 3D Slicer and Biomedisa segmentation model, resulting in segmentation labels for all structures in the branchial apparatusm as described in [Materials & Methods].
