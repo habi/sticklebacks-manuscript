@@ -230,7 +230,8 @@ Thanks, updated.
 
 > In all of your test statistics, the symbol identifying the test statistic is missing.
 
-We believe that this may have been an issue in file conversion (in our original file, this was a mathematical formula format and, in certain viewers, wouldn't convert correctly). We hope our changes have fixed this issue. 
+We believe that this may have been an issue in file conversion.
+In our original Markdown file, this was a mathematical formula  and due to a bug in `manubot`, this wouldn't convert correctly to a .DOCX file, but did convert correctly to .PDF.
 
 > Line 323: “The The benthic”.
 > Redundant “The”
