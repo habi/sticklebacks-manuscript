@@ -334,8 +334,9 @@ We added this justification to the Materials & Methods section.
 > The printing material can be documented as it needs to be radio-transparent enough.
 > What are the benefits of the petal design when the central zone needs to be later removed in the separation process ?
 
-A preview (temporary, *without* the connector to the machine) is available here: https://openscad-studio.pages.dev/s/ue5Aw3bW, the "original" copy is shown in the original, de-anonymized GitHub repository.
-The grayish outline in Figure 2. shows the petal structure of the multi-specimen holder.
+An interactive preview of the sample holder is (temporarily, *without* the connector to the machine) available on [OpenSCAD Studio](https://openscad-studio.pages.dev/s/ue5Aw3bW).
+The "original" copy is visualized in the original, de-anonymized GitHub repository.
+The grayish outline in Figure 2 shows the petal structure of the multi-specimen holder.
 As repeated later, the sample holder is made from UV-hardened, 3D-printed polymer resin on a Formlabs printer.
 The material ([datasheet](https://media.formlabs.com/m/5fd5e7daf1460058/original/-ENUS-Clear-Resin-V5-TDS.pdf)) *is* radiotransparent enough, otherwise our process would not have worked, the chosen petal design is a balance between ease of generation, printing optimization and handling.
 Additionally, the petal design offers a distinct radial separation of the objects to be scanned, enabling a fully automated separation of the individual objects in the multi-object scan as presented in our pipeline.
