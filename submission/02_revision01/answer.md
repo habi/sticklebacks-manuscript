@@ -355,16 +355,14 @@ In all honesty, we believe that *no* beam hardening correction was necessary for
 > The following steps (XY-alignment, ring removal, beam hardening, defect pixel masking, checking for overexposure) should be mandatory in a robust reconstruction protocol, before exporting the slices from Nrecon.
 > MIP images could be easily generated with CTan or ImageJ using virtual stack, on the reconstruction computer for a quality assessment before storing the datasets and sending them to the collaborators.
 
-#69
-Scans over a long time (BucketOfFish_A–U from 2023-11-10--2024-03-27 (about 4.5 months) and Sticklebucket_01–17 from 2025-04-08--2025-06-18 (about 2.5 months).
+The fish were scanned in two batches over around seven months in total (BucketOfFish_A–U from 2023-11-10--2024-03-27 (about 4.5 months) and Sticklebucket_01–17 from 2025-04-08--2025-06-18 (about 2.5 months)).
+This was done in between *many* other projects on the same scanner.
+The reconstruction software NRecon from Bruker keeps the last used set of reconstruction parameters when a new scan is loaded, if the operator forgets to set a parameter correctly (or left it at a *wildly* different (good) value for other projects), a consistency check per project is a good step *after* reconstruction.
+Our notebook performs this check globally for the project instead of highlighting *scanning* issues of a single scan, which are corrected as soon as detected (and was corrected, too for some scans, something we don't mention in the manuscript.).
+The fish were only returned to the Institute of Ecology and Evolution (actually ony about 300m apart) after this quality control was done, so a rescan was possible at any time.
 
-- Not really 'scanning issues', but 'homogeneity issues' in reconstruction, as mostly these parameters are checked in the preview notebook.
-- Fish went back to other lab only after this QC step was done (even though the labs are really only 200 m apart)
-- There is *no* reconstruction protocol really.
-  And fish were scanned in-between other projects with *wildly* differing reconstruction parameters.
-  NRecon always keeps the 'last' set of parameters when loading another scan.
-- Of course we could have generated the MIP with ImageJ or CTAn, but this is a(nother) manual step we wanted to avoid.
-  And since the MIP images are a vital part for the rest of the notebooks (used as a base for splitting multi-specimen scan into single-specimen regions), we kept the whole processing pipeline in the same reproducible notebooks.
+The reviewer is absolutely correct that the MIP images could be generated with other tools, but this would be another manual step (or maybe a 'Task list' in CTAN or a 'macro' in ImageJ).
+And since the MIP images are a vital part for the rest of the notebooks (used as a base for splitting multi-specimen scan into single-specimen regions), we kept the whole processing pipeline in the same reproducible notebooks.
 
 > Separation notebook
 > A major issue in the separation workflow is that the region detection numbers the fishes from left to right starting at the top-left of the image while the sample holder numbers the fishes from 1 to 6 counter-clockwise.
