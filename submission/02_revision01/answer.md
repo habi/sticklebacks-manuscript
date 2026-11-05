@@ -409,7 +409,7 @@ It is correct that the multilevel thresholding is not needed for the results pre
 The visualization step is technically also not needed, but produced Fig. 7 in the manuscript.
 
 The thresholding step is in *in* the notebook for treating of the data for further studies, as specified below, keeping all steps in an end-to-end reproducible notebook fosters the reproducible research we're aiming at in general.
-The suggestion that the thresholded datasets could have been loaded into 3DSlicer is a very good one, but - as specified in the text - we choose another semi-automated approach.
+The suggestion that the thresholded datasets could have been loaded into 3D Slicer is a very good one, but - as specified in the text - we choose another semi-automated approach.
 
 We also do not really need to generate any "intermediate" `.zarr` files in the notebook, as the reviewer is correctly stating.
 But since the `.zarr` format is *extremely* well suited to store n-dimensional arrays, on disk and supports chunking, compression, and many backends, we generally use this as an intermediate storage on disk.
@@ -533,6 +533,11 @@ The size of each dataset depends on the length of the fish and on its orientatio
 > Line 293: The sentence “ This relatively simple segmentation was sufficient to extract all of the features we analyzed further and we did not have to employ more advanced thresholding methods in our separation pipeline “ is confusing.
 >The separation pipeline is used to get the subvolumes, there is no extraction of features with the multi-level thresholding in this method, only a rendering.
 >The extraction of features, a.k.a the segmentation process, is later done in 3Dslicer.
+
+The reviewer is correct, and the sentence was misleading.
+The multi-level thresholding in *not* used for the segmentation fo the features of interest in this study.
+It produces binarized regions for visual checking in *this* study (as shown in Figure 7) and as a starting point for follow-up studies and projects.
+We rewrote the paragraph to clarify the statement and to make clear that the segmentation was performed in 3D Slicer and Biomedisa.
 
 > Figure 12: There is a typo with a double The.
 
