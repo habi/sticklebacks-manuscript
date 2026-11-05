@@ -6,7 +6,7 @@ keywords:
 - stickleback
 - ecology
 lang: en-US
-date-meta: '2026-11-04'
+date-meta: '2026-11-05'
 author-meta:
 - David Haberthür
 - R. Benjamin Sulser
@@ -24,11 +24,11 @@ header-includes: |
   <meta name="citation_title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
   <meta property="og:title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
   <meta property="twitter:title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
-  <meta name="dc.date" content="2026-11-04" />
-  <meta name="citation_publication_date" content="2026-11-04" />
-  <meta property="article:published_time" content="2026-11-04" />
-  <meta name="dc.modified" content="2026-11-04T08:23:49+00:00" />
-  <meta property="article:modified_time" content="2026-11-04T08:23:49+00:00" />
+  <meta name="dc.date" content="2026-11-05" />
+  <meta name="citation_publication_date" content="2026-11-05" />
+  <meta property="article:published_time" content="2026-11-05" />
+  <meta name="dc.modified" content="2026-11-05T07:03:27+00:00" />
+  <meta property="article:modified_time" content="2026-11-05T07:03:27+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/d267219eb2de34f8f16d601b76f9fddd08eb189a/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/d267219eb2de34f8f16d601b76f9fddd08eb189a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/d267219eb2de34f8f16d601b76f9fddd08eb189a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/fe668c80e1e39a41692d28b0f8d117d84f58543a/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/fe668c80e1e39a41692d28b0f8d117d84f58543a/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/fe668c80e1e39a41692d28b0f8d117d84f58543a/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,11 +80,11 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/d267219eb2de34f8f16d601b76f9fddd08eb189a/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/fe668c80e1e39a41692d28b0f8d117d84f58543a/))
 was generated
-from [habi/sticklebacks-manuscript@d267219](https://github.com/habi/sticklebacks-manuscript/tree/d267219eb2de34f8f16d601b76f9fddd08eb189a)
-on November 4, 2026 and contains 6831 words.
-Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...d267219eb2de34f8f16d601b76f9fddd08eb189a#files_bucket).
+from [habi/sticklebacks-manuscript@fe668c8](https://github.com/habi/sticklebacks-manuscript/tree/fe668c80e1e39a41692d28b0f8d117d84f58543a)
+on November 5, 2026 and contains 6891 words.
+Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...fe668c80e1e39a41692d28b0f8d117d84f58543a#files_bucket).
 </em></small>
 
 
@@ -222,7 +222,7 @@ Once a Biomedisa model is trained, the entire pipeline runs from multi-specimen 
   After collection and storage, up to 6 fish were mounted in a custom-made sample holder and imaged together in 38 multi-specimen micro-CT scans.
   Tomographic reconstructions were checked in a preview notebook, while another notebook generated the numbers reported in this manuscript.
   The main block of work of the notebooks is in the separation notebook, where the multi-specimen reconstruction stacks are automatically separated into 215 single-fish datasets.
-  A segmentation model trained on a subset of 51 manually labelled fish segmented the branchial bones of all fish, from which the ceratobranchials were extracted and landmarked for the morphometric analysis of our case study.
+  A segmentation model trained on a subset of 51 manually labeled fish segmented the branchial bones of all fish, from which the ceratobranchials were extracted and landmarked for the morphometric analysis of our case study.
   ](images/workflow.png){#fig:workflow}
 
 ### Sample Procurement and Preparation
@@ -242,10 +242,11 @@ Due to their inherent contrast difference with the surrounding tissue, the struc
 
 In a pilot study, we identified optimal scanning parameters to meet the constraints on total scanning time, resolution, and sample handling.
 
-To optimize for these constraints, we scanned all sticklebacks in batches of six fish in a custom-made 3D-printed sample holder per scan.
+To optimize for these constraints, we scanned all sticklebacks in batches of up to six fish per scan in a custom-made 3D-printed sample holder.
 This holder was designed in [OpenSCAD](https://openscad.org/) (OpenSCAD Developers; version 2021.01) and is available online, either directly as an [STL file for printing](https://github.com/TomoGraphics/Hol3Drs/blob/master/STL/Stickleback.Multiple.stl) or as a [(parameterized) OpenSCAD file](https://github.com/TomoGraphics/Hol3Drs/blob/master/Stickleback.Multiple.scad) for adaptation to other classes of samples.
 Both files are part of a library of 3D-printable sample holders for tomographic imaging [@doi:10.5281/zenodo.2587555].
-We printed the sample holder in Clear Resin (V5) on a stereolithography 3D printer (Form 4, Formlabs, Somerville, MA, USA), the hereby presented workflow is applicable to any other sample holder radially separating the objects of interest.
+We printed the sample holder in Clear Resin (V5) on a stereolithography 3D printer (Form 4, Formlabs, Somerville, MA, USA).
+The hereby presented workflow is applicable to any other sample holder that separates the objects of interest radially.
 
 Fish were taken out of single, labeled Falcon tubes, wrapped in melamine resin foam (virtually radiotransparent, but stable) and put head-first into the labeled compartments of the sample holder.
 The foam was moistened with formalin and the top of the sample holder was sealed with Parafilm to avoid drying of the fish during the tomographic imaging.
@@ -258,7 +259,9 @@ The X-ray source was set to a voltage of 60 kV and a current of around 110 µA f
 Setting different voltage and current for one scan had no discernible influence on the downstream pipeline, since the segmentation of the features of interest was performed semi-automatically, as explained later.
 For each scan, we recorded a set of 3601 projections per stack (each projection with a size of 3000 by 2000 pixels) at 0.1° intervals over a 360° sample rotation.
 Every single projection was exposed for about a second.
-Because of the length of the fish, we had to acquire so-called stacked scans; on average, we scanned three fields of view along the rotation axis of the sample holder.
+
+We scanned the whole length of the fish in several stacks, since the datasets are also used in follow-up studies of other anatomical regions, and since the 3D-printed compartment labels had to be in the field of view for the separation step.
+On average, we scanned three fields of view along the rotation axis of the sample holder.
 This resulted in an average scan time of 10 hours for each scan.
 The projection images were subsequently reconstructed into stacks of 8-bit `png` images with NRecon (Bruker microCT, Kontich, Belgium; version 2.2.0.6), without applying any ring artifact or beam hardening correction.
 The isotropic voxel sizes in the resulting datasets vary from 15 to 17.5 µm.
@@ -288,7 +291,7 @@ This approach allowed us to map *all* the reconstructions to memory and quickly 
 
 ##### Separation Notebook
 
-The [separation notebook](https://nbviewer.org/github/habi/sticklebacks/blob/main/BucketSeparator.ipynb) processes all the acquired scans to extract each individual fish from each scan that encompasses six fish in total.
+The [separation notebook](https://nbviewer.org/github/habi/sticklebacks/blob/main/BucketSeparator.ipynb) processes all the acquired scans to extract each individual fish from each scan, which usually contained six fish.
 As in the preview notebook, we efficiently load all the `png`s from disk with [`dask`](https://www.dask.org/) [@dask].
 
 A connected region labeling ([`skimage.measure.label`](https://scikit-image.org/docs/stable/api/skimage.measure.html#skimage.measure.label)) of the previously extracted MIP images was used to detect the single fish in their compartments (see right panel of Figure @fig:labels).
@@ -430,7 +433,7 @@ These further cropped datasets include only the region of the fish in anteropost
 The separated fish were segmented based on a simple multi-Otsu thresholding algorithm.
 This simple segmentation was sufficient to extract all of the features we analyzed further, and we did not have to employ more advanced thresholding methods in our separation pipeline.
 
-19 specimen were excluded from further analysis due to them being damaged and/or being clearly juvenile fish.
+Nineteen specimen were excluded from further analysis due to them being damaged and/or being clearly juvenile fish.
 For the remaining datasets (N=196) we applied the Biomedisa segmentation model, resulting in segmentation labels for all structures in the branchial apparatus.
 Selection and individual rendering of branchial structures takes between 10 and 15 minutes; the segmentation of an average Biomedisa render takes 15 seconds once trained (see Table @tbl:timing).
 
@@ -439,14 +442,30 @@ Selection and individual rendering of branchial structures takes between 10 and 
 The speed and quality of these data allow us to study the internal branchial anatomy on a large scale and in situ, without the need for fine dissection.
 
 After GPA alignment, we quantified the shape differences among all scanned fish for this project.
-Changes due to allometry (using centroid size or standard length as the size metric) were significant but slight, explaining only a small fraction of shape variation (CB1: *p* = 0.001, $R^2$ = 0.03246; CB2: *p* = 0.001, $R^2$ = 0.06220) in both bones.
-Both linear models and PCA results suggest that the lakes themselves---and not overarching categories of ecotype or sex---drive most of the shape variation in these bones (CB1: *p* = 0.001, $R^2$ = 0.09463; CB2: *p* = 0.001, $R^2$ = 0.11039).
-However, the variation in the first ceratobranchial was significantly associated with different ecotypes, although the effect size was small (*p* = 0.009, $R^2$ = 0.02056), with substantial overlap in the resulting shape space (see Figure @fig:pca_cb1).
+Changes due to allometry (using centroid size or standard length as the size metric) were significant but slight, explaining only a small fraction of shape variation (
+CB1: *p* = 0.001,
+$R^2$    = 0.0325;
+CB2: *p* = 0.001,
+$R^2$    = 0.0622
+) in both bones.
+Both linear models and PCA results suggest that the lakes themselves---and not overarching categories of ecotype or sex---drive most of the shape variation in these bones (
+CB1: *p* = 0.001,
+$R^2$    = 0.0946;
+CB2: *p* = 0.001,
+$R^2$    = 0.1104
+).
+However, the variation in the first ceratobranchial was significantly associated with different ecotypes, although the effect size was small (
+*p*   = 0.009,
+$R^2$ = 0.0206
+), with substantial overlap in the resulting shape space (see Figure @fig:pca_cb1).
 
 ![PCA of CB1 colored by lake ecotype.
   Warps are indicated at the extremes of each axis by vectors drawn from a mean shape (red).](images/PCA_CB1_Plot.png){#fig:pca_cb1}
 
-On the other hand, the second ceratobranchial bone showed equally small but significant changes associated with the ecotype (*p* = 0.001, $R^2$ = 0.0377).
+On the other hand, the second ceratobranchial bone showed equally small but significant changes associated with the ecotype (
+*p* = 0.001,
+$R^2$ = 0.0377
+).
 The differences between benthic and limnetic specimens are, for this bone, clearly divergent in shape space (see Figure @fig:pca_cb2).
 
 ![PCA of CB2 colored by lake ecotype.
@@ -473,7 +492,7 @@ The main driver for developing our pipeline was efficient use of both machine ti
 
 At the voxel size needed to unambiguously resolve the branchial skeleton (less than 20 µm, as determined in pilot experiments), the time needed for acquisition of a tomographic scan is determined by the number of projections and exposure time, not by the number of fish in the field of view.
 Efficiently "filling" the field of view of the scanner with as many fish as possible in one scan enabled us to scan a total of 215 unique specimens in 38 different scans with a total scan duration of 16 days.
-If we would have scanned each specimen individually, we would have required about 90 days of scan time; while not impossible, this would have increased the instrument time and its costs severalfold.
+Had we scanned each specimen individually, we would have required about 90 days of scan time; while not impossible, this would have increased the instrument time and its costs severalfold.
 Scanning several specimens simultaneously is an established strategy for increasing throughput in morphometric micro-CT studies; Edie et al. scanned hundreds of bivalve shells by mounting four to five specimens per scan [@doi:10.3389/fevo.2023.1127756].
 Since their features of interest could be resolved with much coarser resolution projections, each of their scans took only minutes; in contrast, resolving the branchial skeleton of stickleback required scans of several hours, making multi-specimen scanning even more beneficial in our case.
 
@@ -486,14 +505,14 @@ Once all components of the pipeline are combined, running a simple script enable
 Requiring minimal active user input, all automated pipeline steps are substantially faster than equivalent manual processing by an expert operator.
 This reproducible pipeline allows high-throughput sampling and population-scale analysis of stickleback specimens.
 
-In comparable multi-specimen workflows, the assignment of each specimen in the reconstructed volume relies on manually recorded scan maps and orientation markers.
+In comparable multi-specimen workflows, the assignment of each specimen in the reconstructed volume relies on manually recorded scan maps and orientation markers [@doi:10.3389/fevo.2023.1127756].
 The hereby presented pipeline performs an automated and reproducible separation based on the MIP and the known holder geometry, so adding more (multi-specimen) scans to the pipeline does *not* increase the time users have to spend on manually separating these scans into single fish regions.
 
 The imaging and separation step is easy to generalize to either other micro-CT setups or other species and specimens.
 As long as the specimens show up as distinct blobs in the MIP (see Figure @fig:labels), our pipeline can reproducibly separate these blobs into a cropped dataset for any further processing, enabling a general, reproducible, and high-throughput micro-CT workflow in biology and other fields.
 We have already applied the same pipeline to multi-specimen scans of other fish species, namely *Spinachia spinachia* and several Lake Victoria and Neotropical cichlid species (manuscripts in preparation).
 
-In addition, while we have selected 3DSlicer as our main tool for creating training labels, alternative programs such as Avizo (Thermo Fisher Scientific) and Dragonfly [@doi:10.1017/S143192761800315X] in addition to promising segmentation tools such as nnInteractive [@doi:10.48550/arXiv.2503.08373] and SPROUT [@doi:10.1101/2024.11.22.624847] could also be used for this task as long as high quality labels can be generated. 
+In addition, while we have selected 3DSlicer as our main tool for creating training labels, alternative programs such as Avizo (Thermo Fisher Scientific) and Dragonfly [@doi:10.1017/S143192761800315X] in addition to promising segmentation tools such as nnInteractive [@doi:10.48550/arXiv.2503.08373] and SPROUT [@doi:10.1101/2024.11.22.624847] could also be used for this task as long as high quality labels can be generated.
 Our chosen combination proved to be efficient for working with the large amount of datasets in a heterogeneous lab setting.
 
 ### Findings from Ceratobranchial Analysis
@@ -524,9 +543,10 @@ And while the separation step outlined in this manuscript is independent of the 
 
 ## Conclusions {.page_break_before}
 
-The provided pipeline enables repeatable, high-throughput analysis of 3D shape in stickleback specimens.
+The provided pipeline enables reproducible, high-throughput analysis of 3D shape in stickleback specimens.
 Although applied here to stickleback specimens, the described methods can readily be applied to large-scale sampling efforts of multiple taxonomic groups, with data acquired with diverse imaging setups (not only micro-CT) and different sample holders, due to the use of simple region detection and reproducible logging.
 Extracting individual specimens from multi-specimen scans is efficient; a custom 3D-printed holder and automated splitting pipeline minimize operator time and maximize throughput.
+The separation pipeline works fully automatically, as long as the specimens are separable in the axial maximum intensity projection of the multi-specimen scan.
 
 The reproducible scans and their consistent quality rapidly provide a large amount of similar data, ideal for training machine learning models.
 In its current implementation, Biomedisa is on average 60 times faster than manual segmentation by a skilled operator, and without the interoperator variability inherent to manually segmenting large numbers of specimens.
