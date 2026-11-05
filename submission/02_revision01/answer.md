@@ -21,7 +21,7 @@ pandoc answer.md \
 to make a PDF with nicely styled quotes (hat tip to ChatGPT for whipping up the lua styling filter (I only changed the color to UniBe red)) and references (using the manubot CSL in this repo)
 -->
 
-# Associate Editor Comments to Author:
+## Associate Editor Comments to Author
 
 > I would like to thank the authors for their contribution, this is an interesting study detailing a pipeline that would be of interest and use for many researchers.
 > However, the manuscript does not provide sufficient evidence for the claim that this pipeline is replicable and clade-agnostic, which would require testing on different specimens, across different taxonomic groups.
@@ -54,12 +54,13 @@ As it is now, the separation part of the pipeline is applicable to any multi-obj
 We concede that the further steps in our pipeline are generally agnostic to the software used, but the chosen combination of SlicerMorph and Biomedisa offers great scalability and keeps all parts of the workflow in Free and open-source software.
 
 > There are many pieces of software used for processing scans, separating out specimens and segmentation, which could warrant discussion, including:
->- Segment Anything Model (SAM) and SAM2
->- Computer Vision and Deep Learning pipelines in AVIZO, Dragonfly and Slicer
->- nnInteractive
->- BounTI
->- SPROUT
->- Existing protocols in ImageJ/Fiji
+>
+> - Segment Anything Model (SAM) and SAM2
+> - Computer Vision and Deep Learning pipelines in AVIZO, Dragonfly and Slicer
+> - nnInteractive
+> - BounTI
+> - SPROUT
+> - Existing protocols in ImageJ/Fiji
 
 Thank you for the suggestions!
 The editor is absolutely correct that there are many pieces of software that can be used for processing scans, separating out specimens and segmentation.
@@ -77,8 +78,9 @@ So, Biomedisas deep learning mode can in principle be combined with any of the a
 
 We explain the reproducibility and automation of the presented notebooks in more detail and expanded the discussion on alternatives and additional tools.
 
-# Reviewer(s)' Comments to Author:
-## Reviewer: 1
+## Reviewer(s)' Comments to Author
+
+### Reviewer: 1
 
 > Overall, this is a well-written study that will assist others in conducting similar research.
 > There are just a few points I found difficult to follow, and clarifying them would be beneficial for future readers.
@@ -90,7 +92,7 @@ We agree that the discussion focused on the biological results too heavily.
 It now contains dedicated sections describing data acquisition, the pipeline itself and its efficiency, and discusses limitations of our approach.
 
 > Perhaps some of the following questions could be addressed in this context:
-> 
+>
 > Figure 1 is impossible to read.
 > Please enlarge the text and maybe add some description in the caption.
 
@@ -185,7 +187,7 @@ We've expanded the figure caption a bit with the aim to clarify it.
 > And were CB1 and CB2 labeled differently or with the same label value.
 > Figure 8 suggests they have the same value.
 
-All structures were used for model training, with all ceratobranchials (including CB1 and CB2 having the same value) yet still distinguishable in the scan output. 
+All structures were used for model training, with all ceratobranchials (including CB1 and CB2 having the same value) yet still distinguishable in the scan output.
 We have reworded our text to ensure clarity in this section.
 
 > Line 212: Could you provide the range of image dimensions of the cropped images.
@@ -197,7 +199,7 @@ You are correct, that the the x- and y-dimensions of the cropped datasets are ap
 We looked at the sizes of the exported files in detail.
 The smallest export is 486 x 722 x 1743 pixels (x, y, z), the largest 1322 x 862 x 5398 voxels, and the median export is approximately 4200 × 650 × 650 voxels and are stored as uncompressed 8-bit volumes.
 
-The smallest sized crop is from a scan that didn't turn out good (see https://anonymous.4open.science/r/sticklebacks-01A4/logfiles/Sticklebucket_14/README.md), but was nonetheless a scan where we used the scanned head-region of the fish for extracting the rakers.
+The smallest sized crop is from a scan that didn't turn out good (see [this README file of one of these scans](https://anonymous.4open.science/r/sticklebacks-01A4/logfiles/Sticklebucket_14/README.md)), but was nonetheless a scan where we used the scanned head-region of the fish for extracting the rakers.
 The same folder does contain datasets spanning the whole fish, so the *median* size of the cropped regions is a better estimate of the sizes.
 
 While compiling these numbers we found that the numbers on dataset *size* were off (based on earlier export of the data), the total size is 385 GB instead of the previously mentioned 64 GB.
@@ -244,9 +246,9 @@ The sentence has been slightly changed to avoid it to happen again.
 
 > Line 350: There are no supplementary figures.
 
-We apologize for the error in supplementary material uploads, we have attached these with the updated manuscript files to ensure they are included appropriately. 
+We apologize for the error in supplementary material uploads, we have attached these with the updated manuscript files to ensure they are included appropriately.
 
-## Reviewer: 2
+### Reviewer: 2
 
 > This paper presents a pipeline that make it possible to analyse a large corpus (215 specimens) of fishes with geometric morphometrics on internal structures only accessible with micro-CT.
 > The time constraints that led to develop the pipeline are well explained.
@@ -460,7 +462,10 @@ TODO:
 > This is especially confusing as 3Dslicer is later used for ensuring equal distances.
 > And Stratovan is not free/open-source.
 
-We agree with the reviewer about generally preferring open-source pipelines for analyses. In this case, Stratovan in particular was used for the template-import to speed up fixed landmark placements (which far outperformed ALPACA/MALPACA modules in Slicer in our tests), with the python-scriptable elements of Slicer to assist with the semilandmarks. In theory, any preferred landmarking tool could be used for this process. We have clarified as such in the main text. 
+We agree with the reviewer about generally preferring open-source pipelines for analyses.
+In this case, Stratovan in particular was used for the template-import to speed up fixed landmark placements (which far outperformed ALPACA/MALPACA modules in Slicer in our tests), with the python-scriptable elements of Slicer to assist with the semilandmarks.
+In theory, any preferred landmarking tool could be used for this process.
+We have clarified as such in the main text.
 
 > Line 247: The total number of projections and reconstructions are not meaningful and should be removed.
 
@@ -475,7 +480,8 @@ To be able to separate the scans we also had to include the 3D printed label in 
 > Line 261: The justification that ImageJ could not be used is wrong.
 > There is no need to use Crop3D in this workflow as the authors only crop in XY and not in Z direction.
 > The workflow can be done automatically and would be reproducible with a similar approach the authors used in the detect_fish_position function:
-> - import the images as a virtual stack into ImageJ, 
+>
+> - import the images as a virtual stack into ImageJ,
 > - run a Z projection of maximum intensity, threshold it to get a binary image
 > - run an Analyse particles with a pixel size limit to discard the small speckels
 > - add the results as ROIs in the ROI manager (each fish is a ROI with a label)
@@ -572,6 +578,7 @@ Thanks for notifying us about that.
 We edited the caption(s) according to the Writefull suggestion and completely removed the the's.
 
 > Line 376: In order to make the pipeline reproductible for larger or more dense specimens:
+>
 > - The separation process should only rely on contrast between the specimen and a radio-transparent sample holder, or the sample holder should be designed differently to prevent the wrong labeling of the separation process.
 > - The thresholding should be robust enough to encompass a shift to different pixel values for the region of interest.
 > Those are the expectations to rightfully claim that the pipeline is replicable and clade-agnostic as stated in the abstract.
@@ -586,4 +593,4 @@ Since updating the assignment of detected sample region to angular region in the
 As long as the multiple specimen *centers* can be separated on the axial MIP image, their cropped regions can be extracted from the multi-specimen scan (with the detected outline of the region plus a buffer, if necessary).
 We added details on the clade-agnosticity (if that's even a word) in the discussion section.
 
-# References
+## References
