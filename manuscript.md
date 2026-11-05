@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2026-11-05" />
   <meta name="citation_publication_date" content="2026-11-05" />
   <meta property="article:published_time" content="2026-11-05" />
-  <meta name="dc.modified" content="2026-11-05T08:36:34+00:00" />
-  <meta property="article:modified_time" content="2026-11-05T08:36:34+00:00" />
+  <meta name="dc.modified" content="2026-11-05T10:22:27+00:00" />
+  <meta property="article:modified_time" content="2026-11-05T10:22:27+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/36e8146a46d4e36b169e21fcd35c1ddee277fa3a/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/36e8146a46d4e36b169e21fcd35c1ddee277fa3a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/36e8146a46d4e36b169e21fcd35c1ddee277fa3a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/cf87306cc9d564938f4d16c644c53e9f1ac7a07f/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/cf87306cc9d564938f4d16c644c53e9f1ac7a07f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/cf87306cc9d564938f4d16c644c53e9f1ac7a07f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,11 +80,11 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/36e8146a46d4e36b169e21fcd35c1ddee277fa3a/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/cf87306cc9d564938f4d16c644c53e9f1ac7a07f/))
 was generated
-from [habi/sticklebacks-manuscript@36e8146](https://github.com/habi/sticklebacks-manuscript/tree/36e8146a46d4e36b169e21fcd35c1ddee277fa3a)
-on November 5, 2026 and contains 6891 words.
-Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...36e8146a46d4e36b169e21fcd35c1ddee277fa3a#files_bucket).
+from [habi/sticklebacks-manuscript@cf87306](https://github.com/habi/sticklebacks-manuscript/tree/cf87306cc9d564938f4d16c644c53e9f1ac7a07f)
+on November 5, 2026 and contains 6914 words.
+Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...cf87306cc9d564938f4d16c644c53e9f1ac7a07f#files_bucket).
 </em></small>
 
 
@@ -428,13 +428,13 @@ These cropped regions include the region of the originally acquired data where t
 We have uploaded further cropped datasets of each imaged fish to MorphoSource (N=215, see [Supplementary Materials]).
 These further cropped datasets include only the region of the fish in anteroposterior direction, drop the 3D-printed label region and have a median length of approximately 3000 pixels; the x- and y-directions are the same as for the previously mentioned datasets.
 
-### Thresholding
+### Segmentation
 
-The separated fish were segmented based on a simple multi-Otsu thresholding algorithm.
-This simple segmentation was sufficient to extract all of the features we analyzed further, and we did not have to employ more advanced thresholding methods in our separation pipeline.
+In addition to the cropped regions, the separation notebook also writes a binarized version of each region, based on a simple multi-Otsu thresholding algorithm.
+These binarized regions are not used for the analysis presented here, but serve as a quick visual check of each extracted fish (for an example, see Figure @fig:SLX23012_3D). 
 
 Nineteen specimen were excluded from further analysis due to them being damaged and/or being clearly juvenile fish.
-For the remaining datasets (N=196) we applied the Biomedisa segmentation model, resulting in segmentation labels for all structures in the branchial apparatus.
+For the remaining datasets (N=196), segmentation was performed in 3D Slicer and Biomedisa segmentation model, resulting in segmentation labels for all structures in the branchial apparatusm as described in [Materials & Methods].
 Selection and individual rendering of branchial structures takes between 10 and 15 minutes; the segmentation of an average Biomedisa render takes 15 seconds once trained (see Table @tbl:timing).
 
 ### Analysis
@@ -512,7 +512,7 @@ The imaging and separation step is easy to generalize to either other micro-CT s
 As long as the specimens show up as distinct blobs in the MIP (see Figure @fig:labels), our pipeline can reproducibly separate these blobs into a cropped dataset for any further processing, enabling a general, reproducible, and high-throughput micro-CT workflow in biology and other fields.
 We have already applied the same pipeline to multi-specimen scans of other fish species, namely *Spinachia spinachia* and several Lake Victoria and Neotropical cichlid species (manuscripts in preparation).
 
-In addition, while we have selected 3DSlicer as our main tool for creating training labels, alternative programs such as Avizo (Thermo Fisher Scientific) and Dragonfly [@doi:10.1017/S143192761800315X] in addition to promising segmentation tools such as nnInteractive [@doi:10.48550/arXiv.2503.08373] and SPROUT [@doi:10.1101/2024.11.22.624847] could also be used for this task as long as high quality labels can be generated.
+In addition, while we have selected 3D Slicer as our main tool for creating training labels, alternative programs such as Avizo (Thermo Fisher Scientific) and Dragonfly [@doi:10.1017/S143192761800315X] in addition to promising segmentation tools such as nnInteractive [@doi:10.48550/arXiv.2503.08373] and SPROUT [@doi:10.1101/2024.11.22.624847] could also be used for this task as long as high quality labels can be generated.
 Our chosen combination proved to be efficient for working with the large amount of datasets in a heterogeneous lab setting.
 
 ### Findings from Ceratobranchial Analysis
@@ -536,7 +536,8 @@ Studies treating the branchial basket as a single structure, focusing only on th
 ### Future Improvements and Issues
 
 As with other multi-specimen scanning projects, the scanning parameters can be optimized individually for each scan but not for each individual specimen.
-Additionally, atypically large or dense specimens cause an issue for the holder and the reproducibility between scans.
+Additionally, atypically large or dense specimens can cause an issue for the holder and the reproducibility between scans.
+
 As with most machine learning frameworks, the training dataset must encompass the full range of anatomical variation to prevent segmentation errors.
 And while the separation step outlined in this manuscript is independent of the scanned specimens, the segmentation model has to be retrained for other species or anatomical structures.
 
