@@ -40,6 +40,7 @@ The separation pipeline itself is *defined* in the presented code.
 The extraction of the anatomical structures, landmarking and geometric morphometric analysis *are* conducted using established software, but are essential parts of the presented pipeline, albeit neither novel nor unique as you correctly state.
 
 > As discussed by Reviewer 2, the pipeline is underexplained and, as mentioned by Reviewer 1 the discussion is brief and does not sufficiently discuss the pipeline, its advantages or disadvantages.
+
 The explanation of the pipeline lives in the code, which is available online; nonetheless we added some more text in the Materials & Methods section.
 
 > There is general lack of detail throughout the text: the introduction does not mention alternative methods or sufficiently explain why this pipeline was developed.
@@ -83,8 +84,13 @@ We explain the reproducibility and automation of the presented notebooks in more
 > There are just a few points I found difficult to follow, and clarifying them would be beneficial for future readers.
 > A somewhat more significant criticism concerns the discussion: it is very brief and focuses primarily on the biological results, while neglecting the method or pipeline described.
 > A more detailed discussion of the advantages and disadvantages, as well as the potential applications and limitations of the method (when it works, when it does not, and why), would be helpful for the readership.
-> Perhaps some of the following questions could be addressed in this context:
 
+We thank the reviewer for the general, positive assessment and the very constructive criticism.
+We agree that the discussion focused on the biological results too heavily.
+It now contains dedicated sections describing data acquisition, the pipeline itself and its efficiency, and discusses limitations of our approach.
+
+> Perhaps some of the following questions could be addressed in this context:
+> 
 > Figure 1 is impossible to read.
 > Please enlarge the text and maybe add some description in the caption.
 
@@ -192,7 +198,7 @@ You are correct, that the the x- and y-dimensions of the cropped datasets are ap
 We looked at the sizes of the exported files in detail.
 The smallest export is 486 x 722 x 1743 pixels (x, y, z), the largest 1322 x 862 x 5398 voxels, and the median export is approximately 4200 × 650 × 650 voxels and are stored as uncompressed 8-bit volumes.
 
-The smallest sized crop is a crop from a scan that one is actually from a scan that didn't turn out good (see https://anonymous.4open.science/r/sticklebacks-01A4/logfiles/Sticklebucket_14/README.md), but was nonetheless the one we used for extracting the rakers.
+The smallest sized crop is from a scan that didn't turn out good (see https://anonymous.4open.science/r/sticklebacks-01A4/logfiles/Sticklebucket_14/README.md), but was nonetheless a scan where we used the scanned head-region of the fish for extracting the rakers.
 The same folder does contain datasets spanning the whole fish, so the *median* size of the cropped regions is a better estimate of the sizes.
 
 While compiling these numbers we found that the numbers on dataset *size* were off (based on earlier export of the data), the total size is 385 GB instead of the previously mentioned 64 GB.
@@ -254,6 +260,7 @@ We thank the anonymous reviewer for these kind general comments.
 > The pipeline could be further optimized, some steps are redundant or not justified enough.
 > The code relies too much on hard-written adjustments or manual corrections, especially in the separation notebook.
 
+Thanks to your detailed input on the (manual) resorting of the labels we improved the separation pipeline.
 The radial resorting of the detected labels is as robust as possible and now makes the separation step fully automated (except noting which fish is in which petal of the multi-specimen holder).
 We honestly thank the reviewer to bring this point forward and were able to greatly improve the quality and robustness of the separation pipeline, without altering the output of the pipeline.
 
@@ -309,7 +316,7 @@ We thus would like to kindly refrain from adding this to our timing table, since
 > The printing material can be documented as it needs to be radio-transparent enough.
 > What are the benefits of the petal design when the central zone needs to be later removed in the separation process ?
 
-A preview (temporary, *without* the connector to the machine) is available here: https://openscad-studio.pages.dev/s/ue5Aw3bW, the "original" copy is shown in the de-anonymized GitHub repository.
+A preview (temporary, *without* the connector to the machine) is available here: https://openscad-studio.pages.dev/s/ue5Aw3bW, the "original" copy is shown in the original, de-anonymized GitHub repository.
 The grayish outline in Figure 2. shows the petal structure of the multi-specimen holder.
 As repeated later, the sample holder is made from UV-hardened, 3D-printed polymer resin on a Formlabs printer.
 The material ([datasheet](https://media.formlabs.com/m/5fd5e7daf1460058/original/-ENUS-Clear-Resin-V5-TDS.pdf)) *is* radiotransparent enough, otherwise our process would not have worked, the chosen petal design is a balance between ease of generation, printing optimization and handling.
@@ -390,7 +397,7 @@ We are thankful for this suggestion of the reviewer, as the ideas presented in t
 Each detected region is now assigned to a compartment based on the angle of the regions centroid around the rotation axis of the scan, which closely matches the center of the radially symmetric 3D-printed sample holder.
 The function flags scans where two regions are assigned to the same compartment or where a region deviates considerably from the nominal direction of its compartment, and it writes a control image showing the assigned compartment number of each region.
 Applied to all the scan again, this automatic assignment reproduces the manually corrected order as before, so *none* of the extracted datasets or the downstream analyses change.
-The notebook has been updated in the repository, which is still accessible anonymized and linked in the manuscript..
+The notebook has been updated in the repository, linked in the manuscript and available anonymized for review purposes.
 
 The only remaining manual input is the mapping from compartment number to fish ID.
 This is noted while preparing the specimen for scanning (photographically and in a text note on disk) and is read by the notebook from a small text file per scan.
@@ -460,7 +467,7 @@ To be able to separate the scans we also had to include the 3D printed label in 
 We thank the reviewer for this detailed suggestion, and agree that our reasoning was too strong.
 We did lay a very strong focus on the end-to-end reproducibility of our pipeline, which *is* given, but it would also be possible to get to the same results with several manual steps in ImageJ.
 
-As we've specified above, the scanning of the fish did take about two weeks, but was done in the time-span of many months, making a reproducible, automated cropping even more important.
+As we've specified above, the scan time for imaging all the fish was a bit more than two weeks, but was done in the time-span of several months, making a reproducible, automated cropping even more important.
 
 Since we only crop in XY, the cropping does not require Crop (3D), and a Fiji macro working on a virtual stack (maximum intensity projection, thresholding, *Analyze Particles*, cropping each ROI with a margin and logging its coordinates) would extract the fish reproducibly and with memory requirements permitting to perform the process on a not very powerful machine.
 This is essentially the same algorithm our pipeline implements, and we have rewritten the paragraph in the Results accordingly.
