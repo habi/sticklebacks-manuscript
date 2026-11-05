@@ -311,6 +311,10 @@ We thus would like to kindly refrain from adding this to our timing table, since
 > From Figure 3., we can see that almost half the dataset is outside these regions of interest, so probably two fields of view instead of three along the rotation axis would have been enough.
 > This needs to be addressed and justified.
 
+The datasets acquired for this study will also be used in follow-up projects, focusing on other anatomy of the fish; a prerequisite of our scanning campaign was to record the total anteroposterior length of each fish.
+Since the 3D-printed compartment labels have to be in the field of view (as still visible as the upside-down "1" on the left side of Figure 7) to be able to verify the connection between labeled Falcon tubes, notes in the lab book, photos and cropped datasets on disk, the field of view along the length of the fish is not heavily optimized for scanning time.
+We added this justification to the Materials & Methods section.
+
 > I could not acess the OpenScad files due to the anonymization process of the paper.
 > A picture of the sample holder containing the fishes would be appreciated.
 > The printing material can be documented as it needs to be radio-transparent enough.
