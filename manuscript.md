@@ -1,5 +1,5 @@
 ---
-title: 'High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback'
+title: 'From multi-specimen scans to individual bones: automated extraction and efficient, label-guided segmentation of stickleback micro-CT data'
 keywords:
 - tomography
 - high-throughput
@@ -20,15 +20,15 @@ header-includes: |
   -->
   <meta name="dc.format" content="text/html" />
   <meta property="og:type" content="article" />
-  <meta name="dc.title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
-  <meta name="citation_title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
-  <meta property="og:title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
-  <meta property="twitter:title" content="High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback" />
+  <meta name="dc.title" content="From multi-specimen scans to individual bones: automated extraction and efficient, label-guided segmentation of stickleback micro-CT data" />
+  <meta name="citation_title" content="From multi-specimen scans to individual bones: automated extraction and efficient, label-guided segmentation of stickleback micro-CT data" />
+  <meta property="og:title" content="From multi-specimen scans to individual bones: automated extraction and efficient, label-guided segmentation of stickleback micro-CT data" />
+  <meta property="twitter:title" content="From multi-specimen scans to individual bones: automated extraction and efficient, label-guided segmentation of stickleback micro-CT data" />
   <meta name="dc.date" content="2026-11-05" />
   <meta name="citation_publication_date" content="2026-11-05" />
   <meta property="article:published_time" content="2026-11-05" />
-  <meta name="dc.modified" content="2026-11-05T13:56:27+00:00" />
-  <meta property="article:modified_time" content="2026-11-05T13:56:27+00:00" />
+  <meta name="dc.modified" content="2026-11-05T16:11:45+00:00" />
+  <meta property="article:modified_time" content="2026-11-05T16:11:45+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/b5a119c2af54d69fda0f43e46e4ea513e1eb7df0/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/b5a119c2af54d69fda0f43e46e4ea513e1eb7df0/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/b5a119c2af54d69fda0f43e46e4ea513e1eb7df0/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/03df1f60e83581e0c9c5d4160b9f03cf7567b590/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/03df1f60e83581e0c9c5d4160b9f03cf7567b590/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/03df1f60e83581e0c9c5d4160b9f03cf7567b590/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,11 +80,11 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/b5a119c2af54d69fda0f43e46e4ea513e1eb7df0/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/03df1f60e83581e0c9c5d4160b9f03cf7567b590/))
 was generated
-from [habi/sticklebacks-manuscript@b5a119c](https://github.com/habi/sticklebacks-manuscript/tree/b5a119c2af54d69fda0f43e46e4ea513e1eb7df0)
-on November 5, 2026 and contains 6914 words.
-Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...b5a119c2af54d69fda0f43e46e4ea513e1eb7df0#files_bucket).
+from [habi/sticklebacks-manuscript@03df1f6](https://github.com/habi/sticklebacks-manuscript/tree/03df1f60e83581e0c9c5d4160b9f03cf7567b590)
+on November 5, 2026 and contains 6939 words.
+Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...03df1f60e83581e0c9c5d4160b9f03cf7567b590#files_bucket).
 </em></small>
 
 
@@ -157,7 +157,7 @@ Changes to the submitted version are visualized [here on GitHub](https://github.
 ::: {#correspondence}
 ✉: Correspondence via [GitHub Issues](https://github.com/habi/sticklebacks-manuscript/issues)
 or email to
-[Ruslan Hlushchuk](mailto:ruslan.hlushchuk@unibe.ch?subject=Feedback%20on%20%22High-Throughput Micro-CT and Automated Segmentation for Eco-Evolutionary Studies: A Case Study from Threespine Stickleback%22).
+[Ruslan Hlushchuk](mailto:ruslan.hlushchuk@unibe.ch?subject=Feedback%20on%20%22From multi-specimen scans to individual bones: automated extraction and efficient, label-guided segmentation of stickleback micro-CT data%22).
 
 
 :::
@@ -421,7 +421,7 @@ These files are technically not necessary for the process, but we still took int
 In addition, human-readable log files documenting the cropping position in the encompassing dataset and the crop extent, as well as images for double-checking the process, are written to disk, which the manual process does not provide reproducibly.
 This enables reproducible double-checking and confirmation of the process after the fact (see this [direct link for one such log file](https://github.com/habi/sticklebacks/blob/main/logfiles/BucketOfFish_H/rec_regions/SL.X23.012/SL.X23.012.log) and [one such image](https://github.com/habi/sticklebacks/blob/main/logfiles/BucketOfFish_H/Sticklebucket_H.rec.Labels.Check.png)).
 
-The automated extraction produced 215 `nrrd` files with a total size of 385 GB (median 1.65 GB).
+The automated extraction produced 215 `nrrd` files with a total size of 385 GB (median: 1.65 GB).
 The exported regions varied in physical size, resulting in datasets with a median anteroposterior length of 4250 px and median x- and y-dimensions of 650 px (due to the rotation of the fish, the x- and y-dimensions do not map to anatomical directions).
 These cropped regions include the region of the originally acquired data where the 3D-printed label is visible, aiding in end-to-end reproducibility of the extraction process.
 
@@ -498,6 +498,7 @@ Since their features of interest could be resolved with much coarser resolution 
 
 Scanning up to six fish at once makes efficient use of the scanner, but does shift the effort to the processing of the data, since each scan has to be separated into single-fish datasets.
 Since our pipeline automates the separation (see [Fish Separation]) reproducibly, this shift of effort is cost-effective.
+Other pipelines (such as a workflow explained in [@doi:10.1093/iob/obaa009]) heavily rely on human decisions (hindering reproducibility) and rely on operators manually separating regions of interest.
 
 ### Pipeline and Efficiency
 
