@@ -273,7 +273,7 @@ Since the work presented in this manuscript is only *one* of the many projects g
 Thanks to your detailed input on the (manual) resorting of the labels we improved the separation pipeline.
 The radial resorting of the detected labels is as robust as possible and now makes the separation step fully automated (except noting which fish is in which petal of the multi-specimen holder).
 We honestly thank the reviewer to bring this point forward and were able to greatly improve the quality and robustness of the separation pipeline, without altering the output of the pipeline.
-This ultimately lead us to change the title of the manuscript, laying focus on the automated separation of specimen and efficient segmentation.
+This ultimately led us to change the title of the manuscript, laying focus on the automated separation of specimen and efficient segmentation.
 
 > As such, the pipeline is sometimes confusing.
 > I suggest some revisions to clarify the authors' approach and make the pipeline more robust.
