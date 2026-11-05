@@ -436,6 +436,12 @@ At the beginning of the project it was also not already decided how we are going
 > An estimate of the time needed to train the model in Biomedisa should be provided.
 > Those combined should be accounted for in the pipeline segmentation time indicated in Table 1.
 
+TODO:
+
+- @David thinks so, what are @Ben's thoughts?`I think, yes
+- Was this really one very long work-day?
+- How long did training take?
+
 > Landmarking of Models
 > The authors should explain why they did not use the SlicerMorph extension to place the landmarks and chose to use a proprietary software like Stratovan.
 > For better practices, it is preferred to stay within the same software environnement, it would prevent input/output errors and save time in data transfer.
