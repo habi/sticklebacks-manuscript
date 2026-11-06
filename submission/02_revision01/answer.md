@@ -19,7 +19,7 @@ pandoc answer.md \
   --csl="../../build/assets/style.csl" \
   --pdf-engine=typst
 ```
-to make a PDF with nicely styled quotes (hat tip to ChatGPT for whipping up the lua styling filter (I only changed the color to UniBe red)) and references (using the manubot CSL in this repo)
+to make a PDF with nicely styled quotes and link underlines (hat tip to ChatGPT for whipping up the lua styling filter (I only changed the color to UniBe red)) and references (using the manubot CSL in this repo)
 -->
 
 ## Associate Editor Comments to Author
