@@ -205,9 +205,11 @@ The smallest export is 486 x 722 x 1743 pixels (x, y, z), the largest 1322 x 862
 The smallest sized crop is from a scan that didn't turn out good (see [this README file of one of these scans](https://anonymous.4open.science/r/sticklebacks-01A4/logfiles/Sticklebucket_14/README.md)), but was nonetheless a scan where we used the scanned head-region of the fish for extracting the rakers.
 The same folder does contain datasets spanning the whole fish, so the *median* size of the cropped regions is a better estimate of the sizes.
 
-While compiling these numbers we found that the numbers on dataset *size* were off (based on earlier export of the data), the total size is 385 GB instead of the previously mentioned 64 GB.
-
-For the analysis in Biomedisa, all datasets were further *cropped* to only include the head, so no resampling was performed by Biomedisa.
+The reviewer is correct.
+We used Biomedisa with its default settings, so all datasets were resampled to 256 × 256 × 256 voxels for training and prediction, and the predicted labels were scaled back to the original resolution.
+The landmarks describe the overall shape of CB1 and CB2 (end points and curves along the bones), all specimens were processed identically, and remaining errors (adjacent bones merged in the prediction) were corrected manually.
+We therefore do not expect the resampling to affect the comparisons between lakes and ecotypes.
+We now state the resampling in the Methods and mention fine structures, such as gill rakers, as a limitation in the Discussion ([L##]).
 
 > How were the training labels created.
 > Manually?
