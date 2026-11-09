@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2026-11-09" />
   <meta name="citation_publication_date" content="2026-11-09" />
   <meta property="article:published_time" content="2026-11-09" />
-  <meta name="dc.modified" content="2026-11-09T09:35:10+00:00" />
-  <meta property="article:modified_time" content="2026-11-09T09:35:10+00:00" />
+  <meta name="dc.modified" content="2026-11-09T10:11:25+00:00" />
+  <meta property="article:modified_time" content="2026-11-09T10:11:25+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/4888bac862524bed89a18d42fc7eecfaa1f10408/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/4888bac862524bed89a18d42fc7eecfaa1f10408/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/4888bac862524bed89a18d42fc7eecfaa1f10408/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/d220ccd7ad5b754621247a5d78fbac538500a9d2/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/d220ccd7ad5b754621247a5d78fbac538500a9d2/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/d220ccd7ad5b754621247a5d78fbac538500a9d2/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,11 +80,11 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/4888bac862524bed89a18d42fc7eecfaa1f10408/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/d220ccd7ad5b754621247a5d78fbac538500a9d2/))
 was generated
-from [habi/sticklebacks-manuscript@4888bac](https://github.com/habi/sticklebacks-manuscript/tree/4888bac862524bed89a18d42fc7eecfaa1f10408)
-on November 9, 2026 and contains 6978 words.
-Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...4888bac862524bed89a18d42fc7eecfaa1f10408#files_bucket).
+from [habi/sticklebacks-manuscript@d220ccd](https://github.com/habi/sticklebacks-manuscript/tree/d220ccd7ad5b754621247a5d78fbac538500a9d2)
+on November 9, 2026 and contains 6983 words.
+Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...d220ccd7ad5b754621247a5d78fbac538500a9d2#files_bucket).
 </em></small>
 
 
@@ -165,15 +165,15 @@ or email to
 
 ## Abstract {.page_break_before}
 
-The threespine stickleback is a well-recognized model system for understanding adaptation to divergent habitats.
-The populations of benthic stickleback (benthos-feeding) and limnetic stickleback (water-column-feeding) differ in phenotypic traits associated with dietary specialization.
+The threespine stickleback (*Gasterosteus aculeatus*) is a well-recognized model system for understanding adaptation to divergent habitats.
+For example, populations of benthic stickleback (benthos-feeding) and limnetic stickleback (water-column-feeding) differ in phenotypic traits associated with dietary specialization.
 Modern investigations of evolutionary change in this organism often require the analysis of hundreds, if not thousands, of individuals.
 However, analysis of feeding structures---particularly jaws and complex internal branchial anatomy---remains time-consuming and requires considerable expertise, with destructive sampling and fine dissection skills needed for quantitative analysis.
 
 The advent of X-ray microtomography and three-dimensional scanning technologies enables nondestructive imaging and greatly increases the availability of high-resolution morphological data.
 However, the resulting increase in data complexity and processing demands often makes these approaches impractical for large-scale studies, especially at population scales that require measuring and analyzing hundreds to thousands of samples.
 
-To address these challenges, we developed a rapid and semi-automated segmentation and analysis pipeline based on the Jupyter interactive development environment and the Biomedisa image segmentation platform to investigate three-dimensional morphological adaptation in the threespine stickleback (*Gasterosteus aculeatus*).
+To address these challenges, we developed a rapid and semi-automated segmentation and analysis pipeline based on the Jupyter interactive development environment and the Biomedisa image segmentation platform to investigate three-dimensional morphological adaptation in the threespine stickleback.
 
 The pipeline includes separation of multi-specimen scans into individual regions of interest, reconstruction of targeted anatomical structures, and morphometric analyses.
 We applied this pipeline to 38 multi-specimen scans comprising 215 specimens from divergent benthic and limnetic stickleback populations, demonstrating the potential of a high-throughput micro-CT imaging approach for testing ecological and evolutionary hypotheses.
@@ -184,7 +184,7 @@ These replicable, clade-agnostic methods provide a scalable pipeline that resear
 
 The threespine stickleback (*Gasterosteus aculeatus*) is a well-established model system for understanding the independent evolution of similar traits in similar environments [@doi:10.1093/oso/9780198577287.001.0001; @doi:10.1146/annurev-genom-111720-081402].
 This species exhibits marked differences in marine--freshwater, lake--stream, and benthic--limnetic ecotypes [@doi:10.1086/285404; @doi:10.1111/j.1095-8649.2009.02419.x].
-This study focused on the benthic--limnetic axis, which resolves distinct stickleback ecotypes based primarily on dietary ecology (benthic stickleback forage on macroinvertebrates at the bottom of lakes; limnetic stickleback forage on zooplankton within the water column [@doi:10.1111/j.1095-8312.2010.01531.x]).
+This study focused on the benthic--limnetic axis, which resolves distinct stickleback ecotypes based primarily on dietary ecology; benthic stickleback forage on macroinvertebrates at the bottom of lakes, while limnetic stickleback forage on zooplankton within the water column [@doi:10.1111/j.1095-8312.2010.01531.x].
 The samples for this study were collected from the benthic and limnetic source populations used to establish a long-term evolutionary experiment within the Kenai Peninsula of Alaska (USA) [@doi:10.1002/ece3.11503].
 This project, the Forward In Time Natural Experimental Study of Selection (FITNESS), aims to study the predictability and repeatability of evolution.
 Two pools of sticklebacks, one comprising four source populations of limnetic sticklebacks and the other comprising four source populations of benthic sticklebacks, have been placed in eight destination lakes, four of which are small and benthic and four of which are large and limnetic.
@@ -202,17 +202,17 @@ However, imaging large numbers of stickleback specimens has until now been prohi
 
 ### X-Ray Microtomography
 
-High-resolution X-ray tomography (micro-CT) imaging is an indispensable tool to gain nondestructive insights into the inner structure of highly diverse samples, specifically for specimens in biomedical research [@doi:10.1186/s12915-020-0753-2].
-Micro-CT imaging is ideally suited for nondestructive anatomical assessments in fish [@doi:10.1093/iob/obad008], capturing internal structures and delicate skeletal elements that are otherwise difficult to quantify without destructive preparation.
+High-resolution X-ray tomography (micro-CT) imaging is an indispensable tool to gain nondestructive insights into the inner structure of highly diverse samples, especially for specimens in biomedical research [@doi:10.1186/s12915-020-0753-2].
+Micro-CT imaging is also ideally suited for nondestructive anatomical assessments in fish [@doi:10.1093/iob/obad008], capturing internal structures and delicate skeletal elements that are otherwise difficult to quantify without destructive preparation.
 
 While in theory, each specimen could be scanned individually, performing hundreds of scans of individual specimens would represent a large drain of time and resources.
 Instead many investigators and tomography institutes choose to scan several specimens at once in a "multiscan" format.
 Although efficient in terms of beam time and number of individuals per scan, multiscans result in considerably larger datasets that must be partitioned correctly with respect to each individual specimen prior to downstream analysis.
-This creates a bottleneck for large-scale research where sizable multiscans bloat processing time, in addition to potential risks regarding errors with specimen splitting and specimen identification.
+This creates a bottleneck for large-scale research where sizable multiscans bloat processing time, in addition to potential risks regarding errors in specimen splitting and specimen identification.
 
-Furthermore, once partitioned, small structures can be manually rendered by a skilled investigator using segmentation tools such as 3D Slicer [@doi:10.1007/978-1-4614-7657-3_19; @doi:10.1111/2041-210X.13669], yet the time and resources required per sample make this approach, too, infeasible for population-level and evolutionary studies.
+Furthermore, once partitioned, small structures can be manually rendered by a skilled investigator using segmentation tools such as 3D Slicer [@doi:10.1007/978-1-4614-7657-3_19; @doi:10.1111/2041-210X.13669], yet the time and resources required per sample also make this approach infeasible for population-level and evolutionary studies.
 
-This project aims to address these gaps, demonstrating a novel pipeline for automatic splitting and rendering of multi-specimen scans for mass sampling, creating a dataset with consistent parameters that can be used as input for downstream machine learning approaches [@doi:10.1038/s41467-020-19303-w] to aid in the segmentation of individual bony structures in each scan.
+This project aims to address these gaps, demonstrating a novel pipeline for automatic splitting and rendering of multi-specimen scans for mass sampling, creating a dataset with consistent parameters that can be used as input for downstream machine learning approaches, such as Biomedisa, to aid in the segmentation of individual bony structures in each scan [@doi:10.1038/s41467-020-19303-w].
 Once a Biomedisa model is trained, the entire pipeline runs from multi-specimen input to reconstructed anatomical structures for each specimen in a fraction of the time and resources required for traditional analysis.
 
 
@@ -230,7 +230,7 @@ Once a Biomedisa model is trained, the entire pipeline runs from multi-specimen 
 The samples used for this study were collected from six of the eight source lakes used for the FITNESS project in the region of Cook Inlet, Alaska.
 Fish were collected using unbaited minnow traps in two separate field seasons, the first from May 26--June 10, 2023, and the second from May 25--June 11, 2024.
 Specimens were collected from a random sample of up to 30 fish from each lake per sampling year, under Alaska Department of Fish and Game (ADFG) permits SF2023-030 and P-24-015 for 2023 and 2024, respectively.
-The fish were euthanized with MS-222, photographed, labeled, and preserved in 10% formalin in individual bags, all under McGill University Animal Use Protocol (AUP) MCGL-8265.
+The fish were euthanized with 0.2&nbsp;% MS-222, photographed, labeled, and preserved in 10&nbsp;% formalin in individual bags, all under McGill University Animal Use Protocol (AUP) MCGL-8265.
 At the end of each field season, samples were shipped from Anchorage (AK, USA) to Bern (BE, CH), where they were stored until scanning.
 The total number of fish for each lake was: 52 from Watson Lake (benthic), 48 from Finger Lake (benthic), 46 from Spirit Lake (limnetic), 35 from South Rolly Lake (limnetic), 20 from Walby Lake (benthic), and 14 from Tern Lake (benthic) for a total of 215 specimens.
 As there is evidence that sexual dimorphism may be present in the stickleback feeding structures [@doi:10.1242/jeb.074948], caudal fin clips were additionally collected from fish sampled during the 2024 field season for molecular sex identification through genotyping.
@@ -264,7 +264,7 @@ We scanned the whole length of the fish in several stacks, since the datasets ar
 On average, we scanned three fields of view along the rotation axis of the sample holder.
 This resulted in an average scan time of 10 hours for each scan.
 The projection images were subsequently reconstructed into stacks of 8-bit `png` images with NRecon (Bruker microCT, Kontich, Belgium; version 2.2.0.6), without applying any ring artifact or beam hardening correction.
-The isotropic voxel sizes in the resulting datasets vary from 15 to 17.5 µm.
+The isotropic voxel sizes in the resulting datasets vary from 15 to 17.5&nbsp;µm.
 
 The result of one such multi-specimen scan is visualized in Figure @fig:visualization, which shows the six fish contained in this scan.
 The 3D-printed labels on the holder are highlighted in yellow in Figures @fig:visualization and @fig:labels--@fig:cropping (image processing in notebooks), and visible (upside down) in Figure @fig:SLX23012_3D.
@@ -492,7 +492,7 @@ The differences in the second ceratobranchial appear to be driven by divergence 
 
 The main driver for developing our pipeline was efficient use of both machine time and human time in this project.
 
-At the voxel size needed to unambiguously resolve the branchial skeleton (less than 20 µm, as determined in pilot experiments), the time needed for acquisition of a tomographic scan is determined by the number of projections and exposure time, not by the number of fish in the field of view.
+At the voxel size needed to unambiguously resolve the branchial skeleton (less than 20&nbsp;µm, as determined in pilot experiments), the time needed for acquisition of a tomographic scan is determined by the number of projections and exposure time, not by the number of fish in the field of view.
 Efficiently "filling" the field of view of the scanner with as many fish as possible in one scan enabled us to scan a total of 215 unique specimens in 38 different scans with a total scan duration of 16 days.
 Had we scanned each specimen individually, we would have required about 90 days of scan time; while not impossible, this would have increased the instrument time and its costs severalfold.
 Scanning several specimens simultaneously is an established strategy for increasing throughput in morphometric micro-CT studies; Edie et al. scanned hundreds of bivalve shells by mounting four to five specimens per scan [@doi:10.3389/fevo.2023.1127756].
@@ -649,7 +649,7 @@ The R script we used to assess the morphometrics is available [online on GitHub]
 
 ![PCA of first ceratobranchial, colored by lake ecotype, highlighting PC1 and PC4.
   Warps are indicated at the extremes of each axis by vectors drawn from a mean shape (red).
-  PC4 accounts for 4.33% of the variation.](images/Supplementary_Figure_PC1_vs_PC4.png){#fig:pc4}
+  PC4 accounts for 4.33&nbsp;% of the variation.](images/Supplementary_Figure_PC1_vs_PC4.png){#fig:pc4}
 
 
 ## References {.page_break_before}
