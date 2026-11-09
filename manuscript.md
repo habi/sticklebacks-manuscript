@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2026-11-09" />
   <meta name="citation_publication_date" content="2026-11-09" />
   <meta property="article:published_time" content="2026-11-09" />
-  <meta name="dc.modified" content="2026-11-09T10:54:05+00:00" />
-  <meta property="article:modified_time" content="2026-11-09T10:54:05+00:00" />
+  <meta name="dc.modified" content="2026-11-09T10:56:28+00:00" />
+  <meta property="article:modified_time" content="2026-11-09T10:56:28+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/174e9051395319dd0d64d680a0b12529edcbecdd/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/174e9051395319dd0d64d680a0b12529edcbecdd/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/174e9051395319dd0d64d680a0b12529edcbecdd/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/8c786384f2902cf37a992b8bbb7cee26f66815f7/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/8c786384f2902cf37a992b8bbb7cee26f66815f7/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/8c786384f2902cf37a992b8bbb7cee26f66815f7/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,11 +80,11 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/174e9051395319dd0d64d680a0b12529edcbecdd/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/8c786384f2902cf37a992b8bbb7cee26f66815f7/))
 was generated
-from [habi/sticklebacks-manuscript@174e905](https://github.com/habi/sticklebacks-manuscript/tree/174e9051395319dd0d64d680a0b12529edcbecdd)
-on November 9, 2026 and contains 7036 words.
-Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...174e9051395319dd0d64d680a0b12529edcbecdd#files_bucket).
+from [habi/sticklebacks-manuscript@8c78638](https://github.com/habi/sticklebacks-manuscript/tree/8c786384f2902cf37a992b8bbb7cee26f66815f7)
+on November 9, 2026 and contains 7058 words.
+Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...8c786384f2902cf37a992b8bbb7cee26f66815f7#files_bucket).
 </em></small>
 
 
@@ -485,12 +485,14 @@ The main driver for developing our pipeline was efficient use of both machine ti
 At the voxel size needed to unambiguously resolve the branchial skeleton (less than 20&nbsp;µm, as determined in pilot experiments), the time needed for acquisition of a tomographic scan is determined by the number of projections and exposure time, not by the number of fish in the field of view.
 Efficiently "filling" the field of view of the scanner with as many fish as possible in one scan enabled us to scan a total of 215 unique specimens in 38 different scans with a total scan duration of 16 days.
 Had we scanned each specimen individually, we would have required about 90 days of scan time; while not impossible, this would have increased the instrument time and its costs severalfold.
-Scanning several specimens simultaneously is an established strategy for increasing throughput in morphometric micro-CT studies; Edie et al. scanned hundreds of bivalve shells by mounting four to five specimens per scan [@doi:10.3389/fevo.2023.1127756].
-Since their features of interest could be resolved with much coarser resolution projections, each of their scans took only minutes; in contrast, resolving the branchial skeleton of stickleback required scans of several hours, making multi-specimen scanning even more beneficial in our case.
+Scanning several specimens simultaneously is an established strategy for increasing throughput in morphometric micro-CT studies; for example, Edie et al. scanned hundreds of bivalve shells by mounting four to five specimens per scan [@doi:10.3389/fevo.2023.1127756].
+Since their features of interest could be resolved with much coarser resolution projections, each of their scans took only minutes.
+By contrast, resolving the branchial skeleton of stickleback required scans of several hours, making multi-specimen scanning even more beneficial in our case.
 
 Scanning up to six fish at once makes efficient use of the scanner, but does shift the effort to the processing of the data, since each scan has to be separated into single-fish datasets.
-Since our pipeline automates the separation (see [Fish Separation]) reproducibly, this shift of effort is cost-effective.
-Other pipelines (such as a workflow explained in [@doi:10.1093/iob/obaa009]) heavily rely on more manual steps.
+Other pipelines for separation exist (such as a workflow explained in [@doi:10.1093/iob/obaa009]).
+However, these rely on operators manually separating regions of interest and on human decisions, thereby hindering reproducibility.
+Since our pipeline automates the separation (see [Fish Separation]), this shift of effort to data processing is both cost-effective and promotes reproducibility.
 
 ### Pipeline and Efficiency
 
@@ -499,13 +501,13 @@ Requiring minimal active user input, all automated pipeline steps are substantia
 This reproducible pipeline allows high-throughput sampling and population-scale analysis of stickleback specimens.
 
 In comparable multi-specimen workflows, the assignment of each specimen in the reconstructed volume relies on manually recorded scan maps and orientation markers [@doi:10.3389/fevo.2023.1127756].
-The hereby presented pipeline performs an automated and reproducible separation based on the MIP and the known holder geometry, so adding more (multi-specimen) scans to the pipeline does *not* increase the time users have to spend on manually separating these scans into single fish regions.
+The pipeline presented here performs an automated and reproducible separation based on the MIP and the known holder geometry, so adding more (multi-specimen) scans to the pipeline does not increase the time users have to spend on manually separating these scans into single fish regions.
 
 The imaging and separation step is easy to generalize to either other micro-CT setups or other species and specimens.
 As long as the specimens show up as distinct blobs in the MIP (see Figure @fig:labels), our pipeline can reproducibly separate these blobs into a cropped dataset for any further processing, enabling a general, reproducible, and high-throughput micro-CT workflow in biology and other fields.
 We have already applied the same pipeline to multi-specimen scans of other fish species, namely *Spinachia spinachia* and several Lake Victoria and Neotropical cichlid species (manuscripts in preparation).
 
-In addition, while we have selected 3D Slicer as our main tool for creating training labels, alternative programs such as Avizo (Thermo Fisher Scientific) and Dragonfly [@doi:10.1017/S143192761800315X] in addition to promising segmentation tools such as nnInteractive [@doi:10.48550/arXiv.2503.08373] and SPROUT [@doi:10.1101/2024.11.22.624847] could also be used for this task as long as high quality labels can be generated.
+In addition, while we have selected 3D Slicer as our main tool for creating training labels, alternative programs such as Avizo (Thermo Fisher Scientific) and Dragonfly [@doi:10.1017/S143192761800315X] in addition to promising segmentation tools such as nnInteractive [@doi:10.48550/arXiv.2503.08373] and SPROUT [@doi:10.1101/2024.11.22.624847], could also be used for this task as long as high quality labels can be generated.
 Our chosen combination proved to be efficient for working with the large amount of datasets in a heterogeneous lab setting.
 
 ### Findings from Ceratobranchial Analysis
@@ -642,6 +644,7 @@ The R script we used to assess the morphometrics is available [online on GitHub]
 ![PCA of first ceratobranchial, colored by lake ecotype, highlighting PC1 and PC4.
   Warps are indicated at the extremes of each axis by vectors drawn from a mean shape (red).
   PC4 accounts for 4.33&nbsp;% of the variation.](images/Supplementary_Figure_PC1_vs_PC4.png){#fig:pc4 tag="S2"}
+
 
 ## References {.page_break_before}
 
