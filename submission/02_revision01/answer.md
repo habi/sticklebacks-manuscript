@@ -161,7 +161,6 @@ We added this to the Methods.
 > How were they merged/stacked?
 
 Merging of the substacks is performed automatically in the reconstruction software NRecon provided by Bruker.
-The merging does correct for minute differences in rotation and usually works absolutely flawlessly by blending the overlapping regions in the reconstructed stack, so there are also no cone-beam reconstruction artifacts discernible.
 
 #### R1.6
 
