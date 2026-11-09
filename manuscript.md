@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2026-11-09" />
   <meta name="citation_publication_date" content="2026-11-09" />
   <meta property="article:published_time" content="2026-11-09" />
-  <meta name="dc.modified" content="2026-11-09T10:11:25+00:00" />
-  <meta property="article:modified_time" content="2026-11-09T10:11:25+00:00" />
+  <meta name="dc.modified" content="2026-11-09T10:54:05+00:00" />
+  <meta property="article:modified_time" content="2026-11-09T10:54:05+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/d220ccd7ad5b754621247a5d78fbac538500a9d2/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/d220ccd7ad5b754621247a5d78fbac538500a9d2/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/d220ccd7ad5b754621247a5d78fbac538500a9d2/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/174e9051395319dd0d64d680a0b12529edcbecdd/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/174e9051395319dd0d64d680a0b12529edcbecdd/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/174e9051395319dd0d64d680a0b12529edcbecdd/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,11 +80,11 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/d220ccd7ad5b754621247a5d78fbac538500a9d2/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/174e9051395319dd0d64d680a0b12529edcbecdd/))
 was generated
-from [habi/sticklebacks-manuscript@d220ccd](https://github.com/habi/sticklebacks-manuscript/tree/d220ccd7ad5b754621247a5d78fbac538500a9d2)
-on November 9, 2026 and contains 6983 words.
-Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...d220ccd7ad5b754621247a5d78fbac538500a9d2#files_bucket).
+from [habi/sticklebacks-manuscript@174e905](https://github.com/habi/sticklebacks-manuscript/tree/174e9051395319dd0d64d680a0b12529edcbecdd)
+on November 9, 2026 and contains 7036 words.
+Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...174e9051395319dd0d64d680a0b12529edcbecdd#files_bucket).
 </em></small>
 
 
@@ -227,7 +227,7 @@ Once a Biomedisa model is trained, the entire pipeline runs from multi-specimen 
 
 ### Sample Procurement and Preparation
 
-The samples used for this study were collected from six of the eight source lakes used for the FITNESS project in the region of Cook Inlet, Alaska.
+The samples used for this study were collected from six of the eight source lakes used for the FITNESS project in the region of Cook Inlet, Alaska [@doi:10.1002/ece3.11503].
 Fish were collected using unbaited minnow traps in two separate field seasons, the first from May 26--June 10, 2023, and the second from May 25--June 11, 2024.
 Specimens were collected from a random sample of up to 30 fish from each lake per sampling year, under Alaska Department of Fish and Game (ADFG) permits SF2023-030 and P-24-015 for 2023 and 2024, respectively.
 The fish were euthanized with 0.2&nbsp;% MS-222, photographed, labeled, and preserved in 10&nbsp;% formalin in individual bags, all under McGill University Animal Use Protocol (AUP) MCGL-8265.
@@ -260,7 +260,7 @@ Setting different voltage and current for one scan had no discernible influence 
 For each scan, we recorded a set of 3601 projections per stack (each projection with a size of 3000 by 2000 pixels) at 0.1° intervals over a 360° sample rotation.
 Every single projection was exposed for about a second.
 
-We scanned the whole length of the fish in several stacks, since the datasets are also used in follow-up studies of other anatomical regions, and since the 3D-printed compartment labels had to be in the field of view for the separation step.
+We scanned the whole length of the fish in several stacks, because the datasets are also used in follow-up studies of other anatomical regions and the 3D-printed compartment labels had to be in the field of view for the separation step.
 On average, we scanned three fields of view along the rotation axis of the sample holder.
 This resulted in an average scan time of 10 hours for each scan.
 The projection images were subsequently reconstructed into stacks of 8-bit `png` images with NRecon (Bruker microCT, Kontich, Belgium; version 2.2.0.6), without applying any ring artifact or beam hardening correction.
@@ -285,9 +285,7 @@ Further processing of the tomographic datasets was performed with a set of Jupyt
 The [preview notebook](https://nbviewer.org/github/habi/sticklebacks/blob/main/PreviewScans.ipynb) was used to identify scanning and reconstruction issues.
 For this, we read all the relevant scan and reconstruction parameters from the log files of each scan.
 Afterwards, we efficiently loaded the reconstruction `png` images from disk with the [`dask_image.imread.imread`](https://image.dask.org/en/latest/dask_image.imread.html) function [@dask].
-This approach allowed us to map *all* the reconstructions to memory and quickly generate maximum intensity projections (MIP) of each scan (see Figure @fig:mips for an example) for both quality control and further processing.
-
-![Maximum intensity projections of one acquired dataset along the three cardinal axes.](images/Sticklebucket_H.rec.MIPs.png){#fig:mips}
+This approach allowed us to map *all* the reconstructions to memory and quickly generate maximum intensity projections (MIP) of each scan (see supplementary Figure @fig:mips for an example) for both quality control and further processing.
 
 ##### Separation Notebook
 
@@ -328,9 +326,8 @@ For this further analysis, we also wrote stacks of `png` images and [`nrrd`](htt
 These binarized regions were segmented into bone and background based on a simple multi-Otsu thresholding algorithm [@doi:10.6688/JISE.2001.17.5.1] (with four classes, using only the middle threshold).
 Providing the regions as `nrrd` files helped to efficiently work with the datasets as specified in the following sections.
 
-Using either `K3D-jupyter` [@url:https://k3d-jupyter.org] or `napari` [@doi:10.5281/zenodo.3555620], we implemented a quick way to view any of the extracted regions directly in the Jupyter notebook.
-`K3D-jupyter` allows saving an interactive version of the preview.
-One such interactive preview is [available online](https://htmlpreview.github.io/?https://raw.githubusercontent.com/habi/sticklebacks-manuscript/refs/heads/main/content/data/SL.X23.012.3D.html).
+Using either `K3D-jupyter` [@url:https://github.com/K3D-tools/K3D-jupyter] or `napari` [@doi:10.5281/zenodo.3555620], we implemented a quick way to view any of the extracted regions directly in the Jupyter notebook.
+`K3D-jupyter` allows saving an interactive version of the preview; one such interactive preview is [available online](https://htmlpreview.github.io/?https://raw.githubusercontent.com/habi/sticklebacks-manuscript/refs/heads/main/content/data/SL.X23.012.3D.html).
 `napari` is well suited to load the intermediate `*.zarr` files; Figure @fig:SLX23012_3D shows such a preview.
 
 ![Three-dimensional visualization of one extracted region.
@@ -345,7 +342,7 @@ For each of these samples, we cropped the datasets of the full fish further to o
 Individual elements of the branchial apparatus of these further cropped datasets were rendered and cleaned by hand using a combination of thresholding and "Split Islands" tools to separate the pharyngobranchials, epibranchials, basibranchials, hypobranchials, and ceratobranchials as distinct labels (see Figure @fig:branchial_anatomy).
 
 ![Example of branchial anatomy with CB1 and CB2 highlighted in pink.
-  Abbreviations: PB = pharyngobranchials, EB = epibranchials, BB = basibranchials, HB = hypobranchials, CB = ceratobranchials.](images/Branchial_Figure.png){#fig:branchial_anatomy}
+  Abbreviations: EB = epibranchials, PB = pharyngobranchials, CB = ceratobranchials, HB = hypobranchials, BB = basibranchials.](images/Branchial_Figure.png){#fig:branchial_anatomy}
 
 Once segmented, the labels corresponding to each set of bones were exported as a colored labelmap along with the `nrrd` file from which they were segmented to pass to Biomedisa.
 
@@ -357,11 +354,11 @@ We allowed a 180° rotation to account for possible specimen variability, with a
 The model was trained with a batch size of 24 for 50 epochs, using a network architecture of 32-64-128-256-512.
 The final model performs well, with a Dice score of 0.9159 on the validation dataset.
 We only performed manual touch-ups on the resulting segmentation output where the adjacent bones were in close proximity (causing their appearance to be "stuck" in the final render; this is also an issue with manual segmentation and not exclusive to the approach described here).
+Once trained, we applied the Biomedisa segmentation model to the remaining specimens, resulting in segmentation labels for all structures in the branchial apparatus.
 
 #### Landmarking of Models
 
 To demonstrate the effectiveness of this tool and the importance of 3D morphometry to answer evolutionary questions, we quantified the shape differences of the ceratobranchial bones.
-Once trained, we applied the Biomedisa segmentation model to the remaining specimens, resulting in segmentation labels for all structures in the branchial apparatus.
 
 As a test and for subsequent analysis, only the first and second right ceratobranchials were chosen for comparison between all samples.
 The segmentation labels corresponding to these bones were imported together for landmarking using Stratovan Checkpoint [@checkpoint] and 3D Slicer [@doi:10.1007/978-1-4614-7657-3_19].
@@ -388,7 +385,7 @@ Linear fits were further investigated using the `pairwise()` function to analyze
 
 The acquisition and reconstruction of fish datasets were successful and enabled high-throughput processing.
 A total of 215 unique specimens were scanned in 38 different scans with a total scan duration of nearly 16 days (spread over 209 calendar days).
-We acquired 403312 projections, reconstructed into a total of 154645 slices, resulting in approximately 4000 reconstruction `png` files per scan (*N* = 38), covering (on average) a length parallel to the fish of 65 mm.
+We acquired 403312 projections, reconstructed into a total of 154645 slices, resulting in approximately 4000 reconstruction `png` files per scan (*N* = 38), covering (on average) a length equivalent to a fish of 65 mm.
 
 ### Fish Separation
 
@@ -406,16 +403,19 @@ Done manually, this would need to be repeated six times per scan, followed by as
 In addition, such a manual process is not reproducible in the sense that it cannot be consistently replicated by others using the same data, since the manual cropping is operator-dependent.
 Algorithmically/automatically cropping the large datasets based on the axial MIP image yields reproducible cropped regions and uses operator time efficiently by eliminating manual cropping steps (see Table @tbl:timing).
 
-| Task                             | Manual Time    | Our Pipeline Time  | Speed-up |
-|----------------------------------|---------------:|-------------------:|---------:|
-| Scanning single fish             |      ~10 hours | 1 hour, 45 minutes |   ~5.5 x |
-| Splitting scans into single fish |     17 minutes |          9 minutes |   ~2   x |
-| Rendering volumes                |      5 minutes |         15 seconds |   20   x |
-| Segmentation                     | 10--15 minutes |         15 seconds |  ~60   x |
+| Task                             | Manual Time    | Our Pipeline Time                                          | Speed-up |
+|----------------------------------|---------------:|-----------------------------------------------------------:|---------:|
+| Scanning single fish             |      ~10 hours |                                         1 hour, 45 minutes |   ~5.5 x |
+| Splitting scans into single fish |     17 minutes |                                                  9 minutes |   ~2   x |
+| Rendering volumes                |      5 minutes |                                                 15 seconds |   20   x |
+| Training for segmentation        |      5 hours   | 12 hours (training dataset), 5.5 hours (ML model training) |   ~0.3 x (slower!) |
+| Segmentation                     | 10--15 minutes |                                                 15 seconds |  ~60   x |
 
 Table: Comparison of time estimates between manual and pipeline runs.
        On average, we scanned 5.66 fish per scan for a total scan time of 15 days, 23 hours, 50 minutes, and 24 seconds.
        The manual scan time per single fish is thus calculated to be about 5.5 times longer than scanning six fish at a time in a single scan and separating them after the fact.
+       The time used for "human training" is estimated and used to get to know the software in about an afternoon.
+       The Biomedisa training was performed unsupervised on 2 NVIDIA GeForce RTX 4090 GPUs.
        Also note that the manual splitting does *not* produce the accompanying log file and figures for double-checking as specified below. {#tbl:timing}
 
 Note that the automated extraction writes intermediate files, which facilitate the handling of the data (this step takes about 3 minutes per scan).
@@ -424,50 +424,40 @@ In addition, human-readable log files documenting the cropping position in the e
 This enables reproducible double-checking and confirmation of the process after the fact (see this [direct link for one such log file](https://github.com/habi/sticklebacks/blob/main/logfiles/BucketOfFish_H/rec_regions/SL.X23.012/SL.X23.012.log) and [one such image](https://github.com/habi/sticklebacks/blob/main/logfiles/BucketOfFish_H/Sticklebucket_H.rec.Labels.Check.png)).
 
 The automated extraction produced 215 `nrrd` files with a total size of 385 GB (median: 1.65 GB).
-The exported regions varied in physical size, resulting in datasets with a median anteroposterior length of 4250 px and median x- and y-dimensions of 650 px (due to the rotation of the fish, the x- and y-dimensions do not map to anatomical directions).
+The exported regions varied in physical size, resulting in datasets with a median anteroposterior length of 4250 pixels and median x- and y-dimensions of 650 pixels (due to the rotation of the fish, the x- and y-dimensions do not map to anatomical directions).
 These cropped regions include the region of the originally acquired data where the 3D-printed label is visible, aiding in end-to-end reproducibility of the extraction process.
 
 We have uploaded further cropped datasets of each imaged fish to MorphoSource (N=215, see [Supplementary Materials]).
-These further cropped datasets include only the region of the fish in anteroposterior direction, drop the 3D-printed label region and have a median length of approximately 3000 pixels; the x- and y-directions are the same as for the previously mentioned datasets.
+These further cropped datasets include only the region of the fish in anteroposterior direction, drop the 3D-printed label region, and have a median length of approximately 3000 pixels; the x- and y-directions are the same as for the previously mentioned datasets.
 
 ### Segmentation
 
 In addition to the cropped regions, the separation notebook also writes a binarized version of each region, based on a simple multi-Otsu thresholding algorithm.
 These binarized regions are not used for the analysis presented here, but serve as a quick visual check of each extracted fish (for an example, see Figure @fig:SLX23012_3D).
 
-Nineteen specimen were excluded from further analysis due to them being damaged and/or being clearly juvenile fish.
-For the remaining datasets (N=196), segmentation was performed in 3D Slicer and Biomedisa segmentation model, resulting in segmentation labels for all structures in the branchial apparatusm as described in [Materials & Methods].
+Nineteen specimens were excluded from further analysis because they were damaged and/or clearly juvenile fish.
+For the remaining specimens (N=196), segmentation was performed in 3D Slicer and the Biomedisa segmentation model, resulting in segmentation labels for all structures in the branchial apparatusm as described in [Materials & Methods].
 Selection and individual rendering of branchial structures takes between 10 and 15 minutes; the segmentation of an average Biomedisa render takes 15 seconds once trained (see Table @tbl:timing).
 
-### Analysis
+### Analysis of Ceratobranchial Bone Shape
 
 The speed and quality of these data allow us to study the internal branchial anatomy on a large scale and in situ, without the need for fine dissection.
 
 After GPA alignment, we quantified the shape differences among all scanned fish for this project.
-Changes due to allometry (using centroid size or standard length as the size metric) were significant but slight, explaining only a small fraction of shape variation (
-CB1: *p* = 0.001,
+Changes due to allometry (using centroid size or standard length as the size metric) were significant but slight, explaining only a small fraction of shape variation (CB1: *p* = 0.001,
 $R^2$    = 0.0325;
 CB2: *p* = 0.001,
-$R^2$    = 0.0622
-) in both bones.
-Both linear models and PCA results suggest that the lakes themselves---and not overarching categories of ecotype or sex---drive most of the shape variation in these bones (
-CB1: *p* = 0.001,
+$R^2$    = 0.0622) in both bones.
+Both linear models and PCA results suggest that the lakes themselves---and not overarching categories of ecotype or sex---drive most of the shape variation in these bones (CB1: *p* = 0.001,
 $R^2$    = 0.0946;
 CB2: *p* = 0.001,
-$R^2$    = 0.1104
-).
-However, the variation in the first ceratobranchial was significantly associated with different ecotypes, although the effect size was small (
-*p*   = 0.009,
-$R^2$ = 0.0206
-), with substantial overlap in the resulting shape space (see Figure @fig:pca_cb1).
+$R^2$    = 0.1104).
+However, the variation in the first ceratobranchial was significantly associated with different ecotypes, although the effect size was small (*p*   = 0.009, $R^2$ = 0.0206), with substantial overlap in the resulting shape space (see Figure @fig:pca_cb1).
 
 ![PCA of CB1 colored by lake ecotype.
   Warps are indicated at the extremes of each axis by vectors drawn from a mean shape (red).](images/PCA_CB1_Plot.png){#fig:pca_cb1}
 
-On the other hand, the second ceratobranchial bone showed equally small but significant changes associated with the ecotype (
-*p* = 0.001,
-$R^2$ = 0.0377
-).
+On the other hand, the second ceratobranchial bone showed equally small but significant changes associated with the ecotype (*p* = 0.001, $R^2$ = 0.0377).
 The differences between benthic and limnetic specimens are, for this bone, clearly divergent in shape space (see Figure @fig:pca_cb2).
 
 ![PCA of CB2 colored by lake ecotype.
@@ -561,7 +551,7 @@ Finally, the 3D analysis step of the pipeline allows for insights from 3D data t
 
 ## Authors’ Contributions {.page_break_before}
 
-[Contributor Roles Taxonomy (CRediT)](https://credit.niso.org/), as defined in [@doi:10.3789/ansi.niso.z39.104-2022]:
+[Contributor Roles Taxonomy (CRediT)](https://credit.niso.org/), as defined in [@credit]:
 
 
 
@@ -645,12 +635,13 @@ The result of the resampling is also available [online](https://github.com/habi/
 
 The R script we used to assess the morphometrics is available [online on GitHub](https://github.com/habi/sticklebacks-manuscript/blob/main/content/scripts/Morphometrics_RScript.R).
 
-### Supplementary Figure
+### Supplementary Figures
+
+![Maximum intensity projections of one acquired dataset along the three cardinal axes.](images/Sticklebucket_H.rec.MIPs.png){#fig:mips tag="S1"}
 
 ![PCA of first ceratobranchial, colored by lake ecotype, highlighting PC1 and PC4.
   Warps are indicated at the extremes of each axis by vectors drawn from a mean shape (red).
-  PC4 accounts for 4.33&nbsp;% of the variation.](images/Supplementary_Figure_PC1_vs_PC4.png){#fig:pc4}
-
+  PC4 accounts for 4.33&nbsp;% of the variation.](images/Supplementary_Figure_PC1_vs_PC4.png){#fig:pc4 tag="S2"}
 
 ## References {.page_break_before}
 
