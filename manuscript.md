@@ -6,7 +6,7 @@ keywords:
 - stickleback
 - ecology
 lang: en-US
-date-meta: '2026-11-05'
+date-meta: '2026-11-09'
 author-meta:
 - David Haberthür
 - R. Benjamin Sulser
@@ -24,11 +24,11 @@ header-includes: |
   <meta name="citation_title" content="From multi-specimen scans to individual bones: automated extraction and efficient, label-guided segmentation of stickleback micro-CT data" />
   <meta property="og:title" content="From multi-specimen scans to individual bones: automated extraction and efficient, label-guided segmentation of stickleback micro-CT data" />
   <meta property="twitter:title" content="From multi-specimen scans to individual bones: automated extraction and efficient, label-guided segmentation of stickleback micro-CT data" />
-  <meta name="dc.date" content="2026-11-05" />
-  <meta name="citation_publication_date" content="2026-11-05" />
-  <meta property="article:published_time" content="2026-11-05" />
-  <meta name="dc.modified" content="2026-11-05T17:22:52+00:00" />
-  <meta property="article:modified_time" content="2026-11-05T17:22:52+00:00" />
+  <meta name="dc.date" content="2026-11-09" />
+  <meta name="citation_publication_date" content="2026-11-09" />
+  <meta property="article:published_time" content="2026-11-09" />
+  <meta name="dc.modified" content="2026-11-09T09:35:10+00:00" />
+  <meta property="article:modified_time" content="2026-11-09T09:35:10+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/e2bcbc1b715c2faebe07d154c8047d17cd326591/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/e2bcbc1b715c2faebe07d154c8047d17cd326591/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/e2bcbc1b715c2faebe07d154c8047d17cd326591/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/4888bac862524bed89a18d42fc7eecfaa1f10408/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/4888bac862524bed89a18d42fc7eecfaa1f10408/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/4888bac862524bed89a18d42fc7eecfaa1f10408/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,11 +80,11 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/e2bcbc1b715c2faebe07d154c8047d17cd326591/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/4888bac862524bed89a18d42fc7eecfaa1f10408/))
 was generated
-from [habi/sticklebacks-manuscript@e2bcbc1](https://github.com/habi/sticklebacks-manuscript/tree/e2bcbc1b715c2faebe07d154c8047d17cd326591)
-on November 5, 2026 and contains 6939 words.
-Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...e2bcbc1b715c2faebe07d154c8047d17cd326591#files_bucket).
+from [habi/sticklebacks-manuscript@4888bac](https://github.com/habi/sticklebacks-manuscript/tree/4888bac862524bed89a18d42fc7eecfaa1f10408)
+on November 9, 2026 and contains 6978 words.
+Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...4888bac862524bed89a18d42fc7eecfaa1f10408#files_bucket).
 </em></small>
 
 
@@ -341,7 +341,8 @@ One such interactive preview is [available online](https://htmlpreview.github.io
 
 After separation, the cropped image files were checked and rendered using 3D Slicer [@doi:10.1007/978-1-4614-7657-3_19] and the SlicerMorph extension [@doi:10.1111/2041-210X.13669].
 A subset of 51 specimens was chosen to create an initial training dataset.
-For each of these samples, individual elements of the branchial apparatus were rendered and cleaned by hand using a combination of thresholding and "Split Islands" tools to separate the pharyngobranchials, epibranchials, basibranchials, hypobranchials, and ceratobranchials as distinct labels (see Figure @fig:branchial_anatomy).
+For each of these samples, we cropped the datasets of the full fish further to only include the head region.
+Individual elements of the branchial apparatus of these further cropped datasets were rendered and cleaned by hand using a combination of thresholding and "Split Islands" tools to separate the pharyngobranchials, epibranchials, basibranchials, hypobranchials, and ceratobranchials as distinct labels (see Figure @fig:branchial_anatomy).
 
 ![Example of branchial anatomy with CB1 and CB2 highlighted in pink.
   Abbreviations: PB = pharyngobranchials, EB = epibranchials, BB = basibranchials, HB = hypobranchials, CB = ceratobranchials.](images/Branchial_Figure.png){#fig:branchial_anatomy}
@@ -351,6 +352,7 @@ Once segmented, the labels corresponding to each set of bones were exported as a
 #### Machine Learning and Model Training
 
 The hand-labeled dataset of 51 samples (including `nrrd` and `label` files) was input into Biomedisa [@doi:10.1038/s41467-020-19303-w] to train a segmentation model.
+Following Biomedisa's default settings, these dataset were resampled to 256 × 256 × 256 voxels for training and prediction, and the predicted labels were rescaled to the original resolution.
 We allowed a 180° rotation to account for possible specimen variability, with an 80/20 split between training and validation data.
 The model was trained with a batch size of 24 for 50 epochs, using a network architecture of 32-64-128-256-512.
 The final model performs well, with a Dice score of 0.9159 on the validation dataset.
@@ -498,7 +500,7 @@ Since their features of interest could be resolved with much coarser resolution 
 
 Scanning up to six fish at once makes efficient use of the scanner, but does shift the effort to the processing of the data, since each scan has to be separated into single-fish datasets.
 Since our pipeline automates the separation (see [Fish Separation]) reproducibly, this shift of effort is cost-effective.
-Other pipelines (such as a workflow explained in [@doi:10.1093/iob/obaa009]) heavily rely on human decisions (hindering reproducibility) and rely on operators manually separating regions of interest.
+Other pipelines (such as a workflow explained in [@doi:10.1093/iob/obaa009]) heavily rely on more manual steps.
 
 ### Pipeline and Efficiency
 
