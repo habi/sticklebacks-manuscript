@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2026-11-09" />
   <meta name="citation_publication_date" content="2026-11-09" />
   <meta property="article:published_time" content="2026-11-09" />
-  <meta name="dc.modified" content="2026-11-09T11:34:19+00:00" />
-  <meta property="article:modified_time" content="2026-11-09T11:34:19+00:00" />
+  <meta name="dc.modified" content="2026-11-09T12:34:34+00:00" />
+  <meta property="article:modified_time" content="2026-11-09T12:34:34+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/4f861d4dbcf200bbd623cbe03fe2d14d10bd424f/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/4f861d4dbcf200bbd623cbe03fe2d14d10bd424f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/4f861d4dbcf200bbd623cbe03fe2d14d10bd424f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/90eb12cf8f979319dd1f96e9a377b91b26fd8aa4/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/90eb12cf8f979319dd1f96e9a377b91b26fd8aa4/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/90eb12cf8f979319dd1f96e9a377b91b26fd8aa4/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,11 +80,11 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/4f861d4dbcf200bbd623cbe03fe2d14d10bd424f/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/90eb12cf8f979319dd1f96e9a377b91b26fd8aa4/))
 was generated
-from [habi/sticklebacks-manuscript@4f861d4](https://github.com/habi/sticklebacks-manuscript/tree/4f861d4dbcf200bbd623cbe03fe2d14d10bd424f)
-on November 9, 2026 and contains 7063 words.
-Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...4f861d4dbcf200bbd623cbe03fe2d14d10bd424f#files_bucket).
+from [habi/sticklebacks-manuscript@90eb12c](https://github.com/habi/sticklebacks-manuscript/tree/90eb12cf8f979319dd1f96e9a377b91b26fd8aa4)
+on November 9, 2026 and contains 7076 words.
+Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...90eb12cf8f979319dd1f96e9a377b91b26fd8aa4#files_bucket).
 </em></small>
 
 
@@ -264,6 +264,7 @@ We scanned the whole length of the fish in several stacks, because the datasets 
 On average, we scanned three fields of view along the rotation axis of the sample holder.
 This resulted in an average scan time of 10\ hours for each scan.
 The projection images were subsequently reconstructed into stacks of 8-bit `png` images with NRecon (Bruker microCT, Kontich, Belgium; version 2.2.0.6), without applying any ring artifact or beam hardening correction.
+Stitching of the three fields of view is automatically performed in NRecon, too.
 The isotropic voxel sizes in the resulting datasets vary from 15 to 17.5\ µm.
 
 The result of one such multi-specimen scan is visualized in Figure @fig:visualization, which shows the six fish contained in this scan.
@@ -403,13 +404,13 @@ Done manually, this would need to be repeated six times per scan, followed by as
 In addition, such a manual process is not reproducible in the sense that it cannot be consistently replicated by others using the same data, since the manual cropping is operator-dependent.
 Algorithmically/automatically cropping the large datasets based on the axial MIP image yields reproducible cropped regions and uses operator time efficiently by eliminating manual cropping steps (see Table @tbl:timing).
 
-| Task                             | Manual Time     | Our Pipeline Time                                            | Speed-up  |
-|----------------------------------|----------------:|-------------------------------------------------------------:|----------:|
-| Scanning single fish             |     ~10\ hours  |                                         1\ hour, 45\ minutes |   ~5.5\ × |
-| Splitting scans into single fish |     17\ minutes |                                                   9\ minutes |     ~2\ × |
-| Rendering volumes                |      5\ minutes |                                                  15\ seconds |     20\ × |
+| Task                             | Manual Time     | Our Pipeline Time                                            | Speed-up            |
+|----------------------------------|----------------:|-------------------------------------------------------------:|--------------------:|
+| Scanning single fish             |     ~10\ hours  |                                         1\ hour, 45\ minutes |   ~5.5\ ×           |
+| Splitting scans into single fish |     17\ minutes |                                                   9\ minutes |     ~2\ ×           |
+| Rendering volumes                |      5\ minutes |                                                  15\ seconds |     20\ ×           |
 | Training for segmentation        |      5\ hours   | 12\ hours (training dataset), 5.5\ hours (ML model training) |   ~0.3\ × (slower!) |
-| Segmentation                     | 10--15\ minutes |                                                  15\ seconds |    ~60\ × |
+| Segmentation                     | 10--15\ minutes |                                                  15\ seconds |    ~60\ ×           |
 
 Table: Comparison of time estimates between manual and pipeline runs.
        On average, we scanned 5.66 fish per scan for a total scan time of 15\ days, 23\ hours, 50\ minutes, and 24\ seconds.
