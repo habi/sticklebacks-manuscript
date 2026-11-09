@@ -22,6 +22,28 @@ pandoc answer.md \
 to make a PDF with nicely styled quotes and link underlines (hat tip to ChatGPT for whipping up the lua styling filter (I only changed the color to UniBe red)) and references (using the manubot CSL in this repo)
 -->
 
+## Summary of major changes
+
+We thank the editor and both anonymous reviewers for their careful assessment of our manuscript and the constructive comments.
+Below, we are quoting and numbering all comments verbatim, the given line numbers refer to the revised manuscript.
+
+To state the contributions more precisely (AE.2, AE.4), we changed the title of the manuscript to "From multi-specimen scans to individual bones: automated extraction and efficient, label-guided segmentation of stickleback micro-CT data".
+
+Both reviewers stated that the manual reordering of the detected labels is at least inelegant (R2.14, R2.15).
+We improved our separation script and replaced the manual reordering of detected regions by an assignment based on each region's angle around the rotation axis. Re-running the pipeline on all 38 scans reproduces the previous output bit-for-bit; the only manual input left (compartment number to fish ID) is now stated explicitly.
+
+Following comments on the structuring of the discussion (AE.3, R1.1, R2.2) we split the discussion into sections on data acquisition, the pipeline and its efficiency (including comparison with other multi-specimen workflows and alternative segmentation tools), and limitations.
+
+Based on comments on the sample mounting (R2.8) and holder material (R2.11), and the question why we scanned a larger region than analyzed, we expanded the methods section and added an explanation on the newly implemented angle-based assignment (R2.14).
+
+The results section was corrected and clarified.
+We now report correct total dataset size (385 GB, previously misreported as 64 GB) and mention the dimensions of the cropped datasets (R1.15, R2.27).
+Memory requirements and the feasibility of an ImageJ-based approach (R1.17, R2.21, R2.22), and the role of the multi-level thresholding (R2.28) was added.
+
+We completely overhauled Figure 1 and expanded its caption (R1.2, R2.6).
+Captions of Figures 2, 4 and 6 were clarified (R1.6, R1.8, R1.13) and included the forgotten supplementary material (R1.22).
+We also more prominently linked to the exported datasets of all cropped regions available on MorphoSource.
+
 ## Associate Editor Comments to Author
 
 > I would like to thank the authors for their contribution, this is an interesting study detailing a pipeline that would be of interest and use for many researchers.
