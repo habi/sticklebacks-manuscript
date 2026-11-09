@@ -329,9 +329,10 @@ We thank the anonymous reviewer for these kind comments.
 > The paper lacks a few references to protocols aiming at optimizing the workflow of CTscanning multiple specimens, focusing on either mounting specimens together or automatizating the post-processing the data, or both.
 > Discussion would benefit from comparisons with those protocols (fishes in the #ScanAllFish project, other high-throughput micro-CT scanning for 3D morphometrics studies).
 
-We thank the reviewer for this suggestion.
-We improved the discussion by comparing our approach in the context of other high-throughput micro-CT protocols, be it for workflows scanning many small shells or the fish-scanning effort of Adam P. Summers lab.
+We now compare our approach with other high-throughput micro-CT protocols, be it for workflows scanning many small shells or the fish-scanning effort of Adam P. Summers lab.
 Since the work presented in this manuscript is only *one* of the many projects going in our lab, streamlining (and automation) of the separation process mattered even more.
+In the spirit of #ScanAllFish, all 215 datasets of this study are openly available on MorphoSource.
+
 #### R2.3
 
 > The pipeline could be further optimized, some steps are redundant or not justified enough.
