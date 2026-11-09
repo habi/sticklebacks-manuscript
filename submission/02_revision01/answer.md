@@ -171,13 +171,11 @@ As a non-native English writer (one of the first authors), we chose the wrong wo
 > But looking at your Figure 4, it seems that fish 2 and 3 are touching.
 > So how is this separation process still possible?
 
-Your assumptions about the fish not overlapping are correct in three-dimensional space.
-Due to slight warping of the 3D-printed sample holder (due to age, temperature and x-ray exposure), it is not aligned completely vertical in the machine during a scan.
-This is visible in the (automatically stitched) preview image (from 3 subscans) shown below, where the sample holder is "tilted" by approximately 3.25° off the vertical.
-Even though the fish are located in a dedicated compartment in the sample holder, the tail of the fish in compartment 2 is just about overlapping the head of the fish in compartment 3.
-They do overlap *only* in the top-down MIP image, but do *not* overlap in 3D space.
-Since the region of the fish are individually cropped out of the large datasets *with* a buffer of +50 pixels in each direction the extracted regions *do* overlap in some cases, even if the fish don't overlap.
-As a consequence, this also means that one extracted region could contain a small region of the fish in the adjacent compartment, but this has not been an issue in the further analysis of the cropped datasets.
+The reviewer is correct that the fish do not overlap in 3D.
+Because the 3D-printed holder is slightly warped, it is tilted by about 3.25° in the scanner (see the stitched preview image below), so the tail of fish 2 overlaps the head of fish 3 in the axial MIP only.
+Since each region is cropped with a 50-pixel buffer, neighbouring cropped regions can overlap and may contain a small part of the adjacent fish; this did not affect any further analysis.
+
+![Preview image of Sticklebucket_H (the scan shown in Figures 2--6), showing the tilt of the sample holder. Shown for illustration only, as it does not add information relevant to the manuscript.](Sticklebucket_H_rec_spr.png)
 
 #### R1.11
 
@@ -201,6 +199,10 @@ The matching for the second half of the scans was performed by writing a small t
 > To me, both rows show the exact same extracted region from the MIP images.
 > What could potentially have gone wrong, and what would the images look like?
 
+As specified in the figure caption both rows *must* show the same image (except the yellow highlight).
+The top row is cropped from the MIP of the multi-specimen scan, the bottom is the MIP calculated from each cropped dataset.
+We've expanded the caption accordingly.
+
 #### R1.14
 
 > Figure 8: Were all the different structures used for model training or only CB1 and CB2.
@@ -215,12 +217,13 @@ All structures were used for model training, with all ceratobranchials (includin
 > Were the regions manually or automatically cropped to the head, or was only the field of view containing the head processed?
 > If the entire fish was processed there might be substantial resizing artifacts, because the default behavior of Biomedisa is to resample the input data to 256x256x256 voxels before processing.
 
-You are correct, that the the x- and y-dimensions of the cropped datasets are approximately 500 voxels.
-We looked at the sizes of the exported files in detail.
-The smallest export is 486 x 722 x 1743 pixels (x, y, z), the largest 1322 x 862 x 5398 voxels, and the median export is approximately 4200 × 650 × 650 voxels and are stored as uncompressed 8-bit volumes.
+The exported datasets range from 486 × 722 × 1743 voxels (x, y, z) to 1322 × 862 × 5398 voxels, with a median of about 4250 × 650 × 650 voxels (anteroposterior length × x × y), stored as uncompressed 8-bit volumes.
 
 The smallest sized crop is from a scan that didn't turn out good (see [this README file of one of these scans](https://anonymous.4open.science/r/sticklebacks-01A4/logfiles/Sticklebucket_14/README.md)), but was nonetheless a scan where we used the scanned head-region of the fish for extracting the rakers.
 The same folder does contain datasets spanning the whole fish, so the *median* size of the cropped regions is a better estimate of the sizes.
+
+While compiling these numbers, we noticed that the total size was misreported: it is 385 GB, not 64 GB.
+Both values are corrected in the Results ([L##]).
 
 The reviewer is correct.
 We used Biomedisa with its default settings, so all datasets were resampled to 256 × 256 × 256 voxels for training and prediction, and the predicted labels were scaled back to the original resolution.
@@ -238,8 +241,9 @@ We now state the resampling in the Methods and mention fine structures, such as 
 > This suggests that the data is compressed.
 > Maybe mention the compression method and could you also provide the data type (e.g., 16-bit unsigned integer)?
 
-See above.
-The .nrrd files of the exported fish regions are stored as uncompressed 8-bit datasets.
+The reconstructions are stored as losslessly compressed 8-bit PNG files; the cropped `nrrd` datasets are uncompressed 8-bit volumes.
+Fiji reports the size of the decompressed stack in memory (for the example now used in the text: 3064 × 3064 pixels × 4891 slices × 1 byte = 42.8 GB, versus 8.5 GB on disk).
+This memory is only needed when loading the full stack, not for a virtual stack; we clarified this in the Results ([L##]).
 
 #### R1.18
 
@@ -327,6 +331,10 @@ Since this step is required for every micro-CT scan, manual or automated, we did
 > From Figure 3., we can see that almost half the dataset is outside these regions of interest, so probably two fields of view instead of three along the rotation axis would have been enough.
 > This needs to be addressed and justified.
 
+The datasets will also be used in follow-up studies of other anatomical regions, which required us to scan the total anteroposterior length of each fish.
+In addition, the 3D-printed compartment labels have to be within the field of view (visible as the upside-down "1" in Figure 7) to link each cropped dataset to the labeled tube, lab book notes and photos.
+We added this justification to the Methods ([L##]).
+
 #### R2.11
 
 > I could not acess the OpenScad files due to the anonymization process of the paper.
@@ -398,21 +406,11 @@ The fish were only returned to the Institute of Ecology and Evolution (actually 
 > The workflow could be simplified with discarding the interactive rendering and the need to keep a .zarr version of the cropped files.
 > Dealing with storage limitations, it is quite inefficient to keep three versions of the same dataset, only the .nrrd is needed from here to the end of the pipeline and can be handled with skimage.
 
-The reviewer is correctly "flagging" this here.
-Visualization of the separation method would correctly only need the axial MIP for comparison.
-It is correct that the multilevel thresholding is not needed for the results presented in this manuscript.
-The visualization step is technically also not needed, but produced Fig. 7 in the manuscript.
+We agree that the axial MIP is sufficient to validate the separation, and that the multi-level thresholding and the interactive rendering are not needed for the results of this manuscript (the rendering produced Figure 7).
+We keep the thresholding in the notebook because the binarized datasets are used in follow-up studies; the Results now state this explicitly (see R2.28).
 
-The thresholding step is in *in* the notebook for treating of the data for further studies, as specified below, keeping all steps in an end-to-end reproducible notebook fosters the reproducible research we're aiming at in general.
-The suggestion that the thresholded datasets could have been loaded into 3D Slicer is a very good one, but - as specified in the text - we choose another semi-automated approach.
-
-We also do not really need to generate any "intermediate" `.zarr` files in the notebook, as the reviewer is correctly stating.
-But since the `.zarr` format is *extremely* well suited to store n-dimensional arrays, on disk and supports chunking, compression, and many backends, we generally use this as an intermediate storage on disk.
-
-As several authors of the manuscript looked at the data with ImageJ prior to analyzing them, keeping an intermediate "baseline" status of the cropped regions in `.zarr` made it easy to look at them with [n5-ij](https://github.com/saalfeldlab/n5-ij) and very efficiently write these files to many different needed formats (`.nrrd` for further analysis and `PNG` stacks for "archival").
-The reviewer correctly notes that keeping different versions of the datasets on disk is inefficient, but this was of secondary concern during the "working" phase of this manuscript.
-Now that we're reaching a more "archival" state of the project, the `.zarr` files are deleted and the network drive only keeps the `PNG` stacks.
-Keep in mind that *all* the now deleted data is regenerate bit-for-bit by re-running the separation notebook and the other notebooks in the pipeline.
+The `zarr` files served as intermediate storage, as they are *extremely* well suited to store n-dimensional arrays on disk and support chunking, compression, which made it easy to inspect the data in ImageJ (via [n5-ij](https://github.com/saalfeldlab/n5-ij)) and to write `nrrd` and PNG exports efficiently.
+We agree that keeping several versions is inefficient; the `zarr` files have since been deleted, since they can be regenerated bit-for-bit by re-running the notebook.
 
 #### R2.17
 
@@ -436,12 +434,14 @@ In this case, Stratovan in particular was used for the template-import to speed 
 
 > Line 247: The total number of projections and reconstructions are not meaningful and should be removed.
 
+We prefer to keep these numbers, as they document the total amount of data acquired.
+
 #### R2.20
 
 > 4000 images in a CTscan is far too much when only 2000 images contain the region of interest of the morphometrics study, please consider CTscanning only this ROI or running the post-processing on a crop in the anterior-posterior direction if the scan of the whole specimen is needed.
 
-The presented case study analyzing the internal branchial anatomy was focusing on cropped datasets only covering the region of interest, e.g. the head of the fish.
-Further projects dealing with the same acquired datasets focus on other parts of the anatomy, so we *had* to acquire datasets covering the whole length of all the single fish scanned together in the same multi-specimen scan.
+Please see our response to R2.10. The case study itself was performed on datasets cropped to the head region.
+
 #### R2.21
 
 > Line 261: The justification that ImageJ could not be used is wrong.
@@ -457,13 +457,18 @@ Further projects dealing with the same acquired datasets focus on other parts of
 > The RAM usage would be up to the cropped subvolume weight, that can be handled with a standard workstation.
 > Still it has to be done 6 times, so it should be run in a macro or a plugin to save operator time.
 
-We thank the reviewer for this detailed suggestion, and agree that our reasoning was too strong.
-We did lay a very strong focus on the end-to-end reproducibility of our pipeline, which *is* given, but it would also be possible to get to the same results with several manual steps in ImageJ.
+We thank the reviewer for this detailed suggestion and agree that our original statement was too strong.
+Since we only crop in XY, a Fiji macro working on a virtual stack (MIP, thresholding, *Analyze Particles*, cropping each ROI with a margin and logging the coordinates) would extract the fish reproducibly and with modest memory requirements.
+This is essentially the algorithm our pipeline implements, and we rewrote the paragraph in the Results accordingly ([L##]).
 
-As we've specified above, the scan time for imaging all the fish was a bit more than two weeks, but was done in the time-span of several months, making a reproducible, automated cropping even more important.
+We implemented it in Jupyter notebooks because cropping is only one of the steps from a multi-specimen scan to an identified single-fish dataset:
 
-Since we only crop in XY, the cropping does not require Crop (3D), and a Fiji macro working on a virtual stack (maximum intensity projection, thresholding, *Analyze Particles*, cropping each ROI with a margin and logging its coordinates) would extract the fish reproducibly and with memory requirements permitting to perform the process on a not very powerful machine.
-This is essentially the same algorithm our pipeline implements, and we have rewritten the paragraph in the Results accordingly.
+- regions are assigned to compartments by their angle and mapped to fish IDs; a cropped stack without a reliable fish ID is of no use for the analysis;
+- for each fish, the pipeline writes the `nrrd` dataset with the voxel size in its header, a log file with the crop coordinates, and control images;
+- the detection uses the same MIPs as the quality control in the preview notebook;
+- all 38 scans are processed in one batch; only two scans needed user input (one with five fish, one in a three-compartment holder).
+
+A Fiji macro could be extended to do all this, but would amount to a reimplementation of the pipeline; our contribution is the automation and documentation of the full chain, not the choice of tool for cropping.
 
 #### R2.22
 
@@ -504,18 +509,18 @@ As a consequence, we were able to "fill" the *lateral* field of view of the mach
 
 > Can the authors explain what is included in the 17 minutes manual time needed to split a single fish scan of a single fish ?
 
-The manual time was measured for the manual extraction of the fish regions as described in the text.
-We loaded the PNG stack of the reconstructions of one multi-specimen scan and generated the axial MIP of this stack.
-We then used the selection tool to mark rectangular regions on this MIP and copied the coordinates into the original, full stack.
-Using the cropping function we then cropped the stack into a new dataset and saved this dataset to disk.
+We loaded the PNG stack of the reconstructions of one multi-specimen scan in Fiji, generated the axial MIP and then used the selection tool to mark rectangular regions for each fish on it.
+We then transferred the coordinates to the full stack, cropped and saved each region.
+Repeating this step 6 times for one dataset and all the steps for another dataset took us about 35 minutes, i.e. about 17 minutes per scan.
+
 #### R2.27
 
 > Line 290: It would be great to provide the average size of a cropped .nrrd dataset for a single fish.
 
-Thank you for this suggestion, which was also raised by the other reviewer.
-We have added the information about the average/median size of the extracted datasets to the Results.
-The automated extraction produced 215 `nrrd` files with a total size of 385 GB, i.e., a median size of 1.65 GB per fish (range 0.6--6.2 GB).
-The cropped regions have a median size of 4250 × 650 × 650 voxels (anteroposterior length × x × y) and are stored as uncompressed 8-bit volumes.
+Please see our response to R1.15.
+The 215 `nrrd` files total 385 GB, with a median of 1.65 GB per fish (range 0.6--6.2 GB); dataset size depends on fish length and on its tilt in the holder.
+This is now given in the Results ([L##]).
+
 #### R2.28
 
 > Line 293: The sentence “ This relatively simple segmentation was sufficient to extract all of the features we analyzed further and we did not have to employ more advanced thresholding methods in our separation pipeline “ is confusing.
