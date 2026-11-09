@@ -580,7 +580,7 @@ The reviewer is correct; please see our response to R1.17.
 >In my opinion, it is the main motivation behind the authors’ developments.
 
 We agree that this deserves a more prominent place.
-Strictly speaking, scanning each fish individually would not have been infeasible: it would have taken about 90 days instead of 16 days of scanner time, at correspondingly higher cost.
+Strictly speaking, scanning each fish individually would not have been infeasible: it would have taken about 90\ days instead of 16\ days of scanner time, at correspondingly higher cost.
 The motivation for the pipeline was the efficient use of both scanner time and operator time.
 We moved this argument from the table caption to the Discussion.
 
@@ -598,7 +598,7 @@ For a single fish, the smaller lateral field of view would allow either fewer pr
 A single fish would indeed fit into less than half the lateral field of view.
 However, the features of interest require a voxel size below 20 µm, and the whole length of each fish had to be scanned (see R2.10); a long, thin specimen at this voxel size requires stacked scans regardless, which fixes the vertical field of view.
 Filling the lateral field of view with six fish is therefore the most efficient use of each scan.
-Even at the reviewer's estimate of 5 h per fish, scanning all fish individually would have taken about 45 days (215 × 5 h), about three times our actual scan time.
+Even at the reviewer's estimate of 5 h per fish, scanning all fish individually would have taken about 45\ days (215 × 5\ hours), about three times our actual scan time.
 
 #### R2.26
 
@@ -606,14 +606,14 @@ Even at the reviewer's estimate of 5 h per fish, scanning all fish individually 
 
 We loaded the PNG stack of the reconstructions of one multi-specimen scan in Fiji, generated the axial MIP and then used the selection tool to mark rectangular regions for each fish on it.
 We then transferred the coordinates to the full stack, cropped and saved each region.
-Repeating this step 6 times for one dataset and all the steps for another dataset took us about 35 minutes, i.e. about 17 minutes per scan.
+Repeating this step 6 times for one dataset and all the steps for another dataset took us about 35\ minutes, i.e. about 17\ minutes per scan.
 
 #### R2.27
 
 > Line 290: It would be great to provide the average size of a cropped .nrrd dataset for a single fish.
 
 Please see our response to R1.15.
-The 215 `nrrd` files total 385 GB, with a median of 1.65 GB per fish (range 0.6--6.2 GB); dataset size depends on fish length and on its tilt in the holder.
+The 215 `nrrd` files total 385\ GB, with a median of 1.65\ GB per fish (range 0.6--6.2\ GB); dataset size depends on fish length and on its tilt in the holder.
 This is now given in the Results.
 
 #### R2.28
