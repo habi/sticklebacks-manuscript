@@ -24,7 +24,7 @@ to make a PDF with nicely styled quotes and link underlines (hat tip to ChatGPT 
 
 ## Summary of major changes
 
-We thank the editor and both anonymous reviewers for their careful assessment of our manuscript and the constructive comments.
+We thank the editor and both reviewers for their careful assessment of our manuscript and the constructive comments.
 Below, we are quoting and numbering all comments verbatim, the given line numbers refer to the revised manuscript.
 
 To state the contributions more precisely (AE.2, AE.4), we changed the title of the manuscript to "From multi-specimen scans to individual bones: automated extraction and efficient, label-guided segmentation of stickleback micro-CT data".
@@ -40,7 +40,7 @@ The results section was corrected and clarified.
 We now report correct total dataset size (385 GB, previously misreported as 64 GB) and mention the dimensions of the cropped datasets (R1.15, R2.27).
 Memory requirements and the feasibility of an ImageJ-based approach (R1.17, R2.21, R2.22), and the role of the multi-level thresholding (R2.28) was added.
 
-We completely overhauled Figure 1 and expanded its caption (R1.2, R2.6).
+We overhauled Figure 1 and expanded its caption (R1.2, R2.6).
 Captions of Figures 2, 4 and 6 were clarified (R1.6, R1.8, R1.13) and included the forgotten supplementary material (R1.22).
 We also more prominently linked to the exported datasets of all cropped regions available on MorphoSource.
 
@@ -51,19 +51,16 @@ We also more prominently linked to the exported datasets of all cropped regions 
 > I would like to thank the authors for their contribution, this is an interesting study detailing a pipeline that would be of interest and use for many researchers.
 > However, the manuscript does not provide sufficient evidence for the claim that this pipeline is replicable and clade-agnostic, which would require testing on different specimens, across different taxonomic groups.
 
-Thanks for this supportive comment, appreciated.
-Thank you.
-We have since applied the same separation pipeline to other species, namely *Spinachia spinachia* (with some of the authors of this manuscript) and several Lake Victoria and Neotropical cichlid species (manuscripts in preparation).
-The separation is deterministic: the same reconstructed stack always yields identical single-specimen datasets.
-It is applicable to any multi-*object* scan in which the objects are separable in the axial maximum intensity projection (MIP).
-We now state these conditions, and the need to retrain the segmentation model for other species, in the Discussion.
+We appreciate these supportive comments.
+With regard to the use of the pipeline on other taxonomic groups, a full analyses is out of the scope of the current study.
+However, we have now applied the same pipeline to different species, namely *Spinachia spinachia* (with co-authors of this manuscript), and Lake Victoria and Neotropical cichlid species (manuscript in preparation, with other collaborators).
+This is now mentioned in the discussion, where we also now point out that there should be no issue in applying the exact pipeline to multi-object scans where the scanned objects are separable in the top-down maximum intensity projection.
 
 ### AE.2
 
 > The pipeline itself should be better defined.
 > The abstract states "The pipeline includes separation of multi-species scans into individual regions of interest, reconstruction of targeted anatomical structures, and morphometric analyses.", but the landmarking and geometric morphometric analyses detailed are conducted using established software and methods (manual landmarking in Checkpoint, analysis in R), that are not a novel or unique part of the pipeline developed for this paper.
 > The current text obscures the actual contribution of the work.
-
 
 The extraction of the anatomical structures, landmarking and geometric morphometric analysis *are* conducted using established software, but are essential parts of the presented pipeline, albeit neither novel nor unique as you correctly state.
 
@@ -136,7 +133,7 @@ It now contains dedicated sections describing data acquisition, the pipeline its
 > Figure 1 is impossible to read.
 > Please enlarge the text and maybe add some description in the caption.
 
-We updated the figure showing the workflow in a so-called swimlane layout, giving it more breathing room and improved the caption.
+We updated the figure showing the workflow in a so-called swimlane layout, giving it more breathing room and also improved the caption.
 
 #### R1.3
 
@@ -166,8 +163,7 @@ Merging of the substacks is performed automatically in the reconstruction softwa
 
 > Line 129: I don’t understand what you mean by “shown extracted”.
 
-As a non-native English writer (one of the first authors), we chose the wrong word here.
-The labels are extracted from the MIP by image processing and shown as yellow overlays for quality control.
+The labels are "extracted" from the MIP by image processing and shown as yellow overlays for quality control.
 We reworded the sentence and now state where the labels are highlighted.
 For consistency, the labels are now yellow in all figures (previously red in Figure 2).
 
@@ -238,24 +234,24 @@ We've expanded the caption accordingly.
 > And were CB1 and CB2 labeled differently or with the same label value.
 > Figure 8 suggests they have the same value.
 
-All structures were used for model training, with all ceratobranchials (including CB1 and CB2 having the same value) yet still distinguishable in the scan output.
-
-We reworded the text to clarify this.
+All structures were used for model training, with all ceratobranchials (including CB1 and CB2) having the same value, yet still distinguishable in the scan output.
+We have reworded our text to ensure clarity in this section.
 
 #### R1.15
 
 > Line 212: Could you provide the range of image dimensions of the cropped images.
 > From the supplementary data, I gathered that x and y dimensions are approximately 500 voxels, but what about the z dimension?
-> Were the regions manually or automatically cropped to the head, or was only the field of view containing the head processed?
-> If the entire fish was processed there might be substantial resizing artifacts, because the default behavior of Biomedisa is to resample the input data to 256x256x256 voxels before processing.
 
 The exported datasets range from 486 × 722 × 1743 voxels (x, y, z) to 1322 × 862 × 5398 voxels, with a median of about 4250 × 650 × 650 voxels (anteroposterior length × x × y), stored as uncompressed 8-bit volumes.
 
-The smallest sized crop is from a scan that didn't turn out good (see [this README file of one of these scans](https://anonymous.4open.science/r/sticklebacks-01A4/logfiles/Sticklebucket_14/README.md)), but was nonetheless a scan where we used the scanned head-region of the fish for extracting the rakers.
+The smallest sized crop is from a scan that didn't turn out well (see [this README file of one of these scans](https://anonymous.4open.science/r/sticklebacks-01A4/logfiles/Sticklebucket_14/README.md)), but was nonetheless a scan where we used the scanned head-region of the fish for extracting the rakers.
 The same folder does contain datasets spanning the whole fish, so the *median* size of the cropped regions is a better estimate of the sizes.
 
 While compiling these numbers, we noticed that the total size was misreported: it is 385 GB, not 64 GB.
-Both values are corrected in the Results.
+Both is now correctly stated in the Results.
+
+> Were the regions manually or automatically cropped to the head, or was only the field of view containing the head processed?
+> If the entire fish was processed there might be substantial resizing artifacts, because the default behavior of Biomedisa is to resample the input data to 256x256x256 voxels before processing.
 
 The reviewer is correct.
 We used Biomedisa with its default settings, so all datasets were resampled to 256 × 256 × 256 voxels for training and prediction, and the predicted labels were scaled back to the original resolution.
@@ -290,8 +286,8 @@ Updated.
 
 > In all of your test statistics, the symbol identifying the test statistic is missing.
 
-The test statistics were typeset as formulas, which `manubot` did not convert correctly to DOCX (the PDF rendered correctly).
-This is fixed in the revised manuscript.
+We believe that this may have been an issue in file conversion, as the generated PDF correctly showed all formulas.
+It has now been corrected.
 
 #### R1.20
 
@@ -311,7 +307,7 @@ This redundancy was introduced during anonymization; fixed.
 
 > Line 350: There are no supplementary figures.
 
-We apologize; the supplementary figures are now included with the submission.
+We apologize for the error in supplementary material uploads; we have attached these with the updated manuscript files to ensure they are included appropriately.
 
 ### Reviewer 2
 
@@ -321,7 +317,8 @@ We apologize; the supplementary figures are now included with the submission.
 > The time constraints that led to develop the pipeline are well explained.
 > Most of the pipeline runs with Jupyter notebooks and open libraries or softwares, which is appreciated when a project involves different collaborators in an OpenScience approach.
 
-We thank the anonymous reviewer for these kind comments.
+We thank the reviewer for these kind general comments.
+We also thank the reviewer for their detailed review of our pipeline, which led to several critical improvements.
 
 #### R2.1
 
@@ -503,7 +500,10 @@ We agree that keeping several versions is inefficient; the `zarr` files have sin
 > For 51 specimens, that would represent 12.5h of manual interventions and it should be noted.
 > An estimate of the time needed to train the model in Biomedisa should be provided.
 > Those combined should be accounted for in the pipeline segmentation time indicated in Table 1.
+
 Yes, segmenting one fish manually took 10--15 minutes, i.e. about 12 hours for the 51 specimen used to create the initial training dataset.
+We did not supervise the training, let the machine run for 50 epochs and checked the DICE/error function outputs after, but training now saw in the logs that training the model took 5 hours and 15 minutes on 2 NVIDIA GeForce RTX 4090 cards.
+We added these numbers to the table.
 
 #### R2.18
 
@@ -527,7 +527,8 @@ We prefer to keep these numbers, as they document the total amount of data acqui
 
 > 4000 images in a CTscan is far too much when only 2000 images contain the region of interest of the morphometrics study, please consider CTscanning only this ROI or running the post-processing on a crop in the anterior-posterior direction if the scan of the whole specimen is needed.
 
-Please see our response to R2.10. The case study itself was performed on datasets cropped to the head region.
+Please see our response to R2.10.
+The case study itself was performed on datasets cropped to the head region.
 
 #### R2.21
 
