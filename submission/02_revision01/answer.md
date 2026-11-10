@@ -284,8 +284,8 @@ Updated.
 
 > In all of your test statistics, the symbol identifying the test statistic is missing.
 
-We believe that this may have been an issue in file conversion, as the generated PDF correctly showed all formulas.
-It has now been corrected.
+We believe that this may have been an issue in file conversion, as the generated PDF correctly showed *R*^2^.
+It has now been corrected; if the reviewer is missing any other "symbol", we can provide more data on our test statistics.
 
 #### R1.20
 
