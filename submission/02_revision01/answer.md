@@ -405,7 +405,7 @@ We added this justification to the Methods.
 > What are the benefits of the petal design when the central zone needs to be later removed in the separation process ?
 
 A temporary interactive preview of the holder is available on [OpenSCAD Studio](https://openscad-studio.pages.dev/s/ue5Aw3bW).
-The original files are [shown as preview in the de-anonymized GitHub repository](https://docs.github.com/en/enterprise-cloud@latest/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams#creating-stl-3d-models).
+GitHub renders an [interactive 3D preview of STL files](https://docs.github.com/en/enterprise-cloud@latest/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams#creating-stl-3d-models); the original files will be linked in the de-anonymized manuscript.
 The petal structure of the holder is visible as a grayish outline in Figure 2.
 The holder is printed in Clear Resin (V5) on a Formlabs printer and UV-hardened.
 The X-ray attenuation of the material ([datasheet](https://media.formlabs.com/m/5fd5e7daf1460058/original/-ENUS-Clear-Resin-V5-TDS.pdf)) is close to that of soft tissue; we now state the material in the Methods.
