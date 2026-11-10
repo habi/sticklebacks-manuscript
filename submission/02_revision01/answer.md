@@ -255,7 +255,7 @@ The reviewer is correct.
 We used Biomedisa with its default settings, so all datasets were resampled to 256 × 256 × 256 voxels for training and prediction, and the predicted labels were scaled back to the original resolution.
 The landmarks describe the overall shape of CB1 and CB2 (end points and curves along the bones); all specimens were processed identically, and remaining errors (adjacent bones merged in the prediction) were corrected manually.
 We therefore do not expect the resampling to affect the comparisons between lakes and ecotypes.
-We now state the resampling in the Methods and mention fine structures as a limitation as a limitation in the Discussion.
+We now state the resampling in the Methods and mention very fine structures as a limitation in the Discussion.
 
 #### R1.16
 
