@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2026-11-10" />
   <meta name="citation_publication_date" content="2026-11-10" />
   <meta property="article:published_time" content="2026-11-10" />
-  <meta name="dc.modified" content="2026-11-10T14:28:55+00:00" />
-  <meta property="article:modified_time" content="2026-11-10T14:28:55+00:00" />
+  <meta name="dc.modified" content="2026-11-10T14:42:40+00:00" />
+  <meta property="article:modified_time" content="2026-11-10T14:42:40+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/e2c64ba69d32f613be2ff7411d223285a821bd21/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/e2c64ba69d32f613be2ff7411d223285a821bd21/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/e2c64ba69d32f613be2ff7411d223285a821bd21/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/db8747749348111f07584dbaeafb001e584b0840/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/db8747749348111f07584dbaeafb001e584b0840/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/db8747749348111f07584dbaeafb001e584b0840/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,11 +80,11 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/e2c64ba69d32f613be2ff7411d223285a821bd21/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/db8747749348111f07584dbaeafb001e584b0840/))
 was generated
-from [habi/sticklebacks-manuscript@e2c64ba](https://github.com/habi/sticklebacks-manuscript/tree/e2c64ba69d32f613be2ff7411d223285a821bd21)
-on November 10, 2026 and contains 7064 words.
-Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...e2c64ba69d32f613be2ff7411d223285a821bd21#files_bucket).
+from [habi/sticklebacks-manuscript@db87477](https://github.com/habi/sticklebacks-manuscript/tree/db8747749348111f07584dbaeafb001e584b0840)
+on November 10, 2026 and contains 7020 words.
+Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...db8747749348111f07584dbaeafb001e584b0840#files_bucket).
 </em></small>
 
 
@@ -461,17 +461,9 @@ The differences between benthic and limnetic specimens are, for this bone, clear
 ![Principal component analysis of first and second ceratobranchials colored by lake ecotype.
   Warps are indicated at the extremes of each axis by vectors drawn from a mean shape (red).](images/PCA_Plot.png){#fig:pca}
 
-These ecological patterns were further examined at the level of individual lakes (see Figures @fig:pca_cb1_lake and @fig:pca_cb2_lake).
+These ecological patterns were further examined at the level of individual lakes (see supplementary Figure @fig:pca_lake).
 
-![Principal component analysis of first ceratobranchial colored by individual lake.
-  Benthic lakes are indicated in shades of red and orange, while the limnetic lakes are indicated in shades of blue.
-  Warps are indicated at the extremes of each axis by vectors drawn from a mean shape (red).](images/PCA_CB1_Plot_Lake.png){#fig:pca_cb1_lake}
-
-![Principal component analysis of second ceratobranchial colored by individual lake.
-  Benthic lakes are indicated in shades of red and orange, while the limnetic lakes are indicated in shades of blue.
-  Warps are indicated at the extremes of each axis by vectors drawn from a mean shape (red).](images/PCA_CB2_Plot_Lake.png){#fig:pca_cb2_lake}
-
-The differences in the second ceratobranchial appear to be driven by divergence in the South Rolly population, supported by significant pairwise differences between this lake and all other lakes in CB2 but not in CB1 (see [Supplementary Materials]).
+The differences in the second ceratobranchial appear to be driven by divergence in the South Rolly population, supported by significant pairwise differences between this lake and all other lakes in CB2 but not in CB1 (see supplementary Figure @fig:pc4).
 
 
 ## Discussion {.page_break_before}
@@ -639,9 +631,13 @@ The R script we used to assess the morphometrics is available [online on GitHub]
 
 ![Maximum intensity projections of one acquired dataset along the three cardinal axes.](images/Sticklebucket_H.rec.MIPs.png){#fig:mips tag="S1"}
 
+![Principal component analysis of first and second ceratobranchial colored by individual lake.
+  Benthic lakes are indicated in shades of red and orange, while the limnetic lakes are indicated in shades of blue.
+  Warps are indicated at the extremes of each axis by vectors drawn from a mean shape (red).](images/PCA_Plot_Lake.png){#fig:pca_lake tag="S2"}
+
 ![PCA of first ceratobranchial, colored by lake ecotype, highlighting PC1 and PC4.
   Warps are indicated at the extremes of each axis by vectors drawn from a mean shape (red).
-  PC4 accounts for 4.33\ % of the variation.](images/Supplementary_Figure_PC1_vs_PC4.png){#fig:pc4 tag="S2"}
+  PC4 accounts for 4.33\ % of the variation.](images/Supplementary_Figure_PC1_vs_PC4.png){#fig:pc4 tag="S3"}
 
 
 ## References {.page_break_before}
