@@ -41,7 +41,7 @@ We now report the correct total dataset size (385 GB, previously misreported as 
 Memory requirements and the feasibility of an ImageJ-based approach (R1.17, R2.21, R2.22), and the role of the multi-level thresholding (R2.28) were clarified.
 
 We overhauled Figure 1 and expanded its caption (R1.2, R2.6).
-Figure captions were clarified (R1.6, R1.8, R1.13); we moved one figure to the supplementary data and included the missing supplementary material (R1.22).
+Figure captions were clarified (R1.6, R1.8, R1.13); we moved one figure to the Supplementary Materials and included the missing supplementary material (R1.22).
 We also more prominently linked to the exported datasets of all cropped regions available on MorphoSource.
 
 ## Associate Editor Comments to Author
