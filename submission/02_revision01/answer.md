@@ -335,7 +335,7 @@ In the spirit of #ScanAllFish, all 215 datasets of this study are openly availab
 Thanks to the reviewer's detailed comments, we replaced the manual reordering of detected regions with an automatic, angle-based assignment (see R2.14).
 Apart from noting which fish is in which compartment, the separation is now fully automatic, and its output is unchanged.
 This improvement also prompted the change of the manuscript title.
-We thank the reviewer for raising this points, which allowed us to greatly improve the quality and robustness of the separation pipeline, without altering its output.
+We thank the reviewer for raising this point, which allowed us to greatly improve the quality and robustness of the separation pipeline, without altering its output.
 
 #### R2.4
 
