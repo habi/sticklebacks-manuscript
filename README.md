@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/habi/sticklebacks-manuscript/tree/gh-pages) branch hosts the contents of this directory at <https://habi.github.io/sticklebacks-manuscript/>.
-The permalink for this webpage version is <https://habi.github.io/sticklebacks-manuscript/v/109fc2c5b86f5bcdf1d81e89f06f40cc50b27beb/>.
+The permalink for this webpage version is <https://habi.github.io/sticklebacks-manuscript/v/0bc93fc5b0f57b7579f16d43984298b706e9104e/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://habi.github.io/sticklebacks-manuscript/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`109fc2c5b86f5bcdf1d81e89f06f40cc50b27beb`](https://github.com/habi/sticklebacks-manuscript/commit/109fc2c5b86f5bcdf1d81e89f06f40cc50b27beb).
+[`0bc93fc5b0f57b7579f16d43984298b706e9104e`](https://github.com/habi/sticklebacks-manuscript/commit/0bc93fc5b0f57b7579f16d43984298b706e9104e).
