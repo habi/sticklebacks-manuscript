@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2026-11-10" />
   <meta name="citation_publication_date" content="2026-11-10" />
   <meta property="article:published_time" content="2026-11-10" />
-  <meta name="dc.modified" content="2026-11-10T15:14:16+00:00" />
-  <meta property="article:modified_time" content="2026-11-10T15:14:16+00:00" />
+  <meta name="dc.modified" content="2026-11-10T15:54:18+00:00" />
+  <meta property="article:modified_time" content="2026-11-10T15:54:18+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/e0e90226a501fffa65a5627dc493687e001ea87e/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/e0e90226a501fffa65a5627dc493687e001ea87e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/e0e90226a501fffa65a5627dc493687e001ea87e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/a899f21ed619421f45804163abfcb687e306a2f4/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/a899f21ed619421f45804163abfcb687e306a2f4/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/a899f21ed619421f45804163abfcb687e306a2f4/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,11 +80,11 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/e0e90226a501fffa65a5627dc493687e001ea87e/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/a899f21ed619421f45804163abfcb687e306a2f4/))
 was generated
-from [habi/sticklebacks-manuscript@e0e9022](https://github.com/habi/sticklebacks-manuscript/tree/e0e90226a501fffa65a5627dc493687e001ea87e)
-on November 10, 2026 and contains 7020 words.
-Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...e0e90226a501fffa65a5627dc493687e001ea87e#files_bucket).
+from [habi/sticklebacks-manuscript@a899f21](https://github.com/habi/sticklebacks-manuscript/tree/a899f21ed619421f45804163abfcb687e306a2f4)
+on November 10, 2026 and contains 7026 words.
+Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...a899f21ed619421f45804163abfcb687e306a2f4#files_bucket).
 </em></small>
 
 
@@ -386,7 +386,7 @@ Linear fits were further investigated using the `pairwise()` function to analyze
 
 The acquisition and reconstruction of fish datasets were successful and enabled high-throughput processing.
 A total of 215 unique specimens were scanned in 38 different scans with a total scan duration of nearly 16\ days (spread over 209 calendar days).
-We acquired 403312\ projections, reconstructed into a total of 154645\ slices, resulting in approximately 4000\ reconstruction `png` files per scan (*N*=38), covering (on average) a length equivalent to a fish of 65\ mm.
+We acquired 403312\ projections, reconstructed into a total of 154645\ slices, resulting in approximately 4000\ reconstruction `png` files per scan (*N* = 38), covering (on average) a length equivalent to a fish of 65\ mm.
 
 ### Fish Separation
 
@@ -428,7 +428,7 @@ The automated extraction produced 215 `nrrd` files with a total size of 385\ GB 
 The exported regions varied in physical size, resulting in datasets with a median anteroposterior length of 4250\ pixels and median x- and y-dimensions of 650\ pixels (due to the rotation of the fish, the x- and y-dimensions do not map to anatomical directions).
 These cropped regions include the region of the originally acquired data where the 3D-printed label is visible, aiding in end-to-end reproducibility of the extraction process.
 
-We have uploaded further cropped datasets of each imaged fish to MorphoSource (*N*=215, see [Supplementary Materials]).
+We have uploaded further cropped datasets of each imaged fish to MorphoSource (*N* = 215, see [Supplementary Materials]).
 These further cropped datasets include only the region of the fish in anteroposterior direction, drop the 3D-printed label region, and have a median length of approximately 3000\ pixels; the x- and y-directions are the same as for the previously mentioned datasets.
 
 ### Segmentation
@@ -437,7 +437,7 @@ In addition to the cropped regions, the separation notebook also writes a binari
 These binarized regions are not used for the analysis presented here, but serve as a quick visual check of each extracted fish (for an example, see Figure @fig:SLX23012_3D).
 
 Nineteen specimens were excluded from further analysis because they were damaged and/or clearly juvenile fish.
-For the remaining specimens (*N*=196), segmentation was performed with 3D Slicer and Biomedisa, resulting in segmentation labels for all structures in the branchial apparatus, as described in [Materials & Methods].
+For the remaining specimens (*N* = 196), segmentation was performed with 3D Slicer and Biomedisa, resulting in segmentation labels for all structures in the branchial apparatus, as described in [Materials & Methods].
 Selection and individual rendering of branchial structures takes between 10 and 15\ minutes; the segmentation of an average Biomedisa render takes 15\ seconds once trained (see Table @tbl:timing).
 
 ### Analysis of Ceratobranchial Bone Shape
@@ -453,10 +453,10 @@ Both linear models and PCA results suggest that the lakes themselves---and not o
 $R^2$    = 0.0946;
 CB2: *p* = 0.001,
 $R^2$    = 0.1104).
-However, the variation in the first ceratobranchial was significantly associated with different ecotypes, although the effect size was small (*p*   = 0.009, $R^2$ = 0.0206), with substantial overlap in the resulting shape space (see Figure {@fig:pca}a).
+However, the variation in the first ceratobranchial was significantly associated with different ecotypes, although the effect size was small (*p* = 0.009, $R^2$ = 0.0206), with substantial overlap in the resulting shape space (see Figure {@fig:pca}a).
 
 On the other hand, the second ceratobranchial bone showed equally small but significant changes associated with the ecotype (*p* = 0.001, $R^2$ = 0.0377).
-The differences between benthic and limnetic specimens are, for this bone, clearly divergent in shape space (see Figure {@fig:pca_cb2}b).
+The differences between benthic and limnetic specimens are, for this bone, clearly divergent in shape space (see Figure {@fig:pca}b).
 
 ![Principal component analysis of first and second ceratobranchials colored by lake ecotype.
   Warps are indicated at the extremes of each axis by vectors drawn from a mean shape (red).](images/PCA_Plot.png){#fig:pca}
