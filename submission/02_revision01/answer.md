@@ -270,7 +270,7 @@ Yes, all training labels were created and checked by hand in 3D Slicer; we clari
 > This suggests that the data is compressed.
 > Maybe mention the compression method and could you also provide the data type (e.g., 16-bit unsigned integer)?
 
-The reconstructions are stored as losslessly compressed 8-bit PNG files; the cropped `nrrd` datasets are uncompressed 8-bit volumes.
+The reconstructions are stored as losslessly compressed 8-bit PNG files; the cropped NRRD datasets are uncompressed 8-bit volumes.
 Fiji reports the size of the decompressed stack in memory (for the example now used in the text: 3064 × 3064 pixels × 4891 slices × 1 byte = 42.8 GB, versus 8.5 GB on disk).
 This memory is only needed when loading the full stack, not for a virtual stack; we clarified this in the Results.
 
@@ -491,8 +491,8 @@ The updated notebook is available in the (anonymized) repository.
 We agree that the axial MIP is sufficient to validate the separation, and that the multi-level thresholding and the interactive rendering are not needed for the results of this manuscript (the rendering produced (now) Figure 6).
 We keep the thresholding in the notebook because the binarized datasets are used in follow-up studies; the Results now state this explicitly (see R2.28).
 
-The `zarr` files served as intermediate storage, as they are *extremely* well suited to store n-dimensional arrays on disk and support chunking and compression, which made it easy to inspect the data in ImageJ (via [n5-ij](https://github.com/saalfeldlab/n5-ij)) and to write `nrrd` and PNG exports efficiently.
-We agree that keeping several versions is inefficient; the `zarr` files have since been deleted, since they can be regenerated bit-for-bit by re-running the notebook.
+The Zarr files served as intermediate storage, as they are *extremely* well suited to store n-dimensional arrays on disk and support chunking and compression, which made it easy to inspect the data in ImageJ (via [n5-ij](https://github.com/saalfeldlab/n5-ij)) and to write NRRD and PNG exports efficiently.
+We agree that keeping several versions is inefficient; the Zarr files have since been deleted, since they can be regenerated bit-for-bit by re-running the notebook.
 
 #### R2.17
 
@@ -554,7 +554,7 @@ This is essentially the algorithm our pipeline implements, and we rewrote the pa
 We implemented it in Jupyter notebooks because cropping is only one of the steps from a multi-specimen scan to an identified single-fish dataset:
 
 - regions are assigned to compartments by their angle and mapped to fish IDs; a cropped stack without a reliable fish ID is of no use for the analysis;
-- for each fish, the pipeline writes the `nrrd` dataset with the voxel size in its header, a log file with the crop coordinates, and control images;
+- for each fish, the pipeline writes the NRRD dataset with the voxel size in its header, a log file with the crop coordinates, and control images;
 - the detection uses the same MIPs as the quality control in the preview notebook;
 - all 38 scans are processed in one batch; only two scans needed user input (one with five fish, one in a three-compartment holder).
 
@@ -605,7 +605,7 @@ Cropping two complete scans (six fish each) took about 35\ minutes, i.e., about 
 > Line 290: It would be great to provide the average size of a cropped .nrrd dataset for a single fish.
 
 Please see our response to R1.15.
-The 215 `nrrd` files total 385\ GB, with a median of 1.65\ GB per fish (range 0.6--6.2\ GB); dataset size depends on fish length and on its tilt in the holder.
+The 215 NRRD files total 385\ GB, with a median of 1.65\ GB per fish (range 0.6--6.2\ GB); dataset size depends on fish length and on its tilt in the holder.
 This is now given in the Results.
 
 #### R2.28
