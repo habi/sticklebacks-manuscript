@@ -27,8 +27,8 @@ header-includes: |
   <meta name="dc.date" content="2026-11-11" />
   <meta name="citation_publication_date" content="2026-11-11" />
   <meta property="article:published_time" content="2026-11-11" />
-  <meta name="dc.modified" content="2026-11-11T09:45:12+00:00" />
-  <meta property="article:modified_time" content="2026-11-11T09:45:12+00:00" />
+  <meta name="dc.modified" content="2026-11-11T10:20:17+00:00" />
+  <meta property="article:modified_time" content="2026-11-11T10:20:17+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/663f6c5e2f2056f5e91294804ae2c371f204106e/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/663f6c5e2f2056f5e91294804ae2c371f204106e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/663f6c5e2f2056f5e91294804ae2c371f204106e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/f10325b2583f48dee5053036d29f4182e71c9ffe/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/f10325b2583f48dee5053036d29f4182e71c9ffe/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/f10325b2583f48dee5053036d29f4182e71c9ffe/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,11 +80,11 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/663f6c5e2f2056f5e91294804ae2c371f204106e/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/f10325b2583f48dee5053036d29f4182e71c9ffe/))
 was generated
-from [habi/sticklebacks-manuscript@663f6c5](https://github.com/habi/sticklebacks-manuscript/tree/663f6c5e2f2056f5e91294804ae2c371f204106e)
-on November 11, 2026 and contains 7021 words.
-Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...663f6c5e2f2056f5e91294804ae2c371f204106e#files_bucket).
+from [habi/sticklebacks-manuscript@f10325b](https://github.com/habi/sticklebacks-manuscript/tree/f10325b2583f48dee5053036d29f4182e71c9ffe)
+on November 11, 2026 and contains 7046 words.
+Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...f10325b2583f48dee5053036d29f4182e71c9ffe#files_bucket).
 </em></small>
 
 
@@ -280,6 +280,7 @@ The 3D-printed labels on the holder are highlighted in yellow in Figures @fig:vi
 
 After acquisition, [a simple script](https://github.com/habi/sticklebacks/blob/main/rsync-sticklebacks.sh) was used to copy the relevant data to both archival storage and storage accessible by all coauthors.
 Further processing of the tomographic datasets was performed with a set of Jupyter [@doi:10.3233/978-1-61499-649-1-87] notebooks [@doi:10.5281/zenodo.18257528].
+The version numbers of the used Python packages are pinned in an environment file in the repository for reproducibility and not mentioned in the text.
 
 ##### Preview Notebook
 
@@ -293,7 +294,7 @@ This approach allowed us to map *all* the reconstructions to memory and quickly 
 The [separation notebook](https://nbviewer.org/github/habi/sticklebacks/blob/main/BucketSeparator.ipynb) processes all the acquired scans to extract each individual fish from each scan, which usually contained six fish.
 As in the preview notebook, we efficiently load all the PNGs from disk with Dask [@dask].
 
-A connected region labeling ([`skimage.measure.label`](https://scikit-image.org/docs/stable/api/skimage.measure.html#skimage.measure.label)) of the previously extracted MIP images was used to detect the single fish in their compartments (see right panel of Figure @fig:labels).
+A connected region labeling ([`skimage.measure.label`](https://scikit-image.org/docs/stable/api/skimage.measure.html#skimage.measure.label), scikit-image [@doi:10.7717/peerj.453]) of the previously extracted MIP images was used to detect the single fish in their compartments (see right panel of Figure @fig:labels).
 The 3D-printed compartment labels of the sample holder were detected in the same way and are highlighted in yellow in the left panel of Figure @fig:labels.
 Since scikit-image numbers the detected regions in raster order (top to bottom, left to right), this numbering depends on the exact position of each fish within its compartment.
 Due to a slight tilt of the sample holder in the scanner and inconsistent size of the single fish, the detected numbering does not consistently follow the 3D-printed compartment numbering.
@@ -327,7 +328,7 @@ For this further analysis, we also wrote stacks of PNG images and [NRRD](https:/
 These binarized regions were segmented into bone and background based on a simple multi-Otsu thresholding algorithm [@doi:10.6688/JISE.2001.17.5.1] (with four classes, using only the middle threshold).
 Providing the regions as NRRD files helped to efficiently work with the datasets as specified in the following sections.
 
-Using either K3D-jupyter [@url:https://github.com/K3D-tools/K3D-jupyter] or napari (version 0.6.1, [@doi:10.5281/zenodo.3555620]), we implemented a quick way to view any of the extracted regions directly in the Jupyter notebook.
+Using either K3D-jupyter [@url:https://github.com/K3D-tools/K3D-jupyter] or napari [@doi:10.5281/zenodo.3555620], we implemented a quick way to view any of the extracted regions directly in the Jupyter notebook.
 K3D-jupyter allows saving an interactive version of the preview; one such interactive preview is [available online](https://htmlpreview.github.io/?https://raw.githubusercontent.com/habi/sticklebacks-manuscript/refs/heads/main/content/data/SL.X23.012.3D.html).
 The napari viewer is well suited to load the intermediate `*.zarr` files; Figure @fig:SLX23012_3D shows such a preview.
 
