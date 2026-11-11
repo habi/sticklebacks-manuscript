@@ -57,8 +57,8 @@
   <meta name="dc.date" content="2026-11-11" />
   <meta name="citation_publication_date" content="2026-11-11" />
   <meta property="article:published_time" content="2026-11-11" />
-  <meta name="dc.modified" content="2026-11-11T09:45:12+00:00" />
-  <meta property="article:modified_time" content="2026-11-11T09:45:12+00:00" />
+  <meta name="dc.modified" content="2026-11-11T10:20:17+00:00" />
+  <meta property="article:modified_time" content="2026-11-11T10:20:17+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -86,9 +86,9 @@
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/663f6c5e2f2056f5e91294804ae2c371f204106e/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/663f6c5e2f2056f5e91294804ae2c371f204106e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/663f6c5e2f2056f5e91294804ae2c371f204106e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/f10325b2583f48dee5053036d29f4182e71c9ffe/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/f10325b2583f48dee5053036d29f4182e71c9ffe/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/f10325b2583f48dee5053036d29f4182e71c9ffe/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -106,11 +106,11 @@
 <p><em>The (anonymized) version <a href="https://github.com/habi/sticklebacks-manuscript/releases/tag/v1.0"><code>v1.0</code></a> of this manuscript was submitted to <a href="https://besjournals.onlinelibrary.wiley.com/journal/2041210X">Methods in Ecology and Evolution</a>.</em></p>
 <p><small><em>
 This manuscript
-(<a href="https://habi.github.io/sticklebacks-manuscript/v/663f6c5e2f2056f5e91294804ae2c371f204106e/">permalink</a>)
+(<a href="https://habi.github.io/sticklebacks-manuscript/v/f10325b2583f48dee5053036d29f4182e71c9ffe/">permalink</a>)
 was generated
-from <a href="https://github.com/habi/sticklebacks-manuscript/tree/663f6c5e2f2056f5e91294804ae2c371f204106e">habi/sticklebacks-manuscript@663f6c5</a>
-on November 11, 2026 and contains 7021 words.
-Changes to the submitted version are visualized <a href="https://github.com/habi/sticklebacks-manuscript/compare/v1.0...663f6c5e2f2056f5e91294804ae2c371f204106e#files_bucket">here on GitHub</a>.
+from <a href="https://github.com/habi/sticklebacks-manuscript/tree/f10325b2583f48dee5053036d29f4182e71c9ffe">habi/sticklebacks-manuscript@f10325b</a>
+on November 11, 2026 and contains 7046 words.
+Changes to the submitted version are visualized <a href="https://github.com/habi/sticklebacks-manuscript/compare/v1.0...f10325b2583f48dee5053036d29f4182e71c9ffe#files_bucket">here on GitHub</a>.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -269,7 +269,8 @@ Visualization created with Dragonfly 3D World (version 2025.1.0.14177, Comet Tec
 <h3 id="data-analysis">Data Analysis</h3>
 <h4 id="preparation-and-handling-of-tomographic-datasets">Preparation and Handling of Tomographic Datasets</h4>
 <p>After acquisition, <a href="https://github.com/habi/sticklebacks/blob/main/rsync-sticklebacks.sh">a simple script</a> was used to copy the relevant data to both archival storage and storage accessible by all coauthors.
-Further processing of the tomographic datasets was performed with a set of Jupyter <span class="citation" data-cites="1Bh7g5XAe">(<a href="#ref-1Bh7g5XAe" role="doc-biblioref">Kluyver Thomas et al., 2016</a>)</span> notebooks <span class="citation" data-cites="4vi5Vvpx">(<a href="#ref-4vi5Vvpx" role="doc-biblioref">David Haberthür, 2026</a>)</span>.</p>
+Further processing of the tomographic datasets was performed with a set of Jupyter <span class="citation" data-cites="1Bh7g5XAe">(<a href="#ref-1Bh7g5XAe" role="doc-biblioref">Kluyver Thomas et al., 2016</a>)</span> notebooks <span class="citation" data-cites="4vi5Vvpx">(<a href="#ref-4vi5Vvpx" role="doc-biblioref">David Haberthür, 2026</a>)</span>.
+The version numbers of the used Python packages are pinned in an environment file in the repository for reproducibility and not mentioned in the text.</p>
 <h5 id="preview-notebook">Preview Notebook</h5>
 <p>The <a href="https://nbviewer.org/github/habi/sticklebacks/blob/main/PreviewScans.ipynb">preview notebook</a> was used to identify scanning and reconstruction issues.
 For this, we read all the relevant scan and reconstruction parameters from the log files of each scan.
@@ -278,7 +279,7 @@ This approach allowed us to map <em>all</em> the reconstructions to memory and q
 <h5 id="separation-notebook">Separation Notebook</h5>
 <p>The <a href="https://nbviewer.org/github/habi/sticklebacks/blob/main/BucketSeparator.ipynb">separation notebook</a> processes all the acquired scans to extract each individual fish from each scan, which usually contained six fish.
 As in the preview notebook, we efficiently load all the PNGs from disk with Dask <span class="citation" data-cites="hj1CnyWB">(<a href="#ref-hj1CnyWB" role="doc-biblioref">Dask Development Team, 2016</a>)</span>.</p>
-<p>A connected region labeling (<a href="https://scikit-image.org/docs/stable/api/skimage.measure.html#skimage.measure.label"><code>skimage.measure.label</code></a>) of the previously extracted MIP images was used to detect the single fish in their compartments (see right panel of Figure <a href="#fig:labels">3</a>).
+<p>A connected region labeling (<a href="https://scikit-image.org/docs/stable/api/skimage.measure.html#skimage.measure.label"><code>skimage.measure.label</code></a>, scikit-image <span class="citation" data-cites="stvWEJeu">(<a href="#ref-stvWEJeu" role="doc-biblioref">van der Walt et al., 2014</a>)</span>) of the previously extracted MIP images was used to detect the single fish in their compartments (see right panel of Figure <a href="#fig:labels">3</a>).
 The 3D-printed compartment labels of the sample holder were detected in the same way and are highlighted in yellow in the left panel of Figure <a href="#fig:labels">3</a>.
 Since scikit-image numbers the detected regions in raster order (top to bottom, left to right), this numbering depends on the exact position of each fish within its compartment.
 Due to a slight tilt of the sample holder in the scanner and inconsistent size of the single fish, the detected numbering does not consistently follow the 3D-printed compartment numbering.
@@ -319,7 +320,7 @@ Both rows must show exactly the same region.</figcaption>
 For this further analysis, we also wrote stacks of PNG images and <a href="https://teem.sourceforge.net/nrrd/">NRRD</a> files for each fish region in both cropped and cropped-and-binarized forms.
 These binarized regions were segmented into bone and background based on a simple multi-Otsu thresholding algorithm <span class="citation" data-cites="JICzDA7P">(<a href="#ref-JICzDA7P" role="doc-biblioref">廖炳松 et al., 2001</a>)</span> (with four classes, using only the middle threshold).
 Providing the regions as NRRD files helped to efficiently work with the datasets as specified in the following sections.</p>
-<p>Using either K3D-jupyter <span class="citation" data-cites="a9ZL41Of">(<a href="#ref-a9ZL41Of" role="doc-biblioref">Trzęsiok et al., 2026</a>)</span> or napari (version 0.6.1, <span class="citation" data-cites="YEMgt2T4">(<a href="#ref-YEMgt2T4" role="doc-biblioref">Sofroniew et al., 2026</a>)</span>), we implemented a quick way to view any of the extracted regions directly in the Jupyter notebook.
+<p>Using either K3D-jupyter <span class="citation" data-cites="a9ZL41Of">(<a href="#ref-a9ZL41Of" role="doc-biblioref">Trzęsiok et al., 2026</a>)</span> or napari <span class="citation" data-cites="YEMgt2T4">(<a href="#ref-YEMgt2T4" role="doc-biblioref">Sofroniew et al., 2026</a>)</span>, we implemented a quick way to view any of the extracted regions directly in the Jupyter notebook.
 K3D-jupyter allows saving an interactive version of the preview; one such interactive preview is <a href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/habi/sticklebacks-manuscript/refs/heads/main/content/data/SL.X23.012.3D.html">available online</a>.
 The napari viewer is well suited to load the intermediate <code>*.zarr</code> files; Figure <a href="#fig:SLX23012_3D">6</a> shows such a preview.</p>
 <div id="fig:SLX23012_3D" class="fignos">
@@ -367,7 +368,7 @@ While this particular workflow was chosen for time-efficiency, accuracy, and use
 </figure>
 </div>
 <h4 id="analysis-of-shape">Analysis of Shape</h4>
-<p>All subsequent analyses were run using R (version 4.4.1, <span class="citation" data-cites="whEyWyQh">(<a href="#ref-whEyWyQh" role="doc-biblioref">R Core Team, 2021</a>)</span>) and the geomorph package <span class="citation" data-cites="100JsQfhF vVigKiE 1FNzpGn6o VPUOQA2P">(<a href="#ref-vVigKiE" role="doc-biblioref">Adams et al., 2012</a>; <a href="#ref-100JsQfhF" role="doc-biblioref">Baken et al., 2021</a>; <a href="#ref-VPUOQA2P" role="doc-biblioref">M. L. Collyer &amp; Adams, 2018</a>; <a href="#ref-1FNzpGn6o" role="doc-biblioref">M. Collyer &amp; Adams, 2018</a>)</span>.
+<p>All subsequent analyses were run using R (version 4.4.1, <span class="citation" data-cites="whEyWyQh">(<a href="#ref-whEyWyQh" role="doc-biblioref">R Core Team, 2024</a>)</span>) and the geomorph package <span class="citation" data-cites="100JsQfhF vVigKiE 1FNzpGn6o VPUOQA2P">(<a href="#ref-vVigKiE" role="doc-biblioref">Adams et al., 2012</a>; <a href="#ref-100JsQfhF" role="doc-biblioref">Baken et al., 2021</a>; <a href="#ref-VPUOQA2P" role="doc-biblioref">M. L. Collyer &amp; Adams, 2018</a>; <a href="#ref-1FNzpGn6o" role="doc-biblioref">M. Collyer &amp; Adams, 2018</a>)</span>.
 Landmarks corresponding to each bone were split and analyzed separately after generalized Procrustes analysis (GPA) using the <a href="https://search.r-project.org/CRAN/refmans/geomorph/html/gpagen.html"><code>gpagen()</code></a> function, with principal component analysis (PCA) and linear models run with <a href="https://search.r-project.org/CRAN/refmans/geomorph/html/gm.prcomp.html"><code>gm.prcomp()</code></a> and <a href="https://search.r-project.org/CRAN/refmans/geomorph/html/procD.lm.html"><code>procD.lm()</code></a>, respectively.
 Linear fits were further investigated using the <code>pairwise()</code> function to analyze differences in pairwise statistics.</p>
 <h2 class="page_break_before" id="results">Results</h2>
@@ -740,7 +741,7 @@ Miles, A., Kirkham, J., Durant, M., Bourbeau, J., Onalan, T., Hamman, J., Zain P
 NISO CRediT Working Group. (2022). <em>ANSI/NISO Z39.104-2022, CRediT, contributor roles taxonomy</em>. NISO. <a href="https://dx.doi.org/10.3789/ansi.niso.z39.104-2022">https://dx.doi.org/10.3789/ansi.niso.z39.104-2022</a>
 </div>
 <div id="ref-whEyWyQh" class="csl-entry" role="doc-biblioentry">
-R Core Team. (2021). <em>R: A language and environment for statistical computing</em>. R Foundation for Statistical Computing. <a href="https://www.R-project.org/">https://www.R-project.org/</a>
+R Core Team. (2024). <em>R: A language and environment for statistical computing</em>. R Foundation for Statistical Computing. <a href="https://www.r-project.org/">https://www.r-project.org/</a>
 </div>
 <div id="ref-IKVBgaCE" class="csl-entry" role="doc-biblioentry">
 Rawson, S. D., Maksimcuka, J., Withers, P. J., &amp; Cartmell, S. H. (2020). X-ray computed tomography in life sciences. <em>BMC Biology</em>, <em>18</em>(1). <a href="https://doi.org/10.1186/s12915-020-0753-2">https://doi.org/10.1186/s12915-020-0753-2</a>
@@ -768,6 +769,9 @@ Takata, Y., &amp; Sasaki, K. (2005). Branchial structures in the Gasterosteiform
 </div>
 <div id="ref-a9ZL41Of" class="csl-entry" role="doc-biblioentry">
 Trzęsiok, A., Kostur, M., Gandor, T., &amp; Mattone, T. (2026). <em>K3D-jupyter</em> [Python]. <a href="https://github.com/K3D-tools/K3D-jupyter">https://github.com/K3D-tools/K3D-jupyter</a>
+</div>
+<div id="ref-stvWEJeu" class="csl-entry" role="doc-biblioentry">
+van der Walt, S., Schönberger, J. L., Nunez-Iglesias, J., Boulogne, F., Warner, J. D., Yager, N., Gouillart, E., &amp; Yu, T. (2014). scikit-image: image processing in Python. <em>PeerJ</em>, <em>2</em>, e453. <a href="https://doi.org/10.7717/peerj.453">https://doi.org/10.7717/peerj.453</a>
 </div>
 <div id="ref-EWbJLKbO" class="csl-entry" role="doc-biblioentry">
 Vandewalle, P., Parmentier, E., &amp; Chardon, M. (2000). The branchial basket in Teleost feeding. <em>Cybium</em>, <em>24</em>(4). <a href="https://orbi.uliege.be/handle/2268/14698">https://orbi.uliege.be/handle/2268/14698</a>
