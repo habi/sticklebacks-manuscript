@@ -1,10 +1,14 @@
 ---
 title: 'From multi-specimen scans to individual bones: automated extraction and efficient, label-guided segmentation of stickleback micro-CT data'
 keywords:
-- tomography
+- micro-CT
 - high-throughput
 - stickleback
+- Gasterosteus aculeatus
+- ceratobranchial
 - ecology
+- geometric morphometrics
+- deep learning
 lang: en-US
 date-meta: '2026-11-12'
 author-meta:
@@ -27,8 +31,8 @@ header-includes: |
   <meta name="dc.date" content="2026-11-12" />
   <meta name="citation_publication_date" content="2026-11-12" />
   <meta property="article:published_time" content="2026-11-12" />
-  <meta name="dc.modified" content="2026-11-12T09:14:43+00:00" />
-  <meta property="article:modified_time" content="2026-11-12T09:14:43+00:00" />
+  <meta name="dc.modified" content="2026-11-12T10:38:15+00:00" />
+  <meta property="article:modified_time" content="2026-11-12T10:38:15+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +60,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/3d3a4eb88ec38fa8c99a9722657ac837381e0038/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/3d3a4eb88ec38fa8c99a9722657ac837381e0038/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/3d3a4eb88ec38fa8c99a9722657ac837381e0038/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/471af015e172070d5666ff295496be15b8995808/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/471af015e172070d5666ff295496be15b8995808/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/471af015e172070d5666ff295496be15b8995808/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,11 +84,11 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/3d3a4eb88ec38fa8c99a9722657ac837381e0038/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/471af015e172070d5666ff295496be15b8995808/))
 was generated
-from [habi/sticklebacks-manuscript@3d3a4eb](https://github.com/habi/sticklebacks-manuscript/tree/3d3a4eb88ec38fa8c99a9722657ac837381e0038)
-on November 12, 2026 and contains 7055 words.
-Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...3d3a4eb88ec38fa8c99a9722657ac837381e0038#files_bucket).
+from [habi/sticklebacks-manuscript@471af01](https://github.com/habi/sticklebacks-manuscript/tree/471af015e172070d5666ff295496be15b8995808)
+on November 12, 2026 and contains 7147 words.
+Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...471af015e172070d5666ff295496be15b8995808#files_bucket).
 </em></small>
 
 
@@ -165,19 +169,22 @@ or email to
 
 ## Abstract {.page_break_before}
 
-The threespine stickleback (*Gasterosteus aculeatus*) is a well-recognized model system for understanding adaptation to divergent habitats.
-For example, populations of benthic stickleback (benthos-feeding) and limnetic stickleback (water-column-feeding) differ in phenotypic traits associated with dietary specialization.
-Modern investigations of evolutionary change in this organism often require the analysis of hundreds, if not thousands, of individuals.
-However, analysis of feeding structures---particularly jaws and complex internal branchial anatomy---remains time-consuming and requires considerable expertise, with destructive sampling and fine dissection skills needed for quantitative analysis.
+1. The threespine stickleback (*Gasterosteus aculeatus*) is a well-recognized model system for understanding adaptation to divergent habitats.
+   For example, populations of benthic stickleback (benthos-feeding) and limnetic stickleback (water-column-feeding) differ in phenotypic traits associated with dietary specialization.
+   Studying evolutionary change in such systems often requires analyzing hundreds, if not thousands, of individuals.
+   However, analysis of feeding structures---particularly jaws and complex internal branchial anatomy---remains time-consuming and requires considerable expertise, with destructive sampling and fine dissection skills needed for quantitative analysis.
 
-The advent of X-ray microtomography and three-dimensional scanning technologies enables nondestructive imaging and greatly increases the availability of high-resolution morphological data.
-However, the resulting increase in data complexity and processing demands often makes these approaches impractical for large-scale studies, especially at population scales that require measuring and analyzing hundreds to thousands of samples.
+2. The advent of X-ray microtomography and three-dimensional scanning technologies enables nondestructive imaging and greatly increases the availability of high-resolution morphological data.
+   However, the resulting increase in data complexity and processing demands often makes these approaches impractical for large-scale studies, especially at population scales.
+   To address these challenges, we developed a rapid and semi-automated segmentation and analysis pipeline based on Jupyter notebooks and the Biomedisa segmentation platform.
+   In our pipeline, up to six fish are scanned at once, the multi-specimen scans are automatically separated into reproducible, documented single-specimen datasets, and targeted anatomical structures are segmented with a deep learning model trained on a small set of hand-labeled specimens.
 
-To address these challenges, we developed a rapid and semi-automated segmentation and analysis pipeline based on the Jupyter interactive development environment and the Biomedisa image segmentation platform to investigate three-dimensional morphological adaptation in the threespine stickleback.
+3. We applied this pipeline to 38 multi-specimen scans comprising 215 specimens from divergent benthic and limnetic stickleback populations, demonstrating the potential of a high-throughput micro-CT imaging approach for testing ecological and evolutionary hypotheses.
+   Scanning several fish at once was about 5.5 times faster than scanning them individually, and the trained model (Dice score 0.92 on validation data) segmented a specimen in seconds instead of the 10--15 minutes needed manually.
+   A geometric morphometric case study of the first two ceratobranchial bones showed that shape variation is driven mainly by lake of origin, with small but significant differences between ecotypes that were most pronounced in the second ceratobranchial.
 
-The pipeline includes automated separation of multi-specimen scans into individual regions of interest, efficient segmentation of targeted anatomical structures, and morphometric analyses.
-We applied this pipeline to 38 multi-specimen scans comprising 215 specimens from divergent benthic and limnetic stickleback populations, demonstrating the potential of a high-throughput micro-CT imaging approach for testing ecological and evolutionary hypotheses.
-These replicable methods provide a scalable pipeline that researchers working across diverse systems can adapt for high-throughput micro-CT analysis.
+4. The pipeline turns multi-specimen micro-CT scans into analysis-ready datasets of individual specimens with little manual effort.
+   All code, data, and the 3D-printable sample holder are openly available, so that the approach can be adapted to other taxa, sample holders, and anatomical structures.
 
 
 ## Introduction {.page_break_before}
