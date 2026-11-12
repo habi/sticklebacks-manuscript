@@ -2,10 +2,14 @@
 title: "From multi-specimen scans to individual bones: automated extraction and efficient, label-guided segmentation of stickleback micro-CT data"
 date: null  # Defaults to date generated, but can specify like '2022-10-31'.
 keywords:
-  - tomography
+  - micro-CT
   - high-throughput
   - stickleback
+  - Gasterosteus aculeatus
+  - ceratobranchial
   - ecology
+  - geometric morphometrics
+  - deep learning
 lang: en-US
 authors:
   - name: David Haberthür
