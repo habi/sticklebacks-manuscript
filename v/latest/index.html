@@ -10,7 +10,7 @@
   <meta name="author" content="Catherine L. Peichel" />
   <meta name="author" content="Ruslan Hlushchuk" />
   <meta name="dcterms.date" content="2026-11-12" />
-  <meta name="keywords" content="tomography, high-throughput, stickleback, ecology" />
+  <meta name="keywords" content="micro-CT, high-throughput, stickleback, Gasterosteus aculeatus, ceratobranchial, ecology, geometric morphometrics, deep learning" />
   <title>From multi-specimen scans to individual bones: automated extraction and efficient, label-guided segmentation of stickleback micro-CT data</title>
   <style>
     code{white-space: pre-wrap;}
@@ -57,8 +57,8 @@
   <meta name="dc.date" content="2026-11-12" />
   <meta name="citation_publication_date" content="2026-11-12" />
   <meta property="article:published_time" content="2026-11-12" />
-  <meta name="dc.modified" content="2026-11-12T09:14:43+00:00" />
-  <meta property="article:modified_time" content="2026-11-12T09:14:43+00:00" />
+  <meta name="dc.modified" content="2026-11-12T10:38:15+00:00" />
+  <meta property="article:modified_time" content="2026-11-12T10:38:15+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -86,9 +86,9 @@
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/3d3a4eb88ec38fa8c99a9722657ac837381e0038/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/3d3a4eb88ec38fa8c99a9722657ac837381e0038/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/3d3a4eb88ec38fa8c99a9722657ac837381e0038/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/471af015e172070d5666ff295496be15b8995808/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/471af015e172070d5666ff295496be15b8995808/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/471af015e172070d5666ff295496be15b8995808/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -106,11 +106,11 @@
 <p><em>The (anonymized) version <a href="https://github.com/habi/sticklebacks-manuscript/releases/tag/v1.0"><code>v1.0</code></a> of this manuscript was submitted to <a href="https://besjournals.onlinelibrary.wiley.com/journal/2041210X">Methods in Ecology and Evolution</a>.</em></p>
 <p><small><em>
 This manuscript
-(<a href="https://habi.github.io/sticklebacks-manuscript/v/3d3a4eb88ec38fa8c99a9722657ac837381e0038/">permalink</a>)
+(<a href="https://habi.github.io/sticklebacks-manuscript/v/471af015e172070d5666ff295496be15b8995808/">permalink</a>)
 was generated
-from <a href="https://github.com/habi/sticklebacks-manuscript/tree/3d3a4eb88ec38fa8c99a9722657ac837381e0038">habi/sticklebacks-manuscript@3d3a4eb</a>
-on November 12, 2026 and contains 7055 words.
-Changes to the submitted version are visualized <a href="https://github.com/habi/sticklebacks-manuscript/compare/v1.0...3d3a4eb88ec38fa8c99a9722657ac837381e0038#files_bucket">here on GitHub</a>.
+from <a href="https://github.com/habi/sticklebacks-manuscript/tree/471af015e172070d5666ff295496be15b8995808">habi/sticklebacks-manuscript@471af01</a>
+on November 12, 2026 and contains 7147 words.
+Changes to the submitted version are visualized <a href="https://github.com/habi/sticklebacks-manuscript/compare/v1.0...471af015e172070d5666ff295496be15b8995808#files_bucket">here on GitHub</a>.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -176,16 +176,21 @@ or email to
 <a href="mailto:ruslan.hlushchuk@unibe.ch?subject=Feedback%20on%20%22From%20multi-specimen%20scans%20to%20individual%20bones:%20automated%20extraction%20and%20efficient,%20label-guided%20segmentation%20of%20stickleback%20micro-CT%20data%22">Ruslan Hlushchuk</a>.</p>
 </div>
 <h2 class="page_break_before" id="abstract">Abstract</h2>
-<p>The threespine stickleback (<em>Gasterosteus aculeatus</em>) is a well-recognized model system for understanding adaptation to divergent habitats.
+<ol type="1">
+<li><p>The threespine stickleback (<em>Gasterosteus aculeatus</em>) is a well-recognized model system for understanding adaptation to divergent habitats.
 For example, populations of benthic stickleback (benthos-feeding) and limnetic stickleback (water-column-feeding) differ in phenotypic traits associated with dietary specialization.
-Modern investigations of evolutionary change in this organism often require the analysis of hundreds, if not thousands, of individuals.
-However, analysis of feeding structures—particularly jaws and complex internal branchial anatomy—remains time-consuming and requires considerable expertise, with destructive sampling and fine dissection skills needed for quantitative analysis.</p>
-<p>The advent of X-ray microtomography and three-dimensional scanning technologies enables nondestructive imaging and greatly increases the availability of high-resolution morphological data.
-However, the resulting increase in data complexity and processing demands often makes these approaches impractical for large-scale studies, especially at population scales that require measuring and analyzing hundreds to thousands of samples.</p>
-<p>To address these challenges, we developed a rapid and semi-automated segmentation and analysis pipeline based on the Jupyter interactive development environment and the Biomedisa image segmentation platform to investigate three-dimensional morphological adaptation in the threespine stickleback.</p>
-<p>The pipeline includes automated separation of multi-specimen scans into individual regions of interest, efficient segmentation of targeted anatomical structures, and morphometric analyses.
-We applied this pipeline to 38 multi-specimen scans comprising 215 specimens from divergent benthic and limnetic stickleback populations, demonstrating the potential of a high-throughput micro-CT imaging approach for testing ecological and evolutionary hypotheses.
-These replicable methods provide a scalable pipeline that researchers working across diverse systems can adapt for high-throughput micro-CT analysis.</p>
+Studying evolutionary change in such systems often requires analyzing hundreds, if not thousands, of individuals.
+However, analysis of feeding structures—particularly jaws and complex internal branchial anatomy—remains time-consuming and requires considerable expertise, with destructive sampling and fine dissection skills needed for quantitative analysis.</p></li>
+<li><p>The advent of X-ray microtomography and three-dimensional scanning technologies enables nondestructive imaging and greatly increases the availability of high-resolution morphological data.
+However, the resulting increase in data complexity and processing demands often makes these approaches impractical for large-scale studies, especially at population scales.
+To address these challenges, we developed a rapid and semi-automated segmentation and analysis pipeline based on Jupyter notebooks and the Biomedisa segmentation platform.
+In our pipeline, up to six fish are scanned at once, the multi-specimen scans are automatically separated into reproducible, documented single-specimen datasets, and targeted anatomical structures are segmented with a deep learning model trained on a small set of hand-labeled specimens.</p></li>
+<li><p>We applied this pipeline to 38 multi-specimen scans comprising 215 specimens from divergent benthic and limnetic stickleback populations, demonstrating the potential of a high-throughput micro-CT imaging approach for testing ecological and evolutionary hypotheses.
+Scanning several fish at once was about 5.5 times faster than scanning them individually, and the trained model (Dice score 0.92 on validation data) segmented a specimen in seconds instead of the 10–15 minutes needed manually.
+A geometric morphometric case study of the first two ceratobranchial bones showed that shape variation is driven mainly by lake of origin, with small but significant differences between ecotypes that were most pronounced in the second ceratobranchial.</p></li>
+<li><p>The pipeline turns multi-specimen micro-CT scans into analysis-ready datasets of individual specimens with little manual effort.
+All code, data, and the 3D-printable sample holder are openly available, so that the approach can be adapted to other taxa, sample holders, and anatomical structures.</p></li>
+</ol>
 <h2 class="page_break_before" id="introduction">Introduction</h2>
 <p>The threespine stickleback (<em>Gasterosteus aculeatus</em>) is a well-established model system for understanding the independent evolution of similar traits in similar environments <span class="citation" data-cites="G9fXCoFb tyLSEVnP">(<a href="#ref-G9fXCoFb" role="doc-biblioref">Bell &amp; Foster, 1994</a>; <a href="#ref-tyLSEVnP" role="doc-biblioref">Reid et al., 2021</a>)</span>.
 This species exhibits marked differences in marine–freshwater, lake–stream, and benthic–limnetic ecotypes <span class="citation" data-cites="1Dlme4sp5 XOyztXvb">(<a href="#ref-XOyztXvb" role="doc-biblioref">Hendry et al., 2009</a>; <a href="#ref-1Dlme4sp5" role="doc-biblioref">Schluter &amp; McPhail, 1992</a>)</span>.
