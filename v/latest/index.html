@@ -9,7 +9,7 @@
   <meta name="author" content="Sheila Christen" />
   <meta name="author" content="Catherine L. Peichel" />
   <meta name="author" content="Ruslan Hlushchuk" />
-  <meta name="dcterms.date" content="2026-11-11" />
+  <meta name="dcterms.date" content="2026-11-12" />
   <meta name="keywords" content="tomography, high-throughput, stickleback, ecology" />
   <title>From multi-specimen scans to individual bones: automated extraction and efficient, label-guided segmentation of stickleback micro-CT data</title>
   <style>
@@ -54,11 +54,11 @@
   <meta name="citation_title" content="From multi-specimen scans to individual bones: automated extraction and efficient, label-guided segmentation of stickleback micro-CT data" />
   <meta property="og:title" content="From multi-specimen scans to individual bones: automated extraction and efficient, label-guided segmentation of stickleback micro-CT data" />
   <meta property="twitter:title" content="From multi-specimen scans to individual bones: automated extraction and efficient, label-guided segmentation of stickleback micro-CT data" />
-  <meta name="dc.date" content="2026-11-11" />
-  <meta name="citation_publication_date" content="2026-11-11" />
-  <meta property="article:published_time" content="2026-11-11" />
-  <meta name="dc.modified" content="2026-11-11T10:40:51+00:00" />
-  <meta property="article:modified_time" content="2026-11-11T10:40:51+00:00" />
+  <meta name="dc.date" content="2026-11-12" />
+  <meta name="citation_publication_date" content="2026-11-12" />
+  <meta property="article:published_time" content="2026-11-12" />
+  <meta name="dc.modified" content="2026-11-12T09:14:43+00:00" />
+  <meta property="article:modified_time" content="2026-11-12T09:14:43+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -86,9 +86,9 @@
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/c1b95b69f5f259eacaa02cff4fea9bfe1e9bdd1d/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/c1b95b69f5f259eacaa02cff4fea9bfe1e9bdd1d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/c1b95b69f5f259eacaa02cff4fea9bfe1e9bdd1d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/3d3a4eb88ec38fa8c99a9722657ac837381e0038/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/3d3a4eb88ec38fa8c99a9722657ac837381e0038/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/3d3a4eb88ec38fa8c99a9722657ac837381e0038/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -106,11 +106,11 @@
 <p><em>The (anonymized) version <a href="https://github.com/habi/sticklebacks-manuscript/releases/tag/v1.0"><code>v1.0</code></a> of this manuscript was submitted to <a href="https://besjournals.onlinelibrary.wiley.com/journal/2041210X">Methods in Ecology and Evolution</a>.</em></p>
 <p><small><em>
 This manuscript
-(<a href="https://habi.github.io/sticklebacks-manuscript/v/c1b95b69f5f259eacaa02cff4fea9bfe1e9bdd1d/">permalink</a>)
+(<a href="https://habi.github.io/sticklebacks-manuscript/v/3d3a4eb88ec38fa8c99a9722657ac837381e0038/">permalink</a>)
 was generated
-from <a href="https://github.com/habi/sticklebacks-manuscript/tree/c1b95b69f5f259eacaa02cff4fea9bfe1e9bdd1d">habi/sticklebacks-manuscript@c1b95b6</a>
-on November 11, 2026 and contains 7047 words.
-Changes to the submitted version are visualized <a href="https://github.com/habi/sticklebacks-manuscript/compare/v1.0...c1b95b69f5f259eacaa02cff4fea9bfe1e9bdd1d#files_bucket">here on GitHub</a>.
+from <a href="https://github.com/habi/sticklebacks-manuscript/tree/3d3a4eb88ec38fa8c99a9722657ac837381e0038">habi/sticklebacks-manuscript@3d3a4eb</a>
+on November 12, 2026 and contains 7055 words.
+Changes to the submitted version are visualized <a href="https://github.com/habi/sticklebacks-manuscript/compare/v1.0...3d3a4eb88ec38fa8c99a9722657ac837381e0038#files_bucket">here on GitHub</a>.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -269,7 +269,7 @@ Visualization created with Dragonfly 3D World (version 2025.1.0.14177, Comet Tec
 <h3 id="data-analysis">Data Analysis</h3>
 <h4 id="preparation-and-handling-of-tomographic-datasets">Preparation and Handling of Tomographic Datasets</h4>
 <p>After acquisition, <a href="https://github.com/habi/sticklebacks/blob/main/rsync-sticklebacks.sh">a simple script</a> was used to copy the relevant data to both archival storage and storage accessible by all coauthors.
-Further processing of the tomographic datasets was performed with a set of Jupyter <span class="citation" data-cites="1Bh7g5XAe">(<a href="#ref-1Bh7g5XAe" role="doc-biblioref">Kluyver Thomas et al., 2016</a>)</span> notebooks <span class="citation" data-cites="4vi5Vvpx">(<a href="#ref-4vi5Vvpx" role="doc-biblioref">David Haberthür, 2026</a>)</span>.
+Further processing of the tomographic datasets was performed with a set of Jupyter <span class="citation" data-cites="1Bh7g5XAe">(<a href="#ref-1Bh7g5XAe" role="doc-biblioref">Kluyver Thomas et al., 2016</a>)</span> notebooks <span class="citation" data-cites="omZslgE5">(<a href="#ref-omZslgE5" role="doc-biblioref">David Haberthür, 2026</a>)</span>.
 The versions of all Python packages used are pinned in the environment file of the same repository, from which the computing environment can be exactly recreated.</p>
 <h5 id="preview-notebook">Preview Notebook</h5>
 <p>The <a href="https://nbviewer.org/github/habi/sticklebacks/blob/main/PreviewScans.ipynb">preview notebook</a> was used to identify scanning and reconstruction issues.
@@ -332,7 +332,7 @@ Visualization created with napari <span class="citation" data-cites="YEMgt2T4">(
 </figure>
 </div>
 <h4 id="extraction-of-features-of-interest">Extraction of Features of Interest</h4>
-<p>After separation, the cropped image files were checked and rendered using 3D Slicer <span class="citation" data-cites="EsDua5wx">(<a href="#ref-EsDua5wx" role="doc-biblioref">Kikinis et al., 2013</a>)</span> and the SlicerMorph extension <span class="citation" data-cites="MwdN6kPV">(<a href="#ref-MwdN6kPV" role="doc-biblioref">Rolfe et al., 2021</a>)</span>.
+<p>After separation, the cropped image files were checked and rendered using 3D Slicer (version 5.8.1, <span class="citation" data-cites="EsDua5wx">(<a href="#ref-EsDua5wx" role="doc-biblioref">Kikinis et al., 2013</a>)</span>) and the SlicerMorph extension (revision <a href="https://github.com/SlicerMorph/SlicerMorph/commit/c944db9">c944db9</a>, <span class="citation" data-cites="MwdN6kPV">(<a href="#ref-MwdN6kPV" role="doc-biblioref">Rolfe et al., 2021</a>)</span>).
 A subset of 51 specimens was chosen to create an initial training dataset.
 For each of these samples, we cropped the datasets of the full fish further to only include the head region.
 Individual elements of the branchial apparatus of these further cropped datasets were rendered and cleaned by hand using a combination of thresholding and “Split Islands” tools to separate the pharyngobranchials, epibranchials, basibranchials, hypobranchials, and ceratobranchials as distinct labels (see Figure <a href="#fig:branchial_anatomy">7</a>).</p>
@@ -345,7 +345,7 @@ Abbreviations: EB = epibranchials, PB = pharyngobranchials, CB = ceratobranchial
 </div>
 <p>Once segmented, the labels corresponding to each set of bones were exported as a colored labelmap along with the NRRD file from which they were segmented to pass to Biomedisa.</p>
 <h4 id="machine-learning-and-model-training">Machine Learning and Model Training</h4>
-<p>The hand-labeled dataset of 51 samples (including NRRD and label files) was input into Biomedisa <span class="citation" data-cites="jHalJ9Zw">(<a href="#ref-jHalJ9Zw" role="doc-biblioref">Lösel et al., 2020</a>)</span> to train a segmentation model.
+<p>The hand-labeled dataset of 51 samples (including NRRD and label files) was input into Biomedisa (version 26.4.5, <span class="citation" data-cites="jHalJ9Zw">(<a href="#ref-jHalJ9Zw" role="doc-biblioref">Lösel et al., 2020</a>)</span>) to train a segmentation model.
 Following Biomedisa’s default settings, these datasets were resampled to 256 × 256 × 256 voxels for training and prediction, and the predicted labels were rescaled to the original resolution.
 We allowed a 180° rotation to account for possible specimen variability, with an 80/20 split between training and validation data.
 The model was trained with a batch size of 24 for 50 epochs, using a network architecture of 32-64-128-256-512.
@@ -368,7 +368,7 @@ While this particular workflow was chosen for time-efficiency, accuracy, and use
 </figure>
 </div>
 <h4 id="analysis-of-shape">Analysis of Shape</h4>
-<p>All subsequent analyses were run using R (version 4.4.1, <span class="citation" data-cites="whEyWyQh">(<a href="#ref-whEyWyQh" role="doc-biblioref">R Core Team, 2024</a>)</span>) and the geomorph package <span class="citation" data-cites="100JsQfhF vVigKiE 1FNzpGn6o VPUOQA2P">(<a href="#ref-vVigKiE" role="doc-biblioref">Adams et al., 2012</a>; <a href="#ref-100JsQfhF" role="doc-biblioref">Baken et al., 2021</a>; <a href="#ref-VPUOQA2P" role="doc-biblioref">M. L. Collyer &amp; Adams, 2018</a>; <a href="#ref-1FNzpGn6o" role="doc-biblioref">M. Collyer &amp; Adams, 2018</a>)</span>.
+<p>All subsequent analyses were run using R (version 4.4.1, <span class="citation" data-cites="whEyWyQh">(<a href="#ref-whEyWyQh" role="doc-biblioref">R Core Team, 2024</a>)</span>) and the geomorph package (version 4.1.1, <span class="citation" data-cites="100JsQfhF vVigKiE 1FNzpGn6o VPUOQA2P">(<a href="#ref-vVigKiE" role="doc-biblioref">Adams et al., 2012</a>; <a href="#ref-100JsQfhF" role="doc-biblioref">Baken et al., 2021</a>; <a href="#ref-VPUOQA2P" role="doc-biblioref">M. L. Collyer &amp; Adams, 2018</a>; <a href="#ref-1FNzpGn6o" role="doc-biblioref">M. Collyer &amp; Adams, 2018</a>)</span>).
 Landmarks corresponding to each bone were split and analyzed separately after generalized Procrustes analysis (GPA) using the <a href="https://search.r-project.org/CRAN/refmans/geomorph/html/gpagen.html"><code>gpagen()</code></a> function, with principal component analysis (PCA) and linear models run with <a href="https://search.r-project.org/CRAN/refmans/geomorph/html/gm.prcomp.html"><code>gm.prcomp()</code></a> and <a href="https://search.r-project.org/CRAN/refmans/geomorph/html/procD.lm.html"><code>procD.lm()</code></a>, respectively.
 Linear fits were further investigated using the <code>pairwise()</code> function to analyze differences in pairwise statistics.</p>
 <h2 class="page_break_before" id="results">Results</h2>
@@ -677,8 +677,8 @@ Collyer, M., &amp; Adams, D. (2018). RRPP: Linear Model Evaluation with Randomiz
 <div id="ref-hj1CnyWB" class="csl-entry" role="doc-biblioentry">
 Dask Development Team. (2016). <em>Dask: Library for dynamic task scheduling</em>. <a href="https://dask.org">https://dask.org</a>
 </div>
-<div id="ref-4vi5Vvpx" class="csl-entry" role="doc-biblioentry">
-David Haberthür. (2026). <em>habi/sticklebacks: Maintenance release</em> (Version 0.99) [Computer software]. Zenodo. <a href="https://doi.org/10.5281/zenodo.18257528">https://doi.org/10.5281/zenodo.18257528</a>
+<div id="ref-omZslgE5" class="csl-entry" role="doc-biblioentry">
+David Haberthür. (2026). <em>habi/sticklebacks: Version used for resubmitting the manuscript</em> (Version v1.1) [Computer software]. Zenodo. <a href="https://doi.org/10.5281/zenodo.18257527">https://doi.org/10.5281/zenodo.18257527</a>
 </div>
 <div id="ref-11i8vzpUp" class="csl-entry" role="doc-biblioentry">
 Eckert, L., Bolnick, D. I., Derry, A. M., Haines, G. E., Heckley, A. M., Lind, Å. J., Peichel, C. L., Roth, A. M., Steinel, N. C., Vlahiotis, K., Weber, J. N., Hendry, A. P., &amp; Barrett, R. D. H. (2026). <em>Intrinsic fitness differences outweigh environmental matching in shaping introduction outcomes in nature</em>. openRxiv. <a href="https://doi.org/10.64898/2026.02.04.699496">https://doi.org/10.64898/2026.02.04.699496</a>
