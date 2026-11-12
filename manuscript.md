@@ -6,7 +6,7 @@ keywords:
 - stickleback
 - ecology
 lang: en-US
-date-meta: '2026-11-11'
+date-meta: '2026-11-12'
 author-meta:
 - David Haberthür
 - R. Benjamin Sulser
@@ -24,11 +24,11 @@ header-includes: |
   <meta name="citation_title" content="From multi-specimen scans to individual bones: automated extraction and efficient, label-guided segmentation of stickleback micro-CT data" />
   <meta property="og:title" content="From multi-specimen scans to individual bones: automated extraction and efficient, label-guided segmentation of stickleback micro-CT data" />
   <meta property="twitter:title" content="From multi-specimen scans to individual bones: automated extraction and efficient, label-guided segmentation of stickleback micro-CT data" />
-  <meta name="dc.date" content="2026-11-11" />
-  <meta name="citation_publication_date" content="2026-11-11" />
-  <meta property="article:published_time" content="2026-11-11" />
-  <meta name="dc.modified" content="2026-11-11T10:40:51+00:00" />
-  <meta property="article:modified_time" content="2026-11-11T10:40:51+00:00" />
+  <meta name="dc.date" content="2026-11-12" />
+  <meta name="citation_publication_date" content="2026-11-12" />
+  <meta property="article:published_time" content="2026-11-12" />
+  <meta name="dc.modified" content="2026-11-12T09:14:43+00:00" />
+  <meta property="article:modified_time" content="2026-11-12T09:14:43+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -56,9 +56,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/c1b95b69f5f259eacaa02cff4fea9bfe1e9bdd1d/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/c1b95b69f5f259eacaa02cff4fea9bfe1e9bdd1d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/c1b95b69f5f259eacaa02cff4fea9bfe1e9bdd1d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/3d3a4eb88ec38fa8c99a9722657ac837381e0038/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/3d3a4eb88ec38fa8c99a9722657ac837381e0038/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/3d3a4eb88ec38fa8c99a9722657ac837381e0038/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,11 +80,11 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/c1b95b69f5f259eacaa02cff4fea9bfe1e9bdd1d/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/3d3a4eb88ec38fa8c99a9722657ac837381e0038/))
 was generated
-from [habi/sticklebacks-manuscript@c1b95b6](https://github.com/habi/sticklebacks-manuscript/tree/c1b95b69f5f259eacaa02cff4fea9bfe1e9bdd1d)
-on November 11, 2026 and contains 7047 words.
-Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...c1b95b69f5f259eacaa02cff4fea9bfe1e9bdd1d#files_bucket).
+from [habi/sticklebacks-manuscript@3d3a4eb](https://github.com/habi/sticklebacks-manuscript/tree/3d3a4eb88ec38fa8c99a9722657ac837381e0038)
+on November 12, 2026 and contains 7055 words.
+Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.0...3d3a4eb88ec38fa8c99a9722657ac837381e0038#files_bucket).
 </em></small>
 
 
@@ -279,7 +279,7 @@ The 3D-printed labels on the holder are highlighted in yellow in Figures @fig:vi
 #### Preparation and Handling of Tomographic Datasets
 
 After acquisition, [a simple script](https://github.com/habi/sticklebacks/blob/main/rsync-sticklebacks.sh) was used to copy the relevant data to both archival storage and storage accessible by all coauthors.
-Further processing of the tomographic datasets was performed with a set of Jupyter [@doi:10.3233/978-1-61499-649-1-87] notebooks [@doi:10.5281/zenodo.18257528].
+Further processing of the tomographic datasets was performed with a set of Jupyter [@doi:10.3233/978-1-61499-649-1-87] notebooks [@doi:10.5281/zenodo.18257527].
 The versions of all Python packages used are pinned in the environment file of the same repository, from which the computing environment can be exactly recreated.
 
 ##### Preview Notebook
@@ -338,7 +338,7 @@ The napari viewer is well suited to load the intermediate `*.zarr` files; Figure
 
 #### Extraction of Features of Interest
 
-After separation, the cropped image files were checked and rendered using 3D Slicer [@doi:10.1007/978-1-4614-7657-3_19] and the SlicerMorph extension [@doi:10.1111/2041-210X.13669].
+After separation, the cropped image files were checked and rendered using 3D Slicer (version 5.8.1, [@doi:10.1007/978-1-4614-7657-3_19]) and the SlicerMorph extension (revision [c944db9](https://github.com/SlicerMorph/SlicerMorph/commit/c944db9), [@doi:10.1111/2041-210X.13669]).
 A subset of 51 specimens was chosen to create an initial training dataset.
 For each of these samples, we cropped the datasets of the full fish further to only include the head region.
 Individual elements of the branchial apparatus of these further cropped datasets were rendered and cleaned by hand using a combination of thresholding and "Split Islands" tools to separate the pharyngobranchials, epibranchials, basibranchials, hypobranchials, and ceratobranchials as distinct labels (see Figure @fig:branchial_anatomy).
@@ -350,7 +350,7 @@ Once segmented, the labels corresponding to each set of bones were exported as a
 
 #### Machine Learning and Model Training
 
-The hand-labeled dataset of 51 samples (including NRRD and label files) was input into Biomedisa [@doi:10.1038/s41467-020-19303-w] to train a segmentation model.
+The hand-labeled dataset of 51 samples (including NRRD and label files) was input into Biomedisa (version 26.4.5, [@doi:10.1038/s41467-020-19303-w]) to train a segmentation model.
 Following Biomedisa's default settings, these datasets were resampled to 256\ ×\ 256\ ×\ 256\ voxels for training and prediction, and the predicted labels were rescaled to the original resolution.
 We allowed a 180° rotation to account for possible specimen variability, with an 80/20 split between training and validation data.
 The model was trained with a batch size of 24 for 50 epochs, using a network architecture of 32-64-128-256-512.
@@ -376,7 +376,7 @@ While this particular workflow was chosen for time-efficiency, accuracy, and use
 
 #### Analysis of Shape
 
-All subsequent analyses were run using R (version 4.4.1, [@r]) and the geomorph package [@doi:10.1111/2041-210X.13723; @doi:10.32614/CRAN.package.geomorph; @doi:10.32614/CRAN.package.RRPP; @doi:10.1111/2041-210X.13029].
+All subsequent analyses were run using R (version 4.4.1, [@r]) and the geomorph package (version 4.1.1, [@doi:10.1111/2041-210X.13723; @doi:10.32614/CRAN.package.geomorph; @doi:10.32614/CRAN.package.RRPP; @doi:10.1111/2041-210X.13029]).
 Landmarks corresponding to each bone were split and analyzed separately after generalized Procrustes analysis (GPA) using the [`gpagen()`](https://search.r-project.org/CRAN/refmans/geomorph/html/gpagen.html) function, with principal component analysis (PCA) and linear models run with [`gm.prcomp()`](https://search.r-project.org/CRAN/refmans/geomorph/html/gm.prcomp.html) and [`procD.lm()`](https://search.r-project.org/CRAN/refmans/geomorph/html/procD.lm.html), respectively.
 Linear fits were further investigated using the `pairwise()` function to analyze differences in pairwise statistics.
 
