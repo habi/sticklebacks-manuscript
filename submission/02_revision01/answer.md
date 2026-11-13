@@ -17,6 +17,7 @@ pandoc answer.md \
   --citeproc \
   --bibliography="$HOME/Documents/library.bib" \
   --csl="../../build/assets/style.csl" \
+  --metadata author="" \
   --pdf-engine=typst
 ```
 to make a PDF with nicely styled quotes and link underlines (hat tip to ChatGPT for whipping up the lua styling filter (I only changed the color to UniBe red)) and references (using the manubot CSL in this repo)
