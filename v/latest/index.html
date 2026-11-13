@@ -9,7 +9,7 @@
   <meta name="author" content="Sheila Christen" />
   <meta name="author" content="Catherine L. Peichel" />
   <meta name="author" content="Ruslan Hlushchuk" />
-  <meta name="dcterms.date" content="2026-11-12" />
+  <meta name="dcterms.date" content="2026-11-13" />
   <meta name="keywords" content="micro-CT, high-throughput, stickleback, Gasterosteus aculeatus, ceratobranchial, ecology, geometric morphometrics, deep learning" />
   <title>From multi-specimen scans to individual bones: automated extraction and efficient, label-guided segmentation of stickleback micro-CT data</title>
   <style>
@@ -54,11 +54,11 @@
   <meta name="citation_title" content="From multi-specimen scans to individual bones: automated extraction and efficient, label-guided segmentation of stickleback micro-CT data" />
   <meta property="og:title" content="From multi-specimen scans to individual bones: automated extraction and efficient, label-guided segmentation of stickleback micro-CT data" />
   <meta property="twitter:title" content="From multi-specimen scans to individual bones: automated extraction and efficient, label-guided segmentation of stickleback micro-CT data" />
-  <meta name="dc.date" content="2026-11-12" />
-  <meta name="citation_publication_date" content="2026-11-12" />
-  <meta property="article:published_time" content="2026-11-12" />
-  <meta name="dc.modified" content="2026-11-12T16:54:04+00:00" />
-  <meta property="article:modified_time" content="2026-11-12T16:54:04+00:00" />
+  <meta name="dc.date" content="2026-11-13" />
+  <meta name="citation_publication_date" content="2026-11-13" />
+  <meta property="article:published_time" content="2026-11-13" />
+  <meta name="dc.modified" content="2026-11-13T16:07:23+00:00" />
+  <meta property="article:modified_time" content="2026-11-13T16:07:23+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -86,9 +86,9 @@
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/3c6e3565de5cd431429086943273f4d9a52b87f7/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/3c6e3565de5cd431429086943273f4d9a52b87f7/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/3c6e3565de5cd431429086943273f4d9a52b87f7/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/9ce9a7b07dee1a7a3435f83cc048d1b646b416ad/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/9ce9a7b07dee1a7a3435f83cc048d1b646b416ad/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/9ce9a7b07dee1a7a3435f83cc048d1b646b416ad/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -106,11 +106,11 @@
 <p><em>The (anonymized) version <a href="https://github.com/habi/sticklebacks-manuscript/releases/tag/v1.1"><code>v1.1</code></a> of this manuscript was submitted as a revised manuscript to <a href="https://besjournals.onlinelibrary.wiley.com/journal/2041210X">Methods in Ecology and Evolution</a>.</em></p>
 <p><small><em>
 This manuscript
-(<a href="https://habi.github.io/sticklebacks-manuscript/v/3c6e3565de5cd431429086943273f4d9a52b87f7/">permalink</a>)
+(<a href="https://habi.github.io/sticklebacks-manuscript/v/9ce9a7b07dee1a7a3435f83cc048d1b646b416ad/">permalink</a>)
 was generated
-from <a href="https://github.com/habi/sticklebacks-manuscript/tree/3c6e3565de5cd431429086943273f4d9a52b87f7">habi/sticklebacks-manuscript@3c6e356</a>
-on November 12, 2026 and contains 7151 words.
-Changes to the re-submitted version are visualized <a href="https://github.com/habi/sticklebacks-manuscript/compare/v1.1...3c6e3565de5cd431429086943273f4d9a52b87f7#files_bucket">here on GitHub</a>.
+from <a href="https://github.com/habi/sticklebacks-manuscript/tree/9ce9a7b07dee1a7a3435f83cc048d1b646b416ad">habi/sticklebacks-manuscript@9ce9a7b</a>
+on November 13, 2026 and contains 7151 words.
+Changes to the re-submitted version are visualized <a href="https://github.com/habi/sticklebacks-manuscript/compare/v1.1...9ce9a7b07dee1a7a3435f83cc048d1b646b416ad#files_bucket">here on GitHub</a>.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -183,7 +183,7 @@ Studying evolutionary change in such systems often requires analyzing hundreds, 
 However, analysis of feeding structures—particularly jaws and complex internal branchial anatomy—remains time-consuming and requires considerable expertise, with destructive sampling and fine dissection skills needed for quantitative analysis.</p></li>
 <li><p>The advent of X-ray microtomography and three-dimensional scanning technologies enables nondestructive imaging and greatly increases the availability of high-resolution morphological data.
 However, the resulting increase in data complexity and processing demands often makes these approaches impractical for large-scale studies, especially at population scales.
-To address these challenges, we developed a rapid and semi-automated segmentation and analysis pipeline based on Jupyter notebooks and the Biomedisa segmentation platform.
+To address these challenges, we developed a rapid and automated separation and analysis pipeline based on Jupyter notebooks and the Biomedisa segmentation platform.
 In our pipeline, up to six fish are scanned at once, the multi-specimen scans are automatically separated into reproducible, documented single-specimen datasets, and targeted anatomical structures are segmented with a deep learning model trained on a small set of hand-labeled specimens.</p></li>
 <li><p>We applied this pipeline to 38 multi-specimen scans comprising 215 specimens from divergent benthic and limnetic stickleback populations, demonstrating the potential of a high-throughput micro-CT imaging approach for testing ecological and evolutionary hypotheses.
 Scanning several fish at once was about 5.5 times faster than scanning them individually, and the trained model (Dice score 0.92 on validation data) segmented a specimen in seconds instead of the 10–15 minutes needed manually.
@@ -215,7 +215,7 @@ Micro-CT imaging is also ideally suited for nondestructive anatomical assessment
 Instead, many investigators and tomography institutes choose to scan several specimens at once in a “multiscan” format.
 Although efficient in terms of beam time and number of individuals per scan, multiscans result in considerably larger datasets that must be partitioned correctly with respect to each individual specimen prior to downstream analysis.
 This creates a bottleneck for large-scale research where sizable multiscans bloat processing time, in addition to potential risks regarding errors in specimen splitting and specimen identification.</p>
-<p>Furthermore, once partitioned, small structures can be manually rendered by a skilled investigator using segmentation tools such as 3D Slicer <span class="citation" data-cites="EsDua5wx MwdN6kPV">(<a href="#ref-EsDua5wx" role="doc-biblioref">Kikinis et al., 2013</a>; <a href="#ref-MwdN6kPV" role="doc-biblioref">Rolfe et al., 2021</a>)</span>, yet the time and resources required per sample also make this approach infeasible for population-level and evolutionary studies.</p>
+<p>Furthermore, once partitioned, small structures can be manually segmented by a skilled investigator using tools such as 3D Slicer <span class="citation" data-cites="EsDua5wx MwdN6kPV">(<a href="#ref-EsDua5wx" role="doc-biblioref">Kikinis et al., 2013</a>; <a href="#ref-MwdN6kPV" role="doc-biblioref">Rolfe et al., 2021</a>)</span>, yet the time and resources required per sample also make this approach infeasible for population-level and evolutionary studies.</p>
 <p>This project aims to address these gaps, demonstrating a novel pipeline for automatic splitting and rendering of multi-specimen scans for mass sampling, creating a dataset with consistent parameters that can be used as input for downstream machine learning approaches, such as Biomedisa, to aid in the segmentation of individual bony structures in each scan <span class="citation" data-cites="jHalJ9Zw">(<a href="#ref-jHalJ9Zw" role="doc-biblioref">Lösel et al., 2020</a>)</span>.
 Once a Biomedisa model is trained, the entire pipeline runs from multi-specimen input to reconstructed anatomical structures for each specimen in a fraction of the time and resources required for traditional analysis.</p>
 <h2 class="page_break_before" id="materials-methods">Materials &amp; Methods</h2>
@@ -246,7 +246,7 @@ This holder was designed in <a href="https://openscad.org/">OpenSCAD</a> (OpenSC
 Both files are part of a library of 3D-printable sample holders for tomographic imaging <span class="citation" data-cites="115PPSuQp">(<a href="#ref-115PPSuQp" role="doc-biblioref">Haberthür, 2019</a>)</span>.
 We printed the sample holder in Clear Resin (V5) on a stereolithography 3D printer (Form 4, Formlabs, Somerville, MA, USA).
 The workflow presented here is applicable to any other sample holder that separates the objects of interest radially.</p>
-<p>Fish were taken out of single, labeled Falcon tubes, wrapped in melamine resin foam (virtually radiotransparent, but stable) and put head-first into the labeled compartments of the sample holder.
+<p>Fish were taken out of single, labeled Falcon tubes, wrapped in melamine resin foam (virtually radiotransparent, but stable) and put head-first into the numbered compartments of the sample holder.
 The foam was moistened with formalin and the top of the sample holder was sealed with Parafilm to avoid drying of the fish during the tomographic imaging.</p>
 <p>Tomographic imaging was performed on a <a href="https://www.bruker.com/en/products-and-solutions/diffractometers-and-x-ray-microscopes/3d-x-ray-microscopes/skyscan-2214.html">Bruker SkyScan 2214</a> (Bruker microCT, Kontich, Belgium) at the Institute of Anatomy, University of Bern, Switzerland.
 In total, we performed 38 scans, each scan containing up to six fish in the sample holder.</p>
@@ -255,19 +255,19 @@ The X-ray source was set to a voltage of 60 kV and a current of around 110 µA
 Setting different voltage and current for one scan had no discernible influence on the downstream pipeline, since the segmentation of the features of interest was performed semi-automatically, as explained later.
 For each scan, we recorded a set of 3601 projections per stack (each projection with a size of 3000 × 2000 pixels) at 0.1° intervals over a 360° sample rotation.
 Every single projection was exposed for about a second.</p>
-<p>We scanned the whole length of the fish in several stacks, because the datasets are also used in follow-up studies of other anatomical regions and the 3D-printed compartment labels had to be in the field of view for the separation step.
+<p>We scanned the whole length of the fish in several stacks, because the datasets are also used in follow-up studies of other anatomical regions and the 3D-printed compartment markers had to be in the field of view for the separation step.
 On average, we scanned three fields of view along the rotation axis of the sample holder.
 This resulted in an average scan time of 10 hours for each scan.
 The projection images were subsequently reconstructed into stacks of 8-bit PNG images with NRecon (Bruker microCT, Kontich, Belgium; version 2.2.0.6), without applying any ring artifact or beam hardening correction.
 Stitching of the three fields of view is automatically performed in NRecon, too.
 The isotropic voxel sizes in the resulting datasets vary from 15 to 17.5 µm.</p>
 <p>The result of one such multi-specimen scan is visualized in Figure <a href="#fig:visualization">2</a>, which shows the six fish contained in this scan.
-The 3D-printed labels on the holder are highlighted in yellow in Figures <a href="#fig:visualization">2</a> and <a href="#fig:labels">3</a>–<a href="#fig:cropping">5</a> (image processing in notebooks), and visible (upside down) in Figure <a href="#fig:SLX23012_3D">6</a>.</p>
+The 3D-printed markers on the holder are highlighted in yellow in Figures <a href="#fig:visualization">2</a> and <a href="#fig:labeling">3</a>–<a href="#fig:cropping">5</a> (image processing in notebooks), and visible (upside down) in Figure <a href="#fig:SLX23012_3D">6</a>.</p>
 <div id="fig:visualization" class="fignos">
 <figure>
-<img src="images/Sticklebucket_H.rec.3D.png" alt="Figure 2: Three-dimensional visualization of one multi-specimen scan. The 3D-printed labels are highlighted in yellow; the holder itself is shown semi-transparently, containing six specimens for this scan. Visualization created with Dragonfly 3D World (version 2025.1.0.14177, Comet Technologies Canada Inc, Montreal, Canada)." />
+<img src="images/Sticklebucket_H.rec.3D.png" alt="Figure 2: Three-dimensional visualization of one multi-specimen scan. The 3D-printed markers are highlighted in yellow; the holder itself is shown semi-transparently, containing six specimens for this scan. Visualization created with Dragonfly 3D World (version 2025.1.0.14177, Comet Technologies Canada Inc, Montreal, Canada)." />
 <figcaption aria-hidden="true"><span>Figure 2:</span> Three-dimensional visualization of one multi-specimen scan.
-The 3D-printed labels are highlighted in yellow; the holder itself is shown semi-transparently, containing six specimens for this scan.
+The 3D-printed markers are highlighted in yellow; the holder itself is shown semi-transparently, containing six specimens for this scan.
 Visualization created with Dragonfly 3D World (version 2025.1.0.14177, Comet Technologies Canada Inc, Montreal, Canada).</figcaption>
 </figure>
 </div>
@@ -284,19 +284,19 @@ This approach allowed us to map <em>all</em> the reconstructions to memory and q
 <h5 id="separation-notebook">Separation Notebook</h5>
 <p>The <a href="https://nbviewer.org/github/habi/sticklebacks/blob/main/BucketSeparator.ipynb">separation notebook</a> processes all the acquired scans to extract each individual fish from each scan, which usually contained six fish.
 As in the preview notebook, we efficiently load all the PNGs from disk with Dask <span class="citation" data-cites="hj1CnyWB">(<a href="#ref-hj1CnyWB" role="doc-biblioref">Dask Development Team, 2016</a>)</span>.</p>
-<p>A connected region labeling (<a href="https://scikit-image.org/docs/stable/api/skimage.measure.html#skimage.measure.label"><code>skimage.measure.label</code></a>, scikit-image <span class="citation" data-cites="stvWEJeu">(<a href="#ref-stvWEJeu" role="doc-biblioref">van der Walt et al., 2014</a>)</span>) of the previously extracted MIP images was used to detect the single fish in their compartments (see right panel of Figure <a href="#fig:labels">3</a>).
-The 3D-printed compartment labels of the sample holder were detected in the same way and are highlighted in yellow in the left panel of Figure <a href="#fig:labels">3</a>.
+<p>A connected-component analysis (<a href="https://scikit-image.org/docs/stable/api/skimage.measure.html#skimage.measure.label"><code>skimage.measure.label</code></a>, scikit-image <span class="citation" data-cites="stvWEJeu">(<a href="#ref-stvWEJeu" role="doc-biblioref">van der Walt et al., 2014</a>)</span>) of the previously extracted MIP images was used to detect the single fish in their compartments (see right panel of Figure <a href="#fig:labeling">3</a>).
+The 3D-printed compartment markers of the sample holder were detected in the same way and are highlighted in yellow in the left panel of Figure <a href="#fig:labeling">3</a>.
 Since scikit-image numbers the detected regions in raster order (top to bottom, left to right), this numbering depends on the exact position of each fish within its compartment.
 Due to a slight tilt of the sample holder in the scanner and inconsistent size of the single fish, the detected numbering does not consistently follow the 3D-printed compartment numbering.
 We thus assigned each detected region to a compartment based on the angle of its centroid (<a href="https://scikit-image.org/docs/stable/api/skimage.measure.html#skimage.measure.regionprops"><code>skimage.measure.regionprops</code></a>) around the rotation axis of the scan, which coincides with the center of the sample holder.
 Each region is assigned to the compartment with the closest nominal direction (spaced by 60°, counted anticlockwise from compartment 1); empty compartments are skipped.</p>
-<p>The bounding boxes of the individual fish in the scan (see right panel of Figure <a href="#fig:labels">3</a>) were used to extract small cropped regions from the large multi-specimen dataset.
+<p>The bounding boxes of the individual fish in the scan (see right panel of Figure <a href="#fig:labeling">3</a>) were used to extract small cropped regions from the large multi-specimen dataset.
 This extraction process is fully reproducible and is tailored to the arrangement of the samples in the custom sample holder.</p>
-<div id="fig:labels" class="fignos">
+<div id="fig:labeling" class="fignos">
 <figure>
-<img src="images/Sticklebucket_H.rec.Labels.Detected.png" alt="Figure 3: Automatically detected regions based on maximum intensity projection along the rotation axis of the tomographic scan. The left panel shows the highlighted compartment labels as they have been 3D printed. The right panel shows the regions as detected by scikit-image; they are numbered consecutively from top left to bottom right. These region numbers are assigned to the compartments based on their angle around the rotation axis (see text) and subsequently mapped to the fish ID." />
+<img src="images/Sticklebucket_H.rec.Labels.Detected.png" alt="Figure 3: Automatically detected regions based on maximum intensity projection along the rotation axis of the tomographic scan. The left panel shows the highlighted compartment markers as they have been 3D printed. The right panel shows the regions as detected by scikit-image; they are numbered consecutively from top left to bottom right. These region numbers are assigned to the compartments based on their angle around the rotation axis (see text) and subsequently mapped to the fish ID." />
 <figcaption aria-hidden="true"><span>Figure 3:</span> Automatically detected regions based on maximum intensity projection along the rotation axis of the tomographic scan.
-The left panel shows the highlighted compartment labels as they have been 3D printed.
+The left panel shows the highlighted compartment markers as they have been 3D printed.
 The right panel shows the regions as detected by scikit-image; they are numbered consecutively from top left to bottom right.
 These region numbers are assigned to the compartments based on their angle around the rotation axis (see text) and subsequently mapped to the fish ID.</figcaption>
 </figure>
@@ -330,9 +330,9 @@ K3D-jupyter allows saving an interactive version of the preview; one such intera
 The napari viewer is well suited to load the intermediate <code>*.zarr</code> files; Figure <a href="#fig:SLX23012_3D">6</a> shows such a preview.</p>
 <div id="fig:SLX23012_3D" class="fignos">
 <figure>
-<img src="images/SL.X23.012.3D.png" alt="Figure 6: Three-dimensional visualization of one extracted region. Extracted region (label 1 visible upside-down on the left) at the bottom, automatically thresholded region (threshold value: 50) on top. Visualization created with napari (Sofroniew et al., 2026)." />
+<img src="images/SL.X23.012.3D.png" alt="Figure 6: Three-dimensional visualization of one extracted region. Extracted region (marker 1 visible upside-down on the left) at the bottom, automatically thresholded region (threshold value: 50) on top. Visualization created with napari (Sofroniew et al., 2026)." />
 <figcaption aria-hidden="true"><span>Figure 6:</span> Three-dimensional visualization of one extracted region.
-Extracted region (label 1 visible upside-down on the left) at the bottom, automatically thresholded region (threshold value: 50) on top.
+Extracted region (marker 1 visible upside-down on the left) at the bottom, automatically thresholded region (threshold value: 50) on top.
 Visualization created with napari <span class="citation" data-cites="YEMgt2T4">(<a href="#ref-YEMgt2T4" role="doc-biblioref">Sofroniew et al., 2026</a>)</span>.</figcaption>
 </figure>
 </div>
@@ -379,7 +379,7 @@ Linear fits were further investigated using the <code>pairwise()</code> function
 <h2 class="page_break_before" id="results">Results</h2>
 <h3 id="micro-ct-imaging-data">Micro-CT Imaging Data</h3>
 <p>The acquisition and reconstruction of fish datasets were successful and enabled high-throughput processing.
-A total of 215 unique specimens were scanned in 38 different scans with a total scan duration of nearly 16 days (spread over 209 calendar days).
+A total of 215 unique specimens were scanned in 38 different scans with a total scan duration of nearly 16 days (in two campaigns totalling 209 calendar days).
 We acquired 403312 projections, reconstructed into a total of 154645 slices, resulting in approximately 4000 reconstruction PNG files per scan (<em>N</em> = 38), covering (on average) a length equivalent to a fish of 65 mm.</p>
 <h3 id="fish-separation">Fish Separation</h3>
 <p>Our method reproducibly extracts each of the six fish scanned simultaneously in one scan.
@@ -455,9 +455,9 @@ In addition, human-readable log files documenting the cropping position in the e
 This enables reproducible double-checking and confirmation of the process after the fact (see this <a href="https://github.com/habi/sticklebacks/blob/main/logfiles/BucketOfFish_H/rec_regions/SL.X23.012/SL.X23.012.log">direct link for one such log file</a> and <a href="https://github.com/habi/sticklebacks/blob/main/logfiles/BucketOfFish_H/Sticklebucket_H.rec.Labels.Check.png">one such image</a>).</p>
 <p>The automated extraction produced 215 NRRD files with a total size of 385 GB (median: 1.65 GB).
 The exported regions varied in physical size, resulting in datasets with a median anteroposterior length of 4250 pixels and median x- and y-dimensions of 650 pixels (due to the rotation of the fish, the x- and y-dimensions do not map to anatomical directions).
-These cropped regions include the region of the originally acquired data where the 3D-printed label is visible, aiding in end-to-end reproducibility of the extraction process.</p>
+These cropped regions include the region of the originally acquired data where the 3D-printed marker is visible, aiding in end-to-end reproducibility of the extraction process.</p>
 <p>We have uploaded further cropped datasets of each imaged fish to MorphoSource (<em>N</em> = 215, see <a href="#supplementary-materials">Supplementary Materials</a>).
-These further cropped datasets include only the region of the fish in anteroposterior direction, drop the 3D-printed label region, and have a median length of approximately 3000 pixels; the x- and y-directions are the same as for the previously mentioned datasets.</p>
+These further cropped datasets include only the region of the fish in anteroposterior direction, drop the 3D-printed marker region, and have a median length of approximately 3000 pixels; the x- and y-directions are the same as for the previously mentioned datasets.</p>
 <h3 id="segmentation">Segmentation</h3>
 <p>In addition to the cropped regions, the separation notebook also writes a binarized version of each region, based on a simple multi-Otsu thresholding algorithm.
 These binarized regions are not used for the analysis presented here, but serve as a quick visual check of each extracted fish (for an example, see Figure <a href="#fig:SLX23012_3D">6</a>).</p>
@@ -507,7 +507,7 @@ This reproducible pipeline allows high-throughput sampling and population-scale 
 <p>In comparable multi-specimen workflows, the assignment of each specimen in the reconstructed volume relies on manually recorded scan maps and orientation markers <span class="citation" data-cites="MpPv6AZl">(<a href="#ref-MpPv6AZl" role="doc-biblioref">Edie et al., 2023</a>)</span>.
 The pipeline presented here performs an automated and reproducible separation based on the MIP and the known holder geometry, so adding more (multi-specimen) scans to the pipeline does not increase the time users have to spend on manually separating these scans into single fish regions.</p>
 <p>The imaging and separation steps are easy to generalize to either other micro-CT setups or other species and specimens.
-As long as the specimens show up as distinct blobs in the MIP (see Figure <a href="#fig:labels">3</a>), our pipeline can reproducibly separate these blobs into a cropped dataset for any further processing, enabling a general, reproducible, and high-throughput micro-CT workflow in biology and other fields.
+As long as the specimens show up as distinct blobs in the MIP (see Figure ??), our pipeline can reproducibly separate these blobs into a cropped dataset for any further processing, enabling a general, reproducible, and high-throughput micro-CT workflow in biology and other fields.
 We have already applied the same pipeline to multi-specimen scans of other fish species, namely <em>Spinachia spinachia</em> and several Lake Victoria and Neotropical cichlid species (manuscripts in preparation).</p>
 <p>In addition, while we have selected 3D Slicer as our main tool for creating training labels, alternative programs such as Avizo (Thermo Fisher Scientific) and Dragonfly <span class="citation" data-cites="FEvupU0z">(<a href="#ref-FEvupU0z" role="doc-biblioref">Makovetsky et al., 2018</a>)</span> as well as promising segmentation tools such as nnInteractive <span class="citation" data-cites="qTun5jnN">(<a href="#ref-qTun5jnN" role="doc-biblioref">Isensee et al., 2025</a>)</span> and SPROUT <span class="citation" data-cites="G3lm73w">(<a href="#ref-G3lm73w" role="doc-biblioref">He et al., 2024</a>)</span>, could also be used for this task as long as high-quality labels can be generated.
 Our chosen combination proved to be efficient for working with the large number of datasets in heterogeneous lab settings.</p>
@@ -612,9 +612,9 @@ We also thank the Manubot project <span class="citation" data-cites="YuJbg3zO">(
 This file was generated with the <a href="https://github.com/habi/sticklebacks/blob/main/DataWrangling.ipynb">data processing notebook</a> and collates the relevant data read from <em>all</em> the log files of <em>all</em> the scans we performed for this study.
 A copy of each log file containing <em>all</em> scanning parameters is available in a <a href="https://github.com/habi/sticklebacks/tree/main/logfiles">folder in the data processing repository</a> of this project.</p>
 <h3 id="cropped-tomographic-data-of-each-extracted-fish">Cropped Tomographic Data of Each Extracted Fish</h3>
-<p>The cropped datasets for analysis include the region with the 3D-printed label of the multi-specimen holder to keep the process reproducible in an end-to-end fashion.
+<p>The cropped datasets for analysis include the region with the 3D-printed marker of the multi-specimen holder to keep the process reproducible in an end-to-end fashion.
 We further cropped the datasets along the anteroposterior axis with a <a href="https://github.com/habi/sticklebacks/blob/main/PrepareForMorphoSource.ipynb">helper notebook</a>.
-These datasets do <em>not</em> include the region of the 3D-printed label, but are minimized to only the fish region.
+These datasets do <em>not</em> include the region of the 3D-printed marker, but are minimized to only the fish region.
 A PNG stack of <em>each</em> such cropped fish region is available in <a href="https://www.morphosource.org/projects/000885106">a collection at MorphoSource</a> and can be downloaded on request.</p>
 <h3 id="analysis-scripts">Analysis Scripts</h3>
 <h4 id="jupyter-preprocessing-of-tomographic-data">Jupyter; (pre)processing of Tomographic Data</h4>
