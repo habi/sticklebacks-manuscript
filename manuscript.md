@@ -31,8 +31,8 @@ header-includes: |
   <meta name="dc.date" content="2026-11-13" />
   <meta name="citation_publication_date" content="2026-11-13" />
   <meta property="article:published_time" content="2026-11-13" />
-  <meta name="dc.modified" content="2026-11-13T16:07:23+00:00" />
-  <meta property="article:modified_time" content="2026-11-13T16:07:23+00:00" />
+  <meta name="dc.modified" content="2026-11-13T16:19:13+00:00" />
+  <meta property="article:modified_time" content="2026-11-13T16:19:13+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -60,9 +60,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/9ce9a7b07dee1a7a3435f83cc048d1b646b416ad/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/9ce9a7b07dee1a7a3435f83cc048d1b646b416ad/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/9ce9a7b07dee1a7a3435f83cc048d1b646b416ad/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/0174e58efb33b535ac43cb282fa3b001ae1740a3/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/0174e58efb33b535ac43cb282fa3b001ae1740a3/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/0174e58efb33b535ac43cb282fa3b001ae1740a3/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -84,11 +84,11 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/9ce9a7b07dee1a7a3435f83cc048d1b646b416ad/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/0174e58efb33b535ac43cb282fa3b001ae1740a3/))
 was generated
-from [habi/sticklebacks-manuscript@9ce9a7b](https://github.com/habi/sticklebacks-manuscript/tree/9ce9a7b07dee1a7a3435f83cc048d1b646b416ad)
+from [habi/sticklebacks-manuscript@0174e58](https://github.com/habi/sticklebacks-manuscript/tree/0174e58efb33b535ac43cb282fa3b001ae1740a3)
 on November 13, 2026 and contains 7151 words.
-Changes to the re-submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.1...9ce9a7b07dee1a7a3435f83cc048d1b646b416ad#files_bucket).
+Changes to the re-submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.1...0174e58efb33b535ac43cb282fa3b001ae1740a3#files_bucket).
 </em></small>
 
 
@@ -502,7 +502,7 @@ In comparable multi-specimen workflows, the assignment of each specimen in the r
 The pipeline presented here performs an automated and reproducible separation based on the MIP and the known holder geometry, so adding more (multi-specimen) scans to the pipeline does not increase the time users have to spend on manually separating these scans into single fish regions.
 
 The imaging and separation steps are easy to generalize to either other micro-CT setups or other species and specimens.
-As long as the specimens show up as distinct blobs in the MIP (see Figure @fig:labels), our pipeline can reproducibly separate these blobs into a cropped dataset for any further processing, enabling a general, reproducible, and high-throughput micro-CT workflow in biology and other fields.
+As long as the specimens show up as distinct blobs in the MIP (see Figure @fig:labeling), our pipeline can reproducibly separate these blobs into a cropped dataset for any further processing, enabling a general, reproducible, and high-throughput micro-CT workflow in biology and other fields.
 We have already applied the same pipeline to multi-specimen scans of other fish species, namely *Spinachia spinachia* and several Lake Victoria and Neotropical cichlid species (manuscripts in preparation).
 
 In addition, while we have selected 3D Slicer as our main tool for creating training labels, alternative programs such as Avizo (Thermo Fisher Scientific) and Dragonfly [@doi:10.1017/S143192761800315X] as well as promising segmentation tools such as nnInteractive [@doi:10.48550/arXiv.2503.08373] and SPROUT [@doi:10.1101/2024.11.22.624847], could also be used for this task as long as high-quality labels can be generated.
