@@ -10,7 +10,7 @@ keywords:
 - geometric morphometrics
 - deep learning
 lang: en-US
-date-meta: '2026-11-13'
+date-meta: '2026-11-23'
 author-meta:
 - David Haberthür
 - R. Benjamin Sulser
@@ -28,11 +28,11 @@ header-includes: |
   <meta name="citation_title" content="From multi-specimen scans to individual bones: automated extraction and efficient, label-guided segmentation of stickleback micro-CT data" />
   <meta property="og:title" content="From multi-specimen scans to individual bones: automated extraction and efficient, label-guided segmentation of stickleback micro-CT data" />
   <meta property="twitter:title" content="From multi-specimen scans to individual bones: automated extraction and efficient, label-guided segmentation of stickleback micro-CT data" />
-  <meta name="dc.date" content="2026-11-13" />
-  <meta name="citation_publication_date" content="2026-11-13" />
-  <meta property="article:published_time" content="2026-11-13" />
-  <meta name="dc.modified" content="2026-11-13T16:19:13+00:00" />
-  <meta property="article:modified_time" content="2026-11-13T16:19:13+00:00" />
+  <meta name="dc.date" content="2026-11-23" />
+  <meta name="citation_publication_date" content="2026-11-23" />
+  <meta property="article:published_time" content="2026-11-23" />
+  <meta name="dc.modified" content="2026-11-23T15:36:22+00:00" />
+  <meta property="article:modified_time" content="2026-11-23T15:36:22+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -60,9 +60,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/0174e58efb33b535ac43cb282fa3b001ae1740a3/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/0174e58efb33b535ac43cb282fa3b001ae1740a3/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/0174e58efb33b535ac43cb282fa3b001ae1740a3/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/bd6a34f06635ef6d9777701d86f90060a43e68fa/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/bd6a34f06635ef6d9777701d86f90060a43e68fa/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/bd6a34f06635ef6d9777701d86f90060a43e68fa/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -79,16 +79,17 @@ manubot-clear-requests-cache: false
 
 
 
-*The (anonymized) version [`v1.1`](https://github.com/habi/sticklebacks-manuscript/releases/tag/v1.1) of this manuscript was submitted as a revised manuscript to [Methods in Ecology and Evolution](https://besjournals.onlinelibrary.wiley.com/journal/2041210X).*
+*The (anonymized) version [`v1.1`](https://github.com/habi/sticklebacks-manuscript/releases/tag/v1.1) of this manuscript was submitted as a revised manuscript to [Methods in Ecology and Evolution](https://besjournals.onlinelibrary.wiley.com/journal/2041210X). As "fundamental issues [that cannot] be dealt with by further revisions" prevent further considerations, the editorial team suggested a transfer to [Ecology and Evolution](https://onlinelibrary.wiley.com/journal/20457758), which we initiated on November 23, 2026.
+*
 
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/0174e58efb33b535ac43cb282fa3b001ae1740a3/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/bd6a34f06635ef6d9777701d86f90060a43e68fa/))
 was generated
-from [habi/sticklebacks-manuscript@0174e58](https://github.com/habi/sticklebacks-manuscript/tree/0174e58efb33b535ac43cb282fa3b001ae1740a3)
-on November 13, 2026 and contains 7151 words.
-Changes to the re-submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.1...0174e58efb33b535ac43cb282fa3b001ae1740a3#files_bucket).
+from [habi/sticklebacks-manuscript@bd6a34f](https://github.com/habi/sticklebacks-manuscript/tree/bd6a34f06635ef6d9777701d86f90060a43e68fa)
+on November 23, 2026 and contains 7183 words.
+Changes to the re-submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.1...bd6a34f06635ef6d9777701d86f90060a43e68fa#files_bucket).
 </em></small>
 
 

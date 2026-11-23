@@ -1803,6 +1803,18 @@
         "given": "Kevin"
       },
       {
+        "family": "Larsen",
+        "given": "Justine"
+      },
+      {
+        "family": "Axelrod",
+        "given": "Shannon"
+      },
+      {
+        "family": "Liu",
+        "given": "Ziyang"
+      },
+      {
         "family": "Weber Mendonça",
         "given": "Melissa"
       },
@@ -1855,6 +1867,10 @@
         "given": "Jacopo"
       },
       {
+        "family": "Yadav",
+        "given": "Aniket Singh"
+      },
+      {
         "family": "Ahlers",
         "given": "Jannis"
       },
@@ -1873,6 +1889,10 @@
       {
         "family": "Amsalem",
         "given": "Oren"
+      },
+      {
+        "family": "Anand",
+        "given": "Chirag"
       },
       {
         "family": "Andò",
@@ -1895,12 +1915,32 @@
         "given": "Filippo"
       },
       {
-        "family": "Boone",
-        "given": "Peter"
+        "family": "Barbosa Soares",
+        "given": "Maria Laura"
+      },
+      {
+        "family": "Barreto",
+        "given": "Kalline"
+      },
+      {
+        "family": "Becht",
+        "given": "Job"
+      },
+      {
+        "family": "Bernard",
+        "given": "Lundy"
       },
       {
         "family": "Bestak",
         "given": "Kresimir"
+      },
+      {
+        "family": "Bloemsaat",
+        "given": "Bas"
+      },
+      {
+        "family": "Boone",
+        "given": "Peter"
       },
       {
         "family": "Bragantini",
@@ -1919,6 +1959,10 @@
         "given": "Clément"
       },
       {
+        "family": "Castelli",
+        "given": "Filippo Maria"
+      },
+      {
         "family": "Chazotte",
         "given": "Margot"
       },
@@ -1931,12 +1975,28 @@
         "given": "Zuzana"
       },
       {
-        "family": "Defauw",
-        "given": "Arne"
+        "family": "Coussoux",
+        "given": "Edouard"
+      },
+      {
+        "family": "Creeten",
+        "given": "Christophe"
+      },
+      {
+        "family": "Cybis Pereira",
+        "given": "Felipe"
       },
       {
         "family": "Czasak",
         "given": "Sara"
+      },
+      {
+        "family": "de Folter",
+        "given": "Joost"
+      },
+      {
+        "family": "Defauw",
+        "given": "Arne"
       },
       {
         "family": "Eglinger",
@@ -1945,6 +2005,10 @@
       {
         "family": "Eisenbarth",
         "given": "Andreas"
+      },
+      {
+        "family": "El Mouss",
+        "given": "Imad Eddine"
       },
       {
         "family": "Freeman",
@@ -1967,6 +2031,10 @@
         "given": "Kabilar"
       },
       {
+        "family": "Hada",
+        "given": "Aroj"
+      },
+      {
         "family": "Halchenko",
         "given": "Yaroslav Olegovich"
       },
@@ -1983,12 +2051,36 @@
         "given": "Volker"
       },
       {
+        "family": "Hinderling",
+        "given": "Lucien"
+      },
+      {
         "family": "Huijben",
         "given": "Teun A.P.M."
       },
       {
+        "family": "Hunt-Isaak",
+        "given": "Ian"
+      },
+      {
         "family": "Hutchings",
         "given": "Katherine"
+      },
+      {
+        "family": "Jadhav",
+        "given": "Shriraj"
+      },
+      {
+        "family": "Juneja",
+        "given": "Aditi"
+      },
+      {
+        "family": "Kabde",
+        "given": "Omkar"
+      },
+      {
+        "family": "Kania",
+        "given": "Kamil"
       },
       {
         "family": "Kawai",
@@ -1997,6 +2089,10 @@
       {
         "family": "Kozar",
         "given": "Robert"
+      },
+      {
+        "family": "Kumar",
+        "given": "Aman"
       },
       {
         "family": "Lauer",
@@ -2011,16 +2107,20 @@
         "given": "Austin E. Y. T."
       },
       {
+        "family": "Leomil Zoccoler",
+        "given": "Marcelo"
+      },
+      {
+        "family": "Liaskas",
+        "given": "Ioannis"
+      },
+      {
         "family": "Lichtner",
         "given": "Gregor"
       },
       {
         "family": "Liu",
         "given": "Hanjin"
-      },
-      {
-        "family": "Liu",
-        "given": "Ziyang"
       },
       {
         "family": "Lowe",
@@ -2055,12 +2155,24 @@
         "given": "Sofía"
       },
       {
-        "family": "Muñoz",
-        "given": "Hector"
+        "family": "Morais",
+        "given": "Sébastien"
       },
       {
         "family": "Müller",
         "given": "Jan-Hendrik"
+      },
+      {
+        "family": "Muñoz",
+        "given": "Hector"
+      },
+      {
+        "family": "Nagineni",
+        "given": "Venkateswarlu"
+      },
+      {
+        "family": "Naik",
+        "given": "Suyash"
       },
       {
         "family": "Nauroth-Kreß",
@@ -2071,36 +2183,48 @@
         "given": "Peter"
       },
       {
+        "family": "Nikam",
+        "given": "Aditya"
+      },
+      {
         "family": "Obenhaus",
         "given": "Horst A."
+      },
+      {
+        "family": "Paiva",
+        "given": "Jayme"
       },
       {
         "family": "Palecek",
         "given": "David"
       },
       {
+        "family": "Pannunzio",
+        "given": "Bruno"
+      },
+      {
         "family": "Pape",
         "given": "Constantin"
+      },
+      {
+        "family": "Park",
+        "given": "Jaesung"
       },
       {
         "family": "Pellegrini",
         "given": "Yann"
       },
       {
+        "family": "Peña-Castellanos",
+        "given": "Gonzalo"
+      },
+      {
         "family": "Perlman",
         "given": "Eric"
       },
       {
-        "family": "Theart",
-        "given": "Rensu Petrus"
-      },
-      {
         "family": "Pevey",
         "given": "Kim"
-      },
-      {
-        "family": "Peña-Castellanos",
-        "given": "Gonzalo"
       },
       {
         "family": "Phelps",
@@ -2117,6 +2241,18 @@
       {
         "family": "Reksoatmodjo",
         "given": "Anthony"
+      },
+      {
+        "family": "Riedmiller",
+        "given": "Kai"
+      },
+      {
+        "family": "Roald-Arbøl",
+        "given": "Mikkel"
+      },
+      {
+        "family": "Rochat",
+        "given": "Giliane"
       },
       {
         "family": "Ross",
@@ -2141,6 +2277,10 @@
       {
         "family": "Selzer",
         "given": "Gabriel"
+      },
+      {
+        "family": "Seth",
+        "given": "Mridul"
       },
       {
         "family": "Sharma",
@@ -2179,12 +2319,28 @@
         "given": "Michal"
       },
       {
+        "family": "Tarskaia",
+        "given": "Aleksandra"
+      },
+      {
         "family": "Teo",
         "given": "Wulin"
       },
       {
+        "family": "Theart",
+        "given": "Rensu Petrus"
+      },
+      {
         "family": "Vanaret",
         "given": "Jules"
+      },
+      {
+        "family": "Venugopal",
+        "given": "Revathy"
+      },
+      {
+        "family": "Vikas",
+        "given": "Sparsh"
       },
       {
         "family": "Wadhwa",
@@ -2203,8 +2359,16 @@
         "given": "Philip"
       },
       {
+        "family": "Witz",
+        "given": "Guillaume"
+      },
+      {
         "family": "Yu",
         "given": "Qin"
+      },
+      {
+        "family": "Zaid",
+        "given": "Leticia"
       },
       {
         "family": "Zhang",
@@ -2213,107 +2377,23 @@
       {
         "family": "Zhao",
         "given": "Rubin"
-      },
-      {
-        "family": "Witz",
-        "given": "Guillaume"
-      },
-      {
-        "family": "Leomil Zoccoler",
-        "given": "Marcelo"
-      },
-      {
-        "family": "Yadav",
-        "given": "Aniket Singh"
-      },
-      {
-        "family": "Hinderling",
-        "given": "Lucien"
-      },
-      {
-        "family": "Kabde",
-        "given": "Omkar"
-      },
-      {
-        "family": "Roald-Arbøl",
-        "given": "Mikkel"
-      },
-      {
-        "family": "Rochat",
-        "given": "Giliane"
-      },
-      {
-        "family": "Castelli",
-        "given": "Filippo Maria"
-      },
-      {
-        "family": "Venugopal",
-        "given": "Revathy"
-      },
-      {
-        "family": "Coussoux",
-        "given": "Edouard"
-      },
-      {
-        "family": "Seth",
-        "given": "Mridul"
-      },
-      {
-        "family": "Becht",
-        "given": "Job"
-      },
-      {
-        "family": "Creeten",
-        "given": "Christophe"
-      },
-      {
-        "family": "Morais",
-        "given": "Sébastien"
-      },
-      {
-        "family": "Bloemsaat",
-        "given": "Bas"
-      },
-      {
-        "family": "Kania",
-        "given": "Kamil"
-      },
-      {
-        "family": "Liaskas",
-        "given": "Ioannis"
-      },
-      {
-        "family": "Hada",
-        "given": "Aroj"
-      },
-      {
-        "family": "Nagineni",
-        "given": "Venkateswarlu"
-      },
-      {
-        "family": "Nikam",
-        "given": "Aditya"
-      },
-      {
-        "family": "Naik",
-        "given": "Suyash"
       }
     ],
     "issued": {
       "date-parts": [
         [
           2026,
-          9,
-          30
+          11,
+          23
         ]
       ]
     },
-    "abstract": "napari 0.9.2\n\nTue, Sep 29, 2026\n\nWe're happy to announce the release of napari 0.9.2!\nnapari is a fast, interactive, multi-dimensional image viewer for Python.\nIt's designed for browsing, annotating, and analyzing large multi-dimensional\nimages. It's built on top of Qt (for the GUI), vispy (for performant GPU-based\nrendering), and the scientific Python stack (numpy, scipy).\n\nFor more information, examples, and documentation, please visit our website,\nhttps://napari.org.\n\nnapari follows EffVer (Intended Effort Versioning); this is a Meso release containing awesome new features, but some effort may be needed when updating previous projects to use this version.\n\nHighlights\n\nVispy update\n\nIn #9499 we improved and updated Vispy (napari's rendering engine), which brings us a few fixes and new features. Some important ones:\n\n\n\nperspective rendering of points and text is no longer broken (Shift+right-click-drag to change FOV in 3D!)\n\nRGB data can now be viewed in 3D. This might still have some kinks to smooth out, so if you see issues, make sure to report them on the issue tracker.\n\n\nType checking changes and guide\n\nIn #9395 we have switched our type checking from mypy to pyrefly because its much faster (>20x!), easier to understand, and well supported. Read our new typing guide for more information on typing the napari code base. Contributors have found typing contributions as a great introduction to contributing to napari and it is work that we welcome. To read more about Aniket's experience, check out the new island dispatch blog post: From Any to Certainty.\n\nNew release policy with regular cadence\n\nThe napari team has been working hard to improve our release process, and based on our experience and feedback from the community, we have formally adopted a release policy (napari/docs#1126). Expect regular monthly releases and clearer communication about review and timing for contributions; read the full policy.\n\nNew Features\n\n\n\nAdd multiscale level extraction as a LayerList action (#9495)\n\n\nImprovements\n\n\n\nFeat: allow passing list of layers to Viewer.reset_view and .fit_to_view (#6120)\n\nAdd setting for global multisampling/antialiasing (#8570)\n\nReorder font-family declaration in console QSS (#9325)\n\nPerformance: Avoid redundant unit conversion when aggregating layer extents (#9411)\n\nAdd RenamedEmitter subclass of WarningEmitter to simplify renaming (#9482)\n\nBump vispy: rgb volumes, fixed perspective and overlay bleed (#9499)\n\n\nPerformance\n\n\n\nReorder font-family declaration in console QSS (#9325)\n\nPerformance: Avoid redundant unit conversion when aggregating layer extents (#9411)\n\n\nBug Fixes\n\n\n\nAllow fourier_transform_playground.py to work via drag'n'drop (#8175)\n\nFix view direction and refactor camera logic into vispy module (#9389)\n\nfix(vectors): emit edge_color_mode when the color setter changes the mode (#9396)\n\nFix _unique_element crash and incorrect result for list-valued features (#9409)\n\nFix changing theme with dynamic controls (#9460)\n\nFix keeping properties and equality operators from parent class (#9479)\n\nFix surface lighting in async mode (#9493)\n\nBump vispy: rgb volumes, fixed perspective and overlay bleed (#9499)\n\nFix calculation of number of viewboxes (#9509)\n\nFix qt command palette row indexing (#9512)\n\nFrozen overlay dicts (#9525)\n\nfix(qt): let QtViewer attach to a ViewerModel that already holds several layers (#9533)\n\n\nBuild Tools\n\n\n\nBump vispy: rgb volumes, fixed perspective and overlay bleed (#9499)\n\n\nDocumentation\n\n\n\nNew release policy with regular cadence and responsibilities (docs#1126)\n\nUpdate 0.9.1 release notes to add missed author (docs#1130)\n\nTyping guide: Using Pyrefly and understanding the config (docs#1134)\n\nAdd initial release notes for 0.9.2 (docs#1137)\n\nenforce LF line endings (docs#1139)\n\nUpdate release notes for 0.9.2 (docs#1146)\n\nUpdate the version switcher for 0.9.2 (docs#1150)\n\n\nOther Pull Requests\n\n\n\n[pre-commit.ci] pre-commit autoupdate (docs#1131)\n\n[pre-commit.ci] pre-commit autoupdate (docs#1133)\n\nCI: skip docs build for CI-only changes (#8859)\n\nfix(typing): add typing and fix mypy error in qt_layer_model.py (#9168)\n\nfix(typing): add typing and fix mypy error in qt_layer_controls_container.py (#9173)\n\nfix(typing): add typing and fix mypy error in qt_vectors_controls.py (#9178)\n\nchore: cleanup unused functions (#9387)\n\nRemove stale viewer context (#9406)\n\nUpdate coverage, dask, hypothesis, ipython, platformdirs, pydantic, virtualenv, wrapt (#9471)\n\nUse new resource package to source logos (#9477)\n\nFix --pre testing workflows to run only specific subset of environments (#9480)\n\nUpdate coverage, hypothesis, ipython, lxml, matplotlib, numpy, pint, platformdirs, psygnal, pytest-rerunfailures, tifffile, tqdm, virtualenv, wrapt (#9492)\n\n[pre-commit.ci] pre-commit autoupdate (#9496)\n\n[pre-commit.ci] pre-commit autoupdate (#9510)\n\nDisable graphviz on macos-intel, generate dependency pdf conditionally (#9514)\n\nTYP: add type hints in action_manager.py (#9538)\n\nTYP: add type hints in mouse_bindings.py (#9540)\n\nTYP: add type hints in qt_text_visibility.py (#9541)\n\nTYP: add type hints in stubgen.py (#9542)\n\nTYP: add type hints in string_encoding.py (#9545)\n\nTYP: add type hints in color_encoding.py (#9548)\n\n[pre-commit.ci] pre-commit autoupdate (#9553)\n\nRename RenamedEmitter to RenamedWarningEmitter (#9567)\n\n\n10 authors added to this release (alphabetical)\n\n(+) denotes first-time contributors 🥳\n\n\n\nAditya Nikam - @adityaanikam +\n\nAniket - @Aniketsy\n\nCarlos Mario Rodriguez Reza - @carlosmariorr\n\nGrzegorz Bokota (docs)  - @Czaki\n\nJacopo Abramo - @jacopoabramo\n\nJuan Nunez-Iglesias - @jni\n\nLorenzo Gaifas - @brisvag\n\nMatthias Schabel - @matthiasschabel\n\nPeter Sobolewski - @psobolewskiPhD\n\nTim Monko (docs)  - @TimMonko\n\n\n14 reviewers added to this release (alphabetical)\n\n(+) denotes first-time contributors 🥳\n\n\n\nAditya Nikam - @adityaanikam +\n\nAniket - @Aniketsy\n\nAshley Anderson - @aganders3\n\nCarlos Mario Rodriguez Reza - @carlosmariorr\n\nCarol Willing - @willingc\n\nDraga Doncila Pop - @DragaDoncila\n\nGrzegorz Bokota (docs)  - @Czaki\n\nJacopo Abramo - @jacopoabramo\n\nJuan Nunez-Iglesias - @jni\n\nLorenzo Gaifas - @brisvag\n\nMatt Einhorn - @matham +\n\nMatthias Schabel - @matthiasschabel\n\nPeter Sobolewski - @psobolewskiPhD\n\nTim Monko (docs)  - @TimMonko",
+    "abstract": "napari 0.10.1\n\n⚠️ Note: these release notes are still in draft while 0.10.1rc1 is in prerelease testing. ⚠️\n\nMon, Nov 23, 2026\n\nWe're happy to announce the release of napari 0.10.1!\nnapari is a fast, interactive, multi-dimensional image viewer for Python.\nIt's designed for browsing, annotating, and analyzing large multi-dimensional\nimages. It's built on top of Qt (for the GUI), vispy (for performant GPU-based\nrendering), and the scientific Python stack (numpy, scipy).\n\nFor more information, examples, and documentation, please visit our website,\nhttps://napari.org.\n\nnapari follows EffVer (Intended Effort Versioning); this is a Meso release containing awesome new features, but some effort may be needed when updating previous projects to use this version.\n\nHighlights\n\nThis is a maintenance-focused release: it has few new features, but contains a ton of performance and maintenance work that will enhance both working with napari and on napari! And of course, tons of bug fixes :)\n\nCI speedups and improvements\n\nOur automated testing and deploying machinery (CI) has accumulated slowness and technical debt over the years. During this release cycle, we tackled several of these issues (chief among them (#9870)) and cut test time on our pull request by up to half!\n\nVarious Performance enhancements\n\nLabels painting, Shapes and slicing in general got several performance improvements. Many workflows will benefit from this, so make sure to try out things that used to be slow to check if you're one of the lucky winners ;)\n\nTyping progress\n\nThe napari codebase is getting more and move type annotation coverage! This release merged more than a dozen typing-related pull request, which helped (and will help) us find bugs and develop both napari and napari plugins more easily. We'll continue this trend in the upcoming releases!\n\nNew Features\n\n\n\nAdd dims_displayed overlay showing the currently displayed axes (#9855)\n\n\nImprovements\n\n\n\nAnchor all viewer button popups to viewer (#8953)\n\nRasterize paths that leave their plane as nD lines (#9584)\n\nAdd percentiles option to calc_data_range and reset_contrast_limits (#9691)\n\nFix saving multiscale layers with the built-in writer (#9693)\n\nAdd detection of deprecated properties, create warning in EventedModel (#9701)\n\nAdd text scaling checkbox to Points and Shapes layer controls (#9838)\n\n\nPerformance\n\n\n\n[labels, perf] Batch paint stamps  (#9469)\n\n[Shapes, perf] Avoid rebuilding Shapes Layer.data by using Layer.nshapes and Layer._data_view.shapes (#9501)\n\n[Shapes, perf] Shapes batch display updates (#9502)\n\n[perf] Slice only after setting centered view (only affects async) (#9698)\n\n[perf] Refactor coarsest level materializer to the slice request (#9750)\n\n[perf] Use numpy for thumbnails, to avoid scipy import and duplicate code (#9858)\n\nPostpone welcome widget refresh while it is not visible (#9869)\n\nSkip the canvas cleanup when closing the viewer (#9870)\n\n\nBug Fixes\n\n\n\nTYP: add type hints in _testsupport.py (#9237)\n\nAdd native value search in EnumSchemaWidgets to ensure boolean type compatibility (#9591)\n\nAdd layers from Future results on the main thread (#9686)\n\nFix saving multiscale layers with the built-in writer (#9693)\n\nAllow private classes to generate private _add_* methods (#9766)\n\nInclude point border in Points hover and selection hit-testing (#9790)\n\nFix overlay draws during new viewboxes from new layers (#9799)\n\nFix wrong term in rotation_matrix_from_vectors_2d (#9817)\n\nFix floating coordinate grid plane for 2D data in 3D view (#9827)\n\nFix disconnecting old transform in TransformChain.setitem (#9835)\n\nfix imshow to not set ndisplay and order if not passed explicitly (#9850)\n\nFix warning notifications without arguments (#9884)\n\nFix menu item chevron overlap (#9934)\n\nFix closing notifications by using keyword-only (#9935)\n\n\nDocumentation\n\n\n\ncore dev guide text improvement (docs#1170)\n\nTyping guide: add code snippets for common patterns and more resources (docs#1177)\n\nRedirect coredev files to core_team  (docs#1194)\n\ndocs: update moved, dead, and src/ layout links (docs#1195)\n\ndocs: link NAP 2 release-guide footnote by label (docs#1206)\n\ndocs: update permanently redirected links (docs#1208)\n\ndocs: update links that redirect to a canonical page (docs#1210)\n\nSuper  speed up the UI diagram prep (docs#1212)\n\nperf: add napari pull and issue links to linkcheck_ignore (docs#1214)\n\ndocs: add section anchors and https to five links (docs#1217)\n\nadd draft release notes for 0.10.1 (docs#1221)\n\nFix example highlight styling on the homepage (docs#1224)\n\nFix homepage and community quicklink icon sizes (docs#1225)\n\nRelease notes for v0.10.1rc0 (docs#1227)\n\nPrint notebook execution traceback in docs build log (docs#1228)\n\nUse livingobjects.ebi.ac.uk for IDR zarr sample in open_images (docs#1229)\n\nLast release notes update for 0.10.1 (rc1) (docs#1230)\n\nTYP: add type hints in _evented_list.py (#9241)\n\ndocs: update moved tutorial links in two examples (#9810)\n\nAdd Parameters section to compute_nice_ticks docstring (#9842)\n\ndoc: fix wrong ndim description for point layer (#9915)\n\nFix wrong entries in the Points layer docstring (#9921)\n\n\nOther Pull Requests\n\n\n\n[pre-commit.ci] pre-commit autoupdate (docs#1189)\n\nfix: update the link check config in conf.py and linkcheck.yml (docs#1196)\n\nci(dependabot): bump the github-actions group with 4 updates (docs#1198)\n\nFix Make on Windows to use env vars during docs builds (docs#1203)\n\nfix: allow redirects and ignore blocked hosts in the link check (docs#1207)\n\nci: cut the runtime of the nightly link check (docs#1215)\n\nupdate circle ci redirector version (docs#1218)\n\n[pre-commit.ci] pre-commit autoupdate (docs#1222)\n\nSilence sphinx-design==0.8.0 warning (docs#1223)\n\nAdd CITATION.cff validation and re-order authors (with pre-commit) (#9155)\n\nTYP: add type hints in _vispy/canvas.py and base.py (#9202)\n\nfix(typing): annotate napari/utils/key_bindings.py (#9253)\n\nTYP: add type hints in _multiscale_data.py (#9549)\n\nUpdate tox configuration to simplify testing against other packages (#9555)\n\nTYP: add type hints in qt_scrollbar.py (#9654)\n\nTYP: add type hints in qt_highlight_preview.py (#9657)\n\nTYP: add type hints in view_layers.py (#9679)\n\nAdd timeout to --pre tests (#9711)\n\nTYP: add type hints in geometry.py and _typed.py (#9716)\n\nUpdate bug report template to contain more recent version of napari --info (#9721)\n\nchore: remove superseded code (#9769)\n\nTYP: add reusable Vector1D/Matrix2D type aliases (#9782)\n\nRemove unused grid_points_in_poly function (#9802)\n\nci: default toxworkdir to {toxinidir}/.tox (#9826)\n\nci(dependabot): bump the actions group across 1 directory with 9 updates (#9843)\n\nUpdate hypothesis, ipython, npe2, platformdirs, pydantic, pydantic-settings, pyqt6, pyqt6-qt6, pytest, superqt, tensorstore, virtualenv, wrapt (#9844)\n\nBlock tox 4.67.5 for pre tests to make it working (#9846)\n\nEnable stacktrace, disable graphviz in --pre tests (#9847)\n\n[pre-commit.ci] pre-commit autoupdate (#9851)\n\nSpeed up test suite: gc.freeze, cached builtins manifest, no sleeps in label color tests (#9854)\n\nFix deadlock between slicing thread and main thread on PySide6 (#9856)\n\nFail quicker at end of test sections on CI (#9868)\n\nUpdate coverage, hypothesis, ipython, npe2, pandas, platformdirs, pydantic, tifffile, virtualenv (#9873)\n\n[pre-commit.ci] pre-commit autoupdate (#9877)\n\nUpdate the comment in VispyCanvas.screenshot() to reflect current state (#9878)\n\nRemove stubgen from napari workflow, fix type annotation and naming of helpers (#9879)\n\nFix flaky test_play_button and abort when closing a playing QtDims (#9885)\n\nSkip coverage upload when initial tests fail (#9887)\n\nDeprecate rotation_matrix_from_vectors_2d (#9888)\n\nChange Tim Monko's affiliation in Citation file (#9894)\n\nFix CircleCI redirector by bumping action version (#9895)\n\nSilence SC2016 for the git credential helper in upgrade_test_constraints (#9896)\n\nFix missing f-prefix in git diff error message of check_updated_packages (#9899)\n\nUse PySide6-Essentials instead of the PySide6 metapackage (#9905)\n\n[pre-commit.ci] pre-commit autoupdate (#9909)\n\n[perf] Labels: Use layer.data.dtype instead of materializing lazy arrays in get_dtype (#9912)\n\nRemove unused unit registry accessor (#9920)\n\nConfigure uv to enforce numpy from wheel on python 3.14 (#9922)\n\nPin tox using constraints (#9929)\n\nFix debug log placeholders in move_multiple and dropMimeData (#9930)\n\nBump tox-min-req and tox-gh-actions (#9932)\n\nFix type issue from merge (#9938)\n\nFix flaky crosshair screenshot test (#9941)\n\n\n20 authors added to this release (alphabetical)\n\n(+) denotes first-time contributors 🥳\n\n\n\nAman kumar - @ghostiee-11\n\nAniket - @Aniketsy\n\nCarlos Mario Rodriguez Reza - @carlosmariorr\n\nClément Caporal - @ClementCaporal\n\nFelipe Cybis Pereira - @FelipeCybis\n\nGrzegorz Bokota (docs)  - @Czaki\n\nIlgın  - @zelihaguven +\n\nJacopo Abramo - @jacopoabramo\n\nJaesung Park - @jaesungkr +\n\nKallineB - @KallineB +\n\nlettyz3 - @lettyz3\n\nLorenzo Gaifas (docs)  - @brisvag\n\nLundy Bernard (docs)  - @lundybernard\n\nLyinno - @Lyinno\n\nMaria Laura Soares - @mlaurabs +\n\nOmkar Kabde - @omkar-334\n\nPeter Sobolewski - @psobolewskiPhD\n\nShriraj Jadhav - @Shriraj1901 +\n\nSparsh Vikas - @TheCreeperrr +\n\nTim Monko (docs)  - @TimMonko\n\n\n14 reviewers added to this release (alphabetical)\n\n(+) denotes first-time contributors 🥳\n\n\n\nAman kumar - @ghostiee-11\n\nAniket - @Aniketsy\n\nCarlos Mario Rodriguez Reza - @carlosmariorr\n\nClément Caporal - @ClementCaporal\n\nGrzegorz Bokota (docs)  - @Czaki\n\nIlgın  - @zelihaguven +\n\nJacopo Abramo - @jacopoabramo\n\nJuan Nunez-Iglesias - @jni\n\nlettyz3 - @lettyz3\n\nLorenzo Gaifas (docs)  - @brisvag\n\nLundy Bernard (docs)  - @lundybernard +\n\nPeter Sobolewski - @psobolewskiPhD\n\nSparsh Vikas - @TheCreeperrr +\n\nTim Monko (docs)  - @TimMonko",
     "DOI": "10.5281/zenodo.3555620",
     "publisher": "Zenodo",
     "title": "napari: a multi-dimensional image viewer for Python",
     "URL": "https://doi.org/gjpsxz",
-    "version": "v0.9.2",
+    "version": "v0.10.1rc1",
     "note": "This CSL Item was generated by Manubot v0.6.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.5281/zenodo.3555620"
   },
   {
@@ -2636,7 +2716,7 @@
         [
           "2026",
           11,
-          13
+          23
         ]
       ]
     },
@@ -2705,7 +2785,7 @@
         [
           "2026",
           11,
-          13
+          23
         ]
       ]
     },
