@@ -31,8 +31,8 @@ header-includes: |
   <meta name="dc.date" content="2026-11-25" />
   <meta name="citation_publication_date" content="2026-11-25" />
   <meta property="article:published_time" content="2026-11-25" />
-  <meta name="dc.modified" content="2026-11-25T08:46:11+00:00" />
-  <meta property="article:modified_time" content="2026-11-25T08:46:11+00:00" />
+  <meta name="dc.modified" content="2026-11-25T08:50:51+00:00" />
+  <meta property="article:modified_time" content="2026-11-25T08:50:51+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -60,9 +60,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/e6625968ab432afc925fcd10abd701a22e03d15d/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/e6625968ab432afc925fcd10abd701a22e03d15d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/e6625968ab432afc925fcd10abd701a22e03d15d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/b61a86f7d514d28fd3ca881402d44964b0947464/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/b61a86f7d514d28fd3ca881402d44964b0947464/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/b61a86f7d514d28fd3ca881402d44964b0947464/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -85,11 +85,11 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/e6625968ab432afc925fcd10abd701a22e03d15d/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/b61a86f7d514d28fd3ca881402d44964b0947464/))
 was generated
-from [habi/sticklebacks-manuscript@e662596](https://github.com/habi/sticklebacks-manuscript/tree/e6625968ab432afc925fcd10abd701a22e03d15d)
-on November 25, 2026 and contains 7252 words.
-Changes to the re-submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.1...e6625968ab432afc925fcd10abd701a22e03d15d#files_bucket).
+from [habi/sticklebacks-manuscript@b61a86f](https://github.com/habi/sticklebacks-manuscript/tree/b61a86f7d514d28fd3ca881402d44964b0947464)
+on November 25, 2026 and contains 7250 words.
+Changes to the re-submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.1...b61a86f7d514d28fd3ca881402d44964b0947464#files_bucket).
 </em></small>
 
 
@@ -184,7 +184,8 @@ Scanning several fish at once was about 5.5 times faster than scanning them indi
 A geometric morphometric case study of the first two ceratobranchial bones showed that shape variation is driven mainly by lake of origin, with small but significant differences between ecotypes that were most pronounced in the second ceratobranchial.
 
 The pipeline turns multi-specimen micro-CT scans into analysis-ready datasets of individual specimens; the only manual step is recording which fish was placed in which compartment.
-All code, data, and the 3D-printable sample holder are openly available; the separation has already been applied to a more taxaWe , and the approach can be adapted to other taxa, sample holders, and anatomical structures.
+All code, data, and the 3D-printable sample holder are openly available; the separation has already been applied to more taxa, and the approach can be adapted to other taxa, sample holders, and anatomical structures.
+
 
 ## Introduction {.page_break_before}
 
