@@ -31,8 +31,8 @@ header-includes: |
   <meta name="dc.date" content="2026-11-25" />
   <meta name="citation_publication_date" content="2026-11-25" />
   <meta property="article:published_time" content="2026-11-25" />
-  <meta name="dc.modified" content="2026-11-25T09:15:29+00:00" />
-  <meta property="article:modified_time" content="2026-11-25T09:15:29+00:00" />
+  <meta name="dc.modified" content="2026-11-25T10:53:22+00:00" />
+  <meta property="article:modified_time" content="2026-11-25T10:53:22+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -60,9 +60,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/ece8488f9334d3d936f064bd09b48aa92b48719e/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/ece8488f9334d3d936f064bd09b48aa92b48719e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/ece8488f9334d3d936f064bd09b48aa92b48719e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/bea75f3400b9334fc98dd0625a8e323778df3aa4/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/bea75f3400b9334fc98dd0625a8e323778df3aa4/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/bea75f3400b9334fc98dd0625a8e323778df3aa4/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -84,11 +84,11 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/ece8488f9334d3d936f064bd09b48aa92b48719e/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/bea75f3400b9334fc98dd0625a8e323778df3aa4/))
 was generated
-from [habi/sticklebacks-manuscript@ece8488](https://github.com/habi/sticklebacks-manuscript/tree/ece8488f9334d3d936f064bd09b48aa92b48719e)
-on November 25, 2026 and contains 7210 words.
-Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v2.0...ece8488f9334d3d936f064bd09b48aa92b48719e#files_bucket).
+from [habi/sticklebacks-manuscript@bea75f3](https://github.com/habi/sticklebacks-manuscript/tree/bea75f3400b9334fc98dd0625a8e323778df3aa4)
+on November 25, 2026 and contains 7209 words.
+Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v2.0...bea75f3400b9334fc98dd0625a8e323778df3aa4#files_bucket).
 </em></small>
 
 
@@ -175,8 +175,8 @@ Studying evolutionary change in such systems often requires analyzing hundreds o
 However, quantitative analysis of feeding structures---particularly jaws and complex internal branchial anatomy---remains time-consuming, requiring destructive sampling and fine dissection skills.
 
 X-ray microtomography enables nondestructive, high-resolution imaging, but the resulting data volumes and processing demands often make it impractical at population scales.
-To address this, we developed an automated separation and analysis pipeline based on Jupyter notebooks and the Biomedisa segmentation platform.
-Up to six fish are scanned at once, the multi-specimen scans are automatically separated into reproducible, documented single-specimen datasets, and targeted anatomical structures are segmented with a deep learning model trained on a small set of hand-labeled specimens.
+To address this, we developed a pipeline that automatically separates multi-specimen scans with Jupyter notebooks and efficiently segments the bones of interest with the Biomedisa deep-learning platform.
+Up to six fish are scanned at once, each scan is split into reproducible, documented single-specimen datasets, and the model is trained on a small set of hand-labeled specimens.
 
 We applied this pipeline to 38 multi-specimen scans comprising 215 specimens from benthic and limnetic stickleback populations.
 Scanning several fish at once was about 5.5 times faster than scanning them individually, and the trained model (Dice score 0.92 on validation data) segmented a specimen in seconds instead of the 10--15 minutes needed manually.
@@ -502,9 +502,9 @@ The pipeline presented here performs an automated and reproducible separation ba
 
 The imaging and separation steps are easy to generalize to other micro-CT setups, since the notebooks only need a stack of reconstructed images as input.
 The separation step does not depend on the species or the anatomical structures of interest; it only requires that the specimens appear as distinct regions that can be separated in the axial MIP (see Figure @fig:labeling).
-We have used the same notebooks to separate five multi-specimen scans of 25 fifteen-spined sticklebacks (Spinachia spinachia), mounted in a holder with six compartments whose dimensions were slightly adapted to the different fish.
+We have used the same notebooks to separate five multi-specimen scans of 25 fifteen-spined sticklebacks (*Spinachia spinachia*), mounted in a holder with six compartments whose dimensions were slightly adapted to the different fish.
 No changes to the code were needed; only the paths to the data had to be adjusted.
-The notebooks are currently also being applied to scans of Lake Victoria and Neotropical cichlids, where a manuscript is in preparation.
+The notebooks are currently also being applied to scans of Lake Victoria and Neotropical cichlids, for which a manuscript is in preparation.
 
 In addition, while we have selected 3D Slicer as our main tool for creating training labels, alternative programs such as Avizo (Thermo Fisher Scientific) and Dragonfly [@doi:10.1017/S143192761800315X] as well as promising segmentation tools such as nnInteractive [@doi:10.48550/arXiv.2503.08373] and SPROUT [@doi:10.1101/2024.11.22.624847], could also be used for this task as long as high-quality labels can be generated.
 Our chosen combination proved to be efficient for working with the large number of datasets in heterogeneous lab settings.
