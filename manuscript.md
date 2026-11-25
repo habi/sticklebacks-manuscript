@@ -10,7 +10,7 @@ keywords:
 - geometric morphometrics
 - deep learning
 lang: en-US
-date-meta: '2026-11-23'
+date-meta: '2026-11-25'
 author-meta:
 - David Haberthür
 - R. Benjamin Sulser
@@ -28,11 +28,11 @@ header-includes: |
   <meta name="citation_title" content="From multi-specimen scans to individual bones: automated extraction and efficient, label-guided segmentation of stickleback micro-CT data" />
   <meta property="og:title" content="From multi-specimen scans to individual bones: automated extraction and efficient, label-guided segmentation of stickleback micro-CT data" />
   <meta property="twitter:title" content="From multi-specimen scans to individual bones: automated extraction and efficient, label-guided segmentation of stickleback micro-CT data" />
-  <meta name="dc.date" content="2026-11-23" />
-  <meta name="citation_publication_date" content="2026-11-23" />
-  <meta property="article:published_time" content="2026-11-23" />
-  <meta name="dc.modified" content="2026-11-23T15:36:22+00:00" />
-  <meta property="article:modified_time" content="2026-11-23T15:36:22+00:00" />
+  <meta name="dc.date" content="2026-11-25" />
+  <meta name="citation_publication_date" content="2026-11-25" />
+  <meta property="article:published_time" content="2026-11-25" />
+  <meta name="dc.modified" content="2026-11-25T08:46:11+00:00" />
+  <meta property="article:modified_time" content="2026-11-25T08:46:11+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -60,9 +60,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/bd6a34f06635ef6d9777701d86f90060a43e68fa/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/bd6a34f06635ef6d9777701d86f90060a43e68fa/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/bd6a34f06635ef6d9777701d86f90060a43e68fa/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/e6625968ab432afc925fcd10abd701a22e03d15d/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/e6625968ab432afc925fcd10abd701a22e03d15d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/e6625968ab432afc925fcd10abd701a22e03d15d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -85,11 +85,11 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/bd6a34f06635ef6d9777701d86f90060a43e68fa/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/e6625968ab432afc925fcd10abd701a22e03d15d/))
 was generated
-from [habi/sticklebacks-manuscript@bd6a34f](https://github.com/habi/sticklebacks-manuscript/tree/bd6a34f06635ef6d9777701d86f90060a43e68fa)
-on November 23, 2026 and contains 7183 words.
-Changes to the re-submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.1...bd6a34f06635ef6d9777701d86f90060a43e68fa#files_bucket).
+from [habi/sticklebacks-manuscript@e662596](https://github.com/habi/sticklebacks-manuscript/tree/e6625968ab432afc925fcd10abd701a22e03d15d)
+on November 25, 2026 and contains 7252 words.
+Changes to the re-submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v1.1...e6625968ab432afc925fcd10abd701a22e03d15d#files_bucket).
 </em></small>
 
 
@@ -170,23 +170,21 @@ or email to
 
 ## Abstract {.page_break_before}
 
-1. The threespine stickleback (*Gasterosteus aculeatus*) is a well-recognized model system for understanding adaptation to divergent habitats.
-   For example, populations of benthic stickleback (benthos-feeding) and limnetic stickleback (water-column-feeding) differ in phenotypic traits associated with dietary specialization.
-   Studying evolutionary change in such systems often requires analyzing hundreds, if not thousands, of individuals.
-   However, analysis of feeding structures---particularly jaws and complex internal branchial anatomy---remains time-consuming and requires considerable expertise, with destructive sampling and fine dissection skills needed for quantitative analysis.
+The threespine stickleback (*Gasterosteus aculeatus*) is a well-recognized model system for understanding adaptation to divergent habitats.
+For example, benthic (benthos-feeding) and limnetic (water-column-feeding) populations differ in phenotypic traits associated with dietary specialization.
+Studying evolutionary change in such systems often requires analyzing hundreds of individuals.
+However, quantitative analysis of feeding structures---particularly jaws and complex internal branchial anatomy---remains time-consuming, requiring destructive sampling and fine dissection skills.
 
-2. The advent of X-ray microtomography and three-dimensional scanning technologies enables nondestructive imaging and greatly increases the availability of high-resolution morphological data.
-   However, the resulting increase in data complexity and processing demands often makes these approaches impractical for large-scale studies, especially at population scales.
-   To address these challenges, we developed a rapid and automated separation and analysis pipeline based on Jupyter notebooks and the Biomedisa segmentation platform.
-   In our pipeline, up to six fish are scanned at once, the multi-specimen scans are automatically separated into reproducible, documented single-specimen datasets, and targeted anatomical structures are segmented with a deep learning model trained on a small set of hand-labeled specimens.
+X-ray microtomography enables nondestructive, high-resolution imaging, but the resulting data volumes and processing demands often make it impractical at population scales.
+To address this, we developed an automated separation and analysis pipeline based on Jupyter notebooks and the Biomedisa segmentation platform.
+Up to six fish are scanned at once, the multi-specimen scans are automatically separated into reproducible, documented single-specimen datasets, and targeted anatomical structures are segmented with a deep learning model trained on a small set of hand-labeled specimens.
 
-3. We applied this pipeline to 38 multi-specimen scans comprising 215 specimens from divergent benthic and limnetic stickleback populations, demonstrating the potential of a high-throughput micro-CT imaging approach for testing ecological and evolutionary hypotheses.
-   Scanning several fish at once was about 5.5 times faster than scanning them individually, and the trained model (Dice score 0.92 on validation data) segmented a specimen in seconds instead of the 10--15 minutes needed manually.
-   A geometric morphometric case study of the first two ceratobranchial bones showed that shape variation is driven mainly by lake of origin, with small but significant differences between ecotypes that were most pronounced in the second ceratobranchial.
+We applied this pipeline to 38 multi-specimen scans comprising 215 specimens from benthic and limnetic stickleback populations.
+Scanning several fish at once was about 5.5 times faster than scanning them individually, and the trained model (Dice score 0.92 on validation data) segmented a specimen in seconds instead of the 10--15 minutes needed manually.
+A geometric morphometric case study of the first two ceratobranchial bones showed that shape variation is driven mainly by lake of origin, with small but significant differences between ecotypes that were most pronounced in the second ceratobranchial.
 
-4. The pipeline turns multi-specimen micro-CT scans into analysis-ready datasets of individual specimens with little manual effort.
-   All code, data, and the 3D-printable sample holder are openly available, so that the approach can be adapted to other taxa, sample holders, and anatomical structures.
-
+The pipeline turns multi-specimen micro-CT scans into analysis-ready datasets of individual specimens; the only manual step is recording which fish was placed in which compartment.
+All code, data, and the 3D-printable sample holder are openly available; the separation has already been applied to a more taxaWe , and the approach can be adapted to other taxa, sample holders, and anatomical structures.
 
 ## Introduction {.page_break_before}
 
@@ -220,7 +218,7 @@ This creates a bottleneck for large-scale research where sizable multiscans bloa
 
 Furthermore, once partitioned, small structures can be manually segmented by a skilled investigator using tools such as 3D Slicer [@doi:10.1007/978-1-4614-7657-3_19; @doi:10.1111/2041-210X.13669], yet the time and resources required per sample also make this approach infeasible for population-level and evolutionary studies.
 
-This project aims to address these gaps, demonstrating a novel pipeline for automatic splitting and rendering of multi-specimen scans for mass sampling, creating a dataset with consistent parameters that can be used as input for downstream machine learning approaches, such as Biomedisa, to aid in the segmentation of individual bony structures in each scan [@doi:10.1038/s41467-020-19303-w].
+This project aims to address these gaps, demonstrating an integrated pipeline for automatic splitting and segmentation of multi-specimen scans for mass sampling, creating a dataset with consistent parameters that can be used as input for downstream machine learning approaches, such as Biomedisa, to aid in the segmentation of individual bony structures in each scan [@doi:10.1038/s41467-020-19303-w].
 Once a Biomedisa model is trained, the entire pipeline runs from multi-specimen input to reconstructed anatomical structures for each specimen in a fraction of the time and resources required for traditional analysis.
 
 
@@ -241,7 +239,7 @@ Specimens were collected from a random sample of up to 30 fish from each lake pe
 The fish were euthanized with 0.2\ % MS-222, photographed, labeled, and preserved in 10\ % formalin in individual bags, all under McGill University Animal Use Protocol (AUP) MCGL-8265.
 At the end of each field season, samples were shipped from Anchorage (AK, USA) to Bern (BE, CH), where they were stored until scanning.
 The total number of fish for each lake was: 52 from Watson Lake (benthic), 48 from Finger Lake (benthic), 46 from Spirit Lake (limnetic), 35 from South Rolly Lake (limnetic), 20 from Walby Lake (benthic), and 14 from Tern Lake (benthic) for a total of 215 specimens.
-As there is evidence that sexual dimorphism may be present in the stickleback feeding structures [@doi:10.1242/jeb.074948], caudal fin clips were additionally collected from fish sampled during the 2024 field season for molecular sex identification through genotyping.
+As there is evidence that sexual dimorphism may be present in the stickleback feeding structures [@doi:10.1242/jeb.074948], caudal fin clips were additionally collected from fish sampled during the 2024 field season for molecular sex identification through genotyping, for use in follow-up analyses.
 DNA was extracted from fin tissue following Meeker et al. [@doi:10.2144/000112619], and subsequent PCR genotyping with LRRc61 primers was performed, following Archambeault et al. [@doi:10.1002/evl3.175].
 
 Due to their inherent contrast difference with the surrounding tissue, the structures of interest in this study (teeth and bones, i.e., jaws and skull) are well visualized in unstained samples, so no further preparation of the fish was necessary.
@@ -310,7 +308,7 @@ We thus assigned each detected region to a compartment based on the angle of its
 Each region is assigned to the compartment with the closest nominal direction (spaced by 60°, counted anticlockwise from compartment 1); empty compartments are skipped.
 
 The bounding boxes of the individual fish in the scan (see right panel of Figure @fig:labeling) were used to extract small cropped regions from the large multi-specimen dataset.
-This extraction process is fully reproducible and is tailored to the arrangement of the samples in the custom sample holder.
+This extraction process is fully reproducible and is configured for the arrangement of the samples in the custom sample holder.
 
 ![Automatically detected regions based on maximum intensity projection along the rotation axis of the tomographic scan.
   The left panel shows the highlighted compartment markers as they have been 3D printed.
@@ -458,7 +456,7 @@ Changes due to allometry (using centroid size or standard length as the size met
 $R^2$    = 0.0325;
 CB2: *p* = 0.001,
 $R^2$    = 0.0622) in both bones.
-Both linear models and PCA results suggest that the lakes themselves---and not overarching categories of ecotype or sex---drive most of the shape variation in these bones (CB1: *p* = 0.001,
+Both linear models and PCA results suggest that the lakes themselves---and not the overarching ecotype categories---drive most of the shape variation in these bones (CB1: *p* = 0.001,
 $R^2$    = 0.0946;
 CB2: *p* = 0.001,
 $R^2$    = 0.1104).
@@ -489,9 +487,9 @@ Since their features of interest could be resolved at much coarser resolution, e
 By contrast, resolving the branchial skeleton of stickleback required scans of several hours, making multi-specimen scanning even more beneficial in our case.
 
 Scanning up to six fish at once makes efficient use of the scanner, but does shift the effort to the processing of the data, since each scan has to be separated into single-fish datasets.
-Other pipelines for separation exist (e.g., the workflow described by Buser et al. [@doi:10.1093/iob/obaa009]).
-However, these rely on human operators manually separating regions of interest and on their decisions, thereby hindering reproducibility.
-Since our pipeline automates the separation (see [Fish Separation]), it makes this step both bias-free and therefore reproducible.
+Other workflows for separating multi-specimen scans exist (e.g., the one described by Buser et al. [@doi:10.1093/iob/obaa009]), in which an operator selects the region of each specimen by hand.
+Our pipeline instead derives each crop from the axial MIP and the known holder geometry (see [Fish Separation]), so the same input data always yield the same single-specimen datasets.
+Each crop is documented with a log file and check images, so that every extracted dataset can be traced back to its position in the original scan and to the fish ID, and the whole separation can be repeated or verified by others.
 
 ### Pipeline and Efficiency
 
@@ -502,9 +500,11 @@ This reproducible pipeline allows high-throughput sampling and population-scale 
 In comparable multi-specimen workflows, the assignment of each specimen in the reconstructed volume relies on manually recorded scan maps and orientation markers [@doi:10.3389/fevo.2023.1127756].
 The pipeline presented here performs an automated and reproducible separation based on the MIP and the known holder geometry, so adding more (multi-specimen) scans to the pipeline does not increase the time users have to spend on manually separating these scans into single fish regions.
 
-The imaging and separation steps are easy to generalize to either other micro-CT setups or other species and specimens.
-As long as the specimens show up as distinct blobs in the MIP (see Figure @fig:labeling), our pipeline can reproducibly separate these blobs into a cropped dataset for any further processing, enabling a general, reproducible, and high-throughput micro-CT workflow in biology and other fields.
-We have already applied the same pipeline to multi-specimen scans of other fish species, namely *Spinachia spinachia* and several Lake Victoria and Neotropical cichlid species (manuscripts in preparation).
+The imaging and separation steps are easy to generalize to other micro-CT setups, since the notebooks only need a stack of reconstructed images as input.
+The separation step does not depend on the species or the anatomical structures of interest; it only requires that the specimens appear as distinct regions that can be separated in the axial MIP (see Figure @fig:labeling).
+We have used the same notebooks to separate five multi-specimen scans of 25 fifteen-spined sticklebacks (Spinachia spinachia), mounted in a holder with six compartments whose dimensions were slightly adapted to the different fish.
+No changes to the code were needed; only the paths to the data had to be adjusted.
+The notebooks are currently also being applied to scans of Lake Victoria and Neotropical cichlids, where a manuscript is in preparation.
 
 In addition, while we have selected 3D Slicer as our main tool for creating training labels, alternative programs such as Avizo (Thermo Fisher Scientific) and Dragonfly [@doi:10.1017/S143192761800315X] as well as promising segmentation tools such as nnInteractive [@doi:10.48550/arXiv.2503.08373] and SPROUT [@doi:10.1101/2024.11.22.624847], could also be used for this task as long as high-quality labels can be generated.
 Our chosen combination proved to be efficient for working with the large number of datasets in heterogeneous lab settings.
@@ -541,7 +541,7 @@ And while the separation step outlined in this manuscript is independent of the 
 The provided pipeline enables reproducible, high-throughput analysis of 3D shape in stickleback specimens.
 Although applied here to stickleback specimens, the described methods can readily be applied to large-scale sampling efforts of multiple taxonomic groups, with data acquired with diverse imaging setups (not only micro-CT) and different sample holders, due to the use of simple region detection and reproducible logging.
 Extracting individual specimens from multi-specimen scans is efficient; a custom 3D-printed holder and automated splitting pipeline minimize operator time and maximize throughput.
-The separation pipeline works fully automatically, as long as the specimens are separable in the axial maximum intensity projection of the multi-specimen scan.
+The separation pipeline works fully automatically, as long as the specimens are separable in the axial maximum intensity projection of the multi-specimen scan; the user only has to keep track of which fish specimen was scanned in which holder compartment.
 
 The reproducible scans and their consistent quality rapidly provide a large amount of similar data, ideal for training machine learning models.
 In its current implementation, Biomedisa is on average 60 times faster than manual segmentation by a skilled operator, and without the interoperator variability inherent to manually segmenting large numbers of specimens.
