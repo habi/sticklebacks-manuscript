@@ -10,7 +10,7 @@ keywords:
 - geometric morphometrics
 - deep learning
 lang: en-US
-date-meta: '2026-11-25'
+date-meta: '2026-11-27'
 author-meta:
 - David Haberthür
 - R. Benjamin Sulser
@@ -28,11 +28,11 @@ header-includes: |
   <meta name="citation_title" content="From multi-specimen scans to individual bones: automated extraction and efficient, label-guided segmentation of stickleback micro-CT data" />
   <meta property="og:title" content="From multi-specimen scans to individual bones: automated extraction and efficient, label-guided segmentation of stickleback micro-CT data" />
   <meta property="twitter:title" content="From multi-specimen scans to individual bones: automated extraction and efficient, label-guided segmentation of stickleback micro-CT data" />
-  <meta name="dc.date" content="2026-11-25" />
-  <meta name="citation_publication_date" content="2026-11-25" />
-  <meta property="article:published_time" content="2026-11-25" />
-  <meta name="dc.modified" content="2026-11-25T10:53:22+00:00" />
-  <meta property="article:modified_time" content="2026-11-25T10:53:22+00:00" />
+  <meta name="dc.date" content="2026-11-27" />
+  <meta name="citation_publication_date" content="2026-11-27" />
+  <meta property="article:published_time" content="2026-11-27" />
+  <meta name="dc.modified" content="2026-11-27T15:11:36+00:00" />
+  <meta property="article:modified_time" content="2026-11-27T15:11:36+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -60,9 +60,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/bea75f3400b9334fc98dd0625a8e323778df3aa4/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/bea75f3400b9334fc98dd0625a8e323778df3aa4/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/bea75f3400b9334fc98dd0625a8e323778df3aa4/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/3dce56dcf5f266dd01a2c9323758386e4832a61b/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/3dce56dcf5f266dd01a2c9323758386e4832a61b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/3dce56dcf5f266dd01a2c9323758386e4832a61b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -84,11 +84,11 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/bea75f3400b9334fc98dd0625a8e323778df3aa4/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/3dce56dcf5f266dd01a2c9323758386e4832a61b/))
 was generated
-from [habi/sticklebacks-manuscript@bea75f3](https://github.com/habi/sticklebacks-manuscript/tree/bea75f3400b9334fc98dd0625a8e323778df3aa4)
-on November 25, 2026 and contains 7209 words.
-Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v2.0...bea75f3400b9334fc98dd0625a8e323778df3aa4#files_bucket).
+from [habi/sticklebacks-manuscript@3dce56d](https://github.com/habi/sticklebacks-manuscript/tree/3dce56dcf5f266dd01a2c9323758386e4832a61b)
+on November 27, 2026 and contains 7209 words.
+Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v2.0...3dce56dcf5f266dd01a2c9323758386e4832a61b#files_bucket).
 </em></small>
 
 
@@ -606,7 +606,7 @@ We are grateful to the [Microscopy Imaging Center](https://mic.unibe.ch/) of the
 We also thank the Manubot project [@doi:10.1371/journal.pcbi.1007128] for facilitating collaborative writing of this manuscript.
 
 
-## Supplementary Materials
+## Data availability
 
 ### Parameters of Tomographic Scans of All Fish
 
@@ -636,7 +636,8 @@ The result of the resampling is also available [online](https://github.com/habi/
 
 The R script we used to assess the morphometrics is available [online on GitHub](https://github.com/habi/sticklebacks-manuscript/blob/main/content/scripts/Morphometrics_RScript.R).
 
-### Supplementary Figures
+
+## Supplementary Figures
 
 ![Maximum intensity projections of one acquired dataset along the three cardinal axes.](images/Sticklebucket_H.rec.MIPs.png){#fig:mips tag="S1"}
 
