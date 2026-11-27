@@ -31,8 +31,8 @@ header-includes: |
   <meta name="dc.date" content="2026-11-27" />
   <meta name="citation_publication_date" content="2026-11-27" />
   <meta property="article:published_time" content="2026-11-27" />
-  <meta name="dc.modified" content="2026-11-27T15:11:36+00:00" />
-  <meta property="article:modified_time" content="2026-11-27T15:11:36+00:00" />
+  <meta name="dc.modified" content="2026-11-27T15:25:29+00:00" />
+  <meta property="article:modified_time" content="2026-11-27T15:25:29+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -60,9 +60,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://habi.github.io/sticklebacks-manuscript/" />
   <meta name="citation_pdf_url" content="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://habi.github.io/sticklebacks-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/3dce56dcf5f266dd01a2c9323758386e4832a61b/" />
-  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/3dce56dcf5f266dd01a2c9323758386e4832a61b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/3dce56dcf5f266dd01a2c9323758386e4832a61b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://habi.github.io/sticklebacks-manuscript/v/dc4189cdb6fecaf174a0b4eff950d23f48b6a1df/" />
+  <meta name="manubot_html_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/dc4189cdb6fecaf174a0b4eff950d23f48b6a1df/" />
+  <meta name="manubot_pdf_url_versioned" content="https://habi.github.io/sticklebacks-manuscript/v/dc4189cdb6fecaf174a0b4eff950d23f48b6a1df/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -84,11 +84,11 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://habi.github.io/sticklebacks-manuscript/v/3dce56dcf5f266dd01a2c9323758386e4832a61b/))
+([permalink](https://habi.github.io/sticklebacks-manuscript/v/dc4189cdb6fecaf174a0b4eff950d23f48b6a1df/))
 was generated
-from [habi/sticklebacks-manuscript@3dce56d](https://github.com/habi/sticklebacks-manuscript/tree/3dce56dcf5f266dd01a2c9323758386e4832a61b)
-on November 27, 2026 and contains 7209 words.
-Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v2.0...3dce56dcf5f266dd01a2c9323758386e4832a61b#files_bucket).
+from [habi/sticklebacks-manuscript@dc4189c](https://github.com/habi/sticklebacks-manuscript/tree/dc4189cdb6fecaf174a0b4eff950d23f48b6a1df)
+on November 27, 2026 and contains 7220 words.
+Changes to the submitted version are visualized [here on GitHub](https://github.com/habi/sticklebacks-manuscript/compare/v2.0...dc4189cdb6fecaf174a0b4eff950d23f48b6a1df#files_bucket).
 </em></small>
 
 
@@ -608,6 +608,8 @@ We also thank the Manubot project [@doi:10.1371/journal.pcbi.1007128] for facili
 
 ## Data availability
 
+The data that support the findings of this study are openly available at the mentioned URLs below.
+
 ### Parameters of Tomographic Scans of All Fish
 
 The CSV file [ScanningDetails.csv](https://github.com/habi/sticklebacks-manuscript/blob/main/content/data/ScanningDetails.csv) gives a tabular overview of all the (relevant) parameters of all the scans we performed.
@@ -619,7 +621,7 @@ A copy of each log file containing *all* scanning parameters is available in a [
 The cropped datasets for analysis include the region with the 3D-printed marker of the multi-specimen holder to keep the process reproducible in an end-to-end fashion.
 We further cropped the datasets along the anteroposterior axis with a [helper notebook](https://github.com/habi/sticklebacks/blob/main/PrepareForMorphoSource.ipynb).
 These datasets do *not* include the region of the 3D-printed marker, but are minimized to only the fish region.
-A PNG stack of *each* such cropped fish region is available in [a collection at MorphoSource](https://www.morphosource.org/projects/000885106) and can be downloaded on request.
+A PNG stack of *each* such cropped fish region is available in [a collection at MorphoSource](https://www.morphosource.org/projects/000885106).
 
 ### Analysis Scripts
 
